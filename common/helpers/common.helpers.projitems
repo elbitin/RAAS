@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4725df40-8001-4f7a-891b-ff7ff48cc9ac</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Elbitin.Applications.RAAS.Common.Helpers</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AccessRightsHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FileHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IconHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImagingHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LinkHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ProcessHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RegistryHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SerializationHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StringHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Win32Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XmlDocumentHelper.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>445ae58d-07cc-4c9c-8118-c9b9bcae2f80</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Elbitin.Applications.RAAS.RAASServer.Helpers</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AppListHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AssociationsIconHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PowerHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ProfileHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RAASServerFeatureHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RAASServerLogHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RAASServerPathHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RAASServerProgramHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServiceHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SharesHelper.cs" />
+  </ItemGroup>
+</Project>

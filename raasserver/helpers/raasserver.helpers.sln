@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "raasserver.helpers", "raasserver.helpers.shproj", "{445AE58D-07CC-4C9C-8118-C9B9BCAE2F80}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		raasserver.helpers.projitems*{445ae58d-07cc-4c9c-8118-c9b9bcae2f80}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AF709BD-52A2-49EC-8102-6AE0B4C8C843}
+	EndGlobalSection
+EndGlobal

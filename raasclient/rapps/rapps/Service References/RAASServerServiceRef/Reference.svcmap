@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="9b2cb54d-cb5a-44a6-82e7-c700f786ccb8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:43000/RAASServerService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RAASServer.RAASSvr.IRAASServerService.wsdl" MetadataType="Wsdl" ID="e8b5d42c-88b7-4dfe-9450-8148f42034e0" SourceId="1" SourceUrl="net.tcp://localhost:43000/RAASServerService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="b9b80051-12f6-4abf-9f68-100acfa67275" SourceId="1" SourceUrl="net.tcp://localhost:43000/RAASServerService/mex" />
+    <MetadataFile FileName="RAASServer.RAASSvr.IRAASServerService.xsd" MetadataType="Schema" ID="1dd8ba2d-8b2e-4cb6-9e1e-70ebc72f9f19" SourceId="1" SourceUrl="net.tcp://localhost:43000/RAASServerService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="458e4c09-edbd-42cc-95d2-9987b3937640" SourceId="1" SourceUrl="net.tcp://localhost:43000/RAASServerService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="ca659c7e-70c2-4898-b936-a624c4b1139b" SourceId="1" SourceUrl="net.tcp://localhost:43000/RAASServerService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,16 @@
+﻿<WixLocalization Culture="sv-se" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+    <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan inte ansluta till Windows brandvägg. ([2] [3] [4] [5])" />   
+    <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfigurera Windows brandvägg" />
+    <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfigurerar Windows brandvägg" />
+    <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Rullar tillbaka konfigurationen för Windows brandvägg" />
+    <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installerar konfigurationen för Windows brandvägg" />
+    <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Rullar tillbaka konfigurationen för Windows brandvägg" />
+    <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Avinstallerar konfigurationen för Windows brandvägg" />
+    <String Id="VisualizationsDescription" Overridable="yes" Value="Visualiseringar för fjärrapplikationer tillgängliga som alternativ vid konfiguration" />
+    <String Id="NamespaceDescription" Overridable="yes" Value="Visa RAAS servrar i utforskaren" />
+    <String Id="ShortcutsDescription" Overridable="yes" Value="Skapa genvägar för fjärrapplikationer på den lokala datorn" />
+    <String Id="VisualizationsTitle" Overridable="yes" Value="Visualiseringar" />
+    <String Id="NamespaceTitle" Overridable="yes" Value="Utökning av Utforskaren" />
+    <String Id="ShortcutsTitle" Overridable="yes" Value="Fjärrgenvägar" />
+    <String Id="ProductLanguage" Overridable="yes" Value="1053" />
+</WixLocalization>

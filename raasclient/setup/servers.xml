@@ -1,0 +1,40 @@
+<!-- 
+Copyright (c) 2025 Elbitin
+
+This file is part of RAAS Client.
+
+RAAS Client is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+RAAS Client is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with RAAS Client. If not, see <https://www.gnu.org/licenses/>.
+-->
+<Servers>
+   <Server>
+      <AuthenticationLevel>1</AuthenticationLevel>
+      <AutoStartPrograms>0</AutoStartPrograms>
+      <KeepAliveAgent>0</KeepAliveAgent>
+      <RedirectClipboard>0</RedirectClipboard>
+      <RedirectDevices>0</RedirectDevices>
+      <RedirectPrinters>0</RedirectPrinters>
+      <VisualAids>1</VisualAids>
+      <AutoConnect>0</AutoConnect>
+      <AutoReconnect>1</AutoReconnect>
+      <RemoteApplications>1</RemoteApplications>
+      <CreateShortcuts>1</CreateShortcuts>
+      <CreateStartMenuShortcuts>1</CreateStartMenuShortcuts>
+	  <CreateUWPApplicationShortcuts>1</CreateUWPApplicationShortcuts>
+      <CreateDesktopShortcuts>1</CreateDesktopShortcuts>
+      <DesktopRoot>1</DesktopRoot>
+      <Enabled>0</Enabled>
+      <ShortcutsAppendAlias>1</ShortcutsAppendAlias>
+      <RemoveShortcuts>0</RemoveShortcuts>
+      <ShortcutsRemoved>0</ShortcutsRemoved>
+      <RemoveServer>0</RemoveServer>
+      <ShowNotifications>1</ShowNotifications>
+      <LocalizeShortcuts>1</LocalizeShortcuts>
+      <UserName></UserName>
+      <Alias></Alias>
+      <Domain></Domain>
+   </Server>
+</Servers>

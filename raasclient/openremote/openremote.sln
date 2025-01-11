@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "openremote", "openremote\openremote.csproj", "{104AF874-F40B-4E91-875B-468775A12919}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "common.models", "..\..\common\models\common.models.shproj", "{E5077C89-D02C-4DAD-93E9-947B6928AAF5}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "common.helpers", "..\..\common\helpers\common.helpers.shproj", "{4725DF40-8001-4F7A-891B-FF7FF48CC9AC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "raasclient.helpers", "..\helpers\raasclient.helpers.shproj", "{3E107261-FD3A-4967-9FB5-8DA99A283EC0}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "raasclient.models", "..\models\raasclient.models.shproj", "{4270A3C7-E89B-4EE0-B5E2-972305C94B2E}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\common\helpers\common.helpers.projitems*{104af874-f40b-4e91-875b-468775a12919}*SharedItemsImports = 4
+		..\..\common\models\common.models.projitems*{104af874-f40b-4e91-875b-468775a12919}*SharedItemsImports = 4
+		..\helpers\raasclient.helpers.projitems*{104af874-f40b-4e91-875b-468775a12919}*SharedItemsImports = 4
+		..\models\raasclient.models.projitems*{104af874-f40b-4e91-875b-468775a12919}*SharedItemsImports = 4
+		..\helpers\raasclient.helpers.projitems*{3e107261-fd3a-4967-9fb5-8da99a283ec0}*SharedItemsImports = 13
+		..\models\raasclient.models.projitems*{4270a3c7-e89b-4ee0-b5e2-972305c94b2e}*SharedItemsImports = 13
+		..\..\common\helpers\common.helpers.projitems*{4725df40-8001-4f7a-891b-ff7ff48cc9ac}*SharedItemsImports = 13
+		..\..\common\models\common.models.projitems*{e5077c89-d02c-4dad-93e9-947b6928aaf5}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{104AF874-F40B-4E91-875B-468775A12919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104AF874-F40B-4E91-875B-468775A12919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104AF874-F40B-4E91-875B-468775A12919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104AF874-F40B-4E91-875B-468775A12919}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D67B431A-95C3-493A-9E7B-67E0FC982D49}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "raasclient.helpers", "raasclient.helpers.shproj", "{3E107261-FD3A-4967-9FB5-8DA99A283EC0}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		raasclient.helpers.projitems*{3e107261-fd3a-4967-9fb5-8da99a283ec0}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CEF2E41C-77F5-44DE-A7D8-5AA91AC2A7EB}
+	EndGlobalSection
+EndGlobal

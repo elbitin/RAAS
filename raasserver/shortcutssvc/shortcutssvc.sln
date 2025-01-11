@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shortcutssvc", "shortcutssvc\shortcutssvc.csproj", "{A85A0A88-1FE1-44C8-B473-E982450F2B6D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "raasserver.helpers", "..\helpers\raasserver.helpers.shproj", "{445AE58D-07CC-4C9C-8118-C9B9BCAE2F80}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "common.helpers", "..\..\common\helpers\common.helpers.shproj", "{4725DF40-8001-4F7A-891B-FF7FF48CC9AC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "common.models", "..\..\common\models\common.models.shproj", "{E5077C89-D02C-4DAD-93E9-947B6928AAF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriFormat", "..\pritools\PriFormat\PriFormat.csproj", "{A7228EC9-ACD6-4B18-BDCA-65160149B83A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "raasserver.models", "..\models\raasserver.models.shproj", "{D1324006-6834-40CC-9409-071000FFD622}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A85A0A88-1FE1-44C8-B473-E982450F2B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85A0A88-1FE1-44C8-B473-E982450F2B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85A0A88-1FE1-44C8-B473-E982450F2B6D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A85A0A88-1FE1-44C8-B473-E982450F2B6D}.Debug|x64.Build.0 = Debug|Any CPU
+		{A85A0A88-1FE1-44C8-B473-E982450F2B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85A0A88-1FE1-44C8-B473-E982450F2B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A85A0A88-1FE1-44C8-B473-E982450F2B6D}.Release|x64.ActiveCfg = Release|Any CPU
+		{A85A0A88-1FE1-44C8-B473-E982450F2B6D}.Release|x64.Build.0 = Release|Any CPU
+		{A7228EC9-ACD6-4B18-BDCA-65160149B83A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7228EC9-ACD6-4B18-BDCA-65160149B83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7228EC9-ACD6-4B18-BDCA-65160149B83A}.Debug|x64.ActiveCfg = Debug|x64
+		{A7228EC9-ACD6-4B18-BDCA-65160149B83A}.Debug|x64.Build.0 = Debug|x64
+		{A7228EC9-ACD6-4B18-BDCA-65160149B83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7228EC9-ACD6-4B18-BDCA-65160149B83A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7228EC9-ACD6-4B18-BDCA-65160149B83A}.Release|x64.ActiveCfg = Release|x64
+		{A7228EC9-ACD6-4B18-BDCA-65160149B83A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E67029B9-F7BA-4DCB-A4C3-CE49B7A57CB5}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\helpers\raasserver.helpers.projitems*{445ae58d-07cc-4c9c-8118-c9b9bcae2f80}*SharedItemsImports = 13
+		..\..\common\helpers\common.helpers.projitems*{4725df40-8001-4f7a-891b-ff7ff48cc9ac}*SharedItemsImports = 13
+		..\..\common\helpers\common.helpers.projitems*{a85a0a88-1fe1-44c8-b473-e982450f2b6d}*SharedItemsImports = 5
+		..\..\common\models\common.models.projitems*{a85a0a88-1fe1-44c8-b473-e982450f2b6d}*SharedItemsImports = 5
+		..\helpers\raasserver.helpers.projitems*{a85a0a88-1fe1-44c8-b473-e982450f2b6d}*SharedItemsImports = 5
+		..\models\raasserver.models.projitems*{a85a0a88-1fe1-44c8-b473-e982450f2b6d}*SharedItemsImports = 5
+		..\models\raasserver.models.projitems*{d1324006-6834-40cc-9409-071000ffd622}*SharedItemsImports = 13
+		..\..\common\models\common.models.projitems*{e5077c89-d02c-4dad-93e9-947b6928aaf5}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

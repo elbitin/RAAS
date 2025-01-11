@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/Imports">
+      <xsd:import namespace="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRAASClientService_StartRemoteApplication_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartRemoteApplication" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_StartRemoteApplication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartRemoteApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_ConnectServer_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectServer" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_ConnectServer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_DisconnectServer_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisconnectServer" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_DisconnectServer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisconnectServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_GetServerStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerStatus" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_GetServerStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_GetServerVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerVersion" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_GetServerVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_StartAutostart_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartAutostart" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_StartAutostart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartAutostartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_StartShortcutsServer_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartShortcutsServer" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_StartShortcutsServer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartShortcutsServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_StartKeepAlive_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartKeepAlive" />
+  </wsdl:message>
+  <wsdl:message name="IRAASClientService_StartKeepAlive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartKeepAliveResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IRAASClientService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StartRemoteApplication">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/StartRemoteApplication" message="tns:IRAASClientService_StartRemoteApplication_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/StartRemoteApplicationResponse" message="tns:IRAASClientService_StartRemoteApplication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ConnectServer">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/ConnectServer" message="tns:IRAASClientService_ConnectServer_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/ConnectServerResponse" message="tns:IRAASClientService_ConnectServer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DisconnectServer">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/DisconnectServer" message="tns:IRAASClientService_DisconnectServer_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/DisconnectServerResponse" message="tns:IRAASClientService_DisconnectServer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetServerStatus">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/GetServerStatus" message="tns:IRAASClientService_GetServerStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/GetServerStatusResponse" message="tns:IRAASClientService_GetServerStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetServerVersion">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/GetServerVersion" message="tns:IRAASClientService_GetServerVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/GetServerVersionResponse" message="tns:IRAASClientService_GetServerVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StartAutostart">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/StartAutostart" message="tns:IRAASClientService_StartAutostart_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/StartAutostartResponse" message="tns:IRAASClientService_StartAutostart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StartShortcutsServer">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/StartShortcutsServer" message="tns:IRAASClientService_StartShortcutsServer_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/StartShortcutsServerResponse" message="tns:IRAASClientService_StartShortcutsServer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StartKeepAlive">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/StartKeepAlive" message="tns:IRAASClientService_StartKeepAlive_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService/IRAASClientService/StartKeepAliveResponse" message="tns:IRAASClientService_StartKeepAlive_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "raassrv", "raassrv\raassrv.csproj", "{FE32753C-51DB-474F-884F-FE88D72228F2}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "common.models", "..\..\common\models\common.models.shproj", "{E5077C89-D02C-4DAD-93E9-947B6928AAF5}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "common.helpers", "..\..\common\helpers\common.helpers.shproj", "{4725DF40-8001-4F7A-891B-FF7FF48CC9AC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "raasserver.helpers", "..\helpers\raasserver.helpers.shproj", "{445AE58D-07CC-4C9C-8118-C9B9BCAE2F80}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "raasserver.models", "..\models\raasserver.models.shproj", "{D1324006-6834-40CC-9409-071000FFD622}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE32753C-51DB-474F-884F-FE88D72228F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE32753C-51DB-474F-884F-FE88D72228F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE32753C-51DB-474F-884F-FE88D72228F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE32753C-51DB-474F-884F-FE88D72228F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {654D6D93-42C7-4C0C-ABDF-42FF457E6F62}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\helpers\raasserver.helpers.projitems*{445ae58d-07cc-4c9c-8118-c9b9bcae2f80}*SharedItemsImports = 13
+		..\..\common\helpers\common.helpers.projitems*{4725df40-8001-4f7a-891b-ff7ff48cc9ac}*SharedItemsImports = 13
+		..\models\raasserver.models.projitems*{d1324006-6834-40cc-9409-071000ffd622}*SharedItemsImports = 13
+		..\..\common\models\common.models.projitems*{e5077c89-d02c-4dad-93e9-947b6928aaf5}*SharedItemsImports = 13
+		..\..\common\helpers\common.helpers.projitems*{fe32753c-51db-474f-884f-fe88d72228f2}*SharedItemsImports = 4
+		..\..\common\models\common.models.projitems*{fe32753c-51db-474f-884f-fe88d72228f2}*SharedItemsImports = 4
+		..\helpers\raasserver.helpers.projitems*{fe32753c-51db-474f-884f-fe88d72228f2}*SharedItemsImports = 4
+		..\models\raasserver.models.projitems*{fe32753c-51db-474f-884f-fe88d72228f2}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "remotesc", "remotesc\remotesc.csproj", "{8EA6F036-4663-49BD-B484-4184839E26C9}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "common.models", "..\..\common\models\common.models.shproj", "{E5077C89-D02C-4DAD-93E9-947B6928AAF5}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "common.helpers", "..\..\common\helpers\common.helpers.shproj", "{4725DF40-8001-4F7A-891B-FF7FF48CC9AC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "raasclient.helpers", "..\helpers\raasclient.helpers.shproj", "{3E107261-FD3A-4967-9FB5-8DA99A283EC0}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "raasclient.models", "..\models\raasclient.models.shproj", "{4270A3C7-E89B-4EE0-B5E2-972305C94B2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EA6F036-4663-49BD-B484-4184839E26C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA6F036-4663-49BD-B484-4184839E26C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA6F036-4663-49BD-B484-4184839E26C9}.Debug|x64.ActiveCfg = Debug|x64
+		{8EA6F036-4663-49BD-B484-4184839E26C9}.Debug|x64.Build.0 = Debug|x64
+		{8EA6F036-4663-49BD-B484-4184839E26C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA6F036-4663-49BD-B484-4184839E26C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA6F036-4663-49BD-B484-4184839E26C9}.Release|x64.ActiveCfg = Release|x64
+		{8EA6F036-4663-49BD-B484-4184839E26C9}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6552CC10-0B96-4460-8915-9E371E4CEE04}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\helpers\raasclient.helpers.projitems*{3e107261-fd3a-4967-9fb5-8da99a283ec0}*SharedItemsImports = 13
+		..\models\raasclient.models.projitems*{4270a3c7-e89b-4ee0-b5e2-972305c94b2e}*SharedItemsImports = 13
+		..\..\common\helpers\common.helpers.projitems*{4725df40-8001-4f7a-891b-ff7ff48cc9ac}*SharedItemsImports = 13
+		..\..\common\helpers\common.helpers.projitems*{8ea6f036-4663-49bd-b484-4184839e26c9}*SharedItemsImports = 4
+		..\..\common\models\common.models.projitems*{8ea6f036-4663-49bd-b484-4184839e26c9}*SharedItemsImports = 4
+		..\helpers\raasclient.helpers.projitems*{8ea6f036-4663-49bd-b484-4184839e26c9}*SharedItemsImports = 4
+		..\models\raasclient.models.projitems*{8ea6f036-4663-49bd-b484-4184839e26c9}*SharedItemsImports = 4
+		..\..\common\models\common.models.projitems*{e5077c89-d02c-4dad-93e9-947b6928aaf5}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

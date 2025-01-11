@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1c46a02a-1282-4343-a1e9-67ea46c479a1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.pipe://localhost/RAASClientService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RAASClient.RAASClient.IRAASClientService1.wsdl" MetadataType="Wsdl" ID="dea21108-e86e-4e96-83cb-bd44920118be" SourceId="1" SourceUrl="net.pipe://localhost/RAASClientService/mex" />
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="e5f52acf-6546-413c-9cf3-d9a8faf3b972" SourceId="1" SourceUrl="net.pipe://localhost/RAASClientService/mex" />
+    <MetadataFile FileName="RAASClient.RAASClient.IRAASClientService1.xsd" MetadataType="Schema" ID="97097d8d-4a5a-4c2a-96ba-0bfb1c921420" SourceId="1" SourceUrl="net.pipe://localhost/RAASClientService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="549d292c-dae8-4270-9abe-a76957a96233" SourceId="1" SourceUrl="net.pipe://localhost/RAASClientService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

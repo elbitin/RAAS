@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4270a3c7-e89b-4ee0-b5e2-972305c94b2e</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Elbitin.Applications.RAAS.RAAS.Models</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ExplorerExtensionSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RemoteDesktopSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerStates.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualizationsSettings.cs" />
+  </ItemGroup>
+</Project>

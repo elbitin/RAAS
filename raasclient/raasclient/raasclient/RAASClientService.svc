@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="RAASClient.RAASClientSvc" CodeBehind="RAASClientService.svc.cs" %>
