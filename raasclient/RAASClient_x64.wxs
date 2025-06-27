@@ -1,368 +1,369 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:fw="http://wixtoolset.org/schemas/v4/wxs/firewall" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui" xmlns:netfx="http://wixtoolset.org/schemas/v4/wxs/netfx">
-   <Package Name="RAAS Client" Language="!(loc.ProductLanguage)" Version="$(env.RAASClientVersion)" Manufacturer="Elbitin" UpgradeCode="{5C11B9AD-1287-4CCC-BAD4-D6DE29D24F4F}" InstallerVersion="200" Scope="perMachine"><SummaryInformation Description="Windows Installer package for Remote Application Access Station" Manufacturer="Elbitin" />
-      <MajorUpgrade Schedule="afterInstallInitialize" DowngradeErrorMessage="A later version of [ProductName] is already installed" AllowDowngrades="no" AllowSameVersionUpgrades="yes" />
-      <Icon Id="RAASClient.ico" SourceFile="raasclient\raasclient\raasclienticon.ico" />
-      <Property Id="ARPPRODUCTICON" Value="RAASClient.ico" />
-      <Property Id="MSIXFILE" Value="raasclient.msix"  Secure="yes"/>
-      <Property Id="MSIXAPPNAME" Value="Elbitin.Applications.RAAS.RAASClient"  Secure="yes"/>
-      <PropertyRef Id="WIX_IS_NETFRAMEWORK_48_OR_LATER_INSTALLED" />
-      <Launch Message="[ProductName] requires .NET Framework 4.8" Condition="Installed OR WIX_IS_NETFRAMEWORK_48_OR_LATER_INSTALLED" />
-      <netfx:DotNetCompatibilityCheck Property="DOTNETRUNTIMECHECK" RollForward="major" RuntimeType="desktop" Platform="x64" Version="9.0.0" />
-      <MediaTemplate EmbedCab="yes" />
-      <ui:WixUI Id="WixUI_Advanced" />
-      <CustomAction Id="RemoveRAASClientShortcuts" ExeCommand="-uninstall" Execute="immediate" Return="check" FileRef="shortcuts" />
-      <CustomAction Id="KillRAASClient" ExeCommand="-kill" Execute="immediate" Return="check" FileRef="raasclient" />
-      <CustomAction Id="KillRemoteApps" ExeCommand="-kill" Execute="immediate" Return="check" FileRef="rapps" />
-      <CustomAction Id="KillServerConfig" ExeCommand="-kill" Execute="immediate" Return="check" FileRef="servercfg" />
-      <Binary Id="CustomActionsDLL" SourceFile="customactions\bin\Release\CustomActions.CA.dll" />
-      <CustomAction Id="InstallRAASClientContextMenu" Impersonate="yes" BinaryRef="CustomActionsDLL" DllEntry="InstallRAASClientContextMenu"/>
-      <CustomAction Id="UninstallRAASClientContextMenu" Impersonate="yes" BinaryRef="CustomActionsDLL" DllEntry="UninstallRAASClientContextMenu"/>
-      <InstallExecuteSequence>
-	     <Custom Action="InstallRAASClientContextMenu" After="InstallFinalize" Condition="NOT Installed" />
-	     <Custom Action="UninstallRAASClientContextMenu" Before="RemoveFiles" Condition="Installed AND NOT REINSTALL" />
-         <Custom Action="KillRAASClient" Before="RemoveFiles" Condition="Installed AND NOT REINSTALL" />
-         <Custom Action="KillRemoteApps" Before="RemoveFiles" Condition="Installed AND NOT REINSTALL" />
-         <Custom Action="KillServerConfig" Before="RemoveFiles" Condition="Installed AND NOT REINSTALL" />
-         <Custom Action="RemoveRAASClientShortcuts" Before="RemoveFiles" Condition="(&amp;RAASClientShortcuts=2) AND (!RAASClientShortcuts=3)AND Installed AND NOT REINSTALL" /> 
-      </InstallExecuteSequence>
-      <Property Id="ApplicationFolderName" Value="Elbitin\RAAS Client" />
-      <Property Id="WixAppFolder" Value="WixPerMachineFolder" />
-      <Property Id="MSIRESTARTMANAGERCONTROL" Value="Disable" /> 
-      <Property Id="REBOOT" Value="Force" />
-      <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
-      <Feature Id="RAASClient" Title="RAAS Client" Level="1" AllowAbsent="no">
-         <ComponentRef Id="RAASClient" />
-		 <ComponentRef Id="RAASClientMsix" />
-		 <ComponentRef Id="OpenOnRemoteHostCommandVerb" />
-         <ComponentRef Id="RemoteApps" />
-         <ComponentRef Id="MSTSCLIB" />
-         <ComponentRef Id="AxMSTSCLIB" />
-         <ComponentRef Id="OpenRemote" />
-         <ComponentRef Id="RDesktop" />
-         <ComponentRef Id="ConnectShares" />
-         <ComponentRef Id="ConnectSharesAdmin" />
-         <ComponentRef Id="UninstallShortcut" />
-         <ComponentRef Id="ServerCfg" />
-         <ComponentRef Id="VAidsXml" />
-         <ComponentRef Id="RAASClientIcon" />
-		 <ComponentRef Id="NSextVisibilityXml" />
-         <ComponentRef Id="ServersXml" />
-         <ComponentRef Id="RDesktopXml" />
-		 <ComponentRef Id="HelpPdf" />
-         <ComponentRef Id="InstallDirRegistry" />
-		 <ComponentRef Id="InstallDir6432Registry" />
-         <ComponentRef Id="CMenuH" />
-         <ComponentRef Id="CMenuH_x86" />
-         <ComponentRef Id="LanguagePackEnglish" />
-         <ComponentRef Id="LanguagePackSwedish" />
-         <Feature Id="Visualizations" Title="!(loc.VisualizationsTitle)" Description="!(loc.VisualizationsDescription)" Level="1">
-            <ComponentRef Id="VisualizationsRegistry" />
-			<ComponentRef Id="Visualizations6432Registry" />
-         </Feature>
-         <Feature Id="RAASClientShellNamespaceExt" Title="!(loc.NamespaceTitle)" Description="!(loc.NamespaceDescription)" Level="1">
-            <ComponentRef Id="NSExt" />
-            <ComponentRef Id="NSExt_x86" />
-            <ComponentRef Id="NSExtRegistry" />
-			<ComponentRef Id="NSExt6432Registry" />
-         </Feature>
-         <Feature Id="RAASClientShortcuts" Title="!(loc.ShortcutsTitle)" Description="!(loc.ShortcutsDescription)" Level="1">
-            <ComponentRef Id="Shortcuts" />
-            <ComponentRef Id="RemoteSc" />
-            <ComponentRef Id="DMenuH" />
-            <ComponentRef Id="DMenuH_x86" />
-            <ComponentRef Id="ShortcutsRegistry" />
-			<ComponentRef Id="Shortcuts6432Registry" />
-         </Feature>
-      </Feature>
-         <StandardDirectory Id="ProgramFiles64Folder">
-            <Directory Id="CompanyFolder" Name="Elbitin">
-               <Directory Id="APPLICATIONFOLDER" Name="RAAS Client">
-                  <Component Id="InstallDirRegistry" Guid="{3D304858-7C78-46E7-AED2-EB71353972D6}" Bitness="always64">
-                     <RegistryKey Root="HKMU" Key="Software\Elbitin">
-                        <RegistryKey Key="RAAS Client">
-                           <RegistryValue Name="InstallDir" Type="string" Value="[APPLICATIONFOLDER]" KeyPath="yes" />
-                        </RegistryKey>
-                     </RegistryKey>
-                  </Component>
-				  <Component Id="InstallDir6432Registry" Guid="{4F9ACA42-CA72-48BE-A755-7B42FA0388EE}" Bitness="always64">
-                     <RegistryKey Root="HKMU" Key="Software\WOW6432Node\Elbitin">
-                        <RegistryKey Key="RAAS Client">
-                           <RegistryValue Name="InstallDir" Type="string" Value="[APPLICATIONFOLDER]" KeyPath="yes" />
-                        </RegistryKey>
-                     </RegistryKey>
-                  </Component>
-                  <Component Id="ShortcutsRegistry" Guid="{CDDD9E7D-D55C-4F38-96C8-A1A514629863}" Bitness="always64">
-                     <RegistryKey Root="HKMU" Key="Software\WOW6432Node\Elbitin">
-                        <RegistryKey Key="RAAS Client">
-                           <RegistryValue Name="Shortcuts" Type="string" Value="Installed" KeyPath="yes" />
-                        </RegistryKey>
-                     </RegistryKey>
-                  </Component>
-				  <Component Id="Shortcuts6432Registry" Guid="{AFCE23F7-124B-4A37-B708-929BA8548F22}" Bitness="always64">
-                     <RegistryKey Root="HKMU" Key="Software\Elbitin">
-                        <RegistryKey Key="RAAS Client">
-                           <RegistryValue Name="Shortcuts" Type="string" Value="Installed" KeyPath="yes" />
-                        </RegistryKey>
-                     </RegistryKey>
-                  </Component>
-                  <Component Id="OpenRemote" Guid="{F7D72A6A-8D30-465F-90F4-9C00EB858B66}" Bitness="always64">
-                     <File Id="openremote" Name="openremote.exe" Source="openremote\openremote\bin\Release\openremote.exe" KeyPath="yes" />
-                     <File Id="openremote.exe.config" Name="openremote.exe.config" Source="openremote\openremote\bin\Release\openremote.exe.config" />
-                     <File Id="openremote.pdb" Name="openremote.pdb" Source="openremote\openremote\bin\Release\openremote.pdb" />
-                     <fw:FirewallException Name="OpenRemote" Id="firewallallowopenremote" File="openremote" Port="43000" Protocol="tcp" Scope="any" IgnoreFailure="yes" />
-                  </Component>
-                  <Component Id="ConnectShares" Guid="{A87B41B0-934C-40AE-800F-FA8E265EAA76}" Bitness="always64">
-                     <File Id="connectshares" Name="connectshares.exe" Source="connectshares\connectshares\bin\Release\connectshares.exe" KeyPath="yes" />
-                     <File Id="connectshares.pdb" Name="connectshares.pdb" Source="connectshares\connectshares\bin\Release\connectshares.pdb" />
-                  </Component>
-                  <Component Id="ConnectSharesAdmin" Guid="{D271E8C8-72C5-4CEE-8C05-D901E83896DB}" Bitness="always64">
-                     <File Id="connectsharesadmin" Name="connectsharesadmin.exe" Source="connectsharesadmin\connectsharesadmin\bin\Release\connectsharesadmin.exe" KeyPath="yes" />
-                     <File Id="connectsharesadmin.pdb" Name="connectsharesadmin.pdb" Source="connectsharesadmin\connectsharesadmin\bin\Release\connectsharesadmin.pdb" />
-                  </Component>
-                  <Component Id="RemoteSc" Guid="{EB8342F5-1EB5-46B4-A033-3976840F57BA}" Bitness="always64">
-                     <File Id="remotesc" Name="remotesc.exe" Source="remotesc\remotesc\bin\Release\remotesc.exe" KeyPath="yes" />
-                     <File Id="remotesc.exe.config" Name="remotesc.exe.config" Source="remotesc\remotesc\bin\Release\remotesc.exe.config" />
-                     <File Id="remotesc.pdb" Name="remotesc.pdb" Source="remotesc\remotesc\bin\Release\remotesc.pdb" />
-                     <fw:FirewallException Name="RemoteSc" Id="firewallallowremotesc" File="remotesc" Port="43000" Protocol="tcp" Scope="any" IgnoreFailure="yes" />
-                  </Component>
-                  <Component Id="RAASClient" Guid="{C06478A6-8E4F-45DA-9DBB-AA217EAA1F52}" Bitness="always64">
-                     <File Id="raasclient" Name="raasclient.exe" Source="raasclient\raasclient\bin\raasclient.exe" KeyPath="no" />
-                     <File Id="raasclient.config" Name="raasclient.exe.config" Source="raasclient\raasclient\bin\raasclient.exe.config" />
-                     <File Id="raasclient.pdb" Name="raasclient.pdb" Source="raasclient\raasclient\bin\raasclient.pdb" />
-                     <File Id="System.Runtime.dll" Name="System.Runtime.dll" Source="raasclient\raasclient\bin\System.Runtime.dll" />
-                     <File Id="Serilog.dll" Name="Serilog.dll" Source="raasclient\raasclient\bin\Serilog.dll" />
-                     <File Id="Serilog.Sinks.File.dll" Name="Serilog.Sinks.File.dll" Source="raasclient\raasclient\bin\Serilog.Sinks.File.dll" />
-                     <Shortcut Id="raasclientstartmenushortcut" Name="RAAS Client" Description="Open RAAS Client" Directory="ShortcutFolder" Target="[#raasclient]">
-					    <ShortcutProperty Key="System.AppUserModel.ID" Value="Elbitin.RAASClient" />
-					 </Shortcut>
-                     <Shortcut Id="raasclientdesktopshortcut" Name="RAAS Client" Description="Open RAAS Client" Directory="DesktopFolder" Target="[#raasclient]" />
-                     <RegistryValue Root="HKMU" Key="Software\Elbitin\RAAS Client" Name="RAAS Client" Type="integer" Value="1" KeyPath="yes" />
-                     <RegistryValue Root="HKMU" Key="Software\Elbitin\RAAS Client" Name="minimumLogLevelApplications" Type="integer" Value="1" />
-					 <RegistryValue Root="HKMU" Key="Software\Elbitin\RAAS Client" Name="Version" Type="string" Value="$(env.RAASClientVersion)" Action="write" />
-					 <RegistryValue Root="HKMU" Key="Software\WOW6432Node\Elbitin\RAAS Client" Name="RAAS Client" Type="integer" Value="1" KeyPath="no" />
-                     <RegistryValue Root="HKMU" Key="Software\WOW6432Node\Elbitin\RAAS Client" Name="minimumLogLevelApplications" Type="integer" Value="1" />
-					 <RegistryValue Root="HKMU" Key="Software\WOW6432Node\Elbitin\RAAS Client" Name="Version" Type="string" Value="$(env.RAASClientVersion)" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Microsoft\Windows\CurrentVersion\Run" Type="string" Name="RAAS Client" Value="[#raasclient]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\DefaultIcon" Type="string" Value="[#raasclient], 0" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\DefaultIcon" Type="string" Value="[#raasclient], 0" Action="write" />
-                  </Component>
-                  <Component Id="RemoteApps" Guid="{A34068CF-7D82-453D-9350-7B6973171EFC}" Bitness="always64">
-                     <File Id="rapps" Name="rapps.exe" Source="rapps\rapps\bin\rapps.exe" KeyPath="yes" />
-                     <File Id="rapps.config" Name="rapps.exe.config" Source="rapps\rapps\bin\rapps.exe.config" />
-                     <File Id="rapps.pdb" Name="rapps.pdb" Source="rapps\rapps\bin\rapps.pdb" />
-                     <fw:FirewallException Name="RAAS Client" Id="firewallallowraasclient" File="raasclient" Port="43000" Protocol="tcp" Scope="any" IgnoreFailure="yes" />
-                  </Component>
-                  <Component Id="MSTSCLIB" Guid="{92BA64BF-1EB7-4A53-A796-BE617502C2C3}" Bitness="always64">
-                     <File Id="mstsclib" Name="Interop.MSTSCLib.dll" Source="rapps\rapps\bin\Interop.MSTSCLib.dll" KeyPath="yes" />
-                  </Component>
-                  <Component Id="AxMSTSCLIB" Guid="{3DF510BA-8051-4E94-A367-3F9408851F3E}" Bitness="always64">
-                     <File Id="axmstsclib" Name="AxInterop.MSTSCLib.dll" Source="rapps\rapps\bin\AxInterop.MSTSCLib.dll" KeyPath="yes" />
-                  </Component>
-                  <Component Id="VisualizationsRegistry" Guid="{0519589E-24E5-4778-B996-5AC442BD68B2}" Bitness="always64">
-                     <RegistryKey Root="HKMU" Key="Software\Elbitin">
-                        <RegistryKey Key="RAAS Client">
-                           <RegistryValue Name="Visualizations" Type="string" Value="Installed" KeyPath="yes" />
-                        </RegistryKey>
-                     </RegistryKey>
-                  </Component>
-				  <Component Id="Visualizations6432Registry" Guid="{06C2F310-BBF0-44AA-8A9D-991B8AE0671F}" Bitness="always64">
-                     <RegistryKey Root="HKMU" Key="Software\WOW6432Node\Elbitin">
-                        <RegistryKey Key="RAAS Client">
-                           <RegistryValue Name="Visualizations" Type="string" Value="Installed" KeyPath="yes" />
-                        </RegistryKey>
-                     </RegistryKey>
-                  </Component>
-                  <Component Id="RDesktop" Guid="{EF938604-39B7-4378-AD83-73737B32764B}" Bitness="always64">
-                     <File Id="rdesktop" Name="rdesktop.exe" Source="rdesktop\rdesktop\bin\x64\Release\rdesktop.exe" KeyPath="yes" />
-                     <File Id="rdesktop.pdb" Name="rdesktop.pdb" Source="rdesktop\rdesktop\bin\x64\Release\rdesktop.pdb" />
-                  </Component>
-                  <Component Id="Shortcuts" Guid="{31D99CA7-9865-4B42-98D2-6AE158D883FB}" Bitness="always64">
-                     <File Id="shortcuts" Name="shortcuts.exe" Source="shortcuts\shortcuts\bin\Release\shortcuts.exe" KeyPath="yes" />
-                     <File Id="shortcuts.pdb" Name="shortcuts.pdb" Source="shortcuts\shortcuts\bin\Release\shortcuts.pdb" />
-                     <File Id="shortcuts.exe.config" Name="shortcuts.exe.config" Source="shortcuts\shortcuts\bin\Release\shortcuts.exe.config" />
-                     <fw:FirewallException Name="RAASClientShortcuts" Id="firewallallowshortcuts" File="shortcuts" Port="43000" Protocol="tcp" Scope="any" IgnoreFailure="yes" />
-                  </Component>
-                  <Component Id="RAASClientMsix" Guid="{0E05247A-9220-4AD6-A425-0A88506FC48F}">
-                     <File Id="raasclientmsix" Name="raasclient.msix" Source="raasclientcontextmenu\raasclientcontextmenu.package\bin\AnyCpu\Release\raasclient.msix" KeyPath="yes" />
-                  </Component>
-				  <Component Id="OpenOnRemoteHostCommandVerb" Guid="{69A67FC6-6DF7-4F6D-9D0E-1007FBB659B2}">
-                     <File Id="openonremotehostcommandverb" Name="openonremotehostcommandverb.dll" Source="raasclientcontextmenu\raasclientcontextmenu.package\bin\AnyCPU\Release\openonremotehostcommandverb.dll" KeyPath="yes" />
-                  </Component>
-                  <Component Id="ServerCfg" Guid="{ADF5CFCA-A684-41D6-B33C-0D06A7841B9F}" Bitness="always64">
-                     <File Id="servercfg" Name="servercfg.exe" Source="servercfg\servercfg\bin\Release\servercfg.exe" KeyPath="no" />
-                     <File Id="servercfg.config" Name="servercfg.exe.config" Source="servercfg\servercfg\bin\Release\servercfg.exe.config" />
-                     <File Id="servercfg.pdb" Name="servercfg.pdb" Source="servercfg\servercfg\bin\Release\servercfg.pdb" />
-                     <Shortcut Id="servercfgstartmenushortcut" Name="RAAS Server Configuration" Description="Open RAAS Server Configuration" Directory="ShortcutFolder" Target="[#servercfg]" />
-                     <RegistryValue Root="HKMU" Key="Software\Microsoft\Elbitin\RAAS Client" Name="ServerCfg" Type="integer" Value="1" KeyPath="yes" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\NetServer\shell\ServerConfig" Type="string" Value="RAAS Server Configuration" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\NetServer\shell\ServerConfig\command" Type="string" Value="&quot;[#servercfg]&quot; &quot;%1&quot;" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\NetServer\shell\ServerConfig" Name="Icon" Type="string" Value="[#servercfg],0" Action="write" />
-                  </Component>
-                  <Directory Id="Icons" Name="Icons">
-                     <Component Id="RAASClientIcon" Guid="{3D3EF019-7B43-4223-AE76-82D3DC263B7D}" Bitness="always64">
-                        <File Id="raasclienticon" Name="RAASClientIcon.ico" Source="raasclient\raasclient\RAASClientIcon.ico" KeyPath="yes" />
-                     </Component>                             
-                  </Directory>
-                  <Directory Id="Setup" Name="Setup">
-                     <Component Id="VAidsXml" Guid="{A4DFBBBA-FE8F-4344-9E71-729F4941CCB7}" Bitness="always64">
-                        <File Id="visualizationsxml" Name="visualizations.xml" Source="setup\visualizations.xml" KeyPath="yes" />
-                     </Component>
-                     <Component Id="NSextVisibilityXml" Guid="{C8127F16-05F4-4D1C-ACDF-19E039A1EDB8}" Bitness="always64">
-                        <File Id="nsextvisibilityxml" Name="nsextvisibility.xml" Source="setup\nsextvisibility.xml" KeyPath="yes" />
-                     </Component>
-                     <Component Id="ServersXml" Guid="{872BF31C-EC1D-4970-8E9D-1882AF5A3788}" Bitness="always64">
-                        <File Id="serversxml" Name="servers.xml" Source="setup\servers.xml" KeyPath="yes" />
-                     </Component>
-                     <Component Id="RDesktopXml" Guid="{E62F4B9F-F9B7-4D26-A036-00798348F1B2}" Bitness="always64">
-                        <File Id="rdesktopxml" Name="rdesktop.xml" Source="setup\rdesktop.xml" KeyPath="no" />
-                     </Component>
-                  </Directory>
-				  <Directory Id="Help" Name="Help">
-                     <Component Id="HelpPdf" Guid="{60B8CBE7-9BC9-4C7D-BA6F-DA8925AC08EB}" Bitness="always64">
-                        <File Id="helppdf" Name="RAAS Client.pdf" Source="help\RAAS Client.pdf" KeyPath="yes" />
-                     </Component>
-                  </Directory>
-                  <Directory Id="sv" Name="sv">
-                     <Component Id="LanguagePackSwedish" Guid="{1CAAD605-DB31-49B0-991A-34D0B8987FDF}" Bitness="always64">
-                        <File Id="raasclientlangsv" Name="raasclient.resources.dll" Source="raasclient\raasclient\bin\sv\raasclient.resources.dll" KeyPath="yes" />
-                        <File Id="openremotelangsv" Name="openremote.resources.dll" Source="openremote\openremote\bin\Release\sv\openremote.resources.dll" />
-                        <File Id="rappslangsv" Name="rapps.resources.dll" Source="rapps\rapps\bin\sv\rapps.resources.dll" />
-                        <File Id="remotesclangsv" Name="remotesc.resources.dll" Source="remotesc\remotesc\bin\Release\sv\remotesc.resources.dll" />
-                        <File Id="shortcutslangsv" Name="shortcuts.resources.dll" Source="shortcuts\shortcuts\bin\Release\sv\shortcuts.resources.dll" />
-                        <File Id="servercfglangsv" Name="servercfg.resources.dll" Source="servercfg\servercfg\bin\Release\sv\servercfg.resources.dll" />
-                        <File Id="rdesktoplangsv" Name="rdesktop.resources.dll" Source="rdesktop\rdesktop\bin\x64\Release\sv\rdesktop.resources.dll" />
-                     </Component>
-                  </Directory>
-                  <Directory Id="enUS" Name="en-US">
-                     <Component Id="LanguagePackEnglish" Guid="{92B1159B-19D6-4468-9EBA-0495296C4599}" Bitness="always64">
-                        <File Id="raasclientlangen" Name="raasclient.resources.dll" Source="raasclient\raasclient\bin\en-US\raasclient.resources.dll" KeyPath="yes" />
-                        <File Id="openremotelangen" Name="openremote.resources.dll" Source="openremote\openremote\bin\Release\en-US\openremote.resources.dll" />
-                        <File Id="rappslangen" Name="rapps.resources.dll" Source="rapps\rapps\bin\en-US\rapps.resources.dll" />
-                        <File Id="remotesclangen" Name="remotesc.resources.dll" Source="remotesc\remotesc\bin\Release\en-US\remotesc.resources.dll" />
-                        <File Id="shortcutslangen" Name="shortcuts.resources.dll" Source="shortcuts\shortcuts\bin\Release\en-US\shortcuts.resources.dll" />
-                        <File Id="servercfglangen" Name="servercfg.resources.dll" Source="servercfg\servercfg\bin\Release\en-US\servercfg.resources.dll" />
-                        <File Id="rdesktoplangen" Name="rdesktop.resources.dll" Source="rdesktop\rdesktop\bin\x64\Release\en-US\rdesktop.resources.dll" />
-                     </Component>
-                  </Directory>
-                  <Component Id="CMenuH" Guid="{1DA3E76B-54AD-4583-A387-ADEECE495BA0}" Bitness="always64">
-                     <File Id="cmenuh" Name="cmenuh.dll" Source="cmenuh\x64\Release\cmenuh.dll" KeyPath="yes" />
-                     <File Id="cmenuh.pdb" Name="cmenuh.pdb" Source="cmenuh\x64\Release\cmenuh.pdb" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}" Type="string" Value="cmenuh.ShellExt Class" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}\InprocServer32" Type="string" Value="[#cmenuh]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\*\shellex\ContextMenuHandlers\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}" Type="string" Value="cmenuh.ShellExt" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\lnkfile\shellex\ContextMenuHandlers\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}" Type="string" Value="cmenuh.ShellExt" Action="write" />
-                  </Component>
-                  <Component Id="CMenuH_x86" Guid="{16408C83-0F1A-4AC5-8C27-D20199A47D9C}" Bitness="always64">
-                     <File Id="cmenuh_x86" Name="cmenuh_x86.dll" Source="cmenuh\Release\cmenuh_x86.dll" KeyPath="yes" />
-                     <File Id="cmenuh_x86.pdb" Name="cmenuh_x86.pdb" Source="cmenuh\Release\cmenuh_x86.pdb" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}\InprocServer32" Type="string" Value="[#cmenuh_x86]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\*\shellex\ContextMenuHandlers\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}" Type="string" Value="cmenuh.ShellExt" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\lnkfile\shellex\ContextMenuHandlers\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}" Type="string" Value="cmenuh.ShellExt" Action="write" />
-                  </Component>
-                  <Component Id="DMenuH" Guid="{4FC48BAD-E86E-4F53-AC02-36129B674228}" Bitness="always64">
-                     <File Id="dmenuh" Name="dmenuh.dll" Source="dmenuh\x64\Release\dmenuh.dll" KeyPath="yes" />
-                     <File Id="dmenuh.pdb" Name="dmenuh.pdb" Source="dmenuh\x64\Release\dmenuh.pdb" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt Class" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}\InprocServer32" Type="string" Value="[#dmenuh]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Folder\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Directory\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Drive\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write" />
-                  </Component>
-                  <Component Id="DMenuH_x86" Guid="{09E22B3A-A1B2-4FB4-BFDA-2D75100E1B88}" Bitness="always64">
-                     <File Id="dmenuh_x86" Name="dmenuh_x86.dll" Source="dmenuh\Release\dmenuh_x86.dll" KeyPath="yes" />
-                     <File Id="dmenuh_x86.pdb" Name="dmenuh_x86.pdb" Source="dmenuh\Release\dmenuh_x86.pdb" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt Class" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}\InprocServer32" Type="string" Value="[#dmenuh_x86]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\Folder\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\Directory\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\Drive\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write" />
-                  </Component>
-                  <Component Id="NSExt" Guid="{A828721E-0BC7-46EB-87D7-E2C861CC4B2C}" Bitness="always64">
-                     <File Id="nsext" Name="nsext.dll" Source="nsext\x64\Release\nsext.dll" KeyPath="yes" />
-                     <File Id="nsext.pdb" Name="nsext.pdb" Source="nsext\x64\Release\nsext.pdb" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\InprocServer32" Type="string" Value="[#nsext]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\InprocServer32" Type="string" Value="[#nsext]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\InprocServer32" Type="string" Value="[#nsext]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\ShellFolder" Name="Attributes" Type="integer" Value="3087007744" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Name="System.IsPinnedToNameSpaceTree" Type="integer" Value="1" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Name="SortOrderIndex" Type="integer" Value="32" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\ShellEx\MayChangeDefaultMenu" Type="string" Value="" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\RAASServer\shellex\ContextMenuHandlers\{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Type="string" Value="{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\ShellEx\MayChangeDefaultMenu" Type="string" Value="" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\RAASClientRealFolder\Background\shellex\ContextMenuHandlers\{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Type="string" Value="{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Type="string" Value="" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Name" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="RelativePath" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="ParsingName" Type="string" Value="shell:::{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Attributes" Type="integer" Value="1" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Category" Type="integer" Value="4" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" Name="{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Type="integer" Value="1" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Elbitin\RAAS Client\NSext" Name="logLevel" Type="integer" Value="11" />
-                  </Component>
-                  <Component Id="NSExt_x86" Guid="{4D3786E9-30AD-4F6C-9CE3-66339934888E}" Bitness="always64">
-                     <File Id="nsext_x86" Name="nsext_x86.dll" Source="nsext\Release\nsext_x86.dll" KeyPath="yes" />
-                     <File Id="nsext_x86.pdb" Name="nsext_x86.pdb" Source="nsext\Release\nsext_x86.pdb" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\InprocServer32" Type="string" Value="[#nsext_x86]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\InprocServer32" Type="string" Value="[#nsext_x86]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\InprocServer32" Type="string" Value="[#nsext_x86]" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\ShellFolder" Name="Attributes" Type="integer" Value="3087007744" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Name="System.IsPinnedToNameSpaceTree" Type="integer" Value="1" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Name="SortOrderIndex" Type="integer" Value="32" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\ShellEx\MayChangeDefaultMenu" Type="string" Value="" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\RAASServer\shellex\ContextMenuHandlers\{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Type="string" Value="{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\ShellEx\MayChangeDefaultMenu" Type="string" Value="" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\RAASClientRealFolder\Background\shellex\ContextMenuHandlers\{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Type="string" Value="{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Action="write" />
-                     <RegistryValue Root="HKMU" Key="Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Type="string" Value="" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Name" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="RelativePath" Type="string" Value="RAAS Client" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="ParsingName" Type="string" Value="shell:::{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Attributes" Type="integer" Value="1" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Category" Type="integer" Value="4" Action="write" />
-                     <RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Elbitin\RAAS Client\NSext" Name="logLevel" Type="integer" Value="11" />
-                  </Component>
-                  <Component Id="NSExtRegistry" Guid="{9D35F4ED-D5CF-4D60-9168-45C71A93C321}" Bitness="always64">
-                     <RegistryKey Root="HKMU" Key="Software\Elbitin">
-                        <RegistryKey Key="RAAS Client">
-                           <RegistryValue Name="NSExt" Type="string" Value="Installed" KeyPath="yes" />
-                        </RegistryKey>
-                     </RegistryKey>
-                  </Component>
-				  <Component Id="NSExt6432Registry" Guid="{4E12AE74-0DD3-4603-8BC3-1D769686B160}" Bitness="always64">
-                     <RegistryKey Root="HKMU" Key="Software\WOW6432Node\Elbitin">
-                        <RegistryKey Key="RAAS Client">
-                           <RegistryValue Name="NSExt" Type="string" Value="Installed" KeyPath="yes" />
-                        </RegistryKey>
-                     </RegistryKey>
-                  </Component>
-               </Directory>
-            </Directory>
-         </StandardDirectory>
-         <StandardDirectory Id="ProgramMenuFolder">
-            <Directory Id="ShortcutFolder" Name="RAAS Client">
-               <Component Id="UninstallShortcut" Guid="{BCF35DD4-007D-4D52-A811-8AC511C3E55E}">
-                  <Shortcut Id="Uninstall" Name="Uninstall" Description="Uninstalls RAAS Client" Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]" />
-                  <RemoveFolder Id="RemoveStartMenuFolder" On="uninstall" />
-                  <RegistryValue Root="HKMU" Key="Software\Elbitin\RAAS Client" Name="installed" Type="integer" Value="1" KeyPath="yes" />
-               </Component>
-            </Directory>
-         </StandardDirectory>
-      </Package>
+	<Package Name="RAAS Client" Language="!(loc.ProductLanguage)" Version="$(env.RAASClientVersion)" Manufacturer="Elbitin" UpgradeCode="{5C11B9AD-1287-4CCC-BAD4-D6DE29D24F4F}" InstallerVersion="200" Scope="perMachine">
+		<SummaryInformation Description="Windows Installer package for Remote Application Access Station" Manufacturer="Elbitin"/>
+		<MajorUpgrade Schedule="afterInstallInitialize" DowngradeErrorMessage="A later version of [ProductName] is already installed" AllowDowngrades="no" AllowSameVersionUpgrades="yes"/>
+		<Icon Id="RAASClient.ico" SourceFile="raasclient\raasclient\raasclienticon.ico"/>
+		<Property Id="ARPPRODUCTICON" Value="RAASClient.ico"/>
+		<Property Id="MSIXFILE" Value="raasclient.msix" Secure="yes"/>
+		<Property Id="MSIXAPPNAME" Value="Elbitin.Applications.RAAS.RAASClient" Secure="yes"/>
+		<PropertyRef Id="WIX_IS_NETFRAMEWORK_48_OR_LATER_INSTALLED"/>
+		<Launch Message="[ProductName] requires .NET Framework 4.8" Condition="Installed OR WIX_IS_NETFRAMEWORK_48_OR_LATER_INSTALLED"/>
+		<netfx:DotNetCompatibilityCheck Property="DOTNETRUNTIMECHECK" RollForward="major" RuntimeType="desktop" Platform="x64" Version="9.0.0"/>
+		<MediaTemplate EmbedCab="yes"/>
+		<ui:WixUI Id="WixUI_Advanced"/>
+		<CustomAction Id="RemoveRAASClientShortcuts" ExeCommand="-uninstall" Execute="immediate" Return="check" FileRef="shortcuts"/>
+		<CustomAction Id="KillRAASClient" ExeCommand="-kill" Execute="immediate" Return="check" FileRef="raasclient"/>
+		<CustomAction Id="KillRemoteApps" ExeCommand="-kill" Execute="immediate" Return="check" FileRef="rapps"/>
+		<CustomAction Id="KillServerConfig" ExeCommand="-kill" Execute="immediate" Return="check" FileRef="servercfg"/>
+		<Binary Id="CustomActionsDLL" SourceFile="customactions\bin\Release\CustomActions.CA.dll"/>
+		<CustomAction Id="InstallRAASClientContextMenu" Impersonate="yes" BinaryRef="CustomActionsDLL" DllEntry="InstallRAASClientContextMenu"/>
+		<CustomAction Id="UninstallRAASClientContextMenu" Impersonate="yes" BinaryRef="CustomActionsDLL" DllEntry="UninstallRAASClientContextMenu"/>
+		<InstallExecuteSequence>
+			<Custom Action="InstallRAASClientContextMenu" After="InstallFinalize" Condition="NOT Installed"/>
+			<Custom Action="UninstallRAASClientContextMenu" Before="RemoveFiles" Condition="Installed AND NOT REINSTALL"/>
+			<Custom Action="KillRAASClient" Before="RemoveFiles" Condition="Installed AND NOT REINSTALL"/>
+			<Custom Action="KillRemoteApps" Before="RemoveFiles" Condition="Installed AND NOT REINSTALL"/>
+			<Custom Action="KillServerConfig" Before="RemoveFiles" Condition="Installed AND NOT REINSTALL"/>
+			<Custom Action="RemoveRAASClientShortcuts" Before="RemoveFiles" Condition="(&amp;RAASClientShortcuts=2) AND (!RAASClientShortcuts=3)AND Installed AND NOT REINSTALL"/>
+		</InstallExecuteSequence>
+		<Property Id="ApplicationFolderName" Value="Elbitin\RAAS Client"/>
+		<Property Id="WixAppFolder" Value="WixPerMachineFolder"/>
+		<Property Id="MSIRESTARTMANAGERCONTROL" Value="Disable"/>
+		<Property Id="REBOOT" Value="Force"/>
+		<WixVariable Id="WixUILicenseRtf" Value="license.rtf"/>
+		<Feature Id="RAASClient" Title="RAAS Client" Level="1" AllowAbsent="no">
+			<ComponentRef Id="RAASClient"/>
+			<ComponentRef Id="RAASClientMsix"/>
+			<ComponentRef Id="OpenOnRemoteHostCommandVerb"/>
+			<ComponentRef Id="RemoteApps"/>
+			<ComponentRef Id="MSTSCLIB"/>
+			<ComponentRef Id="AxMSTSCLIB"/>
+			<ComponentRef Id="OpenRemote"/>
+			<ComponentRef Id="RDesktop"/>
+			<ComponentRef Id="ConnectShares"/>
+			<ComponentRef Id="ConnectSharesAdmin"/>
+			<ComponentRef Id="UninstallShortcut"/>
+			<ComponentRef Id="ServerCfg"/>
+			<ComponentRef Id="VAidsXml"/>
+			<ComponentRef Id="RAASClientIcon"/>
+			<ComponentRef Id="NSextVisibilityXml"/>
+			<ComponentRef Id="ServersXml"/>
+			<ComponentRef Id="RDesktopXml"/>
+			<ComponentRef Id="HelpPdf"/>
+			<ComponentRef Id="InstallDirRegistry"/>
+			<ComponentRef Id="InstallDir6432Registry"/>
+			<ComponentRef Id="CMenuH"/>
+			<ComponentRef Id="CMenuH_x86"/>
+			<ComponentRef Id="LanguagePackEnglish"/>
+			<ComponentRef Id="LanguagePackSwedish"/>
+			<Feature Id="Visualizations" Title="!(loc.VisualizationsTitle)" Description="!(loc.VisualizationsDescription)" Level="1">
+				<ComponentRef Id="VisualizationsRegistry"/>
+				<ComponentRef Id="Visualizations6432Registry"/>
+			</Feature>
+			<Feature Id="RAASClientShellNamespaceExt" Title="!(loc.NamespaceTitle)" Description="!(loc.NamespaceDescription)" Level="1">
+				<ComponentRef Id="NSExt"/>
+				<ComponentRef Id="NSExt_x86"/>
+				<ComponentRef Id="NSExtRegistry"/>
+				<ComponentRef Id="NSExt6432Registry"/>
+			</Feature>
+			<Feature Id="RAASClientShortcuts" Title="!(loc.ShortcutsTitle)" Description="!(loc.ShortcutsDescription)" Level="1">
+				<ComponentRef Id="Shortcuts"/>
+				<ComponentRef Id="RemoteSc"/>
+				<ComponentRef Id="DMenuH"/>
+				<ComponentRef Id="DMenuH_x86"/>
+				<ComponentRef Id="ShortcutsRegistry"/>
+				<ComponentRef Id="Shortcuts6432Registry"/>
+			</Feature>
+		</Feature>
+		<StandardDirectory Id="ProgramFiles64Folder">
+			<Directory Id="CompanyFolder" Name="Elbitin">
+				<Directory Id="APPLICATIONFOLDER" Name="RAAS Client">
+					<Component Id="InstallDirRegistry" Guid="{3D304858-7C78-46E7-AED2-EB71353972D6}" Bitness="always64">
+						<RegistryKey Root="HKMU" Key="Software\Elbitin">
+							<RegistryKey Key="RAAS Client">
+								<RegistryValue Name="InstallDir" Type="string" Value="[APPLICATIONFOLDER]" KeyPath="yes"/>
+							</RegistryKey>
+						</RegistryKey>
+					</Component>
+					<Component Id="InstallDir6432Registry" Guid="{4F9ACA42-CA72-48BE-A755-7B42FA0388EE}" Bitness="always64">
+						<RegistryKey Root="HKMU" Key="Software\WOW6432Node\Elbitin">
+							<RegistryKey Key="RAAS Client">
+								<RegistryValue Name="InstallDir" Type="string" Value="[APPLICATIONFOLDER]" KeyPath="yes"/>
+							</RegistryKey>
+						</RegistryKey>
+					</Component>
+					<Component Id="ShortcutsRegistry" Guid="{CDDD9E7D-D55C-4F38-96C8-A1A514629863}" Bitness="always64">
+						<RegistryKey Root="HKMU" Key="Software\WOW6432Node\Elbitin">
+							<RegistryKey Key="RAAS Client">
+								<RegistryValue Name="Shortcuts" Type="string" Value="Installed" KeyPath="yes"/>
+							</RegistryKey>
+						</RegistryKey>
+					</Component>
+					<Component Id="Shortcuts6432Registry" Guid="{AFCE23F7-124B-4A37-B708-929BA8548F22}" Bitness="always64">
+						<RegistryKey Root="HKMU" Key="Software\Elbitin">
+							<RegistryKey Key="RAAS Client">
+								<RegistryValue Name="Shortcuts" Type="string" Value="Installed" KeyPath="yes"/>
+							</RegistryKey>
+						</RegistryKey>
+					</Component>
+					<Component Id="OpenRemote" Guid="{F7D72A6A-8D30-465F-90F4-9C00EB858B66}" Bitness="always64">
+						<File Id="openremote" Name="openremote.exe" Source="openremote\openremote\bin\Release\openremote.exe" KeyPath="yes"/>
+						<File Id="openremote.exe.config" Name="openremote.exe.config" Source="openremote\openremote\bin\Release\openremote.exe.config"/>
+						<File Id="openremote.pdb" Name="openremote.pdb" Source="openremote\openremote\bin\Release\openremote.pdb"/>
+						<fw:FirewallException Name="OpenRemote" Id="firewallallowopenremote" File="openremote" Port="43000" Protocol="tcp" Scope="any" IgnoreFailure="yes"/>
+					</Component>
+					<Component Id="ConnectShares" Guid="{A87B41B0-934C-40AE-800F-FA8E265EAA76}" Bitness="always64">
+						<File Id="connectshares" Name="connectshares.exe" Source="connectshares\connectshares\bin\Release\connectshares.exe" KeyPath="yes"/>
+						<File Id="connectshares.pdb" Name="connectshares.pdb" Source="connectshares\connectshares\bin\Release\connectshares.pdb"/>
+					</Component>
+					<Component Id="ConnectSharesAdmin" Guid="{D271E8C8-72C5-4CEE-8C05-D901E83896DB}" Bitness="always64">
+						<File Id="connectsharesadmin" Name="connectsharesadmin.exe" Source="connectsharesadmin\connectsharesadmin\bin\Release\connectsharesadmin.exe" KeyPath="yes"/>
+						<File Id="connectsharesadmin.pdb" Name="connectsharesadmin.pdb" Source="connectsharesadmin\connectsharesadmin\bin\Release\connectsharesadmin.pdb"/>
+					</Component>
+					<Component Id="RemoteSc" Guid="{EB8342F5-1EB5-46B4-A033-3976840F57BA}" Bitness="always64">
+						<File Id="remotesc" Name="remotesc.exe" Source="remotesc\remotesc\bin\Release\remotesc.exe" KeyPath="yes"/>
+						<File Id="remotesc.exe.config" Name="remotesc.exe.config" Source="remotesc\remotesc\bin\Release\remotesc.exe.config"/>
+						<File Id="remotesc.pdb" Name="remotesc.pdb" Source="remotesc\remotesc\bin\Release\remotesc.pdb"/>
+						<fw:FirewallException Name="RemoteSc" Id="firewallallowremotesc" File="remotesc" Port="43000" Protocol="tcp" Scope="any" IgnoreFailure="yes"/>
+					</Component>
+					<Component Id="RAASClient" Guid="{C06478A6-8E4F-45DA-9DBB-AA217EAA1F52}" Bitness="always64">
+						<File Id="raasclient" Name="raasclient.exe" Source="raasclient\raasclient\bin\raasclient.exe" KeyPath="no"/>
+						<File Id="raasclient.config" Name="raasclient.exe.config" Source="raasclient\raasclient\bin\raasclient.exe.config"/>
+						<File Id="raasclient.pdb" Name="raasclient.pdb" Source="raasclient\raasclient\bin\raasclient.pdb"/>
+						<File Id="System.Runtime.dll" Name="System.Runtime.dll" Source="raasclient\raasclient\bin\System.Runtime.dll"/>
+						<File Id="Serilog.dll" Name="Serilog.dll" Source="raasclient\raasclient\bin\Serilog.dll"/>
+						<File Id="Serilog.Sinks.File.dll" Name="Serilog.Sinks.File.dll" Source="raasclient\raasclient\bin\Serilog.Sinks.File.dll"/>
+						<Shortcut Id="raasclientstartmenushortcut" Name="RAAS Client" Description="Open RAAS Client" Directory="ShortcutFolder" Target="[#raasclient]">
+							<ShortcutProperty Key="System.AppUserModel.ID" Value="Elbitin.RAASClient"/>
+						</Shortcut>
+						<Shortcut Id="raasclientdesktopshortcut" Name="RAAS Client" Description="Open RAAS Client" Directory="DesktopFolder" Target="[#raasclient]"/>
+						<RegistryValue Root="HKMU" Key="Software\Elbitin\RAAS Client" Name="RAAS Client" Type="integer" Value="1" KeyPath="yes"/>
+						<RegistryValue Root="HKMU" Key="Software\Elbitin\RAAS Client" Name="minimumLogLevelApplications" Type="integer" Value="1"/>
+						<RegistryValue Root="HKMU" Key="Software\Elbitin\RAAS Client" Name="Version" Type="string" Value="$(env.RAASClientVersion)" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\WOW6432Node\Elbitin\RAAS Client" Name="RAAS Client" Type="integer" Value="1" KeyPath="no"/>
+						<RegistryValue Root="HKMU" Key="Software\WOW6432Node\Elbitin\RAAS Client" Name="minimumLogLevelApplications" Type="integer" Value="1"/>
+						<RegistryValue Root="HKMU" Key="Software\WOW6432Node\Elbitin\RAAS Client" Name="Version" Type="string" Value="$(env.RAASClientVersion)" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Microsoft\Windows\CurrentVersion\Run" Type="string" Name="RAAS Client" Value="[#raasclient]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\DefaultIcon" Type="string" Value="[#raasclient], 0" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\DefaultIcon" Type="string" Value="[#raasclient], 0" Action="write"/>
+					</Component>
+					<Component Id="RemoteApps" Guid="{A34068CF-7D82-453D-9350-7B6973171EFC}" Bitness="always64">
+						<File Id="rapps" Name="rapps.exe" Source="rapps\rapps\bin\rapps.exe" KeyPath="yes"/>
+						<File Id="rapps.config" Name="rapps.exe.config" Source="rapps\rapps\bin\rapps.exe.config"/>
+						<File Id="rapps.pdb" Name="rapps.pdb" Source="rapps\rapps\bin\rapps.pdb"/>
+						<fw:FirewallException Name="RAAS Client" Id="firewallallowraasclient" File="raasclient" Port="43000" Protocol="tcp" Scope="any" IgnoreFailure="yes"/>
+					</Component>
+					<Component Id="MSTSCLIB" Guid="{92BA64BF-1EB7-4A53-A796-BE617502C2C3}" Bitness="always64">
+						<File Id="mstsclib" Name="Interop.MSTSCLib.dll" Source="rapps\rapps\bin\Interop.MSTSCLib.dll" KeyPath="yes"/>
+					</Component>
+					<Component Id="AxMSTSCLIB" Guid="{3DF510BA-8051-4E94-A367-3F9408851F3E}" Bitness="always64">
+						<File Id="axmstsclib" Name="AxInterop.MSTSCLib.dll" Source="rapps\rapps\bin\AxInterop.MSTSCLib.dll" KeyPath="yes"/>
+					</Component>
+					<Component Id="VisualizationsRegistry" Guid="{0519589E-24E5-4778-B996-5AC442BD68B2}" Bitness="always64">
+						<RegistryKey Root="HKMU" Key="Software\Elbitin">
+							<RegistryKey Key="RAAS Client">
+								<RegistryValue Name="Visualizations" Type="string" Value="Installed" KeyPath="yes"/>
+							</RegistryKey>
+						</RegistryKey>
+					</Component>
+					<Component Id="Visualizations6432Registry" Guid="{06C2F310-BBF0-44AA-8A9D-991B8AE0671F}" Bitness="always64">
+						<RegistryKey Root="HKMU" Key="Software\WOW6432Node\Elbitin">
+							<RegistryKey Key="RAAS Client">
+								<RegistryValue Name="Visualizations" Type="string" Value="Installed" KeyPath="yes"/>
+							</RegistryKey>
+						</RegistryKey>
+					</Component>
+					<Component Id="RDesktop" Guid="{EF938604-39B7-4378-AD83-73737B32764B}" Bitness="always64">
+						<File Id="rdesktop" Name="rdesktop.exe" Source="rdesktop\rdesktop\bin\x64\Release\rdesktop.exe" KeyPath="yes"/>
+						<File Id="rdesktop.pdb" Name="rdesktop.pdb" Source="rdesktop\rdesktop\bin\x64\Release\rdesktop.pdb"/>
+					</Component>
+					<Component Id="Shortcuts" Guid="{31D99CA7-9865-4B42-98D2-6AE158D883FB}" Bitness="always64">
+						<File Id="shortcuts" Name="shortcuts.exe" Source="shortcuts\shortcuts\bin\Release\shortcuts.exe" KeyPath="yes"/>
+						<File Id="shortcuts.pdb" Name="shortcuts.pdb" Source="shortcuts\shortcuts\bin\Release\shortcuts.pdb"/>
+						<File Id="shortcuts.exe.config" Name="shortcuts.exe.config" Source="shortcuts\shortcuts\bin\Release\shortcuts.exe.config"/>
+						<fw:FirewallException Name="RAASClientShortcuts" Id="firewallallowshortcuts" File="shortcuts" Port="43000" Protocol="tcp" Scope="any" IgnoreFailure="yes"/>
+					</Component>
+					<Component Id="RAASClientMsix" Guid="{0E05247A-9220-4AD6-A425-0A88506FC48F}">
+						<File Id="raasclientmsix" Name="raasclient.msix" Source="raasclientcontextmenu\raasclientcontextmenu.package\bin\AnyCpu\Release\raasclient.msix" KeyPath="yes"/>
+					</Component>
+					<Component Id="OpenOnRemoteHostCommandVerb" Guid="{69A67FC6-6DF7-4F6D-9D0E-1007FBB659B2}">
+						<File Id="openonremotehostcommandverb" Name="openonremotehostcommandverb.dll" Source="raasclientcontextmenu\raasclientcontextmenu.package\bin\AnyCPU\Release\openonremotehostcommandverb.dll" KeyPath="yes"/>
+					</Component>
+					<Component Id="ServerCfg" Guid="{ADF5CFCA-A684-41D6-B33C-0D06A7841B9F}" Bitness="always64">
+						<File Id="servercfg" Name="servercfg.exe" Source="servercfg\servercfg\bin\Release\servercfg.exe" KeyPath="no"/>
+						<File Id="servercfg.config" Name="servercfg.exe.config" Source="servercfg\servercfg\bin\Release\servercfg.exe.config"/>
+						<File Id="servercfg.pdb" Name="servercfg.pdb" Source="servercfg\servercfg\bin\Release\servercfg.pdb"/>
+						<Shortcut Id="servercfgstartmenushortcut" Name="RAAS Server Configuration" Description="Open RAAS Server Configuration" Directory="ShortcutFolder" Target="[#servercfg]"/>
+						<RegistryValue Root="HKMU" Key="Software\Microsoft\Elbitin\RAAS Client" Name="ServerCfg" Type="integer" Value="1" KeyPath="yes"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\NetServer\shell\ServerConfig" Type="string" Value="RAAS Server Configuration" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\NetServer\shell\ServerConfig\command" Type="string" Value="&quot;[#servercfg]&quot; &quot;%1&quot;" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\NetServer\shell\ServerConfig" Name="Icon" Type="string" Value="[#servercfg],0" Action="write"/>
+					</Component>
+					<Directory Id="Icons" Name="Icons">
+						<Component Id="RAASClientIcon" Guid="{3D3EF019-7B43-4223-AE76-82D3DC263B7D}" Bitness="always64">
+							<File Id="raasclienticon" Name="RAASClientIcon.ico" Source="raasclient\raasclient\RAASClientIcon.ico" KeyPath="yes"/>
+						</Component>
+					</Directory>
+					<Directory Id="Setup" Name="Setup">
+						<Component Id="VAidsXml" Guid="{A4DFBBBA-FE8F-4344-9E71-729F4941CCB7}" Bitness="always64">
+							<File Id="visualizationsxml" Name="visualizations.xml" Source="setup\visualizations.xml" KeyPath="yes"/>
+						</Component>
+						<Component Id="NSextVisibilityXml" Guid="{C8127F16-05F4-4D1C-ACDF-19E039A1EDB8}" Bitness="always64">
+							<File Id="nsextvisibilityxml" Name="nsextvisibility.xml" Source="setup\nsextvisibility.xml" KeyPath="yes"/>
+						</Component>
+						<Component Id="ServersXml" Guid="{872BF31C-EC1D-4970-8E9D-1882AF5A3788}" Bitness="always64">
+							<File Id="serversxml" Name="servers.xml" Source="setup\servers.xml" KeyPath="yes"/>
+						</Component>
+						<Component Id="RDesktopXml" Guid="{E62F4B9F-F9B7-4D26-A036-00798348F1B2}" Bitness="always64">
+							<File Id="rdesktopxml" Name="rdesktop.xml" Source="setup\rdesktop.xml" KeyPath="no"/>
+						</Component>
+					</Directory>
+					<Directory Id="Help" Name="Help">
+						<Component Id="HelpPdf" Guid="{60B8CBE7-9BC9-4C7D-BA6F-DA8925AC08EB}" Bitness="always64">
+							<File Id="helppdf" Name="RAAS Client.pdf" Source="help\RAAS Client.pdf" KeyPath="yes"/>
+						</Component>
+					</Directory>
+					<Directory Id="sv" Name="sv">
+						<Component Id="LanguagePackSwedish" Guid="{1CAAD605-DB31-49B0-991A-34D0B8987FDF}" Bitness="always64">
+							<File Id="raasclientlangsv" Name="raasclient.resources.dll" Source="raasclient\raasclient\bin\sv\raasclient.resources.dll" KeyPath="yes"/>
+							<File Id="openremotelangsv" Name="openremote.resources.dll" Source="openremote\openremote\bin\Release\sv\openremote.resources.dll"/>
+							<File Id="rappslangsv" Name="rapps.resources.dll" Source="rapps\rapps\bin\sv\rapps.resources.dll"/>
+							<File Id="remotesclangsv" Name="remotesc.resources.dll" Source="remotesc\remotesc\bin\Release\sv\remotesc.resources.dll"/>
+							<File Id="shortcutslangsv" Name="shortcuts.resources.dll" Source="shortcuts\shortcuts\bin\Release\sv\shortcuts.resources.dll"/>
+							<File Id="servercfglangsv" Name="servercfg.resources.dll" Source="servercfg\servercfg\bin\Release\sv\servercfg.resources.dll"/>
+							<File Id="rdesktoplangsv" Name="rdesktop.resources.dll" Source="rdesktop\rdesktop\bin\x64\Release\sv\rdesktop.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="enUS" Name="en-US">
+						<Component Id="LanguagePackEnglish" Guid="{92B1159B-19D6-4468-9EBA-0495296C4599}" Bitness="always64">
+							<File Id="raasclientlangen" Name="raasclient.resources.dll" Source="raasclient\raasclient\bin\en-US\raasclient.resources.dll" KeyPath="yes"/>
+							<File Id="openremotelangen" Name="openremote.resources.dll" Source="openremote\openremote\bin\Release\en-US\openremote.resources.dll"/>
+							<File Id="rappslangen" Name="rapps.resources.dll" Source="rapps\rapps\bin\en-US\rapps.resources.dll"/>
+							<File Id="remotesclangen" Name="remotesc.resources.dll" Source="remotesc\remotesc\bin\Release\en-US\remotesc.resources.dll"/>
+							<File Id="shortcutslangen" Name="shortcuts.resources.dll" Source="shortcuts\shortcuts\bin\Release\en-US\shortcuts.resources.dll"/>
+							<File Id="servercfglangen" Name="servercfg.resources.dll" Source="servercfg\servercfg\bin\Release\en-US\servercfg.resources.dll"/>
+							<File Id="rdesktoplangen" Name="rdesktop.resources.dll" Source="rdesktop\rdesktop\bin\x64\Release\en-US\rdesktop.resources.dll"/>
+						</Component>
+					</Directory>
+					<Component Id="CMenuH" Guid="{1DA3E76B-54AD-4583-A387-ADEECE495BA0}" Bitness="always64">
+						<File Id="cmenuh" Name="cmenuh.dll" Source="cmenuh\x64\Release\cmenuh.dll" KeyPath="yes"/>
+						<File Id="cmenuh.pdb" Name="cmenuh.pdb" Source="cmenuh\x64\Release\cmenuh.pdb"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}" Type="string" Value="cmenuh.ShellExt Class" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}\InprocServer32" Type="string" Value="[#cmenuh]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\*\shellex\ContextMenuHandlers\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}" Type="string" Value="cmenuh.ShellExt" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\lnkfile\shellex\ContextMenuHandlers\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}" Type="string" Value="cmenuh.ShellExt" Action="write"/>
+					</Component>
+					<Component Id="CMenuH_x86" Guid="{16408C83-0F1A-4AC5-8C27-D20199A47D9C}" Bitness="always64">
+						<File Id="cmenuh_x86" Name="cmenuh_x86.dll" Source="cmenuh\Release\cmenuh_x86.dll" KeyPath="yes"/>
+						<File Id="cmenuh_x86.pdb" Name="cmenuh_x86.pdb" Source="cmenuh\Release\cmenuh_x86.pdb"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}\InprocServer32" Type="string" Value="[#cmenuh_x86]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\*\shellex\ContextMenuHandlers\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}" Type="string" Value="cmenuh.ShellExt" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\lnkfile\shellex\ContextMenuHandlers\{1D5F87BE-0BC0-4842-A82C-12ECF6087056}" Type="string" Value="cmenuh.ShellExt" Action="write"/>
+					</Component>
+					<Component Id="DMenuH" Guid="{4FC48BAD-E86E-4F53-AC02-36129B674228}" Bitness="always64">
+						<File Id="dmenuh" Name="dmenuh.dll" Source="dmenuh\x64\Release\dmenuh.dll" KeyPath="yes"/>
+						<File Id="dmenuh.pdb" Name="dmenuh.pdb" Source="dmenuh\x64\Release\dmenuh.pdb"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt Class" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}\InprocServer32" Type="string" Value="[#dmenuh]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Folder\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Directory\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Drive\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write"/>
+					</Component>
+					<Component Id="DMenuH_x86" Guid="{09E22B3A-A1B2-4FB4-BFDA-2D75100E1B88}" Bitness="always64">
+						<File Id="dmenuh_x86" Name="dmenuh_x86.dll" Source="dmenuh\Release\dmenuh_x86.dll" KeyPath="yes"/>
+						<File Id="dmenuh_x86.pdb" Name="dmenuh_x86.pdb" Source="dmenuh\Release\dmenuh_x86.pdb"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt Class" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}\InprocServer32" Type="string" Value="[#dmenuh_x86]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{9521B536-03E5-4A80-8ED0-ABD54F420A65}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\Folder\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\Directory\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\Drive\shellex\DragDropHandlers\{9521B536-03E5-4A80-8ED0-ABD54F420A65}" Type="string" Value="dmenuh.ShellExt" Action="write"/>
+					</Component>
+					<Component Id="NSExt" Guid="{A828721E-0BC7-46EB-87D7-E2C861CC4B2C}" Bitness="always64">
+						<File Id="nsext" Name="nsext.dll" Source="nsext\x64\Release\nsext.dll" KeyPath="yes"/>
+						<File Id="nsext.pdb" Name="nsext.pdb" Source="nsext\x64\Release\nsext.pdb"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\InprocServer32" Type="string" Value="[#nsext]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\InprocServer32" Type="string" Value="[#nsext]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\InprocServer32" Type="string" Value="[#nsext]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\ShellFolder" Name="Attributes" Type="integer" Value="3087007744" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Name="System.IsPinnedToNameSpaceTree" Type="integer" Value="1" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Name="SortOrderIndex" Type="integer" Value="32" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\ShellEx\MayChangeDefaultMenu" Type="string" Value="" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\RAASServer\shellex\ContextMenuHandlers\{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Type="string" Value="{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\ShellEx\MayChangeDefaultMenu" Type="string" Value="" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\RAASClientRealFolder\Background\shellex\ContextMenuHandlers\{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Type="string" Value="{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Type="string" Value="" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Name" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="RelativePath" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="ParsingName" Type="string" Value="shell:::{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Attributes" Type="integer" Value="1" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Category" Type="integer" Value="4" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" Name="{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Type="integer" Value="1" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Elbitin\RAAS Client\NSext" Name="logLevel" Type="integer" Value="11"/>
+					</Component>
+					<Component Id="NSExt_x86" Guid="{4D3786E9-30AD-4F6C-9CE3-66339934888E}" Bitness="always64">
+						<File Id="nsext_x86" Name="nsext_x86.dll" Source="nsext\Release\nsext_x86.dll" KeyPath="yes"/>
+						<File Id="nsext_x86.pdb" Name="nsext_x86.pdb" Source="nsext\Release\nsext_x86.pdb"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\InprocServer32" Type="string" Value="[#nsext_x86]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\InprocServer32" Type="string" Value="[#nsext_x86]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\InprocServer32" Type="string" Value="[#nsext_x86]" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\InprocServer32" Name="ThreadingModel" Type="string" Value="Apartment" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}\ShellFolder" Name="Attributes" Type="integer" Value="3087007744" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Name="System.IsPinnedToNameSpaceTree" Type="integer" Value="1" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Name="SortOrderIndex" Type="integer" Value="32" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{55277D42-0F81-4F67-B0CA-11FC97062AE8}\ShellEx\MayChangeDefaultMenu" Type="string" Value="" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\RAASServer\shellex\ContextMenuHandlers\{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Type="string" Value="{55277D42-0F81-4F67-B0CA-11FC97062AE8}" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\CLSID\{0C106E1A-5D44-41D4-8234-064AC3FE103B}\ShellEx\MayChangeDefaultMenu" Type="string" Value="" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Classes\Wow6432Node\RAASClientRealFolder\Background\shellex\ContextMenuHandlers\{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Type="string" Value="{0C106E1A-5D44-41D4-8234-064AC3FE103B}" Action="write"/>
+						<RegistryValue Root="HKMU" Key="Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Type="string" Value="" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Name" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="RelativePath" Type="string" Value="RAAS Client" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="ParsingName" Type="string" Value="shell:::{7223EA74-0FAC-4ED0-B347-C01FD2D0FE1A}" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Attributes" Type="integer" Value="1" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E0926EA5-CE37-4402-AB3D-67299387FA58}" Name="Category" Type="integer" Value="4" Action="write"/>
+						<RegistryValue Root="HKMU" Key="SOFTWARE\Wow6432Node\Elbitin\RAAS Client\NSext" Name="logLevel" Type="integer" Value="11"/>
+					</Component>
+					<Component Id="NSExtRegistry" Guid="{9D35F4ED-D5CF-4D60-9168-45C71A93C321}" Bitness="always64">
+						<RegistryKey Root="HKMU" Key="Software\Elbitin">
+							<RegistryKey Key="RAAS Client">
+								<RegistryValue Name="NSExt" Type="string" Value="Installed" KeyPath="yes"/>
+							</RegistryKey>
+						</RegistryKey>
+					</Component>
+					<Component Id="NSExt6432Registry" Guid="{4E12AE74-0DD3-4603-8BC3-1D769686B160}" Bitness="always64">
+						<RegistryKey Root="HKMU" Key="Software\WOW6432Node\Elbitin">
+							<RegistryKey Key="RAAS Client">
+								<RegistryValue Name="NSExt" Type="string" Value="Installed" KeyPath="yes"/>
+							</RegistryKey>
+						</RegistryKey>
+					</Component>
+				</Directory>
+			</Directory>
+		</StandardDirectory>
+		<StandardDirectory Id="ProgramMenuFolder">
+			<Directory Id="ShortcutFolder" Name="RAAS Client">
+				<Component Id="UninstallShortcut" Guid="{BCF35DD4-007D-4D52-A811-8AC511C3E55E}">
+					<Shortcut Id="Uninstall" Name="Uninstall" Description="Uninstalls RAAS Client" Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]"/>
+					<RemoveFolder Id="RemoveStartMenuFolder" On="uninstall"/>
+					<RegistryValue Root="HKMU" Key="Software\Elbitin\RAAS Client" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+				</Component>
+			</Directory>
+		</StandardDirectory>
+	</Package>
 </Wix>
