@@ -28,7 +28,7 @@ Windows 10 SDK, version 10.0.26100.0 needs to be installed
 Visual Studio 2022 needs to be intalled
 .NET CLI needs to be install
 .NET Framework 4.8 development tools needs to be installed
-.NET 8 SDK needs to be installed
+.NET 8.0 SDK needs to be installed
 WiX Toolset v5.0.2 needs to be installed
 
 - dotnet tool install --global wix --version 5.0.2
