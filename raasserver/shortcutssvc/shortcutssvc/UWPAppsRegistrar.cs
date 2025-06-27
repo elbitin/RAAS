@@ -219,8 +219,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                     throw new Exception("Import-Module appx error");
             }
             ParseAppNames();
-            //if (!(appNames.App.Count() > 0))
-            //    throw new Exception("UWP appNames.App empty");
             invoker = PowerShell.Create(runspace);
             var appxList = invoker.AddCommand("Get-AppxPackage").AddParameter("AllUsers", true).Invoke();
             success = !invoker.HadErrors;
