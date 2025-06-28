@@ -21,8 +21,6 @@ using System.Timers;
 using Elbitin.Applications.RAAS.RAASClient.Models;
 using Elbitin.Applications.RAAS.Common.Helpers;
 using Elbitin.Applications.RAAS.RAASClient.Helpers;
-using System.Text;
-using static Elbitin.Applications.RAAS.Common.Helpers.Win32Helper;
 
 namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 {
@@ -106,7 +104,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private event gotFocusEventCallbackHandler gotFocusEvent;
         private delegate void lostFocusEventCallbackHandler();
         private event lostFocusEventCallbackHandler lostFocusEvent;
-
 
         struct CONNECTIONBAR
         {
