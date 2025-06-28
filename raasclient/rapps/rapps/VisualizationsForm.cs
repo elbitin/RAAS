@@ -430,7 +430,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             visualizationsActive = true;
             try
             {
-                // Find correct overlays and position them
+                // Find current window overlays and make them visible
                 foreach (IntPtr hWndOverlay in windowOverlays.Keys)
                 {
                     OverlayForm overlayForm = windowOverlays[hWndOverlay];
