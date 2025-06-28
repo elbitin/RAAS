@@ -1118,8 +1118,6 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
         {
         }
 
-        public delegate bool EnumThreadDelegate(IntPtr hWnd, IntPtr lParam);
-
         [DllImport("shell32.dll", EntryPoint = "#727")]
         public extern static int SHGetImageList(
             int iImageList,
@@ -1532,9 +1530,6 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             IntPtr hToken,
             uint dwFlags,
             [Out] StringBuilder pszPath);
-
-        [DllImport("user32.dll")]
-        public static extern bool EnumThreadWindows(int dwThreadId, EnumThreadDelegate lpfn, IntPtr lParam);
 
         public static IntPtr SetWindowLongPtr(IntPtr hWnd, int nIndex, IntPtr dwNewLong)
         {
