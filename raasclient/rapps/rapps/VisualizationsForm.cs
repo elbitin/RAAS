@@ -21,6 +21,8 @@ using System.Timers;
 using Elbitin.Applications.RAAS.RAASClient.Models;
 using Elbitin.Applications.RAAS.Common.Helpers;
 using Elbitin.Applications.RAAS.RAASClient.Helpers;
+using System.Text;
+using static Elbitin.Applications.RAAS.Common.Helpers.Win32Helper;
 
 namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 {
@@ -58,10 +60,13 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private Dictionary<int,CONNECTIONBAR> connectionBars = new Dictionary<int, CONNECTIONBAR>();
         private const int WINDOWRECT_SURROUNDSPACE_X = 4;
         private const int WINDOWRECT_SURROUNDSPACE_Y = 4;
-        private const int UPDATETIMER_INTERVAL_MS = 10;
-        private const int SUBSEQUENT_FOCUS_COUNT = 6;
+        private const int UPDATETIMER_INTERVAL_MS = 100;
+        private const int SUBSEQUENT_IN_FOCUS_COUNT = 30;
+        private const int SUBSEQUENT_OUT_OF_FOCUS_COUNT = 1;
+        private const int SUBSEQUENT_SCAN_OVERLAYS_COUNT = 50;
         private static int subsequentInFocusCount = 0;
         private static int subsequentOutOfFocusCount = 0;
+        private static int subsequentScanOverlaysCount = 0;
         private static SpinLock showConnectionsBarLock = new SpinLock();
         private static SpinLock hideConnectionBarsLock = new SpinLock();
         private hideConnectionBarsEventCallbackHandler callbackHandlerHideConnectionBars;
@@ -101,6 +106,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private event gotFocusEventCallbackHandler gotFocusEvent;
         private delegate void lostFocusEventCallbackHandler();
         private event lostFocusEventCallbackHandler lostFocusEvent;
+
 
         struct CONNECTIONBAR
         {
@@ -228,6 +234,14 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 return new IntPtr(Win32Helper.SetWindowLong32(hWnd, nIndex, dwNewLong.ToInt32()));
         }
 
+        static IEnumerable<IntPtr> EnumerateProcessWindowHandles(int processId)
+        {
+            var handles = new List<IntPtr>();
+            foreach (ProcessThread thread in Process.GetProcessById(processId).Threads)
+                Win32Helper.EnumThreadWindows(thread.Id, (hWnd, lParam) => { handles.Add(hWnd); return true; }, IntPtr.Zero);
+            return handles;
+        }
+
         private void RemoveOverlayForHWnd(IntPtr hWnd)
         {
             if (hWnds.Contains(hWnd))
@@ -293,6 +307,9 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 {
                     // Update focus subsequently to prevent flickering
                     UpdateFocusSubsequently();
+
+                    // Add overlays subsequently for windows that exist but that dont have overlays
+                    AddNewOverlaysForWindowsSubsequently();
                 }
             }
             catch { };
@@ -312,7 +329,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 if (!connectionbarActive)
                 {
                     subsequentInFocusCount++;
-                    if (subsequentInFocusCount >= SUBSEQUENT_FOCUS_COUNT)
+                    if (subsequentOutOfFocusCount >= SUBSEQUENT_OUT_OF_FOCUS_COUNT)
                     {
                         showConnectionBarsEvent.Invoke(true, false);
                         subsequentInFocusCount = 0;
@@ -325,10 +342,37 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 if (connectionbarActive)
                 {
                     subsequentOutOfFocusCount++;
-                    if (subsequentOutOfFocusCount >= SUBSEQUENT_FOCUS_COUNT)
+                    if (subsequentOutOfFocusCount >= SUBSEQUENT_IN_FOCUS_COUNT)
                     {
                         hideConnectionBarsEvent.Invoke(false);
                         subsequentOutOfFocusCount = 0;
+                    }
+                }
+            }
+        }
+
+        private void AddNewOverlaysForWindowsSubsequently()
+        {
+            subsequentScanOverlaysCount++;
+            if (subsequentScanOverlaysCount >= SUBSEQUENT_SCAN_OVERLAYS_COUNT)
+            {
+                subsequentScanOverlaysCount = 0;
+                foreach (var hWnd in EnumerateProcessWindowHandles(Process.GetCurrentProcess().Id))
+                {
+                    if (!noOverlayHWnds.Contains(hWnd) && !overlayWindows.Contains(hWnd))
+                    {
+                        System.Int64 windowStyle = Win32Helper.GetWindowLong((IntPtr)hWnd, (int)Win32Helper.GWLParameter.GWL_STYLE);
+                        System.Int64 windowStyleEx = Win32Helper.GetWindowLong((IntPtr)hWnd, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
+                        long lWindowStyle = windowStyle;
+                        if ((windowStyle & (int)Win32Helper.WindowStyles.WS_VISIBLE) != 0 && (windowStyleEx & (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT) == 0 && !noOverlayHWnds.Contains((IntPtr)hWnd))
+                        {
+                            if (!hWnds.Contains((IntPtr)hWnd))
+                            {
+                                lock (hWnds)
+                                    hWnds.Add((IntPtr)hWnd);
+                            }
+                            updateOverlayEvent.Invoke((IntPtr)hWnd);
+                        }
                     }
                 }
             }
