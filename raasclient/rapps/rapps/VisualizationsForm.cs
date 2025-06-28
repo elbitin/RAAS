@@ -63,10 +63,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private const int UPDATETIMER_INTERVAL_MS = 100;
         private const int SUBSEQUENT_IN_FOCUS_COUNT = 30;
         private const int SUBSEQUENT_OUT_OF_FOCUS_COUNT = 1;
-        private const int SUBSEQUENT_SCAN_OVERLAYS_COUNT = 50;
+        private const int SUBSEQUENT_ADD_NEW_OVERLAYS_FOR_WINDOWS_COUNT = 5;
         private static int subsequentInFocusCount = 0;
         private static int subsequentOutOfFocusCount = 0;
-        private static int subsequentScanOverlaysCount = 0;
+        private static int subsequentAddNewOverlaysForWindowsCount = 0;
         private static SpinLock showConnectionsBarLock = new SpinLock();
         private static SpinLock hideConnectionBarsLock = new SpinLock();
         private hideConnectionBarsEventCallbackHandler callbackHandlerHideConnectionBars;
@@ -353,10 +353,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 
         private void AddNewOverlaysForWindowsSubsequently()
         {
-            subsequentScanOverlaysCount++;
-            if (subsequentScanOverlaysCount >= SUBSEQUENT_SCAN_OVERLAYS_COUNT)
+            subsequentAddNewOverlaysForWindowsCount++;
+            if (subsequentAddNewOverlaysForWindowsCount >= SUBSEQUENT_ADD_NEW_OVERLAYS_FOR_WINDOWS_COUNT)
             {
-                subsequentScanOverlaysCount = 0;
+                subsequentAddNewOverlaysForWindowsCount = 0;
                 foreach (var hWnd in EnumerateProcessWindowHandles(Process.GetCurrentProcess().Id))
                 {
                     if (!noOverlayHWnds.Contains(hWnd) && !overlayWindows.Contains(hWnd))
