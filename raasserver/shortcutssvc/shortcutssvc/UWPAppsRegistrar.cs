@@ -42,7 +42,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
         public String AppNamesXmlPath { get; set; }
         public String AssociationsXmlPath { get; set; }
         public ShortcutType Type { get; set; }
-        private Runspace runspace { get; set; }
         private const int SHORTCUTS_XML_RETRY_COUNT = 200;
         private const int SHORTCUTS_XML_RETRY_INTERVAL_MS = 200;
         private const int ASSOCIATIONS_XML_RETRY_COUNT = 200;
@@ -186,52 +185,57 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
 
         public void RegisterUWPApps(ref Shortcuts shortcuts)
         {
-            PowerShell invoker = PowerShell.Create();
-            string script1 = "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -force;";
-            invoker.AddScript(script1);
-            invoker.Invoke();
-            InitialSessionState initialSessionState = InitialSessionState.CreateDefault();
-            initialSessionState.ImportPSModule("WindowsCompatibility");
-            runspace = RunspaceFactory.CreateRunspace(initialSessionState);
-            runspace.Open();
-            invoker = PowerShell.Create(runspace);
-            invoker.AddScript("Get-Command Import-Module -ParameterName UseWindowsPowershell");
-            var result = invoker.Invoke();
-            bool success = success = !invoker.HadErrors;
-            if (!success)
-                throw new Exception("Get-Command Import-Module -ParameterName UseWindowsPowershell error");
-            if (result.Count() > 0)
+            using (PowerShell initialInvoker = PowerShell.Create())
             {
-                invoker = PowerShell.Create(runspace);
-                invoker.AddScript("Import-Module appx -UseWindowsPowershell");
-                result = invoker.Invoke();
-                success = !invoker.HadErrors;
-                if (!success)
-                    throw new Exception("Import-Module appx -UseWindowsPowershell error");
+                string script1 = "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -force;";
+                initialInvoker.AddScript(script1);
+                initialInvoker.Invoke();
+                InitialSessionState initialSessionState = InitialSessionState.CreateDefault();
+                initialSessionState.ImportPSModule("WindowsCompatibility");
+                using (Runspace runspace = RunspaceFactory.CreateRunspace(initialSessionState))
+                {
+                    runspace.Open();
+                    PowerShell invoker = PowerShell.Create(runspace);
+                    invoker.AddScript("Get-Command Import-Module -ParameterName UseWindowsPowershell");
+                    var result = invoker.Invoke();
+                    bool success = success = !invoker.HadErrors;
+                    if (!success)
+                        throw new Exception("Get-Command Import-Module -ParameterName UseWindowsPowershell error");
+                    if (result.Count() > 0)
+                    {
+                        invoker = PowerShell.Create(runspace);
+                        invoker.AddScript("Import-Module appx -UseWindowsPowershell");
+                        result = invoker.Invoke();
+                        success = !invoker.HadErrors;
+                        if (!success)
+                            throw new Exception("Import-Module appx -UseWindowsPowershell error");
+                    }
+                    else
+                    {
+                        invoker = PowerShell.Create(runspace);
+                        invoker.AddScript("Import-Module appx");
+                        result = invoker.Invoke();
+                        success = !invoker.HadErrors;
+                        if (!success)
+                            throw new Exception("Import-Module appx error");
+                    }
+                    ParseAppNames();
+                    invoker = PowerShell.Create(runspace);
+                    var appxList = invoker.AddCommand("Get-AppxPackage").AddParameter("AllUsers", true).Invoke();
+                    success = !invoker.HadErrors;
+                    if (!success)
+                        throw new Exception("Get-AppxPackage -AllUsers error");
+                    ParseAppxProperties(appxList);
+                    ParseAppxApplications();
+                    if (appxList.Count == 0)
+                        throw new Exception("Get-AppxPackage -AllUsers error appxList.Count()=0");
+                    RegisterAppxApplications(ref shortcuts);
+                    RegisterDefaultAssociations();
+                    shortcuts.FilterDuplicates();
+                    shortcuts.SerializeXmlFile(ShortcutsXmlFilePath);
+                }
             }
-            else
-            {
-                invoker = PowerShell.Create(runspace);
-                invoker.AddScript("Import-Module appx");
-                result = invoker.Invoke();
-                success = !invoker.HadErrors;
-                if (!success)
-                    throw new Exception("Import-Module appx error");
-            }
-            ParseAppNames();
-            invoker = PowerShell.Create(runspace);
-            var appxList = invoker.AddCommand("Get-AppxPackage").AddParameter("AllUsers", true).Invoke();
-            success = !invoker.HadErrors;
-            if (!success)
-                throw new Exception("Get-AppxPackage -AllUsers error");
-            ParseAppxProperties(appxList);
-            ParseAppxApplications();
-            if (appxList.Count == 0)
-                throw new Exception("Get-AppxPackage -AllUsers error appxList.Count()=0");
-            RegisterAppxApplications(ref shortcuts);
-            RegisterDefaultAssociations();
-            shortcuts.FilterDuplicates();
-            shortcuts.SerializeXmlFile(ShortcutsXmlFilePath);
+            GC.Collect();
         }
 
         void ParseAppxProperties(System.Collections.ObjectModel.Collection<PSObject> appxList)

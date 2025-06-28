@@ -90,7 +90,6 @@ namespace appnames
                 }catch { }
             }
 
-
             appList.SerializeXmlFile(RAASServerPathHelper.GetCurrentAppNamesXMLPath());
         }
 
