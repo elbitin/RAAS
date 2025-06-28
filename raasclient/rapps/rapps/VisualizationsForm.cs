@@ -329,7 +329,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 if (!connectionbarActive)
                 {
                     subsequentInFocusCount++;
-                    if (subsequentOutOfFocusCount >= SUBSEQUENT_OUT_OF_FOCUS_COUNT)
+                    if (subsequentInFocusCount >= SUBSEQUENT_OUT_OF_FOCUS_COUNT)
                     {
                         showConnectionBarsEvent.Invoke(true, false);
                         subsequentInFocusCount = 0;
