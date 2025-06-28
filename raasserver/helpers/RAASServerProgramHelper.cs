@@ -16,7 +16,7 @@ using System.Linq;
 
 namespace Elbitin.Applications.RAAS.RAASServer.Helpers
 {
-    class RAASServerProgramHelper
+    static public class RAASServerProgramHelper
     {
         public static void StartStartupPrograms()
         {

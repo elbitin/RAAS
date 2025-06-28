@@ -15,7 +15,7 @@ using System.Text;
 
 namespace Elbitin.Applications.RAAS.RAASServer.Helpers
 {
-    internal class ServiceHelper
+    internal static class ServiceHelper
     {
         public static void StartWindowsService(String serviceName, TimeSpan timeout)
         {
