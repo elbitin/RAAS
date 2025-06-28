@@ -76,6 +76,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             this.WindowState = FormWindowState.Minimized;
             this.Show();
             this.WindowState = FormWindowState.Normal;
+
+            StartVisualizations();
         }
 
         private void GetServerSettings()
@@ -210,6 +212,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             var hWnd = Handle;
             int style = GetWindowLong(hWnd, (int)GWLParameter.GWL_EXSTYLE);
             SetWindowLong(hWnd, GWLParameter.GWL_EXSTYLE, style | (int)WindowStyles.WS_EX_NOACTIVATE);
+            visualizations.UpdateThreads();
         }
 
         private void SystemEvents_SessionSwitch(object sender, SessionSwitchEventArgs e)
@@ -222,11 +225,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 
         private void RdpOnLoginComplete(object sender, EventArgs e)
         {
-            StartVisualizations();
             if (visualizationsAvailable)
             {
-                visualizations.ActivateVisualizations();
                 visualizations.UpdateThreads();
+                visualizations.ActivateVisualizations();
             }
             if (rdpClient == (AxMSTSCLib.AxMsRdpClient7NotSafeForScripting)sender)
             {
@@ -366,6 +368,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 }
                 catch { }
             }
+
+            visualizations.UpdateThreads();
         }
 
         private void Connect()
