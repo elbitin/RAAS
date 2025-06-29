@@ -72,9 +72,8 @@ namespace appnames
             appListShortcuts.AddRange(RegisterShortcuts(userDesktopPath));
             appListShortcuts.AddRange(RegisterShortcuts(commonDesktopPath));
 
-            // Write appnames XML
+            // Store app list XML
             appList.App = appListApps.ToArray();
-
             appList.Shortcut = appListShortcuts.ToArray();
             String appListXml = appList.SerializeXml();
 
