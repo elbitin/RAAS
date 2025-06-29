@@ -286,6 +286,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                 List<String> existingIconFiles = new List<string>();
                 String userName = ProfileHelper.GetUserFromProfilePath(IconsDirPath);
                 Dictionary<String, String> extensions = RegistryHelper.GetDefaultApplications(@"Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts", userName);
+
                 // Update icon files
                 foreach (var key in extensions.Keys)
                 {
