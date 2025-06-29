@@ -282,7 +282,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             folderCheckBoxes.Add(searchesCheckBox);
             folderCheckBoxes.Add(videosCheckBox);
             List<CheckBox> orderedFolderCheckBoxes = folderCheckBoxes.OrderBy(o => o.Text).ToList();
-            //visibleFoldersTableLayoutPanel.Controls.Clear();
             for (int i = 0; i < orderedFolderCheckBoxes.Count(); i++)
             {
                 orderedFolderCheckBoxes[i].TabIndex = i + 1;
