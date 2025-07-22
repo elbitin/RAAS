@@ -88,57 +88,29 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
                 shortcutsServersMutex.WaitOne();
             try
             {
+
+            }
+            catch { }
+            try
+            {
+
                 // Update server managers with current settings
                 Dictionary<String, ServerSettings> serverSettings = ServerSettingsHelper.GetServerSettingsFromConfig();
-                foreach (String serverName in serverSettings.Keys.ToArray())
-                {
-                    bool removeShortcutsForServer = (!serverSettings[serverName].ServerEnabled || !serverSettings[serverName].CreateShortcuts || uninstall || serverSettings[serverName].RemoveShortcuts);
-                    if (shortcutsManagers.Keys.Contains(serverName))
-                    {
-                        shortcutsManagers[serverName].ServerSettings = serverSettings[serverName];
-                        if (removeShortcutsForServer && !serverSettings[serverName].ShortcutsRemoved)
-                        {
-                            shortcutsManagers[serverName].RemoveShortcuts();
-                            RemoveServerShortcuts(shortcutsManagers, serverName);
-                        }
-                        else if (remove)
-                            shortcutsManagers.Remove(serverName);
-                        else
-                        {
-                            try
-                            {
-                                shortcutsManagers[serverName].UpdateShortcuts(false);
-                            }
-                            catch { }
-                            try
-                            {
-                                shortcutsManagers[serverName].ReconnectServer();
-                            }
-                            catch { }
-                        }
-                    }
-                    else
-                    {
-                        if (removeShortcutsForServer)
-                        {
-                            if (!serverSettings[serverName].ShortcutsRemoved)
-                            {
-                                shortcutsManagers[serverName] = new ShortcutsManager(serverSettings[serverName], true);
-                                RemoveServerShortcuts(shortcutsManagers, serverName);
-                            }
-                        }
-                        else if (!remove)
-                            shortcutsManagers[serverName] = new ShortcutsManager(serverSettings[serverName], false);
-                    }
-                }
 
-                // Remove server managers for servers which do not occur in settings
+                // Remove all server managers
                 foreach (String serverName in shortcutsManagers.Keys.ToArray())
                     if (!serverSettings.Keys.Contains(serverName))
                     {
                         shortcutsManagers[serverName].Dispose();
                         shortcutsManagers.Remove(serverName);
                     }
+                shortcutsManagers.Clear();
+
+                // Repopulate server managers
+                foreach (String serverName in serverSettings.Keys.ToArray())
+                {
+                    shortcutsManagers[serverName] = new ShortcutsManager(serverSettings[serverName], false);
+                }
             }
             catch (CouldNotLoadServerSettingsException)
             {
