@@ -148,7 +148,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             {
                 try
                 {
-                    shortcuts = Shortcuts.DeserializeXmlFile(ShortcutsXmlFilePath);
+                    shortcuts = Shortcuts.DeserializeXmlFileWithRetries(ShortcutsXmlFilePath);
                     RegisterUWPApps(ref shortcuts);
                     exception = false;
                 }
@@ -232,7 +232,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                     RegisterAppxApplications(ref shortcuts);
                     RegisterDefaultAssociations();
                     shortcuts.FilterDuplicates();
-                    shortcuts.SerializeXmlFile(ShortcutsXmlFilePath);
+                    shortcuts.SerializeXmlFileWithRetries(ShortcutsXmlFilePath);
                 }
             }
             GC.Collect();

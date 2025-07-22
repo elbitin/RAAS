@@ -29,9 +29,9 @@ namespace Elbitin.Applications.RAAS.Common.Models
             return (Shares)SerializationHelper.DeserializeXml(xmlData, typeof(Shares));
         }
 
-        public static Shares DeserializeXmlFile(String xmlPath)
+        public static Shares DeserializeXmlFileWithRetries(String xmlPath)
         {
-            return (Shares)SerializationHelper.DeserializeXmlFile(xmlPath,typeof(Shares));
+            return (Shares)SerializationHelper.DeserializeXmlFileWithRetries(xmlPath,typeof(Shares));
         }
 
         public string SerializeXml()
@@ -39,9 +39,9 @@ namespace Elbitin.Applications.RAAS.Common.Models
             return SerializationHelper.SerializeXml(typeof(Shares), this);
         }
 
-        public bool SerializeXmlFile(string shareXmlPath)
+        public bool SerializeXmlFileWithRetries(string shareXmlPath)
         {
-            return SerializationHelper.SerializeXmlFile(shareXmlPath, typeof(Shares), this);
+            return SerializationHelper.SerializeXmlFileWithRetries(shareXmlPath, typeof(Shares), this);
         }
     }
 

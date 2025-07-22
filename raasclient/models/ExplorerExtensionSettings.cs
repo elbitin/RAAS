@@ -68,7 +68,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Models
             {
                 // Update explorer extension settings according to config
                 XmlDocument xmlDoc = new XmlDocument();
-                if (!xmlDoc.LoadWithRetries(explorerFile))
+                if (!XmlDocumentHelper.LoadWithRetries(xmlDoc, explorerFile))
                     return false;
                 bool active = (xmlDoc.SelectSingleNode("ExplorerExtension/Active").InnerText == "1") ? true : false;
                 ExplorerExtensionActive = active;

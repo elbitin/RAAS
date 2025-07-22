@@ -74,7 +74,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Models
             if (File.Exists(remoteDesktopSettingsFile))
             {
                 XmlDocument sourceXmlDoc = new XmlDocument();
-                if (sourceXmlDoc.LoadWithRetries(remoteDesktopSettingsFile))
+                if (XmlDocumentHelper.LoadWithRetries(sourceXmlDoc, remoteDesktopSettingsFile))
                 {
                     if (ReadRemoteDesktopSettings(sourceXmlDoc))
                         return true;
@@ -89,7 +89,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Models
             if (File.Exists(remoteDesktopSettingsFile))
             {
                 XmlDocument sourceXmlDoc = new XmlDocument();
-                if (sourceXmlDoc.LoadWithRetries(remoteDesktopSettingsFile))
+                if (XmlDocumentHelper.LoadWithRetries(sourceXmlDoc, remoteDesktopSettingsFile))
                 {
                     if (ReadRemoteDesktopSettings(sourceXmlDoc))
                         return true;

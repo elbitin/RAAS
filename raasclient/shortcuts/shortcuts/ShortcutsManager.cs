@@ -171,7 +171,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
             {
                 try
                 {
-                    clientShortcuts = Common.Models.Shortcuts.DeserializeXmlFile(raasClientShortcutsXMLFilePath);
+                    clientShortcuts = Common.Models.Shortcuts.DeserializeXmlFileWithRetries(raasClientShortcutsXMLFilePath);
                 }
                 catch
                 {
@@ -329,7 +329,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
                         // Save XML document
                         try
                         {
-                            clientShortcuts.SerializeXmlFile(raasClientShortcutsXMLFilePath);
+                            clientShortcuts.SerializeXmlFileWithRetries(raasClientShortcutsXMLFilePath);
                         }catch { }
                 }
                 catch { }

@@ -48,9 +48,9 @@ namespace Elbitin.Applications.RAAS.Common.Models
             return (Shortcuts)SerializationHelper.DeserializeXml(xmlData, typeof(Shortcuts));
         }
 
-        public static Shortcuts DeserializeXmlFile(String xmlPath)
+        public static Shortcuts DeserializeXmlFileWithRetries(String xmlPath)
         {
-            return (Shortcuts)SerializationHelper.DeserializeXmlFile(xmlPath, typeof(Shortcuts));
+            return (Shortcuts)SerializationHelper.DeserializeXmlFileWithRetries(xmlPath, typeof(Shortcuts));
         }
 
         public string SerializeXml()
@@ -58,9 +58,9 @@ namespace Elbitin.Applications.RAAS.Common.Models
             return SerializationHelper.SerializeXml(typeof(Shortcuts), this);
         }
 
-        public bool SerializeXmlFile(string shortcutsXmlPath)
+        public bool SerializeXmlFileWithRetries(string shortcutsXmlPath)
         {
-            return SerializationHelper.SerializeXmlFile(shortcutsXmlPath, typeof(Shortcuts), this);
+            return SerializationHelper.SerializeXmlFileWithRetries(shortcutsXmlPath, typeof(Shortcuts), this);
         }
 
         public void FilterDuplicates()

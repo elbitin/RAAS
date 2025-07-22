@@ -29,7 +29,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.Helpers
                 try
                 {
                     if (File.Exists(appNamesXmlPath))
-                        appNames = AppList.DeserializeXmlFile(appNamesXmlPath);
+                        appNames = AppList.DeserializeXmlFileWithRetries(appNamesXmlPath);
                     exception = false;
                 }
                 catch

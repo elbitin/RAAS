@@ -290,7 +290,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             {
                 Shortcuts shortcuts;
                 if (File.Exists(shortcutsXMLPath))
-                    shortcuts = Common.Models.Shortcuts.DeserializeXmlFile(shortcutsXMLPath);
+                    shortcuts = Common.Models.Shortcuts.DeserializeXmlFileWithRetries(shortcutsXMLPath);
                 else
                     shortcuts = new Shortcuts();
                 uwpAppsRegistrar.RegisterUWPApps(ref shortcuts);
@@ -299,7 +299,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                 publicDesktopRegistrar.RegisterShortcutsPath(ref shortcuts, publicDesktopPath);
                 commonStartMenuRegistrar.RegisterShortcutsPath(ref shortcuts, commonStartMenuPath);
                 shortcuts.FilterDuplicates();
-                shortcuts.SerializeXmlFile(shortcutsXMLPath);
+                shortcuts.SerializeXmlFileWithRetries(shortcutsXMLPath);
             }
             catch { }
             shortcutsChange.ReleaseMutex();

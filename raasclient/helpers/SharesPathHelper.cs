@@ -60,7 +60,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Helpers
             String sharesFilePath = RAASClientPathHelper.GetSharesFilePath(serverName);
 
             // Find server local path for share
-            Shares shares = Shares.DeserializeXmlFile(sharesFilePath);
+            Shares shares = Shares.DeserializeXmlFileWithRetries(sharesFilePath);
             IEnumerable<SharesDrive> matchedDrive =
                 from drive in shares.Drives
                 where drive.Share.ToLowerInvariant() == share.ToLowerInvariant()
@@ -80,7 +80,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Helpers
             String sharesFilePath = RAASClientPathHelper.GetSharesFilePath(serverName);
 
             // Find server local path for share
-            Shares shares = Shares.DeserializeXmlFile(sharesFilePath);
+            Shares shares = Shares.DeserializeXmlFileWithRetries(sharesFilePath);
             IEnumerable<SharesDrive> matchedDrive =
                 from drive in shares.Drives
                 where drive.Name.ToLowerInvariant().StartsWith(serverDrive.ToLowerInvariant())

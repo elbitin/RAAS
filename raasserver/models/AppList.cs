@@ -29,9 +29,9 @@ namespace Elbitin.Applications.RAAS.RAASServer.Models
             return (AppList)SerializationHelper.DeserializeXml(xmlData, typeof(AppList));
         }
 
-        public static AppList DeserializeXmlFile(String xmlPath)
+        public static AppList DeserializeXmlFileWithRetries(String xmlPath)
         {
-            return (AppList)SerializationHelper.DeserializeXmlFile(xmlPath, typeof(AppList));
+            return (AppList)SerializationHelper.DeserializeXmlFileWithRetries(xmlPath, typeof(AppList));
         }
 
         public string SerializeXml()
@@ -39,9 +39,9 @@ namespace Elbitin.Applications.RAAS.RAASServer.Models
             return SerializationHelper.SerializeXml(typeof(AppList), this);
         }
 
-        public bool SerializeXmlFile(string appListXmlPath)
+        public bool SerializeXmlFileWithRetries(string appListXmlPath)
         {
-            return SerializationHelper.SerializeXmlFile(appListXmlPath, typeof(AppList), this);
+            return SerializationHelper.SerializeXmlFileWithRetries(appListXmlPath, typeof(AppList), this);
         }
 
         private AppListApp[] appField;

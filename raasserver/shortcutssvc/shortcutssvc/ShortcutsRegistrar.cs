@@ -63,7 +63,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                     {
                         if (File.Exists(ShortcutsXmlFilePath))
                         {
-                            shortcuts = Shortcuts.DeserializeXmlFile(ShortcutsXmlFilePath);
+                            shortcuts = Shortcuts.DeserializeXmlFileWithRetries(ShortcutsXmlFilePath);
                         }
                         else
                         {
@@ -78,7 +78,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                     {
                         UpdateShortcutsDir(targetPath);
                     }
-                    shortcuts.SerializeXmlFile(ShortcutsXmlFilePath);
+                    shortcuts.SerializeXmlFileWithRetries(ShortcutsXmlFilePath);
                     exception = false;
                 }
                 catch

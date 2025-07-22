@@ -100,7 +100,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Models
             if (File.Exists(serversFile))
             {
                 XmlDocument sourceXmlDoc = new XmlDocument();
-                if (sourceXmlDoc.LoadWithRetries(serversFile))
+                if (XmlDocumentHelper.LoadWithRetries(sourceXmlDoc, serversFile))
                 {
                     if (ReadServerSettings(sourceXmlDoc))
                         return true;
@@ -112,7 +112,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Models
         public bool ReadDefaultServerSettings()
         {
             XmlDocument defaultXmlDoc = new XmlDocument();
-            if (defaultXmlDoc.LoadWithRetries(RAASClientPathHelper.GetDefaultServersConfigFilePath()))
+            if (XmlDocumentHelper.LoadWithRetries(defaultXmlDoc, RAASClientPathHelper.GetDefaultServersConfigFilePath()))
                foreach (XmlNode node in defaultXmlDoc.SelectNodes("Servers/Server"))
                {
                    ReadServerSettingsFromNode(node);
@@ -272,7 +272,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Models
             else
             {
                 // Load existing XML document
-                if (!xmlDoc.LoadWithRetries(serversFile))
+                if (!XmlDocumentHelper.LoadWithRetries(xmlDoc, serversFile))
                     throw new CouldNotLoadServerSettingsException();
             }
 
@@ -306,7 +306,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Models
             else
             {
                 // Load existing XML document
-                if (!xmlDoc.LoadWithRetries(serversFile))
+                if (!XmlDocumentHelper.LoadWithRetries(xmlDoc, serversFile))
                     throw new CouldNotLoadServerSettingsException();
             }
 

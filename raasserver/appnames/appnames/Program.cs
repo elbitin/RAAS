@@ -89,7 +89,7 @@ namespace appnames
                 }catch { }
             }
 
-            appList.SerializeXmlFile(RAASServerPathHelper.GetCurrentAppNamesXMLPath());
+            appList.SerializeXmlFileWithRetries(RAASServerPathHelper.GetCurrentAppNamesXMLPath());
         }
 
         private static List<AppListShortcut> RegisterShortcuts(String path)

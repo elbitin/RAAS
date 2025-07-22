@@ -12,6 +12,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Threading;
 using System.Xml;
 using System.Xml.Serialization;
 
@@ -19,6 +20,50 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
 {
     static class SerializationHelper
     {
+        private const int DEFAULT_RETRY_LOAD_XML_COUNT = 30;
+        private const int DEFAULT_RETRY_SAVE_XML_COUNT = 30;
+        private const int DEFAULT_RETRY_LOAD_XML_INTERVAL_MS = 50;
+        private const int DEFAULT_RETRY_SAVE_XML_INTERVAL_MS = 50;
+
+        public static bool LoadWithRetries(this XmlDocument xmlDoc, String path)
+        {
+            return LoadWithRetries(xmlDoc, path, DEFAULT_RETRY_LOAD_XML_COUNT, DEFAULT_RETRY_LOAD_XML_INTERVAL_MS);
+        }
+
+        public static bool LoadWithRetries(this XmlDocument xmlDoc, String path, int retryCount, int retryIntervalMs)
+        {
+            bool xmlDocLoaded = false;
+            for (int i = 0; i < retryCount; i++)
+                try
+                {
+                    xmlDoc.Load(path);
+                    xmlDocLoaded = true;
+                    break;
+                }
+                catch
+                {
+                    Thread.Sleep(retryIntervalMs);
+                }
+            return xmlDocLoaded;
+        }
+
+        public static bool SaveWithRetries(this XmlDocument xmlDoc, String path, int retryCount, int retryIntervalMs)
+        {
+            bool xmlDocLoaded = false;
+            for (int i = 0; i < retryCount; i++)
+                try
+                {
+                    xmlDoc.Load(path);
+                    xmlDocLoaded = true;
+                    break;
+                }
+                catch
+                {
+                    Thread.Sleep(retryIntervalMs);
+                }
+            return xmlDocLoaded;
+        }
+
         public static object DeserializeXml(String xmlData, Type type)
         {
             XmlSerializer serializer = new XmlSerializer(type);
@@ -35,6 +80,22 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             object deseralizedXmlFile = serializer.Deserialize(fileStream);
             fileStream.Close();
             return deseralizedXmlFile;
+        }
+
+        public static object DeserializeXmlFileWithRetries(String xmlPath, Type type)
+        {
+            for (int i = 0; i < DEFAULT_RETRY_LOAD_XML_COUNT; i++)
+            {
+                try
+                {
+                    return DeserializeXmlFile(xmlPath, type);
+                }
+                catch
+                {
+                    Thread.Sleep(DEFAULT_RETRY_LOAD_XML_INTERVAL_MS);
+                }
+            }
+            return null;
         }
 
         public static string SerializeXml(Type type, object obj)
@@ -64,6 +125,22 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             {
                 return false;
             }
+        }
+
+        public static bool SerializeXmlFileWithRetries(String xmlPath, Type type, object obj)
+        {
+            for (int i = 0; i < DEFAULT_RETRY_SAVE_XML_COUNT; i++)
+            {
+                try
+                {
+                    return SerializeXmlFile(xmlPath, type, obj);
+                }
+                catch
+                {
+                    Thread.Sleep(DEFAULT_RETRY_SAVE_XML_INTERVAL_MS);
+                }
+            }
+            return false;
         }
     }
 }

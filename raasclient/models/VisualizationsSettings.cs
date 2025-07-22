@@ -60,7 +60,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Models
             {
                 // Update visual aids settings according to config
                 XmlDocument xmlDoc = new XmlDocument();
-                if (!xmlDoc.LoadWithRetries(visualizationsFile))
+                if (!XmlDocumentHelper.LoadWithRetries(xmlDoc, visualizationsFile))
                     return false;
                 bool active = (xmlDoc.SelectSingleNode("Visualizations/Active").InnerText == "1") ? true : false;
                 VisualizationsActive = active;

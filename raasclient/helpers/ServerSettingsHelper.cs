@@ -27,7 +27,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Helpers
             if (File.Exists(serversFile))
             {
                 XmlDocument xmlDoc = new XmlDocument();
-                if (!xmlDoc.LoadWithRetries(serversFile))
+                if (!XmlDocumentHelper.LoadWithRetries(xmlDoc, serversFile))
                     throw new CouldNotLoadServerSettingsException();
                 foreach (XmlNode node in xmlDoc.SelectNodes("Servers/Server/Name"))
                 {

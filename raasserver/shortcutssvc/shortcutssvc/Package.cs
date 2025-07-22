@@ -30,9 +30,9 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             return (Package)SerializationHelper.DeserializeXml(xmlData, typeof(Package));
         }
 
-        public static Package DeserializeXmlFile(String xmlPath)
+        public static Package DeserializeXmlFileWithRetries(String xmlPath)
         {
-            return (Package)SerializationHelper.DeserializeXmlFile(xmlPath, typeof(Package));
+            return (Package)SerializationHelper.DeserializeXmlFileWithRetries(xmlPath, typeof(Package));
         }
 
         public string SerializeXml()
