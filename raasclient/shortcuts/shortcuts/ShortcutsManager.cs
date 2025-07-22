@@ -233,6 +233,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
 
             try
             {
+                ServerSettings = ServerSettingsHelper.GetServerSettingsFromConfig()[ServerSettings.ServerName];
                 ReadClientShortcuts();
                 clientShortcutsChanged = false;
                 UpdateFlags(ServerSettings);

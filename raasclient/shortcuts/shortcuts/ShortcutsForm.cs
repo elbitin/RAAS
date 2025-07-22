@@ -31,7 +31,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
         private static FileSystemWatcher serversXmlWatcher;
         private static object managersLock = new object();
         static Dictionary<String, ServerSettings> serverSettings = ServerSettingsHelper.GetServerSettingsFromConfig();
-        static System.Threading.Mutex shortcutsChange = new Mutex();
+        static System.Threading.Mutex serversChange = new Mutex();
 
         public ShortcutsForm(bool uninstall, bool remove, bool update)
         {
@@ -84,7 +84,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
 
         private static void UpdateShortcutsManagersFromConfig(ref Dictionary<String, ShortcutsManager> shortcutsManagers, bool uninstall = false, bool remove = false)
         {
-            shortcutsChange.WaitOne();
+            serversChange.WaitOne();
             try
             {
                 // Fetch current server settings
@@ -122,7 +122,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
             catch (Exception exc) { MessageBox.Show(exc.Message); }
             finally
             {
-                shortcutsChange.ReleaseMutex();
+                serversChange.ReleaseMutex();
             }
         }
 
