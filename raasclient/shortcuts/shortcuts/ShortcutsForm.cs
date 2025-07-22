@@ -30,7 +30,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
         private Dictionary<String, ShortcutsManager> shortcutsManagers = new Dictionary<string, ShortcutsManager>();
         private static FileSystemWatcher serversXmlWatcher;
         private static object managersLock = new object();
-        static System.Threading.Mutex shortcutsServersMutex;
         static Dictionary<String, ServerSettings> serverSettings = ServerSettingsHelper.GetServerSettingsFromConfig();
         static System.Threading.Mutex shortcutsChange = new Mutex();
 
@@ -88,7 +87,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
             shortcutsChange.WaitOne();
             try
             {
-
                 // Fetch current server settings
                 Dictionary<String, ServerSettings> newServerSettings = ServerSettingsHelper.GetServerSettingsFromConfig();
 

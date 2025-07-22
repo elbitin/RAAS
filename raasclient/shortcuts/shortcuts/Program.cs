@@ -63,9 +63,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
             if (!uninstall && !remove)
             {
                 bool result = false;
-                shortcutsMutex = new System.Threading.Mutex(true, "raasclientshortcuts", out result);
+                shortcutsMutex = new System.Threading.Mutex(false, "raasclientshortcuts", out result);
                 if (!result)
                     return;
+                shortcutsMutex.WaitOne();
             }
 
             // Kill other instances on uninstall
