@@ -18,6 +18,7 @@ using Elbitin.Applications.RAAS.RAASClient.Helpers;
 using Elbitin.Applications.RAAS.Common.Helpers;
 using Elbitin.Applications.RAAS.RAASClient.Models;
 using System.Drawing;
+using System.Threading;
 
 namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
 {
@@ -30,6 +31,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
         private static FileSystemWatcher serversXmlWatcher;
         private static object managersLock = new object();
         static System.Threading.Mutex shortcutsServersMutex;
+        static Dictionary<String, ServerSettings> serverSettings = ServerSettingsHelper.GetServerSettingsFromConfig();
+        static System.Threading.Mutex shortcutsChange = new Mutex();
 
         public ShortcutsForm(bool uninstall, bool remove, bool update)
         {
@@ -82,20 +85,19 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
 
         private static void UpdateShortcutsManagersFromConfig(ref Dictionary<String, ShortcutsManager> shortcutsManagers, bool uninstall = false, bool remove = false)
         {
-            bool result;
-            shortcutsServersMutex = new System.Threading.Mutex(true, "raasclientshortcutsservers", out result);
-            if (!result)
-                shortcutsServersMutex.WaitOne();
+            shortcutsChange.WaitOne();
             try
             {
 
-            }
-            catch { }
-            try
-            {
+                // Fetch current server settings
+                Dictionary<String, ServerSettings> newServerSettings = ServerSettingsHelper.GetServerSettingsFromConfig();
 
-                // Update server managers with current settings
-                Dictionary<String, ServerSettings> serverSettings = ServerSettingsHelper.GetServerSettingsFromConfig();
+                // Return if server settings unchanged
+                if (serverSettings.SequenceEqual(newServerSettings))
+                    return;
+
+                // Update server settings
+                serverSettings = newServerSettings;
 
                 // Remove all server managers
                 foreach (String serverName in shortcutsManagers.Keys.ToArray())
@@ -122,7 +124,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
             catch (Exception exc) { MessageBox.Show(exc.Message); }
             finally
             {
-                shortcutsServersMutex.ReleaseMutex();
+                shortcutsChange.ReleaseMutex();
             }
         }
 
