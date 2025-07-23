@@ -45,7 +45,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private Color linesColor = Color.Black;
         private FileSystemWatcher configWatcherVisualizations;
         private FileSystemWatcher configWatcherServers;
-        private System.Threading.ReaderWriterLockSlim connectionBarDictionaryLock = new System.Threading.ReaderWriterLockSlim(LockRecursionPolicy.NoRecursion);
         private System.Threading.ReaderWriterLockSlim connectionBarFormLock = new System.Threading.ReaderWriterLockSlim(LockRecursionPolicy.NoRecursion);
         private object windowsLock = new object();
         private object hWndsLock = new object();
@@ -64,7 +63,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private const int SUBSEQUENT_ADD_NEW_OVERLAYS_FOR_WINDOWS_COUNT = 5;
         private static int subsequentInFocusCount = 0;
         private static int subsequentOutOfFocusCount = 0;
-        private static int subsequentAddNewOverlaysForWindowsCount = 0;
         private static SpinLock showConnectionsBarLock = new SpinLock();
         private static SpinLock hideConnectionBarsLock = new SpinLock();
         private hideConnectionBarsEventCallbackHandler callbackHandlerHideConnectionBars;
