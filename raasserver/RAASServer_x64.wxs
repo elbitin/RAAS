@@ -1888,12 +1888,12 @@
 						<ServiceControl Id="StartRAASServerService" Start="install" Stop="both" Remove="uninstall" Name="RAASServer" Wait="yes"/>
 					</Component>
 					<Component Id="CanRebootRegistry" Guid="{2C3F8EA8-CA3C-436B-A687-EDE8D77C3D7F}" Bitness="always64">
-						<RegistryKey Root="HKMU" Key="Software\Elbitin">
+						<RegistryKey Root="HKLM" Key="Software\Elbitin">
 							<RegistryKey Key="RAAS Server">
 								<RegistryValue Name="CanReboot" Type="integer" Value="1" KeyPath="yes"/>
 							</RegistryKey>
 						</RegistryKey>
-						<RegistryKey Root="HKMU" Key="Software\WOW6432Node\Elbitin">
+						<RegistryKey Root="HKLM" Key="Software\WOW6432Node\Elbitin">
 							<RegistryKey Key="RAAS Server">
 								<RegistryValue Name="CanReboot" Type="integer" Value="1" KeyPath="no"/>
 							</RegistryKey>

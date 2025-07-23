@@ -447,7 +447,8 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             {
                 using (ServiceSecurityContext.Current.WindowsIdentity.Impersonate())
                 {
-                    PowerHelper.Reboot();
+                    if (RegistryHelper.GetCanReboot(COMPANY_NAME, PROGRAM_NAME))
+                        PowerHelper.Reboot();
                     return;
                 }
             }
