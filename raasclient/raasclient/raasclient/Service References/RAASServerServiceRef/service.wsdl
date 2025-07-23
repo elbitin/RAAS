@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="RAASServerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="RAASServerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsp:Policy wsu:Id="NetTcpBinding_IRAASServerService_policy">
     <wsp:ExactlyOne>
       <wsp:All>
@@ -39,14 +39,14 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsdl:import namespace="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService" location="" />
+  <wsdl:import namespace="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService" location="" />
   <wsdl:types />
   <wsdl:binding name="NetTcpBinding_IRAASServerService" type="i0:IRAASServerService">
     <wsp:PolicyReference URI="#NetTcpBinding_IRAASServerService_policy">
     </wsp:PolicyReference>
     <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
     <wsdl:operation name="Subscribe">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Subscribe" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Subscribe" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -55,7 +55,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="Unsubscribe">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Unsubscribe" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Unsubscribe" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -64,7 +64,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetShortcutsXml">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsXml" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsXml" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -73,7 +73,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetShareXml">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShareXml" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShareXml" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -82,7 +82,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetLoggedInState">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetLoggedInState" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetLoggedInState" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -91,7 +91,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="LogOff">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/LogOff" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/LogOff" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -100,7 +100,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetIcon">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetIcon" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetIcon" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -109,7 +109,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetAutostartEntries">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartEntries" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartEntries" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -118,7 +118,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetShortcutIcon">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutIcon" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutIcon" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -127,7 +127,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="Reboot">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Reboot" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Reboot" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -136,7 +136,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetVersion">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetVersion" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetVersion" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -145,7 +145,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetShortcutsServerPath">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsServerPath" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsServerPath" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -154,7 +154,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetKeepAliveAgentPath">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetKeepAliveAgentPath" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetKeepAliveAgentPath" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -163,7 +163,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetAutostartPath">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartPath" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartPath" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -172,7 +172,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetAppNamesPath">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAppNamesPath" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAppNamesPath" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -181,7 +181,16 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UpdateShortcuts">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/UpdateShortcuts" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/UpdateShortcuts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CanReboot">
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/CanReboot" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -190,19 +199,19 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ShortcutsXmlChange">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/ShortcutsXmlChange" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/ShortcutsXmlChange" style="document" />
       <wsdl:output>
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ShareXmlChange">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/ShareXmlChange" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/ShareXmlChange" style="document" />
       <wsdl:output>
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="LoggedInChange">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/LoggedInChange" style="document" />
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/LoggedInChange" style="document" />
       <wsdl:output>
         <soap12:body use="literal" />
       </wsdl:output>
@@ -214,7 +223,7 @@
       <wsa10:EndpointReference>
         <wsa10:Address>net.tcp://localhost:43000/RAASServerService</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
-          <Spn>host/HIGHEND</Spn>
+          <Spn>host/SPECTRE</Spn>
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>

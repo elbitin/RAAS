@@ -12,67 +12,67 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient.RemoteAppsServiceRef {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
         "eAppsService", ConfigurationName="RemoteAppsServiceRef.IRemoteAppsService", CallbackContract=typeof(Elbitin.Applications.RAAS.RAASClient.RAASClient.RemoteAppsServiceRef.IRemoteAppsServiceCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface IRemoteAppsService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/Subscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/Subscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/SubscribeResponse")]
         void Subscribe();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/Subscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/Subscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/SubscribeResponse")]
         System.Threading.Tasks.Task SubscribeAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/Unsubscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/Unsubscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/UnsubscribeResponse")]
         void Unsubscribe();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/Unsubscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/Unsubscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/UnsubscribeResponse")]
         System.Threading.Tasks.Task UnsubscribeAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/StartRemoteApplication", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/StartRemoteApplication", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/StartRemoteApplicationResponse")]
         void StartRemoteApplication(string application, string arguments);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/StartRemoteApplication", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/StartRemoteApplication", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/StartRemoteApplicationResponse")]
         System.Threading.Tasks.Task StartRemoteApplicationAsync(string application, string arguments);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/Connect", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/Connect", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/ConnectResponse")]
         void Connect();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/Connect", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/Connect", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/ConnectResponse")]
         System.Threading.Tasks.Task ConnectAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/Disconnect", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/Disconnect", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/DisconnectResponse")]
         void Disconnect();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/Disconnect", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/Disconnect", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/DisconnectResponse")]
         System.Threading.Tasks.Task DisconnectAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/GetStatus", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/GetStatus", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/GetStatusResponse")]
         int GetStatus();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
-            "eAppsService/IRemoteAppsService/GetStatus", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
+            "eAppsService/IRemoteAppsService/GetStatus", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/GetStatusResponse")]
         System.Threading.Tasks.Task<int> GetStatusAsync();
     }
@@ -80,7 +80,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient.RemoteAppsServiceRef {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface IRemoteAppsServiceCallback {
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemot" +
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemot" +
             "eAppsService/IRemoteAppsService/Connected")]
         void Connected();
     }

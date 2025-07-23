@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService" elementFormDefault="qualified" targetNamespace="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:tns="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService" elementFormDefault="qualified" targetNamespace="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <xs:element name="Subscribe">
     <xs:complexType>
@@ -187,6 +187,18 @@
   <xs:element name="UpdateShortcutsResponse">
     <xs:complexType>
       <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CanReboot">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CanRebootResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CanRebootResult" type="xs:boolean" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ShortcutsXmlChange">

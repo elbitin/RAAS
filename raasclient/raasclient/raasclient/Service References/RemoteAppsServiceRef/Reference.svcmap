@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d88565eb-41f5-4372-9ef1-70c7cb308b50" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="6b3cc1e8-9cdc-4a72-b904-370b957078a1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="net.pipe://localhost/RemoteAppsService/192.168.137.5/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="net.pipe://localhost/RemoteAppsService/192.168.10.15/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="RAASClient.RemoteApps.IRemoteAppsService1.wsdl" MetadataType="Wsdl" ID="b50301c4-4302-49ff-9428-2b39e9bd092f" SourceId="1" SourceUrl="net.pipe://localhost/RemoteAppsService/192.168.137.5/mex" />
-    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="ecf333d0-4295-432c-94ea-f6103271704c" SourceId="1" SourceUrl="net.pipe://localhost/RemoteAppsService/192.168.137.5/mex" />
-    <MetadataFile FileName="RAASClient.RemoteApps.IRemoteAppsService1.xsd" MetadataType="Schema" ID="ed226d6b-7285-4b67-befd-83dd2af21fd8" SourceId="1" SourceUrl="net.pipe://localhost/RemoteAppsService/192.168.137.5/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="82a04b3a-e52c-427c-822b-f3675e804181" SourceId="1" SourceUrl="net.pipe://localhost/RemoteAppsService/192.168.137.5/mex" />
+    <MetadataFile FileName="RAASClient.RemoteApps.IRemoteAppsService.wsdl" MetadataType="Wsdl" ID="cfd77d66-bc19-4401-8f1f-857061518db1" SourceId="1" SourceUrl="net.pipe://localhost/RemoteAppsService/192.168.10.15/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="955cd4ba-62e0-4773-b86a-e2e848773713" SourceId="1" SourceUrl="net.pipe://localhost/RemoteAppsService/192.168.10.15/mex" />
+    <MetadataFile FileName="RAASClient.RemoteApps.IRemoteAppsService.xsd" MetadataType="Schema" ID="756e32f0-cc2e-44f3-8b65-72fc7328c071" SourceId="1" SourceUrl="net.pipe://localhost/RemoteAppsService/192.168.10.15/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="25baba8b-30c4-4651-be7a-ced073f7c615" SourceId="1" SourceUrl="net.pipe://localhost/RemoteAppsService/192.168.10.15/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

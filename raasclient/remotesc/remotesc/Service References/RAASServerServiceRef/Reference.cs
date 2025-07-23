@@ -12,173 +12,193 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteSc.RAASServerServiceRef {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
         "erService", ConfigurationName="RAASServerServiceRef.IRAASServerService", CallbackContract=typeof(Elbitin.Applications.RAAS.RAASClient.RemoteSc.RAASServerServiceRef.IRAASServerServiceCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface IRAASServerService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/Subscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/Subscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/SubscribeResponse")]
         void Subscribe();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/Subscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/Subscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/SubscribeResponse")]
         System.Threading.Tasks.Task SubscribeAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/Unsubscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/Unsubscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/UnsubscribeResponse")]
         void Unsubscribe();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/Unsubscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/Unsubscribe", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/UnsubscribeResponse")]
         System.Threading.Tasks.Task UnsubscribeAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetShortcutsXml", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetShortcutsXml", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetShortcutsXmlResponse")]
         string GetShortcutsXml();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetShortcutsXml", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetShortcutsXml", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetShortcutsXmlResponse")]
         System.Threading.Tasks.Task<string> GetShortcutsXmlAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetShareXml", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetShareXml", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetShareXmlResponse")]
         string GetShareXml();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetShareXml", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetShareXml", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetShareXmlResponse")]
         System.Threading.Tasks.Task<string> GetShareXmlAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetLoggedInState", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetLoggedInState", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetLoggedInStateResponse")]
         bool GetLoggedInState();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetLoggedInState", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetLoggedInState", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetLoggedInStateResponse")]
         System.Threading.Tasks.Task<bool> GetLoggedInStateAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/LogOff", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/LogOff", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/LogOffResponse")]
         bool LogOff();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/LogOff", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/LogOff", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/LogOffResponse")]
         System.Threading.Tasks.Task<bool> LogOffAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetIcon", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetIcon", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetIconResponse")]
         byte[] GetIcon(string iconName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetIcon", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetIcon", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetIconResponse")]
         System.Threading.Tasks.Task<byte[]> GetIconAsync(string iconName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetAutostartEntries", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetAutostartEntries", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetAutostartEntriesResponse")]
         string[] GetAutostartEntries();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetAutostartEntries", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetAutostartEntries", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetAutostartEntriesResponse")]
         System.Threading.Tasks.Task<string[]> GetAutostartEntriesAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetShortcutIcon", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetShortcutIcon", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetShortcutIconResponse")]
         byte[] GetShortcutIcon(string path);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetShortcutIcon", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetShortcutIcon", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetShortcutIconResponse")]
         System.Threading.Tasks.Task<byte[]> GetShortcutIconAsync(string path);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/Reboot", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/Reboot", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/RebootResponse")]
         void Reboot();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/Reboot", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/Reboot", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/RebootResponse")]
         System.Threading.Tasks.Task RebootAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetVersion", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetVersion", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetVersionResponse")]
         string GetVersion();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetVersion", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetVersion", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetVersionResponse")]
         System.Threading.Tasks.Task<string> GetVersionAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetShortcutsServerPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetShortcutsServerPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetShortcutsServerPathResponse")]
         string GetShortcutsServerPath();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetShortcutsServerPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetShortcutsServerPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetShortcutsServerPathResponse")]
         System.Threading.Tasks.Task<string> GetShortcutsServerPathAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetKeepAliveAgentPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetKeepAliveAgentPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetKeepAliveAgentPathResponse")]
         string GetKeepAliveAgentPath();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetKeepAliveAgentPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetKeepAliveAgentPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetKeepAliveAgentPathResponse")]
         System.Threading.Tasks.Task<string> GetKeepAliveAgentPathAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetAutostartPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetAutostartPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetAutostartPathResponse")]
         string GetAutostartPath();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/GetAutostartPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetAutostartPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/GetAutostartPathResponse")]
         System.Threading.Tasks.Task<string> GetAutostartPathAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/UpdateShortcuts", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetAppNamesPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetAppNamesPathResponse")]
+        string GetAppNamesPath();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetAppNamesPath", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetAppNamesPathResponse")]
+        System.Threading.Tasks.Task<string> GetAppNamesPathAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/UpdateShortcuts", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/UpdateShortcutsResponse")]
         void UpdateShortcuts();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/UpdateShortcuts", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/UpdateShortcuts", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/UpdateShortcutsResponse")]
         System.Threading.Tasks.Task UpdateShortcutsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/CanReboot", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/CanRebootResponse")]
+        bool CanReboot();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/CanReboot", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/CanRebootResponse")]
+        System.Threading.Tasks.Task<bool> CanRebootAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface IRAASServerServiceCallback {
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/ShortcutsXmlChange")]
         void ShortcutsXmlChange();
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/ShareXmlChange")]
         void ShareXmlChange();
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServ" +
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/LoggedInChange")]
         void LoggedInChange();
     }
@@ -323,12 +343,28 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteSc.RAASServerServiceRef {
             return base.Channel.GetAutostartPathAsync();
         }
         
+        public string GetAppNamesPath() {
+            return base.Channel.GetAppNamesPath();
+        }
+        
+        public System.Threading.Tasks.Task<string> GetAppNamesPathAsync() {
+            return base.Channel.GetAppNamesPathAsync();
+        }
+        
         public void UpdateShortcuts() {
             base.Channel.UpdateShortcuts();
         }
         
         public System.Threading.Tasks.Task UpdateShortcutsAsync() {
             return base.Channel.UpdateShortcutsAsync();
+        }
+        
+        public bool CanReboot() {
+            return base.Channel.CanReboot();
+        }
+        
+        public System.Threading.Tasks.Task<bool> CanRebootAsync() {
+            return base.Channel.CanRebootAsync();
         }
     }
 }

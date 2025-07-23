@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
-    <xsd:schema targetNamespace="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/Imports">
-      <xsd:import namespace="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService" />
+    <xsd:schema targetNamespace="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/Imports">
+      <xsd:import namespace="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService" />
       <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
@@ -91,6 +91,24 @@
   <wsdl:message name="IRAASServerService_GetAutostartPath_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAutostartPathResponse" />
   </wsdl:message>
+  <wsdl:message name="IRAASServerService_GetAppNamesPath_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppNamesPath" />
+  </wsdl:message>
+  <wsdl:message name="IRAASServerService_GetAppNamesPath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppNamesPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRAASServerService_UpdateShortcuts_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateShortcuts" />
+  </wsdl:message>
+  <wsdl:message name="IRAASServerService_UpdateShortcuts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateShortcutsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRAASServerService_CanReboot_InputMessage">
+    <wsdl:part name="parameters" element="tns:CanReboot" />
+  </wsdl:message>
+  <wsdl:message name="IRAASServerService_CanReboot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CanRebootResponse" />
+  </wsdl:message>
   <wsdl:message name="IRAASServerService_ShortcutsXmlChange_OutputCallbackMessage">
     <wsdl:part name="parameters" element="tns:ShortcutsXmlChange" />
   </wsdl:message>
@@ -102,69 +120,81 @@
   </wsdl:message>
   <wsdl:portType msc:usingSession="true" name="IRAASServerService">
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Subscribe">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Subscribe" message="tns:IRAASServerService_Subscribe_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/SubscribeResponse" message="tns:IRAASServerService_Subscribe_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Subscribe" message="tns:IRAASServerService_Subscribe_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/SubscribeResponse" message="tns:IRAASServerService_Subscribe_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Unsubscribe">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Unsubscribe" message="tns:IRAASServerService_Unsubscribe_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/UnsubscribeResponse" message="tns:IRAASServerService_Unsubscribe_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Unsubscribe" message="tns:IRAASServerService_Unsubscribe_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/UnsubscribeResponse" message="tns:IRAASServerService_Unsubscribe_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetShortcutsXml">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsXml" message="tns:IRAASServerService_GetShortcutsXml_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsXmlResponse" message="tns:IRAASServerService_GetShortcutsXml_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsXml" message="tns:IRAASServerService_GetShortcutsXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsXmlResponse" message="tns:IRAASServerService_GetShortcutsXml_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetShareXml">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShareXml" message="tns:IRAASServerService_GetShareXml_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShareXmlResponse" message="tns:IRAASServerService_GetShareXml_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShareXml" message="tns:IRAASServerService_GetShareXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShareXmlResponse" message="tns:IRAASServerService_GetShareXml_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetLoggedInState">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetLoggedInState" message="tns:IRAASServerService_GetLoggedInState_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetLoggedInStateResponse" message="tns:IRAASServerService_GetLoggedInState_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetLoggedInState" message="tns:IRAASServerService_GetLoggedInState_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetLoggedInStateResponse" message="tns:IRAASServerService_GetLoggedInState_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="LogOff">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/LogOff" message="tns:IRAASServerService_LogOff_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/LogOffResponse" message="tns:IRAASServerService_LogOff_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/LogOff" message="tns:IRAASServerService_LogOff_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/LogOffResponse" message="tns:IRAASServerService_LogOff_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetIcon">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetIcon" message="tns:IRAASServerService_GetIcon_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetIconResponse" message="tns:IRAASServerService_GetIcon_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetIcon" message="tns:IRAASServerService_GetIcon_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetIconResponse" message="tns:IRAASServerService_GetIcon_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetAutostartEntries">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartEntries" message="tns:IRAASServerService_GetAutostartEntries_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartEntriesResponse" message="tns:IRAASServerService_GetAutostartEntries_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartEntries" message="tns:IRAASServerService_GetAutostartEntries_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartEntriesResponse" message="tns:IRAASServerService_GetAutostartEntries_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetShortcutIcon">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutIcon" message="tns:IRAASServerService_GetShortcutIcon_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutIconResponse" message="tns:IRAASServerService_GetShortcutIcon_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutIcon" message="tns:IRAASServerService_GetShortcutIcon_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutIconResponse" message="tns:IRAASServerService_GetShortcutIcon_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Reboot">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Reboot" message="tns:IRAASServerService_Reboot_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/RebootResponse" message="tns:IRAASServerService_Reboot_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/Reboot" message="tns:IRAASServerService_Reboot_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/RebootResponse" message="tns:IRAASServerService_Reboot_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetVersion">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetVersion" message="tns:IRAASServerService_GetVersion_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetVersionResponse" message="tns:IRAASServerService_GetVersion_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetVersion" message="tns:IRAASServerService_GetVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetVersionResponse" message="tns:IRAASServerService_GetVersion_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetShortcutsServerPath">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsServerPath" message="tns:IRAASServerService_GetShortcutsServerPath_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsServerPathResponse" message="tns:IRAASServerService_GetShortcutsServerPath_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsServerPath" message="tns:IRAASServerService_GetShortcutsServerPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetShortcutsServerPathResponse" message="tns:IRAASServerService_GetShortcutsServerPath_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetKeepAliveAgentPath">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetKeepAliveAgentPath" message="tns:IRAASServerService_GetKeepAliveAgentPath_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetKeepAliveAgentPathResponse" message="tns:IRAASServerService_GetKeepAliveAgentPath_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetKeepAliveAgentPath" message="tns:IRAASServerService_GetKeepAliveAgentPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetKeepAliveAgentPathResponse" message="tns:IRAASServerService_GetKeepAliveAgentPath_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetAutostartPath">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartPath" message="tns:IRAASServerService_GetAutostartPath_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartPathResponse" message="tns:IRAASServerService_GetAutostartPath_OutputMessage" />
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartPath" message="tns:IRAASServerService_GetAutostartPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAutostartPathResponse" message="tns:IRAASServerService_GetAutostartPath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetAppNamesPath">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAppNamesPath" message="tns:IRAASServerService_GetAppNamesPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAppNamesPathResponse" message="tns:IRAASServerService_GetAppNamesPath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UpdateShortcuts">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/UpdateShortcuts" message="tns:IRAASServerService_UpdateShortcuts_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/UpdateShortcutsResponse" message="tns:IRAASServerService_UpdateShortcuts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CanReboot">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/CanReboot" message="tns:IRAASServerService_CanReboot_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/CanRebootResponse" message="tns:IRAASServerService_CanReboot_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ShortcutsXmlChange">
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/ShortcutsXmlChange" message="tns:IRAASServerService_ShortcutsXmlChange_OutputCallbackMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/ShortcutsXmlChange" message="tns:IRAASServerService_ShortcutsXmlChange_OutputCallbackMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ShareXmlChange">
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/ShareXmlChange" message="tns:IRAASServerService_ShareXmlChange_OutputCallbackMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/ShareXmlChange" message="tns:IRAASServerService_ShareXmlChange_OutputCallbackMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="LoggedInChange">
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/LoggedInChange" message="tns:IRAASServerService_LoggedInChange_OutputCallbackMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/LoggedInChange" message="tns:IRAASServerService_LoggedInChange_OutputCallbackMessage" />
     </wsdl:operation>
   </wsdl:portType>
 </wsdl:definitions>

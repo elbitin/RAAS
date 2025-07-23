@@ -13,7 +13,7 @@ using System.ServiceModel;
 
 namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
 {
-    [ServiceContract(Namespace = "http://applications.elbitin.com/WCF/RAASServer/1.0.0/RAASServer.RAASSvr.IRAASServerService",
+    [ServiceContract(Namespace = "http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService",
         SessionMode = SessionMode.Required, CallbackContract = typeof(IRAASServerChange))]
     public interface IRAASServerService
     {
@@ -58,9 +58,14 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
 
         [OperationContract(IsOneWay = false, IsInitiating = true)]
         string GetAutostartPath();
+
         [OperationContract(IsOneWay = false, IsInitiating = true)]
         string GetAppNamesPath();
+
         [OperationContract(IsOneWay = false, IsInitiating = true)]
         void UpdateShortcuts();
+
+        [OperationContract(IsOneWay = false, IsInitiating = true)]
+        bool CanReboot();
     }
 }

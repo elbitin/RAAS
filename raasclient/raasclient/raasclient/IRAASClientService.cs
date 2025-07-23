@@ -12,7 +12,7 @@
 
 namespace Elbitin.Applications.RAAS.RAASClient.RAASClient
 {
-    [ServiceContract(Namespace = "http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASClientService",
+    [ServiceContract(Namespace = "http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASClientService",
         SessionMode = SessionMode.Required)]
     public interface IRAASClientService
     {

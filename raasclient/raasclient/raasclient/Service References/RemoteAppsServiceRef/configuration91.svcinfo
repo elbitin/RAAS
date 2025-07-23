@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="9FLoGzvZWgRZOzYdaTxM/cGivsI=">
+<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="SIrbQT+ArYvw182BFPwCR8jbP6P0tANIc56JWIw+bfg=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="netNamedPipeBinding" name="NetNamedPipeBinding_IRemoteAppsService">
       <properties>
@@ -76,10 +76,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="NetNamedPipeBinding_IRemoteAppsService" contract="RemoteAppsServiceRef.IRemoteAppsService" bindingType="netNamedPipeBinding" address="net.pipe://localhost/RemoteAppsService/192.168.137.5" bindingConfiguration="NetNamedPipeBinding_IRemoteAppsService">
+    <endpoint name="NetNamedPipeBinding_IRemoteAppsService" contract="RemoteAppsServiceRef.IRemoteAppsService" bindingType="netNamedPipeBinding" address="net.pipe://localhost/RemoteAppsService/192.168.10.15" bindingConfiguration="NetNamedPipeBinding_IRemoteAppsService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>net.pipe://localhost/RemoteAppsService/192.168.137.5</serializedValue>
+          <serializedValue>net.pipe://localhost/RemoteAppsService/192.168.10.15</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -106,7 +106,7 @@
           <serializedValue>System.ServiceModel.Configuration.UserPrincipalNameElement</serializedValue>
         </property>
         <property path="/identity/userPrincipalName/value" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>DESKTOP-SEBG87B\keglu</serializedValue>
+          <serializedValue>SPECTRE\keglu</serializedValue>
         </property>
         <property path="/identity/servicePrincipalName" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.ServicePrincipalNameElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.ServicePrincipalNameElement</serializedValue>

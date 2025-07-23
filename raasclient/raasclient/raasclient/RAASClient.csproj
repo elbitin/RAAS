@@ -94,6 +94,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\reconnect.png" />
+    <None Include="Service References\RemoteAppsServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RemoteAppsServiceRef\configuration.svcinfo" />
+    <None Include="Service References\RemoteAppsServiceRef\configuration91.svcinfo" />
     <None Include="Service References\RAASServerServiceRef\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -121,22 +127,16 @@
     <None Include="Service References\RAASServerServiceRef\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\RemoteAppsServiceRef\RAASClient.RemoteApps.IRemoteAppsService1.wsdl" />
-    <None Include="Service References\RemoteAppsServiceRef\RAASClient.RemoteApps.IRemoteAppsService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\RemoteAppsServiceRef\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\RemoteAppsServiceRef\configuration.svcinfo" />
-    <None Include="Service References\RemoteAppsServiceRef\configuration91.svcinfo" />
     <None Include="About.png" />
     <Content Include="App.config">
       <SubType>Designer</SubType>
     </Content>
-    <None Include="Service References\RemoteAppsServiceRef\service1.wsdl" />
-    <None Include="Service References\RemoteAppsServiceRef\service1.xsd">
+    <None Include="Service References\RemoteAppsServiceRef\RAASClient.RemoteApps.IRemoteAppsService.wsdl" />
+    <None Include="Service References\RemoteAppsServiceRef\RAASClient.RemoteApps.IRemoteAppsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RemoteAppsServiceRef\service.wsdl" />
+    <None Include="Service References\RemoteAppsServiceRef\service.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

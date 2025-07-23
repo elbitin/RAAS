@@ -450,6 +450,9 @@
 				<ComponentRef Id="RmvShares"/>
 				<ComponentRef Id="SharesRegistry"/>
 			</Feature>
+			<Feature Id="CanReboot" Title="!(loc.CanRebootTitle)" Level="1" Description="!(loc.CanRebootDescription)">
+				<ComponentRef Id="CanRebootRegistry"/>
+			</Feature>
 		</Feature>
 		<StandardDirectory Id="ProgramFiles64Folder">
 			<Directory Id="CompanyFolder" Name="Elbitin">
@@ -1884,6 +1887,18 @@
                      </ServiceInstall>
 						<ServiceControl Id="StartRAASServerService" Start="install" Stop="both" Remove="uninstall" Name="RAASServer" Wait="yes"/>
 					</Component>
+					<Component Id="CanRebootRegistry" Guid="{2C3F8EA8-CA3C-436B-A687-EDE8D77C3D7F}" Bitness="always64">
+						<RegistryKey Root="HKMU" Key="Software\Elbitin">
+							<RegistryKey Key="RAAS Server">
+								<RegistryValue Name="CanReboot" Type="integer" Value="1" KeyPath="yes"/>
+							</RegistryKey>
+						</RegistryKey>
+						<RegistryKey Root="HKMU" Key="Software\WOW6432Node\Elbitin">
+							<RegistryKey Key="RAAS Server">
+								<RegistryValue Name="CanReboot" Type="integer" Value="1" KeyPath="no"/>
+							</RegistryKey>
+						</RegistryKey>
+					</Component>
 					<Component Id="InstallDirRegistry" Guid="{DB3F3929-2CAA-4873-AA07-83631836A655}" Bitness="always64">
 						<RegistryKey Root="HKMU" Key="Software\Elbitin">
 							<RegistryKey Key="RAAS Server">
@@ -1933,7 +1948,6 @@
 		<StandardDirectory Id="DesktopFolder"/>
 		<StandardDirectory Id="WindowsFolder"/>
 		<StandardDirectory Id="ProgramMenuFolder"/>
-		<StandardDirectory Id="System64Folder">
-         </StandardDirectory>
+		<StandardDirectory Id="System64Folder"/>
 	</Package>
 </Wix>

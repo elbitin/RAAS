@@ -48,6 +48,7 @@
     <None Include="Service References\RAASServerServiceRef\Arrays.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\RAASServerServiceRef\RAASServer.RAASSvr.IRAASServerService.wsdl" />
     <None Include="Service References\RAASServerServiceRef\RAASServer.RAASSvr.IRAASServerService.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -119,7 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="RAASClientIcon.ico" />
-    <None Include="Service References\RAASServerServiceRef\RAASServer.RAASSvr.IRAASServerService.wsdl" />
     <None Include="Service References\RAASServerServiceRef\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

@@ -244,6 +244,18 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             return installPath;
         }
 
+
+        public static bool GetCanReboot(String companyName, String programName)
+        {
+            RegistryKey registryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\" + companyName + "\\" + programName);
+            if (registryKey != null)
+                return Convert.ToBoolean(Convert.ToInt64(registryKey.GetValue("CanReboot").ToString()));
+            else
+            {
+                return false;
+            }
+        }
+
         public static String GetProgramRootValue(String companyName, String programName, String valueName)
         {
             RegistryKey registryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\" + companyName + "\\" + programName);

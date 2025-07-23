@@ -8,5 +8,7 @@
 	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Avinstallerar konfigurationen för Windows brandvägg"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Nätverksdelad server"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Dela enheter på nätverket för att kunna kontrollera och bläddra från RAAS Client"/>
+	<String Id="CanRebootTitle" Overridable="yes" Value="Tillåt omstart"/>
+	<String Id="CanRebootDescription" Overridable="yes" Value="Tillåt omstart från RAAS Client"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1053"/>
 </WixLocalization>

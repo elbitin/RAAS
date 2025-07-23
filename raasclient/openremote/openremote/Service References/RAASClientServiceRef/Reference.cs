@@ -12,34 +12,89 @@ namespace Elbitin.Applications.RAAS.RAASClient.OpenRemote.RAASClientServiceRef {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
         "lientService", ConfigurationName="RAASClientServiceRef.IRAASClientService", SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface IRAASClientService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
-            "lientService/IRAASClientService/StartRemoteApplication", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartRemoteApplication", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
             "lientService/IRAASClientService/StartRemoteApplicationResponse")]
         void StartRemoteApplication(string application, string arguments, string serverName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
-            "lientService/IRAASClientService/ConnectServer", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartRemoteApplication", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartRemoteApplicationResponse")]
+        System.Threading.Tasks.Task StartRemoteApplicationAsync(string application, string arguments, string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/ConnectServer", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
             "lientService/IRAASClientService/ConnectServerResponse")]
         void ConnectServer(string serverName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
-            "lientService/IRAASClientService/DisconnectServer", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/ConnectServer", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/ConnectServerResponse")]
+        System.Threading.Tasks.Task ConnectServerAsync(string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/DisconnectServer", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
             "lientService/IRAASClientService/DisconnectServerResponse")]
         void DisconnectServer(string serverName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
-            "lientService/IRAASClientService/GetServerStatus", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/DisconnectServer", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/DisconnectServerResponse")]
+        System.Threading.Tasks.Task DisconnectServerAsync(string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/GetServerStatus", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
             "lientService/IRAASClientService/GetServerStatusResponse")]
         int GetServerStatus(string serverName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
-            "lientService/IRAASClientService/GetServerVersion", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RAASClient.IRAASC" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/GetServerStatus", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/GetServerStatusResponse")]
+        System.Threading.Tasks.Task<int> GetServerStatusAsync(string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/GetServerVersion", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
             "lientService/IRAASClientService/GetServerVersionResponse")]
         string GetServerVersion(string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/GetServerVersion", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/GetServerVersionResponse")]
+        System.Threading.Tasks.Task<string> GetServerVersionAsync(string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartAutostart", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartAutostartResponse")]
+        void StartAutostart(string arguments, string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartAutostart", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartAutostartResponse")]
+        System.Threading.Tasks.Task StartAutostartAsync(string arguments, string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartShortcutsServer", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartShortcutsServerResponse")]
+        void StartShortcutsServer(string arguments, string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartShortcutsServer", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartShortcutsServerResponse")]
+        System.Threading.Tasks.Task StartShortcutsServerAsync(string arguments, string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartKeepAlive", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartKeepAliveResponse")]
+        void StartKeepAlive(string arguments, string serverName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartKeepAlive", ReplyAction="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RAASClient.IRAASC" +
+            "lientService/IRAASClientService/StartKeepAliveResponse")]
+        System.Threading.Tasks.Task StartKeepAliveAsync(string arguments, string serverName);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -73,20 +128,64 @@ namespace Elbitin.Applications.RAAS.RAASClient.OpenRemote.RAASClientServiceRef {
             base.Channel.StartRemoteApplication(application, arguments, serverName);
         }
         
+        public System.Threading.Tasks.Task StartRemoteApplicationAsync(string application, string arguments, string serverName) {
+            return base.Channel.StartRemoteApplicationAsync(application, arguments, serverName);
+        }
+        
         public void ConnectServer(string serverName) {
             base.Channel.ConnectServer(serverName);
+        }
+        
+        public System.Threading.Tasks.Task ConnectServerAsync(string serverName) {
+            return base.Channel.ConnectServerAsync(serverName);
         }
         
         public void DisconnectServer(string serverName) {
             base.Channel.DisconnectServer(serverName);
         }
         
+        public System.Threading.Tasks.Task DisconnectServerAsync(string serverName) {
+            return base.Channel.DisconnectServerAsync(serverName);
+        }
+        
         public int GetServerStatus(string serverName) {
             return base.Channel.GetServerStatus(serverName);
         }
         
+        public System.Threading.Tasks.Task<int> GetServerStatusAsync(string serverName) {
+            return base.Channel.GetServerStatusAsync(serverName);
+        }
+        
         public string GetServerVersion(string serverName) {
             return base.Channel.GetServerVersion(serverName);
+        }
+        
+        public System.Threading.Tasks.Task<string> GetServerVersionAsync(string serverName) {
+            return base.Channel.GetServerVersionAsync(serverName);
+        }
+        
+        public void StartAutostart(string arguments, string serverName) {
+            base.Channel.StartAutostart(arguments, serverName);
+        }
+        
+        public System.Threading.Tasks.Task StartAutostartAsync(string arguments, string serverName) {
+            return base.Channel.StartAutostartAsync(arguments, serverName);
+        }
+        
+        public void StartShortcutsServer(string arguments, string serverName) {
+            base.Channel.StartShortcutsServer(arguments, serverName);
+        }
+        
+        public System.Threading.Tasks.Task StartShortcutsServerAsync(string arguments, string serverName) {
+            return base.Channel.StartShortcutsServerAsync(arguments, serverName);
+        }
+        
+        public void StartKeepAlive(string arguments, string serverName) {
+            base.Channel.StartKeepAlive(arguments, serverName);
+        }
+        
+        public System.Threading.Tasks.Task StartKeepAliveAsync(string arguments, string serverName) {
+            return base.Channel.StartKeepAliveAsync(arguments, serverName);
         }
     }
 }

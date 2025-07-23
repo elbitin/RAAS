@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="9d9f99aa-52d1-44d3-b152-a83ac08ae277" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7f71719d-a7df-4d66-81fd-a79cbc5a31f6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="net.tcp://192.168.10.15:43000/RAASServerService/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="RAASServer.RAASSvr.IRAASServerService.wsdl" MetadataType="Wsdl" ID="7c66c41b-c212-4592-941c-7742f3267a35" SourceId="1" SourceUrl="net.tcp://192.168.10.15:43000/RAASServerService/mex" />
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="e7c022f9-266a-4984-ab65-1d88e97a9090" SourceId="1" SourceUrl="net.tcp://192.168.10.15:43000/RAASServerService/mex" />
-    <MetadataFile FileName="RAASServer.RAASSvr.IRAASServerService.xsd" MetadataType="Schema" ID="b0b9eb62-c784-4fd7-953c-3bf2d4201aaa" SourceId="1" SourceUrl="net.tcp://192.168.10.15:43000/RAASServerService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="0fb7dc81-2668-4f40-a3cd-d920e1f72738" SourceId="1" SourceUrl="net.tcp://192.168.10.15:43000/RAASServerService/mex" />
-    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="3cf2c648-0200-4d8b-aa99-8b020b7a761d" SourceId="1" SourceUrl="net.tcp://192.168.10.15:43000/RAASServerService/mex" />
+    <MetadataFile FileName="RAASServer.RAASSvr.IRAASServerService.wsdl" MetadataType="Wsdl" ID="0321a0bd-3f73-4ddb-8459-36fb30d5297b" SourceId="1" SourceUrl="net.tcp://192.168.10.15:43000/RAASServerService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="b5cc7f73-5118-4e62-a86e-a277d6630611" SourceId="1" SourceUrl="net.tcp://192.168.10.15:43000/RAASServerService/mex" />
+    <MetadataFile FileName="RAASServer.RAASSvr.IRAASServerService.xsd" MetadataType="Schema" ID="9ff23d9a-f497-4724-89ca-3a56e518ad97" SourceId="1" SourceUrl="net.tcp://192.168.10.15:43000/RAASServerService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="55c4ef5f-c0a2-4f4a-8df8-80a0bb72e474" SourceId="1" SourceUrl="net.tcp://192.168.10.15:43000/RAASServerService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="c0d30dce-d036-4582-9bf6-160ba512aec4" SourceId="1" SourceUrl="net.tcp://192.168.10.15:43000/RAASServerService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

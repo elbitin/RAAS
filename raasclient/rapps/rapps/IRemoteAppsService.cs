@@ -13,7 +13,7 @@ using System.ServiceModel;
 
 namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 {
-    [ServiceContract(Namespace = "http://applications.elbitin.com/WCF/RAASClient/1.0.0/RAASClient.RemoteApps.IRemoteAppsService",
+    [ServiceContract(Namespace = "http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService",
         SessionMode = SessionMode.Required, CallbackContract = typeof(IRemoteAppsChange))]
     public interface IRemoteAppsService
     {
