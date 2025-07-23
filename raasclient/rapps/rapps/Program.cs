@@ -52,11 +52,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             RemoteAppsForm clientForm;
-            //if (args.Count() > 0)
-            //    clientForm = new RemoteAppsForm(args[0]);
-            //else
-            //    return;
-            clientForm = new RemoteAppsForm("192.168.10.15");
+            if (args.Count() > 0)
+                clientForm = new RemoteAppsForm(args[0]);
+            else
+                return;
             Application.Run(clientForm);
          }
 
