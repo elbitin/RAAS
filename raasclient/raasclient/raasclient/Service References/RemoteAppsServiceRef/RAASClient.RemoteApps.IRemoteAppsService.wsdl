@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/Imports">
+      <xsd:import namespace="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRemoteAppsService_Subscribe_InputMessage">
+    <wsdl:part name="parameters" element="tns:Subscribe" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_Subscribe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_Unsubscribe_InputMessage">
+    <wsdl:part name="parameters" element="tns:Unsubscribe" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_Unsubscribe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnsubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_StartRemoteApplication_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartRemoteApplication" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_StartRemoteApplication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartRemoteApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_Connect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connect" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_Connect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_Disconnect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Disconnect" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_Disconnect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisconnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_GetStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatus" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_GetStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRemoteAppsService_Connected_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:Connected" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IRemoteAppsService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Subscribe">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/Subscribe" message="tns:IRemoteAppsService_Subscribe_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/SubscribeResponse" message="tns:IRemoteAppsService_Subscribe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Unsubscribe">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/Unsubscribe" message="tns:IRemoteAppsService_Unsubscribe_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/UnsubscribeResponse" message="tns:IRemoteAppsService_Unsubscribe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StartRemoteApplication">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/StartRemoteApplication" message="tns:IRemoteAppsService_StartRemoteApplication_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/StartRemoteApplicationResponse" message="tns:IRemoteAppsService_StartRemoteApplication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Connect">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/Connect" message="tns:IRemoteAppsService_Connect_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/ConnectResponse" message="tns:IRemoteAppsService_Connect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Disconnect">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/Disconnect" message="tns:IRemoteAppsService_Disconnect_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/DisconnectResponse" message="tns:IRemoteAppsService_Disconnect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetStatus">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/GetStatus" message="tns:IRemoteAppsService_GetStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/GetStatusResponse" message="tns:IRemoteAppsService_GetStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Connected">
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASClient/2.0.0/RAASClient.RemoteApps.IRemoteAppsService/IRemoteAppsService/Connected" message="tns:IRemoteAppsService_Connected_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
