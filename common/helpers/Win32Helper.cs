@@ -1481,41 +1481,10 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             IntPtr hToken,
             out IntPtr pszPath);
 
-        public static IntPtr WTS_CURRENT_SERVER_HANDLE = IntPtr.Zero;
-        public const int WTS_CURRENT_SESSION = -1;
-        [DllImport("wtsapi32.dll", SetLastError = true)]
-        public static extern bool WTSDisconnectSession(
-            IntPtr hServer,
-            int sessionId,
-            bool bWait);
-
         [DllImport("user32.dll")]
         public static extern int ExitWindowsEx(
             int uFlags,
             int dwReason);
-
-        [DllImport("wtsapi32.dll", SetLastError = true)]
-        public static extern bool WTSLogoffSession(
-            IntPtr hServer,
-            int SessionId,
-            bool bWait);
-
-        [DllImport("wtsapi32.dll", SetLastError = true)]
-        public static extern Int32 WTSEnumerateSessions(
-            IntPtr hServer,
-            [MarshalAs(UnmanagedType.U4)] Int32 Reserved,
-            [MarshalAs(UnmanagedType.U4)] Int32 Version,
-            ref IntPtr ppSessionInfo,
-            [MarshalAs(UnmanagedType.U4)] ref Int32 pCount);
-
-        [DllImport("wtsapi32.dll")]
-        public static extern void WTSFreeMemory(IntPtr pMemory);
-
-        [DllImport("wtsapi32.dll", SetLastError = true)]
-        public static extern IntPtr WTSOpenServer([MarshalAs(UnmanagedType.LPStr)] String pServerName);
-
-        [DllImport("wtsapi32.dll")]
-        public static extern void WTSCloseServer(IntPtr hServer);
 
         [DllImport("shlwapi.dll")]
         public static extern bool PathIsNetworkPath(string pszPath);
@@ -1530,6 +1499,46 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             IntPtr hToken,
             uint dwFlags,
             [Out] StringBuilder pszPath);
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+
+        public static extern bool WTSQuerySessionInformation(IntPtr hServer, int sessionId, WtsInfoClass wtsInfoClass, out IntPtr ppBuffer, out int pBytesReturned);
+
+        public enum WtsInfoClass
+        {
+            WTSUserName = 5,
+            WTSDomainName = 7,
+        }
+
+        public enum WTS_INFO_CLASS
+        {
+            WTSInitialProgram,
+            WTSApplicationName,
+            WTSWorkingDirectory,
+            WTSOEMId,
+            WTSSessionId,
+            WTSUserName,
+            WTSWinStationName,
+            WTSDomainName,
+            WTSConnectState,
+            WTSClientBuildNumber,
+            WTSClientName,
+            WTSClientDirectory,
+            WTSClientProductId,
+            WTSClientHardwareId,
+            WTSClientAddress,
+            WTSClientDisplay,
+            WTSClientProtocolType,
+            WTSIdleTime,
+            WTSLogonTime,
+            WTSIncomingBytes,
+            WTSOutgoingBytes,
+            WTSIncomingFrames,
+            WTSOutgoingFrames,
+            WTSClientInfo,
+            WTSSessionInfo
+        }
 
         public static IntPtr SetWindowLongPtr(IntPtr hWnd, int nIndex, IntPtr dwNewLong)
         {

@@ -90,7 +90,6 @@
     </Compile>
     <Compile Include="IRAASServerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TSManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

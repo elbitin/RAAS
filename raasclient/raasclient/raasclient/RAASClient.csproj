@@ -94,28 +94,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\reconnect.png" />
-    <None Include="Service References\RemoteAppsServiceRef\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\RemoteAppsServiceRef\configuration.svcinfo" />
-    <None Include="Service References\RemoteAppsServiceRef\configuration91.svcinfo" />
     <None Include="Service References\RAASServerServiceRef\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Service References\RAASServerServiceRef\configuration.svcinfo" />
     <None Include="Service References\RAASServerServiceRef\configuration91.svcinfo" />
-    <None Include="Resources\shortcuts.png" />
-    <None Include="Resources\about.png" />
-    <None Include="Resources\help.png" />
-    <None Include="Resources\exit.png" />
-    <None Include="Resources\serverconfig.png" />
-    <None Include="Resources\reboot.png" />
-    <None Include="Resources\rdesktop.png" />
-    <None Include="Resources\logout.png" />
-    <None Include="Resources\disconnect.png" />
-    <None Include="Resources\connect.png" />
     <None Include="Service References\RAASServerServiceRef\Arrays.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -127,6 +111,22 @@
     <None Include="Service References\RAASServerServiceRef\service.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\RemoteAppsServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RemoteAppsServiceRef\configuration.svcinfo" />
+    <None Include="Service References\RemoteAppsServiceRef\configuration91.svcinfo" />
+    <None Include="Resources\shortcuts.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\serverconfig.png" />
+    <None Include="Resources\reboot.png" />
+    <None Include="Resources\rdesktop.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\disconnect.png" />
+    <None Include="Resources\connect.png" />
     <None Include="About.png" />
     <Content Include="App.config">
       <SubType>Designer</SubType>

@@ -19,6 +19,13 @@ using System.Drawing;
 using Elbitin.Applications.RAAS.Common.Helpers;
 using Elbitin.Applications.RAAS.RAASServer.Helpers;
 using System.Threading;
+using static Elbitin.Applications.RAAS.Common.Helpers.Win32Helper;
+using System.Runtime.InteropServices;
+using System.Management;
+using Serilog.Core;
+using Serilog;
+using System.ServiceModel.Channels;
+using System.Text;
 
 namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
 {
@@ -47,6 +54,268 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
         private const String COMPANY_NAME = "Elbitin";
         private const String PROGRAM_NAME = "RAAS Server";
         private const String VERSION_REGISTRY_STRING = "Version";
+
+        [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Ansi)]
+        private static extern IntPtr LoadLibrary([MarshalAs(UnmanagedType.LPStr)] string lpFileName);
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        private static extern int LoadString(IntPtr hInstance, int ID, StringBuilder lpBuffer, int nBufferMax);
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool FreeLibrary(IntPtr hModule);
+        [DllImport("Wtsapi32.dll")]
+        private static extern bool WTSQuerySessionInformation(IntPtr hServer, int sessionId, WtsInfoClass wtsInfoClass, out IntPtr ppBuffer, out int pBytesReturned);
+        [DllImport("Wtsapi32.dll")]
+        private static extern void WTSFreeMemory(IntPtr pointer);
+
+        private enum WtsInfoClass
+        {
+            WTSUserName = 5,
+            WTSDomainName = 7,
+        }
+
+        private static string GetUsername(int sessionId, bool prependDomain = true)
+        {
+            IntPtr buffer;
+            int strLen;
+            string username = "SYSTEM";
+            if (WTSQuerySessionInformation(IntPtr.Zero, sessionId, WtsInfoClass.WTSUserName, out buffer, out strLen) && strLen > 1)
+            {
+                username = Marshal.PtrToStringAnsi(buffer);
+                WTSFreeMemory(buffer);
+                if (prependDomain)
+                {
+                    if (WTSQuerySessionInformation(IntPtr.Zero, sessionId, WtsInfoClass.WTSDomainName, out buffer, out strLen) && strLen > 1)
+                    {
+                        username = Marshal.PtrToStringAnsi(buffer) + "\\" + username;
+                        WTSFreeMemory(buffer);
+                    }
+                }
+            }
+            return username;
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        internal struct WTS_SESSION_INFO
+        {
+            public Int32 SessionID;
+            [MarshalAs(UnmanagedType.LPStr)]
+            public String pWinStationName;
+            public WTS_CONNECTSTATE_CLASS State;
+        }
+
+        internal enum WTS_CONNECTSTATE_CLASS
+        {
+            WTSActive,
+            WTSConnected,
+            WTSConnectQuery,
+            WTSShadow,
+            WTSDisconnected,
+            WTSIdle,
+            WTSListen,
+            WTSReset,
+            WTSDown,
+            WTSInit
+        }
+
+        internal enum WTS_INFO_CLASS
+        {
+            WTSInitialProgram,
+            WTSApplicationName,
+            WTSWorkingDirectory,
+            WTSOEMId,
+            WTSSessionId,
+            WTSUserName,
+            WTSWinStationName,
+            WTSDomainName,
+            WTSConnectState,
+            WTSClientBuildNumber,
+            WTSClientName,
+            WTSClientDirectory,
+            WTSClientProductId,
+            WTSClientHardwareId,
+            WTSClientAddress,
+            WTSClientDisplay,
+            WTSClientProtocolType,
+            WTSIdleTime,
+            WTSLogonTime,
+            WTSIncomingBytes,
+            WTSOutgoingBytes,
+            WTSIncomingFrames,
+            WTSOutgoingFrames,
+            WTSClientInfo,
+            WTSSessionInfo
+        }
+
+        [DllImport("wtsapi32.dll", SetLastError = true)]
+        static extern bool WTSLogoffSession(IntPtr hServer, int SessionId, bool bWait);
+
+        [DllImport("Wtsapi32.dll")]
+        static extern bool WTSQuerySessionInformation(
+            System.IntPtr hServer, int sessionId, WTS_INFO_CLASS wtsInfoClass, out System.IntPtr ppBuffer, out uint pBytesReturned);
+
+        [DllImport("wtsapi32.dll", SetLastError = true)]
+        static extern IntPtr WTSOpenServer([MarshalAs(UnmanagedType.LPStr)] String pServerName);
+
+        [DllImport("wtsapi32.dll")]
+        static extern void WTSCloseServer(IntPtr hServer);
+
+        [DllImport("wtsapi32.dll", SetLastError = true)]
+        static extern int WTSEnumerateSessions(
+                        System.IntPtr hServer,
+                        int Reserved,
+                        int Version,
+                        ref System.IntPtr ppSessionInfo,
+                        ref int pCount);
+        internal static List<int> GetSessionIDs(IntPtr server)
+        {
+            List<int> sessionIds = new List<int>();
+            IntPtr buffer = IntPtr.Zero;
+            int count = 0;
+            int retval = WTSEnumerateSessions(server, 0, 1, ref buffer, ref count);
+            int dataSize = Marshal.SizeOf(typeof(WTS_SESSION_INFO));
+            Int32 current = (int)buffer;
+
+            if (retval != 0)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    WTS_SESSION_INFO si = (WTS_SESSION_INFO)Marshal.PtrToStructure((IntPtr)current, typeof(WTS_SESSION_INFO));
+                    current += dataSize;
+                    sessionIds.Add(si.SessionID);
+                }
+                WTSFreeMemory(buffer);
+            }
+            return sessionIds;
+        }
+
+        public static IntPtr OpenServer(String Name)
+        {
+            IntPtr server = WTSOpenServer(Name);
+            return server;
+        }
+        public static void CloseServer(IntPtr ServerHandle)
+        {
+            WTSCloseServer(ServerHandle);
+        }
+
+        public static List<Int32> ListSessions(String ServerName)
+        {
+            IntPtr server = IntPtr.Zero;
+            List<Int32> ret = new List<Int32>();
+            server = OpenServer(ServerName);
+
+            try
+            {
+                IntPtr ppSessionInfo = IntPtr.Zero;
+
+                Int32 count = 0;
+                Int32 retval = WTSEnumerateSessions(server, 0, 1, ref ppSessionInfo, ref count);
+                Int32 dataSize = Marshal.SizeOf(typeof(WTS_SESSION_INFO));
+
+                Int32 current = (int)ppSessionInfo;
+
+                if (retval != 0)
+                {
+                    for (int i = 0; i < count; i++)
+                    {
+                        WTS_SESSION_INFO si = (WTS_SESSION_INFO)Marshal.PtrToStructure((System.IntPtr)current, typeof(WTS_SESSION_INFO));
+                        current += dataSize;
+
+                        ret.Add(si.SessionID);
+                    }
+
+                    WTSFreeMemory(ppSessionInfo);
+                }
+            }
+            finally
+            {
+                CloseServer(server);
+            }
+
+            return ret;
+        }
+
+        internal static bool LogOffUser(string userName, String serverName)
+        {
+            IntPtr server = WTSOpenServer(serverName);
+            try
+            {
+                userName = userName.Trim().ToUpper();
+                List<Int32> sessions = ListSessions(serverName);
+                Dictionary<String, Int32> userSessionDictionary = GetUserSessionDictionary(serverName, sessions);
+                if (userSessionDictionary.ContainsKey(userName))
+                    return WTSLogoffSession(server, userSessionDictionary[userName], true);
+                else
+                    return false;
+            }
+            finally
+            {
+                CloseServer(server);
+            }
+        }
+
+        private static Dictionary<string, Int32> GetUserSessionDictionary(String serverName, List<Int32> sessions)
+        {
+            Dictionary<string, Int32> userSession = new Dictionary<string, Int32>();
+            IntPtr server = WTSOpenServer(serverName);
+            try
+            {
+                foreach (Int32 sessionId in sessions)
+                {
+                    string uName = GetUserName(sessionId, server);
+                    if (!string.IsNullOrWhiteSpace(uName))
+                        userSession.Add(uName, sessionId);
+                }
+            }
+            finally
+            {
+                CloseServer(server);
+            }
+            return userSession;
+        }
+
+        internal static string GetUserName(Int32 sessionId, IntPtr server)
+        {
+            IntPtr buffer = IntPtr.Zero;
+            uint count = 0;
+            string userName = string.Empty;
+            try
+            {
+                WTSQuerySessionInformation(server, sessionId, WTS_INFO_CLASS.WTSUserName, out buffer, out count);
+                userName = Marshal.PtrToStringAnsi(buffer).ToUpper().Trim();
+            }
+            finally
+            {
+                WTSFreeMemory(buffer);
+            }
+            return userName;
+        }
+
+        bool UserLoggedIn(String userName)
+        {
+            userName = userName.ToLowerInvariant();
+            NTAccount f = new NTAccount(userName);
+            SecurityIdentifier s = (SecurityIdentifier)f.Translate(typeof(SecurityIdentifier));
+            String sidString = s.ToString();
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_UserProfile WHERE Loaded = True");
+            foreach (ManagementObject mo in searcher.Get())
+            {
+                List<string> SIDs = new List<string>();
+                foreach (var prop in mo.Properties)
+                    if (prop.Name == "SID")
+                    {
+                        String propUserName = (string)(prop?.Value?.ToString())?.Split('\\')?.Last();
+                        if (propUserName != null)
+                            SIDs.Add(propUserName);
+                    }
+                foreach (String propSID in SIDs)
+                    if (propSID.ToLowerInvariant() == sidString?.Split('\\')?.Last()?.ToLowerInvariant())
+                        return true;
+            }
+            return false;
+        }
 
         public static void SessionChange()
         {
@@ -224,19 +493,21 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             }
         }
 
-        [OperationBehavior(Impersonation = ImpersonationOption.Required)]
+        [OperationBehavior(Impersonation = ImpersonationOption.NotAllowed)]
         public bool GetLoggedInState()
         {
             try
             {
+                String userName;
                 using (ServiceSecurityContext.Current.WindowsIdentity.Impersonate())
                 {
-                    return TSManager.SessionActive();
+                    userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\').Last().ToLowerInvariant();
                 }
+                return UserLoggedIn(userName);
             }
-            catch
+            catch (Exception e)
             {
-                throw new FaultException("GetLoggedInState exception");
+                throw new FaultException("GetLoggedInState exception: " + e.Message + ": " + e.StackTrace);
             }
         }
 
@@ -259,15 +530,19 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
         {
             try
             {
+                String userName;
                 using (ServiceSecurityContext.Current.WindowsIdentity.Impersonate())
                 {
-                    TSManager.LogOffSessions();
-                    return true;
+                    userName = System.Security.Principal.WindowsIdentity.GetCurrent()?.Name?.ToLowerInvariant()?.Split('\\')?.Last();
+                    if (userName != null)
+                        return LogOffUser(userName, Environment.MachineName);
+                    else
+                        return false;
                 }
             }
-            catch
+            catch (Exception e)
             {
-                throw new FaultException("Logoff exception");
+                throw new FaultException("Logoff exception: " + e.Message + ":" + e.StackTrace);
             }
         }
 
@@ -436,7 +711,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             }
             catch
             {
-                throw new FaultException("Reboot exception");
+                throw new FaultException("GetCanReboot exception");
             }
         }
 
