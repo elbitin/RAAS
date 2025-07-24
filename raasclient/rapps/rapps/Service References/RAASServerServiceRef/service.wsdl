@@ -180,8 +180,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="UpdateShortcuts">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/UpdateShortcuts" style="document" />
+    <wsdl:operation name="GetCanReboot">
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetCanReboot" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -189,8 +189,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="CanReboot">
-      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/CanReboot" style="document" />
+    <wsdl:operation name="UpdateShortcuts">
+      <soap12:operation soapAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/UpdateShortcuts" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

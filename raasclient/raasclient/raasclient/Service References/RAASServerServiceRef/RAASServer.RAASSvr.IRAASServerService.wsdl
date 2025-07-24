@@ -97,17 +97,17 @@
   <wsdl:message name="IRAASServerService_GetAppNamesPath_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAppNamesPathResponse" />
   </wsdl:message>
+  <wsdl:message name="IRAASServerService_GetCanReboot_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCanReboot" />
+  </wsdl:message>
+  <wsdl:message name="IRAASServerService_GetCanReboot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCanRebootResponse" />
+  </wsdl:message>
   <wsdl:message name="IRAASServerService_UpdateShortcuts_InputMessage">
     <wsdl:part name="parameters" element="tns:UpdateShortcuts" />
   </wsdl:message>
   <wsdl:message name="IRAASServerService_UpdateShortcuts_OutputMessage">
     <wsdl:part name="parameters" element="tns:UpdateShortcutsResponse" />
-  </wsdl:message>
-  <wsdl:message name="IRAASServerService_CanReboot_InputMessage">
-    <wsdl:part name="parameters" element="tns:CanReboot" />
-  </wsdl:message>
-  <wsdl:message name="IRAASServerService_CanReboot_OutputMessage">
-    <wsdl:part name="parameters" element="tns:CanRebootResponse" />
   </wsdl:message>
   <wsdl:message name="IRAASServerService_ShortcutsXmlChange_OutputCallbackMessage">
     <wsdl:part name="parameters" element="tns:ShortcutsXmlChange" />
@@ -179,13 +179,13 @@
       <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAppNamesPath" message="tns:IRAASServerService_GetAppNamesPath_InputMessage" />
       <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetAppNamesPathResponse" message="tns:IRAASServerService_GetAppNamesPath_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetCanReboot">
+      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetCanReboot" message="tns:IRAASServerService_GetCanReboot_InputMessage" />
+      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/GetCanRebootResponse" message="tns:IRAASServerService_GetCanReboot_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UpdateShortcuts">
       <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/UpdateShortcuts" message="tns:IRAASServerService_UpdateShortcuts_InputMessage" />
       <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/UpdateShortcutsResponse" message="tns:IRAASServerService_UpdateShortcuts_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CanReboot">
-      <wsdl:input wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/CanReboot" message="tns:IRAASServerService_CanReboot_InputMessage" />
-      <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/CanRebootResponse" message="tns:IRAASServerService_CanReboot_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ShortcutsXmlChange">
       <wsdl:output wsaw:Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServerService/IRAASServerService/ShortcutsXmlChange" message="tns:IRAASServerService_ShortcutsXmlChange_OutputCallbackMessage" />

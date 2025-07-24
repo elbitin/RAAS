@@ -167,6 +167,16 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient.RAASServerServiceRef {
         System.Threading.Tasks.Task<string> GetAppNamesPathAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetCanReboot", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetCanRebootResponse")]
+        bool GetCanReboot();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetCanReboot", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
+            "erService/IRAASServerService/GetCanRebootResponse")]
+        System.Threading.Tasks.Task<bool> GetCanRebootAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/UpdateShortcuts", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/UpdateShortcutsResponse")]
         void UpdateShortcuts();
@@ -175,16 +185,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient.RAASServerServiceRef {
             "erService/IRAASServerService/UpdateShortcuts", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
             "erService/IRAASServerService/UpdateShortcutsResponse")]
         System.Threading.Tasks.Task UpdateShortcutsAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/CanReboot", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/CanRebootResponse")]
-        bool CanReboot();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/CanReboot", ReplyAction="http://applications.elbitin.com/WCF/RAASServer/2.0.0/RAASServer.RAASSvr.IRAASServ" +
-            "erService/IRAASServerService/CanRebootResponse")]
-        System.Threading.Tasks.Task<bool> CanRebootAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -351,20 +351,20 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient.RAASServerServiceRef {
             return base.Channel.GetAppNamesPathAsync();
         }
         
+        public bool GetCanReboot() {
+            return base.Channel.GetCanReboot();
+        }
+        
+        public System.Threading.Tasks.Task<bool> GetCanRebootAsync() {
+            return base.Channel.GetCanRebootAsync();
+        }
+        
         public void UpdateShortcuts() {
             base.Channel.UpdateShortcuts();
         }
         
         public System.Threading.Tasks.Task UpdateShortcutsAsync() {
             return base.Channel.UpdateShortcutsAsync();
-        }
-        
-        public bool CanReboot() {
-            return base.Channel.CanReboot();
-        }
-        
-        public System.Threading.Tasks.Task<bool> CanRebootAsync() {
-            return base.Channel.CanRebootAsync();
         }
     }
 }

@@ -781,6 +781,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient
                     AutostartPath = raasServerServiceClient.GetAutostartPath();
                     KeepAlivePath = raasServerServiceClient.GetKeepAliveAgentPath();
                     ShortcutsServerPath = raasServerServiceClient.GetShortcutsServerPath();
+                    ServerStates.CanReboot = raasServerServiceClient.GetCanReboot();
                     UpdateLoggedInStates();
                     try
                     {
