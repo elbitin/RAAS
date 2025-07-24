@@ -425,7 +425,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
         }
 
         [OperationBehavior(Impersonation = ImpersonationOption.Required)]
-        public bool CanReboot()
+        public bool GetCanReboot()
         {
             try
             {

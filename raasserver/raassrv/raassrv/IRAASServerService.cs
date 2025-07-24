@@ -63,9 +63,9 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
         string GetAppNamesPath();
 
         [OperationContract(IsOneWay = false, IsInitiating = true)]
-        void UpdateShortcuts();
+        bool GetCanReboot();
 
         [OperationContract(IsOneWay = false, IsInitiating = true)]
-        bool CanReboot();
+        void UpdateShortcuts();
     }
 }

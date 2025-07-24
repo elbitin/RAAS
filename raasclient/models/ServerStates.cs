@@ -39,6 +39,7 @@
         public bool AutoConnectStarted { get; set; } = false;
         public bool SessionLocked { get; set; } = false;
         public bool RAASServerServiceSubscribing { get; set; } = false;
+        public bool CanReboot { get; set; } = false;
         private int failCount = 0;
         private const int DISCONNECTED_AFTER_FAILCOUNT = 3;
 
