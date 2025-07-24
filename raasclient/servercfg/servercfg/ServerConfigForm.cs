@@ -21,6 +21,8 @@ using System.Text.RegularExpressions;
 using System.Media;
 using System.IO;
 using System.Diagnostics;
+using Elbitin.Applications.RAAS.Common.Helpers;
+using System.Text;
 
 namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
 {
@@ -186,6 +188,15 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             InitializeServerConfig();
         }
 
+        private string ExtractStringFromDLL(string file, int number)
+        {
+            IntPtr lib = Win32Helper.LoadLibrary(file);
+            StringBuilder result = new StringBuilder(2048);
+            Win32Helper.LoadString(lib, number, result, result.Capacity);
+            Win32Helper.FreeLibrary(lib);
+            return result.ToString();
+        }
+
         private void InitializeLocalizedStrings()
         {
             this.cancelButton.Text = Properties.Resources.MainForm_CancelButton;
@@ -234,22 +245,19 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             this.explorerCheckBox.Text = Properties.Resources.ExplorerExtension_EnableExplorerExtensionCheckBox;
             this.explorerGroupBox.Text = Properties.Resources.ExplorerExtension_VisibleFoldersGroupBox;
             this.devicesAndDrivesGroupBox.Text = Properties.Resources.ExplorerExtension_DevicesAndDrivesGroupBox;
-            this.threeDObjectsCheckBox.Text = Properties.Resources.ExplorerExtension_3DObjectsCheckBox;
             this.removableDrivesCheckBox.Text = Properties.Resources.ExplorerExtension_RemovableDrivesCheckBox;
-            this.contactsCheckBox.Text = Properties.Resources.ExplorerExtension_ContactsCheckBox;
             this.cdDrivesCheckBox.Text = Properties.Resources.ExplorerExtension_CDDrivesCheckBox;
-            this.downloadsCheckBox.Text = Properties.Resources.ExplorerExtension_DownloadsCheckBox;
+            this.downloadsCheckBox.Text = ExtractStringFromDLL("shell32.dll", 21798);
             this.hardDrivesCheckBox.Text = Properties.Resources.ExplorerExtension_HardDrivesCheckBox;
-            this.desktopCheckBox.Text = Properties.Resources.ExplorerExtension_DesktopCheckBox;
+            this.desktopCheckBox.Text = ExtractStringFromDLL("shell32.dll", 21769); ;
             this.disketteDrivesCheckBox.Text = Properties.Resources.ExplorerExtension_FloppyDiskDrivesCheckBox;
-            this.picturesCheckBox.Text = Properties.Resources.ExplorerExtension_PicturesCheckBox;
-            this.videosCheckBox.Text = Properties.Resources.ExplorerExtension_VideosCheckBox;
-            this.documentsCheckBox.Text = Properties.Resources.ExplorerExtension_DocumentsCheckBox;
-            this.searchesCheckBox.Text = Properties.Resources.ExplorerExtension_SearchesCheckBox;
-            this.favoritesCheckBox.Text = Properties.Resources.ExplorerExtension_FavoritesCheckBox;
-            this.savedGamesCheckBox.Text = Properties.Resources.ExplorerExtension_SavedGamesCheckBox;
-            this.linksCheckBox.Text = Properties.Resources.ExplorerExtension_LinksCheckBox;
-            this.musicCheckBox.Text = Properties.Resources.ExplorerExtension_MusicCheckBox;
+            this.picturesCheckBox.Text = ExtractStringFromDLL("shell32.dll", 21779); ;
+            this.videosCheckBox.Text = ExtractStringFromDLL("shell32.dll", 21791);
+            this.documentsCheckBox.Text = ExtractStringFromDLL("shell32.dll", 21770);
+            this.favoritesCheckBox.Text = ExtractStringFromDLL("shell32.dll", 21796);
+            this.savedGamesCheckBox.Text = ExtractStringFromDLL("shell32.dll", 21814);
+            this.linksCheckBox.Text = ExtractStringFromDLL("shell32.dll", 21810);
+            this.musicCheckBox.Text = ExtractStringFromDLL("shell32.dll", 21790);
             this.serverLabel.Text = Properties.Resources.MainForm_ServerLabel;
             this.removeButton.Text = Properties.Resources.MainForm_RemoveButton;
             this.addButton.Text = Properties.Resources.MainForm_AddButton;
@@ -269,8 +277,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
         private void reorderVisibleFoldersAlphabetically()
         {
             List<CheckBox> folderCheckBoxes = new List<CheckBox>();
-            folderCheckBoxes.Add(threeDObjectsCheckBox);
-            folderCheckBoxes.Add(contactsCheckBox);
             folderCheckBoxes.Add(desktopCheckBox);
             folderCheckBoxes.Add(documentsCheckBox);
             folderCheckBoxes.Add(downloadsCheckBox);
@@ -279,7 +285,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             folderCheckBoxes.Add(musicCheckBox);
             folderCheckBoxes.Add(picturesCheckBox);
             folderCheckBoxes.Add(savedGamesCheckBox);
-            folderCheckBoxes.Add(searchesCheckBox);
             folderCheckBoxes.Add(videosCheckBox);
             List<CheckBox> orderedFolderCheckBoxes = folderCheckBoxes.OrderBy(o => o.Text).ToList();
             for (int i = 0; i < orderedFolderCheckBoxes.Count(); i++)
@@ -719,8 +724,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
         {
             // Update form according to settings
             explorerCheckBox.Checked = explorerExtensionSettings.ExplorerExtensionActive;
-            threeDObjectsCheckBox.Checked = explorerExtensionSettings.ThreeDObjectsFolder;
-            contactsCheckBox.Checked = explorerExtensionSettings.ContactsFolder;
             desktopCheckBox.Checked = explorerExtensionSettings.DesktopFolder;
             documentsCheckBox.Checked = explorerExtensionSettings.DocumentsFolder;
             downloadsCheckBox.Checked = explorerExtensionSettings.DownloadsFolder;
@@ -729,7 +732,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             musicCheckBox.Checked = explorerExtensionSettings.MusicFolder;
             picturesCheckBox.Checked = explorerExtensionSettings.PicturesFolder;
             savedGamesCheckBox.Checked = explorerExtensionSettings.SavedGamesFolder;
-            searchesCheckBox.Checked = explorerExtensionSettings.SearchesFolder;
             videosCheckBox.Checked = explorerExtensionSettings.VideosFolder;
             disketteDrivesCheckBox.Checked = explorerExtensionSettings.DisketteDrives;
             hardDrivesCheckBox.Checked = explorerExtensionSettings.HardDrives;
@@ -787,8 +789,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
 
             // Store form states in settings
             explorerExtensionSettings.ExplorerExtensionActive = explorerCheckBox.Checked;
-            explorerExtensionSettings.ThreeDObjectsFolder = threeDObjectsCheckBox.Checked;
-            explorerExtensionSettings.ContactsFolder = contactsCheckBox.Checked;
+            explorerExtensionSettings.ThreeDObjectsFolder = false;
+            explorerExtensionSettings.ContactsFolder = false;
             explorerExtensionSettings.DesktopFolder = desktopCheckBox.Checked;
             explorerExtensionSettings.DocumentsFolder = documentsCheckBox.Checked;
             explorerExtensionSettings.DownloadsFolder = downloadsCheckBox.Checked;
@@ -797,7 +799,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             explorerExtensionSettings.MusicFolder = musicCheckBox.Checked;
             explorerExtensionSettings.PicturesFolder = picturesCheckBox.Checked;
             explorerExtensionSettings.SavedGamesFolder = savedGamesCheckBox.Checked;
-            explorerExtensionSettings.SearchesFolder = searchesCheckBox.Checked;
+            explorerExtensionSettings.SearchesFolder = false;
             explorerExtensionSettings.VideosFolder = videosCheckBox.Checked;
             explorerExtensionSettings.DisketteDrives = disketteDrivesCheckBox.Checked;
             explorerExtensionSettings.HardDrives = hardDrivesCheckBox.Checked;

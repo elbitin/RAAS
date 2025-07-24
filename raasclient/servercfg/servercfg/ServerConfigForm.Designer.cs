@@ -109,18 +109,15 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             this.explorerCheckBox = new System.Windows.Forms.CheckBox();
             this.explorerGroupBox = new System.Windows.Forms.GroupBox();
             this.visibleFoldersTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.threeDObjectsCheckBox = new System.Windows.Forms.CheckBox();
-            this.contactsCheckBox = new System.Windows.Forms.CheckBox();
-            this.downloadsCheckBox = new System.Windows.Forms.CheckBox();
             this.desktopCheckBox = new System.Windows.Forms.CheckBox();
-            this.picturesCheckBox = new System.Windows.Forms.CheckBox();
-            this.videosCheckBox = new System.Windows.Forms.CheckBox();
             this.documentsCheckBox = new System.Windows.Forms.CheckBox();
-            this.searchesCheckBox = new System.Windows.Forms.CheckBox();
+            this.downloadsCheckBox = new System.Windows.Forms.CheckBox();
             this.favoritesCheckBox = new System.Windows.Forms.CheckBox();
-            this.savedGamesCheckBox = new System.Windows.Forms.CheckBox();
             this.linksCheckBox = new System.Windows.Forms.CheckBox();
             this.musicCheckBox = new System.Windows.Forms.CheckBox();
+            this.picturesCheckBox = new System.Windows.Forms.CheckBox();
+            this.savedGamesCheckBox = new System.Windows.Forms.CheckBox();
+            this.videosCheckBox = new System.Windows.Forms.CheckBox();
             this.devicesAndDrivesGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.disketteDrivesCheckBox = new System.Windows.Forms.CheckBox();
@@ -1048,7 +1045,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             this.explorerGroupBox.Controls.Add(this.visibleFoldersTableLayoutPanel);
             this.explorerGroupBox.Location = new System.Drawing.Point(3, 26);
             this.explorerGroupBox.Name = "explorerGroupBox";
-            this.explorerGroupBox.Size = new System.Drawing.Size(504, 301);
+            this.explorerGroupBox.Size = new System.Drawing.Size(504, 232);
             this.explorerGroupBox.TabIndex = 35;
             this.explorerGroupBox.TabStop = false;
             this.explorerGroupBox.Text = "Visible Folders";
@@ -1059,18 +1056,15 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             this.visibleFoldersTableLayoutPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.visibleFoldersTableLayoutPanel.ColumnCount = 1;
             this.visibleFoldersTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.threeDObjectsCheckBox, 0, 0);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.contactsCheckBox, 0, 1);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.downloadsCheckBox, 0, 4);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.desktopCheckBox, 0, 2);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.picturesCheckBox, 0, 8);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.videosCheckBox, 0, 11);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.documentsCheckBox, 0, 3);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.searchesCheckBox, 0, 10);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.favoritesCheckBox, 0, 5);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.savedGamesCheckBox, 0, 9);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.linksCheckBox, 0, 6);
-            this.visibleFoldersTableLayoutPanel.Controls.Add(this.musicCheckBox, 0, 7);
+            this.visibleFoldersTableLayoutPanel.Controls.Add(this.desktopCheckBox, 0, 0);
+            this.visibleFoldersTableLayoutPanel.Controls.Add(this.documentsCheckBox, 0, 1);
+            this.visibleFoldersTableLayoutPanel.Controls.Add(this.downloadsCheckBox, 0, 2);
+            this.visibleFoldersTableLayoutPanel.Controls.Add(this.favoritesCheckBox, 0, 3);
+            this.visibleFoldersTableLayoutPanel.Controls.Add(this.linksCheckBox, 0, 4);
+            this.visibleFoldersTableLayoutPanel.Controls.Add(this.musicCheckBox, 0, 5);
+            this.visibleFoldersTableLayoutPanel.Controls.Add(this.picturesCheckBox, 0, 6);
+            this.visibleFoldersTableLayoutPanel.Controls.Add(this.savedGamesCheckBox, 0, 7);
+            this.visibleFoldersTableLayoutPanel.Controls.Add(this.videosCheckBox, 0, 8);
             this.visibleFoldersTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visibleFoldersTableLayoutPanel.Location = new System.Drawing.Point(3, 16);
             this.visibleFoldersTableLayoutPanel.Margin = new System.Windows.Forms.Padding(1);
@@ -1093,46 +1087,13 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             this.visibleFoldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.visibleFoldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.visibleFoldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.visibleFoldersTableLayoutPanel.Size = new System.Drawing.Size(498, 282);
+            this.visibleFoldersTableLayoutPanel.Size = new System.Drawing.Size(498, 213);
             this.visibleFoldersTableLayoutPanel.TabIndex = 17;
-            // 
-            // threeDObjectsCheckBox
-            // 
-            this.threeDObjectsCheckBox.AutoSize = true;
-            this.threeDObjectsCheckBox.Location = new System.Drawing.Point(6, 6);
-            this.threeDObjectsCheckBox.Name = "threeDObjectsCheckBox";
-            this.threeDObjectsCheckBox.Size = new System.Drawing.Size(79, 17);
-            this.threeDObjectsCheckBox.TabIndex = 1;
-            this.threeDObjectsCheckBox.Text = "3D Objects";
-            this.threeDObjectsCheckBox.UseVisualStyleBackColor = true;
-            this.threeDObjectsCheckBox.CheckedChanged += new System.EventHandler(this.ThreeDObjectsCheckBox_CheckedChanged);
-            // 
-            // contactsCheckBox
-            // 
-            this.contactsCheckBox.AutoSize = true;
-            this.contactsCheckBox.Location = new System.Drawing.Point(6, 29);
-            this.contactsCheckBox.Name = "contactsCheckBox";
-            this.contactsCheckBox.Size = new System.Drawing.Size(68, 17);
-            this.contactsCheckBox.TabIndex = 2;
-            this.contactsCheckBox.Text = "Contacts";
-            this.contactsCheckBox.UseVisualStyleBackColor = true;
-            this.contactsCheckBox.CheckedChanged += new System.EventHandler(this.ContactsCheckBox_CheckedChanged);
-            // 
-            // downloadsCheckBox
-            // 
-            this.downloadsCheckBox.AutoSize = true;
-            this.downloadsCheckBox.Location = new System.Drawing.Point(6, 98);
-            this.downloadsCheckBox.Name = "downloadsCheckBox";
-            this.downloadsCheckBox.Size = new System.Drawing.Size(79, 17);
-            this.downloadsCheckBox.TabIndex = 5;
-            this.downloadsCheckBox.Text = "Downloads";
-            this.downloadsCheckBox.UseVisualStyleBackColor = true;
-            this.downloadsCheckBox.CheckedChanged += new System.EventHandler(this.DownloadsCheckBox_CheckedChanged);
             // 
             // desktopCheckBox
             // 
             this.desktopCheckBox.AutoSize = true;
-            this.desktopCheckBox.Location = new System.Drawing.Point(6, 52);
+            this.desktopCheckBox.Location = new System.Drawing.Point(6, 6);
             this.desktopCheckBox.Name = "desktopCheckBox";
             this.desktopCheckBox.Size = new System.Drawing.Size(66, 17);
             this.desktopCheckBox.TabIndex = 3;
@@ -1140,32 +1101,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             this.desktopCheckBox.UseVisualStyleBackColor = true;
             this.desktopCheckBox.CheckedChanged += new System.EventHandler(this.DesktopCheckBox_CheckedChanged);
             // 
-            // picturesCheckBox
-            // 
-            this.picturesCheckBox.AutoSize = true;
-            this.picturesCheckBox.Location = new System.Drawing.Point(6, 190);
-            this.picturesCheckBox.Name = "picturesCheckBox";
-            this.picturesCheckBox.Size = new System.Drawing.Size(64, 17);
-            this.picturesCheckBox.TabIndex = 9;
-            this.picturesCheckBox.Text = "Pictures";
-            this.picturesCheckBox.UseVisualStyleBackColor = true;
-            this.picturesCheckBox.CheckedChanged += new System.EventHandler(this.PicturesCheckBox_CheckedChanged);
-            // 
-            // videosCheckBox
-            // 
-            this.videosCheckBox.AutoSize = true;
-            this.videosCheckBox.Location = new System.Drawing.Point(6, 259);
-            this.videosCheckBox.Name = "videosCheckBox";
-            this.videosCheckBox.Size = new System.Drawing.Size(58, 17);
-            this.videosCheckBox.TabIndex = 12;
-            this.videosCheckBox.Text = "Videos";
-            this.videosCheckBox.UseVisualStyleBackColor = true;
-            this.videosCheckBox.CheckedChanged += new System.EventHandler(this.VideosCheckBox_CheckedChanged);
-            // 
             // documentsCheckBox
             // 
             this.documentsCheckBox.AutoSize = true;
-            this.documentsCheckBox.Location = new System.Drawing.Point(6, 75);
+            this.documentsCheckBox.Location = new System.Drawing.Point(6, 29);
             this.documentsCheckBox.Name = "documentsCheckBox";
             this.documentsCheckBox.Size = new System.Drawing.Size(80, 17);
             this.documentsCheckBox.TabIndex = 4;
@@ -1173,21 +1112,21 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             this.documentsCheckBox.UseVisualStyleBackColor = true;
             this.documentsCheckBox.CheckedChanged += new System.EventHandler(this.DocumentsCheckBox_CheckedChanged);
             // 
-            // searchesCheckBox
+            // downloadsCheckBox
             // 
-            this.searchesCheckBox.AutoSize = true;
-            this.searchesCheckBox.Location = new System.Drawing.Point(6, 236);
-            this.searchesCheckBox.Name = "searchesCheckBox";
-            this.searchesCheckBox.Size = new System.Drawing.Size(71, 17);
-            this.searchesCheckBox.TabIndex = 11;
-            this.searchesCheckBox.Text = "Searches";
-            this.searchesCheckBox.UseVisualStyleBackColor = true;
-            this.searchesCheckBox.CheckedChanged += new System.EventHandler(this.SearchesCheckBox_CheckedChanged);
+            this.downloadsCheckBox.AutoSize = true;
+            this.downloadsCheckBox.Location = new System.Drawing.Point(6, 52);
+            this.downloadsCheckBox.Name = "downloadsCheckBox";
+            this.downloadsCheckBox.Size = new System.Drawing.Size(79, 17);
+            this.downloadsCheckBox.TabIndex = 5;
+            this.downloadsCheckBox.Text = "Downloads";
+            this.downloadsCheckBox.UseVisualStyleBackColor = true;
+            this.downloadsCheckBox.CheckedChanged += new System.EventHandler(this.DownloadsCheckBox_CheckedChanged);
             // 
             // favoritesCheckBox
             // 
             this.favoritesCheckBox.AutoSize = true;
-            this.favoritesCheckBox.Location = new System.Drawing.Point(6, 121);
+            this.favoritesCheckBox.Location = new System.Drawing.Point(6, 75);
             this.favoritesCheckBox.Name = "favoritesCheckBox";
             this.favoritesCheckBox.Size = new System.Drawing.Size(69, 17);
             this.favoritesCheckBox.TabIndex = 6;
@@ -1195,21 +1134,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             this.favoritesCheckBox.UseVisualStyleBackColor = true;
             this.favoritesCheckBox.CheckedChanged += new System.EventHandler(this.FavoritesCheckBox_CheckedChanged);
             // 
-            // savedGamesCheckBox
-            // 
-            this.savedGamesCheckBox.AutoSize = true;
-            this.savedGamesCheckBox.Location = new System.Drawing.Point(6, 213);
-            this.savedGamesCheckBox.Name = "savedGamesCheckBox";
-            this.savedGamesCheckBox.Size = new System.Drawing.Size(93, 17);
-            this.savedGamesCheckBox.TabIndex = 10;
-            this.savedGamesCheckBox.Text = "Saved Games";
-            this.savedGamesCheckBox.UseVisualStyleBackColor = true;
-            this.savedGamesCheckBox.CheckedChanged += new System.EventHandler(this.SavedGamesCheckBox_CheckedChanged);
-            // 
             // linksCheckBox
             // 
             this.linksCheckBox.AutoSize = true;
-            this.linksCheckBox.Location = new System.Drawing.Point(6, 144);
+            this.linksCheckBox.Location = new System.Drawing.Point(6, 98);
             this.linksCheckBox.Name = "linksCheckBox";
             this.linksCheckBox.Size = new System.Drawing.Size(51, 17);
             this.linksCheckBox.TabIndex = 7;
@@ -1220,13 +1148,46 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             // musicCheckBox
             // 
             this.musicCheckBox.AutoSize = true;
-            this.musicCheckBox.Location = new System.Drawing.Point(6, 167);
+            this.musicCheckBox.Location = new System.Drawing.Point(6, 121);
             this.musicCheckBox.Name = "musicCheckBox";
             this.musicCheckBox.Size = new System.Drawing.Size(54, 17);
             this.musicCheckBox.TabIndex = 8;
             this.musicCheckBox.Text = "Music";
             this.musicCheckBox.UseVisualStyleBackColor = true;
             this.musicCheckBox.CheckedChanged += new System.EventHandler(this.MusicCheckBox_CheckedChanged);
+            // 
+            // picturesCheckBox
+            // 
+            this.picturesCheckBox.AutoSize = true;
+            this.picturesCheckBox.Location = new System.Drawing.Point(6, 144);
+            this.picturesCheckBox.Name = "picturesCheckBox";
+            this.picturesCheckBox.Size = new System.Drawing.Size(64, 17);
+            this.picturesCheckBox.TabIndex = 9;
+            this.picturesCheckBox.Text = "Pictures";
+            this.picturesCheckBox.UseVisualStyleBackColor = true;
+            this.picturesCheckBox.CheckedChanged += new System.EventHandler(this.PicturesCheckBox_CheckedChanged);
+            // 
+            // savedGamesCheckBox
+            // 
+            this.savedGamesCheckBox.AutoSize = true;
+            this.savedGamesCheckBox.Location = new System.Drawing.Point(6, 167);
+            this.savedGamesCheckBox.Name = "savedGamesCheckBox";
+            this.savedGamesCheckBox.Size = new System.Drawing.Size(93, 17);
+            this.savedGamesCheckBox.TabIndex = 10;
+            this.savedGamesCheckBox.Text = "Saved Games";
+            this.savedGamesCheckBox.UseVisualStyleBackColor = true;
+            this.savedGamesCheckBox.CheckedChanged += new System.EventHandler(this.SavedGamesCheckBox_CheckedChanged);
+            // 
+            // videosCheckBox
+            // 
+            this.videosCheckBox.AutoSize = true;
+            this.videosCheckBox.Location = new System.Drawing.Point(6, 190);
+            this.videosCheckBox.Name = "videosCheckBox";
+            this.videosCheckBox.Size = new System.Drawing.Size(58, 17);
+            this.videosCheckBox.TabIndex = 12;
+            this.videosCheckBox.Text = "Videos";
+            this.videosCheckBox.UseVisualStyleBackColor = true;
+            this.videosCheckBox.CheckedChanged += new System.EventHandler(this.VideosCheckBox_CheckedChanged);
             // 
             // devicesAndDrivesGroupBox
             // 
@@ -1235,7 +1196,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
             this.devicesAndDrivesGroupBox.AutoSize = true;
             this.devicesAndDrivesGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.devicesAndDrivesGroupBox.Controls.Add(this.tableLayoutPanel13);
-            this.devicesAndDrivesGroupBox.Location = new System.Drawing.Point(3, 333);
+            this.devicesAndDrivesGroupBox.Location = new System.Drawing.Point(3, 264);
             this.devicesAndDrivesGroupBox.Name = "devicesAndDrivesGroupBox";
             this.devicesAndDrivesGroupBox.Size = new System.Drawing.Size(504, 117);
             this.devicesAndDrivesGroupBox.TabIndex = 36;
@@ -1558,15 +1519,12 @@ namespace Elbitin.Applications.RAAS.RAASClient.ServerCfg
         private System.Windows.Forms.CheckBox picturesCheckBox;
         private System.Windows.Forms.CheckBox disketteDrivesCheckBox;
         private System.Windows.Forms.CheckBox videosCheckBox;
-        private System.Windows.Forms.CheckBox searchesCheckBox;
         private System.Windows.Forms.CheckBox savedGamesCheckBox;
-        private System.Windows.Forms.CheckBox threeDObjectsCheckBox;
         private System.Windows.Forms.CheckBox desktopCheckBox;
         private System.Windows.Forms.CheckBox musicCheckBox;
         private System.Windows.Forms.CheckBox linksCheckBox;
         private System.Windows.Forms.CheckBox favoritesCheckBox;
         private System.Windows.Forms.CheckBox documentsCheckBox;
-        private System.Windows.Forms.CheckBox contactsCheckBox;
         private System.Windows.Forms.CheckBox explorerCheckBox;
         private System.Windows.Forms.CheckBox downloadsCheckBox;
         private System.Windows.Forms.CheckBox autoReconnectCheckBox;
