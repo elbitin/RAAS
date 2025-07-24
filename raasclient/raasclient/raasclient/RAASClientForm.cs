@@ -565,7 +565,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient
                             if (toolItem.Text == "&" + Properties.Resources.ContextMenu_LogoffItem)
                                 toolItem.Enabled = serverManagers[server.Key].ServerStates.RAASServerCanLogOff;
                             if (toolItem.Text == "&" + Properties.Resources.ContextMenu_RebootItem)
-                                toolItem.Enabled = true;
+                                toolItem.Enabled = serverManagers[server.Key].ServerStates.RAASServerCanReboot;
                             if (toolItem.Text == "&" + Properties.Resources.ContextMenu_UpdateShortcutstItem)
                                 toolItem.Enabled = true;
                         }
