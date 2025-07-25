@@ -271,7 +271,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                         return false;
                 }
             }
-            catch (Exception e)
+            catch
             {
                 throw new FaultException("GetLoggedInState exception");
             }
@@ -306,7 +306,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                         return false;
                 }
             }
-            catch (Exception e)
+            catch
             {
                 throw new FaultException("Logoff exception");
             }

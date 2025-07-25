@@ -17,95 +17,24 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
 {
     public class TSManager
     {
-        [StructLayout(LayoutKind.Sequential)]
-        public struct WTS_SESSION_INFO
-        {
-            public Int32 SessionID;
-            [MarshalAs(UnmanagedType.LPStr)]
-            public String pWinStationName;
-            public WTS_CONNECTSTATE_CLASS State;
-        }
-
-        public enum WTS_CONNECTSTATE_CLASS
-        {
-            WTSActive,
-            WTSConnected,
-            WTSConnectQuery,
-            WTSShadow,
-            WTSDisconnected,
-            WTSIdle,
-            WTSListen,
-            WTSReset,
-            WTSDown,
-            WTSInit
-        }
-
-        public enum WTS_INFO_CLASS
-        {
-            WTSInitialProgram,
-            WTSApplicationName,
-            WTSWorkingDirectory,
-            WTSOEMId,
-            WTSSessionId,
-            WTSUserName,
-            WTSWinStationName,
-            WTSDomainName,
-            WTSConnectState,
-            WTSClientBuildNumber,
-            WTSClientName,
-            WTSClientDirectory,
-            WTSClientProductId,
-            WTSClientHardwareId,
-            WTSClientAddress,
-            WTSClientDisplay,
-            WTSClientProtocolType,
-            WTSIdleTime,
-            WTSLogonTime,
-            WTSIncomingBytes,
-            WTSOutgoingBytes,
-            WTSIncomingFrames,
-            WTSOutgoingFrames,
-            WTSClientInfo,
-            WTSSessionInfo
-        }
-
-        [DllImport("wtsapi32.dll", SetLastError = true)]
-        static extern bool WTSLogoffSession(IntPtr hServer, int SessionId, bool bWait);
-
-        [DllImport("Wtsapi32.dll")]
-        static extern bool WTSQuerySessionInformation(
-            System.IntPtr hServer, int sessionId, WTS_INFO_CLASS wtsInfoClass, out System.IntPtr ppBuffer, out uint pBytesReturned);
-
-        [DllImport("wtsapi32.dll", SetLastError = true)]
-        static extern IntPtr WTSOpenServer([MarshalAs(UnmanagedType.LPStr)] String pServerName);
-
-        [DllImport("wtsapi32.dll")]
-        static extern void WTSCloseServer(IntPtr hServer);
-
-        [DllImport("wtsapi32.dll", SetLastError = true)]
-        static extern Int32 WTSEnumerateSessions(IntPtr hServer, [MarshalAs(UnmanagedType.U4)] Int32 Reserved, [MarshalAs(UnmanagedType.U4)] Int32 Version, ref IntPtr ppSessionInfo, [MarshalAs(UnmanagedType.U4)] ref Int32 pCount);
-
-        [DllImport("wtsapi32.dll")]
-        static extern void WTSFreeMemory(IntPtr pMemory);
-
         public static List<int> GetSessionIDs(IntPtr server)
         {
             List<int> sessionIds = new List<int>();
             IntPtr buffer = IntPtr.Zero;
             int count = 0;
-            int retval = WTSEnumerateSessions(server, 0, 1, ref buffer, ref count);
-            int dataSize = Marshal.SizeOf(typeof(WTS_SESSION_INFO));
+            int retval = Win32Helper.WTSEnumerateSessions(server, 0, 1, ref buffer, ref count);
+            int dataSize = Marshal.SizeOf(typeof(Win32Helper.WTS_SESSION_INFO));
             Int64 current = (int)buffer;
 
             if (retval != 0)
             {
                 for (int i = 0; i < count; i++)
                 {
-                    WTS_SESSION_INFO si = (WTS_SESSION_INFO)Marshal.PtrToStructure((IntPtr)current, typeof(WTS_SESSION_INFO));
+                    Win32Helper.WTS_SESSION_INFO si = (Win32Helper.WTS_SESSION_INFO)Marshal.PtrToStructure((IntPtr)current, typeof(Win32Helper.WTS_SESSION_INFO));
                     current += dataSize;
                     sessionIds.Add(si.SessionID);
                 }
-                WTSFreeMemory(buffer);
+                Win32Helper.WTSFreeMemory(buffer);
             }
             return sessionIds;
         }
@@ -119,7 +48,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                 List<int> sessions = GetSessions();
                 Dictionary<string, int> userSessionDictionary = GetUserSessionDictionary(server, sessions);
                 if (userSessionDictionary.ContainsKey(userName))
-                    return WTSLogoffSession(server, userSessionDictionary[userName], true);
+                    return Win32Helper.WTSLogoffSession(server, userSessionDictionary[userName], true);
                 else
                     return false;
             }
@@ -155,12 +84,12 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             string userName = string.Empty;
             try
             {
-                WTSQuerySessionInformation(server, sessionId, WTS_INFO_CLASS.WTSUserName, out buffer, out count);
+                Win32Helper.WTSQuerySessionInformation(server, sessionId, Win32Helper.WTS_INFO_CLASS.WTSUserName, out buffer, out count);
                 userName = Marshal.PtrToStringAnsi(buffer).ToUpper().Trim();
             }
             finally
             {
-                WTSFreeMemory(buffer);
+                Win32Helper.WTSFreeMemory(buffer);
             }
             return userName;
         }
@@ -180,13 +109,13 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
 
         public static IntPtr OpenServer(String Name)
         {
-            IntPtr server = WTSOpenServer(Name);
+            IntPtr server = Win32Helper.WTSOpenServer(Name);
             return server;
         }
 
         public static void CloseServer(IntPtr ServerHandle)
         {
-            WTSCloseServer(ServerHandle);
+            Win32Helper.WTSCloseServer(ServerHandle);
         }
 
         public static List<String> LogOffSessions()
@@ -198,7 +127,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             {
                 IntPtr ppSessionInfo = IntPtr.Zero;
                 Int32 count = 0;
-                Int32 retval = WTSEnumerateSessions(server, 0, 1, ref ppSessionInfo, ref count);
+                Int32 retval = Win32Helper.WTSEnumerateSessions(server, 0, 1, ref ppSessionInfo, ref count);
                 Int32 dataSize = Marshal.SizeOf(typeof(Win32Helper.WTS_SESSION_INFO));
                 IntPtr currentSession = ppSessionInfo;
                 if (retval != 0)
@@ -207,9 +136,9 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                     {
                         Win32Helper.WTS_SESSION_INFO si = (Win32Helper.WTS_SESSION_INFO)Marshal.PtrToStructure(currentSession, typeof(Win32Helper.WTS_SESSION_INFO));
                         currentSession += dataSize;
-                        WTSLogoffSession(IntPtr.Zero, si.SessionID, true);
+                        Win32Helper.WTSLogoffSession(IntPtr.Zero, si.SessionID, true);
                     }
-                    WTSFreeMemory(ppSessionInfo);
+                    Win32Helper.WTSFreeMemory(ppSessionInfo);
                 }
             }
             catch
@@ -233,7 +162,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             {
                 IntPtr ppSessionInfo = IntPtr.Zero;
                 Int32 count = 0;
-                Int32 retval = WTSEnumerateSessions(server, 0, 1, ref ppSessionInfo, ref count);
+                Int32 retval = Win32Helper.WTSEnumerateSessions(server, 0, 1, ref ppSessionInfo, ref count);
                 Int32 dataSize = Marshal.SizeOf(typeof(Win32Helper.WTS_SESSION_INFO));
                 IntPtr currentSession = ppSessionInfo;
                 if (retval != 0)
@@ -244,7 +173,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                         currentSession += dataSize;
                         ret.Add(si.SessionID);
                     }
-                    WTSFreeMemory(ppSessionInfo);
+                    Win32Helper.WTSFreeMemory(ppSessionInfo);
                 }
             }
             catch
@@ -267,7 +196,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             {
                 IntPtr ppSessionInfo = IntPtr.Zero;
                 Int32 count = 0;
-                Int32 retval = WTSEnumerateSessions(server, 0, 1, ref ppSessionInfo, ref count);
+                Int32 retval = Win32Helper.WTSEnumerateSessions(server, 0, 1, ref ppSessionInfo, ref count);
                 Int32 dataSize = Marshal.SizeOf(typeof(Win32Helper.WTS_SESSION_INFO));
                 IntPtr currentSession = ppSessionInfo;
                 bool active = false;
@@ -280,7 +209,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                         if (si.State == Win32Helper.WTS_CONNECTSTATE_CLASS.WTSActive || si.State == Win32Helper.WTS_CONNECTSTATE_CLASS.WTSDisconnected)
                             active = true;
                     }
-                    WTSFreeMemory(ppSessionInfo);
+                    Win32Helper.WTSFreeMemory(ppSessionInfo);
                 }
                 return active;
             }
@@ -303,10 +232,10 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             {
                 IntPtr ppSessionInfo = IntPtr.Zero;
                 Int32 count = 0;
-                Int32 retval = WTSEnumerateSessions(server, 0, 1, ref ppSessionInfo, ref count);
+                Int32 retval = Win32Helper.WTSEnumerateSessions(server, 0, 1, ref ppSessionInfo, ref count);
                 Int32 dataSize = Marshal.SizeOf(typeof(Win32Helper.WTS_SESSION_INFO));
                 Int64 current = (int)ppSessionInfo;
-                WTSFreeMemory(ppSessionInfo);
+                Win32Helper.WTSFreeMemory(ppSessionInfo);
                 return count;
             }
             catch

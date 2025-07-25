@@ -680,8 +680,36 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 80)]
             public string szTypeName;
         };
-        [DllImport("shell32.dll")]
-        public static extern void SHParseDisplayName([MarshalAs(UnmanagedType.LPWStr)] string name, IntPtr bindingContext, out IntPtr pidl, uint sfgaoIn, out uint psfgaoOut);
+
+        public enum WTS_INFO_CLASS
+        {
+            WTSInitialProgram,
+            WTSApplicationName,
+            WTSWorkingDirectory,
+            WTSOEMId,
+            WTSSessionId,
+            WTSUserName,
+            WTSWinStationName,
+            WTSDomainName,
+            WTSConnectState,
+            WTSClientBuildNumber,
+            WTSClientName,
+            WTSClientDirectory,
+            WTSClientProductId,
+            WTSClientHardwareId,
+            WTSClientAddress,
+            WTSClientDisplay,
+            WTSClientProtocolType,
+            WTSIdleTime,
+            WTSLogonTime,
+            WTSIncomingBytes,
+            WTSOutgoingBytes,
+            WTSIncomingFrames,
+            WTSOutgoingFrames,
+            WTSClientInfo,
+            WTSSessionInfo
+        }
+
         public static class SWP
         {
             public static readonly uint
@@ -1118,6 +1146,28 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
         {
         }
 
+        [DllImport("wtsapi32.dll", SetLastError = true)]
+        static public extern bool WTSLogoffSession(IntPtr hServer, int SessionId, bool bWait);
+
+        [DllImport("Wtsapi32.dll")]
+        static public extern bool WTSQuerySessionInformation(
+            System.IntPtr hServer, int sessionId, WTS_INFO_CLASS wtsInfoClass, out System.IntPtr ppBuffer, out uint pBytesReturned);
+
+        [DllImport("wtsapi32.dll", SetLastError = true)]
+        static public extern IntPtr WTSOpenServer([MarshalAs(UnmanagedType.LPStr)] String pServerName);
+
+        [DllImport("wtsapi32.dll")]
+        static public extern void WTSCloseServer(IntPtr hServer);
+
+        [DllImport("wtsapi32.dll", SetLastError = true)]
+        static public extern Int32 WTSEnumerateSessions(IntPtr hServer, [MarshalAs(UnmanagedType.U4)] Int32 Reserved, [MarshalAs(UnmanagedType.U4)] Int32 Version, ref IntPtr ppSessionInfo, [MarshalAs(UnmanagedType.U4)] ref Int32 pCount);
+
+        [DllImport("wtsapi32.dll")]
+        static public extern void WTSFreeMemory(IntPtr pMemory);
+
+        [DllImport("shell32.dll")]
+        public static extern void SHParseDisplayName([MarshalAs(UnmanagedType.LPWStr)] string name, IntPtr bindingContext, out IntPtr pidl, uint sfgaoIn, out uint psfgaoOut);
+
         [DllImport("shell32.dll", EntryPoint = "#727")]
         public extern static int SHGetImageList(
             int iImageList,
@@ -1509,35 +1559,6 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
         {
             WTSUserName = 5,
             WTSDomainName = 7,
-        }
-
-        public enum WTS_INFO_CLASS
-        {
-            WTSInitialProgram,
-            WTSApplicationName,
-            WTSWorkingDirectory,
-            WTSOEMId,
-            WTSSessionId,
-            WTSUserName,
-            WTSWinStationName,
-            WTSDomainName,
-            WTSConnectState,
-            WTSClientBuildNumber,
-            WTSClientName,
-            WTSClientDirectory,
-            WTSClientProductId,
-            WTSClientHardwareId,
-            WTSClientAddress,
-            WTSClientDisplay,
-            WTSClientProtocolType,
-            WTSIdleTime,
-            WTSLogonTime,
-            WTSIncomingBytes,
-            WTSOutgoingBytes,
-            WTSIncomingFrames,
-            WTSOutgoingFrames,
-            WTSClientInfo,
-            WTSSessionInfo
         }
 
         public static IntPtr SetWindowLongPtr(IntPtr hWnd, int nIndex, IntPtr dwNewLong)
