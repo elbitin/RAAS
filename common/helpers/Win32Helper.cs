@@ -1855,6 +1855,7 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
         public static readonly Guid IID_IUnknown = new Guid("00000000-0000-0000-C000-000000000046");
         public static readonly Guid IID_IClassFactory = new Guid("00000001-0000-0000-c000-000000000046");
         public static readonly Guid IID_ImageList = new Guid("46EB5926-582E-4017-9FDF-E8998DAA0950");
+        public static readonly Guid IID_IPersistFile = new Guid("0000010b-0000-0000-C000-000000000046");
 
         public delegate IntPtr HookProc(int code, IntPtr wParam, IntPtr lParam);
         public delegate IntPtr WndProc(IntPtr hWnd, uint msg, IntPtr wParam, IntPtr lParam);
