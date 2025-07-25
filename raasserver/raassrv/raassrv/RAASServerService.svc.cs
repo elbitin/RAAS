@@ -55,31 +55,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
         private const String PROGRAM_NAME = "RAAS Server";
         private const String VERSION_REGISTRY_STRING = "Version";
 
-
-        bool UserLoggedIn(String userName)
-        {
-            userName = userName.ToLowerInvariant();
-            NTAccount f = new NTAccount(userName);
-            SecurityIdentifier s = (SecurityIdentifier)f.Translate(typeof(SecurityIdentifier));
-            String sidString = s.ToString();
-            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_UserProfile WHERE Loaded = True");
-            foreach (ManagementObject mo in searcher.Get())
-            {
-                List<string> SIDs = new List<string>();
-                foreach (var prop in mo.Properties)
-                    if (prop.Name == "SID")
-                    {
-                        String propUserName = (string)(prop?.Value?.ToString())?.Split('\\')?.Last();
-                        if (propUserName != null)
-                            SIDs.Add(propUserName);
-                    }
-                foreach (String propSID in SIDs)
-                    if (propSID.ToLowerInvariant() == sidString?.Split('\\')?.Last()?.ToLowerInvariant())
-                        return true;
-            }
-            return false;
-        }
-
         public static void SessionChange()
         {
             try
