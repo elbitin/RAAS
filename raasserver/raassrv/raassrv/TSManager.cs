@@ -110,10 +110,9 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             return sessionIds;
         }
 
-        public static bool LogOffUser(string userName, String serverName)
+        public static bool LogOffUser(string userName)
         {
-            IntPtr server = WTSOpenServer(serverName);
-            server = IntPtr.Zero;
+            IntPtr server = IntPtr.Zero;
             try
             {
                 userName = userName.Trim().ToUpper();
@@ -121,6 +120,25 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                 Dictionary<string, int> userSessionDictionary = GetUserSessionDictionary(server, sessions);
                 if (userSessionDictionary.ContainsKey(userName))
                     return WTSLogoffSession(server, userSessionDictionary[userName], true);
+                else
+                    return false;
+            }
+            finally
+            {
+                CloseServer(server);
+            }
+        }
+
+        public static bool UserIsLoggedIn(string userName)
+        {
+            IntPtr server = IntPtr.Zero;
+            try
+            {
+                userName = userName.Trim().ToUpper();
+                List<int> sessions = GetSessions();
+                Dictionary<string, int> userSessionDictionary = GetUserSessionDictionary(server, sessions);
+                if (userSessionDictionary.ContainsKey(userName))
+                    return true;
                 else
                     return false;
             }

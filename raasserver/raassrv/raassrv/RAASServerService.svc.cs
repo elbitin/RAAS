@@ -264,13 +264,16 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                 String userName;
                 using (ServiceSecurityContext.Current.WindowsIdentity.Impersonate())
                 {
-                    userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\').Last().ToLowerInvariant();
+                    userName = System.Security.Principal.WindowsIdentity.GetCurrent()?.Name?.ToLowerInvariant()?.Split('\\')?.Last();
+                    if (userName != null)
+                        return TSManager.UserIsLoggedIn(userName);
+                    else
+                        return false;
                 }
-                return UserLoggedIn(userName);
             }
             catch (Exception e)
             {
-                throw new FaultException("GetLoggedInState exception: " + e.Message + ": " + e.StackTrace);
+                throw new FaultException("GetLoggedInState exception");
             }
         }
 
@@ -298,14 +301,14 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                 {
                     userName = System.Security.Principal.WindowsIdentity.GetCurrent()?.Name?.ToLowerInvariant()?.Split('\\')?.Last();
                     if (userName != null)
-                        return TSManager.LogOffUser(userName, Environment.MachineName);
+                        return TSManager.LogOffUser(userName);
                     else
                         return false;
                 }
             }
             catch (Exception e)
             {
-                throw new FaultException("Logoff exception: " + e.Message + ":" + e.StackTrace);
+                throw new FaultException("Logoff exception");
             }
         }
 
