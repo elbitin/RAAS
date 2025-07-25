@@ -464,14 +464,17 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                 using (ServiceSecurityContext.Current.WindowsIdentity.Impersonate())
                 {
                     if (RegistryHelper.GetCanReboot(COMPANY_NAME, PROGRAM_NAME))
+                    {
                         PowerHelper.Reboot();
-                    return;
+                        return;
+                    }
                 }
             }
             catch
             {
                 throw new FaultException("Reboot exception");
             }
+            throw new FaultException("Reboot exception unable to reboot");
         }
 
         [OperationBehavior(Impersonation = ImpersonationOption.NotAllowed)]
