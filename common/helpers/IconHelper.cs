@@ -20,6 +20,7 @@ using Elbitin.Applications.RAAS.Common.Helpers;
 using Elbitin.Applications.RAAS.Common.Models;
 using static System.Net.Mime.MediaTypeNames;
 using static Elbitin.Applications.RAAS.Common.Helpers.Win32Helper;
+using static Elbitin.Applications.RAAS.Common.Helpers.LinkHelper;
 
 namespace Elbitin.Applications.RAAS.Common.Helpers
 {
@@ -450,9 +451,9 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             return icon;
         }
 
-        public static Icon GetFileIconByIconHandler(String fileName, String library, String clsid)
+        public static Icon GetFileIconByIconHandler(LinkDetails linkDetails)
         {
-            String libraryPath = library;
+            String libraryPath = linkDetails.IconHandlerLibraryPath;
             IntPtr module = Win32Helper.LoadLibrary(libraryPath);
             if (module == IntPtr.Zero)
             {
@@ -469,26 +470,33 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             Win32Helper.DllGetClassObject dllGetClassObject = (Win32Helper.DllGetClassObject)Marshal.GetDelegateForFunctionPointer(dllGetClassObjectPtr, typeof(Win32Helper.DllGetClassObject));
             Guid classFactoryGuid = Win32Helper.IID_IClassFactory;
             Win32Helper.IClassFactory classFactory;
-            Guid guidClsid = new Guid(clsid);
+            Guid guidClsid = new Guid(linkDetails.IconHandlerClsid);
             int hResult = dllGetClassObject(ref guidClsid, ref classFactoryGuid, out classFactory);
             if (hResult != 0)
                 throw new Win32Exception(hResult, "Cannot create class factory for file: " + libraryPath);
             Guid iidIUnknown = Win32Helper.IID_IUnknown;
-            object obj;
-            classFactory.CreateInstance(null, iidIUnknown, out obj);
-            IPersistFile ip = (IPersistFile)obj;
-            ip.Load(@"c:\temp\test.sln.sln", 0x00000000);
-            Win32Helper.IExtractIcon iExtractIcon = (Win32Helper.IExtractIcon)obj;
+            object pfObj;
+            classFactory.CreateInstance(null, Win32Helper.IID_IPersistFile, out pfObj);
+            IPersistFile ip = (IPersistFile)pfObj;
+            ip.Load(linkDetails.IconLocation, 0x00000000);
+            object eiObj;
+            classFactory.CreateInstance(null, Win32Helper.IID_IExtractIcon, out eiObj);
+            Win32Helper.IExtractIcon iExtractIcon = (Win32Helper.IExtractIcon)eiObj;
             StringBuilder sb = new StringBuilder(256);
             int pil;
             Win32Helper.IExtractIconpwFlags extractIconpwFlags;
-            hResult = iExtractIcon.GetIconLocation(Win32Helper.IExtractIconuFlags.GIL_FORSHORTCUT, sb, 256, out pil, out extractIconpwFlags);//.Extract(@"c:\temp\test.sln", (uint)0, out IntPtr hIconLarge, out IntPtr phIconSmall, 32);
-            hResult = iExtractIcon.Extract(sb.ToString(), (uint)pil, out IntPtr phiconLarge, out IntPtr phiconSmall, 48);
-            Icon icon = (Icon)Icon.FromHandle(phiconLarge).Clone();
+            hResult = iExtractIcon.GetIconLocation(Win32Helper.IExtractIconuFlags.GIL_FORSHELL, sb, 256, out pil, out extractIconpwFlags);//.Extract(@"c:\temp\test.sln", (uint)0, out IntPtr hIconLarge, out IntPtr phIconSmall, 32);
+            IntPtr hIconSmall;
+            IntPtr hIconLarge;
+            if ((extractIconpwFlags & IExtractIconpwFlags.GIL_NOTFILENAME) == IExtractIconpwFlags.GIL_NOTFILENAME)
+                hResult = iExtractIcon.Extract(linkDetails.IconLocation, (uint)0, out hIconLarge, out hIconSmall, ICON_SIZE);
+            else
+                hResult = iExtractIcon.Extract(sb.ToString(), (uint)pil, out hIconLarge, out hIconSmall, ICON_SIZE);
+            Icon icon = (Icon)Icon.FromHandle(hIconLarge).Clone();
             if (hResult != 0)
                 throw new Win32Exception(hResult, "No icon returned from IExtractIcon for file: " + libraryPath);
             Win32Helper.FreeLibrary(module);
-            Win32Helper.DestroyIcon(phiconLarge);
+            Win32Helper.DestroyIcon(hIconLarge);
             return icon;
         }
 
