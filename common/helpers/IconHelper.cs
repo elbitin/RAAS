@@ -479,19 +479,18 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             classFactory.CreateInstance(null, iidIUnknown, out obj);
             IPersistFile ip = (IPersistFile)obj;
             ip.Load(linkDetails.IconLocation, 0x00000000);
-
             Win32Helper.IExtractIcon iExtractIcon = (Win32Helper.IExtractIcon)obj;
             StringBuilder sb = new StringBuilder(256);
             int pil;
             Win32Helper.IExtractIconpwFlags extractIconpwFlags;
             hResult = iExtractIcon.GetIconLocation(Win32Helper.IExtractIconuFlags.GIL_FORSHORTCUT, sb, 256, out pil, out extractIconpwFlags);//.Extract(@"c:\temp\test.sln", (uint)0, out IntPtr hIconLarge, out IntPtr phIconSmall, 32);
             if (hResult != 0)
-                throw new Win32Exception(hResult, "No icon returned from IExtractIcon for file: " + libraryPath);
+                throw new Win32Exception(hResult, "No icon location returned from IExtractIcon for file: " + libraryPath);
             IntPtr hIconSmall;
             IntPtr hIconLarge;
             hResult = iExtractIcon.Extract(sb.ToString(), (uint)pil, out hIconLarge, out hIconSmall, ICON_SIZE);
             if (hResult != 0)
-                throw new Win32Exception(hResult, "No icon returned from IExtractIcon for file: " + libraryPath);
+                throw new Win32Exception(hResult, "No icon bitmap returned from IExtractIcon for file: " + libraryPath);
             Icon icon = (Icon)Icon.FromHandle(hIconLarge).Clone();
             Win32Helper.FreeLibrary(module);
             Win32Helper.DestroyIcon(hIconLarge);
