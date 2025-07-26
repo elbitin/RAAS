@@ -172,7 +172,7 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
                         if (linkDetails.IconHandlerLibraryPath.Length != 0)
                         {
                             if (AccessRightsHelper.AllowedRead(linkDetails.IconHandlerLibraryPath, userName))
-                                return GetLibraryIcon(linkDetails).ToBitmap();
+                                return GetFileIconByIconHandler(linkDetails).ToBitmap();
                         }
                         if (linkDetails.IconLocation.ToLowerInvariant().EndsWith(".exe") || linkDetails.IconLocation.ToLowerInvariant().EndsWith(".dll") || linkDetails.IconLocation.ToLowerInvariant().EndsWith(".cpl"))
                             try
@@ -475,26 +475,24 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             if (hResult != 0)
                 throw new Win32Exception(hResult, "Cannot create class factory for file: " + libraryPath);
             Guid iidIUnknown = Win32Helper.IID_IUnknown;
-            object pfObj;
-            classFactory.CreateInstance(null, Win32Helper.IID_IPersistFile, out pfObj);
-            IPersistFile ip = (IPersistFile)pfObj;
+            object obj;
+            classFactory.CreateInstance(null, iidIUnknown, out obj);
+            IPersistFile ip = (IPersistFile)obj;
             ip.Load(linkDetails.IconLocation, 0x00000000);
-            object eiObj;
-            classFactory.CreateInstance(null, Win32Helper.IID_IExtractIcon, out eiObj);
-            Win32Helper.IExtractIcon iExtractIcon = (Win32Helper.IExtractIcon)eiObj;
+
+            Win32Helper.IExtractIcon iExtractIcon = (Win32Helper.IExtractIcon)obj;
             StringBuilder sb = new StringBuilder(256);
             int pil;
             Win32Helper.IExtractIconpwFlags extractIconpwFlags;
-            hResult = iExtractIcon.GetIconLocation(Win32Helper.IExtractIconuFlags.GIL_FORSHELL, sb, 256, out pil, out extractIconpwFlags);//.Extract(@"c:\temp\test.sln", (uint)0, out IntPtr hIconLarge, out IntPtr phIconSmall, 32);
-            IntPtr hIconSmall;
-            IntPtr hIconLarge;
-            if ((extractIconpwFlags & IExtractIconpwFlags.GIL_NOTFILENAME) == IExtractIconpwFlags.GIL_NOTFILENAME)
-                hResult = iExtractIcon.Extract(linkDetails.IconLocation, (uint)0, out hIconLarge, out hIconSmall, ICON_SIZE);
-            else
-                hResult = iExtractIcon.Extract(sb.ToString(), (uint)pil, out hIconLarge, out hIconSmall, ICON_SIZE);
-            Icon icon = (Icon)Icon.FromHandle(hIconLarge).Clone();
+            hResult = iExtractIcon.GetIconLocation(Win32Helper.IExtractIconuFlags.GIL_FORSHORTCUT, sb, 256, out pil, out extractIconpwFlags);//.Extract(@"c:\temp\test.sln", (uint)0, out IntPtr hIconLarge, out IntPtr phIconSmall, 32);
             if (hResult != 0)
                 throw new Win32Exception(hResult, "No icon returned from IExtractIcon for file: " + libraryPath);
+            IntPtr hIconSmall;
+            IntPtr hIconLarge;
+            hResult = iExtractIcon.Extract(sb.ToString(), (uint)pil, out hIconLarge, out hIconSmall, ICON_SIZE);
+            if (hResult != 0)
+                throw new Win32Exception(hResult, "No icon returned from IExtractIcon for file: " + libraryPath);
+            Icon icon = (Icon)Icon.FromHandle(hIconLarge).Clone();
             Win32Helper.FreeLibrary(module);
             Win32Helper.DestroyIcon(hIconLarge);
             return icon;
@@ -513,7 +511,7 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
                     if (linkDetails.IconHandlerLibraryPath.Length != 0)
                     {
                         if (AccessRightsHelper.AllowedRead(linkDetails.IconHandlerLibraryPath, linkDetails.UserName))
-                            return IconHelper.GetLibraryIcon(linkDetails).ToBitmap();
+                            return IconHelper.GetFileIconByIconHandler(linkDetails).ToBitmap();
                     }
                     if (linkDetails.IconLocation.ToLowerInvariant().EndsWith(".exe") || linkDetails.IconLocation.ToLowerInvariant().EndsWith(".dll") || linkDetails.IconLocation.ToLowerInvariant().EndsWith(".cpl") || linkDetails.IconLocation.ToLowerInvariant().EndsWith(".icl"))
                         try
