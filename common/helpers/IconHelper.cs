@@ -528,41 +528,5 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             }
             return IconHelper.GetFileIconFromSHGetFileInfo(linkDetails.IconLocation).ToBitmap();
         }
-
-        public static Icon GetLibraryIcon(LinkHelper.LinkDetails linkDetails)
-        {
-            String libraryPath = linkDetails.IconHandlerLibraryPath;
-            IntPtr module = Win32Helper.LoadLibrary(libraryPath);
-            if (module == IntPtr.Zero)
-            {
-                int error = Marshal.GetLastWin32Error();
-                throw new Win32Exception(error, "Unable to load library: " + libraryPath);
-            }
-            IntPtr dllGetClassObjectPtr = Win32Helper.GetProcAddress(module, "DllGetClassObject");
-            if (dllGetClassObjectPtr == IntPtr.Zero)
-            {
-                int error = Marshal.GetLastWin32Error();
-                string message = string.Format("Unable to find DllGetClassObject in file: " + libraryPath);
-                throw new Win32Exception(error, message);
-            }
-            Win32Helper.DllGetClassObject dllGetClassObject = (Win32Helper.DllGetClassObject)Marshal.GetDelegateForFunctionPointer(dllGetClassObjectPtr, typeof(Win32Helper.DllGetClassObject));
-            Guid classFactoryGuid = Win32Helper.IID_IClassFactory;
-            Win32Helper.IClassFactory classFactory;
-            Guid clsid = new Guid(linkDetails.IconHandlerClsid);
-            int hResult = dllGetClassObject(ref clsid, ref classFactoryGuid, out classFactory);
-            if (hResult != 0)
-                throw new Win32Exception(hResult, "Cannot create class factory for file: " + libraryPath);
-            Guid iidIUnknown = Win32Helper.IID_IUnknown;
-            object obj;
-            classFactory.CreateInstance(null, ref iidIUnknown, out obj);
-            Win32Helper.IExtractIcon iExtractIcon = (Win32Helper.IExtractIcon)obj;
-            hResult = iExtractIcon.Extract(linkDetails.IconLocation, (uint)linkDetails.IconIndex, out IntPtr hIconLarge, out IntPtr phIconSmall, ICON_SIZE);
-            if (hResult != 0)
-                throw new Win32Exception(hResult, "No icon returned from IExtractIcon for file: " + libraryPath);
-            Win32Helper.FreeLibrary(module);
-            System.Drawing.Icon icon = (Icon)System.Drawing.Icon.FromHandle(hIconLarge).Clone();
-            Win32Helper.DestroyIcon(hIconLarge);
-            return icon;
-        }
     }
 }
