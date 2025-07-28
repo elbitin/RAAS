@@ -148,6 +148,26 @@
     <Compile Include="ApplicationParameters.cs" />
     <Compile Include="IRAASClientService.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.fr-HT.Designer.cs">
+      <DependentUpon>Resources.fr-HT.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.nb-NO.Designer.cs">
+      <DependentUpon>Resources.nb-NO.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.fil-PH.Designer.cs">
+      <DependentUpon>Resources.fil-PH.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.nn-NO.Designer.cs">
+      <DependentUpon>Resources.nn-NO.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Properties\Resources.zu.Designer.cs">
       <DependentUpon>Resources.zu.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -690,6 +710,26 @@
   <ItemGroup>
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.fr-HT.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.fr-HT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.nb-NO.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.nb-NO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.fil-PH.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.fil-PH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.nn-NO.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.nn-NO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.zu.resx">
       <Generator>ResXFileCodeGenerator</Generator>
