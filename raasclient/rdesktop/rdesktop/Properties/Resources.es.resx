@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="General_RDPAuthenticationLabel" xml:space="preserve">
+    <value>Autenticación RDP:</value>
+  </data>
+  <data name="Input_WrongSizeMessage" xml:space="preserve">
+    <value>El ancho y la altura deben ser interpretados</value>
+  </data>
+  <data name="Input_WrongSizeMessageTitle" xml:space="preserve">
+    <value>Entrada no válida</value>
+  </data>
+  <data name="MainForm_ApplyButton" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="MainForm_CancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="MainForm_ConnectButton" xml:space="preserve">
+    <value>Conectar</value>
+  </data>
+  <data name="MainForm_MainFormTitle" xml:space="preserve">
+    <value>Escritorio remoto</value>
+  </data>
+  <data name="MainForm_ServerLabel" xml:space="preserve">
+    <value>Servidor:</value>
+  </data>
+  <data name="MainForm_SettingsGroupBox" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="Program_ErrorMessageTitle" xml:space="preserve">
+    <value>Error de escritorio remoto</value>
+  </data>
+  <data name="RemoteDesktopForm_RemoteDesktopFormTitle" xml:space="preserve">
+    <value>Escritorio remoto - {0}</value>
+  </data>
+  <data name="RemoteDesktopSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>No se pudo cargar la configuración del escritorio remoto para {0}</value>
+  </data>
+  <data name="RemoteDesktopSettings_UpdateFailedMessage" xml:space="preserve">
+    <value>No se pudo actualizar la configuración del servidor</value>
+  </data>
+  <data name="RemoteDesktop_ConnectionFailedMessage" xml:space="preserve">
+    <value>No se pudo conectar a {0}</value>
+  </data>
+  <data name="RemoteDesktop_FatalErrorMessage" xml:space="preserve">
+    <value>Se produjo un error fatal para {0}</value>
+  </data>
+  <data name="RemoteDesktop_LoginFailedMessage" xml:space="preserve">
+    <value>No se pudo iniciar sesión en {0}</value>
+  </data>
+  <data name="ServerSettings_LoadFailedMessage" xml:space="preserve">
+    <value>No se pudo cargar la configuración del servidor</value>
+  </data>
+  <data name="ServerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>No se pudo cargar la configuración del servidor para {0}</value>
+  </data>
+  <data name="Server_RemovedMessage" xml:space="preserve">
+    <value>El servidor "{0}" ha sido eliminado</value>
+  </data>
+  <data name="Settings_AllMonitorsCheckbox" xml:space="preserve">
+    <value>Mostrar en todos los monitores</value>
+  </data>
+  <data name="Settings_AuthenticationRequiredOption" xml:space="preserve">
+    <value>Se requiere autenticación del servidor</value>
+  </data>
+  <data name="Settings_AuthenticationWarningOption" xml:space="preserve">
+    <value>Advertencia sobre autenticación fallida del servidor</value>
+  </data>
+  <data name="Settings_ConnectionBarCheckbox" xml:space="preserve">
+    <value>Barra de conexión</value>
+  </data>
+  <data name="Settings_FullscreenCheckBox" xml:space="preserve">
+    <value>Pantalla completa</value>
+  </data>
+  <data name="Settings_HeightErrorInfo" xml:space="preserve">
+    <value>La altura del escritorio debe ser un número entero</value>
+  </data>
+  <data name="Settings_HeightLabel" xml:space="preserve">
+    <value>Altura del escritorio:</value>
+  </data>
+  <data name="Settings_PinConnectionBarCheckbox" xml:space="preserve">
+    <value>Barra de conexión de pines</value>
+  </data>
+  <data name="Settings_RedirectClipboardCheckBox" xml:space="preserve">
+    <value>Redirigir el portapapeles</value>
+  </data>
+  <data name="Settings_RedirectDevicesCheckBox" xml:space="preserve">
+    <value>Redirigir dispositivos</value>
+  </data>
+  <data name="Settings_RedirectPrintersCheckBox" xml:space="preserve">
+    <value>Redirigir impresoras</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessage" xml:space="preserve">
+    <value>Tienes cambios sin guardar, ¿deseas guardarlos?</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessageTitle" xml:space="preserve">
+    <value>Cambios no guardados</value>
+  </data>
+  <data name="Settings_UpdateFailedMessage" xml:space="preserve">
+    <value>No se pudo actualizar la configuración del escritorio remoto</value>
+  </data>
+  <data name="Settings_WidthErrorInfo" xml:space="preserve">
+    <value>El ancho del escritorio debe ser un número entero</value>
+  </data>
+  <data name="Settings_WidthLabel" xml:space="preserve">
+    <value>Ancho del escritorio:</value>
+  </data>
+</root>

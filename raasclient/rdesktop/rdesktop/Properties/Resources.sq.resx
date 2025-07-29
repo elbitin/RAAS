@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="General_RDPAuthenticationLabel" xml:space="preserve">
+    <value>Vërtetimi i RDP:</value>
+  </data>
+  <data name="Input_WrongSizeMessage" xml:space="preserve">
+    <value>Gjerësia dhe lartësia duhet të jenë ndërmjet</value>
+  </data>
+  <data name="Input_WrongSizeMessageTitle" xml:space="preserve">
+    <value>Hyrja e pavlefshme</value>
+  </data>
+  <data name="MainForm_ApplyButton" xml:space="preserve">
+    <value>Aplikoni</value>
+  </data>
+  <data name="MainForm_CancelButton" xml:space="preserve">
+    <value>Anulo</value>
+  </data>
+  <data name="MainForm_ConnectButton" xml:space="preserve">
+    <value>Lidheni</value>
+  </data>
+  <data name="MainForm_MainFormTitle" xml:space="preserve">
+    <value>Desktop në distancë</value>
+  </data>
+  <data name="MainForm_ServerLabel" xml:space="preserve">
+    <value>Serveri:</value>
+  </data>
+  <data name="MainForm_SettingsGroupBox" xml:space="preserve">
+    <value>Cilësimet</value>
+  </data>
+  <data name="Program_ErrorMessageTitle" xml:space="preserve">
+    <value>Gabim i desktopit në distancë</value>
+  </data>
+  <data name="RemoteDesktopForm_RemoteDesktopFormTitle" xml:space="preserve">
+    <value>Desktop në distancë - {0}</value>
+  </data>
+  <data name="RemoteDesktopSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>Nuk mund të ngarkoheshin cilësimet e desktopit në distancë për {0}</value>
+  </data>
+  <data name="RemoteDesktopSettings_UpdateFailedMessage" xml:space="preserve">
+    <value>Cilësimet e serverit nuk mund të përditësohen</value>
+  </data>
+  <data name="RemoteDesktop_ConnectionFailedMessage" xml:space="preserve">
+    <value>Nuk mund të lidhej me {0}</value>
+  </data>
+  <data name="RemoteDesktop_FatalErrorMessage" xml:space="preserve">
+    <value>Ndodhi një gabim fatal për {0}</value>
+  </data>
+  <data name="RemoteDesktop_LoginFailedMessage" xml:space="preserve">
+    <value>Nuk mund të identifikohesha në {0}</value>
+  </data>
+  <data name="ServerSettings_LoadFailedMessage" xml:space="preserve">
+    <value>Cilësimet e serverit nuk mund të ngarkoheshin</value>
+  </data>
+  <data name="ServerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>Cilësimet e serverit nuk mund të ngarkoheshin për {0}</value>
+  </data>
+  <data name="Server_RemovedMessage" xml:space="preserve">
+    <value>Serveri "{0}" është hequr</value>
+  </data>
+  <data name="Settings_AllMonitorsCheckbox" xml:space="preserve">
+    <value>Shfaq në të gjithë monitorët</value>
+  </data>
+  <data name="Settings_AuthenticationRequiredOption" xml:space="preserve">
+    <value>Kërkohet vërtetimi i serverit</value>
+  </data>
+  <data name="Settings_AuthenticationWarningOption" xml:space="preserve">
+    <value>Paralajmërim për vërtetimin e dështuar të serverit</value>
+  </data>
+  <data name="Settings_ConnectionBarCheckbox" xml:space="preserve">
+    <value>Shiriti i lidhjes</value>
+  </data>
+  <data name="Settings_FullscreenCheckBox" xml:space="preserve">
+    <value>Ekrani i plotë</value>
+  </data>
+  <data name="Settings_HeightErrorInfo" xml:space="preserve">
+    <value>Lartësia e desktopit duhet të jetë një numër i plotë</value>
+  </data>
+  <data name="Settings_HeightLabel" xml:space="preserve">
+    <value>Lartësia e desktopit:</value>
+  </data>
+  <data name="Settings_PinConnectionBarCheckbox" xml:space="preserve">
+    <value>Shiriti i lidhjes me pin</value>
+  </data>
+  <data name="Settings_RedirectClipboardCheckBox" xml:space="preserve">
+    <value>Ridrejtimi i kujtesës së fragmenteve</value>
+  </data>
+  <data name="Settings_RedirectDevicesCheckBox" xml:space="preserve">
+    <value>Ridrejtoni pajisjet</value>
+  </data>
+  <data name="Settings_RedirectPrintersCheckBox" xml:space="preserve">
+    <value>Ridrejtoni printerët</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessage" xml:space="preserve">
+    <value>Keni ndryshime të paruajtura, dëshironi të ruani?</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessageTitle" xml:space="preserve">
+    <value>Ndryshime të paruajtura</value>
+  </data>
+  <data name="Settings_UpdateFailedMessage" xml:space="preserve">
+    <value>Cilësimet e desktopit në distancë nuk mund të përditësohen</value>
+  </data>
+  <data name="Settings_WidthErrorInfo" xml:space="preserve">
+    <value>Gjerësia e desktopit duhet të jetë një numër i plotë</value>
+  </data>
+  <data name="Settings_WidthLabel" xml:space="preserve">
+    <value>Gjerësia e desktopit:</value>
+  </data>
+</root>
