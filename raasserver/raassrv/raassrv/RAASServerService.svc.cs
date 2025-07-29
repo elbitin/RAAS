@@ -240,11 +240,12 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                 using (ServiceSecurityContext.Current.WindowsIdentity.Impersonate())
                 {
                     userName = System.Security.Principal.WindowsIdentity.GetCurrent()?.Name?.ToLowerInvariant()?.Split('\\')?.Last();
-                    if (userName != null)
-                        return TSManager.UserIsLoggedIn(userName);
-                    else
-                        return false;
+
                 }
+                if (userName != null)
+                    return TSManager.UserIsLoggedIn(userName);
+                else
+                    return false;
             }
             catch
             {
@@ -266,7 +267,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             }
         }
 
-        [OperationBehavior(Impersonation = ImpersonationOption.Required)]
+        [OperationBehavior(Impersonation = ImpersonationOption.NotAllowed)]
         public bool LogOff()
         {
             try
@@ -275,11 +276,12 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
                 using (ServiceSecurityContext.Current.WindowsIdentity.Impersonate())
                 {
                     userName = System.Security.Principal.WindowsIdentity.GetCurrent()?.Name?.ToLowerInvariant()?.Split('\\')?.Last();
-                    if (userName != null)
-                        return TSManager.LogOffUser(userName);
-                    else
-                        return false;
+
                 }
+                if (userName != null)
+                    return TSManager.LogOffUser(userName);
+                else
+                    return false;
             }
             catch
             {
