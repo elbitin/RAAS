@@ -173,7 +173,7 @@
     <value>نەشرى:</value>
   </data>
   <data name="Actions_LogOffFailedMessage" xml:space="preserve">
-    <value>{0 off نى ئۆچۈرگىلى بولمايدۇ</value>
+    <value>{0} off نى ئۆچۈرگىلى بولمايدۇ</value>
   </data>
   <data name="Actions_RebootFailedMessage" xml:space="preserve">
     <value>قايتا قوزغىتىشقا ئامالسىز {0}</value>
@@ -227,13 +227,13 @@
     <value>تېزلەتمىلەرنى يېڭىلاش</value>
   </data>
   <data name="Notification_ConnectedMessage" xml:space="preserve">
-    <value>{0 to غا ئۇلاندى</value>
+    <value>{0} to غا ئۇلاندى</value>
   </data>
   <data name="Notification_ConnectionFailedMessage" xml:space="preserve">
-    <value>{0 to غا ئۇلىنالمىدى</value>
+    <value>{0} to غا ئۇلىنالمىدى</value>
   </data>
   <data name="Notification_DisconnectedMessage" xml:space="preserve">
-    <value>{0 from دىن ئۈزۈلگەن</value>
+    <value>{0} from دىن ئۈزۈلگەن</value>
   </data>
   <data name="Program_ErrorMessageTitle" xml:space="preserve">
     <value>RAAS خېرىدارلارنىڭ خاتالىقى</value>

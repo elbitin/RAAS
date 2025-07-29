@@ -173,13 +173,13 @@
     <value>Вариант:</value>
   </data>
   <data name="Actions_LogOffFailedMessage" xml:space="preserve">
-    <value>{0 off чыга алмый</value>
+    <value>{0} off чыга алмый</value>
   </data>
   <data name="Actions_RebootFailedMessage" xml:space="preserve">
-    <value>{0 re кабызып булмый</value>
+    <value>{0} re кабызып булмый</value>
   </data>
   <data name="Actions_UpdateShortcutsFailedMessage" xml:space="preserve">
-    <value>Short 0 short кыска юлларны яңартып булмый</value>
+    <value>Short {0} short кыска юлларны яңартып булмый</value>
   </data>
   <data name="ConextMenu_RAASServerConfigurationItem" xml:space="preserve">
     <value>RAAS сервер конфигурациясе</value>
@@ -227,13 +227,13 @@
     <value>Кыска юлларны яңарту</value>
   </data>
   <data name="Notification_ConnectedMessage" xml:space="preserve">
-    <value>{0 to белән тоташтырылган</value>
+    <value>{0} to белән тоташтырылган</value>
   </data>
   <data name="Notification_ConnectionFailedMessage" xml:space="preserve">
     <value>{0 to белән тоташа алмады</value>
   </data>
   <data name="Notification_DisconnectedMessage" xml:space="preserve">
-    <value>{0 from белән өзелгән</value>
+    <value>{0} from белән өзелгән</value>
   </data>
   <data name="Program_ErrorMessageTitle" xml:space="preserve">
     <value>RAAS Клиент хата</value>
