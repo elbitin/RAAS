@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alias_AllowedCharactersToolTip" xml:space="preserve">
+    <value>Los siguientes caracteres no están permitidos para el alias: '.*[]()?|&lt;&gt;\\/:"</value>
+  </data>
+  <data name="Alias_MaximumCharactersToolTip" xml:space="preserve">
+    <value>Solo se permiten {0} caracteres para el alias</value>
+  </data>
+  <data name="Connection_AvailableLabel" xml:space="preserve">
+    <value>Disponible</value>
+  </data>
+  <data name="Connection_ConnectButton" xml:space="preserve">
+    <value>Conectar</value>
+  </data>
+  <data name="Connection_ConnectedLabel" xml:space="preserve">
+    <value>Conectado</value>
+  </data>
+  <data name="Connection_ContactLabel" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="Connection_DisconnectButton" xml:space="preserve">
+    <value>Desconectar</value>
+  </data>
+  <data name="Connection_NoContactLabel" xml:space="preserve">
+    <value>Sin contacto</value>
+  </data>
+  <data name="Connection_NoServerLabel" xml:space="preserve">
+    <value>No hay ningún servidor seleccionado</value>
+  </data>
+  <data name="Connection_RAASClientNotRespondingLabel" xml:space="preserve">
+    <value>El cliente RAAS no responde</value>
+  </data>
+  <data name="Connection_ReconnectButton" xml:space="preserve">
+    <value>Reconectar</value>
+  </data>
+  <data name="Connection_ServerConnectionGroupBox" xml:space="preserve">
+    <value>Conexión al servidor RAAS</value>
+  </data>
+  <data name="Connection_ServerVersionLabel" xml:space="preserve">
+    <value>Versión del servidor RAAS:</value>
+  </data>
+  <data name="Connection_StatusLabel" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="ExplorerExtension_3DObjectsCheckBox" xml:space="preserve">
+    <value>Objetos 3D</value>
+  </data>
+  <data name="ExplorerExtension_CDDrivesCheckBox" xml:space="preserve">
+    <value>Unidades de CD</value>
+  </data>
+  <data name="ExplorerExtension_ContactsCheckBox" xml:space="preserve">
+    <value>Contactos</value>
+  </data>
+  <data name="ExplorerExtension_DesktopCheckBox" xml:space="preserve">
+    <value>De oficina</value>
+  </data>
+  <data name="ExplorerExtension_DevicesAndDrivesGroupBox" xml:space="preserve">
+    <value>Dispositivos y unidades visibles</value>
+  </data>
+  <data name="ExplorerExtension_DocumentsCheckBox" xml:space="preserve">
+    <value>Documentos</value>
+  </data>
+  <data name="ExplorerExtension_DownloadsCheckBox" xml:space="preserve">
+    <value>Descargas</value>
+  </data>
+  <data name="ExplorerExtension_EnableExplorerExtensionCheckBox" xml:space="preserve">
+    <value>Habilitar en la extensión del explorador</value>
+  </data>
+  <data name="ExplorerExtension_ExplorerExtensionTab" xml:space="preserve">
+    <value>Extensión del explorador</value>
+  </data>
+  <data name="ExplorerExtension_FavoritesCheckBox" xml:space="preserve">
+    <value>Favoritos</value>
+  </data>
+  <data name="ExplorerExtension_FloppyDiskDrivesCheckBox" xml:space="preserve">
+    <value>Unidades de disquete</value>
+  </data>
+  <data name="ExplorerExtension_HardDrivesCheckBox" xml:space="preserve">
+    <value>Discos duros</value>
+  </data>
+  <data name="ExplorerExtension_LinksCheckBox" xml:space="preserve">
+    <value>Campo de golf</value>
+  </data>
+  <data name="ExplorerExtension_MusicCheckBox" xml:space="preserve">
+    <value>Música</value>
+  </data>
+  <data name="ExplorerExtension_PicturesCheckBox" xml:space="preserve">
+    <value>Fotos</value>
+  </data>
+  <data name="ExplorerExtension_RemovableDrivesCheckBox" xml:space="preserve">
+    <value>Unidades extraíbles</value>
+  </data>
+  <data name="ExplorerExtension_SavedGamesCheckBox" xml:space="preserve">
+    <value>Partidas guardadas</value>
+  </data>
+  <data name="ExplorerExtension_SearchesCheckBox" xml:space="preserve">
+    <value>Búsquedas</value>
+  </data>
+  <data name="ExplorerExtension_VideosCheckBox" xml:space="preserve">
+    <value>Vídeos</value>
+  </data>
+  <data name="ExplorerExtension_VisibleFoldersGroupBox" xml:space="preserve">
+    <value>Carpetas visibles</value>
+  </data>
+  <data name="ExplorerSettings_SaveFailedMessage" xml:space="preserve">
+    <value>No se pudo guardar la configuración de la extensión del explorador</value>
+  </data>
+  <data name="ExplorerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>No se pudo cargar la configuración de la extensión del explorador para {0}</value>
+  </data>
+  <data name="General_AccountLabel" xml:space="preserve">
+    <value>Cuenta:</value>
+  </data>
+  <data name="General_AliasLabel" xml:space="preserve">
+    <value>Alias:</value>
+  </data>
+  <data name="General_AuthenticationRequiredOption" xml:space="preserve">
+    <value>Se requiere autenticación del servidor</value>
+  </data>
+  <data name="General_AuthenticationWarningOption" xml:space="preserve">
+    <value>Advertencia sobre autenticación fallida del servidor</value>
+  </data>
+  <data name="General_AutoReconnectCheckBox" xml:space="preserve">
+    <value>Reconexión automática</value>
+  </data>
+  <data name="General_AutoStartProgramsCheckBox" xml:space="preserve">
+    <value>Programas de inicio de inicio automático</value>
+  </data>
+  <data name="General_DomainLabel" xml:space="preserve">
+    <value>Dominio:</value>
+  </data>
+  <data name="General_EnableServerCheckBox" xml:space="preserve">
+    <value>Habilitar servidor</value>
+  </data>
+  <data name="General_GeneralTab" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="General_KeepAliveAgentCheckBox" xml:space="preserve">
+    <value>Agente de mantenimiento de vida</value>
+  </data>
+  <data name="General_PasswordLabel" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
+  <data name="General_RDPAuthenticationLabel" xml:space="preserve">
+    <value>Autenticación RDP:</value>
+  </data>
+  <data name="General_RedirectClipboardCheckBox" xml:space="preserve">
+    <value>Redirigir el portapapeles</value>
+  </data>
+  <data name="General_RedirectDevicesCheckBox" xml:space="preserve">
+    <value>Redirigir dispositivos</value>
+  </data>
+  <data name="General_RedirectPrintersCheckBox" xml:space="preserve">
+    <value>Redirigir impresoras</value>
+  </data>
+  <data name="General_SettingsGroupBox" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="General_ShowNotificationsCheckBox" xml:space="preserve">
+    <value>Mostrar notificaciones</value>
+  </data>
+  <data name="HostNameForm_AddButton" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="HostNameForm_CancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="HostNameForm_HostNameFormTitle" xml:space="preserve">
+    <value>Agregar servidor RAAS</value>
+  </data>
+  <data name="HostNameForm_HostNameLabel" xml:space="preserve">
+    <value>Nombre de host o IP:</value>
+  </data>
+  <data name="HostName_AllowedCharactersToolTip" xml:space="preserve">
+    <value>Los siguientes caracteres no están permitidos para el nombre de host: '.*[]()?|&lt;&gt;\\/:"</value>
+  </data>
+  <data name="HostName_EnterHostNameMessage" xml:space="preserve">
+    <value>Ingrese un nombre de host o IP para un servidor RAAS</value>
+  </data>
+  <data name="HostName_MaximumCharactersToolTip" xml:space="preserve">
+    <value>Solo se permiten {0} caracteres para el nombre de host</value>
+  </data>
+  <data name="Input_AccountRequiredErrorInfo" xml:space="preserve">
+    <value>Se requiere una cuenta para un servidor habilitado</value>
+  </data>
+  <data name="Input_AliasRequiredErrorInfo" xml:space="preserve">
+    <value>Se requiere un alias para un servidor habilitado</value>
+  </data>
+  <data name="Input_AliasTooLongErrorInfo" xml:space="preserve">
+    <value>El alias es demasiado largo, máximo {0} caracteres</value>
+  </data>
+  <data name="Input_MissingInformationMessage" xml:space="preserve">
+    <value>Se requieren alias, cuenta y contraseña para un servidor habilitado</value>
+  </data>
+  <data name="Input_MissingInformationMessageTitle" xml:space="preserve">
+    <value>Información faltante</value>
+  </data>
+  <data name="Input_PasswordRequiredErrorInfo" xml:space="preserve">
+    <value>Se requiere contraseña para un servidor habilitado</value>
+  </data>
+  <data name="MainForm_AddButton" xml:space="preserve">
+    <value>Agregar...</value>
+  </data>
+  <data name="MainForm_ApplyButton" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="MainForm_CancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="MainForm_MainFormTitle" xml:space="preserve">
+    <value>Configuración del servidor RAAS</value>
+  </data>
+  <data name="MainForm_OkButton" xml:space="preserve">
+    <value>DE ACUERDO</value>
+  </data>
+  <data name="MainForm_RemoveButton" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="MainForm_ServerLabel" xml:space="preserve">
+    <value>Servidor:</value>
+  </data>
+  <data name="Program_ErrorMessageTitle" xml:space="preserve">
+    <value>Error de configuración del servidor RAAS</value>
+  </data>
+  <data name="RemoteShortcuts_AppendAliasCheckBox" xml:space="preserve">
+    <value>Añadir alias de servidor a los nombres de acceso directo</value>
+  </data>
+  <data name="RemoteShortcuts_DesktopCheckBox" xml:space="preserve">
+    <value>Crear accesos directos en el escritorio</value>
+  </data>
+  <data name="RemoteShortcuts_DesktopRootCheckBox" xml:space="preserve">
+    <value>Coloque accesos directos del escritorio en la raíz del escritorio</value>
+  </data>
+  <data name="RemoteShortcuts_EnableRemoteShortcutsCheckBox" xml:space="preserve">
+    <value>Habilitar accesos directos remotos</value>
+  </data>
+  <data name="RemoteShortcuts_LocalizeShortcutsCheckBox" xml:space="preserve">
+    <value>Idioma del servidor para nombres de acceso directo</value>
+  </data>
+  <data name="RemoteShortcuts_RemoteShortcutsSettingsGroupBox" xml:space="preserve">
+    <value>Configuración de accesos directos remotos</value>
+  </data>
+  <data name="RemoteShortcuts_RemoteShortcutsTab" xml:space="preserve">
+    <value>Atajos remotos</value>
+  </data>
+  <data name="RemoteShortcuts_StartMenuCheckBox" xml:space="preserve">
+    <value>Crear accesos directos al menú de inicio</value>
+  </data>
+  <data name="RemoteShortcuts_UWPApplicationCheckBox" xml:space="preserve">
+    <value>Crear accesos directos a aplicaciones de Windows</value>
+  </data>
+  <data name="ServerSettings_AliasOccupiedErrorInfo" xml:space="preserve">
+    <value>Alias ya ocupado por un servidor diferente, por favor elija un alias diferente</value>
+  </data>
+  <data name="ServerSettings_AliasOccupiedMessage" xml:space="preserve">
+    <value>No se pudo actualizar la configuración del servidor, el alias ya está ocupado por un servidor diferente, elija un alias diferente</value>
+  </data>
+  <data name="ServerSettings_LoadFailedMessage" xml:space="preserve">
+    <value>No se pudo cargar la configuración del servidor</value>
+  </data>
+  <data name="ServerSettings_ReconnectRequiredMessage" xml:space="preserve">
+    <value>Es necesario volver a conectarse para que la configuración surta efecto. ¿Desea volver a conectarse ahora?</value>
+  </data>
+  <data name="ServerSettings_ReconnectRequiredMessageTitle" xml:space="preserve">
+    <value>La configuración del servidor ha cambiado</value>
+  </data>
+  <data name="ServerSettings_SaveFailedAliasOccupiedMessage" xml:space="preserve">
+    <value>No se pudo guardar la configuración del servidor, el alias ya está ocupado por un servidor diferente, elija un alias diferente</value>
+  </data>
+  <data name="ServerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>No se pudo cargar la configuración del servidor para {0}</value>
+  </data>
+  <data name="ServerSettings_UpdateFailedMessage" xml:space="preserve">
+    <value>No se pudo actualizar la configuración del servidor</value>
+  </data>
+  <data name="Server_ConfirmRemoveMessage" xml:space="preserve">
+    <value>¿Seguro que desea eliminar el servidor "{0}"? Se eliminarán todas sus configuraciones.</value>
+  </data>
+  <data name="Server_ConfirmRemoveMessageTitle" xml:space="preserve">
+    <value>Eliminar servidor</value>
+  </data>
+  <data name="Server_NotConfiguredMessage" xml:space="preserve">
+    <value>El servidor "{0}" no está configurado como servidor RAAS, ¿desea agregarlo?</value>
+  </data>
+  <data name="Server_NotConfiguredMessageTitle" xml:space="preserve">
+    <value>El servidor no está configurado</value>
+  </data>
+  <data name="Server_RemovedMessage" xml:space="preserve">
+    <value>El servidor "{0}" ha sido eliminado</value>
+  </data>
+  <data name="Settings_AlreadyConfiguredMessage" xml:space="preserve">
+    <value>El servidor "{0}" ya está configurado, ¿seleccionar configuración existente?</value>
+  </data>
+  <data name="Settings_AlreadyConfiguredMessageTitle" xml:space="preserve">
+    <value>Servidor ya configurado</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessage" xml:space="preserve">
+    <value>Tienes cambios sin guardar, ¿deseas guardarlos?</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessageTitle" xml:space="preserve">
+    <value>Cambios no guardados</value>
+  </data>
+  <data name="VisualizationsSettings_SaveFailedMessage" xml:space="preserve">
+    <value>No se pudo guardar la configuración de las visualizaciones</value>
+  </data>
+  <data name="VisualizationsSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>No se pudieron cargar las configuraciones de visualización para {0}</value>
+  </data>
+  <data name="Visualizations_ConnectionBarCheckBox" xml:space="preserve">
+    <value>Barra de conexión</value>
+  </data>
+  <data name="Visualizations_ConnectionBarOpacityLabel" xml:space="preserve">
+    <value>Opacidad de la barra de conexión:</value>
+  </data>
+  <data name="Visualizations_CrossLinesCheckBox" xml:space="preserve">
+    <value>Líneas cruzadas</value>
+  </data>
+  <data name="Visualizations_EnableVisualizationsCheckBox" xml:space="preserve">
+    <value>Habilitar visualizaciones</value>
+  </data>
+  <data name="Visualizations_FramesCheckBox" xml:space="preserve">
+    <value>Marcos</value>
+  </data>
+  <data name="Visualizations_LineColorButton" xml:space="preserve">
+    <value>Color de línea</value>
+  </data>
+  <data name="Visualizations_MainColorButton" xml:space="preserve">
+    <value>Color principal</value>
+  </data>
+  <data name="Visualizations_OverlayOpacityLabel" xml:space="preserve">
+    <value>Opacidad de superposición:</value>
+  </data>
+  <data name="Visualizations_OverlaysCheckBox" xml:space="preserve">
+    <value>Superposiciones cuando está inactivo</value>
+  </data>
+  <data name="Visualizations_TextColorButton" xml:space="preserve">
+    <value>Color del texto</value>
+  </data>
+  <data name="Visualizations_VisualizationsGroupBox" xml:space="preserve">
+    <value>Configuración de visualizaciones</value>
+  </data>
+  <data name="Visualizations_VisualizationsTab" xml:space="preserve">
+    <value>Visualizaciones</value>
+  </data>
+</root>

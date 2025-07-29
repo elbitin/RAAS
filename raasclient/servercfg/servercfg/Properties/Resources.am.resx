@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alias_AllowedCharactersToolTip" xml:space="preserve">
+    <value>የሚከተሉት ቁምፊዎች ለተለዋጭ ስም አይፈቀዱም፡ '.*[]()?|&lt;&gt;\\/:"</value>
+  </data>
+  <data name="Alias_MaximumCharactersToolTip" xml:space="preserve">
+    <value>ለተለዋጭ ስም {0} ቁምፊዎች ብቻ ይፈቀዳሉ።</value>
+  </data>
+  <data name="Connection_AvailableLabel" xml:space="preserve">
+    <value>ይገኛል።</value>
+  </data>
+  <data name="Connection_ConnectButton" xml:space="preserve">
+    <value>ተገናኝ</value>
+  </data>
+  <data name="Connection_ConnectedLabel" xml:space="preserve">
+    <value>ተገናኝቷል።</value>
+  </data>
+  <data name="Connection_ContactLabel" xml:space="preserve">
+    <value>ተገናኝ</value>
+  </data>
+  <data name="Connection_DisconnectButton" xml:space="preserve">
+    <value>ግንኙነት አቋርጥ</value>
+  </data>
+  <data name="Connection_NoContactLabel" xml:space="preserve">
+    <value>ምንም ግንኙነት የለም።</value>
+  </data>
+  <data name="Connection_NoServerLabel" xml:space="preserve">
+    <value>ምንም አገልጋይ አልተመረጠም።</value>
+  </data>
+  <data name="Connection_RAASClientNotRespondingLabel" xml:space="preserve">
+    <value>የ RAAS ደንበኛ ምላሽ እየሰጠ አይደለም።</value>
+  </data>
+  <data name="Connection_ReconnectButton" xml:space="preserve">
+    <value>እንደገና ይገናኙ</value>
+  </data>
+  <data name="Connection_ServerConnectionGroupBox" xml:space="preserve">
+    <value>የ RAAS አገልጋይ ግንኙነት</value>
+  </data>
+  <data name="Connection_ServerVersionLabel" xml:space="preserve">
+    <value>የ RAAS አገልጋይ ስሪት፡-</value>
+  </data>
+  <data name="Connection_StatusLabel" xml:space="preserve">
+    <value>ሁኔታ፡</value>
+  </data>
+  <data name="ExplorerExtension_3DObjectsCheckBox" xml:space="preserve">
+    <value>3D ዕቃዎች</value>
+  </data>
+  <data name="ExplorerExtension_CDDrivesCheckBox" xml:space="preserve">
+    <value>ሲዲ ድራይቮች</value>
+  </data>
+  <data name="ExplorerExtension_ContactsCheckBox" xml:space="preserve">
+    <value>እውቂያዎች</value>
+  </data>
+  <data name="ExplorerExtension_DesktopCheckBox" xml:space="preserve">
+    <value>ዴስክቶፕ</value>
+  </data>
+  <data name="ExplorerExtension_DevicesAndDrivesGroupBox" xml:space="preserve">
+    <value>የሚታዩ መሳሪያዎች እና ድራይቮች</value>
+  </data>
+  <data name="ExplorerExtension_DocumentsCheckBox" xml:space="preserve">
+    <value>ሰነዶች</value>
+  </data>
+  <data name="ExplorerExtension_DownloadsCheckBox" xml:space="preserve">
+    <value>ውርዶች</value>
+  </data>
+  <data name="ExplorerExtension_EnableExplorerExtensionCheckBox" xml:space="preserve">
+    <value>በአሳሽ ቅጥያ ውስጥ አንቃ</value>
+  </data>
+  <data name="ExplorerExtension_ExplorerExtensionTab" xml:space="preserve">
+    <value>Explorer ቅጥያ</value>
+  </data>
+  <data name="ExplorerExtension_FavoritesCheckBox" xml:space="preserve">
+    <value>ተወዳጆች</value>
+  </data>
+  <data name="ExplorerExtension_FloppyDiskDrivesCheckBox" xml:space="preserve">
+    <value>የፍሎፒ ዲስክ ድራይቮች</value>
+  </data>
+  <data name="ExplorerExtension_HardDrivesCheckBox" xml:space="preserve">
+    <value>ሃርድ ድራይቭ</value>
+  </data>
+  <data name="ExplorerExtension_LinksCheckBox" xml:space="preserve">
+    <value>አገናኞች</value>
+  </data>
+  <data name="ExplorerExtension_MusicCheckBox" xml:space="preserve">
+    <value>ሙዚቃ</value>
+  </data>
+  <data name="ExplorerExtension_PicturesCheckBox" xml:space="preserve">
+    <value>ስዕሎች</value>
+  </data>
+  <data name="ExplorerExtension_RemovableDrivesCheckBox" xml:space="preserve">
+    <value>ተነቃይ ድራይቮች</value>
+  </data>
+  <data name="ExplorerExtension_SavedGamesCheckBox" xml:space="preserve">
+    <value>የተቀመጡ ጨዋታዎች</value>
+  </data>
+  <data name="ExplorerExtension_SearchesCheckBox" xml:space="preserve">
+    <value>ፍለጋዎች</value>
+  </data>
+  <data name="ExplorerExtension_VideosCheckBox" xml:space="preserve">
+    <value>ቪዲዮዎች</value>
+  </data>
+  <data name="ExplorerExtension_VisibleFoldersGroupBox" xml:space="preserve">
+    <value>የሚታዩ አቃፊዎች</value>
+  </data>
+  <data name="ExplorerSettings_SaveFailedMessage" xml:space="preserve">
+    <value>የአሳሽ ቅጥያ ውቅረትን ማስቀመጥ አልተሳካም።</value>
+  </data>
+  <data name="ExplorerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>ለ{0} የአሳሽ ቅጥያ ቅንብሮችን መጫን አልተቻለም</value>
+  </data>
+  <data name="General_AccountLabel" xml:space="preserve">
+    <value>መለያ፡</value>
+  </data>
+  <data name="General_AliasLabel" xml:space="preserve">
+    <value>ተለዋጭ ስም፡</value>
+  </data>
+  <data name="General_AuthenticationRequiredOption" xml:space="preserve">
+    <value>የአገልጋይ ማረጋገጥ ያስፈልጋል</value>
+  </data>
+  <data name="General_AuthenticationWarningOption" xml:space="preserve">
+    <value>ያልተሳካ የአገልጋይ ማረጋገጫ ላይ ማስጠንቀቂያ</value>
+  </data>
+  <data name="General_AutoReconnectCheckBox" xml:space="preserve">
+    <value>በራስ-ሰር ዳግም ይገናኙ</value>
+  </data>
+  <data name="General_AutoStartProgramsCheckBox" xml:space="preserve">
+    <value>ጅምር ፕሮግራሞችን በራስ-ሰር ያስጀምሩ</value>
+  </data>
+  <data name="General_DomainLabel" xml:space="preserve">
+    <value>ጎራ፡</value>
+  </data>
+  <data name="General_EnableServerCheckBox" xml:space="preserve">
+    <value>አገልጋይ አንቃ</value>
+  </data>
+  <data name="General_GeneralTab" xml:space="preserve">
+    <value>አጠቃላይ</value>
+  </data>
+  <data name="General_KeepAliveAgentCheckBox" xml:space="preserve">
+    <value>ወኪል ህያው አድርግ</value>
+  </data>
+  <data name="General_PasswordLabel" xml:space="preserve">
+    <value>የይለፍ ቃል፥</value>
+  </data>
+  <data name="General_RDPAuthenticationLabel" xml:space="preserve">
+    <value>የRDP ማረጋገጫ፡-</value>
+  </data>
+  <data name="General_RedirectClipboardCheckBox" xml:space="preserve">
+    <value>ቅንጥብ ሰሌዳ አዙር</value>
+  </data>
+  <data name="General_RedirectDevicesCheckBox" xml:space="preserve">
+    <value>መሣሪያዎችን አዙር</value>
+  </data>
+  <data name="General_RedirectPrintersCheckBox" xml:space="preserve">
+    <value>አታሚዎችን አዙር</value>
+  </data>
+  <data name="General_SettingsGroupBox" xml:space="preserve">
+    <value>ቅንብሮች</value>
+  </data>
+  <data name="General_ShowNotificationsCheckBox" xml:space="preserve">
+    <value>ማሳወቂያዎችን አሳይ</value>
+  </data>
+  <data name="HostNameForm_AddButton" xml:space="preserve">
+    <value>አክል</value>
+  </data>
+  <data name="HostNameForm_CancelButton" xml:space="preserve">
+    <value>ሰርዝ</value>
+  </data>
+  <data name="HostNameForm_HostNameFormTitle" xml:space="preserve">
+    <value>RAAS አገልጋይ ያክሉ</value>
+  </data>
+  <data name="HostNameForm_HostNameLabel" xml:space="preserve">
+    <value>የአስተናጋጅ ስም ወይም አይፒ፡</value>
+  </data>
+  <data name="HostName_AllowedCharactersToolTip" xml:space="preserve">
+    <value>የሚከተሉት ቁምፊዎች ለአስተናጋጅ ስም አይፈቀዱም፡ '.*[]()?|&lt;&gt;\\/:"</value>
+  </data>
+  <data name="HostName_EnterHostNameMessage" xml:space="preserve">
+    <value>እባክዎ ለRAAS አገልጋይ የአስተናጋጅ ስም ወይም አይፒ ያስገቡ</value>
+  </data>
+  <data name="HostName_MaximumCharactersToolTip" xml:space="preserve">
+    <value>ለአስተናጋጅ ስም {0} ቁምፊዎች ብቻ ተፈቅደዋል</value>
+  </data>
+  <data name="Input_AccountRequiredErrorInfo" xml:space="preserve">
+    <value>ለነቃ አገልጋይ መለያ ያስፈልጋል</value>
+  </data>
+  <data name="Input_AliasRequiredErrorInfo" xml:space="preserve">
+    <value>ለነቃ አገልጋይ አሊያስ ያስፈልጋል</value>
+  </data>
+  <data name="Input_AliasTooLongErrorInfo" xml:space="preserve">
+    <value>ተለዋጭ ስም በጣም ረጅም ነው፣ ከፍተኛው {0} ቁምፊዎች</value>
+  </data>
+  <data name="Input_MissingInformationMessage" xml:space="preserve">
+    <value>ተለዋጭ ስም፣ መለያ እና የይለፍ ቃል ለነቃ አገልጋይ ያስፈልጋል</value>
+  </data>
+  <data name="Input_MissingInformationMessageTitle" xml:space="preserve">
+    <value>መረጃ ይጎድላል</value>
+  </data>
+  <data name="Input_PasswordRequiredErrorInfo" xml:space="preserve">
+    <value>ለነቃ አገልጋይ የይለፍ ቃል ያስፈልጋል</value>
+  </data>
+  <data name="MainForm_AddButton" xml:space="preserve">
+    <value>አክል...</value>
+  </data>
+  <data name="MainForm_ApplyButton" xml:space="preserve">
+    <value>ያመልክቱ</value>
+  </data>
+  <data name="MainForm_CancelButton" xml:space="preserve">
+    <value>ሰርዝ</value>
+  </data>
+  <data name="MainForm_MainFormTitle" xml:space="preserve">
+    <value>RAAS አገልጋይ ውቅር</value>
+  </data>
+  <data name="MainForm_OkButton" xml:space="preserve">
+    <value>እሺ</value>
+  </data>
+  <data name="MainForm_RemoveButton" xml:space="preserve">
+    <value>አስወግድ</value>
+  </data>
+  <data name="MainForm_ServerLabel" xml:space="preserve">
+    <value>አገልጋይ፡</value>
+  </data>
+  <data name="Program_ErrorMessageTitle" xml:space="preserve">
+    <value>የ RAAS አገልጋይ ውቅር ስህተት</value>
+  </data>
+  <data name="RemoteShortcuts_AppendAliasCheckBox" xml:space="preserve">
+    <value>የአገልጋይ ተለዋጭ ስም ወደ አቋራጭ ስሞች ጨምር</value>
+  </data>
+  <data name="RemoteShortcuts_DesktopCheckBox" xml:space="preserve">
+    <value>የዴስክቶፕ አቋራጮችን ይፍጠሩ</value>
+  </data>
+  <data name="RemoteShortcuts_DesktopRootCheckBox" xml:space="preserve">
+    <value>የዴስክቶፕ አቋራጮችን በዴስክቶፕ ሥር ላይ ያስቀምጡ</value>
+  </data>
+  <data name="RemoteShortcuts_EnableRemoteShortcutsCheckBox" xml:space="preserve">
+    <value>የርቀት አቋራጮችን አንቃ</value>
+  </data>
+  <data name="RemoteShortcuts_LocalizeShortcutsCheckBox" xml:space="preserve">
+    <value>የአገልጋይ ቋንቋ ለአቋራጭ ስሞች</value>
+  </data>
+  <data name="RemoteShortcuts_RemoteShortcutsSettingsGroupBox" xml:space="preserve">
+    <value>የርቀት አቋራጮች ቅንብሮች</value>
+  </data>
+  <data name="RemoteShortcuts_RemoteShortcutsTab" xml:space="preserve">
+    <value>የርቀት አቋራጮች</value>
+  </data>
+  <data name="RemoteShortcuts_StartMenuCheckBox" xml:space="preserve">
+    <value>የመነሻ ምናሌ አቋራጮችን ይፍጠሩ</value>
+  </data>
+  <data name="RemoteShortcuts_UWPApplicationCheckBox" xml:space="preserve">
+    <value>የዊንዶውስ መተግበሪያ አቋራጮችን ይፍጠሩ</value>
+  </data>
+  <data name="ServerSettings_AliasOccupiedErrorInfo" xml:space="preserve">
+    <value>ተለዋጭ ስም አስቀድሞ በተለየ አገልጋይ ተይዟል፣ እባክህ ሌላ ተለዋጭ ስም ምረጥ</value>
+  </data>
+  <data name="ServerSettings_AliasOccupiedMessage" xml:space="preserve">
+    <value>የአገልጋይ ቅንብሮችን ማዘመን አልተቻለም፣ ተለዋጭ ስም በሌላ አገልጋይ፣ እባክዎ ሌላ ተለዋጭ ስም ይምረጡ</value>
+  </data>
+  <data name="ServerSettings_LoadFailedMessage" xml:space="preserve">
+    <value>የአገልጋይ ቅንብሮችን መጫን አልተቻለም</value>
+  </data>
+  <data name="ServerSettings_ReconnectRequiredMessage" xml:space="preserve">
+    <value>ቅንጅቶች እንዲተገበሩ ዳግም ማገናኘት ያስፈልጋል፣ አሁን እንደገና ይገናኙ?</value>
+  </data>
+  <data name="ServerSettings_ReconnectRequiredMessageTitle" xml:space="preserve">
+    <value>የአገልጋይ ቅንብሮች ተለውጠዋል</value>
+  </data>
+  <data name="ServerSettings_SaveFailedAliasOccupiedMessage" xml:space="preserve">
+    <value>የአገልጋይ ውቅረትን ማስቀመጥ አልተሳካም ፣ ቀድሞውንም በተለየ አገልጋይ ተይዟል ፣ እባክህ ሌላ ተለዋጭ ስም ምረጥ</value>
+  </data>
+  <data name="ServerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>የ{0} አገልጋይ ቅንብሮችን መጫን አልተቻለም</value>
+  </data>
+  <data name="ServerSettings_UpdateFailedMessage" xml:space="preserve">
+    <value>የአገልጋይ ቅንብሮችን ማዘመን አልተቻለም</value>
+  </data>
+  <data name="Server_ConfirmRemoveMessage" xml:space="preserve">
+    <value>እርግጠኛ ነህ አገልጋዩን "{0}" ማስወገድ ትፈልጋለህ? ሁሉም ቅንብሮቹ ይወገዳሉ።</value>
+  </data>
+  <data name="Server_ConfirmRemoveMessageTitle" xml:space="preserve">
+    <value>አገልጋይ አስወግድ</value>
+  </data>
+  <data name="Server_NotConfiguredMessage" xml:space="preserve">
+    <value>አገልጋዩ "{0}" እንደ RAAS አገልጋይ አልተዋቀረም ፣ እሱን ማከል ይፈልጋሉ?</value>
+  </data>
+  <data name="Server_NotConfiguredMessageTitle" xml:space="preserve">
+    <value>አገልጋይ አልተዋቀረም።</value>
+  </data>
+  <data name="Server_RemovedMessage" xml:space="preserve">
+    <value>አገልጋዩ "{0}" ተወግዷል</value>
+  </data>
+  <data name="Settings_AlreadyConfiguredMessage" xml:space="preserve">
+    <value>አገልጋዩ "{0}" አስቀድሞ ተዋቅሯል፣ ያለውን ውቅር ይምረጡ?</value>
+  </data>
+  <data name="Settings_AlreadyConfiguredMessageTitle" xml:space="preserve">
+    <value>አገልጋይ አስቀድሞ ተዋቅሯል።</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessage" xml:space="preserve">
+    <value>ያልተቀመጡ ለውጦች አሉዎት፣ ማስቀመጥ ይፈልጋሉ?</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessageTitle" xml:space="preserve">
+    <value>ያልተቀመጡ ለውጦች</value>
+  </data>
+  <data name="VisualizationsSettings_SaveFailedMessage" xml:space="preserve">
+    <value>የእይታ ውቅረትን ማስቀመጥ አልተሳካም።</value>
+  </data>
+  <data name="VisualizationsSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>ለ{0} የእይታ ቅንጅቶችን መጫን አልተቻለም</value>
+  </data>
+  <data name="Visualizations_ConnectionBarCheckBox" xml:space="preserve">
+    <value>የግንኙነት አሞሌ</value>
+  </data>
+  <data name="Visualizations_ConnectionBarOpacityLabel" xml:space="preserve">
+    <value>የግንኙነት አሞሌ ግልጽነት;</value>
+  </data>
+  <data name="Visualizations_CrossLinesCheckBox" xml:space="preserve">
+    <value>መስቀለኛ መንገድ</value>
+  </data>
+  <data name="Visualizations_EnableVisualizationsCheckBox" xml:space="preserve">
+    <value>እይታዎችን አንቃ</value>
+  </data>
+  <data name="Visualizations_FramesCheckBox" xml:space="preserve">
+    <value>ክፈፎች</value>
+  </data>
+  <data name="Visualizations_LineColorButton" xml:space="preserve">
+    <value>የመስመር ቀለም</value>
+  </data>
+  <data name="Visualizations_MainColorButton" xml:space="preserve">
+    <value>ዋናው ቀለም</value>
+  </data>
+  <data name="Visualizations_OverlayOpacityLabel" xml:space="preserve">
+    <value>ተደራቢ ግልጽነት፡</value>
+  </data>
+  <data name="Visualizations_OverlaysCheckBox" xml:space="preserve">
+    <value>እንቅስቃሴ-አልባ በሚሆንበት ጊዜ ተደራቢዎች</value>
+  </data>
+  <data name="Visualizations_TextColorButton" xml:space="preserve">
+    <value>የጽሑፍ ቀለም</value>
+  </data>
+  <data name="Visualizations_VisualizationsGroupBox" xml:space="preserve">
+    <value>የእይታ ቅንጅቶች</value>
+  </data>
+  <data name="Visualizations_VisualizationsTab" xml:space="preserve">
+    <value>የእይታ እይታዎች</value>
+  </data>
+</root>

@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alias_AllowedCharactersToolTip" xml:space="preserve">
+    <value>Herufi zifuatazo haziruhusiwi kwa lakabu: '.*[]()?|&lt;&gt;\\/:"</value>
+  </data>
+  <data name="Alias_MaximumCharactersToolTip" xml:space="preserve">
+    <value>Herufi {0} pekee ndizo zinazoruhusiwa kwa lakabu</value>
+  </data>
+  <data name="Connection_AvailableLabel" xml:space="preserve">
+    <value>Inapatikana</value>
+  </data>
+  <data name="Connection_ConnectButton" xml:space="preserve">
+    <value>Unganisha</value>
+  </data>
+  <data name="Connection_ConnectedLabel" xml:space="preserve">
+    <value>Imeunganishwa</value>
+  </data>
+  <data name="Connection_ContactLabel" xml:space="preserve">
+    <value>Wasiliana</value>
+  </data>
+  <data name="Connection_DisconnectButton" xml:space="preserve">
+    <value>Tenganisha</value>
+  </data>
+  <data name="Connection_NoContactLabel" xml:space="preserve">
+    <value>Hakuna mawasiliano</value>
+  </data>
+  <data name="Connection_NoServerLabel" xml:space="preserve">
+    <value>Hakuna seva iliyochaguliwa</value>
+  </data>
+  <data name="Connection_RAASClientNotRespondingLabel" xml:space="preserve">
+    <value>Mteja wa RAAS hajibu</value>
+  </data>
+  <data name="Connection_ReconnectButton" xml:space="preserve">
+    <value>Unganisha upya</value>
+  </data>
+  <data name="Connection_ServerConnectionGroupBox" xml:space="preserve">
+    <value>Muunganisho wa Seva ya RAAS</value>
+  </data>
+  <data name="Connection_ServerVersionLabel" xml:space="preserve">
+    <value>Toleo la Seva ya RAAS:</value>
+  </data>
+  <data name="Connection_StatusLabel" xml:space="preserve">
+    <value>Hali:</value>
+  </data>
+  <data name="ExplorerExtension_3DObjectsCheckBox" xml:space="preserve">
+    <value>Vitu vya 3D</value>
+  </data>
+  <data name="ExplorerExtension_CDDrivesCheckBox" xml:space="preserve">
+    <value>Viendeshi vya CD</value>
+  </data>
+  <data name="ExplorerExtension_ContactsCheckBox" xml:space="preserve">
+    <value>Anwani</value>
+  </data>
+  <data name="ExplorerExtension_DesktopCheckBox" xml:space="preserve">
+    <value>Eneo-kazi</value>
+  </data>
+  <data name="ExplorerExtension_DevicesAndDrivesGroupBox" xml:space="preserve">
+    <value>Vifaa na Hifadhi Zinazoonekana</value>
+  </data>
+  <data name="ExplorerExtension_DocumentsCheckBox" xml:space="preserve">
+    <value>Nyaraka</value>
+  </data>
+  <data name="ExplorerExtension_DownloadsCheckBox" xml:space="preserve">
+    <value>Vipakuliwa</value>
+  </data>
+  <data name="ExplorerExtension_EnableExplorerExtensionCheckBox" xml:space="preserve">
+    <value>Washa katika kiendelezi cha kichunguzi</value>
+  </data>
+  <data name="ExplorerExtension_ExplorerExtensionTab" xml:space="preserve">
+    <value>Kiendelezi cha Explorer</value>
+  </data>
+  <data name="ExplorerExtension_FavoritesCheckBox" xml:space="preserve">
+    <value>Vipendwa</value>
+  </data>
+  <data name="ExplorerExtension_FloppyDiskDrivesCheckBox" xml:space="preserve">
+    <value>Anatoa za diski za floppy</value>
+  </data>
+  <data name="ExplorerExtension_HardDrivesCheckBox" xml:space="preserve">
+    <value>Anatoa ngumu</value>
+  </data>
+  <data name="ExplorerExtension_LinksCheckBox" xml:space="preserve">
+    <value>Viungo</value>
+  </data>
+  <data name="ExplorerExtension_MusicCheckBox" xml:space="preserve">
+    <value>Muziki</value>
+  </data>
+  <data name="ExplorerExtension_PicturesCheckBox" xml:space="preserve">
+    <value>Picha</value>
+  </data>
+  <data name="ExplorerExtension_RemovableDrivesCheckBox" xml:space="preserve">
+    <value>Anatoa zinazoweza kutolewa</value>
+  </data>
+  <data name="ExplorerExtension_SavedGamesCheckBox" xml:space="preserve">
+    <value>Michezo Iliyohifadhiwa</value>
+  </data>
+  <data name="ExplorerExtension_SearchesCheckBox" xml:space="preserve">
+    <value>Utafutaji</value>
+  </data>
+  <data name="ExplorerExtension_VideosCheckBox" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="ExplorerExtension_VisibleFoldersGroupBox" xml:space="preserve">
+    <value>Folda Zinazoonekana</value>
+  </data>
+  <data name="ExplorerSettings_SaveFailedMessage" xml:space="preserve">
+    <value>Imeshindwa kuhifadhi usanidi wa kiendelezi cha kichunguzi</value>
+  </data>
+  <data name="ExplorerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>Haikuweza kupakia mipangilio ya kiendelezi cha kichunguzi cha {0}</value>
+  </data>
+  <data name="General_AccountLabel" xml:space="preserve">
+    <value>Akaunti:</value>
+  </data>
+  <data name="General_AliasLabel" xml:space="preserve">
+    <value>Lakabu:</value>
+  </data>
+  <data name="General_AuthenticationRequiredOption" xml:space="preserve">
+    <value>Uthibitishaji wa seva unahitajika</value>
+  </data>
+  <data name="General_AuthenticationWarningOption" xml:space="preserve">
+    <value>Onyo juu ya uthibitishaji wa seva ulioshindwa</value>
+  </data>
+  <data name="General_AutoReconnectCheckBox" xml:space="preserve">
+    <value>Unganisha upya kiotomatiki</value>
+  </data>
+  <data name="General_AutoStartProgramsCheckBox" xml:space="preserve">
+    <value>Anzisha programu za uanzishaji kiotomatiki</value>
+  </data>
+  <data name="General_DomainLabel" xml:space="preserve">
+    <value>Kikoa:</value>
+  </data>
+  <data name="General_EnableServerCheckBox" xml:space="preserve">
+    <value>Washa seva</value>
+  </data>
+  <data name="General_GeneralTab" xml:space="preserve">
+    <value>Mkuu</value>
+  </data>
+  <data name="General_KeepAliveAgentCheckBox" xml:space="preserve">
+    <value>Weka hai wakala</value>
+  </data>
+  <data name="General_PasswordLabel" xml:space="preserve">
+    <value>Nenosiri:</value>
+  </data>
+  <data name="General_RDPAuthenticationLabel" xml:space="preserve">
+    <value>Uthibitishaji wa RDP:</value>
+  </data>
+  <data name="General_RedirectClipboardCheckBox" xml:space="preserve">
+    <value>Elekeza upya ubao wa kunakili</value>
+  </data>
+  <data name="General_RedirectDevicesCheckBox" xml:space="preserve">
+    <value>Elekeza vifaa vingine</value>
+  </data>
+  <data name="General_RedirectPrintersCheckBox" xml:space="preserve">
+    <value>Elekeza upya vichapishi</value>
+  </data>
+  <data name="General_SettingsGroupBox" xml:space="preserve">
+    <value>Mipangilio</value>
+  </data>
+  <data name="General_ShowNotificationsCheckBox" xml:space="preserve">
+    <value>Onyesha arifa</value>
+  </data>
+  <data name="HostNameForm_AddButton" xml:space="preserve">
+    <value>Ongeza</value>
+  </data>
+  <data name="HostNameForm_CancelButton" xml:space="preserve">
+    <value>Ghairi</value>
+  </data>
+  <data name="HostNameForm_HostNameFormTitle" xml:space="preserve">
+    <value>Ongeza Seva ya RAAS</value>
+  </data>
+  <data name="HostNameForm_HostNameLabel" xml:space="preserve">
+    <value>Jina la mwenyeji au IP:</value>
+  </data>
+  <data name="HostName_AllowedCharactersToolTip" xml:space="preserve">
+    <value>Herufi zifuatazo haziruhusiwi kwa jina la mwenyeji: '.*[]()?|&lt;&gt;\\/:"</value>
+  </data>
+  <data name="HostName_EnterHostNameMessage" xml:space="preserve">
+    <value>Tafadhali weka Jina la Mpangishi au IP kwa Seva ya RAAS</value>
+  </data>
+  <data name="HostName_MaximumCharactersToolTip" xml:space="preserve">
+    <value>Vibambo {0} pekee vinavyoruhusiwa kwa jina la mwenyeji</value>
+  </data>
+  <data name="Input_AccountRequiredErrorInfo" xml:space="preserve">
+    <value>Akaunti inahitajika kwa seva iliyowezeshwa</value>
+  </data>
+  <data name="Input_AliasRequiredErrorInfo" xml:space="preserve">
+    <value>Lakabu inahitajika kwa seva iliyowezeshwa</value>
+  </data>
+  <data name="Input_AliasTooLongErrorInfo" xml:space="preserve">
+    <value>Lakabu ni refu sana, herufi zisizozidi {0}</value>
+  </data>
+  <data name="Input_MissingInformationMessage" xml:space="preserve">
+    <value>Lakabu, akaunti na nenosiri zinahitajika kwa seva iliyowezeshwa</value>
+  </data>
+  <data name="Input_MissingInformationMessageTitle" xml:space="preserve">
+    <value>Taarifa zinazokosekana</value>
+  </data>
+  <data name="Input_PasswordRequiredErrorInfo" xml:space="preserve">
+    <value>Nenosiri linahitajika kwa seva iliyowezeshwa</value>
+  </data>
+  <data name="MainForm_AddButton" xml:space="preserve">
+    <value>Ongeza...</value>
+  </data>
+  <data name="MainForm_ApplyButton" xml:space="preserve">
+    <value>Omba</value>
+  </data>
+  <data name="MainForm_CancelButton" xml:space="preserve">
+    <value>Ghairi</value>
+  </data>
+  <data name="MainForm_MainFormTitle" xml:space="preserve">
+    <value>Usanidi wa Seva ya RAAS</value>
+  </data>
+  <data name="MainForm_OkButton" xml:space="preserve">
+    <value>Sawa</value>
+  </data>
+  <data name="MainForm_RemoveButton" xml:space="preserve">
+    <value>Ondoa</value>
+  </data>
+  <data name="MainForm_ServerLabel" xml:space="preserve">
+    <value>Seva:</value>
+  </data>
+  <data name="Program_ErrorMessageTitle" xml:space="preserve">
+    <value>Hitilafu ya Usanidi wa Seva ya RAAS</value>
+  </data>
+  <data name="RemoteShortcuts_AppendAliasCheckBox" xml:space="preserve">
+    <value>Weka lakabu ya seva kwa majina ya njia za mkato</value>
+  </data>
+  <data name="RemoteShortcuts_DesktopCheckBox" xml:space="preserve">
+    <value>Unda njia za mkato za eneo-kazi</value>
+  </data>
+  <data name="RemoteShortcuts_DesktopRootCheckBox" xml:space="preserve">
+    <value>Weka njia za mkato za eneo-kazi kwenye mzizi wa eneo-kazi</value>
+  </data>
+  <data name="RemoteShortcuts_EnableRemoteShortcutsCheckBox" xml:space="preserve">
+    <value>Washa njia za mkato za mbali</value>
+  </data>
+  <data name="RemoteShortcuts_LocalizeShortcutsCheckBox" xml:space="preserve">
+    <value>Lugha ya seva kwa majina ya njia za mkato</value>
+  </data>
+  <data name="RemoteShortcuts_RemoteShortcutsSettingsGroupBox" xml:space="preserve">
+    <value>Mipangilio ya Njia za Mkato za Mbali</value>
+  </data>
+  <data name="RemoteShortcuts_RemoteShortcutsTab" xml:space="preserve">
+    <value>Njia za mkato za Mbali</value>
+  </data>
+  <data name="RemoteShortcuts_StartMenuCheckBox" xml:space="preserve">
+    <value>Unda njia za mkato za menyu ya kuanza</value>
+  </data>
+  <data name="RemoteShortcuts_UWPApplicationCheckBox" xml:space="preserve">
+    <value>Unda njia za mkato za Programu ya Windows</value>
+  </data>
+  <data name="ServerSettings_AliasOccupiedErrorInfo" xml:space="preserve">
+    <value>Lakabu tayari inatumika na seva tofauti, tafadhali chagua lakabu tofauti</value>
+  </data>
+  <data name="ServerSettings_AliasOccupiedMessage" xml:space="preserve">
+    <value>Haikuweza kusasisha mipangilio ya seva, lakabu ambalo tayari linatumika na seva tofauti, tafadhali chagua lakabu tofauti</value>
+  </data>
+  <data name="ServerSettings_LoadFailedMessage" xml:space="preserve">
+    <value>Haikuweza kupakia mipangilio ya seva</value>
+  </data>
+  <data name="ServerSettings_ReconnectRequiredMessage" xml:space="preserve">
+    <value>Muunganisho upya unahitajika ili mipangilio ianze kutumika, unganisha upya sasa?</value>
+  </data>
+  <data name="ServerSettings_ReconnectRequiredMessageTitle" xml:space="preserve">
+    <value>Mipangilio ya seva imebadilika</value>
+  </data>
+  <data name="ServerSettings_SaveFailedAliasOccupiedMessage" xml:space="preserve">
+    <value>Imeshindwa kuhifadhi usanidi wa seva, lakabu tayari inatumika na seva tofauti, tafadhali chagua lakabu tofauti.</value>
+  </data>
+  <data name="ServerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>Haikuweza kupakia mipangilio ya seva ya {0}</value>
+  </data>
+  <data name="ServerSettings_UpdateFailedMessage" xml:space="preserve">
+    <value>Haikuweza kusasisha mipangilio ya seva</value>
+  </data>
+  <data name="Server_ConfirmRemoveMessage" xml:space="preserve">
+    <value>Je, una uhakika unataka kuondoa seva "{0}"? Mipangilio yake yote itaondolewa</value>
+  </data>
+  <data name="Server_ConfirmRemoveMessageTitle" xml:space="preserve">
+    <value>Ondoa seva</value>
+  </data>
+  <data name="Server_NotConfiguredMessage" xml:space="preserve">
+    <value>Seva "{0}" haijasanidiwa kama Seva ya RAAS, ungependa kuiongeza?</value>
+  </data>
+  <data name="Server_NotConfiguredMessageTitle" xml:space="preserve">
+    <value>Seva haijasanidiwa</value>
+  </data>
+  <data name="Server_RemovedMessage" xml:space="preserve">
+    <value>Seva "{0}" imeondolewa</value>
+  </data>
+  <data name="Settings_AlreadyConfiguredMessage" xml:space="preserve">
+    <value>Seva "{0}" tayari imesanidiwa, chagua usanidi uliopo?</value>
+  </data>
+  <data name="Settings_AlreadyConfiguredMessageTitle" xml:space="preserve">
+    <value>Seva tayari imesanidiwa</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessage" xml:space="preserve">
+    <value>Una mabadiliko ambayo hayajahifadhiwa, ungependa kuhifadhi?</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessageTitle" xml:space="preserve">
+    <value>Mabadiliko ambayo hayajahifadhiwa</value>
+  </data>
+  <data name="VisualizationsSettings_SaveFailedMessage" xml:space="preserve">
+    <value>Imeshindwa kuhifadhi usanidi wa taswira</value>
+  </data>
+  <data name="VisualizationsSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>Haikuweza kupakia mipangilio ya taswira ya {0}</value>
+  </data>
+  <data name="Visualizations_ConnectionBarCheckBox" xml:space="preserve">
+    <value>Upau wa uunganisho</value>
+  </data>
+  <data name="Visualizations_ConnectionBarOpacityLabel" xml:space="preserve">
+    <value>Uwazi wa upau wa muunganisho:</value>
+  </data>
+  <data name="Visualizations_CrossLinesCheckBox" xml:space="preserve">
+    <value>Njia panda</value>
+  </data>
+  <data name="Visualizations_EnableVisualizationsCheckBox" xml:space="preserve">
+    <value>Washa taswira</value>
+  </data>
+  <data name="Visualizations_FramesCheckBox" xml:space="preserve">
+    <value>Fremu</value>
+  </data>
+  <data name="Visualizations_LineColorButton" xml:space="preserve">
+    <value>Rangi ya mstari</value>
+  </data>
+  <data name="Visualizations_MainColorButton" xml:space="preserve">
+    <value>Rangi kuu</value>
+  </data>
+  <data name="Visualizations_OverlayOpacityLabel" xml:space="preserve">
+    <value>Uwazi wa uwekaji juu:</value>
+  </data>
+  <data name="Visualizations_OverlaysCheckBox" xml:space="preserve">
+    <value>Huwekelea wakati haitumiki</value>
+  </data>
+  <data name="Visualizations_TextColorButton" xml:space="preserve">
+    <value>Rangi ya maandishi</value>
+  </data>
+  <data name="Visualizations_VisualizationsGroupBox" xml:space="preserve">
+    <value>Mipangilio ya Visualizations</value>
+  </data>
+  <data name="Visualizations_VisualizationsTab" xml:space="preserve">
+    <value>Visualizations</value>
+  </data>
+</root>

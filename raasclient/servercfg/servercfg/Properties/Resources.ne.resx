@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alias_AllowedCharactersToolTip" xml:space="preserve">
+    <value>उपनामका लागि निम्न वर्णहरूलाई अनुमति छैन: '.*[]()?|&lt;&gt;\\/:"</value>
+  </data>
+  <data name="Alias_MaximumCharactersToolTip" xml:space="preserve">
+    <value>उपनामका लागि मात्र {0} वर्णहरूलाई अनुमति दिइएको छ</value>
+  </data>
+  <data name="Connection_AvailableLabel" xml:space="preserve">
+    <value>उपलब्ध छ</value>
+  </data>
+  <data name="Connection_ConnectButton" xml:space="preserve">
+    <value>जडान गर्नुहोस्</value>
+  </data>
+  <data name="Connection_ConnectedLabel" xml:space="preserve">
+    <value>जडान भयो</value>
+  </data>
+  <data name="Connection_ContactLabel" xml:space="preserve">
+    <value>सम्पर्क गर्नुहोस्</value>
+  </data>
+  <data name="Connection_DisconnectButton" xml:space="preserve">
+    <value>जडान विच्छेद गर्नुहोस्</value>
+  </data>
+  <data name="Connection_NoContactLabel" xml:space="preserve">
+    <value>सम्पर्क छैन</value>
+  </data>
+  <data name="Connection_NoServerLabel" xml:space="preserve">
+    <value>कुनै सर्भर चयन गरिएको छैन</value>
+  </data>
+  <data name="Connection_RAASClientNotRespondingLabel" xml:space="preserve">
+    <value>RAAS ग्राहकले प्रतिक्रिया दिइरहेको छैन</value>
+  </data>
+  <data name="Connection_ReconnectButton" xml:space="preserve">
+    <value>पुन: जडान गर्नुहोस्</value>
+  </data>
+  <data name="Connection_ServerConnectionGroupBox" xml:space="preserve">
+    <value>RAAS सर्भर जडान</value>
+  </data>
+  <data name="Connection_ServerVersionLabel" xml:space="preserve">
+    <value>RAAS सर्भर संस्करण:</value>
+  </data>
+  <data name="Connection_StatusLabel" xml:space="preserve">
+    <value>स्थिति:</value>
+  </data>
+  <data name="ExplorerExtension_3DObjectsCheckBox" xml:space="preserve">
+    <value>3D वस्तुहरू</value>
+  </data>
+  <data name="ExplorerExtension_CDDrivesCheckBox" xml:space="preserve">
+    <value>सीडी ड्राइभहरू</value>
+  </data>
+  <data name="ExplorerExtension_ContactsCheckBox" xml:space="preserve">
+    <value>सम्पर्कहरू</value>
+  </data>
+  <data name="ExplorerExtension_DesktopCheckBox" xml:space="preserve">
+    <value>डेस्कटप</value>
+  </data>
+  <data name="ExplorerExtension_DevicesAndDrivesGroupBox" xml:space="preserve">
+    <value>देखिने यन्त्रहरू र ड्राइभहरू</value>
+  </data>
+  <data name="ExplorerExtension_DocumentsCheckBox" xml:space="preserve">
+    <value>कागजातहरू</value>
+  </data>
+  <data name="ExplorerExtension_DownloadsCheckBox" xml:space="preserve">
+    <value>डाउनलोडहरू</value>
+  </data>
+  <data name="ExplorerExtension_EnableExplorerExtensionCheckBox" xml:space="preserve">
+    <value>अन्वेषक विस्तारमा सक्षम गर्नुहोस्</value>
+  </data>
+  <data name="ExplorerExtension_ExplorerExtensionTab" xml:space="preserve">
+    <value>एक्सप्लोरर विस्तार</value>
+  </data>
+  <data name="ExplorerExtension_FavoritesCheckBox" xml:space="preserve">
+    <value>मनपर्नेहरू</value>
+  </data>
+  <data name="ExplorerExtension_FloppyDiskDrivesCheckBox" xml:space="preserve">
+    <value>फ्लपी डिस्क ड्राइवहरू</value>
+  </data>
+  <data name="ExplorerExtension_HardDrivesCheckBox" xml:space="preserve">
+    <value>हार्ड ड्राइभहरू</value>
+  </data>
+  <data name="ExplorerExtension_LinksCheckBox" xml:space="preserve">
+    <value>लिङ्कहरू</value>
+  </data>
+  <data name="ExplorerExtension_MusicCheckBox" xml:space="preserve">
+    <value>संगीत</value>
+  </data>
+  <data name="ExplorerExtension_PicturesCheckBox" xml:space="preserve">
+    <value>चित्रहरू</value>
+  </data>
+  <data name="ExplorerExtension_RemovableDrivesCheckBox" xml:space="preserve">
+    <value>हटाउन सकिने ड्राइभहरू</value>
+  </data>
+  <data name="ExplorerExtension_SavedGamesCheckBox" xml:space="preserve">
+    <value>सुरक्षित गरिएका खेलहरू</value>
+  </data>
+  <data name="ExplorerExtension_SearchesCheckBox" xml:space="preserve">
+    <value>खोजहरू</value>
+  </data>
+  <data name="ExplorerExtension_VideosCheckBox" xml:space="preserve">
+    <value>भिडियोहरू</value>
+  </data>
+  <data name="ExplorerExtension_VisibleFoldersGroupBox" xml:space="preserve">
+    <value>देखिने फोल्डरहरू</value>
+  </data>
+  <data name="ExplorerSettings_SaveFailedMessage" xml:space="preserve">
+    <value>अन्वेषक विस्तार कन्फिगरेसन बचत गर्न असफल भयो</value>
+  </data>
+  <data name="ExplorerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>{0} को लागि एक्सप्लोरर विस्तार सेटिङहरू लोड गर्न सकिएन</value>
+  </data>
+  <data name="General_AccountLabel" xml:space="preserve">
+    <value>खाता:</value>
+  </data>
+  <data name="General_AliasLabel" xml:space="preserve">
+    <value>उपनाम:</value>
+  </data>
+  <data name="General_AuthenticationRequiredOption" xml:space="preserve">
+    <value>सर्भर प्रमाणीकरण आवश्यक छ</value>
+  </data>
+  <data name="General_AuthenticationWarningOption" xml:space="preserve">
+    <value>असफल सर्भर प्रमाणीकरणमा चेतावनी</value>
+  </data>
+  <data name="General_AutoReconnectCheckBox" xml:space="preserve">
+    <value>स्वतः पुन: जडान गर्नुहोस्</value>
+  </data>
+  <data name="General_AutoStartProgramsCheckBox" xml:space="preserve">
+    <value>स्वत: सुरु स्टार्टअप कार्यक्रमहरू</value>
+  </data>
+  <data name="General_DomainLabel" xml:space="preserve">
+    <value>डोमेन:</value>
+  </data>
+  <data name="General_EnableServerCheckBox" xml:space="preserve">
+    <value>सर्भर सक्षम गर्नुहोस्</value>
+  </data>
+  <data name="General_GeneralTab" xml:space="preserve">
+    <value>सामान्य</value>
+  </data>
+  <data name="General_KeepAliveAgentCheckBox" xml:space="preserve">
+    <value>जीवित एजेन्ट राख्नुहोस्</value>
+  </data>
+  <data name="General_PasswordLabel" xml:space="preserve">
+    <value>पासवर्ड:</value>
+  </data>
+  <data name="General_RDPAuthenticationLabel" xml:space="preserve">
+    <value>RDP प्रमाणीकरण:</value>
+  </data>
+  <data name="General_RedirectClipboardCheckBox" xml:space="preserve">
+    <value>क्लिपबोर्ड रिडिरेक्ट गर्नुहोस्</value>
+  </data>
+  <data name="General_RedirectDevicesCheckBox" xml:space="preserve">
+    <value>यन्त्रहरू पुन: निर्देशित गर्नुहोस्</value>
+  </data>
+  <data name="General_RedirectPrintersCheckBox" xml:space="preserve">
+    <value>प्रिन्टरहरू पुन: निर्देशित गर्नुहोस्</value>
+  </data>
+  <data name="General_SettingsGroupBox" xml:space="preserve">
+    <value>सेटिङहरू</value>
+  </data>
+  <data name="General_ShowNotificationsCheckBox" xml:space="preserve">
+    <value>सूचनाहरू देखाउनुहोस्</value>
+  </data>
+  <data name="HostNameForm_AddButton" xml:space="preserve">
+    <value>थप्नुहोस्</value>
+  </data>
+  <data name="HostNameForm_CancelButton" xml:space="preserve">
+    <value>रद्द गर्नुहोस्</value>
+  </data>
+  <data name="HostNameForm_HostNameFormTitle" xml:space="preserve">
+    <value>RAAS सर्भर थप्नुहोस्</value>
+  </data>
+  <data name="HostNameForm_HostNameLabel" xml:space="preserve">
+    <value>होस्टनाम वा IP:</value>
+  </data>
+  <data name="HostName_AllowedCharactersToolTip" xml:space="preserve">
+    <value>होस्ट नामको लागि निम्न वर्णहरूलाई अनुमति छैन: '.*[]()?|&lt;&gt;\\/:"</value>
+  </data>
+  <data name="HostName_EnterHostNameMessage" xml:space="preserve">
+    <value>कृपया RAAS सर्भरको लागि होस्टनाम वा IP प्रविष्ट गर्नुहोस्</value>
+  </data>
+  <data name="HostName_MaximumCharactersToolTip" xml:space="preserve">
+    <value>होस्ट नामको लागि मात्र {0} वर्णहरूलाई अनुमति दिइएको छ</value>
+  </data>
+  <data name="Input_AccountRequiredErrorInfo" xml:space="preserve">
+    <value>खाता सक्षम गरिएको सर्भरको लागि आवश्यक छ</value>
+  </data>
+  <data name="Input_AliasRequiredErrorInfo" xml:space="preserve">
+    <value>सक्षम गरिएको सर्भरको लागि उपनाम आवश्यक छ</value>
+  </data>
+  <data name="Input_AliasTooLongErrorInfo" xml:space="preserve">
+    <value>उपनाम धेरै लामो छ, अधिकतम {0} वर्णहरू</value>
+  </data>
+  <data name="Input_MissingInformationMessage" xml:space="preserve">
+    <value>उपनाम, खाता र पासवर्ड सक्षम सर्भरको लागि आवश्यक छ</value>
+  </data>
+  <data name="Input_MissingInformationMessageTitle" xml:space="preserve">
+    <value>हराइरहेको जानकारी</value>
+  </data>
+  <data name="Input_PasswordRequiredErrorInfo" xml:space="preserve">
+    <value>सक्षम गरिएको सर्भरको लागि पासवर्ड आवश्यक छ</value>
+  </data>
+  <data name="MainForm_AddButton" xml:space="preserve">
+    <value>थप्नुहोस्...</value>
+  </data>
+  <data name="MainForm_ApplyButton" xml:space="preserve">
+    <value>आवेदन दिनुहोस्</value>
+  </data>
+  <data name="MainForm_CancelButton" xml:space="preserve">
+    <value>रद्द गर्नुहोस्</value>
+  </data>
+  <data name="MainForm_MainFormTitle" xml:space="preserve">
+    <value>RAAS सर्भर कन्फिगरेसन</value>
+  </data>
+  <data name="MainForm_OkButton" xml:space="preserve">
+    <value>ठीक छ</value>
+  </data>
+  <data name="MainForm_RemoveButton" xml:space="preserve">
+    <value>हटाउनुहोस्</value>
+  </data>
+  <data name="MainForm_ServerLabel" xml:space="preserve">
+    <value>सर्भर:</value>
+  </data>
+  <data name="Program_ErrorMessageTitle" xml:space="preserve">
+    <value>RAAS सर्भर कन्फिगरेसन त्रुटि</value>
+  </data>
+  <data name="RemoteShortcuts_AppendAliasCheckBox" xml:space="preserve">
+    <value>सर्टकट नामहरूमा सर्भर उपनाम थप्नुहोस्</value>
+  </data>
+  <data name="RemoteShortcuts_DesktopCheckBox" xml:space="preserve">
+    <value>डेस्कटप सर्टकटहरू सिर्जना गर्नुहोस्</value>
+  </data>
+  <data name="RemoteShortcuts_DesktopRootCheckBox" xml:space="preserve">
+    <value>डेस्कटप रूटमा डेस्कटप सर्टकटहरू राख्नुहोस्</value>
+  </data>
+  <data name="RemoteShortcuts_EnableRemoteShortcutsCheckBox" xml:space="preserve">
+    <value>रिमोट सर्टकटहरू सक्षम गर्नुहोस्</value>
+  </data>
+  <data name="RemoteShortcuts_LocalizeShortcutsCheckBox" xml:space="preserve">
+    <value>सर्टकट नामहरूको लागि सर्भर भाषा</value>
+  </data>
+  <data name="RemoteShortcuts_RemoteShortcutsSettingsGroupBox" xml:space="preserve">
+    <value>रिमोट सर्टकट सेटिङहरू</value>
+  </data>
+  <data name="RemoteShortcuts_RemoteShortcutsTab" xml:space="preserve">
+    <value>रिमोट सर्टकटहरू</value>
+  </data>
+  <data name="RemoteShortcuts_StartMenuCheckBox" xml:space="preserve">
+    <value>स्टार्ट-मेनु सर्टकटहरू सिर्जना गर्नुहोस्</value>
+  </data>
+  <data name="RemoteShortcuts_UWPApplicationCheckBox" xml:space="preserve">
+    <value>विन्डोज एप सर्टकटहरू सिर्जना गर्नुहोस्</value>
+  </data>
+  <data name="ServerSettings_AliasOccupiedErrorInfo" xml:space="preserve">
+    <value>उपनाम पहिले नै फरक सर्भरले ओगटेको छ, कृपया फरक उपनाम छान्नुहोस्</value>
+  </data>
+  <data name="ServerSettings_AliasOccupiedMessage" xml:space="preserve">
+    <value>सर्भर सेटिङहरू अद्यावधिक गर्न सकिएन, उपनाम पहिले नै फरक सर्भरले ओगटेको छ, कृपया फरक उपनाम छान्नुहोस्</value>
+  </data>
+  <data name="ServerSettings_LoadFailedMessage" xml:space="preserve">
+    <value>सर्भर सेटिङहरू लोड गर्न सकिएन</value>
+  </data>
+  <data name="ServerSettings_ReconnectRequiredMessage" xml:space="preserve">
+    <value>सेटिङहरू प्रभावकारी हुनको लागि पुन: जडान आवश्यक छ, अहिले पुन: जडान गर्ने हो?</value>
+  </data>
+  <data name="ServerSettings_ReconnectRequiredMessageTitle" xml:space="preserve">
+    <value>सर्भर सेटिङहरू परिवर्तन भएको छ</value>
+  </data>
+  <data name="ServerSettings_SaveFailedAliasOccupiedMessage" xml:space="preserve">
+    <value>सर्भर कन्फिगरेसन बचत गर्न असफल भयो, उपनाम पहिले नै फरक सर्भरले ओगटेको छ, कृपया फरक उपनाम छान्नुहोस्</value>
+  </data>
+  <data name="ServerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>{0} को लागि सर्भर सेटिङहरू लोड गर्न सकिएन</value>
+  </data>
+  <data name="ServerSettings_UpdateFailedMessage" xml:space="preserve">
+    <value>सर्भर सेटिङहरू अद्यावधिक गर्न सकिएन</value>
+  </data>
+  <data name="Server_ConfirmRemoveMessage" xml:space="preserve">
+    <value>के तपाइँ निश्चित हुनुहुन्छ कि तपाइँ सर्भर "{0}" हटाउन चाहनुहुन्छ? यसका सबै सेटिङहरू हटाइने छन्</value>
+  </data>
+  <data name="Server_ConfirmRemoveMessageTitle" xml:space="preserve">
+    <value>सर्भर हटाउनुहोस्</value>
+  </data>
+  <data name="Server_NotConfiguredMessage" xml:space="preserve">
+    <value>सर्भर "{0}" RAAS सर्भरको रूपमा कन्फिगर गरिएको छैन, के तपाइँ यसलाई थप्न चाहनुहुन्छ?</value>
+  </data>
+  <data name="Server_NotConfiguredMessageTitle" xml:space="preserve">
+    <value>सर्भर कन्फिगर गरिएको छैन</value>
+  </data>
+  <data name="Server_RemovedMessage" xml:space="preserve">
+    <value>सर्भर "{0}" हटाइयो</value>
+  </data>
+  <data name="Settings_AlreadyConfiguredMessage" xml:space="preserve">
+    <value>सर्भर "{0}" पहिले नै कन्फिगर गरिएको छ, अवस्थित कन्फिगरेसन चयन गर्ने?</value>
+  </data>
+  <data name="Settings_AlreadyConfiguredMessageTitle" xml:space="preserve">
+    <value>सर्भर पहिले नै कन्फिगर गरिएको छ</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessage" xml:space="preserve">
+    <value>तपाईंसँग बचत नगरिएका परिवर्तनहरू छन्, के तपाईं बचत गर्न चाहनुहुन्छ?</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessageTitle" xml:space="preserve">
+    <value>सेभ नगरिएका परिवर्तनहरू</value>
+  </data>
+  <data name="VisualizationsSettings_SaveFailedMessage" xml:space="preserve">
+    <value>भिजुअलाइजेशन कन्फिगरेसन बचत गर्न असफल</value>
+  </data>
+  <data name="VisualizationsSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>{0} को लागि दृश्य सेटिङहरू लोड गर्न सकिएन</value>
+  </data>
+  <data name="Visualizations_ConnectionBarCheckBox" xml:space="preserve">
+    <value>जडान पट्टी</value>
+  </data>
+  <data name="Visualizations_ConnectionBarOpacityLabel" xml:space="preserve">
+    <value>जडान पट्टी अस्पष्टता:</value>
+  </data>
+  <data name="Visualizations_CrossLinesCheckBox" xml:space="preserve">
+    <value>क्रसलाइनहरू</value>
+  </data>
+  <data name="Visualizations_EnableVisualizationsCheckBox" xml:space="preserve">
+    <value>भिजुअलाइजेसन सक्षम गर्नुहोस्</value>
+  </data>
+  <data name="Visualizations_FramesCheckBox" xml:space="preserve">
+    <value>फ्रेमहरू</value>
+  </data>
+  <data name="Visualizations_LineColorButton" xml:space="preserve">
+    <value>रेखा रंग</value>
+  </data>
+  <data name="Visualizations_MainColorButton" xml:space="preserve">
+    <value>मुख्य रंग</value>
+  </data>
+  <data name="Visualizations_OverlayOpacityLabel" xml:space="preserve">
+    <value>ओभरले अस्पष्टता:</value>
+  </data>
+  <data name="Visualizations_OverlaysCheckBox" xml:space="preserve">
+    <value>निष्क्रिय हुँदा ओभरले</value>
+  </data>
+  <data name="Visualizations_TextColorButton" xml:space="preserve">
+    <value>पाठ रङ</value>
+  </data>
+  <data name="Visualizations_VisualizationsGroupBox" xml:space="preserve">
+    <value>भिजुअलाइजेसन सेटिङहरू</value>
+  </data>
+  <data name="Visualizations_VisualizationsTab" xml:space="preserve">
+    <value>भिजुअलाइजेसनहरू</value>
+  </data>
+</root>

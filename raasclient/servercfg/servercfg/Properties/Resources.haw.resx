@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alias_AllowedCharactersToolTip" xml:space="preserve">
+    <value>ʻAʻole ʻae ʻia kēia mau huaʻōlelo no ka inoa inoa: '.*[]()?|&lt;&gt;\\/:"</value>
+  </data>
+  <data name="Alias_MaximumCharactersToolTip" xml:space="preserve">
+    <value>{0} wale nō i ʻae ʻia no ka inoa inoa</value>
+  </data>
+  <data name="Connection_AvailableLabel" xml:space="preserve">
+    <value>Loaʻa</value>
+  </data>
+  <data name="Connection_ConnectButton" xml:space="preserve">
+    <value>Hoʻohui</value>
+  </data>
+  <data name="Connection_ConnectedLabel" xml:space="preserve">
+    <value>Hoʻohui ʻia</value>
+  </data>
+  <data name="Connection_ContactLabel" xml:space="preserve">
+    <value>Hoʻopili</value>
+  </data>
+  <data name="Connection_DisconnectButton" xml:space="preserve">
+    <value>Hoʻokaʻawale</value>
+  </data>
+  <data name="Connection_NoContactLabel" xml:space="preserve">
+    <value>ʻAʻohe pilina</value>
+  </data>
+  <data name="Connection_NoServerLabel" xml:space="preserve">
+    <value>ʻAʻohe kikowaena i koho ʻia</value>
+  </data>
+  <data name="Connection_RAASClientNotRespondingLabel" xml:space="preserve">
+    <value>ʻAʻole pane ʻo RAAS Client</value>
+  </data>
+  <data name="Connection_ReconnectButton" xml:space="preserve">
+    <value>Hoʻohui hou</value>
+  </data>
+  <data name="Connection_ServerConnectionGroupBox" xml:space="preserve">
+    <value>Hui Pūnaewele RAAS</value>
+  </data>
+  <data name="Connection_ServerVersionLabel" xml:space="preserve">
+    <value>Mana kikowaena RAAS:</value>
+  </data>
+  <data name="Connection_StatusLabel" xml:space="preserve">
+    <value>Kūlana:</value>
+  </data>
+  <data name="ExplorerExtension_3DObjectsCheckBox" xml:space="preserve">
+    <value>Nā mea 3D</value>
+  </data>
+  <data name="ExplorerExtension_CDDrivesCheckBox" xml:space="preserve">
+    <value>Nā pahu CD</value>
+  </data>
+  <data name="ExplorerExtension_ContactsCheckBox" xml:space="preserve">
+    <value>Hoʻopili</value>
+  </data>
+  <data name="ExplorerExtension_DesktopCheckBox" xml:space="preserve">
+    <value>Papakaukau</value>
+  </data>
+  <data name="ExplorerExtension_DevicesAndDrivesGroupBox" xml:space="preserve">
+    <value>Nā mea hana a me nā kaʻa i ʻike ʻia</value>
+  </data>
+  <data name="ExplorerExtension_DocumentsCheckBox" xml:space="preserve">
+    <value>Palapala</value>
+  </data>
+  <data name="ExplorerExtension_DownloadsCheckBox" xml:space="preserve">
+    <value>Hoʻoiho</value>
+  </data>
+  <data name="ExplorerExtension_EnableExplorerExtensionCheckBox" xml:space="preserve">
+    <value>Hoʻā i ka hoʻonui ʻana i ka mea mākaʻikaʻi</value>
+  </data>
+  <data name="ExplorerExtension_ExplorerExtensionTab" xml:space="preserve">
+    <value>Hoʻonui ʻo Explorer</value>
+  </data>
+  <data name="ExplorerExtension_FavoritesCheckBox" xml:space="preserve">
+    <value>Nā punahele</value>
+  </data>
+  <data name="ExplorerExtension_FloppyDiskDrivesCheckBox" xml:space="preserve">
+    <value>Hoʻokuke pāpaʻi</value>
+  </data>
+  <data name="ExplorerExtension_HardDrivesCheckBox" xml:space="preserve">
+    <value>Paʻa paʻa</value>
+  </data>
+  <data name="ExplorerExtension_LinksCheckBox" xml:space="preserve">
+    <value>Nā loulou</value>
+  </data>
+  <data name="ExplorerExtension_MusicCheckBox" xml:space="preserve">
+    <value>Mele</value>
+  </data>
+  <data name="ExplorerExtension_PicturesCheckBox" xml:space="preserve">
+    <value>Nā kiʻi</value>
+  </data>
+  <data name="ExplorerExtension_RemovableDrivesCheckBox" xml:space="preserve">
+    <value>Nā hoʻokele hoʻoneʻe</value>
+  </data>
+  <data name="ExplorerExtension_SavedGamesCheckBox" xml:space="preserve">
+    <value>Pāʻani i mālama ʻia</value>
+  </data>
+  <data name="ExplorerExtension_SearchesCheckBox" xml:space="preserve">
+    <value>Huli</value>
+  </data>
+  <data name="ExplorerExtension_VideosCheckBox" xml:space="preserve">
+    <value>Nā wikiō</value>
+  </data>
+  <data name="ExplorerExtension_VisibleFoldersGroupBox" xml:space="preserve">
+    <value>Nā waihona ʻike ʻia</value>
+  </data>
+  <data name="ExplorerSettings_SaveFailedMessage" xml:space="preserve">
+    <value>ʻAʻole hiki ke mālama i ka hoʻonohonoho hoʻonui ʻana i ka mea mākaʻikaʻi</value>
+  </data>
+  <data name="ExplorerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>ʻAʻole hiki ke hoʻouka i nā hoʻonohonoho hoʻonui no {0}</value>
+  </data>
+  <data name="General_AccountLabel" xml:space="preserve">
+    <value>moʻokāki:</value>
+  </data>
+  <data name="General_AliasLabel" xml:space="preserve">
+    <value>Alias:</value>
+  </data>
+  <data name="General_AuthenticationRequiredOption" xml:space="preserve">
+    <value>Pono ka hōʻoia kikowaena</value>
+  </data>
+  <data name="General_AuthenticationWarningOption" xml:space="preserve">
+    <value>E aʻo ana no ka hōʻoia ʻana o ke kikowaena hāʻule</value>
+  </data>
+  <data name="General_AutoReconnectCheckBox" xml:space="preserve">
+    <value>Hoʻohui hou ʻakomi</value>
+  </data>
+  <data name="General_AutoStartProgramsCheckBox" xml:space="preserve">
+    <value>Nā polokalamu hoʻomaka autostart</value>
+  </data>
+  <data name="General_DomainLabel" xml:space="preserve">
+    <value>Paeaina:</value>
+  </data>
+  <data name="General_EnableServerCheckBox" xml:space="preserve">
+    <value>E ho'ā i ke kikowaena</value>
+  </data>
+  <data name="General_GeneralTab" xml:space="preserve">
+    <value>Generala</value>
+  </data>
+  <data name="General_KeepAliveAgentCheckBox" xml:space="preserve">
+    <value>E mālama i ka mea hana ola</value>
+  </data>
+  <data name="General_PasswordLabel" xml:space="preserve">
+    <value>Hua huna:</value>
+  </data>
+  <data name="General_RDPAuthenticationLabel" xml:space="preserve">
+    <value>RDP hōʻoia:</value>
+  </data>
+  <data name="General_RedirectClipboardCheckBox" xml:space="preserve">
+    <value>Hoʻihoʻi hou i ka papa ʻokiʻoki</value>
+  </data>
+  <data name="General_RedirectDevicesCheckBox" xml:space="preserve">
+    <value>Hoʻohuli hou i nā mea hana</value>
+  </data>
+  <data name="General_RedirectPrintersCheckBox" xml:space="preserve">
+    <value>Hoʻohuli hou i nā mea paʻi</value>
+  </data>
+  <data name="General_SettingsGroupBox" xml:space="preserve">
+    <value>Nā hoʻonohonoho</value>
+  </data>
+  <data name="General_ShowNotificationsCheckBox" xml:space="preserve">
+    <value>Hōʻike i nā hoʻolaha</value>
+  </data>
+  <data name="HostNameForm_AddButton" xml:space="preserve">
+    <value>Hoʻohui</value>
+  </data>
+  <data name="HostNameForm_CancelButton" xml:space="preserve">
+    <value>Hoʻopau</value>
+  </data>
+  <data name="HostNameForm_HostNameFormTitle" xml:space="preserve">
+    <value>Hoʻohui iā RAAS Server</value>
+  </data>
+  <data name="HostNameForm_HostNameLabel" xml:space="preserve">
+    <value>Ka inoa hoʻokipa a i ʻole IP:</value>
+  </data>
+  <data name="HostName_AllowedCharactersToolTip" xml:space="preserve">
+    <value>ʻAʻole ʻae ʻia kēia mau huaʻōlelo no ka inoa hoʻokipa: '.*[]()?|&lt;&gt;\\/:"</value>
+  </data>
+  <data name="HostName_EnterHostNameMessage" xml:space="preserve">
+    <value>E ʻoluʻolu e hoʻokomo i kahi inoa Host a i ʻole IP no kahi kikowaena RAAS</value>
+  </data>
+  <data name="HostName_MaximumCharactersToolTip" xml:space="preserve">
+    <value>{0} wale nō nā huapalapala i ʻae ʻia no ka inoa hoʻokipa</value>
+  </data>
+  <data name="Input_AccountRequiredErrorInfo" xml:space="preserve">
+    <value>Pono ʻia ka moʻokāki no kahi kikowaena hiki ke hana</value>
+  </data>
+  <data name="Input_AliasRequiredErrorInfo" xml:space="preserve">
+    <value>Pono ʻia nā inoa inoa no kahi kikowaena hoʻohana ʻia</value>
+  </data>
+  <data name="Input_AliasTooLongErrorInfo" xml:space="preserve">
+    <value>He lōʻihi loa ka inoa inoa, ʻoi aku ka nui o {0} mau huapalapala</value>
+  </data>
+  <data name="Input_MissingInformationMessage" xml:space="preserve">
+    <value>Pono ʻia nā inoa inoa, ka moʻokāki a me ka ʻōlelo huna no kahi kikowaena hoʻohana ʻia</value>
+  </data>
+  <data name="Input_MissingInformationMessageTitle" xml:space="preserve">
+    <value>Nalo ka ʻike</value>
+  </data>
+  <data name="Input_PasswordRequiredErrorInfo" xml:space="preserve">
+    <value>Pono ʻia ka ʻōlelo huna no kahi kikowaena hoʻohana ʻia</value>
+  </data>
+  <data name="MainForm_AddButton" xml:space="preserve">
+    <value>Hoʻohui...</value>
+  </data>
+  <data name="MainForm_ApplyButton" xml:space="preserve">
+    <value>E noi</value>
+  </data>
+  <data name="MainForm_CancelButton" xml:space="preserve">
+    <value>Hoʻopau</value>
+  </data>
+  <data name="MainForm_MainFormTitle" xml:space="preserve">
+    <value>Hoʻonohonoho kikowaena RAAS</value>
+  </data>
+  <data name="MainForm_OkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="MainForm_RemoveButton" xml:space="preserve">
+    <value>Wehe</value>
+  </data>
+  <data name="MainForm_ServerLabel" xml:space="preserve">
+    <value>Server:</value>
+  </data>
+  <data name="Program_ErrorMessageTitle" xml:space="preserve">
+    <value>Ua hewa ka hoʻonohonoho kikowaena RAAS</value>
+  </data>
+  <data name="RemoteShortcuts_AppendAliasCheckBox" xml:space="preserve">
+    <value>Hoʻopili i ka inoa inoa kikowaena i nā inoa pōkole</value>
+  </data>
+  <data name="RemoteShortcuts_DesktopCheckBox" xml:space="preserve">
+    <value>E hana i nā pōkole papapihi</value>
+  </data>
+  <data name="RemoteShortcuts_DesktopRootCheckBox" xml:space="preserve">
+    <value>E kau i nā pōkole papapihi ma ke kumu papapihi</value>
+  </data>
+  <data name="RemoteShortcuts_EnableRemoteShortcutsCheckBox" xml:space="preserve">
+    <value>E ho'ā i nā pōkole mamao</value>
+  </data>
+  <data name="RemoteShortcuts_LocalizeShortcutsCheckBox" xml:space="preserve">
+    <value>ʻŌlelo kikowaena no nā inoa pōkole</value>
+  </data>
+  <data name="RemoteShortcuts_RemoteShortcutsSettingsGroupBox" xml:space="preserve">
+    <value>Nā hoʻonohonoho ʻokoʻa pōkole mamao</value>
+  </data>
+  <data name="RemoteShortcuts_RemoteShortcutsTab" xml:space="preserve">
+    <value>Nā Pōkole mamao</value>
+  </data>
+  <data name="RemoteShortcuts_StartMenuCheckBox" xml:space="preserve">
+    <value>E hana i nā pōkole papa kuhikuhi hoʻomaka</value>
+  </data>
+  <data name="RemoteShortcuts_UWPApplicationCheckBox" xml:space="preserve">
+    <value>E hana i nā pōkole Windows App</value>
+  </data>
+  <data name="ServerSettings_AliasOccupiedErrorInfo" xml:space="preserve">
+    <value>Ua noho ʻia nā inoa inoa e kahi kikowaena ʻē aʻe, e ʻoluʻolu e koho i kahi inoa inoa ʻē aʻe</value>
+  </data>
+  <data name="ServerSettings_AliasOccupiedMessage" xml:space="preserve">
+    <value>ʻAʻole hiki ke hōʻano hou i nā hoʻonohonoho kikowaena, ua noho mua ʻia e kahi kikowaena ʻē aʻe, e ʻoluʻolu e koho i kahi inoa inoa ʻē aʻe</value>
+  </data>
+  <data name="ServerSettings_LoadFailedMessage" xml:space="preserve">
+    <value>ʻAʻole hiki ke hoʻouka i nā hoʻonohonoho kikowaena</value>
+  </data>
+  <data name="ServerSettings_ReconnectRequiredMessage" xml:space="preserve">
+    <value>Pono ka hoʻohui hou ʻana no ka hoʻopaʻa ʻana, hoʻopili hou i kēia manawa?</value>
+  </data>
+  <data name="ServerSettings_ReconnectRequiredMessageTitle" xml:space="preserve">
+    <value>Ua loli nā hoʻonohonoho kikowaena</value>
+  </data>
+  <data name="ServerSettings_SaveFailedAliasOccupiedMessage" xml:space="preserve">
+    <value>ʻAʻole hiki ke mālama i ka hoʻonohonoho kikowaena, ʻo ka inoa i noho ʻia e kahi kikowaena ʻē aʻe, e ʻoluʻolu e koho i kahi inoa inoa ʻē aʻe</value>
+  </data>
+  <data name="ServerSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>ʻAʻole hiki ke hoʻouka i nā hoʻonohonoho kikowaena no {0}</value>
+  </data>
+  <data name="ServerSettings_UpdateFailedMessage" xml:space="preserve">
+    <value>ʻAʻole hiki ke hōʻano hou i nā hoʻonohonoho kikowaena</value>
+  </data>
+  <data name="Server_ConfirmRemoveMessage" xml:space="preserve">
+    <value>Makemake ʻoe e wehe i ke kikowaena "{0}"? E wehe ʻia kāna mau hoʻonohonoho a pau</value>
+  </data>
+  <data name="Server_ConfirmRemoveMessageTitle" xml:space="preserve">
+    <value>Wehe i ke kikowaena</value>
+  </data>
+  <data name="Server_NotConfiguredMessage" xml:space="preserve">
+    <value>ʻAʻole i hoʻonohonoho ʻia ke kikowaena "{0}" ma ke ʻano he kikowaena RAAS, makemake ʻoe e hoʻohui iā ia?</value>
+  </data>
+  <data name="Server_NotConfiguredMessageTitle" xml:space="preserve">
+    <value>ʻAʻole i hoʻonohonoho ʻia ke kikowaena</value>
+  </data>
+  <data name="Server_RemovedMessage" xml:space="preserve">
+    <value>Ua wehe ʻia ke kikowaena "{0}".</value>
+  </data>
+  <data name="Settings_AlreadyConfiguredMessage" xml:space="preserve">
+    <value>Ua hoʻonohonoho ʻia ke kikowaena "{0}", koho i ka hoʻonohonoho e loaʻa nei?</value>
+  </data>
+  <data name="Settings_AlreadyConfiguredMessageTitle" xml:space="preserve">
+    <value>Ua hoʻonohonoho ʻia ke kikowaena</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessage" xml:space="preserve">
+    <value>Loaʻa iā ʻoe nā loli i mālama ʻole ʻia, makemake ʻoe e mālama?</value>
+  </data>
+  <data name="Settings_UnsavedChangesMessageTitle" xml:space="preserve">
+    <value>Nā loli i mālama ʻole ʻia</value>
+  </data>
+  <data name="VisualizationsSettings_SaveFailedMessage" xml:space="preserve">
+    <value>ʻAʻole hiki ke mālama i ka hoʻonohonoho ʻike</value>
+  </data>
+  <data name="VisualizationsSettings_ServerLoadFailedMessage" xml:space="preserve">
+    <value>ʻAʻole hiki ke hoʻouka i nā hoʻonohonoho hiʻona no {0}</value>
+  </data>
+  <data name="Visualizations_ConnectionBarCheckBox" xml:space="preserve">
+    <value>Pae hoʻohui</value>
+  </data>
+  <data name="Visualizations_ConnectionBarOpacityLabel" xml:space="preserve">
+    <value>Opacity bar hookui:</value>
+  </data>
+  <data name="Visualizations_CrossLinesCheckBox" xml:space="preserve">
+    <value>Nā laina keʻa</value>
+  </data>
+  <data name="Visualizations_EnableVisualizationsCheckBox" xml:space="preserve">
+    <value>E ho'ā i nā hiʻohiʻona</value>
+  </data>
+  <data name="Visualizations_FramesCheckBox" xml:space="preserve">
+    <value>Nā pā</value>
+  </data>
+  <data name="Visualizations_LineColorButton" xml:space="preserve">
+    <value>kala laina</value>
+  </data>
+  <data name="Visualizations_MainColorButton" xml:space="preserve">
+    <value>kala nui</value>
+  </data>
+  <data name="Visualizations_OverlayOpacityLabel" xml:space="preserve">
+    <value>Opacity uhi:</value>
+  </data>
+  <data name="Visualizations_OverlaysCheckBox" xml:space="preserve">
+    <value>Hoʻopili i ka wā ʻaʻole hana</value>
+  </data>
+  <data name="Visualizations_TextColorButton" xml:space="preserve">
+    <value>kala kikokiko</value>
+  </data>
+  <data name="Visualizations_VisualizationsGroupBox" xml:space="preserve">
+    <value>Nā hoʻonohonoho ʻike</value>
+  </data>
+  <data name="Visualizations_VisualizationsTab" xml:space="preserve">
+    <value>Nā hiʻohiʻona</value>
+  </data>
+</root>
