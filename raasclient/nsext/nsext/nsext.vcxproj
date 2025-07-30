@@ -267,6 +267,7 @@
     <ResourceCompile Include="NSExt.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\icons\contextmenu\raasclient.bmp" />
     <Image Include="..\..\..\icons\contextmenu\rdesktop.bmp" />
     <Image Include="..\..\..\icons\contextmenu\serverconfig.bmp" />
     <Image Include="..\..\..\icons\smallicons\raasclient.png" />

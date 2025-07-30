@@ -1,56 +1,18 @@
 // Microsoft Visual C++ generated resource script.
 //
+#pragma code_page(65001)
+
 #include "resource.h"
-/////////////////////////////////////////////////////////////////////////////
-// Swedish (Neutral) resources
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
-LANGUAGE LANG_SWEDISH, SUBLANG_NEUTRAL
-#pragma code_page(1252)
-
+#define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
 //
-// String Table
+// Generated from the TEXTINCLUDE 2 resource.
 //
-
-STRINGTABLE
-BEGIN
-    IDS_REMOTEDESKTOP       "Fj�rrskrivbord"
-    IDS_SERVERCONFIG        "RAAS Server Configuration"
-END
-
-#endif    // Swedish (Neutral) resources
-/////////////////////////////////////////////////////////////////////////////
-
+#include "winres.h"
 
 /////////////////////////////////////////////////////////////////////////////
-// English (United States) resources
-
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-#pragma code_page(1252)
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// String Table
-//
-
-STRINGTABLE
-BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
-    IDS_SERVERCONFIG        "RAAS Server Configuration"
-END
-
-#endif    // English (United States) resources
-/////////////////////////////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////////////////////////////////
-// Swedish (Sweden) resources
-
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
-LANGUAGE LANG_SWEDISH, SUBLANG_SWEDISH
-#pragma code_page(1252)
+#undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
 // Armenian (Neutral) resources
@@ -65,7 +27,7 @@ LANGUAGE LANG_ARMENIAN, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "ರಿಮೋಟ್ ಡೆಸ್ಕ್ಟಾಪ್"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -128,7 +90,7 @@ LANGUAGE LANG_MALAYALAM, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "റിമോട്ട് ഡെസ്ക്ടോപ്പ്"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -149,7 +111,7 @@ LANGUAGE LANG_ASSAMESE, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Uzaq Masaüstü"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -170,7 +132,7 @@ LANGUAGE LANG_KHMER, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "ផ្ទៃតុពីចម្ងាយ"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -191,7 +153,7 @@ LANGUAGE LANG_AMHARIC, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "የርቀት ዴስክቶፕ"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -212,7 +174,7 @@ LANGUAGE LANG_MAORI, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Papamahi Mamao"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -233,7 +195,7 @@ LANGUAGE LANG_GEORGIAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "დისტანციური სამუშაო მაგიდა"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -254,7 +216,7 @@ LANGUAGE LANG_HINDI, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "दूरवर्ती डेस्कटॉप"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -275,7 +237,7 @@ LANGUAGE LANG_MALTESE, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Desktop mill-bogħod"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -296,7 +258,7 @@ LANGUAGE LANG_KAZAK, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Қашықтағы жұмыс үстелі"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -317,7 +279,7 @@ LANGUAGE LANG_TELUGU, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "రిమోట్ డెస్క్‌టాప్"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -338,7 +300,7 @@ LANGUAGE LANG_MARATHI, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "रिमोट डेस्कटॉप"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -359,7 +321,7 @@ LANGUAGE LANG_LAO, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "ຣີໂໝດເດັສທັອບ"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -380,7 +342,7 @@ LANGUAGE LANG_SINHALESE, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "දුරස්ථ ඩෙස්ක්ටොප්"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -401,7 +363,7 @@ LANGUAGE LANG_PASHTO, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "ریموټ ډیسټاپ"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -422,7 +384,7 @@ LANGUAGE LANG_NEPALI, SUBLANG_NEPALI_INDIA
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "रिमोट डेस्कटप"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -443,7 +405,7 @@ LANGUAGE LANG_THAI, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "เดสก์ท็อประยะไกล"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -464,7 +426,7 @@ LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "リモートデスクトップ"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -485,7 +447,7 @@ LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "远程桌面"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -506,7 +468,7 @@ LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "원격 데스크톱"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -527,7 +489,7 @@ LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "遠端桌面"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -548,7 +510,7 @@ LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Vzdálená plocha"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -569,7 +531,7 @@ LANGUAGE LANG_HUNGARIAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Távoli asztal"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -590,7 +552,7 @@ LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Pulpit zdalny"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -632,7 +594,7 @@ LANGUAGE LANG_CROATIAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Udaljena radna površina"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -653,7 +615,7 @@ LANGUAGE LANG_SLOVAK, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Vzdialená plocha"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -674,7 +636,7 @@ LANGUAGE LANG_ALBANIAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Desktop në distancë"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -695,7 +657,7 @@ LANGUAGE LANG_SLOVENIAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Oddaljeno namizje"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -716,7 +678,7 @@ LANGUAGE LANG_TURKMEN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Uzakdaky iş stoly"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -737,7 +699,7 @@ LANGUAGE LANG_BELARUSIAN, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Аддалены працоўны стол"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -758,7 +720,7 @@ LANGUAGE LANG_MACEDONIAN, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Далечинска работна површина"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -779,7 +741,7 @@ LANGUAGE LANG_TATAR, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Ерак эш өстәле"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -800,7 +762,7 @@ LANGUAGE LANG_MONGOLIAN, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Алсын ширээний компьютер"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -821,7 +783,7 @@ LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Удаленный рабочий стол"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -884,7 +846,7 @@ LANGUAGE LANG_UZBEK, SUBLANG_UZBEK_CYRILLIC
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Masofaviy ish stoli"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -905,7 +867,7 @@ LANGUAGE LANG_SERBIAN, SUBLANG_SERBIAN_CYRILLIC
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Ремоте Десктоп"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -933,6 +895,7 @@ END
 #endif    // Bosnian (Cyrillic, Bosnia and Herzegovina) resources
 /////////////////////////////////////////////////////////////////////////////
 
+
 /////////////////////////////////////////////////////////////////////////////
 // Norwegian (Neutral) resources
 
@@ -946,11 +909,32 @@ LANGUAGE LANG_NORWEGIAN, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Eksternt skrivebord"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
 #endif    // Norwegian (Neutral) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish (Neutral) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+LANGUAGE LANG_SWEDISH, SUBLANG_NEUTRAL
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_REMOTEDESKTOP       "Fjärrskrivbord"
+    IDS_SERVERCONFIG        "RAAS Server Configuration"
+END
+
+#endif    // Swedish (Neutral) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -967,7 +951,7 @@ LANGUAGE LANG_XHOSA, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Idesktop ekude"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1009,7 +993,7 @@ LANGUAGE LANG_SWAHILI, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Eneo-kazi la Mbali"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1030,7 +1014,7 @@ LANGUAGE LANG_WELSH, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Bwrdd Gwaith Anghysbell"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1072,7 +1056,7 @@ LANGUAGE LANG_HAWAIIAN, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Papakaukau mamao"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1093,7 +1077,7 @@ LANGUAGE LANG_CORSICAN, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Desktop Remote"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1114,7 +1098,7 @@ LANGUAGE LANG_SCOTTISH_GAELIC, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Deasg iomallach"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1135,7 +1119,7 @@ LANGUAGE LANG_CATALAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Escriptori remot"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1156,7 +1140,7 @@ LANGUAGE LANG_DANISH, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Fjernskrivebord"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1177,11 +1161,32 @@ LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Fjernskrivebord"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
 #endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_SERVERCONFIG        "RAAS Server Configuration"
+END
+
+#endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -1198,7 +1203,7 @@ LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Escritorio remoto"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1219,7 +1224,7 @@ LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Etätyöpöytä"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1240,7 +1245,7 @@ LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Bureau à distance"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1261,7 +1266,7 @@ LANGUAGE LANG_ICELANDIC, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Fjarstýrt skjáborð"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1282,7 +1287,7 @@ LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Desktop remoto"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1303,7 +1308,7 @@ LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Extern bureaublad"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1324,7 +1329,7 @@ LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Área de Trabalho Remota"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1380,7 +1385,7 @@ LANGUAGE LANG_INDONESIAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Desktop Jarak Jauh"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1401,7 +1406,7 @@ LANGUAGE LANG_BASQUE, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Urruneko mahaigaina"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1422,7 +1427,7 @@ LANGUAGE LANG_GALICIAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Escritorio remoto"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1464,7 +1469,7 @@ LANGUAGE LANG_IGBO, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Desktọpụ dịpụrụ adịpụ"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1485,6 +1490,10 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
 
 IDB_RAASCLIENT          BITMAP                  "..\\..\\..\\icons\\contextmenu\\raasclient.bmp"
 
+IDB_SERVERCONFIG        BITMAP                  "..\\..\\..\\icons\\contextmenu\\serverconfig.bmp"
+
+IDB_RDESKTOP            BITMAP                  "..\\..\\..\\icons\\contextmenu\\rdesktop.bmp"
+
 #endif    // English (United Kingdom) resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -1502,7 +1511,7 @@ LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Área de Trabalho Remota"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1523,7 +1532,7 @@ LANGUAGE LANG_IRISH, SUBLANG_IRISH_IRELAND
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Deasc cianda"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1544,7 +1553,7 @@ LANGUAGE LANG_GREEK, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Απομακρυσμένη επιφάνεια εργασίας"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1565,32 +1574,11 @@ LANGUAGE LANG_TURKISH, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Uzak Masaüstü"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
 #endif    // Turkish (Neutral) resources
-/////////////////////////////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////////////////////////////////
-// Hebrew (Neutral) resources
-
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
-LANGUAGE LANG_HEBREW, SUBLANG_NEUTRAL
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// String Table
-//
-
-STRINGTABLE
-BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
-    IDS_SERVERCONFIG        "RAAS Server Configuration"
-END
-
-#endif    // Hebrew (Neutral) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -1607,7 +1595,7 @@ LANGUAGE LANG_ARABIC, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "سطح المكتب البعيد"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1628,7 +1616,7 @@ LANGUAGE LANG_PERSIAN, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "دسکتاپ از راه دور"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1649,7 +1637,7 @@ LANGUAGE LANG_UIGHUR, SUBLANG_NEUTRAL
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "يىراق ئۈستەلئۈستى"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1670,7 +1658,7 @@ LANGUAGE LANG_URDU, SUBLANG_URDU_PAKISTAN
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "ریموٹ ڈیسک ٹاپ"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1691,7 +1679,7 @@ LANGUAGE LANG_ESTONIAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Kaugtöölaud"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1712,7 +1700,7 @@ LANGUAGE LANG_LATVIAN, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
+    IDS_REMOTEDESKTOP       "Attālā darbvirsma"
     IDS_SERVERCONFIG        "RAAS Server Configuration"
 END
 
@@ -1725,34 +1713,6 @@ END
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_LTH)
 LANGUAGE LANG_LITHUANIAN, SUBLANG_LITHUANIAN
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// String Table
-//
-
-STRINGTABLE
-BEGIN
-    IDS_REMOTEDESKTOP       "Remote Desktop"
-    IDS_SERVERCONFIG        "RAAS Server Configuration"
-END
-
-#endif    // Lithuanian (Lithuania) resources
-/////////////////////////////////////////////////////////////////////////////
-
-
-
-#ifndef APSTUDIO_INVOKED
-/////////////////////////////////////////////////////////////////////////////
-//
-// Generated from the TEXTINCLUDE 3 resource.
-//
-
-
-/////////////////////////////////////////////////////////////////////////////
-#endif    // not APSTUDIO_INVOKED
-
-
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -1778,27 +1738,19 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
-#endif    // Swedish (Sweden) resources
-/////////////////////////////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////////////////////////////////
-// English (United Kingdom) resources
-
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
-#pragma code_page(1252)
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Bitmap
+// String Table
 //
 
-IDB_SERVERCONFIG        BITMAP                  "..\\..\\..\\icons\\contextmenu\\serverconfig.bmp"
+STRINGTABLE
+BEGIN
+    IDS_REMOTEDESKTOP       "Nuotolinis darbalaukis"
+    IDS_SERVERCONFIG        "RAAS Server Configuration"
+END
 
-IDB_RDESKTOP            BITMAP                  "..\\..\\..\\icons\\contextmenu\\rdesktop.bmp"
-
-#endif    // English (United Kingdom) resources
+#endif    // Lithuanian (Lithuania) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
