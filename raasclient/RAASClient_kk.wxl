@@ -1,9 +1,9 @@
 ﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations for remote applications available as option in configuration"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="View RAAS servers in Explorer"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Create remote application shortcuts to server applications on local computer"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualizations"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Remote Shortcuts"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Қашықтағы қолданбаларға арналған визуализациялар конфигурацияда опция ретінде қол жетімді"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer бағдарламасында RAAS серверлерін қараңыз"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Жергілікті компьютердегі серверлік қолданбаларға қашықтағы қолданба таңбашаларын жасаңыз"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="Көрнекіліктер"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="Shell аттар кеңістігі кеңейтімі"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="Қашықтағы таңбашалар"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
 </WixLocalization>

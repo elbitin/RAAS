@@ -1,9 +1,9 @@
 ﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations for remote applications available as option in configuration"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="View RAAS servers in Explorer"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Create remote application shortcuts to server applications on local computer"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Dîtinên ji bo sepanên ji dûr ve wekî vebijarkek di veavakirinê de peyda dibin"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="Pêşkêşkerên RAAS di Explorer de bibînin"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Ji bo serîlêdanên serverê yên li ser komputera herêmî kurtebirên serîlêdana dûr biafirînin"/>
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualizations"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Remote Shortcuts"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="Berfirehkirina Navê Shell"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="Kurteyên Dûr"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
 </WixLocalization>

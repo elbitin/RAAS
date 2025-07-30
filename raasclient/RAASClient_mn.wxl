@@ -1,9 +1,9 @@
 ﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations for remote applications available as option in configuration"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="View RAAS servers in Explorer"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Create remote application shortcuts to server applications on local computer"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualizations"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Remote Shortcuts"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Алсын хэрэглээний программуудын дүрслэлийг тохиргооны сонголтоор авах боломжтой"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer дээр RAAS серверүүдийг үзэх"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Дотоод компьютер дээрх серверийн програмуудад алсын програмын товчлол үүсгэх"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="Дүрслэл"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="Бүрхүүлийн нэрийн орон зайн өргөтгөл"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="Алсын товчлолууд"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
 </WixLocalization>

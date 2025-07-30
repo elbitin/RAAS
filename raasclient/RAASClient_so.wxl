@@ -1,9 +1,9 @@
 ﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations for remote applications available as option in configuration"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="View RAAS servers in Explorer"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Create remote application shortcuts to server applications on local computer"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualizations"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Remote Shortcuts"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Sawirada codsiyada fog ayaa diyaar u ah qaabaynta"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="Ka eeg adeegayaasha RAAS gudaha Explorer"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Samee hab-gaabyada arjiyada fog ee codsiyada server-ka ee kumbuyuutarka deegaanka"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="muuqaalaynta"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="Magaca Shell Extension"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="Jid gaaban oo fog"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
 </WixLocalization>

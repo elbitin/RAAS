@@ -1,9 +1,9 @@
 ﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations for remote applications available as option in configuration"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="View RAAS servers in Explorer"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Create remote application shortcuts to server applications on local computer"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualizations"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Remote Shortcuts"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Seallaidhean airson tagraidhean iomallach rim faighinn mar roghainn ann an rèiteachadh"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="Thoir sùil air frithealaichean RAAS ann an Explorer"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Cruthaich ath-ghoiridean tagraidh iomallach gu tagraidhean frithealaiche air coimpiutair ionadail"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="Seallaidhean"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="Leudachadh àite-ainm Shell"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="Ath-ghoiridean iomallach"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
 </WixLocalization>

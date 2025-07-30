@@ -1,9 +1,9 @@
 ﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations for remote applications available as option in configuration"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="View RAAS servers in Explorer"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Create remote application shortcuts to server applications on local computer"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualizations"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Remote Shortcuts"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="दूरस्थ अनुप्रयोगों के लिए विज़ुअलाइज़ेशन कॉन्फ़िगरेशन में विकल्प के रूप में उपलब्ध हैं"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="एक्सप्लोरर में RAAS सर्वर देखें"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="स्थानीय कंप्यूटर पर सर्वर अनुप्रयोगों के लिए दूरस्थ अनुप्रयोग शॉर्टकट बनाएँ"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="दृश्यावलोकन"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="शेल नेमस्पेस एक्सटेंशन"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="रिमोट शॉर्टकट"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
 </WixLocalization>

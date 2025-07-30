@@ -1,9 +1,9 @@
 ﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations for remote applications available as option in configuration"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="View RAAS servers in Explorer"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Create remote application shortcuts to server applications on local computer"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualizations"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Remote Shortcuts"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Hình ảnh trực quan cho các ứng dụng từ xa có sẵn dưới dạng tùy chọn trong cấu hình"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="Xem máy chủ RAAS trong Explorer"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Tạo các phím tắt ứng dụng từ xa đến các ứng dụng máy chủ trên máy tính cục bộ"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="Hình ảnh hóa"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="Phần mở rộng không gian tên Shell"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="Phím tắt từ xa"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
 </WixLocalization>
