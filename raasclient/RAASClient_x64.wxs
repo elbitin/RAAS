@@ -43,6 +43,7 @@
 			<ComponentGroupRef Id="Serilog"/>
 			<ComponentGroupRef Id="OpenRemote"/>
 			<ComponentRef Id="RDesktop"/>
+			<ComponentGroupRef Id="RDesktop"/>
 			<ComponentRef Id="ConnectShares"/>
 			<ComponentRef Id="ConnectSharesAdmin"/>
 			<ComponentRef Id="UninstallShortcut"/>
@@ -934,7 +935,532 @@
 					<File Id="openremote.resources.dll_101" KeyPath="yes" Source=".\openremote\openremote\bin\release\zu\openremote.resources.dll" />
 				</Component>
 			</Directory>
+			<Directory Id="bn" Name="bn">
+                <Component Id="rdesktop.resources.dll_6" Guid="{9D74E2E8-6A4E-40B9-91FE-DC71ED2A3F5E}">
+                    <File Id="rdesktop.resources.dll_6" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\bn\rdesktop.resources.dll" />
+                </Component>
+            </Directory>
+			<Directory Id="fy" Name="fy">
+                <Component Id="rdesktop.resources.dll_25" Guid="{9C6EF911-0E4E-462D-B8FA-2FAC751F1D6D}">
+                    <File Id="rdesktop.resources.dll_25" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\fy\rdesktop.resources.dll" />
+                </Component>
+            </Directory>
 		</StandardDirectory>
+		<DirectoryRef Id="af">
+                <Component Id="rdesktop.resources.dll" Guid="{676C4BC8-3CDB-4C56-80EA-EF55467247AF}">
+                    <File Id="rdesktop.resources.dll" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\af\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="am">
+                <Component Id="rdesktop.resources.dll_1" Guid="{1DB072AF-9DC1-44B6-8B1B-9796FBB8F099}">
+                    <File Id="rdesktop.resources.dll_1" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\am\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ar">
+                <Component Id="rdesktop.resources.dll_2" Guid="{8249F33B-F42F-4E23-A066-76C79A9D8BC3}">
+                    <File Id="rdesktop.resources.dll_2" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ar\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="az">
+                <Component Id="rdesktop.resources.dll_3" Guid="{75913DC2-3A9B-42DC-A350-6C7F306CF34C}">
+                    <File Id="rdesktop.resources.dll_3" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\az\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="be">
+                <Component Id="rdesktop.resources.dll_4" Guid="{C64902F6-84A7-436B-A2A3-0B5BA277A1C6}">
+                    <File Id="rdesktop.resources.dll_4" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\be\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="bg">
+                <Component Id="rdesktop.resources.dll_5" Guid="{293E988E-B9CF-4391-B9A2-69C4A59F680D}">
+                    <File Id="rdesktop.resources.dll_5" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\bg\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="bs">
+                <Component Id="rdesktop.resources.dll_7" Guid="{6299658C-9A62-40AA-BE13-70361A023AE3}">
+                    <File Id="rdesktop.resources.dll_7" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\bs\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ca">
+                <Component Id="rdesktop.resources.dll_8" Guid="{5F7CB6CB-A6E5-48B6-AC10-D49313BE0651}">
+                    <File Id="rdesktop.resources.dll_8" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ca\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="co">
+                <Component Id="rdesktop.resources.dll_9" Guid="{4ECCF884-9415-4B9C-9FBA-F49C0E66DF73}">
+                    <File Id="rdesktop.resources.dll_9" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\co\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="cs">
+                <Component Id="rdesktop.resources.dll_10" Guid="{28697B15-CCA1-48C1-8D86-042ADCDDC0B8}">
+                    <File Id="rdesktop.resources.dll_10" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\cs\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="cy">
+                <Component Id="rdesktop.resources.dll_11" Guid="{CD9BBFBF-AF4B-4BE5-A025-49F41EBB8966}">
+                    <File Id="rdesktop.resources.dll_11" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\cy\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="da">
+                <Component Id="rdesktop.resources.dll_12" Guid="{00DF3DA6-C1D6-4C5D-A000-84C9ADC4FB27}">
+                    <File Id="rdesktop.resources.dll_12" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\da\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="de">
+                <Component Id="rdesktop.resources.dll_13" Guid="{622ED0F7-41E7-4033-93BC-A33315333BBC}">
+                    <File Id="rdesktop.resources.dll_13" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\de\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="el">
+                <Component Id="rdesktop.resources.dll_14" Guid="{B1C537F2-36AE-43AB-BE8D-8F0912E0BCAD}">
+                    <File Id="rdesktop.resources.dll_14" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\el\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="en_US">
+                <Component Id="rdesktop.resources.dll_15" Guid="{5635C69F-3939-44A2-8A0F-4CF4A48DC632}">
+                    <File Id="rdesktop.resources.dll_15" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\en-US\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="eo">
+                <Component Id="rdesktop.resources.dll_16" Guid="{C9EAECC9-C049-4F96-8A53-FF3A897B268A}">
+                    <File Id="rdesktop.resources.dll_16" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\eo\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="es">
+                <Component Id="rdesktop.resources.dll_17" Guid="{5BFFF619-6703-4CAB-9B87-35E7FFA70FEF}">
+                    <File Id="rdesktop.resources.dll_17" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\es\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="et">
+                <Component Id="rdesktop.resources.dll_18" Guid="{93612E03-1F9E-4698-82C1-32C8B39EBFBF}">
+                    <File Id="rdesktop.resources.dll_18" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\et\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="eu">
+                <Component Id="rdesktop.resources.dll_19" Guid="{6A939DC9-00DB-44BB-97B4-B905B4A02DB4}">
+                    <File Id="rdesktop.resources.dll_19" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\eu\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="fa">
+                <Component Id="rdesktop.resources.dll_20" Guid="{DB217B63-0284-4B3F-950C-4764D4F4C9F0}">
+                    <File Id="rdesktop.resources.dll_20" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\fa\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="fi">
+                <Component Id="rdesktop.resources.dll_21" Guid="{FA3E6189-8D42-4D8F-A1BD-5325B24CF084}">
+                    <File Id="rdesktop.resources.dll_21" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\fi\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="fil_PH">
+                <Component Id="rdesktop.resources.dll_22" Guid="{0D09A905-C941-4F2D-9C9A-0A9D0D5FE09D}">
+                    <File Id="rdesktop.resources.dll_22" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\fil-PH\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="fr">
+                <Component Id="rdesktop.resources.dll_23" Guid="{221FDBE8-18AA-4212-BD35-BD40816BE3FB}">
+                    <File Id="rdesktop.resources.dll_23" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\fr\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="fr_HT">
+                <Component Id="rdesktop.resources.dll_24" Guid="{3E51F83A-0F10-43EE-9C42-C127D4D79FB3}">
+                    <File Id="rdesktop.resources.dll_24" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\fr-HT\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ga">
+                <Component Id="rdesktop.resources.dll_26" Guid="{3613FCA8-F8EC-4AF7-8C84-2BF04EE779DE}">
+                    <File Id="rdesktop.resources.dll_26" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ga\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="gd">
+                <Component Id="rdesktop.resources.dll_27" Guid="{EFB9B59D-0D8D-4DCC-BDE1-474D284BE3CA}">
+                    <File Id="rdesktop.resources.dll_27" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\gd\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="gl">
+                <Component Id="rdesktop.resources.dll_28" Guid="{39E5D4F7-AA98-48F3-B261-40C1C736EFEC}">
+                    <File Id="rdesktop.resources.dll_28" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\gl\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="gu">
+                <Component Id="rdesktop.resources.dll_29" Guid="{225DE984-1130-4744-BA24-06A2EA5E02B6}">
+                    <File Id="rdesktop.resources.dll_29" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\gu\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ha">
+                <Component Id="rdesktop.resources.dll_30" Guid="{14B70C2A-EA3D-4E45-BA4D-59AB82066D6A}">
+                    <File Id="rdesktop.resources.dll_30" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ha\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="haw">
+                <Component Id="rdesktop.resources.dll_31" Guid="{87784383-3D77-47A7-8B48-5F8124710020}">
+                    <File Id="rdesktop.resources.dll_31" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\haw\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="hi">
+                <Component Id="rdesktop.resources.dll_32" Guid="{524C4150-4F7C-419A-80EB-23318F69611F}">
+                    <File Id="rdesktop.resources.dll_32" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\hi\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="hr">
+                <Component Id="rdesktop.resources.dll_33" Guid="{523E626F-2264-4C17-AD5E-A2071A363F3B}">
+                    <File Id="rdesktop.resources.dll_33" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\hr\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="hu">
+                <Component Id="rdesktop.resources.dll_34" Guid="{55E0FC4B-B863-4988-A0AF-FAA7D6EBD591}">
+                    <File Id="rdesktop.resources.dll_34" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\hu\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="hy">
+                <Component Id="rdesktop.resources.dll_35" Guid="{DDB01252-CDF5-4475-95C3-222FA7BB6B0D}">
+                    <File Id="rdesktop.resources.dll_35" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\hy\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="id">
+                <Component Id="rdesktop.resources.dll_36" Guid="{4B46F319-6333-46D0-B394-C8188CA3AC7D}">
+                    <File Id="rdesktop.resources.dll_36" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\id\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ig">
+                <Component Id="rdesktop.resources.dll_37" Guid="{39056870-3EC1-4585-81D0-CB3CE0CC2DBD}">
+                    <File Id="rdesktop.resources.dll_37" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ig\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="is">
+                <Component Id="rdesktop.resources.dll_38" Guid="{CBA47E9D-C9EB-4538-B9A4-5103A59D8A5A}">
+                    <File Id="rdesktop.resources.dll_38" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\is\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="it">
+                <Component Id="rdesktop.resources.dll_39" Guid="{C7133017-31E0-44FC-90A4-CEC9AB5DB8F9}">
+                    <File Id="rdesktop.resources.dll_39" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\it\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ja">
+                <Component Id="rdesktop.resources.dll_40" Guid="{74040680-B3E6-4917-A18B-BEB23B5AE87F}">
+                    <File Id="rdesktop.resources.dll_40" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ja\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="jv">
+                <Component Id="rdesktop.resources.dll_41" Guid="{EF6D8C27-4F87-47B0-B4B1-7AB434A4BFAF}">
+                    <File Id="rdesktop.resources.dll_41" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\jv\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ka">
+                <Component Id="rdesktop.resources.dll_42" Guid="{AC646ABA-BBBC-43B5-93A0-8BFD0696C81D}">
+                    <File Id="rdesktop.resources.dll_42" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ka\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="kk">
+                <Component Id="rdesktop.resources.dll_43" Guid="{2B1C0481-FF36-4758-96C1-35DFD9CC8E9A}">
+                    <File Id="rdesktop.resources.dll_43" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\kk\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="km">
+                <Component Id="rdesktop.resources.dll_44" Guid="{FF1C6663-FE6B-4F54-9E93-1DB7DE60268A}">
+                    <File Id="rdesktop.resources.dll_44" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\km\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="kn">
+                <Component Id="rdesktop.resources.dll_45" Guid="{68AD1CBC-F13D-41F1-A9F8-BDFB356C7FB3}">
+                    <File Id="rdesktop.resources.dll_45" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\kn\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ko">
+                <Component Id="rdesktop.resources.dll_46" Guid="{56A5CCEB-B741-47C9-8FC0-E421402827F0}">
+                    <File Id="rdesktop.resources.dll_46" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ko\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ku">
+                <Component Id="rdesktop.resources.dll_47" Guid="{7EEB1AA7-B6D5-4652-B236-B52C03A8BB97}">
+                    <File Id="rdesktop.resources.dll_47" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ku\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ky">
+                <Component Id="rdesktop.resources.dll_48" Guid="{392FE376-7B40-4C9A-B8F6-0F5E904EA564}">
+                    <File Id="rdesktop.resources.dll_48" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ky\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="la">
+                <Component Id="rdesktop.resources.dll_49" Guid="{62DB2B04-7D4D-4B08-9C8E-882FEDD51CC5}">
+                    <File Id="rdesktop.resources.dll_49" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\la\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="lo">
+                <Component Id="rdesktop.resources.dll_50" Guid="{F0E19951-9A2C-484B-AF12-C62F910BA455}">
+                    <File Id="rdesktop.resources.dll_50" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\lo\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="lt">
+                <Component Id="rdesktop.resources.dll_51" Guid="{0DF9CFB1-9B5C-448D-B014-3517DAEF10F8}">
+                    <File Id="rdesktop.resources.dll_51" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\lt\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="lv">
+                <Component Id="rdesktop.resources.dll_52" Guid="{66ECC02F-6FD3-4807-BF87-B69C4AD90EF1}">
+                    <File Id="rdesktop.resources.dll_52" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\lv\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mg">
+                <Component Id="rdesktop.resources.dll_53" Guid="{CC88D9C1-0020-4D2E-8ABC-3564B6D74C62}">
+                    <File Id="rdesktop.resources.dll_53" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\mg\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mi">
+                <Component Id="rdesktop.resources.dll_54" Guid="{8E15D444-B536-418D-B7DC-2AF8B1492012}">
+                    <File Id="rdesktop.resources.dll_54" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\mi\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mk">
+                <Component Id="rdesktop.resources.dll_55" Guid="{4FA2B076-19B7-4565-B261-55DD2747382B}">
+                    <File Id="rdesktop.resources.dll_55" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\mk\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ml">
+                <Component Id="rdesktop.resources.dll_56" Guid="{8C84A485-4FB0-40F1-B73C-2D4538C4923C}">
+                    <File Id="rdesktop.resources.dll_56" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ml\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mn">
+                <Component Id="rdesktop.resources.dll_57" Guid="{15D03C0F-14AE-4BA3-925E-6506FE9861AB}">
+                    <File Id="rdesktop.resources.dll_57" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\mn\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mr">
+                <Component Id="rdesktop.resources.dll_58" Guid="{FCD9FC0C-1C59-409D-9DFE-A649825C2936}">
+                    <File Id="rdesktop.resources.dll_58" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\mr\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ms">
+                <Component Id="rdesktop.resources.dll_59" Guid="{A29C1A21-35C1-4DC5-9DE1-00FD8B5A934C}">
+                    <File Id="rdesktop.resources.dll_59" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ms\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mt">
+                <Component Id="rdesktop.resources.dll_60" Guid="{D0B88CC1-9653-4785-A29C-9303C4E68E30}">
+                    <File Id="rdesktop.resources.dll_60" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\mt\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="nb_NO">
+                <Component Id="rdesktop.resources.dll_61" Guid="{1A01A606-CABF-451B-9244-629AAD583639}">
+                    <File Id="rdesktop.resources.dll_61" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\nb-NO\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ne">
+                <Component Id="rdesktop.resources.dll_62" Guid="{1B3A78D6-3B57-4633-AE66-49D4DACD479B}">
+                    <File Id="rdesktop.resources.dll_62" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ne\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="nl">
+                <Component Id="rdesktop.resources.dll_63" Guid="{E24D5CDB-14EC-4154-82FC-B6304A75F633}">
+                    <File Id="rdesktop.resources.dll_63" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\nl\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="nn_NO">
+                <Component Id="rdesktop.resources.dll_64" Guid="{642395BE-5598-4BEC-9071-F0981110EA89}">
+                    <File Id="rdesktop.resources.dll_64" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\nn-NO\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="no">
+                <Component Id="rdesktop.resources.dll_65" Guid="{F23ED54F-D958-4D99-A5C4-9BFEBAA768B7}">
+                    <File Id="rdesktop.resources.dll_65" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\no\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="or">
+                <Component Id="rdesktop.resources.dll_66" Guid="{CEFBF885-BC44-42F5-A36E-3078AA65AF28}">
+                    <File Id="rdesktop.resources.dll_66" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\or\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="pa">
+                <Component Id="rdesktop.resources.dll_67" Guid="{85DFB929-0255-4687-A35E-795EA1AACE58}">
+                    <File Id="rdesktop.resources.dll_67" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\pa\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="pl">
+                <Component Id="rdesktop.resources.dll_68" Guid="{A907B875-49A6-4B2F-BA95-EF73E6F786B8}">
+                    <File Id="rdesktop.resources.dll_68" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\pl\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ps">
+                <Component Id="rdesktop.resources.dll_69" Guid="{E584E323-8408-4D8C-B968-78BE7135137E}">
+                    <File Id="rdesktop.resources.dll_69" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ps\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="pt_BR">
+                <Component Id="rdesktop.resources.dll_70" Guid="{A15187E4-A5FA-45A0-8D44-BA57DA6E6937}">
+                    <File Id="rdesktop.resources.dll_70" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\pt-BR\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="pt_PT">
+                <Component Id="rdesktop.resources.dll_71" Guid="{264D2215-865C-4278-9717-FDC91926BCE5}">
+                    <File Id="rdesktop.resources.dll_71" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\pt-PT\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ro">
+                <Component Id="rdesktop.resources.dll_72" Guid="{6DEDEA02-E6FF-4F72-BDEC-B04A98D5BA26}">
+                    <File Id="rdesktop.resources.dll_72" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ro\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ru">
+                <Component Id="rdesktop.resources.dll_73" Guid="{3EC08190-771C-4E25-A71D-B3491C211F09}">
+                    <File Id="rdesktop.resources.dll_73" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ru\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="rw">
+                <Component Id="rdesktop.resources.dll_74" Guid="{01ACB51B-49D9-49D0-90E6-D8ADC07F786A}">
+                    <File Id="rdesktop.resources.dll_74" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\rw\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sd">
+                <Component Id="rdesktop.resources.dll_75" Guid="{81CD7727-B9C1-48EA-8122-818FBD95A3DA}">
+                    <File Id="rdesktop.resources.dll_75" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\sd\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="si">
+                <Component Id="rdesktop.resources.dll_76" Guid="{89640DFF-0E62-422E-8AFF-FDF028DD17C8}">
+                    <File Id="rdesktop.resources.dll_76" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\si\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sk">
+                <Component Id="rdesktop.resources.dll_77" Guid="{C95F73A3-2744-4528-A1A0-E66B60D0FDE7}">
+                    <File Id="rdesktop.resources.dll_77" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\sk\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sl">
+                <Component Id="rdesktop.resources.dll_78" Guid="{F1CDA473-B431-4528-9A6B-2CB08E679BF5}">
+                    <File Id="rdesktop.resources.dll_78" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\sl\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sn">
+                <Component Id="rdesktop.resources.dll_79" Guid="{5586E9BB-9E04-4E67-89EB-812E384F95E3}">
+                    <File Id="rdesktop.resources.dll_79" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\sn\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="so">
+                <Component Id="rdesktop.resources.dll_80" Guid="{251E203C-A830-4B31-B6DD-48246374765B}">
+                    <File Id="rdesktop.resources.dll_80" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\so\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sq">
+                <Component Id="rdesktop.resources.dll_81" Guid="{DF2E11B3-F221-4E51-AF8B-AE6D58C7B1FC}">
+                    <File Id="rdesktop.resources.dll_81" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\sq\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sr">
+                <Component Id="rdesktop.resources.dll_82" Guid="{8B408CC1-1726-447E-9F3A-ED80CDBE604F}">
+                    <File Id="rdesktop.resources.dll_82" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\sr\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="st">
+                <Component Id="rdesktop.resources.dll_83" Guid="{979A065E-E39B-41FE-BEAF-42C29CB08ABA}">
+                    <File Id="rdesktop.resources.dll_83" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\st\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="su">
+                <Component Id="rdesktop.resources.dll_84" Guid="{82738128-360B-455A-ADE5-9EA7968052EF}">
+                    <File Id="rdesktop.resources.dll_84" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\su\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sv">
+                <Component Id="rdesktop.resources.dll_85" Guid="{345EE56A-F733-401D-AF35-D67520BF2FEE}">
+                    <File Id="rdesktop.resources.dll_85" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\sv\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sw">
+                <Component Id="rdesktop.resources.dll_86" Guid="{655EAC4B-F563-4C3F-A6D3-583D00D70CA0}">
+                    <File Id="rdesktop.resources.dll_86" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\sw\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ta">
+                <Component Id="rdesktop.resources.dll_87" Guid="{E62CE499-6C7A-453A-8569-4D9C6A5B033A}">
+                    <File Id="rdesktop.resources.dll_87" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ta\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="te">
+                <Component Id="rdesktop.resources.dll_88" Guid="{DFC43B0D-C2EB-496F-8E83-D5068D79F473}">
+                    <File Id="rdesktop.resources.dll_88" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\te\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="tg">
+                <Component Id="rdesktop.resources.dll_89" Guid="{F1269B36-E8B1-4619-A118-4CF143F8EDE6}">
+                    <File Id="rdesktop.resources.dll_89" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\tg\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="th">
+                <Component Id="rdesktop.resources.dll_90" Guid="{43D7684D-2A9E-499B-AD62-442B7FD6A5C6}">
+                    <File Id="rdesktop.resources.dll_90" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\th\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="tk">
+                <Component Id="rdesktop.resources.dll_91" Guid="{1CD8070C-2C93-4A91-B8F0-527D801FF3D6}">
+                    <File Id="rdesktop.resources.dll_91" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\tk\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="tr">
+                <Component Id="rdesktop.resources.dll_92" Guid="{C1B963C0-BABD-446A-9351-635FA14C2599}">
+                    <File Id="rdesktop.resources.dll_92" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\tr\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="tt">
+                <Component Id="rdesktop.resources.dll_93" Guid="{0C11FB14-7334-4474-A9CE-C96D967B78CC}">
+                    <File Id="rdesktop.resources.dll_93" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\tt\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ug">
+                <Component Id="rdesktop.resources.dll_94" Guid="{76B52077-E336-4541-BBF1-A9F013597FFB}">
+                    <File Id="rdesktop.resources.dll_94" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ug\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="uk">
+                <Component Id="rdesktop.resources.dll_95" Guid="{1B5799B8-FC5C-4D58-BB0C-417F80A33BC2}">
+                    <File Id="rdesktop.resources.dll_95" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\uk\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ur">
+                <Component Id="rdesktop.resources.dll_96" Guid="{EBD13A7A-97C1-4CB4-AF85-80F3561A0646}">
+                    <File Id="rdesktop.resources.dll_96" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\ur\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="uz">
+                <Component Id="rdesktop.resources.dll_97" Guid="{5FE1D003-855A-40EE-8BE9-29C5AE24C8D7}">
+                    <File Id="rdesktop.resources.dll_97" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\uz\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="vi">
+                <Component Id="rdesktop.resources.dll_98" Guid="{C71450BF-771B-4262-82FB-3A1C18D13625}">
+                    <File Id="rdesktop.resources.dll_98" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\vi\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="xh">
+                <Component Id="rdesktop.resources.dll_99" Guid="{758EF207-6092-4E50-A9E1-A257CABE0D6C}">
+                    <File Id="rdesktop.resources.dll_99" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\xh\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="yi">
+                <Component Id="rdesktop.resources.dll_100" Guid="{6101DB9D-A2A8-43F9-81A0-4485F274999A}">
+                    <File Id="rdesktop.resources.dll_100" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\yi\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="yo">
+                <Component Id="rdesktop.resources.dll_101" Guid="{A2498663-902B-444D-8010-614BE249ED01}">
+                    <File Id="rdesktop.resources.dll_101" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\yo\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="zh_CN">
+                <Component Id="rdesktop.resources.dll_102" Guid="{87CFF5AB-B656-4694-A64F-5F15C793A338}">
+                    <File Id="rdesktop.resources.dll_102" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\zh-CN\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="zh_TW">
+                <Component Id="rdesktop.resources.dll_103" Guid="{54C931F1-E5D7-4960-9714-C210E39B8DCC}">
+                    <File Id="rdesktop.resources.dll_103" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\zh-TW\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="zu">
+                <Component Id="rdesktop.resources.dll_104" Guid="{EBD3C6A6-384A-4417-92DE-518732645CC8}">
+                    <File Id="rdesktop.resources.dll_104" KeyPath="yes" Source=".\rdesktop\rdesktop\bin\x64\release\zu\rdesktop.resources.dll" />
+                </Component>
+            </DirectoryRef>
 		<DirectoryRef Id="af">
                 <Component Id="rapps.resources.dll" Guid="{FA85B1D4-1DBF-42BF-8694-86434BBCF684}">
                     <File Id="rapps.resources.dll" KeyPath="yes" Source=".\rapps\rapps\bin\af\rapps.resources.dll" />
@@ -2355,6 +2881,116 @@
             <ComponentRef Id="rapps.resources.dll_97" />
             <ComponentRef Id="rapps.resources.dll_98" />
             <ComponentRef Id="rapps.resources.dll_99" />
+        </ComponentGroup>
+		<ComponentGroup Id="RDesktop">
+            <ComponentRef Id="Serilog.dll" />
+            <ComponentRef Id="Serilog.Sinks.File.dll" />
+            <ComponentRef Id="Serilog.Sinks.File.pdb" />
+            <ComponentRef Id="rdesktop.resources.dll" />
+            <ComponentRef Id="rdesktop.resources.dll_1" />
+            <ComponentRef Id="rdesktop.resources.dll_2" />
+            <ComponentRef Id="rdesktop.resources.dll_3" />
+            <ComponentRef Id="rdesktop.resources.dll_4" />
+            <ComponentRef Id="rdesktop.resources.dll_5" />
+            <ComponentRef Id="rdesktop.resources.dll_6" />
+            <ComponentRef Id="rdesktop.resources.dll_7" />
+            <ComponentRef Id="rdesktop.resources.dll_8" />
+            <ComponentRef Id="rdesktop.resources.dll_9" />
+            <ComponentRef Id="rdesktop.resources.dll_10" />
+            <ComponentRef Id="rdesktop.resources.dll_11" />
+            <ComponentRef Id="rdesktop.resources.dll_12" />
+            <ComponentRef Id="rdesktop.resources.dll_13" />
+            <ComponentRef Id="rdesktop.resources.dll_14" />
+            <ComponentRef Id="rdesktop.resources.dll_15" />
+            <ComponentRef Id="rdesktop.resources.dll_16" />
+            <ComponentRef Id="rdesktop.resources.dll_17" />
+            <ComponentRef Id="rdesktop.resources.dll_18" />
+            <ComponentRef Id="rdesktop.resources.dll_19" />
+            <ComponentRef Id="rdesktop.resources.dll_20" />
+            <ComponentRef Id="rdesktop.resources.dll_21" />
+            <ComponentRef Id="rdesktop.resources.dll_22" />
+            <ComponentRef Id="rdesktop.resources.dll_23" />
+            <ComponentRef Id="rdesktop.resources.dll_24" />
+            <ComponentRef Id="rdesktop.resources.dll_25" />
+            <ComponentRef Id="rdesktop.resources.dll_26" />
+            <ComponentRef Id="rdesktop.resources.dll_27" />
+            <ComponentRef Id="rdesktop.resources.dll_28" />
+            <ComponentRef Id="rdesktop.resources.dll_29" />
+            <ComponentRef Id="rdesktop.resources.dll_30" />
+            <ComponentRef Id="rdesktop.resources.dll_31" />
+            <ComponentRef Id="rdesktop.resources.dll_32" />
+            <ComponentRef Id="rdesktop.resources.dll_33" />
+            <ComponentRef Id="rdesktop.resources.dll_34" />
+            <ComponentRef Id="rdesktop.resources.dll_35" />
+            <ComponentRef Id="rdesktop.resources.dll_36" />
+            <ComponentRef Id="rdesktop.resources.dll_37" />
+            <ComponentRef Id="rdesktop.resources.dll_38" />
+            <ComponentRef Id="rdesktop.resources.dll_39" />
+            <ComponentRef Id="rdesktop.resources.dll_40" />
+            <ComponentRef Id="rdesktop.resources.dll_41" />
+            <ComponentRef Id="rdesktop.resources.dll_42" />
+            <ComponentRef Id="rdesktop.resources.dll_43" />
+            <ComponentRef Id="rdesktop.resources.dll_44" />
+            <ComponentRef Id="rdesktop.resources.dll_45" />
+            <ComponentRef Id="rdesktop.resources.dll_46" />
+            <ComponentRef Id="rdesktop.resources.dll_47" />
+            <ComponentRef Id="rdesktop.resources.dll_48" />
+            <ComponentRef Id="rdesktop.resources.dll_49" />
+            <ComponentRef Id="rdesktop.resources.dll_50" />
+            <ComponentRef Id="rdesktop.resources.dll_51" />
+            <ComponentRef Id="rdesktop.resources.dll_52" />
+            <ComponentRef Id="rdesktop.resources.dll_53" />
+            <ComponentRef Id="rdesktop.resources.dll_54" />
+            <ComponentRef Id="rdesktop.resources.dll_55" />
+            <ComponentRef Id="rdesktop.resources.dll_56" />
+            <ComponentRef Id="rdesktop.resources.dll_57" />
+            <ComponentRef Id="rdesktop.resources.dll_58" />
+            <ComponentRef Id="rdesktop.resources.dll_59" />
+            <ComponentRef Id="rdesktop.resources.dll_60" />
+            <ComponentRef Id="rdesktop.resources.dll_61" />
+            <ComponentRef Id="rdesktop.resources.dll_62" />
+            <ComponentRef Id="rdesktop.resources.dll_63" />
+            <ComponentRef Id="rdesktop.resources.dll_64" />
+            <ComponentRef Id="rdesktop.resources.dll_65" />
+            <ComponentRef Id="rdesktop.resources.dll_66" />
+            <ComponentRef Id="rdesktop.resources.dll_67" />
+            <ComponentRef Id="rdesktop.resources.dll_68" />
+            <ComponentRef Id="rdesktop.resources.dll_69" />
+            <ComponentRef Id="rdesktop.resources.dll_70" />
+            <ComponentRef Id="rdesktop.resources.dll_71" />
+            <ComponentRef Id="rdesktop.resources.dll_72" />
+            <ComponentRef Id="rdesktop.resources.dll_73" />
+            <ComponentRef Id="rdesktop.resources.dll_74" />
+            <ComponentRef Id="rdesktop.resources.dll_75" />
+            <ComponentRef Id="rdesktop.resources.dll_76" />
+            <ComponentRef Id="rdesktop.resources.dll_77" />
+            <ComponentRef Id="rdesktop.resources.dll_78" />
+            <ComponentRef Id="rdesktop.resources.dll_79" />
+            <ComponentRef Id="rdesktop.resources.dll_80" />
+            <ComponentRef Id="rdesktop.resources.dll_81" />
+            <ComponentRef Id="rdesktop.resources.dll_82" />
+            <ComponentRef Id="rdesktop.resources.dll_83" />
+            <ComponentRef Id="rdesktop.resources.dll_84" />
+            <ComponentRef Id="rdesktop.resources.dll_85" />
+            <ComponentRef Id="rdesktop.resources.dll_86" />
+            <ComponentRef Id="rdesktop.resources.dll_87" />
+            <ComponentRef Id="rdesktop.resources.dll_88" />
+            <ComponentRef Id="rdesktop.resources.dll_89" />
+            <ComponentRef Id="rdesktop.resources.dll_90" />
+            <ComponentRef Id="rdesktop.resources.dll_91" />
+            <ComponentRef Id="rdesktop.resources.dll_92" />
+            <ComponentRef Id="rdesktop.resources.dll_93" />
+            <ComponentRef Id="rdesktop.resources.dll_94" />
+            <ComponentRef Id="rdesktop.resources.dll_95" />
+            <ComponentRef Id="rdesktop.resources.dll_96" />
+            <ComponentRef Id="rdesktop.resources.dll_97" />
+            <ComponentRef Id="rdesktop.resources.dll_98" />
+            <ComponentRef Id="rdesktop.resources.dll_99" />
+            <ComponentRef Id="rdesktop.resources.dll_100" />
+            <ComponentRef Id="rdesktop.resources.dll_101" />
+            <ComponentRef Id="rdesktop.resources.dll_102" />
+            <ComponentRef Id="rdesktop.resources.dll_103" />
+            <ComponentRef Id="rdesktop.resources.dll_104" />
         </ComponentGroup>
 		<StandardDirectory Id="ProgramFiles64Folder">
 			<Directory Id="CompanyFolder" Name="Elbitin">
