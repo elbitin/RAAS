@@ -32,13 +32,16 @@
 		<Property Id="REBOOT" Value="Force"/>
 		<WixVariable Id="WixUILicenseRtf" Value="license.rtf"/>
 		<Feature Id="RAASClient" Title="RAAS Client" Level="1" AllowAbsent="no">
+			<ComponentGroupRef Id="RaasClient"/>
 			<ComponentRef Id="RAASClient"/>
 			<ComponentRef Id="RAASClientMsix"/>
 			<ComponentRef Id="OpenOnRemoteHostCommandVerb"/>
 			<ComponentRef Id="RemoteApps"/>
+			<ComponentGroupRef Id="Rapps"/>
 			<ComponentRef Id="MSTSCLIB"/>
 			<ComponentRef Id="AxMSTSCLIB"/>
-			<ComponentRef Id="OpenRemote"/>
+			<ComponentGroupRef Id="Serilog"/>
+			<ComponentGroupRef Id="OpenRemote"/>
 			<ComponentRef Id="RDesktop"/>
 			<ComponentRef Id="ConnectShares"/>
 			<ComponentRef Id="ConnectSharesAdmin"/>
@@ -49,13 +52,11 @@
 			<ComponentRef Id="NSextVisibilityXml"/>
 			<ComponentRef Id="ServersXml"/>
 			<ComponentRef Id="RDesktopXml"/>
-			<ComponentRef Id="HelpPdf"/>
+			<ComponentGroupRef Id="HelpPdfs"/>
 			<ComponentRef Id="InstallDirRegistry"/>
 			<ComponentRef Id="InstallDir6432Registry"/>
 			<ComponentRef Id="CMenuH"/>
 			<ComponentRef Id="CMenuH_x86"/>
-			<ComponentRef Id="LanguagePackEnglish"/>
-			<ComponentRef Id="LanguagePackSwedish"/>
 			<Feature Id="Visualizations" Title="!(loc.VisualizationsTitle)" Description="!(loc.VisualizationsDescription)" Level="1">
 				<ComponentRef Id="VisualizationsRegistry"/>
 				<ComponentRef Id="Visualizations6432Registry"/>
@@ -75,6 +76,2286 @@
 				<ComponentRef Id="Shortcuts6432Registry"/>
 			</Feature>
 		</Feature>
+		<StandardDirectory Id="TARGETDIR">
+			<Component Id="RAAS_Client.af.pdf" Guid="{1DE2A7D0-67C9-4445-A00C-703DB942A2F0}">
+                <File Id="RAAS_Client.af.pdf" KeyPath="yes" Source=".\help\RAAS Client.af.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.am.pdf" Guid="{47B85098-21B4-4649-B755-7D24DB4EA9ED}">
+                <File Id="RAAS_Client.am.pdf" KeyPath="yes" Source=".\help\RAAS Client.am.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ar.pdf" Guid="{DF07BC10-6F9D-415C-BDFE-12A6E6EE8908}">
+                <File Id="RAAS_Client.ar.pdf" KeyPath="yes" Source=".\help\RAAS Client.ar.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.az.pdf" Guid="{832D554B-A367-457D-9429-60AEFB197B51}">
+                <File Id="RAAS_Client.az.pdf" KeyPath="yes" Source=".\help\RAAS Client.az.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.be.pdf" Guid="{F5BB2D50-A4A7-44A9-9190-319FB0FAEEB4}">
+                <File Id="RAAS_Client.be.pdf" KeyPath="yes" Source=".\help\RAAS Client.be.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.bg.pdf" Guid="{5100246F-695D-4CEE-9E1C-910240DA355C}">
+                <File Id="RAAS_Client.bg.pdf" KeyPath="yes" Source=".\help\RAAS Client.bg.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.bs.pdf" Guid="{6F6179A4-6EC5-4F33-A245-8FAECB4E58F8}">
+                <File Id="RAAS_Client.bs.pdf" KeyPath="yes" Source=".\help\RAAS Client.bs.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ca.pdf" Guid="{57C0526E-3088-4F51-9AF5-3B249D2DFA80}">
+                <File Id="RAAS_Client.ca.pdf" KeyPath="yes" Source=".\help\RAAS Client.ca.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.co.pdf" Guid="{6576D931-A839-45F0-8F69-E87350AB8562}">
+                <File Id="RAAS_Client.co.pdf" KeyPath="yes" Source=".\help\RAAS Client.co.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.cs.pdf" Guid="{2E02AF7D-2955-4BDA-9CAA-6810DDBA0948}">
+                <File Id="RAAS_Client.cs.pdf" KeyPath="yes" Source=".\help\RAAS Client.cs.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.cy.pdf" Guid="{0B64CA9C-E27A-4F07-9A4C-A419E669A2C6}">
+                <File Id="RAAS_Client.cy.pdf" KeyPath="yes" Source=".\help\RAAS Client.cy.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.da.pdf" Guid="{E24AE742-4176-43AA-854F-DB6C3C67CE0B}">
+                <File Id="RAAS_Client.da.pdf" KeyPath="yes" Source=".\help\RAAS Client.da.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.de.pdf" Guid="{967E9C22-A953-42B5-8B68-864D26113DDC}">
+                <File Id="RAAS_Client.de.pdf" KeyPath="yes" Source=".\help\RAAS Client.de.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.el.pdf" Guid="{48F2DFEE-9B51-4C96-AD97-C59257D7A12B}">
+                <File Id="RAAS_Client.el.pdf" KeyPath="yes" Source=".\help\RAAS Client.el.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.en_US.pdf" Guid="{1ADFCB07-5D42-4CA5-87F1-56B25193D578}">
+                <File Id="RAAS_Client.en_US.pdf" KeyPath="yes" Source=".\help\RAAS Client.en-US.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.eo.pdf" Guid="{8A00FA93-5C8F-47F0-B3E3-5BCADE42CA37}">
+                <File Id="RAAS_Client.eo.pdf" KeyPath="yes" Source=".\help\RAAS Client.eo.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.es.pdf" Guid="{F1F6B8B0-D876-4D88-839C-A62E9FEBFA10}">
+                <File Id="RAAS_Client.es.pdf" KeyPath="yes" Source=".\help\RAAS Client.es.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.et.pdf" Guid="{97150E47-B386-4E5B-93FD-01ECDA22B162}">
+                <File Id="RAAS_Client.et.pdf" KeyPath="yes" Source=".\help\RAAS Client.et.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.eu.pdf" Guid="{29FC2CEC-FC13-4E5E-95C7-DFCBAF3B0D1D}">
+                <File Id="RAAS_Client.eu.pdf" KeyPath="yes" Source=".\help\RAAS Client.eu.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.fa.pdf" Guid="{8555C59D-4CC5-4F43-A998-48D8BBEB0BE9}">
+                <File Id="RAAS_Client.fa.pdf" KeyPath="yes" Source=".\help\RAAS Client.fa.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.fi.pdf" Guid="{95A58B8F-D99B-4B68-84F8-BBB3E9F1406D}">
+                <File Id="RAAS_Client.fi.pdf" KeyPath="yes" Source=".\help\RAAS Client.fi.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.fil_PH.pdf" Guid="{4D59E10D-6AAE-4B4D-BA39-06E4319443AF}">
+                <File Id="RAAS_Client.fil_PH.pdf" KeyPath="yes" Source=".\help\RAAS Client.fil-PH.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.fr_HT.pdf" Guid="{EDDE7E5A-681E-4E12-9357-455AE55846BB}">
+                <File Id="RAAS_Client.fr_HT.pdf" KeyPath="yes" Source=".\help\RAAS Client.fr-HT.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.fr.pdf" Guid="{FC84ADDE-68D7-424D-9959-4AD41AC90803}">
+                <File Id="RAAS_Client.fr.pdf" KeyPath="yes" Source=".\help\RAAS Client.fr.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ga.pdf" Guid="{4A65A536-60C5-474D-A3DA-ECBDF2A3C011}">
+                <File Id="RAAS_Client.ga.pdf" KeyPath="yes" Source=".\help\RAAS Client.ga.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.gd.pdf" Guid="{4C06173B-7FC6-488C-9F2F-AD97241B916F}">
+                <File Id="RAAS_Client.gd.pdf" KeyPath="yes" Source=".\help\RAAS Client.gd.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.gl.pdf" Guid="{B6468BBA-6373-4D7B-910E-21110CE1DA94}">
+                <File Id="RAAS_Client.gl.pdf" KeyPath="yes" Source=".\help\RAAS Client.gl.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.gu.pdf" Guid="{4D8E3825-8CBF-4DC6-A38E-3E0C5C8A5158}">
+                <File Id="RAAS_Client.gu.pdf" KeyPath="yes" Source=".\help\RAAS Client.gu.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ha.pdf" Guid="{12915787-2B2B-4416-880C-1FF0F530E3CD}">
+                <File Id="RAAS_Client.ha.pdf" KeyPath="yes" Source=".\help\RAAS Client.ha.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.haw_US.pdf" Guid="{3BEE1DBC-E62C-4961-8796-925AA7A412C6}">
+                <File Id="RAAS_Client.haw_US.pdf" KeyPath="yes" Source=".\help\RAAS Client.haw-US.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.hi.pdf" Guid="{F81B3B4E-33FF-405A-B959-B572DCB943D8}">
+                <File Id="RAAS_Client.hi.pdf" KeyPath="yes" Source=".\help\RAAS Client.hi.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.hr.pdf" Guid="{48BC2C8E-E8D0-4C78-99EF-C29B1F4B86F2}">
+                <File Id="RAAS_Client.hr.pdf" KeyPath="yes" Source=".\help\RAAS Client.hr.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ht.pdf" Guid="{A1AEE816-0617-4107-970D-2E4268F414EC}">
+                <File Id="RAAS_Client.ht.pdf" KeyPath="yes" Source=".\help\RAAS Client.ht.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.hu.pdf" Guid="{A366AC21-219A-42E4-8137-1D84C148CD1E}">
+                <File Id="RAAS_Client.hu.pdf" KeyPath="yes" Source=".\help\RAAS Client.hu.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.hw.pdf" Guid="{CEF6ABF5-EBB4-40DA-9B27-9A71BE08C327}">
+                <File Id="RAAS_Client.hw.pdf" KeyPath="yes" Source=".\help\RAAS Client.hw.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.hy.pdf" Guid="{B215E30F-BD56-4F87-9C43-984F6AF7A7D4}">
+                <File Id="RAAS_Client.hy.pdf" KeyPath="yes" Source=".\help\RAAS Client.hy.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.id.pdf" Guid="{9F6C4A75-6E64-4AF1-B5CA-95CF7CA6D9E7}">
+                <File Id="RAAS_Client.id.pdf" KeyPath="yes" Source=".\help\RAAS Client.id.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ig.pdf" Guid="{E447964C-018C-43D9-BF0F-66843F052DF2}">
+                <File Id="RAAS_Client.ig.pdf" KeyPath="yes" Source=".\help\RAAS Client.ig.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.is.pdf" Guid="{F2F558A3-8335-4A85-9093-F781A76B7B1F}">
+                <File Id="RAAS_Client.is.pdf" KeyPath="yes" Source=".\help\RAAS Client.is.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.it.pdf" Guid="{91AC58FF-EC89-4197-83C0-82008A37A68B}">
+                <File Id="RAAS_Client.it.pdf" KeyPath="yes" Source=".\help\RAAS Client.it.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ja.pdf" Guid="{FAE3AF59-9438-4A9C-BFF4-7D75305E5078}">
+                <File Id="RAAS_Client.ja.pdf" KeyPath="yes" Source=".\help\RAAS Client.ja.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.jv.pdf" Guid="{8774F229-748A-4137-B84B-3F371286ED37}">
+                <File Id="RAAS_Client.jv.pdf" KeyPath="yes" Source=".\help\RAAS Client.jv.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.jw.pdf" Guid="{D2E61389-F7D8-4733-A7D7-353E700EE251}">
+                <File Id="RAAS_Client.jw.pdf" KeyPath="yes" Source=".\help\RAAS Client.jw.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ka.pdf" Guid="{FE6581AF-C076-4B3D-96ED-7A11FA6310DF}">
+                <File Id="RAAS_Client.ka.pdf" KeyPath="yes" Source=".\help\RAAS Client.ka.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.kk.pdf" Guid="{8F749ECB-B23E-41C7-9510-09F722211D9D}">
+                <File Id="RAAS_Client.kk.pdf" KeyPath="yes" Source=".\help\RAAS Client.kk.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.km.pdf" Guid="{637B62DE-74DF-40D6-BFB6-7C173893E9B0}">
+                <File Id="RAAS_Client.km.pdf" KeyPath="yes" Source=".\help\RAAS Client.km.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.kn.pdf" Guid="{74E069CA-B20F-4BBB-93CB-8ACA3EDAD655}">
+                <File Id="RAAS_Client.kn.pdf" KeyPath="yes" Source=".\help\RAAS Client.kn.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ko.pdf" Guid="{341F0F46-59CC-40E6-B511-D031B72750BE}">
+                <File Id="RAAS_Client.ko.pdf" KeyPath="yes" Source=".\help\RAAS Client.ko.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ku.pdf" Guid="{B92E31F0-7053-4FF3-8E6B-30A0D038EFC1}">
+                <File Id="RAAS_Client.ku.pdf" KeyPath="yes" Source=".\help\RAAS Client.ku.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ky.pdf" Guid="{64713681-CD81-4C63-8F08-4E4FD0B7DE76}">
+                <File Id="RAAS_Client.ky.pdf" KeyPath="yes" Source=".\help\RAAS Client.ky.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.la.pdf" Guid="{12752323-2970-4AAC-801E-72A6E59EA180}">
+                <File Id="RAAS_Client.la.pdf" KeyPath="yes" Source=".\help\RAAS Client.la.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.lo.pdf" Guid="{6E20D110-E930-47B6-9E0F-E3FC047C583F}">
+                <File Id="RAAS_Client.lo.pdf" KeyPath="yes" Source=".\help\RAAS Client.lo.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.lt.pdf" Guid="{6FF2E490-A648-49CF-B37B-178AF0084DDA}">
+                <File Id="RAAS_Client.lt.pdf" KeyPath="yes" Source=".\help\RAAS Client.lt.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.lv.pdf" Guid="{2656CB5C-7120-43E6-BB34-C435D5D0FDFC}">
+                <File Id="RAAS_Client.lv.pdf" KeyPath="yes" Source=".\help\RAAS Client.lv.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.mg.pdf" Guid="{D4921FBB-F38E-4F75-9B17-44FE11F3F5FF}">
+                <File Id="RAAS_Client.mg.pdf" KeyPath="yes" Source=".\help\RAAS Client.mg.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.mi.pdf" Guid="{97449B65-F4CF-452F-A353-58A2177A712A}">
+                <File Id="RAAS_Client.mi.pdf" KeyPath="yes" Source=".\help\RAAS Client.mi.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.mk.pdf" Guid="{5106596D-9E7F-4C11-94C6-CF855C1718EA}">
+                <File Id="RAAS_Client.mk.pdf" KeyPath="yes" Source=".\help\RAAS Client.mk.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ml.pdf" Guid="{55A1592C-7EA7-4C61-9F4B-87A78B5C5BAC}">
+                <File Id="RAAS_Client.ml.pdf" KeyPath="yes" Source=".\help\RAAS Client.ml.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.mn.pdf" Guid="{21B72CFB-56CB-4362-A2C4-472067410380}">
+                <File Id="RAAS_Client.mn.pdf" KeyPath="yes" Source=".\help\RAAS Client.mn.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.mr.pdf" Guid="{402EB011-0A80-4A99-A3C1-C42C0298B7ED}">
+                <File Id="RAAS_Client.mr.pdf" KeyPath="yes" Source=".\help\RAAS Client.mr.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ms_BN.pdf" Guid="{251393E8-7715-4463-A373-9BF4897E1F7E}">
+                <File Id="RAAS_Client.ms_BN.pdf" KeyPath="yes" Source=".\help\RAAS Client.ms-BN.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ms.pdf" Guid="{82089ECF-C471-45DB-B06B-9DA451FCBBCD}">
+                <File Id="RAAS_Client.ms.pdf" KeyPath="yes" Source=".\help\RAAS Client.ms.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.mt.pdf" Guid="{DC3F1E28-A222-4EAA-8BCF-111E90BB459B}">
+                <File Id="RAAS_Client.mt.pdf" KeyPath="yes" Source=".\help\RAAS Client.mt.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.nb_NO.pdf" Guid="{330C8B4B-E505-489C-A226-CF3B5370A7E2}">
+                <File Id="RAAS_Client.nb_NO.pdf" KeyPath="yes" Source=".\help\RAAS Client.nb-NO.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ne.pdf" Guid="{5B2C916B-0DFB-4250-B808-D70A0B221F11}">
+                <File Id="RAAS_Client.ne.pdf" KeyPath="yes" Source=".\help\RAAS Client.ne.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.nl.pdf" Guid="{D178862D-739A-46E3-93A2-72A82C21545F}">
+                <File Id="RAAS_Client.nl.pdf" KeyPath="yes" Source=".\help\RAAS Client.nl.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.nn_NO.pdf" Guid="{E8ACBFC2-1398-4EB8-9401-D60D7482B832}">
+                <File Id="RAAS_Client.nn_NO.pdf" KeyPath="yes" Source=".\help\RAAS Client.nn-NO.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.no.pdf" Guid="{ACE5947D-1714-4C66-B4A5-88E629322B0A}">
+                <File Id="RAAS_Client.no.pdf" KeyPath="yes" Source=".\help\RAAS Client.no.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.pa.pdf" Guid="{A79F0D0C-C954-40BF-B44A-99D518B0505C}">
+                <File Id="RAAS_Client.pa.pdf" KeyPath="yes" Source=".\help\RAAS Client.pa.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.pdf" Guid="{4930DA4F-03E4-4942-A8AC-A63E8FDED308}">
+                <File Id="RAAS_Client.pdf" KeyPath="yes" Source=".\help\RAAS Client.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.pl.pdf" Guid="{6E79B45E-3D88-47BA-935A-E7DBCF22344F}">
+                <File Id="RAAS_Client.pl.pdf" KeyPath="yes" Source=".\help\RAAS Client.pl.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ps.pdf" Guid="{FE493842-8034-4C50-8094-8AA41760FAD1}">
+                <File Id="RAAS_Client.ps.pdf" KeyPath="yes" Source=".\help\RAAS Client.ps.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.pt_BR.pdf" Guid="{A581D600-4A5A-49A2-AA35-A0147E6B8953}">
+                <File Id="RAAS_Client.pt_BR.pdf" KeyPath="yes" Source=".\help\RAAS Client.pt-BR.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.pt_PT.pdf" Guid="{AFBE7B7E-0763-4687-9A99-A7CA5580E02E}">
+                <File Id="RAAS_Client.pt_PT.pdf" KeyPath="yes" Source=".\help\RAAS Client.pt-PT.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ro.pdf" Guid="{52B4B4F0-C6FB-46C5-9BF6-C6D3E6B68EAB}">
+                <File Id="RAAS_Client.ro.pdf" KeyPath="yes" Source=".\help\RAAS Client.ro.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ru.pdf" Guid="{29C6576D-FF53-4EE9-9A4E-B18FAF69AD6D}">
+                <File Id="RAAS_Client.ru.pdf" KeyPath="yes" Source=".\help\RAAS Client.ru.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.rw.pdf" Guid="{54846ABE-2DDC-4A11-A2BC-4F2A0C539A52}">
+                <File Id="RAAS_Client.rw.pdf" KeyPath="yes" Source=".\help\RAAS Client.rw.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.sd.pdf" Guid="{3F98C6EB-6E1C-4C8A-BA0B-1660F7DC9C0F}">
+                <File Id="RAAS_Client.sd.pdf" KeyPath="yes" Source=".\help\RAAS Client.sd.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.si.pdf" Guid="{42AD57B9-AE89-4784-996E-4659128D5EEB}">
+                <File Id="RAAS_Client.si.pdf" KeyPath="yes" Source=".\help\RAAS Client.si.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.sk.pdf" Guid="{073DCCFC-79C8-4898-A828-19849B1803F4}">
+                <File Id="RAAS_Client.sk.pdf" KeyPath="yes" Source=".\help\RAAS Client.sk.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.sl.pdf" Guid="{5E01F899-E3B0-47C5-9ACD-E0419798F81B}">
+                <File Id="RAAS_Client.sl.pdf" KeyPath="yes" Source=".\help\RAAS Client.sl.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.sn.pdf" Guid="{57EF5D66-B64D-4511-847D-2B0725148C65}">
+                <File Id="RAAS_Client.sn.pdf" KeyPath="yes" Source=".\help\RAAS Client.sn.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.so.pdf" Guid="{5FB30C1C-5D7F-4B38-B2C7-1AAFD4E002B1}">
+                <File Id="RAAS_Client.so.pdf" KeyPath="yes" Source=".\help\RAAS Client.so.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.sq.pdf" Guid="{DE325A84-9180-4F56-8CFE-4E67439245C8}">
+                <File Id="RAAS_Client.sq.pdf" KeyPath="yes" Source=".\help\RAAS Client.sq.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.sr.pdf" Guid="{0EFE798A-7811-438F-B927-47B0D3FA35A1}">
+                <File Id="RAAS_Client.sr.pdf" KeyPath="yes" Source=".\help\RAAS Client.sr.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.su.pdf" Guid="{7B05D8D9-6B2E-4637-9812-625A62719A0E}">
+                <File Id="RAAS_Client.su.pdf" KeyPath="yes" Source=".\help\RAAS Client.su.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.sv.pdf" Guid="{2C87885F-6998-461A-BCC4-A4753E930FDF}">
+                <File Id="RAAS_Client.sv.pdf" KeyPath="yes" Source=".\help\RAAS Client.sv.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.sw.pdf" Guid="{81BB468C-20E4-40F2-ABFA-0731CBF2BA8D}">
+                <File Id="RAAS_Client.sw.pdf" KeyPath="yes" Source=".\help\RAAS Client.sw.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ta.pdf" Guid="{D0AAACAC-0384-49AB-A876-C92C77E6E489}">
+                <File Id="RAAS_Client.ta.pdf" KeyPath="yes" Source=".\help\RAAS Client.ta.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.te.pdf" Guid="{7D9CCDCC-F887-44F8-A5DB-5F1407274CF1}">
+                <File Id="RAAS_Client.te.pdf" KeyPath="yes" Source=".\help\RAAS Client.te.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.tg.pdf" Guid="{3EF021A2-2B23-4F83-BCFA-2D6F79902440}">
+                <File Id="RAAS_Client.tg.pdf" KeyPath="yes" Source=".\help\RAAS Client.tg.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.th.pdf" Guid="{CDBA6681-DAFC-48C5-91F3-757FA00E05D1}">
+                <File Id="RAAS_Client.th.pdf" KeyPath="yes" Source=".\help\RAAS Client.th.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.tk.pdf" Guid="{C41CF610-125B-4721-A316-ECABEEA23B3F}">
+                <File Id="RAAS_Client.tk.pdf" KeyPath="yes" Source=".\help\RAAS Client.tk.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.tl.pdf" Guid="{51EC4318-5285-45D4-8A57-A0AAF59092D8}">
+                <File Id="RAAS_Client.tl.pdf" KeyPath="yes" Source=".\help\RAAS Client.tl.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.tr.pdf" Guid="{78605019-0EC4-4D5B-AFB2-2BDCFA8B2CD2}">
+                <File Id="RAAS_Client.tr.pdf" KeyPath="yes" Source=".\help\RAAS Client.tr.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.tt.pdf" Guid="{84DD3ACC-E7C7-4B0A-B387-60B2562E700F}">
+                <File Id="RAAS_Client.tt.pdf" KeyPath="yes" Source=".\help\RAAS Client.tt.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ug.pdf" Guid="{CAEFDD62-569D-4B94-B3ED-9630E8DD1990}">
+                <File Id="RAAS_Client.ug.pdf" KeyPath="yes" Source=".\help\RAAS Client.ug.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.uk.pdf" Guid="{C8091245-B890-4492-B951-E473D8475491}">
+                <File Id="RAAS_Client.uk.pdf" KeyPath="yes" Source=".\help\RAAS Client.uk.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ur_IN.pdf" Guid="{B93FDB7A-9E21-4EDA-B0D8-40581E44FDC9}">
+                <File Id="RAAS_Client.ur_IN.pdf" KeyPath="yes" Source=".\help\RAAS Client.ur-IN.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.ur.pdf" Guid="{57BBCCB7-56C5-4C42-9000-3F5BD678A58A}">
+                <File Id="RAAS_Client.ur.pdf" KeyPath="yes" Source=".\help\RAAS Client.ur.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.uz.pdf" Guid="{45059235-E9E2-4C42-96B4-428B10DA9B40}">
+                <File Id="RAAS_Client.uz.pdf" KeyPath="yes" Source=".\help\RAAS Client.uz.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.vi.pdf" Guid="{18303F1B-A657-4564-8A84-9AF1C4DF2244}">
+                <File Id="RAAS_Client.vi.pdf" KeyPath="yes" Source=".\help\RAAS Client.vi.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.xh.pdf" Guid="{75139543-486F-473F-B75E-5C033783EBD9}">
+                <File Id="RAAS_Client.xh.pdf" KeyPath="yes" Source=".\help\RAAS Client.xh.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.yi.pdf" Guid="{1BB9DA06-DB39-4FAB-9E45-0E030579A47A}">
+                <File Id="RAAS_Client.yi.pdf" KeyPath="yes" Source=".\help\RAAS Client.yi.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.yo.pdf" Guid="{BF1972F1-62A6-41AD-AD19-5FD888E1C242}">
+                <File Id="RAAS_Client.yo.pdf" KeyPath="yes" Source=".\help\RAAS Client.yo.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.zh_CN.pdf" Guid="{10625918-7E47-4D00-A637-514A977BA402}">
+                <File Id="RAAS_Client.zh_CN.pdf" KeyPath="yes" Source=".\help\RAAS Client.zh-CN.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.zh_TW.pdf" Guid="{3B2A3A2D-04B6-4AEF-A5E2-1E7B81C4C3D9}">
+                <File Id="RAAS_Client.zh_TW.pdf" KeyPath="yes" Source=".\help\RAAS Client.zh-TW.pdf" />
+            </Component>
+            <Component Id="RAAS_Client.zu.pdf" Guid="{6DFD6D8C-B6B2-4929-9D41-8C61410074CC}">
+                <File Id="RAAS_Client.zu.pdf" KeyPath="yes" Source=".\help\RAAS Client.zu.pdf" />
+            </Component>
+            <Component Id="Serilog.dll" Guid="{DAFB9957-38EB-44EE-A6D7-CB5A7F40C550}">
+                <File Id="Serilog.dll" KeyPath="yes" Source=".\openremote\openremote\bin\release\Serilog.dll" />
+            </Component>
+            <Component Id="Serilog.Sinks.File.dll" Guid="{3447F813-FE34-470C-B4FA-6C5E8C95F891}">
+                <File Id="Serilog.Sinks.File.dll" KeyPath="yes" Source=".\openremote\openremote\bin\release\Serilog.Sinks.File.dll" />
+            </Component>
+            <Component Id="Serilog.Sinks.File.pdb" Guid="{AE4D5462-2A40-4A63-9634-CAD977E5C50A}">
+                <File Id="Serilog.Sinks.File.pdb" KeyPath="yes" Source=".\openremote\openremote\bin\release\Serilog.Sinks.File.pdb" />
+            </Component>
+            <Component Id="openremote.exe" Guid="{CD115CAF-37E2-42ED-A8A2-60DA24EF7C95}">
+                <File Id="openremote.exe" KeyPath="yes" Source=".\openremote\openremote\bin\release\openremote.exe" />
+            </Component>
+            <Component Id="openremote.exe.config" Guid="{53A6043C-FC5C-4732-9A65-1DF368BCEDDA}">
+                <File Id="openremote.exe.config" KeyPath="yes" Source=".\openremote\openremote\bin\release\openremote.exe.config" />
+            </Component>
+            <Component Id="openremote.pdb" Guid="{4EE9F68E-425D-4B70-A49D-16F67B241541}">
+                <File Id="openremote.pdb" KeyPath="yes" Source=".\openremote\openremote\bin\release\openremote.pdb" />
+            </Component>
+			<Directory Id="af" Name="af">
+			<Component Id="openremote.resources.dll" Guid="{58D53FA0-7A58-4969-A39F-7BA0B8F366B3}">
+				<File Id="openremote.resources.dll" KeyPath="yes" Source=".\openremote\openremote\bin\release\af\openremote.resources.dll" />
+			</Component>
+			</Directory>
+			<Directory Id="am" Name="am">
+				<Component Id="openremote.resources.dll_1" Guid="{9DF143D4-D8D6-4032-B6DC-35005CC3CBC3}">
+					<File Id="openremote.resources.dll_1" KeyPath="yes" Source=".\openremote\openremote\bin\release\am\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ar" Name="ar">
+				<Component Id="openremote.resources.dll_2" Guid="{9AF719AA-69C6-4DBC-A777-0AABF1D22472}">
+					<File Id="openremote.resources.dll_2" KeyPath="yes" Source=".\openremote\openremote\bin\release\ar\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="az" Name="az">
+				<Component Id="openremote.resources.dll_3" Guid="{C8D172A8-DBCD-441D-A61C-A3FF3FBD2CCB}">
+					<File Id="openremote.resources.dll_3" KeyPath="yes" Source=".\openremote\openremote\bin\release\az\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="be" Name="be">
+				<Component Id="openremote.resources.dll_4" Guid="{2B868486-803A-42A3-B928-D15F4AF21873}">
+					<File Id="openremote.resources.dll_4" KeyPath="yes" Source=".\openremote\openremote\bin\release\be\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="bg" Name="bg">
+				<Component Id="openremote.resources.dll_5" Guid="{E0799024-37F1-4D12-BBE5-A9AC57082727}">
+					<File Id="openremote.resources.dll_5" KeyPath="yes" Source=".\openremote\openremote\bin\release\bg\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="bs" Name="bs">
+				<Component Id="openremote.resources.dll_6" Guid="{CA083C81-8CE2-47CA-AFCF-F71B4CB7E7D9}">
+					<File Id="openremote.resources.dll_6" KeyPath="yes" Source=".\openremote\openremote\bin\release\bs\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ca" Name="ca">
+				<Component Id="openremote.resources.dll_7" Guid="{0A677B5B-8E0D-494C-AA0A-170BEFC81353}">
+					<File Id="openremote.resources.dll_7" KeyPath="yes" Source=".\openremote\openremote\bin\release\ca\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="co" Name="co">
+				<Component Id="openremote.resources.dll_8" Guid="{3AE9371C-20EC-4B85-B868-C51202956ABE}">
+					<File Id="openremote.resources.dll_8" KeyPath="yes" Source=".\openremote\openremote\bin\release\co\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="cs" Name="cs">
+				<Component Id="openremote.resources.dll_9" Guid="{1724947D-FA67-45E6-9BF4-860776374D20}">
+					<File Id="openremote.resources.dll_9" KeyPath="yes" Source=".\openremote\openremote\bin\release\cs\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="cy" Name="cy">
+				<Component Id="openremote.resources.dll_10" Guid="{50E90BA4-91EC-4C82-8503-658B9528C9B1}">
+					<File Id="openremote.resources.dll_10" KeyPath="yes" Source=".\openremote\openremote\bin\release\cy\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="da" Name="da">
+				<Component Id="openremote.resources.dll_11" Guid="{99D03C36-2365-4D99-AFF2-FE2154892746}">
+					<File Id="openremote.resources.dll_11" KeyPath="yes" Source=".\openremote\openremote\bin\release\da\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="de" Name="de">
+				<Component Id="openremote.resources.dll_12" Guid="{F3A1D865-7B1B-40F6-9189-A70FEDE86323}">
+					<File Id="openremote.resources.dll_12" KeyPath="yes" Source=".\openremote\openremote\bin\release\de\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="el" Name="el">
+				<Component Id="openremote.resources.dll_13" Guid="{F84E0185-431B-46C3-9C80-92ABB33216D1}">
+					<File Id="openremote.resources.dll_13" KeyPath="yes" Source=".\openremote\openremote\bin\release\el\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="en_US" Name="en-US">
+				<Component Id="openremote.resources.dll_14" Guid="{D2A09E6F-5AD0-4212-846B-AEFC100FA0D4}">
+					<File Id="openremote.resources.dll_14" KeyPath="yes" Source=".\openremote\openremote\bin\release\en-US\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="eo" Name="eo">
+				<Component Id="openremote.resources.dll_15" Guid="{C3A2E9D9-8748-4930-AE6F-387B3814C6D3}">
+					<File Id="openremote.resources.dll_15" KeyPath="yes" Source=".\openremote\openremote\bin\release\eo\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="es" Name="es">
+				<Component Id="openremote.resources.dll_16" Guid="{CFCF7759-4A58-4013-9957-556CB90FAEFA}">
+					<File Id="openremote.resources.dll_16" KeyPath="yes" Source=".\openremote\openremote\bin\release\es\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="et" Name="et">
+				<Component Id="openremote.resources.dll_17" Guid="{EE401CA2-9047-4EA7-9840-715DC77862A8}">
+					<File Id="openremote.resources.dll_17" KeyPath="yes" Source=".\openremote\openremote\bin\release\et\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="eu" Name="eu">
+				<Component Id="openremote.resources.dll_18" Guid="{B3948563-C75C-437B-B692-8F44D0B3077B}">
+					<File Id="openremote.resources.dll_18" KeyPath="yes" Source=".\openremote\openremote\bin\release\eu\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="fa" Name="fa">
+				<Component Id="openremote.resources.dll_19" Guid="{EEB65842-E304-4DC1-B647-CEC4C5AC1660}">
+					<File Id="openremote.resources.dll_19" KeyPath="yes" Source=".\openremote\openremote\bin\release\fa\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="fi" Name="fi">
+				<Component Id="openremote.resources.dll_20" Guid="{F4BDE607-DFEF-4CC8-9C03-1B469C70B881}">
+					<File Id="openremote.resources.dll_20" KeyPath="yes" Source=".\openremote\openremote\bin\release\fi\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="fil_PH" Name="fil-PH">
+				<Component Id="openremote.resources.dll_21" Guid="{139F7F35-DA82-4083-937E-3E9BC1A429D0}">
+					<File Id="openremote.resources.dll_21" KeyPath="yes" Source=".\openremote\openremote\bin\release\fil-PH\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="fr" Name="fr">
+				<Component Id="openremote.resources.dll_22" Guid="{833218E8-3732-41F9-A36D-24D62430984B}">
+					<File Id="openremote.resources.dll_22" KeyPath="yes" Source=".\openremote\openremote\bin\release\fr\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="fr_HT" Name="fr-HT">
+				<Component Id="openremote.resources.dll_23" Guid="{B5ABC7D2-8F36-4FAF-BF18-4957C9A62915}">
+					<File Id="openremote.resources.dll_23" KeyPath="yes" Source=".\openremote\openremote\bin\release\fr-HT\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ga" Name="ga">
+				<Component Id="openremote.resources.dll_24" Guid="{385DD04E-261C-42E6-91FB-B79FA8A7B3DE}">
+					<File Id="openremote.resources.dll_24" KeyPath="yes" Source=".\openremote\openremote\bin\release\ga\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="gd" Name="gd">
+				<Component Id="openremote.resources.dll_25" Guid="{48D79938-E362-4308-A855-53C99644BD93}">
+					<File Id="openremote.resources.dll_25" KeyPath="yes" Source=".\openremote\openremote\bin\release\gd\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="gl" Name="gl">
+				<Component Id="openremote.resources.dll_26" Guid="{1DD04E0A-0000-4986-9FC0-534728C7975A}">
+					<File Id="openremote.resources.dll_26" KeyPath="yes" Source=".\openremote\openremote\bin\release\gl\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="gu" Name="gu">
+				<Component Id="openremote.resources.dll_27" Guid="{E29D0329-BEAA-46C8-95B6-E090218224D0}">
+					<File Id="openremote.resources.dll_27" KeyPath="yes" Source=".\openremote\openremote\bin\release\gu\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ha" Name="ha">
+				<Component Id="openremote.resources.dll_28" Guid="{5B6C1714-8099-4600-8CC3-F70B006849B0}">
+					<File Id="openremote.resources.dll_28" KeyPath="yes" Source=".\openremote\openremote\bin\release\ha\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="haw" Name="haw">
+				<Component Id="openremote.resources.dll_29" Guid="{5DCC21CA-FF9D-4461-857E-04447EBA5EB1}">
+					<File Id="openremote.resources.dll_29" KeyPath="yes" Source=".\openremote\openremote\bin\release\haw\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="hi" Name="hi">
+				<Component Id="openremote.resources.dll_30" Guid="{06F3C477-7348-473E-BAC7-811162FFC75C}">
+					<File Id="openremote.resources.dll_30" KeyPath="yes" Source=".\openremote\openremote\bin\release\hi\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="hr" Name="hr">
+				<Component Id="openremote.resources.dll_31" Guid="{DC377133-C6EA-4371-AA2D-4426D7B1A03F}">
+					<File Id="openremote.resources.dll_31" KeyPath="yes" Source=".\openremote\openremote\bin\release\hr\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="hu" Name="hu">
+				<Component Id="openremote.resources.dll_32" Guid="{ECF686C3-5E87-4A07-9ADD-07D841186B71}">
+					<File Id="openremote.resources.dll_32" KeyPath="yes" Source=".\openremote\openremote\bin\release\hu\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="hy" Name="hy">
+				<Component Id="openremote.resources.dll_33" Guid="{335446D5-D640-468B-8EDA-D9C8600BD1BA}">
+					<File Id="openremote.resources.dll_33" KeyPath="yes" Source=".\openremote\openremote\bin\release\hy\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="id" Name="id">
+				<Component Id="openremote.resources.dll_34" Guid="{27B84A8C-68F3-459A-B5D0-AE1FF306633A}">
+					<File Id="openremote.resources.dll_34" KeyPath="yes" Source=".\openremote\openremote\bin\release\id\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ig" Name="ig">
+				<Component Id="openremote.resources.dll_35" Guid="{8A9BD321-B88A-4340-9A9D-7ABD65FEECB6}">
+					<File Id="openremote.resources.dll_35" KeyPath="yes" Source=".\openremote\openremote\bin\release\ig\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="is" Name="is">
+				<Component Id="openremote.resources.dll_36" Guid="{33C6AB42-0779-4C2F-A519-62BB1F8770E5}">
+					<File Id="openremote.resources.dll_36" KeyPath="yes" Source=".\openremote\openremote\bin\release\is\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="it" Name="it">
+				<Component Id="openremote.resources.dll_37" Guid="{7F3341B6-C600-4649-A6F3-1AAB124BDC6D}">
+					<File Id="openremote.resources.dll_37" KeyPath="yes" Source=".\openremote\openremote\bin\release\it\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ja" Name="ja">
+				<Component Id="openremote.resources.dll_38" Guid="{C4AE43BF-866A-4BD9-AF9B-1DA3B510364F}">
+					<File Id="openremote.resources.dll_38" KeyPath="yes" Source=".\openremote\openremote\bin\release\ja\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="jv" Name="jv">
+				<Component Id="openremote.resources.dll_39" Guid="{2D7C1AD3-70F5-43D9-9A75-DCF8FB58948C}">
+					<File Id="openremote.resources.dll_39" KeyPath="yes" Source=".\openremote\openremote\bin\release\jv\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ka" Name="ka">
+				<Component Id="openremote.resources.dll_40" Guid="{F8FBE6E2-107B-4114-95AE-778927DC3855}">
+					<File Id="openremote.resources.dll_40" KeyPath="yes" Source=".\openremote\openremote\bin\release\ka\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="kk" Name="kk">
+				<Component Id="openremote.resources.dll_41" Guid="{F3AB419D-0103-4DEB-8063-D41EFF666B0F}">
+					<File Id="openremote.resources.dll_41" KeyPath="yes" Source=".\openremote\openremote\bin\release\kk\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="km" Name="km">
+				<Component Id="openremote.resources.dll_42" Guid="{1E1DE516-CD73-4750-9E1D-621236AED915}">
+					<File Id="openremote.resources.dll_42" KeyPath="yes" Source=".\openremote\openremote\bin\release\km\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="kn" Name="kn">
+				<Component Id="openremote.resources.dll_43" Guid="{AA2FB6BD-F1EE-4D16-A99D-5B9CC5FEC036}">
+					<File Id="openremote.resources.dll_43" KeyPath="yes" Source=".\openremote\openremote\bin\release\kn\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ko" Name="ko">
+				<Component Id="openremote.resources.dll_44" Guid="{7223A9EE-AD1B-4662-97E2-798F6FC1878C}">
+					<File Id="openremote.resources.dll_44" KeyPath="yes" Source=".\openremote\openremote\bin\release\ko\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ku" Name="ku">
+				<Component Id="openremote.resources.dll_45" Guid="{988B1E72-D5F9-4FC8-AE51-EC9E7DCB352F}">
+					<File Id="openremote.resources.dll_45" KeyPath="yes" Source=".\openremote\openremote\bin\release\ku\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ky" Name="ky">
+				<Component Id="openremote.resources.dll_46" Guid="{C45340C9-26E3-42EE-BFF8-FEBA3C088C94}">
+					<File Id="openremote.resources.dll_46" KeyPath="yes" Source=".\openremote\openremote\bin\release\ky\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="la" Name="la">
+				<Component Id="openremote.resources.dll_47" Guid="{CE81DDD2-D350-44EF-B1B0-DA329887A30B}">
+					<File Id="openremote.resources.dll_47" KeyPath="yes" Source=".\openremote\openremote\bin\release\la\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="lo" Name="lo">
+				<Component Id="openremote.resources.dll_48" Guid="{E697A329-475F-40FB-9A89-3C0F75DF96D9}">
+					<File Id="openremote.resources.dll_48" KeyPath="yes" Source=".\openremote\openremote\bin\release\lo\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="lt" Name="lt">
+				<Component Id="openremote.resources.dll_49" Guid="{8306E079-F3A5-4325-A7E2-0D1915CBE40E}">
+					<File Id="openremote.resources.dll_49" KeyPath="yes" Source=".\openremote\openremote\bin\release\lt\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="lv" Name="lv">
+				<Component Id="openremote.resources.dll_50" Guid="{C72BAE58-0B51-483A-BAD7-9CE7FA1C9A73}">
+					<File Id="openremote.resources.dll_50" KeyPath="yes" Source=".\openremote\openremote\bin\release\lv\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="mg" Name="mg">
+				<Component Id="openremote.resources.dll_51" Guid="{327E8A82-5A12-4A54-B4EE-184E0BD6AFD1}">
+					<File Id="openremote.resources.dll_51" KeyPath="yes" Source=".\openremote\openremote\bin\release\mg\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="mi" Name="mi">
+				<Component Id="openremote.resources.dll_52" Guid="{CBD58E9E-B36D-4C7E-A4E8-0C6536051800}">
+					<File Id="openremote.resources.dll_52" KeyPath="yes" Source=".\openremote\openremote\bin\release\mi\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="mk" Name="mk">
+				<Component Id="openremote.resources.dll_53" Guid="{407BE7E6-51E0-4FF9-9EC4-3D66B949FBDB}">
+					<File Id="openremote.resources.dll_53" KeyPath="yes" Source=".\openremote\openremote\bin\release\mk\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ml" Name="ml">
+				<Component Id="raasclient.resources.dll_54" Guid="{7A9E2FA4-9599-4DB2-949E-97F449B17E5D}">
+					<File Id="raasclient.resources.dll_54" KeyPath="yes" Source=".\raasclient\raasclient\bin\ml\raasclient.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="mn" Name="mn">
+				<Component Id="openremote.resources.dll_54" Guid="{2D041FA5-524C-4CDF-8D7A-715D84672F6B}">
+					<File Id="openremote.resources.dll_54" KeyPath="yes" Source=".\openremote\openremote\bin\release\mn\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="mr" Name="mr">
+				<Component Id="openremote.resources.dll_55" Guid="{3AB5ED1F-1F1C-4CFB-8824-67535E299D37}">
+					<File Id="openremote.resources.dll_55" KeyPath="yes" Source=".\openremote\openremote\bin\release\mr\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ms" Name="ms">
+				<Component Id="openremote.resources.dll_56" Guid="{8E21C067-9605-426C-9043-550BE91BAC80}">
+					<File Id="openremote.resources.dll_56" KeyPath="yes" Source=".\openremote\openremote\bin\release\ms\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="mt" Name="mt">
+				<Component Id="openremote.resources.dll_57" Guid="{CA31C47A-C880-4082-8440-71C985D8BF75}">
+					<File Id="openremote.resources.dll_57" KeyPath="yes" Source=".\openremote\openremote\bin\release\mt\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="nb_NO" Name="nb-NO">
+				<Component Id="openremote.resources.dll_58" Guid="{735D9101-5865-47FA-BCC1-0DBD9DE8D10D}">
+					<File Id="openremote.resources.dll_58" KeyPath="yes" Source=".\openremote\openremote\bin\release\nb-NO\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ne" Name="ne">
+				<Component Id="openremote.resources.dll_59" Guid="{9BD4749F-3BBD-4447-9EA5-FA67F903A73E}">
+					<File Id="openremote.resources.dll_59" KeyPath="yes" Source=".\openremote\openremote\bin\release\ne\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="nl" Name="nl">
+				<Component Id="openremote.resources.dll_60" Guid="{18F763D1-3FD1-47EC-9493-F554532F67E2}">
+					<File Id="openremote.resources.dll_60" KeyPath="yes" Source=".\openremote\openremote\bin\release\nl\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="nn_NO" Name="nn-NO">
+				<Component Id="openremote.resources.dll_61" Guid="{61923FB2-B65F-4ED3-B115-54C6A695E5A7}">
+					<File Id="openremote.resources.dll_61" KeyPath="yes" Source=".\openremote\openremote\bin\release\nn-NO\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="no" Name="no">
+				<Component Id="openremote.resources.dll_62" Guid="{8AA35A41-0433-471F-8E55-DD40BDFBCA81}">
+					<File Id="openremote.resources.dll_62" KeyPath="yes" Source=".\openremote\openremote\bin\release\no\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="or" Name="or">
+				<Component Id="openremote.resources.dll_63" Guid="{0D84F1CA-471B-4B5A-B369-52894CBFCB59}">
+					<File Id="openremote.resources.dll_63" KeyPath="yes" Source=".\openremote\openremote\bin\release\or\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="pa" Name="pa">
+				<Component Id="openremote.resources.dll_64" Guid="{1A56B677-F1FF-4188-99E3-E6FAEA0C1AFC}">
+					<File Id="openremote.resources.dll_64" KeyPath="yes" Source=".\openremote\openremote\bin\release\pa\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="pl" Name="pl">
+				<Component Id="openremote.resources.dll_65" Guid="{D86CD28C-07C2-4EA1-A9D4-E43D046429BE}">
+					<File Id="openremote.resources.dll_65" KeyPath="yes" Source=".\openremote\openremote\bin\release\pl\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ps" Name="ps">
+				<Component Id="openremote.resources.dll_66" Guid="{2703A395-2290-4428-A202-2C3C8241FF43}">
+					<File Id="openremote.resources.dll_66" KeyPath="yes" Source=".\openremote\openremote\bin\release\ps\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="pt_BR" Name="pt-BR">
+				<Component Id="openremote.resources.dll_67" Guid="{834315AA-0E7C-42A9-ACF9-1FF73357780D}">
+					<File Id="openremote.resources.dll_67" KeyPath="yes" Source=".\openremote\openremote\bin\release\pt-BR\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="pt_PT" Name="pt-PT">
+				<Component Id="openremote.resources.dll_68" Guid="{75057B17-CCA9-4562-96C0-38E19057A457}">
+					<File Id="openremote.resources.dll_68" KeyPath="yes" Source=".\openremote\openremote\bin\release\pt-PT\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ro" Name="ro">
+				<Component Id="openremote.resources.dll_69" Guid="{C05A0C50-516D-4D8F-95C2-4A1F4F4DAC34}">
+					<File Id="openremote.resources.dll_69" KeyPath="yes" Source=".\openremote\openremote\bin\release\ro\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ru" Name="ru">
+				<Component Id="openremote.resources.dll_70" Guid="{BFA7B1DD-2007-44BE-851F-0D2CD28773F5}">
+					<File Id="openremote.resources.dll_70" KeyPath="yes" Source=".\openremote\openremote\bin\release\ru\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="rw" Name="rw">
+				<Component Id="openremote.resources.dll_71" Guid="{2FE70FA2-68E8-4037-A69C-F056D97B7AC8}">
+					<File Id="openremote.resources.dll_71" KeyPath="yes" Source=".\openremote\openremote\bin\release\rw\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="sd" Name="sd">
+				<Component Id="openremote.resources.dll_72" Guid="{A95A731B-616E-4B16-AC9E-367E2E0547DC}">
+					<File Id="openremote.resources.dll_72" KeyPath="yes" Source=".\openremote\openremote\bin\release\sd\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="si" Name="si">
+				<Component Id="openremote.resources.dll_73" Guid="{7D086E3E-833C-4508-A5BC-D62D18D89403}">
+					<File Id="openremote.resources.dll_73" KeyPath="yes" Source=".\openremote\openremote\bin\release\si\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="sk" Name="sk">
+				<Component Id="openremote.resources.dll_74" Guid="{FD0F88E0-B5C2-4B26-86D4-0BF9C6D1746B}">
+					<File Id="openremote.resources.dll_74" KeyPath="yes" Source=".\openremote\openremote\bin\release\sk\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="sl" Name="sl">
+				<Component Id="openremote.resources.dll_75" Guid="{09ACB55F-AB5B-4743-9FEF-0EE25208E601}">
+					<File Id="openremote.resources.dll_75" KeyPath="yes" Source=".\openremote\openremote\bin\release\sl\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="sn" Name="sn">
+				<Component Id="openremote.resources.dll_76" Guid="{B77C27D2-FB20-4994-B286-17643557A0B5}">
+					<File Id="openremote.resources.dll_76" KeyPath="yes" Source=".\openremote\openremote\bin\release\sn\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="so" Name="so">
+				<Component Id="openremote.resources.dll_77" Guid="{0328E507-947D-4E92-A564-EEF51D0B4A36}">
+					<File Id="openremote.resources.dll_77" KeyPath="yes" Source=".\openremote\openremote\bin\release\so\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="sq" Name="sq">
+				<Component Id="openremote.resources.dll_78" Guid="{C0DE4B48-5512-4CB5-B161-7204112F713E}">
+					<File Id="openremote.resources.dll_78" KeyPath="yes" Source=".\openremote\openremote\bin\release\sq\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="sr" Name="sr">
+				<Component Id="openremote.resources.dll_79" Guid="{A6287B9A-32F4-4022-AFB2-F9A3C69D86B0}">
+					<File Id="openremote.resources.dll_79" KeyPath="yes" Source=".\openremote\openremote\bin\release\sr\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="st" Name="st">
+				<Component Id="openremote.resources.dll_80" Guid="{A0D251CF-F92C-4D9C-9E71-19A2A7969E26}">
+					<File Id="openremote.resources.dll_80" KeyPath="yes" Source=".\openremote\openremote\bin\release\st\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="su" Name="su">
+				<Component Id="openremote.resources.dll_81" Guid="{4CECD21A-10C4-465C-AC2E-E1B89AF47D99}">
+					<File Id="openremote.resources.dll_81" KeyPath="yes" Source=".\openremote\openremote\bin\release\su\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="sv" Name="sv">
+				<Component Id="openremote.resources.dll_82" Guid="{9EBB0BBF-1EAC-422A-B8F6-2B39840021B0}">
+					<File Id="openremote.resources.dll_82" KeyPath="yes" Source=".\openremote\openremote\bin\release\sv\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="sw" Name="sw">
+				<Component Id="openremote.resources.dll_83" Guid="{4CE453B9-6C2E-4D85-A996-558A428F3039}">
+					<File Id="openremote.resources.dll_83" KeyPath="yes" Source=".\openremote\openremote\bin\release\sw\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ta" Name="ta">
+				<Component Id="openremote.resources.dll_84" Guid="{50BBDAB2-3587-49A3-88EF-D67F4D1DCDDD}">
+					<File Id="openremote.resources.dll_84" KeyPath="yes" Source=".\openremote\openremote\bin\release\ta\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="te" Name="te">
+				<Component Id="openremote.resources.dll_85" Guid="{CF3252B2-93C4-4200-9D60-E075CA656F83}">
+					<File Id="openremote.resources.dll_85" KeyPath="yes" Source=".\openremote\openremote\bin\release\te\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="tg" Name="tg">
+				<Component Id="openremote.resources.dll_86" Guid="{6BEDA79B-1FEB-451A-BFDC-236E16CB99B2}">
+					<File Id="openremote.resources.dll_86" KeyPath="yes" Source=".\openremote\openremote\bin\release\tg\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="th" Name="th">
+				<Component Id="openremote.resources.dll_87" Guid="{C7B33731-8F73-4E08-A283-C5E044F1DE8E}">
+					<File Id="openremote.resources.dll_87" KeyPath="yes" Source=".\openremote\openremote\bin\release\th\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="tk" Name="tk">
+				<Component Id="openremote.resources.dll_88" Guid="{02D4135B-7866-4C60-811F-541D1516EE9A}">
+					<File Id="openremote.resources.dll_88" KeyPath="yes" Source=".\openremote\openremote\bin\release\tk\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="tr" Name="tr">
+				<Component Id="openremote.resources.dll_89" Guid="{FAE2480A-04BA-4DF2-BE55-7040311B0274}">
+					<File Id="openremote.resources.dll_89" KeyPath="yes" Source=".\openremote\openremote\bin\release\tr\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="tt" Name="tt">
+				<Component Id="openremote.resources.dll_90" Guid="{055F5827-4B81-4659-BDE9-EEE8C497C254}">
+					<File Id="openremote.resources.dll_90" KeyPath="yes" Source=".\openremote\openremote\bin\release\tt\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ug" Name="ug">
+				<Component Id="openremote.resources.dll_91" Guid="{D6D8E92B-B508-4C04-AFCF-F8B4440A9F32}">
+					<File Id="openremote.resources.dll_91" KeyPath="yes" Source=".\openremote\openremote\bin\release\ug\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="uk" Name="uk">
+				<Component Id="openremote.resources.dll_92" Guid="{60E98D3D-576C-4902-809C-0D09A45C6073}">
+					<File Id="openremote.resources.dll_92" KeyPath="yes" Source=".\openremote\openremote\bin\release\uk\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="ur" Name="ur">
+				<Component Id="openremote.resources.dll_93" Guid="{7BAF0C68-A9D2-41F0-9186-7B214308E25B}">
+					<File Id="openremote.resources.dll_93" KeyPath="yes" Source=".\openremote\openremote\bin\release\ur\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="uz" Name="uz">
+				<Component Id="openremote.resources.dll_94" Guid="{9D4082B1-8198-40A7-9384-D98183229682}">
+					<File Id="openremote.resources.dll_94" KeyPath="yes" Source=".\openremote\openremote\bin\release\uz\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="vi" Name="vi">
+				<Component Id="openremote.resources.dll_95" Guid="{E45BAA45-D136-4C63-8365-9756B3BDA2A3}">
+					<File Id="openremote.resources.dll_95" KeyPath="yes" Source=".\openremote\openremote\bin\release\vi\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="xh" Name="xh">
+				<Component Id="openremote.resources.dll_96" Guid="{4D317E25-A60B-43D1-B8C1-A8528E58C2A4}">
+					<File Id="openremote.resources.dll_96" KeyPath="yes" Source=".\openremote\openremote\bin\release\xh\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="yi" Name="yi">
+				<Component Id="openremote.resources.dll_97" Guid="{3F56134B-6B8B-4E49-9CC3-9382841F0D62}">
+					<File Id="openremote.resources.dll_97" KeyPath="yes" Source=".\openremote\openremote\bin\release\yi\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="yo" Name="yo">
+				<Component Id="openremote.resources.dll_98" Guid="{227A31F1-FC48-4598-82A0-F5443E882A69}">
+					<File Id="openremote.resources.dll_98" KeyPath="yes" Source=".\openremote\openremote\bin\release\yo\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="zh_CN" Name="zh-CN">
+				<Component Id="openremote.resources.dll_99" Guid="{8D0DED08-9603-42CA-8A53-2A68ADE5D3BB}">
+					<File Id="openremote.resources.dll_99" KeyPath="yes" Source=".\openremote\openremote\bin\release\zh-CN\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="zh_TW" Name="zh-TW">
+				<Component Id="openremote.resources.dll_100" Guid="{AAF93FA9-C643-4DE3-A8DF-57FFC1783567}">
+					<File Id="openremote.resources.dll_100" KeyPath="yes" Source=".\openremote\openremote\bin\release\zh-TW\openremote.resources.dll" />
+				</Component>
+			</Directory>
+			<Directory Id="zu">
+				<Component Id="openremote.resources.dll_101" Guid="{BF7CAEFE-D486-459B-9FFB-A3517F2C7723}">
+					<File Id="openremote.resources.dll_101" KeyPath="yes" Source=".\openremote\openremote\bin\release\zu\openremote.resources.dll" />
+				</Component>
+			</Directory>
+		</StandardDirectory>
+		<DirectoryRef Id="af">
+                <Component Id="rapps.resources.dll" Guid="{FA85B1D4-1DBF-42BF-8694-86434BBCF684}">
+                    <File Id="rapps.resources.dll" KeyPath="yes" Source=".\rapps\rapps\bin\af\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="am">
+                <Component Id="rapps.resources.dll_1" Guid="{D8A1A8E1-32FE-4A0F-B667-D59FC1CB4795}">
+                    <File Id="rapps.resources.dll_1" KeyPath="yes" Source=".\rapps\rapps\bin\am\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ar">
+                <Component Id="rapps.resources.dll_2" Guid="{AE7BBEDE-DFBE-4818-BA70-1ED6FF6E766F}">
+                    <File Id="rapps.resources.dll_2" KeyPath="yes" Source=".\rapps\rapps\bin\ar\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="az">
+                <Component Id="rapps.resources.dll_3" Guid="{15635CD0-9FE6-4DE7-B3B7-102FD46DA6FE}">
+                    <File Id="rapps.resources.dll_3" KeyPath="yes" Source=".\rapps\rapps\bin\az\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="be">
+                <Component Id="rapps.resources.dll_4" Guid="{585E9EBF-1036-4027-8CBB-C8322F4E9005}">
+                    <File Id="rapps.resources.dll_4" KeyPath="yes" Source=".\rapps\rapps\bin\be\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="bg">
+                <Component Id="rapps.resources.dll_5" Guid="{409EE203-567D-40DC-9CBB-2E6071B286C4}">
+                    <File Id="rapps.resources.dll_5" KeyPath="yes" Source=".\rapps\rapps\bin\bg\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="bs">
+                <Component Id="rapps.resources.dll_6" Guid="{AD17A1C9-578C-40C4-BC50-C1A72C934E6C}">
+                    <File Id="rapps.resources.dll_6" KeyPath="yes" Source=".\rapps\rapps\bin\bs\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ca">
+                <Component Id="rapps.resources.dll_7" Guid="{60637B50-E8E4-446A-AD60-BD8F312405D7}">
+                    <File Id="rapps.resources.dll_7" KeyPath="yes" Source=".\rapps\rapps\bin\ca\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="co">
+                <Component Id="rapps.resources.dll_8" Guid="{4F673C12-32E5-41F4-9CF6-4C38EFEE5AA9}">
+                    <File Id="rapps.resources.dll_8" KeyPath="yes" Source=".\rapps\rapps\bin\co\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="cs">
+                <Component Id="rapps.resources.dll_9" Guid="{D26A0197-51F8-4E6A-9C76-A3B9A78CBB96}">
+                    <File Id="rapps.resources.dll_9" KeyPath="yes" Source=".\rapps\rapps\bin\cs\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="cy">
+                <Component Id="rapps.resources.dll_10" Guid="{1CA7E528-8DD8-4A85-9482-AA5A9CC5DEA2}">
+                    <File Id="rapps.resources.dll_10" KeyPath="yes" Source=".\rapps\rapps\bin\cy\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="da">
+                <Component Id="rapps.resources.dll_11" Guid="{6230BA8E-3ADA-4CBA-BB98-60D8C236C5E2}">
+                    <File Id="rapps.resources.dll_11" KeyPath="yes" Source=".\rapps\rapps\bin\da\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="de">
+                <Component Id="rapps.resources.dll_12" Guid="{1DFE6FF0-7F28-4E25-A08B-FB037961D26F}">
+                    <File Id="rapps.resources.dll_12" KeyPath="yes" Source=".\rapps\rapps\bin\de\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="el">
+                <Component Id="rapps.resources.dll_13" Guid="{0812CF2D-14A7-464D-9740-485B0B50E00E}">
+                    <File Id="rapps.resources.dll_13" KeyPath="yes" Source=".\rapps\rapps\bin\el\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="en_US">
+                <Component Id="rapps.resources.dll_14" Guid="{45796856-6472-4328-ACB6-137E4D52B2A9}">
+                    <File Id="rapps.resources.dll_14" KeyPath="yes" Source=".\rapps\rapps\bin\en-US\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="eo">
+                <Component Id="rapps.resources.dll_15" Guid="{72389139-5D44-4D26-BC03-813FABFBDC0E}">
+                    <File Id="rapps.resources.dll_15" KeyPath="yes" Source=".\rapps\rapps\bin\eo\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="es">
+                <Component Id="rapps.resources.dll_16" Guid="{8803276A-4E82-4B24-AC8D-BAA18672BDE9}">
+                    <File Id="rapps.resources.dll_16" KeyPath="yes" Source=".\rapps\rapps\bin\es\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="et">
+                <Component Id="rapps.resources.dll_17" Guid="{52C3C9EE-8AC9-408A-A8B8-02A58F0C6462}">
+                    <File Id="rapps.resources.dll_17" KeyPath="yes" Source=".\rapps\rapps\bin\et\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="eu">
+                <Component Id="rapps.resources.dll_18" Guid="{C5E6D76D-DE65-45A4-92EC-C22FBE8F011C}">
+                    <File Id="rapps.resources.dll_18" KeyPath="yes" Source=".\rapps\rapps\bin\eu\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="fa">
+                <Component Id="rapps.resources.dll_19" Guid="{9847BDD8-02D3-4D34-BC4C-60C01E0C0B14}">
+                    <File Id="rapps.resources.dll_19" KeyPath="yes" Source=".\rapps\rapps\bin\fa\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="fi">
+                <Component Id="rapps.resources.dll_20" Guid="{E589FCF4-C13D-4310-BA36-AED66EC80220}">
+                    <File Id="rapps.resources.dll_20" KeyPath="yes" Source=".\rapps\rapps\bin\fi\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="fil_PH">
+                <Component Id="rapps.resources.dll_21" Guid="{7177FB5B-E3CF-4390-AB16-8B9E449779CF}">
+                    <File Id="rapps.resources.dll_21" KeyPath="yes" Source=".\rapps\rapps\bin\fil-PH\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="fr">
+                <Component Id="rapps.resources.dll_22" Guid="{231020E2-D002-463D-B06A-0B976EDB96B5}">
+                    <File Id="rapps.resources.dll_22" KeyPath="yes" Source=".\rapps\rapps\bin\fr\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="fr_HT">
+                <Component Id="rapps.resources.dll_23" Guid="{5253C4F9-92C5-4EB4-8FED-9FD3DB58AFFE}">
+                    <File Id="rapps.resources.dll_23" KeyPath="yes" Source=".\rapps\rapps\bin\fr-HT\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ga">
+                <Component Id="rapps.resources.dll_24" Guid="{507DE951-FF48-418C-8945-011A525E4B65}">
+                    <File Id="rapps.resources.dll_24" KeyPath="yes" Source=".\rapps\rapps\bin\ga\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="gd">
+                <Component Id="rapps.resources.dll_25" Guid="{8DCC019C-BE26-453A-A352-B2AEB71A433C}">
+                    <File Id="rapps.resources.dll_25" KeyPath="yes" Source=".\rapps\rapps\bin\gd\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="gl">
+                <Component Id="rapps.resources.dll_26" Guid="{29915CCC-29CE-40F0-9203-87EB4285066F}">
+                    <File Id="rapps.resources.dll_26" KeyPath="yes" Source=".\rapps\rapps\bin\gl\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="gu">
+                <Component Id="rapps.resources.dll_27" Guid="{417C058C-9402-4919-A2D1-B9C9952A2DB3}">
+                    <File Id="rapps.resources.dll_27" KeyPath="yes" Source=".\rapps\rapps\bin\gu\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ha">
+                <Component Id="rapps.resources.dll_28" Guid="{D7985BE1-E80C-4F57-96AD-7E4E3B62C070}">
+                    <File Id="rapps.resources.dll_28" KeyPath="yes" Source=".\rapps\rapps\bin\ha\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="haw">
+                <Component Id="rapps.resources.dll_29" Guid="{AA67B41D-7BDB-49D5-9BDC-1501974AD52C}">
+                    <File Id="rapps.resources.dll_29" KeyPath="yes" Source=".\rapps\rapps\bin\haw\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="hi">
+                <Component Id="rapps.resources.dll_30" Guid="{AF3B225F-5701-4168-956F-50F40ECC70EE}">
+                    <File Id="rapps.resources.dll_30" KeyPath="yes" Source=".\rapps\rapps\bin\hi\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="hr">
+                <Component Id="rapps.resources.dll_31" Guid="{4F8B3260-B4E3-456A-8264-33D9389652E2}">
+                    <File Id="rapps.resources.dll_31" KeyPath="yes" Source=".\rapps\rapps\bin\hr\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="hu">
+                <Component Id="rapps.resources.dll_32" Guid="{FB521436-29BE-41A9-9B12-C95F1A739D41}">
+                    <File Id="rapps.resources.dll_32" KeyPath="yes" Source=".\rapps\rapps\bin\hu\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="hy">
+                <Component Id="rapps.resources.dll_33" Guid="{BB4703DA-FADC-4020-B7E4-F3089CDE0175}">
+                    <File Id="rapps.resources.dll_33" KeyPath="yes" Source=".\rapps\rapps\bin\hy\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="id">
+                <Component Id="rapps.resources.dll_34" Guid="{E7149F83-879B-43DE-9FB2-CB31C93443A8}">
+                    <File Id="rapps.resources.dll_34" KeyPath="yes" Source=".\rapps\rapps\bin\id\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ig">
+                <Component Id="rapps.resources.dll_35" Guid="{182AE773-C4DE-4B4E-B04C-F5B561681437}">
+                    <File Id="rapps.resources.dll_35" KeyPath="yes" Source=".\rapps\rapps\bin\ig\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="is">
+                <Component Id="rapps.resources.dll_36" Guid="{ACA4C03D-47E9-41EB-8536-E622039EAEB2}">
+                    <File Id="rapps.resources.dll_36" KeyPath="yes" Source=".\rapps\rapps\bin\is\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="it">
+                <Component Id="rapps.resources.dll_37" Guid="{050DFC98-0B09-4103-BB2E-0B24CC927592}">
+                    <File Id="rapps.resources.dll_37" KeyPath="yes" Source=".\rapps\rapps\bin\it\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ja">
+                <Component Id="rapps.resources.dll_38" Guid="{FE025FE2-0F04-4526-84FE-C8E4523DA325}">
+                    <File Id="rapps.resources.dll_38" KeyPath="yes" Source=".\rapps\rapps\bin\ja\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="jv">
+                <Component Id="rapps.resources.dll_39" Guid="{9E351B3D-19B4-4A2B-AB85-120E81BA9BB8}">
+                    <File Id="rapps.resources.dll_39" KeyPath="yes" Source=".\rapps\rapps\bin\jv\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ka">
+                <Component Id="rapps.resources.dll_40" Guid="{2E5ADDB0-7EEB-417A-A792-5635216EC54E}">
+                    <File Id="rapps.resources.dll_40" KeyPath="yes" Source=".\rapps\rapps\bin\ka\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="kk">
+                <Component Id="rapps.resources.dll_41" Guid="{C8941CC2-60A3-4E70-9CC0-6A0D6BD2636A}">
+                    <File Id="rapps.resources.dll_41" KeyPath="yes" Source=".\rapps\rapps\bin\kk\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="km">
+                <Component Id="rapps.resources.dll_42" Guid="{05C883E4-C657-4AC1-A577-18C3D6033C41}">
+                    <File Id="rapps.resources.dll_42" KeyPath="yes" Source=".\rapps\rapps\bin\km\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="kn">
+                <Component Id="rapps.resources.dll_43" Guid="{BE04B6BB-DC96-4361-9DF4-F7687CB92E58}">
+                    <File Id="rapps.resources.dll_43" KeyPath="yes" Source=".\rapps\rapps\bin\kn\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ko">
+                <Component Id="rapps.resources.dll_44" Guid="{185FEA77-A4B9-4078-8C5E-51C806CDB187}">
+                    <File Id="rapps.resources.dll_44" KeyPath="yes" Source=".\rapps\rapps\bin\ko\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ku">
+                <Component Id="rapps.resources.dll_45" Guid="{5F2C8BEB-3E3E-4899-8A56-10689CD9CEB6}">
+                    <File Id="rapps.resources.dll_45" KeyPath="yes" Source=".\rapps\rapps\bin\ku\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ky">
+                <Component Id="rapps.resources.dll_46" Guid="{60F1409C-6C66-44F2-8D69-0C3E7C4ED346}">
+                    <File Id="rapps.resources.dll_46" KeyPath="yes" Source=".\rapps\rapps\bin\ky\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="la">
+                <Component Id="rapps.resources.dll_47" Guid="{8DFE625D-EAD1-47B6-A8FC-31D10CDA7A8F}">
+                    <File Id="rapps.resources.dll_47" KeyPath="yes" Source=".\rapps\rapps\bin\la\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="lo">
+                <Component Id="rapps.resources.dll_48" Guid="{BC1F6F92-10B0-4A8B-A662-6F26B92C87BD}">
+                    <File Id="rapps.resources.dll_48" KeyPath="yes" Source=".\rapps\rapps\bin\lo\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="lt">
+                <Component Id="rapps.resources.dll_49" Guid="{7B856919-6F6A-4C0B-8104-DE51A68D4CB7}">
+                    <File Id="rapps.resources.dll_49" KeyPath="yes" Source=".\rapps\rapps\bin\lt\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="lv">
+                <Component Id="rapps.resources.dll_50" Guid="{16E582A7-6428-434B-A909-364704BD12F2}">
+                    <File Id="rapps.resources.dll_50" KeyPath="yes" Source=".\rapps\rapps\bin\lv\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mg">
+                <Component Id="rapps.resources.dll_51" Guid="{70CAED58-7E58-4D7E-BEBF-FC233F42D324}">
+                    <File Id="rapps.resources.dll_51" KeyPath="yes" Source=".\rapps\rapps\bin\mg\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mi">
+                <Component Id="rapps.resources.dll_52" Guid="{F2A7A43C-7765-4C30-9E68-8A0AEE58F4F0}">
+                    <File Id="rapps.resources.dll_52" KeyPath="yes" Source=".\rapps\rapps\bin\mi\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mk">
+                <Component Id="rapps.resources.dll_53" Guid="{5DB765A9-9959-4547-84F5-A9D721D3232D}">
+                    <File Id="rapps.resources.dll_53" KeyPath="yes" Source=".\rapps\rapps\bin\mk\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ml">
+                <Component Id="rapps.resources.dll_54" Guid="{76464B95-5B93-4108-BF41-F673BB1EF4A2}">
+                    <File Id="rapps.resources.dll_54" KeyPath="yes" Source=".\rapps\rapps\bin\ml\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mn">
+                <Component Id="rapps.resources.dll_55" Guid="{D1F23054-246B-46E4-8705-E9DACF61E06B}">
+                    <File Id="rapps.resources.dll_55" KeyPath="yes" Source=".\rapps\rapps\bin\mn\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mr">
+                <Component Id="rapps.resources.dll_56" Guid="{DB954D43-82DE-4F61-AA1A-815100A2580A}">
+                    <File Id="rapps.resources.dll_56" KeyPath="yes" Source=".\rapps\rapps\bin\mr\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ms">
+                <Component Id="rapps.resources.dll_57" Guid="{A28441BF-D9E2-4B48-8CD1-35EB0012B9F7}">
+                    <File Id="rapps.resources.dll_57" KeyPath="yes" Source=".\rapps\rapps\bin\ms\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="mt">
+                <Component Id="rapps.resources.dll_58" Guid="{8FEB1222-3A02-4015-9722-2513DF7391B1}">
+                    <File Id="rapps.resources.dll_58" KeyPath="yes" Source=".\rapps\rapps\bin\mt\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="nb_NO">
+                <Component Id="rapps.resources.dll_59" Guid="{B6CD1119-05E5-4D37-A3A4-476AC77DDF2A}">
+                    <File Id="rapps.resources.dll_59" KeyPath="yes" Source=".\rapps\rapps\bin\nb-NO\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ne">
+                <Component Id="rapps.resources.dll_60" Guid="{1C1338BE-FE81-40A5-975A-CD45A3C6E76A}">
+                    <File Id="rapps.resources.dll_60" KeyPath="yes" Source=".\rapps\rapps\bin\ne\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="nl">
+                <Component Id="rapps.resources.dll_61" Guid="{C9F3EB28-8D70-4017-B1F4-131F19D666C7}">
+                    <File Id="rapps.resources.dll_61" KeyPath="yes" Source=".\rapps\rapps\bin\nl\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="nn_NO">
+                <Component Id="rapps.resources.dll_62" Guid="{1B927E99-BCC4-44EE-903D-FDBEAD0B0B8E}">
+                    <File Id="rapps.resources.dll_62" KeyPath="yes" Source=".\rapps\rapps\bin\nn-NO\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="no">
+                <Component Id="rapps.resources.dll_63" Guid="{A7187EB6-E827-4895-8519-2B1763A36C03}">
+                    <File Id="rapps.resources.dll_63" KeyPath="yes" Source=".\rapps\rapps\bin\no\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="pa">
+                <Component Id="rapps.resources.dll_64" Guid="{B30E799E-3BFA-43B6-9FD6-93ED03225921}">
+                    <File Id="rapps.resources.dll_64" KeyPath="yes" Source=".\rapps\rapps\bin\pa\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="pl">
+                <Component Id="rapps.resources.dll_65" Guid="{3811DEB5-F20C-493E-BA7A-BCF2E7D4578C}">
+                    <File Id="rapps.resources.dll_65" KeyPath="yes" Source=".\rapps\rapps\bin\pl\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ps">
+                <Component Id="rapps.resources.dll_66" Guid="{44206F02-400D-4EC1-9865-18FBC6F42535}">
+                    <File Id="rapps.resources.dll_66" KeyPath="yes" Source=".\rapps\rapps\bin\ps\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="pt_BR">
+                <Component Id="rapps.resources.dll_67" Guid="{E18E9931-BA39-4AEF-9B87-967706832824}">
+                    <File Id="rapps.resources.dll_67" KeyPath="yes" Source=".\rapps\rapps\bin\pt-BR\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="pt_PT">
+                <Component Id="rapps.resources.dll_68" Guid="{86354E27-0279-4735-AAE2-A458C3CA794A}">
+                    <File Id="rapps.resources.dll_68" KeyPath="yes" Source=".\rapps\rapps\bin\pt-PT\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ro">
+                <Component Id="rapps.resources.dll_69" Guid="{83373002-5BAA-4CA7-AC71-4D59D933EC76}">
+                    <File Id="rapps.resources.dll_69" KeyPath="yes" Source=".\rapps\rapps\bin\ro\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ru">
+                <Component Id="rapps.resources.dll_70" Guid="{B676218B-A556-4D3A-A10E-25FA883F2162}">
+                    <File Id="rapps.resources.dll_70" KeyPath="yes" Source=".\rapps\rapps\bin\ru\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sd">
+                <Component Id="rapps.resources.dll_71" Guid="{7B1368D6-4A3C-463D-BC29-49255EFD0678}">
+                    <File Id="rapps.resources.dll_71" KeyPath="yes" Source=".\rapps\rapps\bin\sd\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="si">
+                <Component Id="rapps.resources.dll_72" Guid="{FB34832E-FA65-4F63-9E65-A628E209856F}">
+                    <File Id="rapps.resources.dll_72" KeyPath="yes" Source=".\rapps\rapps\bin\si\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sk">
+                <Component Id="rapps.resources.dll_73" Guid="{5E7AE2F5-462D-4041-9AF1-746E55F15FF1}">
+                    <File Id="rapps.resources.dll_73" KeyPath="yes" Source=".\rapps\rapps\bin\sk\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sl">
+                <Component Id="rapps.resources.dll_74" Guid="{238EBA6C-370E-4132-B295-99A9FD2AECCD}">
+                    <File Id="rapps.resources.dll_74" KeyPath="yes" Source=".\rapps\rapps\bin\sl\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sn">
+                <Component Id="rapps.resources.dll_75" Guid="{4D0E1A77-8C3B-4CE6-8B0C-3C1D771D0128}">
+                    <File Id="rapps.resources.dll_75" KeyPath="yes" Source=".\rapps\rapps\bin\sn\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="so">
+                <Component Id="rapps.resources.dll_76" Guid="{6D89C703-BDAD-4038-BCBD-3B5D7C4ECD61}">
+                    <File Id="rapps.resources.dll_76" KeyPath="yes" Source=".\rapps\rapps\bin\so\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sq">
+                <Component Id="rapps.resources.dll_77" Guid="{39EF8096-3C33-483E-8C29-FF26BE74BD97}">
+                    <File Id="rapps.resources.dll_77" KeyPath="yes" Source=".\rapps\rapps\bin\sq\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sr">
+                <Component Id="rapps.resources.dll_78" Guid="{F462F845-6102-461E-8C09-72E3ABF31860}">
+                    <File Id="rapps.resources.dll_78" KeyPath="yes" Source=".\rapps\rapps\bin\sr\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="su">
+                <Component Id="rapps.resources.dll_79" Guid="{4E97E611-48BB-411F-8C01-BDB30C270461}">
+                    <File Id="rapps.resources.dll_79" KeyPath="yes" Source=".\rapps\rapps\bin\su\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sv">
+                <Component Id="rapps.resources.dll_80" Guid="{9C3FC1B9-53D0-4B64-A358-110F254C4556}">
+                    <File Id="rapps.resources.dll_80" KeyPath="yes" Source=".\rapps\rapps\bin\sv\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="sw">
+                <Component Id="rapps.resources.dll_81" Guid="{5772E33E-4A3D-483C-89EA-72A120BF4D14}">
+                    <File Id="rapps.resources.dll_81" KeyPath="yes" Source=".\rapps\rapps\bin\sw\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ta">
+                <Component Id="rapps.resources.dll_82" Guid="{CFA4E0B2-912A-4041-9846-1ADA3EC39D01}">
+                    <File Id="rapps.resources.dll_82" KeyPath="yes" Source=".\rapps\rapps\bin\ta\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="te">
+                <Component Id="rapps.resources.dll_83" Guid="{DE5F9716-2F51-41ED-B8EC-425A8BB2B9A9}">
+                    <File Id="rapps.resources.dll_83" KeyPath="yes" Source=".\rapps\rapps\bin\te\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="tg">
+                <Component Id="rapps.resources.dll_84" Guid="{6054B44C-7593-4755-A1EE-AB57ECCACF73}">
+                    <File Id="rapps.resources.dll_84" KeyPath="yes" Source=".\rapps\rapps\bin\tg\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="th">
+                <Component Id="rapps.resources.dll_85" Guid="{D17E0700-0A87-4373-B328-09897D04C157}">
+                    <File Id="rapps.resources.dll_85" KeyPath="yes" Source=".\rapps\rapps\bin\th\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="tk">
+                <Component Id="rapps.resources.dll_86" Guid="{CAA5DED9-9D13-4874-B4CD-7539CDB2133B}">
+                    <File Id="rapps.resources.dll_86" KeyPath="yes" Source=".\rapps\rapps\bin\tk\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="tr">
+                <Component Id="rapps.resources.dll_87" Guid="{3C779FDC-06B0-4A4A-ABA8-FCFE47B1CA13}">
+                    <File Id="rapps.resources.dll_87" KeyPath="yes" Source=".\rapps\rapps\bin\tr\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="tt">
+                <Component Id="rapps.resources.dll_88" Guid="{C3C63095-B0D9-4B1C-A92D-6F2837C6F64E}">
+                    <File Id="rapps.resources.dll_88" KeyPath="yes" Source=".\rapps\rapps\bin\tt\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ug">
+                <Component Id="rapps.resources.dll_89" Guid="{F80CFBCE-2244-4A76-B4AD-98BD80882134}">
+                    <File Id="rapps.resources.dll_89" KeyPath="yes" Source=".\rapps\rapps\bin\ug\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="uk">
+                <Component Id="rapps.resources.dll_90" Guid="{C307CAC0-B8F1-42E8-9F00-975F04438EE4}">
+                    <File Id="rapps.resources.dll_90" KeyPath="yes" Source=".\rapps\rapps\bin\uk\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="ur">
+                <Component Id="rapps.resources.dll_91" Guid="{D208ABA1-BF92-40D7-B85B-1A07C70FAA59}">
+                    <File Id="rapps.resources.dll_91" KeyPath="yes" Source=".\rapps\rapps\bin\ur\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="uz">
+                <Component Id="rapps.resources.dll_92" Guid="{AF2D5DDA-54B3-4452-B756-2414F89AFB20}">
+                    <File Id="rapps.resources.dll_92" KeyPath="yes" Source=".\rapps\rapps\bin\uz\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="vi">
+                <Component Id="rapps.resources.dll_93" Guid="{BB05D1F4-2AC7-4A5A-B304-7EC260A034F0}">
+                    <File Id="rapps.resources.dll_93" KeyPath="yes" Source=".\rapps\rapps\bin\vi\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="xh">
+                <Component Id="rapps.resources.dll_94" Guid="{51A1BF2E-1840-45FE-B3AC-2F2CB2F6B3B5}">
+                    <File Id="rapps.resources.dll_94" KeyPath="yes" Source=".\rapps\rapps\bin\xh\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="yi">
+                <Component Id="rapps.resources.dll_95" Guid="{0D503600-1851-4F52-821C-934F1B155E2D}">
+                    <File Id="rapps.resources.dll_95" KeyPath="yes" Source=".\rapps\rapps\bin\yi\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="yo">
+                <Component Id="rapps.resources.dll_96" Guid="{B023B7C7-2FB0-431B-8557-07D112F4D8B5}">
+                    <File Id="rapps.resources.dll_96" KeyPath="yes" Source=".\rapps\rapps\bin\yo\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="zh_CN">
+                <Component Id="rapps.resources.dll_97" Guid="{8D32AF10-44EB-49A2-A7B3-9E65B1D19786}">
+                    <File Id="rapps.resources.dll_97" KeyPath="yes" Source=".\rapps\rapps\bin\zh-CN\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="zh_TW">
+                <Component Id="rapps.resources.dll_98" Guid="{6FCB3D47-BD56-4DC3-ACD2-00708B04F9F7}">
+                    <File Id="rapps.resources.dll_98" KeyPath="yes" Source=".\rapps\rapps\bin\zh-TW\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+            <DirectoryRef Id="zu">
+                <Component Id="rapps.resources.dll_99" Guid="{DEEC4640-43E3-45B8-B347-1429B6EE4C7F}">
+                    <File Id="rapps.resources.dll_99" KeyPath="yes" Source=".\rapps\rapps\bin\zu\rapps.resources.dll" />
+                </Component>
+            </DirectoryRef>
+		<DirectoryRef Id="af">
+			<Component Id="raasclient.resources.dll" Guid="{4360146B-15D6-4448-B8CD-FC334F7E8CA6}">
+				<File Id="raasclient.resources.dll" KeyPath="yes" Source=".\raasclient\raasclient\bin\af\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="am">
+			<Component Id="raasclient.resources.dll_1" Guid="{86B30927-C2A6-4C61-BF39-F168375E7431}">
+				<File Id="raasclient.resources.dll_1" KeyPath="yes" Source=".\raasclient\raasclient\bin\am\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ar">
+			<Component Id="raasclient.resources.dll_2" Guid="{7E84C2B0-1FE6-49CD-88CC-DA0BE2696564}">
+				<File Id="raasclient.resources.dll_2" KeyPath="yes" Source=".\raasclient\raasclient\bin\ar\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="az">
+			<Component Id="raasclient.resources.dll_3" Guid="{6CB3A9B4-9CC4-4E0C-8E2A-83757433D10B}">
+				<File Id="raasclient.resources.dll_3" KeyPath="yes" Source=".\raasclient\raasclient\bin\az\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="be">
+			<Component Id="raasclient.resources.dll_4" Guid="{AC1901B7-92BE-42B8-899F-0FA41CCDF6B9}">
+				<File Id="raasclient.resources.dll_4" KeyPath="yes" Source=".\raasclient\raasclient\bin\be\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="bg">
+			<Component Id="raasclient.resources.dll_5" Guid="{7E7433DA-8246-478B-AE42-728F17F5A5C6}">
+				<File Id="raasclient.resources.dll_5" KeyPath="yes" Source=".\raasclient\raasclient\bin\bg\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="bs">
+			<Component Id="raasclient.resources.dll_6" Guid="{74FCD652-E54A-4562-8356-A8F8C88BEFA5}">
+				<File Id="raasclient.resources.dll_6" KeyPath="yes" Source=".\raasclient\raasclient\bin\bs\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ca">
+			<Component Id="raasclient.resources.dll_7" Guid="{C515A1BC-E809-4C05-93B5-0FC57D978A10}">
+				<File Id="raasclient.resources.dll_7" KeyPath="yes" Source=".\raasclient\raasclient\bin\ca\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="co">
+			<Component Id="raasclient.resources.dll_8" Guid="{24AB11A2-F4D7-4671-9620-49D37E3C3DD1}">
+				<File Id="raasclient.resources.dll_8" KeyPath="yes" Source=".\raasclient\raasclient\bin\co\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="cs">
+			<Component Id="raasclient.resources.dll_9" Guid="{9B97EEC0-AA35-4850-8CDE-32A23792A241}">
+				<File Id="raasclient.resources.dll_9" KeyPath="yes" Source=".\raasclient\raasclient\bin\cs\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="cy">
+			<Component Id="raasclient.resources.dll_10" Guid="{86A624BC-4476-40AA-8DAD-AABD938B0C8F}">
+				<File Id="raasclient.resources.dll_10" KeyPath="yes" Source=".\raasclient\raasclient\bin\cy\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="da">
+			<Component Id="raasclient.resources.dll_11" Guid="{844F9E89-3FD5-40FB-A6BA-0BAFDFF9DD03}">
+				<File Id="raasclient.resources.dll_11" KeyPath="yes" Source=".\raasclient\raasclient\bin\da\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="de">
+			<Component Id="raasclient.resources.dll_12" Guid="{7AEA3650-0712-4AF8-948C-1619AAC49F37}">
+				<File Id="raasclient.resources.dll_12" KeyPath="yes" Source=".\raasclient\raasclient\bin\de\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="el">
+			<Component Id="raasclient.resources.dll_13" Guid="{FC6A58BD-153D-4A5A-A443-E181D983BC37}">
+				<File Id="raasclient.resources.dll_13" KeyPath="yes" Source=".\raasclient\raasclient\bin\el\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="en_US">
+			<Component Id="raasclient.resources.dll_14" Guid="{CEEECE5A-0A09-4E82-9EF7-0CB1B0C6CD40}">
+				<File Id="raasclient.resources.dll_14" KeyPath="yes" Source=".\raasclient\raasclient\bin\en-US\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="eo">
+			<Component Id="raasclient.resources.dll_15" Guid="{86B993EF-6B75-40D3-B3EE-9EB78D2FD4F8}">
+				<File Id="raasclient.resources.dll_15" KeyPath="yes" Source=".\raasclient\raasclient\bin\eo\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="es">
+			<Component Id="raasclient.resources.dll_16" Guid="{3A4527B8-314A-4B0C-A4A9-40CA95303413}">
+				<File Id="raasclient.resources.dll_16" KeyPath="yes" Source=".\raasclient\raasclient\bin\es\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="et">
+			<Component Id="raasclient.resources.dll_17" Guid="{4BF5ECCC-7973-4C6C-9AF0-6940A2527493}">
+				<File Id="raasclient.resources.dll_17" KeyPath="yes" Source=".\raasclient\raasclient\bin\et\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="eu">
+			<Component Id="raasclient.resources.dll_18" Guid="{F8DFD38F-0541-425E-8CC6-F55C269233F1}">
+				<File Id="raasclient.resources.dll_18" KeyPath="yes" Source=".\raasclient\raasclient\bin\eu\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fa">
+			<Component Id="raasclient.resources.dll_19" Guid="{8BACDEF7-62C9-4D9F-BD8B-2119CE96812D}">
+				<File Id="raasclient.resources.dll_19" KeyPath="yes" Source=".\raasclient\raasclient\bin\fa\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fi">
+			<Component Id="raasclient.resources.dll_20" Guid="{29A49ECF-4BC4-42A0-9140-564781BE6BD3}">
+				<File Id="raasclient.resources.dll_20" KeyPath="yes" Source=".\raasclient\raasclient\bin\fi\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fil_PH">
+			<Component Id="raasclient.resources.dll_21" Guid="{A0B6FDF4-7CC5-4DD9-8EEE-882DB09245FD}">
+				<File Id="raasclient.resources.dll_21" KeyPath="yes" Source=".\raasclient\raasclient\bin\fil-PH\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fr">
+			<Component Id="raasclient.resources.dll_22" Guid="{ACA661E2-1B17-4FC2-9538-B059F5B0F629}">
+				<File Id="raasclient.resources.dll_22" KeyPath="yes" Source=".\raasclient\raasclient\bin\fr\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fr_HT">
+			<Component Id="raasclient.resources.dll_23" Guid="{C803449D-CA33-47A1-B471-C869EA6E09CE}">
+				<File Id="raasclient.resources.dll_23" KeyPath="yes" Source=".\raasclient\raasclient\bin\fr-HT\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ga">
+			<Component Id="raasclient.resources.dll_24" Guid="{B2C971E8-366A-4B7B-B0FC-CC49645EB9FA}">
+				<File Id="raasclient.resources.dll_24" KeyPath="yes" Source=".\raasclient\raasclient\bin\ga\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="gd">
+			<Component Id="raasclient.resources.dll_25" Guid="{30B4AECE-5097-4794-A985-34809E4CC996}">
+				<File Id="raasclient.resources.dll_25" KeyPath="yes" Source=".\raasclient\raasclient\bin\gd\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="gl">
+			<Component Id="raasclient.resources.dll_26" Guid="{2EEAB15E-13D3-48AF-AECF-1484F04B529A}">
+				<File Id="raasclient.resources.dll_26" KeyPath="yes" Source=".\raasclient\raasclient\bin\gl\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="gu">
+			<Component Id="raasclient.resources.dll_27" Guid="{8A532931-BA82-49BB-B49D-53FD433C20D4}">
+				<File Id="raasclient.resources.dll_27" KeyPath="yes" Source=".\raasclient\raasclient\bin\gu\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ha">
+			<Component Id="raasclient.resources.dll_28" Guid="{10051752-507D-41ED-95CA-96FA179170CF}">
+				<File Id="raasclient.resources.dll_28" KeyPath="yes" Source=".\raasclient\raasclient\bin\ha\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="haw">
+			<Component Id="raasclient.resources.dll_29" Guid="{75ACECFB-DF8A-4366-A297-7DA99E459941}">
+				<File Id="raasclient.resources.dll_29" KeyPath="yes" Source=".\raasclient\raasclient\bin\haw\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hi">
+			<Component Id="raasclient.resources.dll_30" Guid="{206AB9F5-E843-4CEC-8A58-DBA75C07D26D}">
+				<File Id="raasclient.resources.dll_30" KeyPath="yes" Source=".\raasclient\raasclient\bin\hi\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hr">
+			<Component Id="raasclient.resources.dll_31" Guid="{B6108695-DB71-4D5E-87D3-53661436FC1E}">
+				<File Id="raasclient.resources.dll_31" KeyPath="yes" Source=".\raasclient\raasclient\bin\hr\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hu">
+			<Component Id="raasclient.resources.dll_32" Guid="{6EFB4EEC-5E28-4617-A8EC-2AFC2B277136}">
+				<File Id="raasclient.resources.dll_32" KeyPath="yes" Source=".\raasclient\raasclient\bin\hu\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hy">
+			<Component Id="raasclient.resources.dll_33" Guid="{45542C30-BC81-4488-AF29-C8787721BDD4}">
+				<File Id="raasclient.resources.dll_33" KeyPath="yes" Source=".\raasclient\raasclient\bin\hy\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="id">
+			<Component Id="raasclient.resources.dll_34" Guid="{6840F88F-B817-42CD-9636-0AC5FEB8E1A7}">
+				<File Id="raasclient.resources.dll_34" KeyPath="yes" Source=".\raasclient\raasclient\bin\id\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ig">
+			<Component Id="raasclient.resources.dll_35" Guid="{05BE2528-40DE-4A3E-BEBB-12810F128EDF}">
+				<File Id="raasclient.resources.dll_35" KeyPath="yes" Source=".\raasclient\raasclient\bin\ig\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="is">
+			<Component Id="raasclient.resources.dll_36" Guid="{C2E0B8FB-93CA-4450-9F35-467BD29BD714}">
+				<File Id="raasclient.resources.dll_36" KeyPath="yes" Source=".\raasclient\raasclient\bin\is\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="it">
+			<Component Id="raasclient.resources.dll_37" Guid="{5E23996B-386A-4299-AE80-E36DF363D50B}">
+				<File Id="raasclient.resources.dll_37" KeyPath="yes" Source=".\raasclient\raasclient\bin\it\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ja">
+			<Component Id="raasclient.resources.dll_38" Guid="{37BA87F0-B735-4A88-9F43-4A64697C2C57}">
+				<File Id="raasclient.resources.dll_38" KeyPath="yes" Source=".\raasclient\raasclient\bin\ja\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="jv">
+			<Component Id="raasclient.resources.dll_39" Guid="{E1C0858F-D24F-49EA-9217-9F273FCB065D}">
+				<File Id="raasclient.resources.dll_39" KeyPath="yes" Source=".\raasclient\raasclient\bin\jv\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ka">
+			<Component Id="raasclient.resources.dll_40" Guid="{C4368BCF-35B9-43D5-BA88-0C495645C8F3}">
+				<File Id="raasclient.resources.dll_40" KeyPath="yes" Source=".\raasclient\raasclient\bin\ka\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="kk">
+			<Component Id="raasclient.resources.dll_41" Guid="{0CBFA914-3782-4852-B1BD-6EA70B90883F}">
+				<File Id="raasclient.resources.dll_41" KeyPath="yes" Source=".\raasclient\raasclient\bin\kk\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="km">
+			<Component Id="raasclient.resources.dll_42" Guid="{A7D2F113-FD26-44AC-9D68-31AED5FA4EDF}">
+				<File Id="raasclient.resources.dll_42" KeyPath="yes" Source=".\raasclient\raasclient\bin\km\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="kn">
+			<Component Id="raasclient.resources.dll_43" Guid="{104D5EAD-7AC8-4BE9-B438-BCE1523DF04F}">
+				<File Id="raasclient.resources.dll_43" KeyPath="yes" Source=".\raasclient\raasclient\bin\kn\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ko">
+			<Component Id="raasclient.resources.dll_44" Guid="{923A2AB0-C08E-4CDE-8BBA-0113206635A2}">
+				<File Id="raasclient.resources.dll_44" KeyPath="yes" Source=".\raasclient\raasclient\bin\ko\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ku">
+			<Component Id="raasclient.resources.dll_45" Guid="{94E6B6F3-C97E-497B-95E1-9C30897D2183}">
+				<File Id="raasclient.resources.dll_45" KeyPath="yes" Source=".\raasclient\raasclient\bin\ku\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ky">
+			<Component Id="raasclient.resources.dll_46" Guid="{676039C5-421A-41DB-AE23-87502386B46F}">
+				<File Id="raasclient.resources.dll_46" KeyPath="yes" Source=".\raasclient\raasclient\bin\ky\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="la">
+			<Component Id="raasclient.resources.dll_47" Guid="{6C014010-028E-44FC-9159-D7F293C5CCDE}">
+				<File Id="raasclient.resources.dll_47" KeyPath="yes" Source=".\raasclient\raasclient\bin\la\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="lo">
+			<Component Id="raasclient.resources.dll_48" Guid="{97C02D10-B92C-440B-B590-CC5F38CA5A25}">
+				<File Id="raasclient.resources.dll_48" KeyPath="yes" Source=".\raasclient\raasclient\bin\lo\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="lt">
+			<Component Id="raasclient.resources.dll_49" Guid="{24888E5E-6210-4FDE-A402-BE269EEE8080}">
+				<File Id="raasclient.resources.dll_49" KeyPath="yes" Source=".\raasclient\raasclient\bin\lt\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="lv">
+			<Component Id="raasclient.resources.dll_50" Guid="{8999BD9A-E1C5-470B-B49F-BFCB05017DF2}">
+				<File Id="raasclient.resources.dll_50" KeyPath="yes" Source=".\raasclient\raasclient\bin\lv\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mg">
+			<Component Id="raasclient.resources.dll_51" Guid="{FD7BFBF6-1046-4D8C-86F3-F86B04C7336F}">
+				<File Id="raasclient.resources.dll_51" KeyPath="yes" Source=".\raasclient\raasclient\bin\mg\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mi">
+			<Component Id="raasclient.resources.dll_52" Guid="{4265CDE2-4EA4-41E0-B40B-513F0BFA251C}">
+				<File Id="raasclient.resources.dll_52" KeyPath="yes" Source=".\raasclient\raasclient\bin\mi\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mk">
+			<Component Id="raasclient.resources.dll_53" Guid="{EDC103AD-AEA6-4398-98AE-084D466478EE}">
+				<File Id="raasclient.resources.dll_53" KeyPath="yes" Source=".\raasclient\raasclient\bin\mk\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mn">
+			<Component Id="raasclient.resources.dll_55" Guid="{9C776C5E-2F69-4A95-ACC3-715ECFE87178}">
+				<File Id="raasclient.resources.dll_55" KeyPath="yes" Source=".\raasclient\raasclient\bin\mn\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mr">
+			<Component Id="raasclient.resources.dll_56" Guid="{030DBD50-00FB-45CE-A61C-DC4531AFF1B2}">
+				<File Id="raasclient.resources.dll_56" KeyPath="yes" Source=".\raasclient\raasclient\bin\mr\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ms">
+			<Component Id="raasclient.resources.dll_57" Guid="{83AB0BCD-9A92-4CFF-8E13-3D6B7F25CF1D}">
+				<File Id="raasclient.resources.dll_57" KeyPath="yes" Source=".\raasclient\raasclient\bin\ms\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mt">
+			<Component Id="raasclient.resources.dll_58" Guid="{A0E7058F-BCCE-47B4-8825-A99DD790ADE4}">
+				<File Id="raasclient.resources.dll_58" KeyPath="yes" Source=".\raasclient\raasclient\bin\mt\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="nb_NO">
+			<Component Id="raasclient.resources.dll_59" Guid="{B7F1AC29-8015-45F6-9F9C-6C75D9734BEF}">
+				<File Id="raasclient.resources.dll_59" KeyPath="yes" Source=".\raasclient\raasclient\bin\nb-NO\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ne">
+			<Component Id="raasclient.resources.dll_60" Guid="{62F7E69E-3EAD-42CB-BECF-855F79D0875C}">
+				<File Id="raasclient.resources.dll_60" KeyPath="yes" Source=".\raasclient\raasclient\bin\ne\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="nl">
+			<Component Id="raasclient.resources.dll_61" Guid="{163494EF-CB42-49E6-B17C-5FC3CF531F57}">
+				<File Id="raasclient.resources.dll_61" KeyPath="yes" Source=".\raasclient\raasclient\bin\nl\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="nn_NO">
+			<Component Id="raasclient.resources.dll_62" Guid="{DBAA028E-D4F8-4D1F-B36F-F4C136083BAF}">
+				<File Id="raasclient.resources.dll_62" KeyPath="yes" Source=".\raasclient\raasclient\bin\nn-NO\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="no">
+			<Component Id="raasclient.resources.dll_63" Guid="{9C16B8FF-2F16-450A-99A5-26CEA6C40C13}">
+				<File Id="raasclient.resources.dll_63" KeyPath="yes" Source=".\raasclient\raasclient\bin\no\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pa">
+			<Component Id="raasclient.resources.dll_64" Guid="{AA120061-F3A0-4CF8-B4B3-0EA8FAA18EA7}">
+				<File Id="raasclient.resources.dll_64" KeyPath="yes" Source=".\raasclient\raasclient\bin\pa\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pl">
+			<Component Id="raasclient.resources.dll_65" Guid="{AE6B1815-0317-426E-8376-E4C69B0BA16E}">
+				<File Id="raasclient.resources.dll_65" KeyPath="yes" Source=".\raasclient\raasclient\bin\pl\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ps">
+			<Component Id="raasclient.resources.dll_66" Guid="{D2A2F35E-E756-4616-9A7C-28714FD77970}">
+				<File Id="raasclient.resources.dll_66" KeyPath="yes" Source=".\raasclient\raasclient\bin\ps\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pt_BR">
+			<Component Id="raasclient.resources.dll_67" Guid="{0042ABFF-4B33-46E6-8989-FF5D51F41222}">
+				<File Id="raasclient.resources.dll_67" KeyPath="yes" Source=".\raasclient\raasclient\bin\pt-BR\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pt_PT">
+			<Component Id="raasclient.resources.dll_68" Guid="{5983B2DB-188D-4625-B8D9-15EE31D2CE19}">
+				<File Id="raasclient.resources.dll_68" KeyPath="yes" Source=".\raasclient\raasclient\bin\pt-PT\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ro">
+			<Component Id="raasclient.resources.dll_69" Guid="{EA3A2EE8-C812-4607-B6E5-423890A8C072}">
+				<File Id="raasclient.resources.dll_69" KeyPath="yes" Source=".\raasclient\raasclient\bin\ro\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ru">
+			<Component Id="raasclient.resources.dll_70" Guid="{B5CADF76-68CE-43D3-85D4-CB014FA72121}">
+				<File Id="raasclient.resources.dll_70" KeyPath="yes" Source=".\raasclient\raasclient\bin\ru\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sd">
+			<Component Id="raasclient.resources.dll_71" Guid="{97E7C99F-D90A-475E-822E-C332B7714E7F}">
+				<File Id="raasclient.resources.dll_71" KeyPath="yes" Source=".\raasclient\raasclient\bin\sd\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="si">
+			<Component Id="raasclient.resources.dll_72" Guid="{106ED4F6-2122-4E58-96E8-7F1DFD72E2CB}">
+				<File Id="raasclient.resources.dll_72" KeyPath="yes" Source=".\raasclient\raasclient\bin\si\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sk">
+			<Component Id="raasclient.resources.dll_73" Guid="{9A960CAA-866F-4A40-B2E9-9BA5897FBAF9}">
+				<File Id="raasclient.resources.dll_73" KeyPath="yes" Source=".\raasclient\raasclient\bin\sk\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sl">
+			<Component Id="raasclient.resources.dll_74" Guid="{B09D5269-11D8-4D65-91E0-8E0E95A52115}">
+				<File Id="raasclient.resources.dll_74" KeyPath="yes" Source=".\raasclient\raasclient\bin\sl\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sn">
+			<Component Id="raasclient.resources.dll_75" Guid="{743AD1E9-BF2F-4390-AEB3-7AAA12C81894}">
+				<File Id="raasclient.resources.dll_75" KeyPath="yes" Source=".\raasclient\raasclient\bin\sn\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="so">
+			<Component Id="raasclient.resources.dll_76" Guid="{D302CC22-4063-4F90-94C8-FB819BD350B9}">
+				<File Id="raasclient.resources.dll_76" KeyPath="yes" Source=".\raasclient\raasclient\bin\so\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sq">
+			<Component Id="raasclient.resources.dll_77" Guid="{8E979A17-534D-4BC2-A5EF-1B76AB10E419}">
+				<File Id="raasclient.resources.dll_77" KeyPath="yes" Source=".\raasclient\raasclient\bin\sq\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sr">
+			<Component Id="raasclient.resources.dll_78" Guid="{51FCF235-AC77-4151-A58A-A4664E2A9561}">
+				<File Id="raasclient.resources.dll_78" KeyPath="yes" Source=".\raasclient\raasclient\bin\sr\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="su">
+			<Component Id="raasclient.resources.dll_79" Guid="{78E37D9E-D68C-437C-9722-586D962C2CF3}">
+				<File Id="raasclient.resources.dll_79" KeyPath="yes" Source=".\raasclient\raasclient\bin\su\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sv">
+			<Component Id="raasclient.resources.dll_80" Guid="{CAC0DEFC-D71F-44E9-BE07-E2A063766B87}">
+				<File Id="raasclient.resources.dll_80" KeyPath="yes" Source=".\raasclient\raasclient\bin\sv\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sw">
+			<Component Id="raasclient.resources.dll_81" Guid="{A21F79A6-73C7-4FB9-9FBE-1B0B971F7E2F}">
+				<File Id="raasclient.resources.dll_81" KeyPath="yes" Source=".\raasclient\raasclient\bin\sw\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ta">
+			<Component Id="raasclient.resources.dll_82" Guid="{422A248C-143F-42F3-A322-D92ADA72C770}">
+				<File Id="raasclient.resources.dll_82" KeyPath="yes" Source=".\raasclient\raasclient\bin\ta\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="te">
+			<Component Id="raasclient.resources.dll_83" Guid="{40ED6B88-0F06-4A8D-AFED-940FD9E93385}">
+				<File Id="raasclient.resources.dll_83" KeyPath="yes" Source=".\raasclient\raasclient\bin\te\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tg">
+			<Component Id="raasclient.resources.dll_84" Guid="{A25F0100-508E-4058-AB44-CF2A1F4ACAC0}">
+				<File Id="raasclient.resources.dll_84" KeyPath="yes" Source=".\raasclient\raasclient\bin\tg\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="th">
+			<Component Id="raasclient.resources.dll_85" Guid="{4D9B4D62-BB80-456D-8332-76C4F34F881F}">
+				<File Id="raasclient.resources.dll_85" KeyPath="yes" Source=".\raasclient\raasclient\bin\th\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tk">
+			<Component Id="raasclient.resources.dll_86" Guid="{3EC9B38E-2366-49D7-ADA2-8C7C7B50345F}">
+				<File Id="raasclient.resources.dll_86" KeyPath="yes" Source=".\raasclient\raasclient\bin\tk\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tr">
+			<Component Id="raasclient.resources.dll_87" Guid="{78AA8184-8A3E-4CE3-B3E0-F847DB04280F}">
+				<File Id="raasclient.resources.dll_87" KeyPath="yes" Source=".\raasclient\raasclient\bin\tr\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tt">
+			<Component Id="raasclient.resources.dll_88" Guid="{BDE2F76D-69A6-4716-9757-554DBBE9B303}">
+				<File Id="raasclient.resources.dll_88" KeyPath="yes" Source=".\raasclient\raasclient\bin\tt\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ug">
+			<Component Id="raasclient.resources.dll_89" Guid="{CB6E27E9-DA0D-4D96-9FDF-15562144E967}">
+				<File Id="raasclient.resources.dll_89" KeyPath="yes" Source=".\raasclient\raasclient\bin\ug\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="uk">
+			<Component Id="raasclient.resources.dll_90" Guid="{4A7E9A54-126A-417D-BFA4-CCFE462F46A3}">
+				<File Id="raasclient.resources.dll_90" KeyPath="yes" Source=".\raasclient\raasclient\bin\uk\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ur">
+			<Component Id="raasclient.resources.dll_91" Guid="{DFC797A0-96F9-456A-9C09-453D680A2208}">
+				<File Id="raasclient.resources.dll_91" KeyPath="yes" Source=".\raasclient\raasclient\bin\ur\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="uz">
+			<Component Id="raasclient.resources.dll_92" Guid="{C231428A-B5ED-4984-B314-DCF5472D0B66}">
+				<File Id="raasclient.resources.dll_92" KeyPath="yes" Source=".\raasclient\raasclient\bin\uz\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="vi">
+			<Component Id="raasclient.resources.dll_93" Guid="{26B718D3-DCF1-40E0-B9DF-15B3C1F38A33}">
+				<File Id="raasclient.resources.dll_93" KeyPath="yes" Source=".\raasclient\raasclient\bin\vi\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="xh">
+			<Component Id="raasclient.resources.dll_94" Guid="{47426DF8-9C0E-4C39-8495-AD8F8AD8E91D}">
+				<File Id="raasclient.resources.dll_94" KeyPath="yes" Source=".\raasclient\raasclient\bin\xh\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="yi">
+			<Component Id="raasclient.resources.dll_95" Guid="{D3B002FA-9857-49FD-9154-BE41E0E81199}">
+				<File Id="raasclient.resources.dll_95" KeyPath="yes" Source=".\raasclient\raasclient\bin\yi\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="yo">
+			<Component Id="raasclient.resources.dll_96" Guid="{6606240E-2F2A-49E6-A6C8-D4CCAAC3D131}">
+				<File Id="raasclient.resources.dll_96" KeyPath="yes" Source=".\raasclient\raasclient\bin\yo\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="zh_CN">
+			<Component Id="raasclient.resources.dll_97" Guid="{3E686FBC-D33B-4E66-A4F9-29CA0983AF7E}">
+				<File Id="raasclient.resources.dll_97" KeyPath="yes" Source=".\raasclient\raasclient\bin\zh-CN\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="zh_TW">
+			<Component Id="raasclient.resources.dll_98" Guid="{A412249C-A051-41BF-8C1E-9573BF179AC2}">
+				<File Id="raasclient.resources.dll_98" KeyPath="yes" Source=".\raasclient\raasclient\bin\zh-TW\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="zu">
+			<Component Id="raasclient.resources.dll_99" Guid="{FEBFE81F-B155-42BD-880C-D0B78E68994A}">
+				<File Id="raasclient.resources.dll_99" KeyPath="yes" Source=".\raasclient\raasclient\bin\zu\raasclient.resources.dll" />
+			</Component>
+		</DirectoryRef>
+		<ComponentGroup Id="Serilog">
+		    <ComponentRef Id="Serilog.dll" />
+            <ComponentRef Id="Serilog.Sinks.File.dll" />
+            <ComponentRef Id="Serilog.Sinks.File.pdb" />
+		</ComponentGroup>
+        <ComponentGroup Id="OpenRemote">
+            <ComponentRef Id="openremote.exe" />
+            <ComponentRef Id="openremote.exe.config" />
+            <ComponentRef Id="openremote.pdb" />
+            <ComponentRef Id="openremote.resources.dll" />
+            <ComponentRef Id="openremote.resources.dll_1" />
+            <ComponentRef Id="openremote.resources.dll_2" />
+            <ComponentRef Id="openremote.resources.dll_3" />
+            <ComponentRef Id="openremote.resources.dll_4" />
+            <ComponentRef Id="openremote.resources.dll_5" />
+            <ComponentRef Id="openremote.resources.dll_6" />
+            <ComponentRef Id="openremote.resources.dll_7" />
+            <ComponentRef Id="openremote.resources.dll_8" />
+            <ComponentRef Id="openremote.resources.dll_9" />
+            <ComponentRef Id="openremote.resources.dll_10" />
+            <ComponentRef Id="openremote.resources.dll_11" />
+            <ComponentRef Id="openremote.resources.dll_12" />
+            <ComponentRef Id="openremote.resources.dll_13" />
+            <ComponentRef Id="openremote.resources.dll_14" />
+            <ComponentRef Id="openremote.resources.dll_15" />
+            <ComponentRef Id="openremote.resources.dll_16" />
+            <ComponentRef Id="openremote.resources.dll_17" />
+            <ComponentRef Id="openremote.resources.dll_18" />
+            <ComponentRef Id="openremote.resources.dll_19" />
+            <ComponentRef Id="openremote.resources.dll_20" />
+            <ComponentRef Id="openremote.resources.dll_21" />
+            <ComponentRef Id="openremote.resources.dll_22" />
+            <ComponentRef Id="openremote.resources.dll_23" />
+            <ComponentRef Id="openremote.resources.dll_24" />
+            <ComponentRef Id="openremote.resources.dll_25" />
+            <ComponentRef Id="openremote.resources.dll_26" />
+            <ComponentRef Id="openremote.resources.dll_27" />
+            <ComponentRef Id="openremote.resources.dll_28" />
+            <ComponentRef Id="openremote.resources.dll_29" />
+            <ComponentRef Id="openremote.resources.dll_30" />
+            <ComponentRef Id="openremote.resources.dll_31" />
+            <ComponentRef Id="openremote.resources.dll_32" />
+            <ComponentRef Id="openremote.resources.dll_33" />
+            <ComponentRef Id="openremote.resources.dll_34" />
+            <ComponentRef Id="openremote.resources.dll_35" />
+            <ComponentRef Id="openremote.resources.dll_36" />
+            <ComponentRef Id="openremote.resources.dll_37" />
+            <ComponentRef Id="openremote.resources.dll_38" />
+            <ComponentRef Id="openremote.resources.dll_39" />
+            <ComponentRef Id="openremote.resources.dll_40" />
+            <ComponentRef Id="openremote.resources.dll_41" />
+            <ComponentRef Id="openremote.resources.dll_42" />
+            <ComponentRef Id="openremote.resources.dll_43" />
+            <ComponentRef Id="openremote.resources.dll_44" />
+            <ComponentRef Id="openremote.resources.dll_45" />
+            <ComponentRef Id="openremote.resources.dll_46" />
+            <ComponentRef Id="openremote.resources.dll_47" />
+            <ComponentRef Id="openremote.resources.dll_48" />
+            <ComponentRef Id="openremote.resources.dll_49" />
+            <ComponentRef Id="openremote.resources.dll_50" />
+            <ComponentRef Id="openremote.resources.dll_51" />
+            <ComponentRef Id="openremote.resources.dll_52" />
+            <ComponentRef Id="openremote.resources.dll_53" />
+            <ComponentRef Id="openremote.resources.dll_54" />
+            <ComponentRef Id="openremote.resources.dll_55" />
+            <ComponentRef Id="openremote.resources.dll_56" />
+            <ComponentRef Id="openremote.resources.dll_57" />
+            <ComponentRef Id="openremote.resources.dll_58" />
+            <ComponentRef Id="openremote.resources.dll_59" />
+            <ComponentRef Id="openremote.resources.dll_60" />
+            <ComponentRef Id="openremote.resources.dll_61" />
+            <ComponentRef Id="openremote.resources.dll_62" />
+            <ComponentRef Id="openremote.resources.dll_63" />
+            <ComponentRef Id="openremote.resources.dll_64" />
+            <ComponentRef Id="openremote.resources.dll_65" />
+            <ComponentRef Id="openremote.resources.dll_66" />
+            <ComponentRef Id="openremote.resources.dll_67" />
+            <ComponentRef Id="openremote.resources.dll_68" />
+            <ComponentRef Id="openremote.resources.dll_69" />
+            <ComponentRef Id="openremote.resources.dll_70" />
+            <ComponentRef Id="openremote.resources.dll_71" />
+            <ComponentRef Id="openremote.resources.dll_72" />
+            <ComponentRef Id="openremote.resources.dll_73" />
+            <ComponentRef Id="openremote.resources.dll_74" />
+            <ComponentRef Id="openremote.resources.dll_75" />
+            <ComponentRef Id="openremote.resources.dll_76" />
+            <ComponentRef Id="openremote.resources.dll_77" />
+            <ComponentRef Id="openremote.resources.dll_78" />
+            <ComponentRef Id="openremote.resources.dll_79" />
+            <ComponentRef Id="openremote.resources.dll_80" />
+            <ComponentRef Id="openremote.resources.dll_81" />
+            <ComponentRef Id="openremote.resources.dll_82" />
+            <ComponentRef Id="openremote.resources.dll_83" />
+            <ComponentRef Id="openremote.resources.dll_84" />
+            <ComponentRef Id="openremote.resources.dll_85" />
+            <ComponentRef Id="openremote.resources.dll_86" />
+            <ComponentRef Id="openremote.resources.dll_87" />
+            <ComponentRef Id="openremote.resources.dll_88" />
+            <ComponentRef Id="openremote.resources.dll_89" />
+            <ComponentRef Id="openremote.resources.dll_90" />
+            <ComponentRef Id="openremote.resources.dll_91" />
+            <ComponentRef Id="openremote.resources.dll_92" />
+            <ComponentRef Id="openremote.resources.dll_93" />
+            <ComponentRef Id="openremote.resources.dll_94" />
+            <ComponentRef Id="openremote.resources.dll_95" />
+            <ComponentRef Id="openremote.resources.dll_96" />
+            <ComponentRef Id="openremote.resources.dll_97" />
+            <ComponentRef Id="openremote.resources.dll_98" />
+            <ComponentRef Id="openremote.resources.dll_99" />
+            <ComponentRef Id="openremote.resources.dll_100" />
+            <ComponentRef Id="openremote.resources.dll_101" />
+        </ComponentGroup>
+		<ComponentGroup Id="RaasClient">
+            <ComponentRef Id="raasclient.resources.dll" />
+            <ComponentRef Id="raasclient.resources.dll_1" />
+            <ComponentRef Id="raasclient.resources.dll_2" />
+            <ComponentRef Id="raasclient.resources.dll_3" />
+            <ComponentRef Id="raasclient.resources.dll_4" />
+            <ComponentRef Id="raasclient.resources.dll_5" />
+            <ComponentRef Id="raasclient.resources.dll_6" />
+            <ComponentRef Id="raasclient.resources.dll_7" />
+            <ComponentRef Id="raasclient.resources.dll_8" />
+            <ComponentRef Id="raasclient.resources.dll_9" />
+            <ComponentRef Id="raasclient.resources.dll_10" />
+            <ComponentRef Id="raasclient.resources.dll_11" />
+            <ComponentRef Id="raasclient.resources.dll_12" />
+            <ComponentRef Id="raasclient.resources.dll_13" />
+            <ComponentRef Id="raasclient.resources.dll_14" />
+            <ComponentRef Id="raasclient.resources.dll_15" />
+            <ComponentRef Id="raasclient.resources.dll_16" />
+            <ComponentRef Id="raasclient.resources.dll_17" />
+            <ComponentRef Id="raasclient.resources.dll_18" />
+            <ComponentRef Id="raasclient.resources.dll_19" />
+            <ComponentRef Id="raasclient.resources.dll_20" />
+            <ComponentRef Id="raasclient.resources.dll_21" />
+            <ComponentRef Id="raasclient.resources.dll_22" />
+            <ComponentRef Id="raasclient.resources.dll_23" />
+            <ComponentRef Id="raasclient.resources.dll_24" />
+            <ComponentRef Id="raasclient.resources.dll_25" />
+            <ComponentRef Id="raasclient.resources.dll_26" />
+            <ComponentRef Id="raasclient.resources.dll_27" />
+            <ComponentRef Id="raasclient.resources.dll_28" />
+            <ComponentRef Id="raasclient.resources.dll_29" />
+            <ComponentRef Id="raasclient.resources.dll_30" />
+            <ComponentRef Id="raasclient.resources.dll_31" />
+            <ComponentRef Id="raasclient.resources.dll_32" />
+            <ComponentRef Id="raasclient.resources.dll_33" />
+            <ComponentRef Id="raasclient.resources.dll_34" />
+            <ComponentRef Id="raasclient.resources.dll_35" />
+            <ComponentRef Id="raasclient.resources.dll_36" />
+            <ComponentRef Id="raasclient.resources.dll_37" />
+            <ComponentRef Id="raasclient.resources.dll_38" />
+            <ComponentRef Id="raasclient.resources.dll_39" />
+            <ComponentRef Id="raasclient.resources.dll_40" />
+            <ComponentRef Id="raasclient.resources.dll_41" />
+            <ComponentRef Id="raasclient.resources.dll_42" />
+            <ComponentRef Id="raasclient.resources.dll_43" />
+            <ComponentRef Id="raasclient.resources.dll_44" />
+            <ComponentRef Id="raasclient.resources.dll_45" />
+            <ComponentRef Id="raasclient.resources.dll_46" />
+            <ComponentRef Id="raasclient.resources.dll_47" />
+            <ComponentRef Id="raasclient.resources.dll_48" />
+            <ComponentRef Id="raasclient.resources.dll_49" />
+            <ComponentRef Id="raasclient.resources.dll_50" />
+            <ComponentRef Id="raasclient.resources.dll_51" />
+            <ComponentRef Id="raasclient.resources.dll_52" />
+            <ComponentRef Id="raasclient.resources.dll_53" />
+            <ComponentRef Id="raasclient.resources.dll_54" />
+            <ComponentRef Id="raasclient.resources.dll_55" />
+            <ComponentRef Id="raasclient.resources.dll_56" />
+            <ComponentRef Id="raasclient.resources.dll_57" />
+            <ComponentRef Id="raasclient.resources.dll_58" />
+            <ComponentRef Id="raasclient.resources.dll_59" />
+            <ComponentRef Id="raasclient.resources.dll_60" />
+            <ComponentRef Id="raasclient.resources.dll_61" />
+            <ComponentRef Id="raasclient.resources.dll_62" />
+            <ComponentRef Id="raasclient.resources.dll_63" />
+            <ComponentRef Id="raasclient.resources.dll_64" />
+            <ComponentRef Id="raasclient.resources.dll_65" />
+            <ComponentRef Id="raasclient.resources.dll_66" />
+            <ComponentRef Id="raasclient.resources.dll_67" />
+            <ComponentRef Id="raasclient.resources.dll_68" />
+            <ComponentRef Id="raasclient.resources.dll_69" />
+            <ComponentRef Id="raasclient.resources.dll_70" />
+            <ComponentRef Id="raasclient.resources.dll_71" />
+            <ComponentRef Id="raasclient.resources.dll_72" />
+            <ComponentRef Id="raasclient.resources.dll_73" />
+            <ComponentRef Id="raasclient.resources.dll_74" />
+            <ComponentRef Id="raasclient.resources.dll_75" />
+            <ComponentRef Id="raasclient.resources.dll_76" />
+            <ComponentRef Id="raasclient.resources.dll_77" />
+            <ComponentRef Id="raasclient.resources.dll_78" />
+            <ComponentRef Id="raasclient.resources.dll_79" />
+            <ComponentRef Id="raasclient.resources.dll_80" />
+            <ComponentRef Id="raasclient.resources.dll_81" />
+            <ComponentRef Id="raasclient.resources.dll_82" />
+            <ComponentRef Id="raasclient.resources.dll_83" />
+            <ComponentRef Id="raasclient.resources.dll_84" />
+            <ComponentRef Id="raasclient.resources.dll_85" />
+            <ComponentRef Id="raasclient.resources.dll_86" />
+            <ComponentRef Id="raasclient.resources.dll_87" />
+            <ComponentRef Id="raasclient.resources.dll_88" />
+            <ComponentRef Id="raasclient.resources.dll_89" />
+            <ComponentRef Id="raasclient.resources.dll_90" />
+            <ComponentRef Id="raasclient.resources.dll_91" />
+            <ComponentRef Id="raasclient.resources.dll_92" />
+            <ComponentRef Id="raasclient.resources.dll_93" />
+            <ComponentRef Id="raasclient.resources.dll_94" />
+            <ComponentRef Id="raasclient.resources.dll_95" />
+            <ComponentRef Id="raasclient.resources.dll_96" />
+            <ComponentRef Id="raasclient.resources.dll_97" />
+            <ComponentRef Id="raasclient.resources.dll_98" />
+            <ComponentRef Id="raasclient.resources.dll_99" />
+        </ComponentGroup>
+		<ComponentGroup Id="HelpPdfs">
+            <ComponentRef Id="RAAS_Client.af.pdf" />
+            <ComponentRef Id="RAAS_Client.am.pdf" />
+            <ComponentRef Id="RAAS_Client.ar.pdf" />
+            <ComponentRef Id="RAAS_Client.az.pdf" />
+            <ComponentRef Id="RAAS_Client.be.pdf" />
+            <ComponentRef Id="RAAS_Client.bg.pdf" />
+            <ComponentRef Id="RAAS_Client.bs.pdf" />
+            <ComponentRef Id="RAAS_Client.ca.pdf" />
+            <ComponentRef Id="RAAS_Client.co.pdf" />
+            <ComponentRef Id="RAAS_Client.cs.pdf" />
+            <ComponentRef Id="RAAS_Client.cy.pdf" />
+            <ComponentRef Id="RAAS_Client.da.pdf" />
+            <ComponentRef Id="RAAS_Client.de.pdf" />
+            <ComponentRef Id="RAAS_Client.el.pdf" />
+            <ComponentRef Id="RAAS_Client.en_US.pdf" />
+            <ComponentRef Id="RAAS_Client.eo.pdf" />
+            <ComponentRef Id="RAAS_Client.es.pdf" />
+            <ComponentRef Id="RAAS_Client.et.pdf" />
+            <ComponentRef Id="RAAS_Client.eu.pdf" />
+            <ComponentRef Id="RAAS_Client.fa.pdf" />
+            <ComponentRef Id="RAAS_Client.fi.pdf" />
+            <ComponentRef Id="RAAS_Client.fil_PH.pdf" />
+            <ComponentRef Id="RAAS_Client.fr_HT.pdf" />
+            <ComponentRef Id="RAAS_Client.fr.pdf" />
+            <ComponentRef Id="RAAS_Client.ga.pdf" />
+            <ComponentRef Id="RAAS_Client.gd.pdf" />
+            <ComponentRef Id="RAAS_Client.gl.pdf" />
+            <ComponentRef Id="RAAS_Client.gu.pdf" />
+            <ComponentRef Id="RAAS_Client.ha.pdf" />
+            <ComponentRef Id="RAAS_Client.haw_US.pdf" />
+            <ComponentRef Id="RAAS_Client.hi.pdf" />
+            <ComponentRef Id="RAAS_Client.hr.pdf" />
+            <ComponentRef Id="RAAS_Client.ht.pdf" />
+            <ComponentRef Id="RAAS_Client.hu.pdf" />
+            <ComponentRef Id="RAAS_Client.hw.pdf" />
+            <ComponentRef Id="RAAS_Client.hy.pdf" />
+            <ComponentRef Id="RAAS_Client.id.pdf" />
+            <ComponentRef Id="RAAS_Client.ig.pdf" />
+            <ComponentRef Id="RAAS_Client.is.pdf" />
+            <ComponentRef Id="RAAS_Client.it.pdf" />
+            <ComponentRef Id="RAAS_Client.ja.pdf" />
+            <ComponentRef Id="RAAS_Client.jv.pdf" />
+            <ComponentRef Id="RAAS_Client.jw.pdf" />
+            <ComponentRef Id="RAAS_Client.ka.pdf" />
+            <ComponentRef Id="RAAS_Client.kk.pdf" />
+            <ComponentRef Id="RAAS_Client.km.pdf" />
+            <ComponentRef Id="RAAS_Client.kn.pdf" />
+            <ComponentRef Id="RAAS_Client.ko.pdf" />
+            <ComponentRef Id="RAAS_Client.ku.pdf" />
+            <ComponentRef Id="RAAS_Client.ky.pdf" />
+            <ComponentRef Id="RAAS_Client.la.pdf" />
+            <ComponentRef Id="RAAS_Client.lo.pdf" />
+            <ComponentRef Id="RAAS_Client.lt.pdf" />
+            <ComponentRef Id="RAAS_Client.lv.pdf" />
+            <ComponentRef Id="RAAS_Client.mg.pdf" />
+            <ComponentRef Id="RAAS_Client.mi.pdf" />
+            <ComponentRef Id="RAAS_Client.mk.pdf" />
+            <ComponentRef Id="RAAS_Client.ml.pdf" />
+            <ComponentRef Id="RAAS_Client.mn.pdf" />
+            <ComponentRef Id="RAAS_Client.mr.pdf" />
+            <ComponentRef Id="RAAS_Client.ms_BN.pdf" />
+            <ComponentRef Id="RAAS_Client.ms.pdf" />
+            <ComponentRef Id="RAAS_Client.mt.pdf" />
+            <ComponentRef Id="RAAS_Client.nb_NO.pdf" />
+            <ComponentRef Id="RAAS_Client.ne.pdf" />
+            <ComponentRef Id="RAAS_Client.nl.pdf" />
+            <ComponentRef Id="RAAS_Client.nn_NO.pdf" />
+            <ComponentRef Id="RAAS_Client.no.pdf" />
+            <ComponentRef Id="RAAS_Client.pa.pdf" />
+            <ComponentRef Id="RAAS_Client.pdf" />
+            <ComponentRef Id="RAAS_Client.pl.pdf" />
+            <ComponentRef Id="RAAS_Client.ps.pdf" />
+            <ComponentRef Id="RAAS_Client.pt_BR.pdf" />
+            <ComponentRef Id="RAAS_Client.pt_PT.pdf" />
+            <ComponentRef Id="RAAS_Client.ro.pdf" />
+            <ComponentRef Id="RAAS_Client.ru.pdf" />
+            <ComponentRef Id="RAAS_Client.rw.pdf" />
+            <ComponentRef Id="RAAS_Client.sd.pdf" />
+            <ComponentRef Id="RAAS_Client.si.pdf" />
+            <ComponentRef Id="RAAS_Client.sk.pdf" />
+            <ComponentRef Id="RAAS_Client.sl.pdf" />
+            <ComponentRef Id="RAAS_Client.sn.pdf" />
+            <ComponentRef Id="RAAS_Client.so.pdf" />
+            <ComponentRef Id="RAAS_Client.sq.pdf" />
+            <ComponentRef Id="RAAS_Client.sr.pdf" />
+            <ComponentRef Id="RAAS_Client.su.pdf" />
+            <ComponentRef Id="RAAS_Client.sv.pdf" />
+            <ComponentRef Id="RAAS_Client.sw.pdf" />
+            <ComponentRef Id="RAAS_Client.ta.pdf" />
+            <ComponentRef Id="RAAS_Client.te.pdf" />
+            <ComponentRef Id="RAAS_Client.tg.pdf" />
+            <ComponentRef Id="RAAS_Client.th.pdf" />
+            <ComponentRef Id="RAAS_Client.tk.pdf" />
+            <ComponentRef Id="RAAS_Client.tl.pdf" />
+            <ComponentRef Id="RAAS_Client.tr.pdf" />
+            <ComponentRef Id="RAAS_Client.tt.pdf" />
+            <ComponentRef Id="RAAS_Client.ug.pdf" />
+            <ComponentRef Id="RAAS_Client.uk.pdf" />
+            <ComponentRef Id="RAAS_Client.ur_IN.pdf" />
+            <ComponentRef Id="RAAS_Client.ur.pdf" />
+            <ComponentRef Id="RAAS_Client.uz.pdf" />
+            <ComponentRef Id="RAAS_Client.vi.pdf" />
+            <ComponentRef Id="RAAS_Client.xh.pdf" />
+            <ComponentRef Id="RAAS_Client.yi.pdf" />
+            <ComponentRef Id="RAAS_Client.yo.pdf" />
+            <ComponentRef Id="RAAS_Client.zh_CN.pdf" />
+            <ComponentRef Id="RAAS_Client.zh_TW.pdf" />
+            <ComponentRef Id="RAAS_Client.zu.pdf" />
+        </ComponentGroup>
+		<ComponentGroup Id="Rapps">
+            <ComponentRef Id="rapps.resources.dll" />
+            <ComponentRef Id="rapps.resources.dll_1" />
+            <ComponentRef Id="rapps.resources.dll_2" />
+            <ComponentRef Id="rapps.resources.dll_3" />
+            <ComponentRef Id="rapps.resources.dll_4" />
+            <ComponentRef Id="rapps.resources.dll_5" />
+            <ComponentRef Id="rapps.resources.dll_6" />
+            <ComponentRef Id="rapps.resources.dll_7" />
+            <ComponentRef Id="rapps.resources.dll_8" />
+            <ComponentRef Id="rapps.resources.dll_9" />
+            <ComponentRef Id="rapps.resources.dll_10" />
+            <ComponentRef Id="rapps.resources.dll_11" />
+            <ComponentRef Id="rapps.resources.dll_12" />
+            <ComponentRef Id="rapps.resources.dll_13" />
+            <ComponentRef Id="rapps.resources.dll_14" />
+            <ComponentRef Id="rapps.resources.dll_15" />
+            <ComponentRef Id="rapps.resources.dll_16" />
+            <ComponentRef Id="rapps.resources.dll_17" />
+            <ComponentRef Id="rapps.resources.dll_18" />
+            <ComponentRef Id="rapps.resources.dll_19" />
+            <ComponentRef Id="rapps.resources.dll_20" />
+            <ComponentRef Id="rapps.resources.dll_21" />
+            <ComponentRef Id="rapps.resources.dll_22" />
+            <ComponentRef Id="rapps.resources.dll_23" />
+            <ComponentRef Id="rapps.resources.dll_24" />
+            <ComponentRef Id="rapps.resources.dll_25" />
+            <ComponentRef Id="rapps.resources.dll_26" />
+            <ComponentRef Id="rapps.resources.dll_27" />
+            <ComponentRef Id="rapps.resources.dll_28" />
+            <ComponentRef Id="rapps.resources.dll_29" />
+            <ComponentRef Id="rapps.resources.dll_30" />
+            <ComponentRef Id="rapps.resources.dll_31" />
+            <ComponentRef Id="rapps.resources.dll_32" />
+            <ComponentRef Id="rapps.resources.dll_33" />
+            <ComponentRef Id="rapps.resources.dll_34" />
+            <ComponentRef Id="rapps.resources.dll_35" />
+            <ComponentRef Id="rapps.resources.dll_36" />
+            <ComponentRef Id="rapps.resources.dll_37" />
+            <ComponentRef Id="rapps.resources.dll_38" />
+            <ComponentRef Id="rapps.resources.dll_39" />
+            <ComponentRef Id="rapps.resources.dll_40" />
+            <ComponentRef Id="rapps.resources.dll_41" />
+            <ComponentRef Id="rapps.resources.dll_42" />
+            <ComponentRef Id="rapps.resources.dll_43" />
+            <ComponentRef Id="rapps.resources.dll_44" />
+            <ComponentRef Id="rapps.resources.dll_45" />
+            <ComponentRef Id="rapps.resources.dll_46" />
+            <ComponentRef Id="rapps.resources.dll_47" />
+            <ComponentRef Id="rapps.resources.dll_48" />
+            <ComponentRef Id="rapps.resources.dll_49" />
+            <ComponentRef Id="rapps.resources.dll_50" />
+            <ComponentRef Id="rapps.resources.dll_51" />
+            <ComponentRef Id="rapps.resources.dll_52" />
+            <ComponentRef Id="rapps.resources.dll_53" />
+            <ComponentRef Id="rapps.resources.dll_54" />
+            <ComponentRef Id="rapps.resources.dll_55" />
+            <ComponentRef Id="rapps.resources.dll_56" />
+            <ComponentRef Id="rapps.resources.dll_57" />
+            <ComponentRef Id="rapps.resources.dll_58" />
+            <ComponentRef Id="rapps.resources.dll_59" />
+            <ComponentRef Id="rapps.resources.dll_60" />
+            <ComponentRef Id="rapps.resources.dll_61" />
+            <ComponentRef Id="rapps.resources.dll_62" />
+            <ComponentRef Id="rapps.resources.dll_63" />
+            <ComponentRef Id="rapps.resources.dll_64" />
+            <ComponentRef Id="rapps.resources.dll_65" />
+            <ComponentRef Id="rapps.resources.dll_66" />
+            <ComponentRef Id="rapps.resources.dll_67" />
+            <ComponentRef Id="rapps.resources.dll_68" />
+            <ComponentRef Id="rapps.resources.dll_69" />
+            <ComponentRef Id="rapps.resources.dll_70" />
+            <ComponentRef Id="rapps.resources.dll_71" />
+            <ComponentRef Id="rapps.resources.dll_72" />
+            <ComponentRef Id="rapps.resources.dll_73" />
+            <ComponentRef Id="rapps.resources.dll_74" />
+            <ComponentRef Id="rapps.resources.dll_75" />
+            <ComponentRef Id="rapps.resources.dll_76" />
+            <ComponentRef Id="rapps.resources.dll_77" />
+            <ComponentRef Id="rapps.resources.dll_78" />
+            <ComponentRef Id="rapps.resources.dll_79" />
+            <ComponentRef Id="rapps.resources.dll_80" />
+            <ComponentRef Id="rapps.resources.dll_81" />
+            <ComponentRef Id="rapps.resources.dll_82" />
+            <ComponentRef Id="rapps.resources.dll_83" />
+            <ComponentRef Id="rapps.resources.dll_84" />
+            <ComponentRef Id="rapps.resources.dll_85" />
+            <ComponentRef Id="rapps.resources.dll_86" />
+            <ComponentRef Id="rapps.resources.dll_87" />
+            <ComponentRef Id="rapps.resources.dll_88" />
+            <ComponentRef Id="rapps.resources.dll_89" />
+            <ComponentRef Id="rapps.resources.dll_90" />
+            <ComponentRef Id="rapps.resources.dll_91" />
+            <ComponentRef Id="rapps.resources.dll_92" />
+            <ComponentRef Id="rapps.resources.dll_93" />
+            <ComponentRef Id="rapps.resources.dll_94" />
+            <ComponentRef Id="rapps.resources.dll_95" />
+            <ComponentRef Id="rapps.resources.dll_96" />
+            <ComponentRef Id="rapps.resources.dll_97" />
+            <ComponentRef Id="rapps.resources.dll_98" />
+            <ComponentRef Id="rapps.resources.dll_99" />
+        </ComponentGroup>
 		<StandardDirectory Id="ProgramFiles64Folder">
 			<Directory Id="CompanyFolder" Name="Elbitin">
 				<Directory Id="APPLICATIONFOLDER" Name="RAAS Client">
@@ -106,12 +2387,6 @@
 							</RegistryKey>
 						</RegistryKey>
 					</Component>
-					<Component Id="OpenRemote" Guid="{F7D72A6A-8D30-465F-90F4-9C00EB858B66}" Bitness="always64">
-						<File Id="openremote" Name="openremote.exe" Source="openremote\openremote\bin\Release\openremote.exe" KeyPath="yes"/>
-						<File Id="openremote.exe.config" Name="openremote.exe.config" Source="openremote\openremote\bin\Release\openremote.exe.config"/>
-						<File Id="openremote.pdb" Name="openremote.pdb" Source="openremote\openremote\bin\Release\openremote.pdb"/>
-						<fw:FirewallException Name="OpenRemote" Id="firewallallowopenremote" File="openremote" Port="43000" Protocol="tcp" Scope="any" IgnoreFailure="yes"/>
-					</Component>
 					<Component Id="ConnectShares" Guid="{A87B41B0-934C-40AE-800F-FA8E265EAA76}" Bitness="always64">
 						<File Id="connectshares" Name="connectshares.exe" Source="connectshares\connectshares\bin\Release\connectshares.exe" KeyPath="yes"/>
 						<File Id="connectshares.pdb" Name="connectshares.pdb" Source="connectshares\connectshares\bin\Release\connectshares.pdb"/>
@@ -131,8 +2406,6 @@
 						<File Id="raasclient.config" Name="raasclient.exe.config" Source="raasclient\raasclient\bin\raasclient.exe.config"/>
 						<File Id="raasclient.pdb" Name="raasclient.pdb" Source="raasclient\raasclient\bin\raasclient.pdb"/>
 						<File Id="System.Runtime.dll" Name="System.Runtime.dll" Source="raasclient\raasclient\bin\System.Runtime.dll"/>
-						<File Id="Serilog.dll" Name="Serilog.dll" Source="raasclient\raasclient\bin\Serilog.dll"/>
-						<File Id="Serilog.Sinks.File.dll" Name="Serilog.Sinks.File.dll" Source="raasclient\raasclient\bin\Serilog.Sinks.File.dll"/>
 						<Shortcut Id="raasclientstartmenushortcut" Name="RAAS Client" Description="Open RAAS Client" Directory="ShortcutFolder" Target="[#raasclient]">
 							<ShortcutProperty Key="System.AppUserModel.ID" Value="Elbitin.RAASClient"/>
 						</Shortcut>
@@ -216,33 +2489,6 @@
 						</Component>
 						<Component Id="RDesktopXml" Guid="{E62F4B9F-F9B7-4D26-A036-00798348F1B2}" Bitness="always64">
 							<File Id="rdesktopxml" Name="rdesktop.xml" Source="setup\rdesktop.xml" KeyPath="no"/>
-						</Component>
-					</Directory>
-					<Directory Id="Help" Name="Help">
-						<Component Id="HelpPdf" Guid="{60B8CBE7-9BC9-4C7D-BA6F-DA8925AC08EB}" Bitness="always64">
-							<File Id="helppdf" Name="RAAS Client.pdf" Source="help\RAAS Client.pdf" KeyPath="yes"/>
-						</Component>
-					</Directory>
-					<Directory Id="sv" Name="sv">
-						<Component Id="LanguagePackSwedish" Guid="{1CAAD605-DB31-49B0-991A-34D0B8987FDF}" Bitness="always64">
-							<File Id="raasclientlangsv" Name="raasclient.resources.dll" Source="raasclient\raasclient\bin\sv\raasclient.resources.dll" KeyPath="yes"/>
-							<File Id="openremotelangsv" Name="openremote.resources.dll" Source="openremote\openremote\bin\Release\sv\openremote.resources.dll"/>
-							<File Id="rappslangsv" Name="rapps.resources.dll" Source="rapps\rapps\bin\sv\rapps.resources.dll"/>
-							<File Id="remotesclangsv" Name="remotesc.resources.dll" Source="remotesc\remotesc\bin\Release\sv\remotesc.resources.dll"/>
-							<File Id="shortcutslangsv" Name="shortcuts.resources.dll" Source="shortcuts\shortcuts\bin\Release\sv\shortcuts.resources.dll"/>
-							<File Id="servercfglangsv" Name="servercfg.resources.dll" Source="servercfg\servercfg\bin\Release\sv\servercfg.resources.dll"/>
-							<File Id="rdesktoplangsv" Name="rdesktop.resources.dll" Source="rdesktop\rdesktop\bin\x64\Release\sv\rdesktop.resources.dll"/>
-						</Component>
-					</Directory>
-					<Directory Id="enUS" Name="en-US">
-						<Component Id="LanguagePackEnglish" Guid="{92B1159B-19D6-4468-9EBA-0495296C4599}" Bitness="always64">
-							<File Id="raasclientlangen" Name="raasclient.resources.dll" Source="raasclient\raasclient\bin\en-US\raasclient.resources.dll" KeyPath="yes"/>
-							<File Id="openremotelangen" Name="openremote.resources.dll" Source="openremote\openremote\bin\Release\en-US\openremote.resources.dll"/>
-							<File Id="rappslangen" Name="rapps.resources.dll" Source="rapps\rapps\bin\en-US\rapps.resources.dll"/>
-							<File Id="remotesclangen" Name="remotesc.resources.dll" Source="remotesc\remotesc\bin\Release\en-US\remotesc.resources.dll"/>
-							<File Id="shortcutslangen" Name="shortcuts.resources.dll" Source="shortcuts\shortcuts\bin\Release\en-US\shortcuts.resources.dll"/>
-							<File Id="servercfglangen" Name="servercfg.resources.dll" Source="servercfg\servercfg\bin\Release\en-US\servercfg.resources.dll"/>
-							<File Id="rdesktoplangen" Name="rdesktop.resources.dll" Source="rdesktop\rdesktop\bin\x64\Release\en-US\rdesktop.resources.dll"/>
 						</Component>
 					</Directory>
 					<Component Id="CMenuH" Guid="{1DA3E76B-54AD-4583-A387-ADEECE495BA0}" Bitness="always64">
