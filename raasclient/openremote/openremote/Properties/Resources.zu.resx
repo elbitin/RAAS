@@ -127,13 +127,7 @@
   <data name="Resources_jw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources.jw.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="Resources_jw1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources.jw1.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
   <data name="Resources_jw_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources.jw.Designer.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;iso-8859-1</value>
-  </data>
-  <data name="Resources_jw_Designer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources.jw.Designer1.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>
