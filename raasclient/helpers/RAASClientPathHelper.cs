@@ -125,10 +125,15 @@ namespace Elbitin.Applications.RAAS.RAASClient.Helpers
             String[] pdfFileNameParts = HELP_PDF_FILE_NAME.Split('.');
             String pdfFullLanguagePdfFileName = pdfFileNameParts[0] + "." + System.Globalization.CultureInfo.CurrentCulture.Name + ".pdf";
             String pdfMajorLanguagePdfFileName = pdfFileNameParts[0] + "." + System.Globalization.CultureInfo.CurrentCulture.Name.Split('-')[0] + ".pdf";
+            String pdfStartsWithMajorLamguagePdfFileName = pdfFileNameParts[0] + "-";
             if (File.Exists(Path.Combine(Path.Combine(raasClientInstallPath, HELP_DIR_NAME), pdfFullLanguagePdfFileName)))
                 return Path.Combine(Path.Combine(raasClientInstallPath, HELP_DIR_NAME), pdfFullLanguagePdfFileName);
             else if (File.Exists(Path.Combine(Path.Combine(raasClientInstallPath, HELP_DIR_NAME), pdfMajorLanguagePdfFileName)))
                 return Path.Combine(Path.Combine(raasClientInstallPath, HELP_DIR_NAME), pdfMajorLanguagePdfFileName);
+            foreach (String fileName in Directory.GetFiles(Path.Combine(Path.Combine(raasClientInstallPath, HELP_DIR_NAME)))) {
+                if (fileName.ToLowerInvariant().StartsWith(pdfStartsWithMajorLamguagePdfFileName.ToLowerInvariant()))
+                    return fileName;
+            }
             return Path.Combine(Path.Combine(raasClientInstallPath, HELP_DIR_NAME), HELP_PDF_FILE_NAME);
         }
 
