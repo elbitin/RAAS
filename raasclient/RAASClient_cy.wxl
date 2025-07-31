@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Delweddau"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Estyniad Lle Enw Shell"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Llwybrau Byr o Bell"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1106"/>
 </WixLocalization>

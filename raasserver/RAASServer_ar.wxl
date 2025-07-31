@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="مشاركة محركات الأقراص على الشبكة لتمكين التحكم والتصفح من عميل RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="يمكن إعادة التشغيل"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="السماح بإعادة التشغيل من عميل RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1025"/>
 </WixLocalization>

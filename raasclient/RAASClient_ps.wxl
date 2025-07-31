@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="لیدونه"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="د شیل نوم ځای توسیع"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="ریموټ شارټ کټ"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1123"/>
 </WixLocalization>

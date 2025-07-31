@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Bistaratzeak"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Shell izen-eremuaren luzapena"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Urruneko lasterbideak"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1069"/>
 </WixLocalization>

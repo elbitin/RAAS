@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Bendrinkite diskus tinkle, kad galėtumėte valdyti ir naršyti iš RAAS kliento"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Gali perkrauti"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Leisti perkrauti iš RAAS kliento"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1063"/>
 </WixLocalization>

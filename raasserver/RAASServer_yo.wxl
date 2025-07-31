@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Pin awọn awakọ lori nẹtiwọọki lati mu iṣakoso ṣiṣẹ ati lilọ kiri ayelujara lati ọdọ Client RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Le atunbere"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Gba awọn atunbere lati ọdọ alabara RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1130"/>
 </WixLocalization>

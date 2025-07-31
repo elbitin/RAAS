@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Көрнекіліктер"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Shell аттар кеңістігі кеңейтімі"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Қашықтағы таңбашалар"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1087"/>
 </WixLocalization>

@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="ការមើលឃើញ"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Sផ្នែកបន្ថែមឈ្មោះសែល"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="ផ្លូវកាត់ពីចម្ងាយ"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1107"/>
 </WixLocalization>

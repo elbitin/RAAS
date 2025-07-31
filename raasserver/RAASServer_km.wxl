@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="ចែករំលែកដ្រាយនៅលើបណ្តាញដើម្បីបើកការគ្រប់គ្រង និងការរុករកពី RAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="អាចចាប់ផ្ដើមឡើងវិញបាន។"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="អនុញ្ញាតឱ្យចាប់ផ្តើមឡើងវិញពី RAAS Client"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1107"/>
 </WixLocalization>

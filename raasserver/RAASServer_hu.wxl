@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Ossza meg a meghajtókat a hálózaton, hogy lehetővé tegye a RAAS-kliens vezérlését és böngészését"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Lehet újraindítani"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Újraindítás engedélyezése a RAAS kliensről"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1038"/>
 </WixLocalization>

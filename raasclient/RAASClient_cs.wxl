@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Vizualizace"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Rozšíření jmenného prostoru Shell"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Vzdálené zkratky"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1029"/>
 </WixLocalization>

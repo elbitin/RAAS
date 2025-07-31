@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Mga Visualization"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Mga Remote na Shortcut"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1124"/>
 </WixLocalization>

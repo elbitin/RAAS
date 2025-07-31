@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="muuqaalaynta"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Magaca Shell Extension"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Jid gaaban oo fog"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1143"/>
 </WixLocalization>

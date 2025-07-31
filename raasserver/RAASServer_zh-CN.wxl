@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="在网络上共享驱动器，以便从 RAAS 客户端进行控制和浏览"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="可以重启"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="允许从 RAAS 客户端重新启动"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="2052"/>
 </WixLocalization>

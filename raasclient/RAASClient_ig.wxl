@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Nlere anya"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Ụzọ mkpirisi dịpụrụ adịpụ"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1136"/>
 </WixLocalization>

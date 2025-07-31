@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Seallaidhean"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Leudachadh àite-ainm Shell"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Ath-ghoiridean iomallach"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1169"/>
 </WixLocalization>

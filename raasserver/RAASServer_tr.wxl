@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS İstemcisinden kontrol ve taramayı etkinleştirmek için sürücüleri ağda paylaşın"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Yeniden başlatılabilir"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="RAAS İstemcisinden yeniden başlatmalara izin ver"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1055"/>
 </WixLocalization>

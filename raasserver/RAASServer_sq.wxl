@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Ndani disqet në rrjet për të mundësuar kontrollin dhe shfletimin nga Klienti RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Mund të rindizet"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Lejo rinisjet nga Klienti RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1052"/>
 </WixLocalization>

@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="ვიზუალიზაციები"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Shell სახელების სივრცის გაფართოება"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="დისტანციური მალსახმობები"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1079"/>
 </WixLocalization>

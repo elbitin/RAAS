@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Shiriki hifadhi kwenye mtandao ili kuwezesha udhibiti na kuvinjari kutoka kwa Mteja wa RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Inaweza kuwasha upya"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Ruhusu kuwasha upya kutoka kwa Mteja wa RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1089"/>
 </WixLocalization>

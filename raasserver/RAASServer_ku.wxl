@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Li ser torê ajokarên parve bikin da ku kontrol û geroka ji Xerîdar RAAS çalak bikin"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Dikare ji nû ve dest pê bike"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Destûrê bide ji nû ve destpêkirina ji xerîdar RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="146"/>
 </WixLocalization>

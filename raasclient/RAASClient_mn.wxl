@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Дүрслэл"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Бүрхүүлийн нэрийн орон зайн өргөтгөл"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Алсын товчлолууд"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1104"/>
 </WixLocalization>

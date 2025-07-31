@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Geben Sie Laufwerke im Netzwerk frei, um die Steuerung und das Browsen vom RAAS-Client aus zu ermöglichen"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Kann neu starten"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Neustarts vom RAAS-Client zulassen"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1031"/>
 </WixLocalization>

@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="په شبکه کې ډرایو شریک کړئ ترڅو د RAAS پیرودونکي څخه کنټرول او لټون کول فعال کړئ"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="ریبوټ کولی شي"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="د RAAS پیرودونکي څخه ریبوټونو ته اجازه ورکړئ"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1123"/>
 </WixLocalization>

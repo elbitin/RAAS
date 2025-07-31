@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Bagikan drive di jaringan untuk mengaktifkan kontrol dan penelusuran dari Klien RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Bisa di-reboot"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Izinkan reboot dari Klien RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1057"/>
 </WixLocalization>

@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Deel aandrywers op netwerk om beheer en blaai vanaf RAAS-kliënt moontlik te maak"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Kan herlaai"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Laat herlaai vanaf RAAS-kliënt toe"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1078"/>
 </WixLocalization>

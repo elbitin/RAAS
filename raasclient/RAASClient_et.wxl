@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualisatsioonid"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Shelli nimeruumi laiendus"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Kaugjuhitavad otseteed"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1061"/>
 </WixLocalization>

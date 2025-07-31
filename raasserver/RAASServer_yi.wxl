@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="ייַנטיילן דרייווז אויף נעץ צו געבן קאָנטראָל און בראַוזינג פֿון RAAS קליענט"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="קענען רעבאָאָט"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="לאָזן רעבאָאָץ פון RAAS קליענט"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1085"/>
 </WixLocalization>

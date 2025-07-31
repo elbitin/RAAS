@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Deel schijven op het netwerk om controle en browsen vanuit RAAS Client mogelijk te maken"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Kan opnieuw opstarten"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Sta opnieuw opstarten toe vanaf RAAS-client"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1043"/>
 </WixLocalization>

@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Rhannu gyriannau ar rwydwaith i alluogi rheolaeth a phori gan Cleient RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Yn gallu ailgychwyn"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Caniatáu ailgychwyn gan Cleient RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1106"/>
 </WixLocalization>

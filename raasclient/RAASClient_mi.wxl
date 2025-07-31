@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Whakaaturanga"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Toronga Mokowā Ingoa Anga"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Pokatata Mamao"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1153"/>
 </WixLocalization>

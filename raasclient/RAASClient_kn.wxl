@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="ದೃಶ್ಯೀಕರಣಗಳು"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="ಶೆಲ್ ನೇಮ್‌ಸ್ಪೇಸ್ ವಿಸ್ತರಣೆ"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="ರಿಮೋಟ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1099"/>
 </WixLocalization>

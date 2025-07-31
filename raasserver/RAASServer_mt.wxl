@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Aqsam drives fuq in-netwerk biex tippermetti l-kontroll u l-ibbrawżjar mill-Klijent RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Jista 'reboot"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Ħalli reboots mill-Klijent RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1082"/>
 </WixLocalization>

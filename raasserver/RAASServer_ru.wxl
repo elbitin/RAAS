@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Предоставьте общий доступ к дискам в сети для управления и просмотра с помощью клиента RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Возможна перезагрузка"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Разрешить перезагрузку из клиента RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1049"/>
 </WixLocalization>

@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Համօգտագործեք կրիչներ ցանցում` RAAS Client-ից կառավարումը և զննարկումն ակտիվացնելու համար"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Կարող է վերագործարկել"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Թույլատրել վերագործարկումները RAAS Հաճախորդից"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1067"/>
 </WixLocalization>

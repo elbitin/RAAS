@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Визуализации"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Расширение пространства имен оболочки"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Удаленные ярлыки"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1049"/>
 </WixLocalization>

@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Udostępniaj dyski w sieci, aby umożliwić kontrolę i przeglądanie z poziomu klienta RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Można ponownie uruchomić"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Zezwalaj na ponowne uruchamianie z klienta RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1045"/>
 </WixLocalization>

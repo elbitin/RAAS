@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Roinn draibhearan air an lìonra gus smachd agus brobhsadh a chomasachadh bho RAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Faodaidh ath-thòiseachadh"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Leig le reboots bho RAAS Client"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1169"/>
 </WixLocalization>

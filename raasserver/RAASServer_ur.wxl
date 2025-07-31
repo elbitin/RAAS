@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS کلائنٹ سے کنٹرول اور براؤزنگ کو فعال کرنے کے لیے نیٹ ورک پر ڈرائیوز کا اشتراک کریں۔"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="ریبوٹ کر سکتے ہیں۔"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="RAAS کلائنٹ سے ریبوٹس کی اجازت دیں۔"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1056"/>
 </WixLocalization>

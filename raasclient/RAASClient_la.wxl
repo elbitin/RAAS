@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualizations"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Testa Namespace Tractus"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Remota Vulgate"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1142"/>
 </WixLocalization>

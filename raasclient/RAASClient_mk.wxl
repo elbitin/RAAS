@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Визуелизации"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Наставка за именски простор на школка"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Далечински кратенки"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1071"/>
 </WixLocalization>

@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Vizualizări"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Extensie de spațiu de nume Shell"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Comenzi rapide de la distanță"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1048"/>
 </WixLocalization>

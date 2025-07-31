@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Share drives on network to enable control and browsing from RAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Can reboot"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Allow reboots from RAAS Client"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1108"/>
 </WixLocalization>

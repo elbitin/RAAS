@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="የእይታ እይታዎች"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="የሼል ስም ቦታ ቅጥያ"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="የርቀት አቋራጮች"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1118"/>
 </WixLocalization>

@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="ການສະແດງພາບ"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="ນາມສະກຸນ Shell"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="ທາງລັດໄລຍະໄກ"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1108"/>
 </WixLocalization>

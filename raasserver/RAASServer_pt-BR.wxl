@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Compartilhe unidades na rede para permitir o controle e a navegação do cliente RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Pode reiniciar"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Permitir reinicializações do cliente RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1046"/>
 </WixLocalization>

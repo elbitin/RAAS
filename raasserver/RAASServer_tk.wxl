@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS Müşderisinden gözegçilik we göz aýlamak mümkinçiligini üpjün etmek üçin torda diskleri paýlaşyň"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Gaýtadan açyp bilersiňiz"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="RAAS Müşderisinden täzeden açmaga rugsat beriň"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1090"/>
 </WixLocalization>

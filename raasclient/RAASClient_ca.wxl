@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualitzacions"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Extensió d'espai de noms de Shell"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Dreceres remotes"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1027"/>
 </WixLocalization>

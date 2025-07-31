@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="تجسم ها"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="پسوند فضای نام پوسته"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="میانبرهای راه دور"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1065"/>
 </WixLocalization>

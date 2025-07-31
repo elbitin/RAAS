@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Jagage draive võrgus, et võimaldada juhtimist ja sirvimist RAAS-kliendi kaudu"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Saab taaskäivitada"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Luba taaskäivitamine RAAS-i kliendist"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1061"/>
 </WixLocalization>

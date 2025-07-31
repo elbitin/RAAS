@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualisaties"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Shell-naamruimte-extensie"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Snelkoppelingen op afstand"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1043"/>
 </WixLocalization>

@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="გააზიარეთ დისკები ქსელში, რათა ჩართოთ კონტროლი და დათვალიერება RAAS კლიენტისგან"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="შეიძლება გადატვირთვა"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="დაუშვით გადატვირთვა RAAS კლიენტისგან"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1079"/>
 </WixLocalization>

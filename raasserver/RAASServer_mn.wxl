@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS Client-аас хянах, үзэхийг идэвхжүүлэхийн тулд сүлжээн дэх драйвуудыг хуваалцаарай"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Дахин ачаалж болно"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="RAAS Client-ээс дахин ачаалахыг зөвшөөрнө үү"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1104"/>
 </WixLocalization>

@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="درایوها را در شبکه به اشتراک بگذارید تا کنترل و مرور از RAAS Client فعال شود"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="می تواند راه اندازی مجدد شود"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="اجازه راه اندازی مجدد از RAAS Client"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1065"/>
 </WixLocalization>

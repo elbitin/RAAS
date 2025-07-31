@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Мубодилаи дискҳо дар шабака барои фаъол кардани назорат ва дидан аз Client RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Метавонед аз нав оғоз кунед"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Иҷозат диҳед, ки аз муштарии RAAS аз нав оғоз шавад"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1064"/>
 </WixLocalization>

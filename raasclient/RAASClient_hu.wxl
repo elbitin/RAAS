@@ -5,5 +5,5 @@
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Vizualizációk"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Shell névtér kiterjesztés"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Távoli parancsikonok"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1038"/>
 </WixLocalization>

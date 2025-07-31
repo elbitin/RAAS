@@ -3,5 +3,5 @@
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS கிளையண்டிலிருந்து கட்டுப்பாட்டையும் உலாவலையும் இயக்க நெட்வொர்க்கில் டிரைவ்களைப் பகிரவும்"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="மறுதொடக்கம் செய்யலாம்"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="RAAS கிளையண்டிலிருந்து மறுதொடக்கம் செய்ய அனுமதிக்கவும்"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1097"/>
 </WixLocalization>
