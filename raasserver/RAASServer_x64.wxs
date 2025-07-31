@@ -428,6 +428,108 @@
 			<ComponentRef Id="cmp98EA1433091D1FCD54564E95813F9556"/>
 			<ComponentRef Id="cmp8F4C8F177B43E3E56CECA9F2A2293AE5"/>
 		</ComponentGroup>
+		<ComponentGroup Id="SearchAndRun">
+            <ComponentRef Id="searchandrun.resources.dll" />
+            <ComponentRef Id="searchandrun.resources.dll_1" />
+            <ComponentRef Id="searchandrun.resources.dll_2" />
+            <ComponentRef Id="searchandrun.resources.dll_3" />
+            <ComponentRef Id="searchandrun.resources.dll_4" />
+            <ComponentRef Id="searchandrun.resources.dll_5" />
+            <ComponentRef Id="searchandrun.resources.dll_6" />
+            <ComponentRef Id="searchandrun.resources.dll_7" />
+            <ComponentRef Id="searchandrun.resources.dll_8" />
+            <ComponentRef Id="searchandrun.resources.dll_9" />
+            <ComponentRef Id="searchandrun.resources.dll_10" />
+            <ComponentRef Id="searchandrun.resources.dll_11" />
+            <ComponentRef Id="searchandrun.resources.dll_12" />
+            <ComponentRef Id="searchandrun.resources.dll_13" />
+            <ComponentRef Id="searchandrun.resources.dll_14" />
+            <ComponentRef Id="searchandrun.resources.dll_15" />
+            <ComponentRef Id="searchandrun.resources.dll_16" />
+            <ComponentRef Id="searchandrun.resources.dll_17" />
+            <ComponentRef Id="searchandrun.resources.dll_18" />
+            <ComponentRef Id="searchandrun.resources.dll_19" />
+            <ComponentRef Id="searchandrun.resources.dll_20" />
+            <ComponentRef Id="searchandrun.resources.dll_21" />
+            <ComponentRef Id="searchandrun.resources.dll_22" />
+            <ComponentRef Id="searchandrun.resources.dll_23" />
+            <ComponentRef Id="searchandrun.resources.dll_24" />
+            <ComponentRef Id="searchandrun.resources.dll_25" />
+            <ComponentRef Id="searchandrun.resources.dll_26" />
+            <ComponentRef Id="searchandrun.resources.dll_27" />
+            <ComponentRef Id="searchandrun.resources.dll_28" />
+            <ComponentRef Id="searchandrun.resources.dll_29" />
+            <ComponentRef Id="searchandrun.resources.dll_30" />
+            <ComponentRef Id="searchandrun.resources.dll_31" />
+            <ComponentRef Id="searchandrun.resources.dll_32" />
+            <ComponentRef Id="searchandrun.resources.dll_33" />
+            <ComponentRef Id="searchandrun.resources.dll_34" />
+            <ComponentRef Id="searchandrun.resources.dll_35" />
+            <ComponentRef Id="searchandrun.resources.dll_36" />
+            <ComponentRef Id="searchandrun.resources.dll_37" />
+            <ComponentRef Id="searchandrun.resources.dll_38" />
+            <ComponentRef Id="searchandrun.resources.dll_39" />
+            <ComponentRef Id="searchandrun.resources.dll_40" />
+            <ComponentRef Id="searchandrun.resources.dll_41" />
+            <ComponentRef Id="searchandrun.resources.dll_42" />
+            <ComponentRef Id="searchandrun.resources.dll_43" />
+            <ComponentRef Id="searchandrun.resources.dll_44" />
+            <ComponentRef Id="searchandrun.resources.dll_45" />
+            <ComponentRef Id="searchandrun.resources.dll_46" />
+            <ComponentRef Id="searchandrun.resources.dll_47" />
+            <ComponentRef Id="searchandrun.resources.dll_48" />
+            <ComponentRef Id="searchandrun.resources.dll_49" />
+            <ComponentRef Id="searchandrun.resources.dll_50" />
+            <ComponentRef Id="searchandrun.resources.dll_51" />
+            <ComponentRef Id="searchandrun.resources.dll_52" />
+            <ComponentRef Id="searchandrun.resources.dll_53" />
+            <ComponentRef Id="searchandrun.resources.dll_54" />
+            <ComponentRef Id="searchandrun.resources.dll_55" />
+            <ComponentRef Id="searchandrun.resources.dll_56" />
+            <ComponentRef Id="searchandrun.resources.dll_57" />
+            <ComponentRef Id="searchandrun.resources.dll_58" />
+            <ComponentRef Id="searchandrun.resources.dll_59" />
+            <ComponentRef Id="searchandrun.resources.dll_60" />
+            <ComponentRef Id="searchandrun.resources.dll_61" />
+            <ComponentRef Id="searchandrun.resources.dll_62" />
+            <ComponentRef Id="searchandrun.resources.dll_63" />
+            <ComponentRef Id="searchandrun.resources.dll_64" />
+            <ComponentRef Id="searchandrun.resources.dll_65" />
+            <ComponentRef Id="searchandrun.resources.dll_66" />
+            <ComponentRef Id="searchandrun.resources.dll_67" />
+            <ComponentRef Id="searchandrun.resources.dll_68" />
+            <ComponentRef Id="searchandrun.resources.dll_69" />
+            <ComponentRef Id="searchandrun.resources.dll_70" />
+            <ComponentRef Id="searchandrun.resources.dll_71" />
+            <ComponentRef Id="searchandrun.resources.dll_72" />
+            <ComponentRef Id="searchandrun.resources.dll_73" />
+            <ComponentRef Id="searchandrun.resources.dll_74" />
+            <ComponentRef Id="searchandrun.resources.dll_75" />
+            <ComponentRef Id="searchandrun.resources.dll_76" />
+            <ComponentRef Id="searchandrun.resources.dll_77" />
+            <ComponentRef Id="searchandrun.resources.dll_78" />
+            <ComponentRef Id="searchandrun.resources.dll_79" />
+            <ComponentRef Id="searchandrun.resources.dll_80" />
+            <ComponentRef Id="searchandrun.resources.dll_81" />
+            <ComponentRef Id="searchandrun.resources.dll_82" />
+            <ComponentRef Id="searchandrun.resources.dll_83" />
+            <ComponentRef Id="searchandrun.resources.dll_84" />
+            <ComponentRef Id="searchandrun.resources.dll_85" />
+            <ComponentRef Id="searchandrun.resources.dll_86" />
+            <ComponentRef Id="searchandrun.resources.dll_87" />
+            <ComponentRef Id="searchandrun.resources.dll_88" />
+            <ComponentRef Id="searchandrun.resources.dll_89" />
+            <ComponentRef Id="searchandrun.resources.dll_90" />
+            <ComponentRef Id="searchandrun.resources.dll_91" />
+            <ComponentRef Id="searchandrun.resources.dll_92" />
+            <ComponentRef Id="searchandrun.resources.dll_93" />
+            <ComponentRef Id="searchandrun.resources.dll_94" />
+            <ComponentRef Id="searchandrun.resources.dll_95" />
+            <ComponentRef Id="searchandrun.resources.dll_96" />
+            <ComponentRef Id="searchandrun.resources.dll_97" />
+            <ComponentRef Id="searchandrun.resources.dll_98" />
+            <ComponentRef Id="searchandrun.resources.dll_99" />
+        </ComponentGroup>
 		<Property Id="ApplicationFolderName" Value="Elbitin\RAAS Server"/>
 		<Property Id="WixAppFolder" Value="WixPerUserFolder"/>
 		<Property Id="MSIRESTARTMANAGERCONTROL" Value="Disable"/>
@@ -443,9 +545,8 @@
 			<ComponentRef Id="AppNames"/>
 			<ComponentRef Id="Autostart"/>
 			<ComponentRef Id="SearchAndRun"/>
+			<ComponentGroupRef Id="SearchAndRun"/>
 			<ComponentRef Id="InstallDirRegistry"/>
-			<ComponentRef Id="LanguagePackEnglish"/>
-			<ComponentRef Id="LanguagePackSwedish"/>
 			<Feature Id="NetworkShareService" Title="!(loc.NetworkSharesTitle)" Level="1" Description="!(loc.NetworkSharesDescription)">
 				<ComponentRef Id="RmvShares"/>
 				<ComponentRef Id="SharesRegistry"/>
@@ -457,6 +558,506 @@
 		<StandardDirectory Id="ProgramFiles64Folder">
 			<Directory Id="CompanyFolder" Name="Elbitin">
 				<Directory Id="APPLICATIONFOLDER" Name="RAAS Server">
+					<Directory Id="af" Name="af">
+						<Component Id="searchandrun.resources.dll" Guid="{E69FAD46-A3D5-4CB3-8CEC-32A453CE3BD8}">
+							<File Id="searchandrun.resources.dll" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\af\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="am" Name="am">
+						<Component Id="searchandrun.resources.dll_1" Guid="{7E076189-6C30-4C6A-8AE7-E700CB961947}">
+							<File Id="searchandrun.resources.dll_1" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\am\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ar" Name="ar">
+						<Component Id="searchandrun.resources.dll_2" Guid="{DD6E08C4-EAC5-45AE-810E-52C214A7EBF4}">
+							<File Id="searchandrun.resources.dll_2" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ar\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="az" Name="az">
+						<Component Id="searchandrun.resources.dll_3" Guid="{F6C41E36-1D3F-4630-9CC0-0A4E6238ADB2}">
+							<File Id="searchandrun.resources.dll_3" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\az\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="be" Name="be">
+						<Component Id="searchandrun.resources.dll_4" Guid="{597DB6F4-011C-436C-97C7-E9ABCCE9B6D9}">
+							<File Id="searchandrun.resources.dll_4" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\be\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="bg" Name="bg">
+						<Component Id="searchandrun.resources.dll_5" Guid="{4B35C45A-6D73-4AAE-9960-7E27F8675950}">
+							<File Id="searchandrun.resources.dll_5" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\bg\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="bs" Name="bs">
+						<Component Id="searchandrun.resources.dll_6" Guid="{A2ABA99E-6DC7-4713-ACB3-60D67B449E9C}">
+							<File Id="searchandrun.resources.dll_6" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\bs\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ca" Name="ca">
+						<Component Id="searchandrun.resources.dll_7" Guid="{97BEC74C-C558-4CD7-976B-89B0AEBDCD06}">
+							<File Id="searchandrun.resources.dll_7" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ca\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="co" Name="co">
+						<Component Id="searchandrun.resources.dll_8" Guid="{12DBE4B7-997D-4723-B166-9EFA1352B2B8}">
+							<File Id="searchandrun.resources.dll_8" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\co\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="cs" Name="cs">
+						<Component Id="searchandrun.resources.dll_9" Guid="{4ADC2A5D-F9CD-4EBB-87E0-DFC5C3E28147}">
+							<File Id="searchandrun.resources.dll_9" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\cs\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="cy" Name="cy">
+						<Component Id="searchandrun.resources.dll_10" Guid="{6C958BDB-2282-4415-938C-C9C6723AB214}">
+							<File Id="searchandrun.resources.dll_10" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\cy\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="da" Name="da">
+						<Component Id="searchandrun.resources.dll_11" Guid="{056199DC-2C05-4DF0-9E19-36424E506741}">
+							<File Id="searchandrun.resources.dll_11" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\da\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="de" Name="de">
+						<Component Id="searchandrun.resources.dll_12" Guid="{30684317-AF28-47F8-9165-BF664C6907B5}">
+							<File Id="searchandrun.resources.dll_12" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\de\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="el" Name="el">
+						<Component Id="searchandrun.resources.dll_13" Guid="{E729F088-CF95-4733-B3A5-891C6295FE94}">
+							<File Id="searchandrun.resources.dll_13" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\el\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="en_US" Name="en-US">
+						<Component Id="searchandrun.resources.dll_14" Guid="{E362B8D7-AE9F-4522-B151-0A2BE33990F8}">
+							<File Id="searchandrun.resources.dll_14" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\en-US\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="eo" Name="eo">
+						<Component Id="searchandrun.resources.dll_15" Guid="{8DFCFD2C-B210-45EC-9BB0-AD5CDA3EEE3A}">
+							<File Id="searchandrun.resources.dll_15" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\eo\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="es" Name="es">
+						<Component Id="searchandrun.resources.dll_16" Guid="{101C578C-44B8-445A-9BDC-DA5EECE1A314}">
+							<File Id="searchandrun.resources.dll_16" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\es\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="et" Name="et">
+						<Component Id="searchandrun.resources.dll_17" Guid="{73D6D5BA-0671-452F-899F-D00734CDF956}">
+							<File Id="searchandrun.resources.dll_17" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\et\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="eu" Name="eu">
+						<Component Id="searchandrun.resources.dll_18" Guid="{B7F926CD-2E4D-4EDD-886A-4A44B4C95AC1}">
+							<File Id="searchandrun.resources.dll_18" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\eu\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="fa" Name="fa">
+						<Component Id="searchandrun.resources.dll_19" Guid="{D8427F29-EBDF-4B8A-898C-7F712971F5CE}">
+							<File Id="searchandrun.resources.dll_19" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\fa\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="fi" Name="fi">
+						<Component Id="searchandrun.resources.dll_20" Guid="{A4455230-D10E-45D1-A253-DB115ACDB6BB}">
+							<File Id="searchandrun.resources.dll_20" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\fi\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="fil_PH" Name="fil-PH">
+						<Component Id="searchandrun.resources.dll_21" Guid="{9ACCC9B4-4363-4C7B-8460-80E54B9B0493}">
+							<File Id="searchandrun.resources.dll_21" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\fil-PH\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="fr" Name="fr">
+						<Component Id="searchandrun.resources.dll_22" Guid="{61B09B60-E8B2-4F4F-BD1E-B7ECC586B6F2}">
+							<File Id="searchandrun.resources.dll_22" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\fr\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="fr_HT" Name="fr-HT">
+						<Component Id="searchandrun.resources.dll_23" Guid="{4936AF1D-0D6F-4EF3-AD01-B6333A11D33C}">
+							<File Id="searchandrun.resources.dll_23" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\fr-HT\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ga" Name="ga">
+						<Component Id="searchandrun.resources.dll_24" Guid="{AEBDC92E-B1AE-4DA6-B143-A92572647B00}">
+							<File Id="searchandrun.resources.dll_24" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ga\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="gd" Name="gd">
+						<Component Id="searchandrun.resources.dll_25" Guid="{679526B6-833A-47AC-9761-CFF846780077}">
+							<File Id="searchandrun.resources.dll_25" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\gd\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="gl" Name="gl">
+						<Component Id="searchandrun.resources.dll_26" Guid="{30E3C2DD-84E8-48B1-B4A8-1B92CB871F79}">
+							<File Id="searchandrun.resources.dll_26" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\gl\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="gu" Name="gu">
+						<Component Id="searchandrun.resources.dll_27" Guid="{DB786FB7-FA60-4537-A751-684B42AA64B2}">
+							<File Id="searchandrun.resources.dll_27" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\gu\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ha" Name="ha">
+						<Component Id="searchandrun.resources.dll_28" Guid="{01D6FB6E-64EC-4FA6-8925-BFD977F5065C}">
+							<File Id="searchandrun.resources.dll_28" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ha\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="haw" Name="haw">
+						<Component Id="searchandrun.resources.dll_29" Guid="{170057CD-0CD8-4B3F-B776-8188D8B0F614}">
+							<File Id="searchandrun.resources.dll_29" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\haw\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="hi" Name="hi">
+						<Component Id="searchandrun.resources.dll_30" Guid="{462B8642-D420-449B-B9DE-EB6A6DA61DDE}">
+							<File Id="searchandrun.resources.dll_30" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\hi\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="hr" Name="hr">
+						<Component Id="searchandrun.resources.dll_31" Guid="{E09065DA-38B8-4797-900E-B0411707EB79}">
+							<File Id="searchandrun.resources.dll_31" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\hr\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="hu" Name="hu">
+						<Component Id="searchandrun.resources.dll_32" Guid="{C8FF07DB-FDAA-4EAB-A9E6-46369EDB0ED2}">
+							<File Id="searchandrun.resources.dll_32" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\hu\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="hy" Name="hy">
+						<Component Id="searchandrun.resources.dll_33" Guid="{FF34C966-492B-40D0-BB53-0BE73BA486C1}">
+							<File Id="searchandrun.resources.dll_33" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\hy\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="id" Name="id">
+						<Component Id="searchandrun.resources.dll_34" Guid="{B149F433-FFD6-4717-8E65-F1E4D95F24E4}">
+							<File Id="searchandrun.resources.dll_34" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\id\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ig" Name="ig">
+						<Component Id="searchandrun.resources.dll_35" Guid="{A8066D3F-D87A-40C1-8B2A-66B56E35151F}">
+							<File Id="searchandrun.resources.dll_35" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ig\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="is" Name="is">
+						<Component Id="searchandrun.resources.dll_36" Guid="{026F4139-6022-471B-9FC3-C36BB3B7BF56}">
+							<File Id="searchandrun.resources.dll_36" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\is\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="it" Name="it">
+						<Component Id="searchandrun.resources.dll_37" Guid="{0AE07705-B756-4B0B-8476-EF86BD69636B}">
+							<File Id="searchandrun.resources.dll_37" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\it\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ja" Name="ja">
+						<Component Id="searchandrun.resources.dll_38" Guid="{EFF8F9D2-54D9-4B6E-A81E-4527FAF7BEB4}">
+							<File Id="searchandrun.resources.dll_38" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ja\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="jv" Name="jv">
+						<Component Id="searchandrun.resources.dll_39" Guid="{7AB2C31C-D332-4D87-B36B-398028193E70}">
+							<File Id="searchandrun.resources.dll_39" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\jv\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ka" Name="ka">
+						<Component Id="searchandrun.resources.dll_40" Guid="{3E2D99CA-B1E6-4B0B-A395-EE10FCEB8C4B}">
+							<File Id="searchandrun.resources.dll_40" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ka\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="kk" Name="kk">
+						<Component Id="searchandrun.resources.dll_41" Guid="{8EA85C36-4FAA-4371-9AC0-206DF2B4F5C6}">
+							<File Id="searchandrun.resources.dll_41" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\kk\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="km" Name="km">
+						<Component Id="searchandrun.resources.dll_42" Guid="{81171FCF-9FD7-4808-B529-B8D59762C32F}">
+							<File Id="searchandrun.resources.dll_42" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\km\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="kn" Name="kn">
+						<Component Id="searchandrun.resources.dll_43" Guid="{E66A5334-FC87-462B-8CDD-212FCA0A9376}">
+							<File Id="searchandrun.resources.dll_43" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\kn\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ko" Name="ko">
+						<Component Id="searchandrun.resources.dll_44" Guid="{B2AD30D9-5A32-4267-B3FA-B4334F395581}">
+							<File Id="searchandrun.resources.dll_44" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ko\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ku" Name="ku">
+						<Component Id="searchandrun.resources.dll_45" Guid="{84900F8C-328A-43B4-AB0B-43BAABADFA48}">
+							<File Id="searchandrun.resources.dll_45" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ku\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ky" Name="ky">
+						<Component Id="searchandrun.resources.dll_46" Guid="{F428DFA5-6FB7-49EF-BC75-340CBACA6EC8}">
+							<File Id="searchandrun.resources.dll_46" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ky\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="la" Name="la">
+						<Component Id="searchandrun.resources.dll_47" Guid="{C6D59F27-BCA7-45D9-8660-E74BAC962D73}">
+							<File Id="searchandrun.resources.dll_47" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\la\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="lo" Name="lo">
+						<Component Id="searchandrun.resources.dll_48" Guid="{77385067-4AA0-4538-94AC-C9AA51496123}">
+							<File Id="searchandrun.resources.dll_48" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\lo\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="lt" Name="lt">
+						<Component Id="searchandrun.resources.dll_49" Guid="{89ED3B41-ABC5-47BE-B847-E47A7D799556}">
+							<File Id="searchandrun.resources.dll_49" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\lt\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="lv" Name="lv">
+						<Component Id="searchandrun.resources.dll_50" Guid="{026100DE-DE53-4EF1-BD34-12915B89CC94}">
+							<File Id="searchandrun.resources.dll_50" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\lv\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="mg" Name="mg">
+						<Component Id="searchandrun.resources.dll_51" Guid="{4E1B2BD5-470D-49D5-B1C3-20BCDC417259}">
+							<File Id="searchandrun.resources.dll_51" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\mg\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="mi" Name="mi">
+						<Component Id="searchandrun.resources.dll_52" Guid="{7AFB18F3-DF25-41CD-844C-5865848F94E0}">
+							<File Id="searchandrun.resources.dll_52" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\mi\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="mk" Name="mk">
+						<Component Id="searchandrun.resources.dll_53" Guid="{EC734AF9-1AE3-4D91-9051-86D5077E79C3}">
+							<File Id="searchandrun.resources.dll_53" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\mk\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ml" Name="ml">
+						<Component Id="searchandrun.resources.dll_54" Guid="{6A16B70F-1253-4C8E-B390-AB205FAD2517}">
+							<File Id="searchandrun.resources.dll_54" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ml\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="mn" Name="mn">
+						<Component Id="searchandrun.resources.dll_55" Guid="{68E0270D-0E76-456E-A55D-32FEE9FBA36E}">
+							<File Id="searchandrun.resources.dll_55" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\mn\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="mr" Name="mr">
+						<Component Id="searchandrun.resources.dll_56" Guid="{30549810-8D16-492B-87AB-2F21B3F091EB}">
+							<File Id="searchandrun.resources.dll_56" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\mr\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ms" Name="ms">
+						<Component Id="searchandrun.resources.dll_57" Guid="{09ACFCE6-2AD0-444E-B13D-571AC54B6F85}">
+							<File Id="searchandrun.resources.dll_57" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ms\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="mt" Name="mt">
+						<Component Id="searchandrun.resources.dll_58" Guid="{3E039D3E-3F6C-4B37-9433-1966CDB8C819}">
+							<File Id="searchandrun.resources.dll_58" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\mt\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="nb_NO" Name="nb-NO">
+						<Component Id="searchandrun.resources.dll_59" Guid="{F141B516-F9D3-46A7-B658-F17DD3A206A3}">
+							<File Id="searchandrun.resources.dll_59" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\nb-NO\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ne" Name="ne">
+						<Component Id="searchandrun.resources.dll_60" Guid="{3465BB06-D459-462B-A0A6-4C3521091A89}">
+							<File Id="searchandrun.resources.dll_60" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ne\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="nl" Name="nl">
+						<Component Id="searchandrun.resources.dll_61" Guid="{B4A45A66-7DBC-484D-9763-B4296D9A5092}">
+							<File Id="searchandrun.resources.dll_61" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\nl\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="nn_NO" Name="nn-NO">
+						<Component Id="searchandrun.resources.dll_62" Guid="{D97265D1-0259-4D57-A09B-D14D6FEFB4F4}">
+							<File Id="searchandrun.resources.dll_62" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\nn-NO\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="no" Name="no">
+						<Component Id="searchandrun.resources.dll_63" Guid="{15DFAFE3-3355-41FE-A4CE-ADFC0437CF9F}">
+							<File Id="searchandrun.resources.dll_63" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\no\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="pa" Name="pa">
+						<Component Id="searchandrun.resources.dll_64" Guid="{BA4D7ED7-E994-4B2F-BBDC-EF4AB65C8C3A}">
+							<File Id="searchandrun.resources.dll_64" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\pa\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="pl" Name="pl">
+						<Component Id="searchandrun.resources.dll_65" Guid="{FFB2A002-A9AE-488F-B828-16A26468B07A}">
+							<File Id="searchandrun.resources.dll_65" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\pl\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ps" Name="ps">
+						<Component Id="searchandrun.resources.dll_66" Guid="{CBDCE8B5-E715-4E9E-80EA-10D42C1EC07D}">
+							<File Id="searchandrun.resources.dll_66" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ps\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="pt_BR" Name="pt-BR">
+						<Component Id="searchandrun.resources.dll_67" Guid="{E67F4FC5-E62E-4E01-875C-25D564117A5C}">
+							<File Id="searchandrun.resources.dll_67" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\pt-BR\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="pt_PT" Name="pt-PT">
+						<Component Id="searchandrun.resources.dll_68" Guid="{9FA57852-5D01-4BCC-A0AF-BB1A751388EC}">
+							<File Id="searchandrun.resources.dll_68" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\pt-PT\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ro" Name="ro">
+						<Component Id="searchandrun.resources.dll_69" Guid="{D1199A28-8E82-41BF-8B27-27ABE58BD89D}">
+							<File Id="searchandrun.resources.dll_69" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ro\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ru" Name="ru">
+						<Component Id="searchandrun.resources.dll_70" Guid="{1A6AAE95-E264-4093-AE4A-DC1D30CE2343}">
+							<File Id="searchandrun.resources.dll_70" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ru\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="sd" Name="sd">
+						<Component Id="searchandrun.resources.dll_71" Guid="{09463560-8023-4ECA-8C25-6D0DA32508B7}">
+							<File Id="searchandrun.resources.dll_71" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\sd\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="si" Name="si">
+						<Component Id="searchandrun.resources.dll_72" Guid="{F8F4A6FE-1F2D-4AC0-9C51-71BC5E4C83E6}">
+							<File Id="searchandrun.resources.dll_72" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\si\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="sk" Name="sk">
+						<Component Id="searchandrun.resources.dll_73" Guid="{E0C6AF06-E766-47A3-BDBD-053D91716769}">
+							<File Id="searchandrun.resources.dll_73" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\sk\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="sl" Name="sl">
+						<Component Id="searchandrun.resources.dll_74" Guid="{F1A5A551-9A73-4A40-AC49-2995CFA28FDC}">
+							<File Id="searchandrun.resources.dll_74" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\sl\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="sn" Name="sn">
+						<Component Id="searchandrun.resources.dll_75" Guid="{6749A73C-6EFA-4E47-AE6D-4B250A7FCAED}">
+							<File Id="searchandrun.resources.dll_75" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\sn\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="so" Name="so">
+						<Component Id="searchandrun.resources.dll_76" Guid="{7B2701D6-2D3F-4590-9237-CD4D9D039AF8}">
+							<File Id="searchandrun.resources.dll_76" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\so\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="sq" Name="sq">
+						<Component Id="searchandrun.resources.dll_77" Guid="{DDC18248-2FBC-4EBF-85C1-0636D19938AB}">
+							<File Id="searchandrun.resources.dll_77" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\sq\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="sr" Name="sr">
+						<Component Id="searchandrun.resources.dll_78" Guid="{611CE6F0-4BAB-4939-8A7D-E2E235551992}">
+							<File Id="searchandrun.resources.dll_78" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\sr\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="su" Name="su">
+						<Component Id="searchandrun.resources.dll_79" Guid="{E360421F-3C75-4593-B2BC-072DBF8AC228}">
+							<File Id="searchandrun.resources.dll_79" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\su\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="sv" Name="sv">
+						<Component Id="searchandrun.resources.dll_80" Guid="{158487AD-9CCB-41B4-8E25-151D3F3F918B}">
+							<File Id="searchandrun.resources.dll_80" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\sv\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="sw" Name="sw">
+						<Component Id="searchandrun.resources.dll_81" Guid="{528A19A1-ED1D-4AB8-9B04-75662B0531E4}">
+							<File Id="searchandrun.resources.dll_81" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\sw\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ta" Name="ta">
+						<Component Id="searchandrun.resources.dll_82" Guid="{8C15DAA5-F0D4-4673-AFE3-CA42DD4410AC}">
+							<File Id="searchandrun.resources.dll_82" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ta\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="te" Name="te">
+						<Component Id="searchandrun.resources.dll_83" Guid="{C1D96862-BE68-4BEB-B642-B218902B8E3C}">
+							<File Id="searchandrun.resources.dll_83" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\te\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="tg" Name="tg">
+						<Component Id="searchandrun.resources.dll_84" Guid="{0D582416-44E7-4E47-8687-00901FF067B0}">
+							<File Id="searchandrun.resources.dll_84" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\tg\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="th" Name="th">
+						<Component Id="searchandrun.resources.dll_85" Guid="{F36AA22E-8A74-4601-90F0-F2060BC38D3F}">
+							<File Id="searchandrun.resources.dll_85" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\th\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="tk" Name="tk">
+						<Component Id="searchandrun.resources.dll_86" Guid="{5B76361F-8169-480D-BF91-12CA769BBA9F}">
+							<File Id="searchandrun.resources.dll_86" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\tk\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="tr" Name="tr">
+						<Component Id="searchandrun.resources.dll_87" Guid="{2A977066-53CC-42EC-BB88-BFFE32E03E45}">
+							<File Id="searchandrun.resources.dll_87" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\tr\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="tt" Name="tt">
+						<Component Id="searchandrun.resources.dll_88" Guid="{E4D07B43-ACE5-419C-BB58-11EB1F2DE543}">
+							<File Id="searchandrun.resources.dll_88" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\tt\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ug" Name="ug">
+						<Component Id="searchandrun.resources.dll_89" Guid="{618D5660-52CC-4A27-AA6B-E20B2BDC7071}">
+							<File Id="searchandrun.resources.dll_89" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ug\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="uk" Name="uk">
+						<Component Id="searchandrun.resources.dll_90" Guid="{DBEE9CD1-F6D6-492E-BEBF-DB0026BAC0E5}">
+							<File Id="searchandrun.resources.dll_90" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\uk\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="ur" Name="ur">
+						<Component Id="searchandrun.resources.dll_91" Guid="{BE639B6E-B502-41F1-9620-7A3BB3F08A3E}">
+							<File Id="searchandrun.resources.dll_91" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\ur\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="uz" Name="uz">
+						<Component Id="searchandrun.resources.dll_92" Guid="{6F591159-21BD-4235-95B9-E12B67A67922}">
+							<File Id="searchandrun.resources.dll_92" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\uz\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="vi" Name="vi">
+						<Component Id="searchandrun.resources.dll_93" Guid="{CAA35D78-F4AE-4A0C-8C5B-247117EDC75E}">
+							<File Id="searchandrun.resources.dll_93" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\vi\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="xh" Name="xh">
+						<Component Id="searchandrun.resources.dll_94" Guid="{7C567D18-9F18-40F7-AB24-7AE1904E3BD7}">
+							<File Id="searchandrun.resources.dll_94" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\xh\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="yi" Name="yi">
+						<Component Id="searchandrun.resources.dll_95" Guid="{5081453B-ED82-4062-BA0F-67F457CE7B11}">
+							<File Id="searchandrun.resources.dll_95" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\yi\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="yo" Name="yo">
+						<Component Id="searchandrun.resources.dll_96" Guid="{31DEFED3-21D7-4CAF-831E-126D754F0F6F}">
+							<File Id="searchandrun.resources.dll_96" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\yo\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="zh_CN" Name="zh-CN">
+						<Component Id="searchandrun.resources.dll_97" Guid="{308C4BD1-D976-4AB4-8EDE-5A282574922B}">
+							<File Id="searchandrun.resources.dll_97" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\zh-CN\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="zh_TW" Name="zh-TW">
+						<Component Id="searchandrun.resources.dll_98" Guid="{580427A2-0001-4B3B-8668-2B416652D956}">
+							<File Id="searchandrun.resources.dll_98" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\zh-TW\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
+					<Directory Id="zu" Name="zu">
+						<Component Id="searchandrun.resources.dll_99" Guid="{769D678B-1374-465C-A2C8-F0812D9F6ECC}">
+							<File Id="searchandrun.resources.dll_99" KeyPath="yes" Source=".\searchandrun\searchandrun\bin\release\zu\searchandrun.resources.dll"/>
+						</Component>
+					</Directory>
 					<Component Id="cmp2D2A639E20C5C12415FB7434FA92BD19" Guid="{56113B4E-AFB9-4F1D-8BCF-37176B84FBBB}" Bitness="always64">
 						<File Id="fil53DA7F1E53F1CEB6A35C576E6556E885" KeyPath="yes" Source="shortcutssvc\shortcutssvc\bin\Release\net8.0-windows\JetBrains.Annotations.dll"/>
 					</Component>
@@ -1932,16 +2533,6 @@
 						<File Id="autostart" Name="autostart.exe" Source="autostart\autostart\bin\x64\Release\autostart.exe" KeyPath="yes"/>
 						<File Id="autostart.pdb" Name="autostart.pdb" Source="autostart\autostart\bin\x64\Release\autostart.pdb"/>
 					</Component>
-					<Directory Id="sv" Name="sv">
-						<Component Id="LanguagePackSwedish" Guid="{A70CEF89-D736-44C2-8E94-39238DFFCEE5}" Bitness="always64">
-							<File Id="searchandrunlangsv" Name="searchandrun.resources.dll" Source="searchandrun\searchandrun\bin\Release\sv\searchandrun.resources.dll" KeyPath="yes"/>
-						</Component>
-					</Directory>
-					<Directory Id="enUS" Name="en-US">
-						<Component Id="LanguagePackEnglish" Guid="{9BEDCEFD-C07F-4AE3-8E23-1F1E85C51726}" Bitness="always64">
-							<File Id="searchandrunlangen" Name="searchandrun.resources.dll" Source="searchandrun\searchandrun\bin\Release\sv\searchandrun.resources.dll" KeyPath="yes"/>
-						</Component>
-					</Directory>
 				</Directory>
 			</Directory>
 		</StandardDirectory>
