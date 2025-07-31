@@ -198,6 +198,5 @@ cscript ..\scripts\WiSubStg.vbs "RAASServer_%RAASServerVersion%_x64.msi" yo.mst 
 cscript ..\scripts\WiSubStg.vbs "RAASServer_%RAASServerVersion%_x64.msi" zh-CN.mst 1053
 cscript ..\scripts\WiSubStg.vbs "RAASServer_%RAASServerVersion%_x64.msi" zh-TW.mst 1053
 cscript ..\scripts\WiSubStg.vbs "RAASServer_%RAASServerVersion%_x64.msi" zu.mst 1053
-
 cscript ..\scripts\WiLangId.vbs "RAASServer_%RAASServerVersion%_x64.msi" Package 1033,1053
 pause

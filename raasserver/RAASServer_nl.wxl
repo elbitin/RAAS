@@ -1,7 +1,7 @@
 ﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="NetworkSharesTitle" Overridable="yes" Value="Network Shared Server"/>
-	<String Id="NetworkSharesDescription" Overridable="yes" Value="Share drives on network to enable control and browsing from RAAS Client"/>
-	<String Id="CanRebootTitle" Overridable="yes" Value="Can reboot"/>
-	<String Id="CanRebootDescription" Overridable="yes" Value="Allow reboots from RAAS Client"/>
+	<String Id="NetworkSharesTitle" Overridable="yes" Value="Netwerk gedeelde server"/>
+	<String Id="NetworkSharesDescription" Overridable="yes" Value="Deel schijven op het netwerk om controle en browsen vanuit RAAS Client mogelijk te maken"/>
+	<String Id="CanRebootTitle" Overridable="yes" Value="Kan opnieuw opstarten"/>
+	<String Id="CanRebootDescription" Overridable="yes" Value="Sta opnieuw opstarten toe vanaf RAAS-client"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
 </WixLocalization>
