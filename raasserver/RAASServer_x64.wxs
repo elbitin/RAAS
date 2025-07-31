@@ -1,5 +1,5 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:fw="http://wixtoolset.org/schemas/v4/wxs/firewall" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui" xmlns:netfx="http://wixtoolset.org/schemas/v4/wxs/netfx">
-	<Package Name="RAAS Server" Language="!(loc.ProductLanguage)" Version="$(env.RAASServerVersion)" Manufacturer="Elbitin" UpgradeCode="{36E23B57-A390-4A58-A8F6-CCCECEDECF10}" InstallerVersion="200" Scope="perMachine">
+	<Package Name="RAAS Server" Version="$(env.RAASServerVersion)" Manufacturer="Elbitin" UpgradeCode="{36E23B57-A390-4A58-A8F6-CCCECEDECF10}" InstallerVersion="200" Scope="perMachine">
 		<SummaryInformation Description="Windows Installer package for Remote Application Access Station Server" Manufacturer="ElectricalBit"/>
 		<MajorUpgrade Schedule="afterInstallInitialize" DowngradeErrorMessage="A later version of [ProductName] is already installed" AllowSameVersionUpgrades="yes"/>
 		<PropertyRef Id="WIX_IS_NETFRAMEWORK_48_OR_LATER_INSTALLED"/>
