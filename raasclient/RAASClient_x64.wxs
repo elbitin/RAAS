@@ -70,6 +70,7 @@
 				<ComponentRef Id="NSExt6432Registry"/>
 			</Feature>
 			<Feature Id="RAASClientShortcuts" Title="!(loc.ShortcutsTitle)" Description="!(loc.ShortcutsDescription)" Level="1">
+				<ComponentGroupRef Id="Shortcuts"/>
 				<ComponentRef Id="Shortcuts"/>
 				<ComponentRef Id="RemoteSc"/>
 				<ComponentRef Id="DMenuH"/>
@@ -2964,505 +2965,1000 @@
 			</Component>
 		</DirectoryRef>
 		<DirectoryRef Id="af">
-                <Component Id="servercfg.resources.dll" Guid="{BE55E500-CA73-4D3C-AAEA-6237E2F30BEF}">
-                    <File Id="servercfg.resources.dll" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\af\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="am">
-                <Component Id="servercfg.resources.dll_1" Guid="{CEFAD020-4D79-46C9-A28D-55BDB20D3927}">
-                    <File Id="servercfg.resources.dll_1" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\am\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ar">
-                <Component Id="servercfg.resources.dll_2" Guid="{30068C7D-687D-4AD6-8B5C-76E8F9A2F047}">
-                    <File Id="servercfg.resources.dll_2" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ar\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="az">
-                <Component Id="servercfg.resources.dll_3" Guid="{9938F8EF-C2EC-497F-9D72-266F55044873}">
-                    <File Id="servercfg.resources.dll_3" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\az\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="be">
-                <Component Id="servercfg.resources.dll_4" Guid="{67482403-BCF1-44F8-A875-35C7B18C1683}">
-                    <File Id="servercfg.resources.dll_4" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\be\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="bg">
-                <Component Id="servercfg.resources.dll_5" Guid="{720C7F8D-8AB6-47A4-A730-CED342789E08}">
-                    <File Id="servercfg.resources.dll_5" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\bg\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="bs">
-                <Component Id="servercfg.resources.dll_6" Guid="{E452445C-DFBD-44FE-BD33-FAE39300D27F}">
-                    <File Id="servercfg.resources.dll_6" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\bs\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ca">
-                <Component Id="servercfg.resources.dll_7" Guid="{2656DFCC-2494-48DD-89CC-D4C0A6881AA6}">
-                    <File Id="servercfg.resources.dll_7" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ca\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="co">
-                <Component Id="servercfg.resources.dll_8" Guid="{E4382183-5985-4898-8463-C89BD2E6FC72}">
-                    <File Id="servercfg.resources.dll_8" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\co\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="cs">
-                <Component Id="servercfg.resources.dll_9" Guid="{B841C60A-62A2-4F52-91AA-1B97DC8F2AF6}">
-                    <File Id="servercfg.resources.dll_9" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\cs\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="cy">
-                <Component Id="servercfg.resources.dll_10" Guid="{5C13C7E3-EF03-4CD3-BE1C-5C99E6B86F81}">
-                    <File Id="servercfg.resources.dll_10" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\cy\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="da">
-                <Component Id="servercfg.resources.dll_11" Guid="{C07071D8-0A66-490B-AF04-813077586969}">
-                    <File Id="servercfg.resources.dll_11" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\da\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="de">
-                <Component Id="servercfg.resources.dll_12" Guid="{1702ADA6-4D1E-4B19-9055-419C99B9CB07}">
-                    <File Id="servercfg.resources.dll_12" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\de\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="el">
-                <Component Id="servercfg.resources.dll_13" Guid="{E5CA7ADB-F47C-4ADC-9067-579EDB2A8EB1}">
-                    <File Id="servercfg.resources.dll_13" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\el\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="en_US">
-                <Component Id="servercfg.resources.dll_14" Guid="{866A3FB1-9C61-4B14-A52B-2EFB081A216B}">
-                    <File Id="servercfg.resources.dll_14" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\en-US\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="eo">
-                <Component Id="servercfg.resources.dll_15" Guid="{37CEC0B5-99DB-4D03-9B15-83CE21C44F00}">
-                    <File Id="servercfg.resources.dll_15" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\eo\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="es">
-                <Component Id="servercfg.resources.dll_16" Guid="{33BB397B-8D11-4107-B760-524D91142BF2}">
-                    <File Id="servercfg.resources.dll_16" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\es\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="et">
-                <Component Id="servercfg.resources.dll_17" Guid="{85936902-9C38-4A03-A2F1-6425F3286CDB}">
-                    <File Id="servercfg.resources.dll_17" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\et\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="eu">
-                <Component Id="servercfg.resources.dll_18" Guid="{C8E9E00F-F642-4E4D-BB83-DFF27C0E2D74}">
-                    <File Id="servercfg.resources.dll_18" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\eu\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="fa">
-                <Component Id="servercfg.resources.dll_19" Guid="{23E00C43-96ED-4C2E-8E28-E33367599F9B}">
-                    <File Id="servercfg.resources.dll_19" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\fa\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="fi">
-                <Component Id="servercfg.resources.dll_20" Guid="{A8842D19-AD09-4669-841F-F44CDEA522B5}">
-                    <File Id="servercfg.resources.dll_20" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\fi\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="fil_PH">
-                <Component Id="servercfg.resources.dll_21" Guid="{C654890B-0033-4ADA-A299-CC0109068D83}">
-                    <File Id="servercfg.resources.dll_21" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\fil-PH\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="fr">
-                <Component Id="servercfg.resources.dll_22" Guid="{C257D730-0897-49B3-B5C4-7F68C2EDAB50}">
-                    <File Id="servercfg.resources.dll_22" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\fr\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="fr_HT">
-                <Component Id="servercfg.resources.dll_23" Guid="{283D6E13-5057-47A7-B839-8D98A3168C45}">
-                    <File Id="servercfg.resources.dll_23" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\fr-HT\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ga">
-                <Component Id="servercfg.resources.dll_24" Guid="{7BFE76FD-0DFB-4C20-9CE8-7E94D67F67EC}">
-                    <File Id="servercfg.resources.dll_24" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ga\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="gd">
-                <Component Id="servercfg.resources.dll_25" Guid="{EA5580A0-4794-40A4-B36D-EB378328300E}">
-                    <File Id="servercfg.resources.dll_25" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\gd\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="gl">
-                <Component Id="servercfg.resources.dll_26" Guid="{853FE644-97DC-4E00-B9E2-4554013392B4}">
-                    <File Id="servercfg.resources.dll_26" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\gl\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="gu">
-                <Component Id="servercfg.resources.dll_27" Guid="{9859D31A-4B73-4FA9-AA4B-3989E31AC16B}">
-                    <File Id="servercfg.resources.dll_27" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\gu\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ha">
-                <Component Id="servercfg.resources.dll_28" Guid="{CD4B3159-10E8-4B0C-BBB7-59FAD299E693}">
-                    <File Id="servercfg.resources.dll_28" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ha\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="haw">
-                <Component Id="servercfg.resources.dll_29" Guid="{7A0ABCD5-EF6D-4586-8EF9-2EF65D7ED451}">
-                    <File Id="servercfg.resources.dll_29" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\haw\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="hi">
-                <Component Id="servercfg.resources.dll_30" Guid="{04CA9993-4625-4C50-B41D-F72F3561BC00}">
-                    <File Id="servercfg.resources.dll_30" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\hi\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="hr">
-                <Component Id="servercfg.resources.dll_31" Guid="{0D8E4CCC-12C6-4848-99F3-95C7E45A1DF7}">
-                    <File Id="servercfg.resources.dll_31" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\hr\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="hu">
-                <Component Id="servercfg.resources.dll_32" Guid="{0DB09ED7-8548-4682-821A-ECAA157CE43D}">
-                    <File Id="servercfg.resources.dll_32" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\hu\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="hy">
-                <Component Id="servercfg.resources.dll_33" Guid="{994C8562-EA1B-4B56-881B-433C7E27ADAE}">
-                    <File Id="servercfg.resources.dll_33" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\hy\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="id">
-                <Component Id="servercfg.resources.dll_34" Guid="{41F8E701-3815-4B5C-99A2-40C7941ADAD7}">
-                    <File Id="servercfg.resources.dll_34" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\id\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ig">
-                <Component Id="servercfg.resources.dll_35" Guid="{07AEDD1B-7992-449F-8B0C-87E85AC2FAD1}">
-                    <File Id="servercfg.resources.dll_35" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ig\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="is">
-                <Component Id="servercfg.resources.dll_36" Guid="{FF6E3249-12F0-4795-AB0D-177EDED4072A}">
-                    <File Id="servercfg.resources.dll_36" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\is\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="it">
-                <Component Id="servercfg.resources.dll_37" Guid="{83BCDEC8-E622-4FEC-A0A6-EAE4269950F0}">
-                    <File Id="servercfg.resources.dll_37" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\it\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ja">
-                <Component Id="servercfg.resources.dll_38" Guid="{ED4CA05D-2920-4411-8DB8-910D5C593C82}">
-                    <File Id="servercfg.resources.dll_38" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ja\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="jv">
-                <Component Id="servercfg.resources.dll_39" Guid="{E651CFC6-E607-415B-801E-24109C061980}">
-                    <File Id="servercfg.resources.dll_39" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\jv\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ka">
-                <Component Id="servercfg.resources.dll_40" Guid="{E2A9B9A6-4453-4D8C-80F5-DF76B19E2466}">
-                    <File Id="servercfg.resources.dll_40" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ka\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="kk">
-                <Component Id="servercfg.resources.dll_41" Guid="{140AF9C3-E07B-4EB0-9D67-734C888B7599}">
-                    <File Id="servercfg.resources.dll_41" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\kk\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="km">
-                <Component Id="servercfg.resources.dll_42" Guid="{89533EF5-7F0D-440D-BD51-D52FE7546677}">
-                    <File Id="servercfg.resources.dll_42" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\km\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="kn">
-                <Component Id="servercfg.resources.dll_43" Guid="{D188B39E-399C-4EAC-9063-B63E35E08191}">
-                    <File Id="servercfg.resources.dll_43" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\kn\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ko">
-                <Component Id="servercfg.resources.dll_44" Guid="{CBB364BE-14C9-4C2A-AC08-853249541375}">
-                    <File Id="servercfg.resources.dll_44" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ko\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ku">
-                <Component Id="servercfg.resources.dll_45" Guid="{8F0DD497-04F1-432E-8AB6-A7B843DED30D}">
-                    <File Id="servercfg.resources.dll_45" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ku\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ky">
-                <Component Id="servercfg.resources.dll_46" Guid="{4ABA72FB-90A3-4CCC-8271-FEB9D494A992}">
-                    <File Id="servercfg.resources.dll_46" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ky\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="la">
-                <Component Id="servercfg.resources.dll_47" Guid="{176C30D9-9583-4A27-9046-8225822FB868}">
-                    <File Id="servercfg.resources.dll_47" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\la\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="lo">
-                <Component Id="servercfg.resources.dll_48" Guid="{E4A13241-09B3-4FF4-A6B7-C354FDBD4B54}">
-                    <File Id="servercfg.resources.dll_48" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\lo\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="lt">
-                <Component Id="servercfg.resources.dll_49" Guid="{F080DC5A-3C4C-470B-9DED-239AF2220A2D}">
-                    <File Id="servercfg.resources.dll_49" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\lt\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="lv">
-                <Component Id="servercfg.resources.dll_50" Guid="{01617479-7449-49FA-9F2E-681925B69F1D}">
-                    <File Id="servercfg.resources.dll_50" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\lv\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="mg">
-                <Component Id="servercfg.resources.dll_51" Guid="{B0733C7A-29E1-4035-8FC7-A3A638D809C5}">
-                    <File Id="servercfg.resources.dll_51" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mg\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="mi">
-                <Component Id="servercfg.resources.dll_52" Guid="{E3A4364D-95E4-48DA-9292-9F26AF6941E2}">
-                    <File Id="servercfg.resources.dll_52" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mi\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="mk">
-                <Component Id="servercfg.resources.dll_53" Guid="{B9FAE0AF-5FA9-40FC-8211-6688100D44CE}">
-                    <File Id="servercfg.resources.dll_53" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mk\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ml">
-                <Component Id="servercfg.resources.dll_54" Guid="{D4F28642-69A5-42DD-9D1D-13F0BAD0E198}">
-                    <File Id="servercfg.resources.dll_54" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ml\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="mn">
-                <Component Id="servercfg.resources.dll_55" Guid="{541C3589-65BC-487F-A1CF-A10BE5B72C7F}">
-                    <File Id="servercfg.resources.dll_55" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mn\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="mr">
-                <Component Id="servercfg.resources.dll_56" Guid="{CF03C374-29BB-4FAE-8EF5-A60FCAF6E6F5}">
-                    <File Id="servercfg.resources.dll_56" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mr\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ms">
-                <Component Id="servercfg.resources.dll_57" Guid="{7B58026F-CCF7-4FE5-84FF-CBD43C632753}">
-                    <File Id="servercfg.resources.dll_57" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ms\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="mt">
-                <Component Id="servercfg.resources.dll_58" Guid="{CE902060-F713-4251-9C8B-9E62B3562C70}">
-                    <File Id="servercfg.resources.dll_58" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mt\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="nb_NO">
-                <Component Id="servercfg.resources.dll_59" Guid="{711C9B5F-787B-4A24-96E5-998A00EB56AD}">
-                    <File Id="servercfg.resources.dll_59" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\nb-NO\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ne">
-                <Component Id="servercfg.resources.dll_60" Guid="{CB36BEF3-366A-4F70-99FE-BFC405AB4867}">
-                    <File Id="servercfg.resources.dll_60" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ne\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="nl">
-                <Component Id="servercfg.resources.dll_61" Guid="{BEDCAD4B-7710-4DE4-8BA1-BB096AA0D5EA}">
-                    <File Id="servercfg.resources.dll_61" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\nl\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="nn_NO">
-                <Component Id="servercfg.resources.dll_62" Guid="{3E0802C0-4513-47B0-8369-D6F61371C45B}">
-                    <File Id="servercfg.resources.dll_62" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\nn-NO\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="no">
-                <Component Id="servercfg.resources.dll_63" Guid="{E6F92D9C-2188-4E10-9AB6-BADAE54BF067}">
-                    <File Id="servercfg.resources.dll_63" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\no\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="pa">
-                <Component Id="servercfg.resources.dll_64" Guid="{0F27B704-6BC5-460E-811A-1FC1675DAF84}">
-                    <File Id="servercfg.resources.dll_64" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\pa\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="pl">
-                <Component Id="servercfg.resources.dll_65" Guid="{29474BF4-CD6C-401E-A838-BEAE1B48AEE8}">
-                    <File Id="servercfg.resources.dll_65" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\pl\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ps">
-                <Component Id="servercfg.resources.dll_66" Guid="{58B7F1ED-FABA-49CC-B1BB-8ED4B522271E}">
-                    <File Id="servercfg.resources.dll_66" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ps\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="pt_BR">
-                <Component Id="servercfg.resources.dll_67" Guid="{CB14B919-25B8-495D-AE86-3276EC7F5902}">
-                    <File Id="servercfg.resources.dll_67" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\pt-BR\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="pt_PT">
-                <Component Id="servercfg.resources.dll_68" Guid="{8E764B27-6DEE-4677-9558-AC6CEB9CD637}">
-                    <File Id="servercfg.resources.dll_68" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\pt-PT\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ro">
-                <Component Id="servercfg.resources.dll_69" Guid="{6918F487-14F0-4D67-B06D-DA49BDA5C61F}">
-                    <File Id="servercfg.resources.dll_69" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ro\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ru">
-                <Component Id="servercfg.resources.dll_70" Guid="{6CF770F5-4782-4D75-A0F9-6FAA4CCBB2B4}">
-                    <File Id="servercfg.resources.dll_70" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ru\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="sd">
-                <Component Id="servercfg.resources.dll_71" Guid="{6D9E42BF-AAD7-4109-8972-7DA393182834}">
-                    <File Id="servercfg.resources.dll_71" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sd\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="si">
-                <Component Id="servercfg.resources.dll_72" Guid="{10687F1B-7E2F-4EF2-B417-290B1332C23F}">
-                    <File Id="servercfg.resources.dll_72" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\si\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="sk">
-                <Component Id="servercfg.resources.dll_73" Guid="{BDC189A6-9B3A-4C36-B044-593ADA520AFA}">
-                    <File Id="servercfg.resources.dll_73" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sk\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="sl">
-                <Component Id="servercfg.resources.dll_74" Guid="{7B7D350B-5BA4-434A-A50A-C08E144EC607}">
-                    <File Id="servercfg.resources.dll_74" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sl\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="sn">
-                <Component Id="servercfg.resources.dll_75" Guid="{2A448FEC-F17F-44DB-9A5C-0C282E95558D}">
-                    <File Id="servercfg.resources.dll_75" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sn\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="so">
-                <Component Id="servercfg.resources.dll_76" Guid="{A6A70927-83A1-469B-A621-B2E97E5C65A4}">
-                    <File Id="servercfg.resources.dll_76" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\so\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="sq">
-                <Component Id="servercfg.resources.dll_77" Guid="{0E65AF66-F2EA-4ECA-91E5-7EB51D35AA86}">
-                    <File Id="servercfg.resources.dll_77" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sq\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="sr">
-                <Component Id="servercfg.resources.dll_78" Guid="{185482A9-B407-47AD-98D5-EA815D1690E9}">
-                    <File Id="servercfg.resources.dll_78" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sr\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="su">
-                <Component Id="servercfg.resources.dll_79" Guid="{7A33745E-32FA-4A82-A3AB-7E3B524281DC}">
-                    <File Id="servercfg.resources.dll_79" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\su\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="sv">
-                <Component Id="servercfg.resources.dll_80" Guid="{99155285-BEFB-4B9F-AC6B-9453568BF382}">
-                    <File Id="servercfg.resources.dll_80" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sv\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="sw">
-                <Component Id="servercfg.resources.dll_81" Guid="{35132D73-FBCE-4388-8182-FBFA037FA43E}">
-                    <File Id="servercfg.resources.dll_81" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sw\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ta">
-                <Component Id="servercfg.resources.dll_82" Guid="{BB372041-17EA-4B62-9743-F22EAF0655ED}">
-                    <File Id="servercfg.resources.dll_82" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ta\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="te">
-                <Component Id="servercfg.resources.dll_83" Guid="{F164C7C2-7E55-47BF-815B-7D58AE7322F7}">
-                    <File Id="servercfg.resources.dll_83" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\te\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="tg">
-                <Component Id="servercfg.resources.dll_84" Guid="{BE4ACD2F-0403-4C76-87F6-DF3F26CC7BE9}">
-                    <File Id="servercfg.resources.dll_84" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\tg\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="th">
-                <Component Id="servercfg.resources.dll_85" Guid="{BC784E53-8FF7-4A79-9F65-159737289DD2}">
-                    <File Id="servercfg.resources.dll_85" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\th\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="tk">
-                <Component Id="servercfg.resources.dll_86" Guid="{EC320A40-54BC-4749-A6D9-665D1901FE30}">
-                    <File Id="servercfg.resources.dll_86" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\tk\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="tr">
-                <Component Id="servercfg.resources.dll_87" Guid="{8DDA10E4-3996-457C-8193-BA124372DAE8}">
-                    <File Id="servercfg.resources.dll_87" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\tr\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="tt">
-                <Component Id="servercfg.resources.dll_88" Guid="{364DABE5-7558-4D21-804C-11A616D3D475}">
-                    <File Id="servercfg.resources.dll_88" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\tt\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ug">
-                <Component Id="servercfg.resources.dll_89" Guid="{C6EC1713-191C-4B8E-BA8F-0B868D86DE11}">
-                    <File Id="servercfg.resources.dll_89" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ug\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="uk">
-                <Component Id="servercfg.resources.dll_90" Guid="{BFD21505-3418-4AB6-A5CF-B879759502A7}">
-                    <File Id="servercfg.resources.dll_90" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\uk\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="ur">
-                <Component Id="servercfg.resources.dll_91" Guid="{3781379A-AAC3-4565-9EDA-375218CDDA7C}">
-                    <File Id="servercfg.resources.dll_91" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ur\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="uz">
-                <Component Id="servercfg.resources.dll_92" Guid="{4F23E933-0846-4BA6-A817-37370C0182FD}">
-                    <File Id="servercfg.resources.dll_92" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\uz\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="vi">
-                <Component Id="servercfg.resources.dll_93" Guid="{1913E7CB-4B8D-4185-89C4-CDA68E892EDA}">
-                    <File Id="servercfg.resources.dll_93" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\vi\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="xh">
-                <Component Id="servercfg.resources.dll_94" Guid="{B637139B-140C-4392-B6B8-3F8E5DBCF942}">
-                    <File Id="servercfg.resources.dll_94" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\xh\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="yi">
-                <Component Id="servercfg.resources.dll_95" Guid="{1F216159-8B1F-4E79-A48E-2CDBF42B2735}">
-                    <File Id="servercfg.resources.dll_95" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\yi\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="yo">
-                <Component Id="servercfg.resources.dll_96" Guid="{57146226-860A-41ED-AA4E-431E6C27212E}">
-                    <File Id="servercfg.resources.dll_96" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\yo\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="zh_CN">
-                <Component Id="servercfg.resources.dll_97" Guid="{109D7DA2-E1C5-4D4A-886B-1B46F9A8697C}">
-                    <File Id="servercfg.resources.dll_97" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\zh-CN\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="zh_TW">
-                <Component Id="servercfg.resources.dll_98" Guid="{CC567DE4-1200-44B6-94A3-A8C8F50007B6}">
-                    <File Id="servercfg.resources.dll_98" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\zh-TW\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
-            <DirectoryRef Id="zu">
-                <Component Id="servercfg.resources.dll_99" Guid="{22133578-93EB-4EC8-BF90-AA18462012AE}">
-                    <File Id="servercfg.resources.dll_99" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\zu\servercfg.resources.dll" />
-                </Component>
-            </DirectoryRef>
+			<Component Id="servercfg.resources.dll" Guid="{BE55E500-CA73-4D3C-AAEA-6237E2F30BEF}">
+				<File Id="servercfg.resources.dll" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\af\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="am">
+			<Component Id="servercfg.resources.dll_1" Guid="{CEFAD020-4D79-46C9-A28D-55BDB20D3927}">
+				<File Id="servercfg.resources.dll_1" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\am\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ar">
+			<Component Id="servercfg.resources.dll_2" Guid="{30068C7D-687D-4AD6-8B5C-76E8F9A2F047}">
+				<File Id="servercfg.resources.dll_2" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ar\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="az">
+			<Component Id="servercfg.resources.dll_3" Guid="{9938F8EF-C2EC-497F-9D72-266F55044873}">
+				<File Id="servercfg.resources.dll_3" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\az\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="be">
+			<Component Id="servercfg.resources.dll_4" Guid="{67482403-BCF1-44F8-A875-35C7B18C1683}">
+				<File Id="servercfg.resources.dll_4" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\be\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="bg">
+			<Component Id="servercfg.resources.dll_5" Guid="{720C7F8D-8AB6-47A4-A730-CED342789E08}">
+				<File Id="servercfg.resources.dll_5" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\bg\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="bs">
+			<Component Id="servercfg.resources.dll_6" Guid="{E452445C-DFBD-44FE-BD33-FAE39300D27F}">
+				<File Id="servercfg.resources.dll_6" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\bs\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ca">
+			<Component Id="servercfg.resources.dll_7" Guid="{2656DFCC-2494-48DD-89CC-D4C0A6881AA6}">
+				<File Id="servercfg.resources.dll_7" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ca\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="co">
+			<Component Id="servercfg.resources.dll_8" Guid="{E4382183-5985-4898-8463-C89BD2E6FC72}">
+				<File Id="servercfg.resources.dll_8" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\co\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="cs">
+			<Component Id="servercfg.resources.dll_9" Guid="{B841C60A-62A2-4F52-91AA-1B97DC8F2AF6}">
+				<File Id="servercfg.resources.dll_9" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\cs\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="cy">
+			<Component Id="servercfg.resources.dll_10" Guid="{5C13C7E3-EF03-4CD3-BE1C-5C99E6B86F81}">
+				<File Id="servercfg.resources.dll_10" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\cy\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="da">
+			<Component Id="servercfg.resources.dll_11" Guid="{C07071D8-0A66-490B-AF04-813077586969}">
+				<File Id="servercfg.resources.dll_11" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\da\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="de">
+			<Component Id="servercfg.resources.dll_12" Guid="{1702ADA6-4D1E-4B19-9055-419C99B9CB07}">
+				<File Id="servercfg.resources.dll_12" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\de\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="el">
+			<Component Id="servercfg.resources.dll_13" Guid="{E5CA7ADB-F47C-4ADC-9067-579EDB2A8EB1}">
+				<File Id="servercfg.resources.dll_13" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\el\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="en_US">
+			<Component Id="servercfg.resources.dll_14" Guid="{866A3FB1-9C61-4B14-A52B-2EFB081A216B}">
+				<File Id="servercfg.resources.dll_14" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\en-US\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="eo">
+			<Component Id="servercfg.resources.dll_15" Guid="{37CEC0B5-99DB-4D03-9B15-83CE21C44F00}">
+				<File Id="servercfg.resources.dll_15" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\eo\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="es">
+			<Component Id="servercfg.resources.dll_16" Guid="{33BB397B-8D11-4107-B760-524D91142BF2}">
+				<File Id="servercfg.resources.dll_16" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\es\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="et">
+			<Component Id="servercfg.resources.dll_17" Guid="{85936902-9C38-4A03-A2F1-6425F3286CDB}">
+				<File Id="servercfg.resources.dll_17" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\et\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="eu">
+			<Component Id="servercfg.resources.dll_18" Guid="{C8E9E00F-F642-4E4D-BB83-DFF27C0E2D74}">
+				<File Id="servercfg.resources.dll_18" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\eu\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fa">
+			<Component Id="servercfg.resources.dll_19" Guid="{23E00C43-96ED-4C2E-8E28-E33367599F9B}">
+				<File Id="servercfg.resources.dll_19" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\fa\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fi">
+			<Component Id="servercfg.resources.dll_20" Guid="{A8842D19-AD09-4669-841F-F44CDEA522B5}">
+				<File Id="servercfg.resources.dll_20" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\fi\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fil_PH">
+			<Component Id="servercfg.resources.dll_21" Guid="{C654890B-0033-4ADA-A299-CC0109068D83}">
+				<File Id="servercfg.resources.dll_21" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\fil-PH\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fr">
+			<Component Id="servercfg.resources.dll_22" Guid="{C257D730-0897-49B3-B5C4-7F68C2EDAB50}">
+				<File Id="servercfg.resources.dll_22" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\fr\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fr_HT">
+			<Component Id="servercfg.resources.dll_23" Guid="{283D6E13-5057-47A7-B839-8D98A3168C45}">
+				<File Id="servercfg.resources.dll_23" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\fr-HT\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ga">
+			<Component Id="servercfg.resources.dll_24" Guid="{7BFE76FD-0DFB-4C20-9CE8-7E94D67F67EC}">
+				<File Id="servercfg.resources.dll_24" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ga\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="gd">
+			<Component Id="servercfg.resources.dll_25" Guid="{EA5580A0-4794-40A4-B36D-EB378328300E}">
+				<File Id="servercfg.resources.dll_25" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\gd\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="gl">
+			<Component Id="servercfg.resources.dll_26" Guid="{853FE644-97DC-4E00-B9E2-4554013392B4}">
+				<File Id="servercfg.resources.dll_26" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\gl\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="gu">
+			<Component Id="servercfg.resources.dll_27" Guid="{9859D31A-4B73-4FA9-AA4B-3989E31AC16B}">
+				<File Id="servercfg.resources.dll_27" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\gu\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ha">
+			<Component Id="servercfg.resources.dll_28" Guid="{CD4B3159-10E8-4B0C-BBB7-59FAD299E693}">
+				<File Id="servercfg.resources.dll_28" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ha\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="haw">
+			<Component Id="servercfg.resources.dll_29" Guid="{7A0ABCD5-EF6D-4586-8EF9-2EF65D7ED451}">
+				<File Id="servercfg.resources.dll_29" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\haw\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hi">
+			<Component Id="servercfg.resources.dll_30" Guid="{04CA9993-4625-4C50-B41D-F72F3561BC00}">
+				<File Id="servercfg.resources.dll_30" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\hi\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hr">
+			<Component Id="servercfg.resources.dll_31" Guid="{0D8E4CCC-12C6-4848-99F3-95C7E45A1DF7}">
+				<File Id="servercfg.resources.dll_31" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\hr\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hu">
+			<Component Id="servercfg.resources.dll_32" Guid="{0DB09ED7-8548-4682-821A-ECAA157CE43D}">
+				<File Id="servercfg.resources.dll_32" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\hu\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hy">
+			<Component Id="servercfg.resources.dll_33" Guid="{994C8562-EA1B-4B56-881B-433C7E27ADAE}">
+				<File Id="servercfg.resources.dll_33" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\hy\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="id">
+			<Component Id="servercfg.resources.dll_34" Guid="{41F8E701-3815-4B5C-99A2-40C7941ADAD7}">
+				<File Id="servercfg.resources.dll_34" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\id\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ig">
+			<Component Id="servercfg.resources.dll_35" Guid="{07AEDD1B-7992-449F-8B0C-87E85AC2FAD1}">
+				<File Id="servercfg.resources.dll_35" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ig\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="is">
+			<Component Id="servercfg.resources.dll_36" Guid="{FF6E3249-12F0-4795-AB0D-177EDED4072A}">
+				<File Id="servercfg.resources.dll_36" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\is\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="it">
+			<Component Id="servercfg.resources.dll_37" Guid="{83BCDEC8-E622-4FEC-A0A6-EAE4269950F0}">
+				<File Id="servercfg.resources.dll_37" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\it\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ja">
+			<Component Id="servercfg.resources.dll_38" Guid="{ED4CA05D-2920-4411-8DB8-910D5C593C82}">
+				<File Id="servercfg.resources.dll_38" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ja\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="jv">
+			<Component Id="servercfg.resources.dll_39" Guid="{E651CFC6-E607-415B-801E-24109C061980}">
+				<File Id="servercfg.resources.dll_39" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\jv\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ka">
+			<Component Id="servercfg.resources.dll_40" Guid="{E2A9B9A6-4453-4D8C-80F5-DF76B19E2466}">
+				<File Id="servercfg.resources.dll_40" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ka\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="kk">
+			<Component Id="servercfg.resources.dll_41" Guid="{140AF9C3-E07B-4EB0-9D67-734C888B7599}">
+				<File Id="servercfg.resources.dll_41" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\kk\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="km">
+			<Component Id="servercfg.resources.dll_42" Guid="{89533EF5-7F0D-440D-BD51-D52FE7546677}">
+				<File Id="servercfg.resources.dll_42" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\km\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="kn">
+			<Component Id="servercfg.resources.dll_43" Guid="{D188B39E-399C-4EAC-9063-B63E35E08191}">
+				<File Id="servercfg.resources.dll_43" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\kn\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ko">
+			<Component Id="servercfg.resources.dll_44" Guid="{CBB364BE-14C9-4C2A-AC08-853249541375}">
+				<File Id="servercfg.resources.dll_44" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ko\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ku">
+			<Component Id="servercfg.resources.dll_45" Guid="{8F0DD497-04F1-432E-8AB6-A7B843DED30D}">
+				<File Id="servercfg.resources.dll_45" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ku\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ky">
+			<Component Id="servercfg.resources.dll_46" Guid="{4ABA72FB-90A3-4CCC-8271-FEB9D494A992}">
+				<File Id="servercfg.resources.dll_46" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ky\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="la">
+			<Component Id="servercfg.resources.dll_47" Guid="{176C30D9-9583-4A27-9046-8225822FB868}">
+				<File Id="servercfg.resources.dll_47" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\la\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="lo">
+			<Component Id="servercfg.resources.dll_48" Guid="{E4A13241-09B3-4FF4-A6B7-C354FDBD4B54}">
+				<File Id="servercfg.resources.dll_48" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\lo\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="lt">
+			<Component Id="servercfg.resources.dll_49" Guid="{F080DC5A-3C4C-470B-9DED-239AF2220A2D}">
+				<File Id="servercfg.resources.dll_49" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\lt\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="lv">
+			<Component Id="servercfg.resources.dll_50" Guid="{01617479-7449-49FA-9F2E-681925B69F1D}">
+				<File Id="servercfg.resources.dll_50" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\lv\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mg">
+			<Component Id="servercfg.resources.dll_51" Guid="{B0733C7A-29E1-4035-8FC7-A3A638D809C5}">
+				<File Id="servercfg.resources.dll_51" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mg\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mi">
+			<Component Id="servercfg.resources.dll_52" Guid="{E3A4364D-95E4-48DA-9292-9F26AF6941E2}">
+				<File Id="servercfg.resources.dll_52" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mi\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mk">
+			<Component Id="servercfg.resources.dll_53" Guid="{B9FAE0AF-5FA9-40FC-8211-6688100D44CE}">
+				<File Id="servercfg.resources.dll_53" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mk\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ml">
+			<Component Id="servercfg.resources.dll_54" Guid="{D4F28642-69A5-42DD-9D1D-13F0BAD0E198}">
+				<File Id="servercfg.resources.dll_54" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ml\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mn">
+			<Component Id="servercfg.resources.dll_55" Guid="{541C3589-65BC-487F-A1CF-A10BE5B72C7F}">
+				<File Id="servercfg.resources.dll_55" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mn\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mr">
+			<Component Id="servercfg.resources.dll_56" Guid="{CF03C374-29BB-4FAE-8EF5-A60FCAF6E6F5}">
+				<File Id="servercfg.resources.dll_56" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mr\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ms">
+			<Component Id="servercfg.resources.dll_57" Guid="{7B58026F-CCF7-4FE5-84FF-CBD43C632753}">
+				<File Id="servercfg.resources.dll_57" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ms\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mt">
+			<Component Id="servercfg.resources.dll_58" Guid="{CE902060-F713-4251-9C8B-9E62B3562C70}">
+				<File Id="servercfg.resources.dll_58" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\mt\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="nb_NO">
+			<Component Id="servercfg.resources.dll_59" Guid="{711C9B5F-787B-4A24-96E5-998A00EB56AD}">
+				<File Id="servercfg.resources.dll_59" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\nb-NO\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ne">
+			<Component Id="servercfg.resources.dll_60" Guid="{CB36BEF3-366A-4F70-99FE-BFC405AB4867}">
+				<File Id="servercfg.resources.dll_60" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ne\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="nl">
+			<Component Id="servercfg.resources.dll_61" Guid="{BEDCAD4B-7710-4DE4-8BA1-BB096AA0D5EA}">
+				<File Id="servercfg.resources.dll_61" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\nl\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="nn_NO">
+			<Component Id="servercfg.resources.dll_62" Guid="{3E0802C0-4513-47B0-8369-D6F61371C45B}">
+				<File Id="servercfg.resources.dll_62" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\nn-NO\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="no">
+			<Component Id="servercfg.resources.dll_63" Guid="{E6F92D9C-2188-4E10-9AB6-BADAE54BF067}">
+				<File Id="servercfg.resources.dll_63" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\no\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pa">
+			<Component Id="servercfg.resources.dll_64" Guid="{0F27B704-6BC5-460E-811A-1FC1675DAF84}">
+				<File Id="servercfg.resources.dll_64" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\pa\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pl">
+			<Component Id="servercfg.resources.dll_65" Guid="{29474BF4-CD6C-401E-A838-BEAE1B48AEE8}">
+				<File Id="servercfg.resources.dll_65" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\pl\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ps">
+			<Component Id="servercfg.resources.dll_66" Guid="{58B7F1ED-FABA-49CC-B1BB-8ED4B522271E}">
+				<File Id="servercfg.resources.dll_66" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ps\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pt_BR">
+			<Component Id="servercfg.resources.dll_67" Guid="{CB14B919-25B8-495D-AE86-3276EC7F5902}">
+				<File Id="servercfg.resources.dll_67" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\pt-BR\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pt_PT">
+			<Component Id="servercfg.resources.dll_68" Guid="{8E764B27-6DEE-4677-9558-AC6CEB9CD637}">
+				<File Id="servercfg.resources.dll_68" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\pt-PT\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ro">
+			<Component Id="servercfg.resources.dll_69" Guid="{6918F487-14F0-4D67-B06D-DA49BDA5C61F}">
+				<File Id="servercfg.resources.dll_69" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ro\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ru">
+			<Component Id="servercfg.resources.dll_70" Guid="{6CF770F5-4782-4D75-A0F9-6FAA4CCBB2B4}">
+				<File Id="servercfg.resources.dll_70" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ru\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sd">
+			<Component Id="servercfg.resources.dll_71" Guid="{6D9E42BF-AAD7-4109-8972-7DA393182834}">
+				<File Id="servercfg.resources.dll_71" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sd\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="si">
+			<Component Id="servercfg.resources.dll_72" Guid="{10687F1B-7E2F-4EF2-B417-290B1332C23F}">
+				<File Id="servercfg.resources.dll_72" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\si\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sk">
+			<Component Id="servercfg.resources.dll_73" Guid="{BDC189A6-9B3A-4C36-B044-593ADA520AFA}">
+				<File Id="servercfg.resources.dll_73" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sk\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sl">
+			<Component Id="servercfg.resources.dll_74" Guid="{7B7D350B-5BA4-434A-A50A-C08E144EC607}">
+				<File Id="servercfg.resources.dll_74" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sl\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sn">
+			<Component Id="servercfg.resources.dll_75" Guid="{2A448FEC-F17F-44DB-9A5C-0C282E95558D}">
+				<File Id="servercfg.resources.dll_75" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sn\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="so">
+			<Component Id="servercfg.resources.dll_76" Guid="{A6A70927-83A1-469B-A621-B2E97E5C65A4}">
+				<File Id="servercfg.resources.dll_76" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\so\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sq">
+			<Component Id="servercfg.resources.dll_77" Guid="{0E65AF66-F2EA-4ECA-91E5-7EB51D35AA86}">
+				<File Id="servercfg.resources.dll_77" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sq\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sr">
+			<Component Id="servercfg.resources.dll_78" Guid="{185482A9-B407-47AD-98D5-EA815D1690E9}">
+				<File Id="servercfg.resources.dll_78" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sr\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="su">
+			<Component Id="servercfg.resources.dll_79" Guid="{7A33745E-32FA-4A82-A3AB-7E3B524281DC}">
+				<File Id="servercfg.resources.dll_79" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\su\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sv">
+			<Component Id="servercfg.resources.dll_80" Guid="{99155285-BEFB-4B9F-AC6B-9453568BF382}">
+				<File Id="servercfg.resources.dll_80" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sv\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sw">
+			<Component Id="servercfg.resources.dll_81" Guid="{35132D73-FBCE-4388-8182-FBFA037FA43E}">
+				<File Id="servercfg.resources.dll_81" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\sw\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ta">
+			<Component Id="servercfg.resources.dll_82" Guid="{BB372041-17EA-4B62-9743-F22EAF0655ED}">
+				<File Id="servercfg.resources.dll_82" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ta\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="te">
+			<Component Id="servercfg.resources.dll_83" Guid="{F164C7C2-7E55-47BF-815B-7D58AE7322F7}">
+				<File Id="servercfg.resources.dll_83" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\te\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tg">
+			<Component Id="servercfg.resources.dll_84" Guid="{BE4ACD2F-0403-4C76-87F6-DF3F26CC7BE9}">
+				<File Id="servercfg.resources.dll_84" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\tg\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="th">
+			<Component Id="servercfg.resources.dll_85" Guid="{BC784E53-8FF7-4A79-9F65-159737289DD2}">
+				<File Id="servercfg.resources.dll_85" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\th\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tk">
+			<Component Id="servercfg.resources.dll_86" Guid="{EC320A40-54BC-4749-A6D9-665D1901FE30}">
+				<File Id="servercfg.resources.dll_86" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\tk\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tr">
+			<Component Id="servercfg.resources.dll_87" Guid="{8DDA10E4-3996-457C-8193-BA124372DAE8}">
+				<File Id="servercfg.resources.dll_87" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\tr\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tt">
+			<Component Id="servercfg.resources.dll_88" Guid="{364DABE5-7558-4D21-804C-11A616D3D475}">
+				<File Id="servercfg.resources.dll_88" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\tt\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ug">
+			<Component Id="servercfg.resources.dll_89" Guid="{C6EC1713-191C-4B8E-BA8F-0B868D86DE11}">
+				<File Id="servercfg.resources.dll_89" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ug\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="uk">
+			<Component Id="servercfg.resources.dll_90" Guid="{BFD21505-3418-4AB6-A5CF-B879759502A7}">
+				<File Id="servercfg.resources.dll_90" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\uk\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ur">
+			<Component Id="servercfg.resources.dll_91" Guid="{3781379A-AAC3-4565-9EDA-375218CDDA7C}">
+				<File Id="servercfg.resources.dll_91" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\ur\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="uz">
+			<Component Id="servercfg.resources.dll_92" Guid="{4F23E933-0846-4BA6-A817-37370C0182FD}">
+				<File Id="servercfg.resources.dll_92" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\uz\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="vi">
+			<Component Id="servercfg.resources.dll_93" Guid="{1913E7CB-4B8D-4185-89C4-CDA68E892EDA}">
+				<File Id="servercfg.resources.dll_93" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\vi\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="xh">
+			<Component Id="servercfg.resources.dll_94" Guid="{B637139B-140C-4392-B6B8-3F8E5DBCF942}">
+				<File Id="servercfg.resources.dll_94" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\xh\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="yi">
+			<Component Id="servercfg.resources.dll_95" Guid="{1F216159-8B1F-4E79-A48E-2CDBF42B2735}">
+				<File Id="servercfg.resources.dll_95" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\yi\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="yo">
+			<Component Id="servercfg.resources.dll_96" Guid="{57146226-860A-41ED-AA4E-431E6C27212E}">
+				<File Id="servercfg.resources.dll_96" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\yo\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="zh_CN">
+			<Component Id="servercfg.resources.dll_97" Guid="{109D7DA2-E1C5-4D4A-886B-1B46F9A8697C}">
+				<File Id="servercfg.resources.dll_97" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\zh-CN\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="zh_TW">
+			<Component Id="servercfg.resources.dll_98" Guid="{CC567DE4-1200-44B6-94A3-A8C8F50007B6}">
+				<File Id="servercfg.resources.dll_98" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\zh-TW\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="zu">
+			<Component Id="servercfg.resources.dll_99" Guid="{22133578-93EB-4EC8-BF90-AA18462012AE}">
+				<File Id="servercfg.resources.dll_99" KeyPath="yes" Source=".\servercfg\servercfg\bin\release\zu\servercfg.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="af">
+			<Component Id="shortcuts.resources.dll" Guid="{02D047A0-720D-450B-90EE-72BAFDEEF7CA}">
+				<File Id="shortcuts.resources.dll" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\af\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="am">
+			<Component Id="shortcuts.resources.dll_1" Guid="{AC71111F-82AD-4D88-B914-B9F0D8A14AC2}">
+				<File Id="shortcuts.resources.dll_1" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\am\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ar">
+			<Component Id="shortcuts.resources.dll_2" Guid="{A6B3935B-96C1-4B82-8816-1442A86BEF54}">
+				<File Id="shortcuts.resources.dll_2" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ar\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="az">
+			<Component Id="shortcuts.resources.dll_3" Guid="{56F389CD-48F9-4AF7-8E35-4A62E8D18E60}">
+				<File Id="shortcuts.resources.dll_3" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\az\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="be">
+			<Component Id="shortcuts.resources.dll_4" Guid="{AC31966B-9116-4558-9FAB-AE3C2ADE87C7}">
+				<File Id="shortcuts.resources.dll_4" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\be\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="bg">
+			<Component Id="shortcuts.resources.dll_5" Guid="{00C329A0-F539-4E49-80D4-B6F45B8AA98F}">
+				<File Id="shortcuts.resources.dll_5" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\bg\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="bs">
+			<Component Id="shortcuts.resources.dll_6" Guid="{600FCDB1-54FF-42AE-973F-A920BD843855}">
+				<File Id="shortcuts.resources.dll_6" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\bs\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ca">
+			<Component Id="shortcuts.resources.dll_7" Guid="{55EC9505-ACB2-41F2-B167-0171057847B4}">
+				<File Id="shortcuts.resources.dll_7" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ca\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="co">
+			<Component Id="shortcuts.resources.dll_8" Guid="{691B4DD7-C996-4342-BD9D-E97F30D9AE50}">
+				<File Id="shortcuts.resources.dll_8" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\co\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="cs">
+			<Component Id="shortcuts.resources.dll_9" Guid="{07380C92-3831-4900-9E66-8B3D8985C956}">
+				<File Id="shortcuts.resources.dll_9" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\cs\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="cy">
+			<Component Id="shortcuts.resources.dll_10" Guid="{7218F9D9-9825-4547-B860-82C76D1F678B}">
+				<File Id="shortcuts.resources.dll_10" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\cy\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="da">
+			<Component Id="shortcuts.resources.dll_11" Guid="{DA901898-622E-422E-A6BD-42417D35FED6}">
+				<File Id="shortcuts.resources.dll_11" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\da\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="de">
+			<Component Id="shortcuts.resources.dll_12" Guid="{8ED0C24D-8A14-4BE3-AB6B-CE030B2FE67E}">
+				<File Id="shortcuts.resources.dll_12" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\de\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="el">
+			<Component Id="shortcuts.resources.dll_13" Guid="{F3D1790A-7CD6-4DC4-A8ED-5176597C4D15}">
+				<File Id="shortcuts.resources.dll_13" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\el\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="en_US">
+			<Component Id="shortcuts.resources.dll_14" Guid="{6FFD9CFD-B20E-426C-AC76-F769BA9C0B78}">
+				<File Id="shortcuts.resources.dll_14" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\en-US\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="eo">
+			<Component Id="shortcuts.resources.dll_15" Guid="{4CC85E35-4CCB-4D3D-B4EA-40B162B633BD}">
+				<File Id="shortcuts.resources.dll_15" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\eo\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="es">
+			<Component Id="shortcuts.resources.dll_16" Guid="{5CB4A00C-5C63-470A-A69C-C4DFD2D1DFAE}">
+				<File Id="shortcuts.resources.dll_16" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\es\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="et">
+			<Component Id="shortcuts.resources.dll_17" Guid="{BC6B7B5A-EDCA-407E-82A8-67412A4F56D2}">
+				<File Id="shortcuts.resources.dll_17" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\et\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="eu">
+			<Component Id="shortcuts.resources.dll_18" Guid="{A40BCD9D-4B11-4B86-9346-EA9C58E3C674}">
+				<File Id="shortcuts.resources.dll_18" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\eu\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fa">
+			<Component Id="shortcuts.resources.dll_19" Guid="{3F45699F-E53B-4D7D-85D9-613C784E2037}">
+				<File Id="shortcuts.resources.dll_19" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\fa\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fi">
+			<Component Id="shortcuts.resources.dll_20" Guid="{B655C238-8CC4-4AB7-B276-E179498320BB}">
+				<File Id="shortcuts.resources.dll_20" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\fi\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fil_PH">
+			<Component Id="shortcuts.resources.dll_21" Guid="{E7CFD844-1FE2-40EE-BA10-FDEF254E581B}">
+				<File Id="shortcuts.resources.dll_21" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\fil-PH\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fr">
+			<Component Id="shortcuts.resources.dll_22" Guid="{169A7F08-014E-4B17-A77C-05D694466974}">
+				<File Id="shortcuts.resources.dll_22" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\fr\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="fr_HT">
+			<Component Id="shortcuts.resources.dll_23" Guid="{CB5C623A-27D0-4C0E-9CC2-02B880375BF8}">
+				<File Id="shortcuts.resources.dll_23" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\fr-HT\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ga">
+			<Component Id="shortcuts.resources.dll_24" Guid="{7E4120CC-B385-428D-A0DB-06F4ADB9FB25}">
+				<File Id="shortcuts.resources.dll_24" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ga\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="gl">
+			<Component Id="shortcuts.resources.dll_25" Guid="{67BB4AF8-8334-4A53-869A-587042FECD16}">
+				<File Id="shortcuts.resources.dll_25" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\gl\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="gu">
+			<Component Id="shortcuts.resources.dll_26" Guid="{BBD7F718-3B4F-4447-A7E0-31902CFAAB5E}">
+				<File Id="shortcuts.resources.dll_26" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\gu\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ha">
+			<Component Id="shortcuts.resources.dll_27" Guid="{96843F96-0586-4119-B4C8-BA68E5ABBF10}">
+				<File Id="shortcuts.resources.dll_27" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ha\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="haw">
+			<Component Id="shortcuts.resources.dll_28" Guid="{F48A0A01-B8C8-4B55-9B6A-3C362E98E6FC}">
+				<File Id="shortcuts.resources.dll_28" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\haw\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hi">
+			<Component Id="shortcuts.resources.dll_29" Guid="{4B03A423-0D9A-4033-9CC4-90782A111969}">
+				<File Id="shortcuts.resources.dll_29" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\hi\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hr">
+			<Component Id="shortcuts.resources.dll_30" Guid="{5BCD7279-586F-4F1C-9E23-F7C5BD21C2ED}">
+				<File Id="shortcuts.resources.dll_30" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\hr\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hu">
+			<Component Id="shortcuts.resources.dll_31" Guid="{6C36F5F3-16D5-4E4D-AB3A-7AF9C7FF35FD}">
+				<File Id="shortcuts.resources.dll_31" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\hu\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="hy">
+			<Component Id="shortcuts.resources.dll_32" Guid="{E8FC7F2F-9C6A-4E4A-AFEE-10772B90BCB4}">
+				<File Id="shortcuts.resources.dll_32" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\hy\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="id">
+			<Component Id="shortcuts.resources.dll_33" Guid="{A7FAAE04-C898-40AD-BCFD-4EDB11F0E926}">
+				<File Id="shortcuts.resources.dll_33" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\id\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ig">
+			<Component Id="shortcuts.resources.dll_34" Guid="{3D6AFB23-1EC9-4810-B8C6-8517BEEDCC8B}">
+				<File Id="shortcuts.resources.dll_34" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ig\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="is">
+			<Component Id="shortcuts.resources.dll_35" Guid="{82C77B77-CF6D-4390-A5F0-9E971734DBC9}">
+				<File Id="shortcuts.resources.dll_35" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\is\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="it">
+			<Component Id="shortcuts.resources.dll_36" Guid="{59B83416-065D-4EA9-B006-F8046FA7A459}">
+				<File Id="shortcuts.resources.dll_36" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\it\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ja">
+			<Component Id="shortcuts.resources.dll_37" Guid="{8B8C9D01-C231-4A65-A794-5A9857111F25}">
+				<File Id="shortcuts.resources.dll_37" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ja\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="jv">
+			<Component Id="shortcuts.resources.dll_38" Guid="{D0BE5DBD-ADEF-4DCC-A425-4950CCC1D264}">
+				<File Id="shortcuts.resources.dll_38" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\jv\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ka">
+			<Component Id="shortcuts.resources.dll_39" Guid="{18AF942F-F2A9-4714-B949-BC7009BCE4C3}">
+				<File Id="shortcuts.resources.dll_39" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ka\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="kk">
+			<Component Id="shortcuts.resources.dll_40" Guid="{441E302E-EA59-4DD0-8627-28ACA9BC56E8}">
+				<File Id="shortcuts.resources.dll_40" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\kk\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="km">
+			<Component Id="shortcuts.resources.dll_41" Guid="{791CAFB6-9404-4C7B-BDBE-9563535E1162}">
+				<File Id="shortcuts.resources.dll_41" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\km\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="kn">
+			<Component Id="shortcuts.resources.dll_42" Guid="{133A16BF-7912-48A4-B4C2-C11120F43635}">
+				<File Id="shortcuts.resources.dll_42" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\kn\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ko">
+			<Component Id="shortcuts.resources.dll_43" Guid="{00BC68E7-BF78-405B-930A-9A63B491AC9C}">
+				<File Id="shortcuts.resources.dll_43" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ko\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ku">
+			<Component Id="shortcuts.resources.dll_44" Guid="{D315DB97-236D-475F-A82D-01212C0ABFA2}">
+				<File Id="shortcuts.resources.dll_44" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ku\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ky">
+			<Component Id="shortcuts.resources.dll_45" Guid="{1D4F6E39-BC39-40A8-B72B-42E037F27F44}">
+				<File Id="shortcuts.resources.dll_45" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ky\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="la">
+			<Component Id="shortcuts.resources.dll_46" Guid="{9EF4F9BB-FD4C-4D69-833B-8B6BB1C2E1D0}">
+				<File Id="shortcuts.resources.dll_46" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\la\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="lo">
+			<Component Id="shortcuts.resources.dll_47" Guid="{E4D40A2B-D18B-4ED7-9996-F5A84F12E7D4}">
+				<File Id="shortcuts.resources.dll_47" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\lo\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="lt">
+			<Component Id="shortcuts.resources.dll_48" Guid="{BC6E5593-C9B1-499A-B9EF-E65212B12330}">
+				<File Id="shortcuts.resources.dll_48" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\lt\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="lv">
+			<Component Id="shortcuts.resources.dll_49" Guid="{9FB4A1BD-59C5-40F7-AC6E-463288AB981F}">
+				<File Id="shortcuts.resources.dll_49" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\lv\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mg">
+			<Component Id="shortcuts.resources.dll_50" Guid="{E2498802-DCE3-497B-8C89-07050F204A08}">
+				<File Id="shortcuts.resources.dll_50" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\mg\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mi">
+			<Component Id="shortcuts.resources.dll_51" Guid="{5332811F-2036-4E2B-8E92-ECEFFA8B682B}">
+				<File Id="shortcuts.resources.dll_51" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\mi\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mk">
+			<Component Id="shortcuts.resources.dll_52" Guid="{46D4C0FC-C84B-4F0C-BA25-5AAC5C3C38E6}">
+				<File Id="shortcuts.resources.dll_52" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\mk\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ml">
+			<Component Id="shortcuts.resources.dll_53" Guid="{347A3E29-3B06-4A22-A27D-A2EF47A9D972}">
+				<File Id="shortcuts.resources.dll_53" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ml\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mn">
+			<Component Id="shortcuts.resources.dll_54" Guid="{8D26D773-D9A1-4AE2-8899-51A36EA7A9AF}">
+				<File Id="shortcuts.resources.dll_54" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\mn\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mr">
+			<Component Id="shortcuts.resources.dll_55" Guid="{6C403A45-FF1A-4C96-8B05-B913F03BEC40}">
+				<File Id="shortcuts.resources.dll_55" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\mr\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ms">
+			<Component Id="shortcuts.resources.dll_56" Guid="{E8C1BF4E-4076-4497-8CE3-333FBA504ECD}">
+				<File Id="shortcuts.resources.dll_56" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ms\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="mt">
+			<Component Id="shortcuts.resources.dll_57" Guid="{CFF582E5-B782-48EC-8F6A-914A779DBAC6}">
+				<File Id="shortcuts.resources.dll_57" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\mt\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="nb_NO">
+			<Component Id="shortcuts.resources.dll_58" Guid="{7E2529FA-06E7-48EB-B977-971BE8500F1A}">
+				<File Id="shortcuts.resources.dll_58" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\nb-NO\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ne">
+			<Component Id="shortcuts.resources.dll_59" Guid="{C8471068-039A-424B-B276-6A0DFF27B578}">
+				<File Id="shortcuts.resources.dll_59" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ne\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="nl">
+			<Component Id="shortcuts.resources.dll_60" Guid="{8FEE3592-3E0E-4DC1-BDDD-87453984E434}">
+				<File Id="shortcuts.resources.dll_60" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\nl\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="nn_NO">
+			<Component Id="shortcuts.resources.dll_61" Guid="{0D96BA2F-D6AD-4361-8530-71CB9992A045}">
+				<File Id="shortcuts.resources.dll_61" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\nn-NO\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="no">
+			<Component Id="shortcuts.resources.dll_62" Guid="{FF50989D-96D6-468B-B717-59791081CAC6}">
+				<File Id="shortcuts.resources.dll_62" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\no\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pa">
+			<Component Id="shortcuts.resources.dll_63" Guid="{B9CAD53C-F64E-48EF-AF1D-FC70663AB6AF}">
+				<File Id="shortcuts.resources.dll_63" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\pa\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pl">
+			<Component Id="shortcuts.resources.dll_64" Guid="{6826C580-B05D-4554-98E3-56E47AC6270B}">
+				<File Id="shortcuts.resources.dll_64" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\pl\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ps">
+			<Component Id="shortcuts.resources.dll_65" Guid="{0AC4DE9B-7BA1-4EB7-B1A0-260FB490352E}">
+				<File Id="shortcuts.resources.dll_65" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ps\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pt_BR">
+			<Component Id="shortcuts.resources.dll_66" Guid="{7FDA6390-7419-432F-8594-AEDB56EFAB80}">
+				<File Id="shortcuts.resources.dll_66" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\pt-BR\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="pt_PT">
+			<Component Id="shortcuts.resources.dll_67" Guid="{AF6D19CF-E490-4A5B-88DA-3E2CC9B16306}">
+				<File Id="shortcuts.resources.dll_67" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\pt-PT\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ro">
+			<Component Id="shortcuts.resources.dll_68" Guid="{5A1B4AD9-B4D6-453C-A0F0-DF8726A52885}">
+				<File Id="shortcuts.resources.dll_68" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ro\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ru">
+			<Component Id="shortcuts.resources.dll_69" Guid="{646DF56E-D1AE-4C69-87FE-0CA0279D46EC}">
+				<File Id="shortcuts.resources.dll_69" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ru\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sd">
+			<Component Id="shortcuts.resources.dll_70" Guid="{412AD21F-4680-4E6D-A66D-14E2817486D6}">
+				<File Id="shortcuts.resources.dll_70" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\sd\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="si">
+			<Component Id="shortcuts.resources.dll_71" Guid="{F900C857-237D-4F21-B17D-C8062610D822}">
+				<File Id="shortcuts.resources.dll_71" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\si\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sk">
+			<Component Id="shortcuts.resources.dll_72" Guid="{7975C64F-455C-4587-B1F9-E082CD5F982D}">
+				<File Id="shortcuts.resources.dll_72" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\sk\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sl">
+			<Component Id="shortcuts.resources.dll_73" Guid="{E749FF7A-FF9C-451D-8392-8528399BDC95}">
+				<File Id="shortcuts.resources.dll_73" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\sl\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sn">
+			<Component Id="shortcuts.resources.dll_74" Guid="{5D20FFF4-EB86-49A5-A714-056F28E78F08}">
+				<File Id="shortcuts.resources.dll_74" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\sn\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="so">
+			<Component Id="shortcuts.resources.dll_75" Guid="{9F34945E-1B97-4836-9B0D-6FC9AE4177B8}">
+				<File Id="shortcuts.resources.dll_75" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\so\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sq">
+			<Component Id="shortcuts.resources.dll_76" Guid="{9E6F75A6-B99D-488E-B2C2-24FD9E9FE126}">
+				<File Id="shortcuts.resources.dll_76" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\sq\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sr">
+			<Component Id="shortcuts.resources.dll_77" Guid="{61057E4F-A2FD-4099-8674-66BD99EC0D11}">
+				<File Id="shortcuts.resources.dll_77" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\sr\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="su">
+			<Component Id="shortcuts.resources.dll_78" Guid="{3B3C7BE8-988C-4565-974F-5BDC201B6D9F}">
+				<File Id="shortcuts.resources.dll_78" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\su\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sv">
+			<Component Id="shortcuts.resources.dll_79" Guid="{365136D3-621B-4378-8457-AFFBE43E7791}">
+				<File Id="shortcuts.resources.dll_79" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\sv\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="sw">
+			<Component Id="shortcuts.resources.dll_80" Guid="{02B71598-F99A-41BE-938C-6B85343449E1}">
+				<File Id="shortcuts.resources.dll_80" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\sw\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ta">
+			<Component Id="shortcuts.resources.dll_81" Guid="{31144070-22CA-4D30-AFE6-BFD5F8E85461}">
+				<File Id="shortcuts.resources.dll_81" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ta\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="te">
+			<Component Id="shortcuts.resources.dll_82" Guid="{BF8934EE-F91C-4B66-8019-DBB2C039E8A8}">
+				<File Id="shortcuts.resources.dll_82" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\te\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tg">
+			<Component Id="shortcuts.resources.dll_83" Guid="{0670C25E-3422-43E5-8743-8FAF649EFF11}">
+				<File Id="shortcuts.resources.dll_83" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\tg\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="th">
+			<Component Id="shortcuts.resources.dll_84" Guid="{DD840FEF-ADD1-4790-B830-238200CD1D80}">
+				<File Id="shortcuts.resources.dll_84" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\th\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tk">
+			<Component Id="shortcuts.resources.dll_85" Guid="{9D995DDE-2D63-45EC-A3F7-5A7A67DE0ED3}">
+				<File Id="shortcuts.resources.dll_85" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\tk\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tr">
+			<Component Id="shortcuts.resources.dll_86" Guid="{2314D197-3B70-4199-89D8-6B4CEB41F760}">
+				<File Id="shortcuts.resources.dll_86" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\tr\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="tt">
+			<Component Id="shortcuts.resources.dll_87" Guid="{08540042-A09A-401C-B33C-47717769E58A}">
+				<File Id="shortcuts.resources.dll_87" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\tt\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ug">
+			<Component Id="shortcuts.resources.dll_88" Guid="{9E7CF4B3-5360-4908-B5C4-5C9DC1336AC9}">
+				<File Id="shortcuts.resources.dll_88" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ug\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="uk">
+			<Component Id="shortcuts.resources.dll_89" Guid="{323CC4CC-0176-464E-8D3C-C63470DFCD3B}">
+				<File Id="shortcuts.resources.dll_89" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\uk\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ur">
+			<Component Id="shortcuts.resources.dll_90" Guid="{E2E55FFB-231B-4796-8A95-A15A3F08B90D}">
+				<File Id="shortcuts.resources.dll_90" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\ur\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="uz">
+			<Component Id="shortcuts.resources.dll_91" Guid="{BD3FFCF6-98EF-43DD-8AAD-8703D6C93175}">
+				<File Id="shortcuts.resources.dll_91" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\uz\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="vi">
+			<Component Id="shortcuts.resources.dll_92" Guid="{3CADA19A-C43D-468A-8844-6A80ED07AA2A}">
+				<File Id="shortcuts.resources.dll_92" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\vi\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="xh">
+			<Component Id="shortcuts.resources.dll_93" Guid="{D82D3368-0B35-40A2-8D6E-05AD39F6BE9D}">
+				<File Id="shortcuts.resources.dll_93" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\xh\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="yi">
+			<Component Id="shortcuts.resources.dll_94" Guid="{41795847-9968-41C3-AF25-BB9B5D563F1B}">
+				<File Id="shortcuts.resources.dll_94" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\yi\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="yo">
+			<Component Id="shortcuts.resources.dll_95" Guid="{1E9B44C4-7A66-4282-A20B-6D707F86AC5C}">
+				<File Id="shortcuts.resources.dll_95" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\yo\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="zh_CN">
+			<Component Id="shortcuts.resources.dll_96" Guid="{851DCD4B-B145-46C1-BFCE-A2291C6003BB}">
+				<File Id="shortcuts.resources.dll_96" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\zh-CN\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="zh_TW">
+			<Component Id="shortcuts.resources.dll_97" Guid="{1D5A50F8-9F8A-4274-97C2-5F79A25E6BEB}">
+				<File Id="shortcuts.resources.dll_97" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\zh-TW\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="zu">
+			<Component Id="shortcuts.resources.dll_98" Guid="{EFBD7538-0944-43F2-82F6-7A24E9AD12D1}">
+				<File Id="shortcuts.resources.dll_98" KeyPath="yes" Source=".\shortcuts\shortcuts\bin\release\zu\shortcuts.resources.dll"/>
+			</Component>
+		</DirectoryRef>
 		<ComponentGroup Id="Serilog">
 			<ComponentRef Id="Serilog.dll"/>
 			<ComponentRef Id="Serilog.Sinks.File.dll"/>
@@ -4103,107 +4599,208 @@
 			<ComponentRef Id="remotesc.resources.dll_100"/>
 		</ComponentGroup>
 		<ComponentGroup Id="ServerCfg">
-            <ComponentRef Id="servercfg.resources.dll" />
-            <ComponentRef Id="servercfg.resources.dll_1" />
-            <ComponentRef Id="servercfg.resources.dll_2" />
-            <ComponentRef Id="servercfg.resources.dll_3" />
-            <ComponentRef Id="servercfg.resources.dll_4" />
-            <ComponentRef Id="servercfg.resources.dll_5" />
-            <ComponentRef Id="servercfg.resources.dll_6" />
-            <ComponentRef Id="servercfg.resources.dll_7" />
-            <ComponentRef Id="servercfg.resources.dll_8" />
-            <ComponentRef Id="servercfg.resources.dll_9" />
-            <ComponentRef Id="servercfg.resources.dll_10" />
-            <ComponentRef Id="servercfg.resources.dll_11" />
-            <ComponentRef Id="servercfg.resources.dll_12" />
-            <ComponentRef Id="servercfg.resources.dll_13" />
-            <ComponentRef Id="servercfg.resources.dll_14" />
-            <ComponentRef Id="servercfg.resources.dll_15" />
-            <ComponentRef Id="servercfg.resources.dll_16" />
-            <ComponentRef Id="servercfg.resources.dll_17" />
-            <ComponentRef Id="servercfg.resources.dll_18" />
-            <ComponentRef Id="servercfg.resources.dll_19" />
-            <ComponentRef Id="servercfg.resources.dll_20" />
-            <ComponentRef Id="servercfg.resources.dll_21" />
-            <ComponentRef Id="servercfg.resources.dll_22" />
-            <ComponentRef Id="servercfg.resources.dll_23" />
-            <ComponentRef Id="servercfg.resources.dll_24" />
-            <ComponentRef Id="servercfg.resources.dll_25" />
-            <ComponentRef Id="servercfg.resources.dll_26" />
-            <ComponentRef Id="servercfg.resources.dll_27" />
-            <ComponentRef Id="servercfg.resources.dll_28" />
-            <ComponentRef Id="servercfg.resources.dll_29" />
-            <ComponentRef Id="servercfg.resources.dll_30" />
-            <ComponentRef Id="servercfg.resources.dll_31" />
-            <ComponentRef Id="servercfg.resources.dll_32" />
-            <ComponentRef Id="servercfg.resources.dll_33" />
-            <ComponentRef Id="servercfg.resources.dll_34" />
-            <ComponentRef Id="servercfg.resources.dll_35" />
-            <ComponentRef Id="servercfg.resources.dll_36" />
-            <ComponentRef Id="servercfg.resources.dll_37" />
-            <ComponentRef Id="servercfg.resources.dll_38" />
-            <ComponentRef Id="servercfg.resources.dll_39" />
-            <ComponentRef Id="servercfg.resources.dll_40" />
-            <ComponentRef Id="servercfg.resources.dll_41" />
-            <ComponentRef Id="servercfg.resources.dll_42" />
-            <ComponentRef Id="servercfg.resources.dll_43" />
-            <ComponentRef Id="servercfg.resources.dll_44" />
-            <ComponentRef Id="servercfg.resources.dll_45" />
-            <ComponentRef Id="servercfg.resources.dll_46" />
-            <ComponentRef Id="servercfg.resources.dll_47" />
-            <ComponentRef Id="servercfg.resources.dll_48" />
-            <ComponentRef Id="servercfg.resources.dll_49" />
-            <ComponentRef Id="servercfg.resources.dll_50" />
-            <ComponentRef Id="servercfg.resources.dll_51" />
-            <ComponentRef Id="servercfg.resources.dll_52" />
-            <ComponentRef Id="servercfg.resources.dll_53" />
-            <ComponentRef Id="servercfg.resources.dll_54" />
-            <ComponentRef Id="servercfg.resources.dll_55" />
-            <ComponentRef Id="servercfg.resources.dll_56" />
-            <ComponentRef Id="servercfg.resources.dll_57" />
-            <ComponentRef Id="servercfg.resources.dll_58" />
-            <ComponentRef Id="servercfg.resources.dll_59" />
-            <ComponentRef Id="servercfg.resources.dll_60" />
-            <ComponentRef Id="servercfg.resources.dll_61" />
-            <ComponentRef Id="servercfg.resources.dll_62" />
-            <ComponentRef Id="servercfg.resources.dll_63" />
-            <ComponentRef Id="servercfg.resources.dll_64" />
-            <ComponentRef Id="servercfg.resources.dll_65" />
-            <ComponentRef Id="servercfg.resources.dll_66" />
-            <ComponentRef Id="servercfg.resources.dll_67" />
-            <ComponentRef Id="servercfg.resources.dll_68" />
-            <ComponentRef Id="servercfg.resources.dll_69" />
-            <ComponentRef Id="servercfg.resources.dll_70" />
-            <ComponentRef Id="servercfg.resources.dll_71" />
-            <ComponentRef Id="servercfg.resources.dll_72" />
-            <ComponentRef Id="servercfg.resources.dll_73" />
-            <ComponentRef Id="servercfg.resources.dll_74" />
-            <ComponentRef Id="servercfg.resources.dll_75" />
-            <ComponentRef Id="servercfg.resources.dll_76" />
-            <ComponentRef Id="servercfg.resources.dll_77" />
-            <ComponentRef Id="servercfg.resources.dll_78" />
-            <ComponentRef Id="servercfg.resources.dll_79" />
-            <ComponentRef Id="servercfg.resources.dll_80" />
-            <ComponentRef Id="servercfg.resources.dll_81" />
-            <ComponentRef Id="servercfg.resources.dll_82" />
-            <ComponentRef Id="servercfg.resources.dll_83" />
-            <ComponentRef Id="servercfg.resources.dll_84" />
-            <ComponentRef Id="servercfg.resources.dll_85" />
-            <ComponentRef Id="servercfg.resources.dll_86" />
-            <ComponentRef Id="servercfg.resources.dll_87" />
-            <ComponentRef Id="servercfg.resources.dll_88" />
-            <ComponentRef Id="servercfg.resources.dll_89" />
-            <ComponentRef Id="servercfg.resources.dll_90" />
-            <ComponentRef Id="servercfg.resources.dll_91" />
-            <ComponentRef Id="servercfg.resources.dll_92" />
-            <ComponentRef Id="servercfg.resources.dll_93" />
-            <ComponentRef Id="servercfg.resources.dll_94" />
-            <ComponentRef Id="servercfg.resources.dll_95" />
-            <ComponentRef Id="servercfg.resources.dll_96" />
-            <ComponentRef Id="servercfg.resources.dll_97" />
-            <ComponentRef Id="servercfg.resources.dll_98" />
-            <ComponentRef Id="servercfg.resources.dll_99" />
-        </ComponentGroup>
+			<ComponentRef Id="servercfg.resources.dll"/>
+			<ComponentRef Id="servercfg.resources.dll_1"/>
+			<ComponentRef Id="servercfg.resources.dll_2"/>
+			<ComponentRef Id="servercfg.resources.dll_3"/>
+			<ComponentRef Id="servercfg.resources.dll_4"/>
+			<ComponentRef Id="servercfg.resources.dll_5"/>
+			<ComponentRef Id="servercfg.resources.dll_6"/>
+			<ComponentRef Id="servercfg.resources.dll_7"/>
+			<ComponentRef Id="servercfg.resources.dll_8"/>
+			<ComponentRef Id="servercfg.resources.dll_9"/>
+			<ComponentRef Id="servercfg.resources.dll_10"/>
+			<ComponentRef Id="servercfg.resources.dll_11"/>
+			<ComponentRef Id="servercfg.resources.dll_12"/>
+			<ComponentRef Id="servercfg.resources.dll_13"/>
+			<ComponentRef Id="servercfg.resources.dll_14"/>
+			<ComponentRef Id="servercfg.resources.dll_15"/>
+			<ComponentRef Id="servercfg.resources.dll_16"/>
+			<ComponentRef Id="servercfg.resources.dll_17"/>
+			<ComponentRef Id="servercfg.resources.dll_18"/>
+			<ComponentRef Id="servercfg.resources.dll_19"/>
+			<ComponentRef Id="servercfg.resources.dll_20"/>
+			<ComponentRef Id="servercfg.resources.dll_21"/>
+			<ComponentRef Id="servercfg.resources.dll_22"/>
+			<ComponentRef Id="servercfg.resources.dll_23"/>
+			<ComponentRef Id="servercfg.resources.dll_24"/>
+			<ComponentRef Id="servercfg.resources.dll_25"/>
+			<ComponentRef Id="servercfg.resources.dll_26"/>
+			<ComponentRef Id="servercfg.resources.dll_27"/>
+			<ComponentRef Id="servercfg.resources.dll_28"/>
+			<ComponentRef Id="servercfg.resources.dll_29"/>
+			<ComponentRef Id="servercfg.resources.dll_30"/>
+			<ComponentRef Id="servercfg.resources.dll_31"/>
+			<ComponentRef Id="servercfg.resources.dll_32"/>
+			<ComponentRef Id="servercfg.resources.dll_33"/>
+			<ComponentRef Id="servercfg.resources.dll_34"/>
+			<ComponentRef Id="servercfg.resources.dll_35"/>
+			<ComponentRef Id="servercfg.resources.dll_36"/>
+			<ComponentRef Id="servercfg.resources.dll_37"/>
+			<ComponentRef Id="servercfg.resources.dll_38"/>
+			<ComponentRef Id="servercfg.resources.dll_39"/>
+			<ComponentRef Id="servercfg.resources.dll_40"/>
+			<ComponentRef Id="servercfg.resources.dll_41"/>
+			<ComponentRef Id="servercfg.resources.dll_42"/>
+			<ComponentRef Id="servercfg.resources.dll_43"/>
+			<ComponentRef Id="servercfg.resources.dll_44"/>
+			<ComponentRef Id="servercfg.resources.dll_45"/>
+			<ComponentRef Id="servercfg.resources.dll_46"/>
+			<ComponentRef Id="servercfg.resources.dll_47"/>
+			<ComponentRef Id="servercfg.resources.dll_48"/>
+			<ComponentRef Id="servercfg.resources.dll_49"/>
+			<ComponentRef Id="servercfg.resources.dll_50"/>
+			<ComponentRef Id="servercfg.resources.dll_51"/>
+			<ComponentRef Id="servercfg.resources.dll_52"/>
+			<ComponentRef Id="servercfg.resources.dll_53"/>
+			<ComponentRef Id="servercfg.resources.dll_54"/>
+			<ComponentRef Id="servercfg.resources.dll_55"/>
+			<ComponentRef Id="servercfg.resources.dll_56"/>
+			<ComponentRef Id="servercfg.resources.dll_57"/>
+			<ComponentRef Id="servercfg.resources.dll_58"/>
+			<ComponentRef Id="servercfg.resources.dll_59"/>
+			<ComponentRef Id="servercfg.resources.dll_60"/>
+			<ComponentRef Id="servercfg.resources.dll_61"/>
+			<ComponentRef Id="servercfg.resources.dll_62"/>
+			<ComponentRef Id="servercfg.resources.dll_63"/>
+			<ComponentRef Id="servercfg.resources.dll_64"/>
+			<ComponentRef Id="servercfg.resources.dll_65"/>
+			<ComponentRef Id="servercfg.resources.dll_66"/>
+			<ComponentRef Id="servercfg.resources.dll_67"/>
+			<ComponentRef Id="servercfg.resources.dll_68"/>
+			<ComponentRef Id="servercfg.resources.dll_69"/>
+			<ComponentRef Id="servercfg.resources.dll_70"/>
+			<ComponentRef Id="servercfg.resources.dll_71"/>
+			<ComponentRef Id="servercfg.resources.dll_72"/>
+			<ComponentRef Id="servercfg.resources.dll_73"/>
+			<ComponentRef Id="servercfg.resources.dll_74"/>
+			<ComponentRef Id="servercfg.resources.dll_75"/>
+			<ComponentRef Id="servercfg.resources.dll_76"/>
+			<ComponentRef Id="servercfg.resources.dll_77"/>
+			<ComponentRef Id="servercfg.resources.dll_78"/>
+			<ComponentRef Id="servercfg.resources.dll_79"/>
+			<ComponentRef Id="servercfg.resources.dll_80"/>
+			<ComponentRef Id="servercfg.resources.dll_81"/>
+			<ComponentRef Id="servercfg.resources.dll_82"/>
+			<ComponentRef Id="servercfg.resources.dll_83"/>
+			<ComponentRef Id="servercfg.resources.dll_84"/>
+			<ComponentRef Id="servercfg.resources.dll_85"/>
+			<ComponentRef Id="servercfg.resources.dll_86"/>
+			<ComponentRef Id="servercfg.resources.dll_87"/>
+			<ComponentRef Id="servercfg.resources.dll_88"/>
+			<ComponentRef Id="servercfg.resources.dll_89"/>
+			<ComponentRef Id="servercfg.resources.dll_90"/>
+			<ComponentRef Id="servercfg.resources.dll_91"/>
+			<ComponentRef Id="servercfg.resources.dll_92"/>
+			<ComponentRef Id="servercfg.resources.dll_93"/>
+			<ComponentRef Id="servercfg.resources.dll_94"/>
+			<ComponentRef Id="servercfg.resources.dll_95"/>
+			<ComponentRef Id="servercfg.resources.dll_96"/>
+			<ComponentRef Id="servercfg.resources.dll_97"/>
+			<ComponentRef Id="servercfg.resources.dll_98"/>
+			<ComponentRef Id="servercfg.resources.dll_99"/>
+		</ComponentGroup>
+		<ComponentGroup Id="Shortcuts">
+			<ComponentRef Id="shortcuts.resources.dll"/>
+			<ComponentRef Id="shortcuts.resources.dll_1"/>
+			<ComponentRef Id="shortcuts.resources.dll_2"/>
+			<ComponentRef Id="shortcuts.resources.dll_3"/>
+			<ComponentRef Id="shortcuts.resources.dll_4"/>
+			<ComponentRef Id="shortcuts.resources.dll_5"/>
+			<ComponentRef Id="shortcuts.resources.dll_6"/>
+			<ComponentRef Id="shortcuts.resources.dll_7"/>
+			<ComponentRef Id="shortcuts.resources.dll_8"/>
+			<ComponentRef Id="shortcuts.resources.dll_9"/>
+			<ComponentRef Id="shortcuts.resources.dll_10"/>
+			<ComponentRef Id="shortcuts.resources.dll_11"/>
+			<ComponentRef Id="shortcuts.resources.dll_12"/>
+			<ComponentRef Id="shortcuts.resources.dll_13"/>
+			<ComponentRef Id="shortcuts.resources.dll_14"/>
+			<ComponentRef Id="shortcuts.resources.dll_15"/>
+			<ComponentRef Id="shortcuts.resources.dll_16"/>
+			<ComponentRef Id="shortcuts.resources.dll_17"/>
+			<ComponentRef Id="shortcuts.resources.dll_18"/>
+			<ComponentRef Id="shortcuts.resources.dll_19"/>
+			<ComponentRef Id="shortcuts.resources.dll_20"/>
+			<ComponentRef Id="shortcuts.resources.dll_21"/>
+			<ComponentRef Id="shortcuts.resources.dll_22"/>
+			<ComponentRef Id="shortcuts.resources.dll_23"/>
+			<ComponentRef Id="shortcuts.resources.dll_24"/>
+			<ComponentRef Id="shortcuts.resources.dll_25"/>
+			<ComponentRef Id="shortcuts.resources.dll_26"/>
+			<ComponentRef Id="shortcuts.resources.dll_27"/>
+			<ComponentRef Id="shortcuts.resources.dll_28"/>
+			<ComponentRef Id="shortcuts.resources.dll_29"/>
+			<ComponentRef Id="shortcuts.resources.dll_30"/>
+			<ComponentRef Id="shortcuts.resources.dll_31"/>
+			<ComponentRef Id="shortcuts.resources.dll_32"/>
+			<ComponentRef Id="shortcuts.resources.dll_33"/>
+			<ComponentRef Id="shortcuts.resources.dll_34"/>
+			<ComponentRef Id="shortcuts.resources.dll_35"/>
+			<ComponentRef Id="shortcuts.resources.dll_36"/>
+			<ComponentRef Id="shortcuts.resources.dll_37"/>
+			<ComponentRef Id="shortcuts.resources.dll_38"/>
+			<ComponentRef Id="shortcuts.resources.dll_39"/>
+			<ComponentRef Id="shortcuts.resources.dll_40"/>
+			<ComponentRef Id="shortcuts.resources.dll_41"/>
+			<ComponentRef Id="shortcuts.resources.dll_42"/>
+			<ComponentRef Id="shortcuts.resources.dll_43"/>
+			<ComponentRef Id="shortcuts.resources.dll_44"/>
+			<ComponentRef Id="shortcuts.resources.dll_45"/>
+			<ComponentRef Id="shortcuts.resources.dll_46"/>
+			<ComponentRef Id="shortcuts.resources.dll_47"/>
+			<ComponentRef Id="shortcuts.resources.dll_48"/>
+			<ComponentRef Id="shortcuts.resources.dll_49"/>
+			<ComponentRef Id="shortcuts.resources.dll_50"/>
+			<ComponentRef Id="shortcuts.resources.dll_51"/>
+			<ComponentRef Id="shortcuts.resources.dll_52"/>
+			<ComponentRef Id="shortcuts.resources.dll_53"/>
+			<ComponentRef Id="shortcuts.resources.dll_54"/>
+			<ComponentRef Id="shortcuts.resources.dll_55"/>
+			<ComponentRef Id="shortcuts.resources.dll_56"/>
+			<ComponentRef Id="shortcuts.resources.dll_57"/>
+			<ComponentRef Id="shortcuts.resources.dll_58"/>
+			<ComponentRef Id="shortcuts.resources.dll_59"/>
+			<ComponentRef Id="shortcuts.resources.dll_60"/>
+			<ComponentRef Id="shortcuts.resources.dll_61"/>
+			<ComponentRef Id="shortcuts.resources.dll_62"/>
+			<ComponentRef Id="shortcuts.resources.dll_63"/>
+			<ComponentRef Id="shortcuts.resources.dll_64"/>
+			<ComponentRef Id="shortcuts.resources.dll_65"/>
+			<ComponentRef Id="shortcuts.resources.dll_66"/>
+			<ComponentRef Id="shortcuts.resources.dll_67"/>
+			<ComponentRef Id="shortcuts.resources.dll_68"/>
+			<ComponentRef Id="shortcuts.resources.dll_69"/>
+			<ComponentRef Id="shortcuts.resources.dll_70"/>
+			<ComponentRef Id="shortcuts.resources.dll_71"/>
+			<ComponentRef Id="shortcuts.resources.dll_72"/>
+			<ComponentRef Id="shortcuts.resources.dll_73"/>
+			<ComponentRef Id="shortcuts.resources.dll_74"/>
+			<ComponentRef Id="shortcuts.resources.dll_75"/>
+			<ComponentRef Id="shortcuts.resources.dll_76"/>
+			<ComponentRef Id="shortcuts.resources.dll_77"/>
+			<ComponentRef Id="shortcuts.resources.dll_78"/>
+			<ComponentRef Id="shortcuts.resources.dll_79"/>
+			<ComponentRef Id="shortcuts.resources.dll_80"/>
+			<ComponentRef Id="shortcuts.resources.dll_81"/>
+			<ComponentRef Id="shortcuts.resources.dll_82"/>
+			<ComponentRef Id="shortcuts.resources.dll_83"/>
+			<ComponentRef Id="shortcuts.resources.dll_84"/>
+			<ComponentRef Id="shortcuts.resources.dll_85"/>
+			<ComponentRef Id="shortcuts.resources.dll_86"/>
+			<ComponentRef Id="shortcuts.resources.dll_87"/>
+			<ComponentRef Id="shortcuts.resources.dll_88"/>
+			<ComponentRef Id="shortcuts.resources.dll_89"/>
+			<ComponentRef Id="shortcuts.resources.dll_90"/>
+			<ComponentRef Id="shortcuts.resources.dll_91"/>
+			<ComponentRef Id="shortcuts.resources.dll_92"/>
+			<ComponentRef Id="shortcuts.resources.dll_93"/>
+			<ComponentRef Id="shortcuts.resources.dll_94"/>
+			<ComponentRef Id="shortcuts.resources.dll_95"/>
+			<ComponentRef Id="shortcuts.resources.dll_96"/>
+			<ComponentRef Id="shortcuts.resources.dll_97"/>
+			<ComponentRef Id="shortcuts.resources.dll_98"/>
+		</ComponentGroup>
 		<StandardDirectory Id="ProgramFiles64Folder">
 			<Directory Id="CompanyFolder" Name="Elbitin">
 				<Directory Id="APPLICATIONFOLDER" Name="RAAS Client">
