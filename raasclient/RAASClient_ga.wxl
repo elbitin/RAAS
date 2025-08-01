@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ga" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Amharcléirithe d'fheidhmchláir chianda ar fáil mar rogha i gcumraíocht"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Féach ar fhreastalaithe RAAS in Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Cruthaigh aicearraí feidhmchláir chianda chuig feidhmchláir fhreastalaí ar ríomhaire áitiúil"/>

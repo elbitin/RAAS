@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="hy" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Ցանցի համօգտագործվող սերվեր"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Համօգտագործեք կրիչներ ցանցում` RAAS Client-ից կառավարումը և զննարկումն ակտիվացնելու համար"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Կարող է վերագործարկել"/>

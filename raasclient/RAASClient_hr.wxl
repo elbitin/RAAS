@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="hr" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Vizualizacije za udaljene aplikacije dostupne kao opcija u konfiguraciji"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Pogledajte RAAS poslužitelje u Exploreru"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Stvorite prečace udaljenih aplikacija do poslužiteljskih aplikacija na lokalnom računalu"/>

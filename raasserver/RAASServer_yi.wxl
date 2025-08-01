@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="yi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="נעץ שערד סערווירער"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="ייַנטיילן דרייווז אויף נעץ צו געבן קאָנטראָל און בראַוזינג פֿון RAAS קליענט"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="קענען רעבאָאָט"/>

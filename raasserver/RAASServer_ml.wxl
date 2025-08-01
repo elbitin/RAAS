@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ml" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="നെറ്റ്‌വർക്ക് പങ്കിട്ട സെർവർ"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS ക്ലയൻ്റിൽ നിന്നുള്ള നിയന്ത്രണവും ബ്രൗസിംഗും പ്രവർത്തനക്ഷമമാക്കാൻ നെറ്റ്‌വർക്കിൽ ഡ്രൈവുകൾ പങ്കിടുക"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="റീബൂട്ട് ചെയ്യാം"/>

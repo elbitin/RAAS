@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="tg" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Сервери муштараки шабакавӣ"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Мубодилаи дискҳо дар шабака барои фаъол кардани назорат ва дидан аз Client RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Метавонед аз нав оғоз кунед"/>

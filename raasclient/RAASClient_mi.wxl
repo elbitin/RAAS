@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="mi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Ko nga tirohanga mo nga tono mamao e waatea ana hei whiringa i roto i te whirihoranga"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Tirohia nga tūmau RAAS i Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Waihangahia nga pokatata tono mamao ki nga tono tūmau i runga rorohiko rohe"/>

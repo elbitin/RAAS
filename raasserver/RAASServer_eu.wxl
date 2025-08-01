@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="eu" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Sareko zerbitzari partekatua"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Partekatu unitateak sarean RAAS Bezeroaren kontrola eta nabigazioa gaitzeko"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Berrabiarazi daiteke"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="mg" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Ny sary ho an'ny fampiharana lavitra azo ampiasaina ho safidy amin'ny fanamafisana"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Jereo ny mpizara RAAS ao amin'ny Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Mamorona hitsin-dàlana fampiharana lavitra mankany amin'ny rindranasa mpizara amin'ny solosaina eo an-toerana"/>

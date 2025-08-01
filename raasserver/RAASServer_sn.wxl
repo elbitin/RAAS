@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="sn" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Network Shared Server"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Govera madhiraivha panetiweki kugonesa kutonga uye kubhurawuza kubva kuRAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Inogona kutangazve"/>

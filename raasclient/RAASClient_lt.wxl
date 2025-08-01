@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="lt" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Nuotolinių programų vizualizacijas galima pasirinkti kaip konfigūraciją"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Peržiūrėkite RAAS serverius naršyklėje"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Kurkite nuotolinių programų nuorodas į serverio programas vietiniame kompiuteryje"/>

@@ -1,5 +1,5 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:fw="http://wixtoolset.org/schemas/v4/wxs/firewall" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui" xmlns:netfx="http://wixtoolset.org/schemas/v4/wxs/netfx">
-	<Package Name="RAAS Client" Version="$(env.RAASClientVersion)" Manufacturer="Elbitin" UpgradeCode="{5C11B9AD-1287-4CCC-BAD4-D6DE29D24F4F}" InstallerVersion="200" Scope="perMachine">
+	<Package Name="RAAS Client" Language="!(loc.ProductLanguage)" Version="$(env.RAASClientVersion)" Manufacturer="Elbitin" UpgradeCode="{5C11B9AD-1287-4CCC-BAD4-D6DE29D24F4F}" InstallerVersion="200" Scope="perMachine">
 		<SummaryInformation Description="Windows Installer package for Remote Application Access Station" Manufacturer="Elbitin"/>
 		<MajorUpgrade Schedule="afterInstallInitialize" DowngradeErrorMessage="A later version of [ProductName] is already installed" AllowDowngrades="no" AllowSameVersionUpgrades="yes"/>
 		<Icon Id="RAASClient.ico" SourceFile="raasclient\raasclient\raasclienticon.ico"/>

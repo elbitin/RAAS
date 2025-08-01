@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ur" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="ریموٹ ایپلیکیشنز کے لیے تصورات کنفیگریشن میں آپشن کے طور پر دستیاب ہیں۔"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="ایکسپلورر میں RAAS سرورز دیکھیں"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="مقامی کمپیوٹر پر سرور ایپلی کیشنز کے لیے ریموٹ ایپلیکیشن شارٹ کٹس بنائیں"/>

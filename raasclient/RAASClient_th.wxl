@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="th" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="การแสดงภาพสำหรับแอปพลิเคชันระยะไกลที่มีให้เลือกเป็นตัวเลือกในการกำหนดค่า"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="ดูเซิร์ฟเวอร์ RAAS ใน Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="สร้างทางลัดแอปพลิเคชันระยะไกลไปยังแอปพลิเคชันเซิร์ฟเวอร์บนคอมพิวเตอร์ภายในเครื่อง"/>

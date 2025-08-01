@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="so" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Sawirada codsiyada fog ayaa diyaar u ah qaabaynta"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Ka eeg adeegayaasha RAAS gudaha Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Samee hab-gaabyada arjiyada fog ee codsiyada server-ka ee kumbuyuutarka deegaanka"/>

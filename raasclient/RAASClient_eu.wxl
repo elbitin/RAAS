@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="eu" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Urruneko aplikazioetarako bistaratzeak aukeran eskuragarri daude konfigurazioan"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Ikusi RAAS zerbitzariak Explorer-en"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Sortu urruneko aplikazioen lasterbideak ordenagailu lokaleko zerbitzariko aplikazioetarako"/>

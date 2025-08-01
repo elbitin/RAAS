@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="sq" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Server i përbashkët i rrjetit"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Ndani disqet në rrjet për të mundësuar kontrollin dhe shfletimin nga Klienti RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Mund të rindizet"/>

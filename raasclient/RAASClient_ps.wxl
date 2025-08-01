@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ps" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="د ریموټ غوښتنلیکونو لیدونه په ترتیب کې د اختیار په توګه شتون لري"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="په اکسپلورر کې د RAAS سرورونه وګورئ"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="په محلي کمپیوټر کې د سرور غوښتنلیکونو لپاره ریموټ غوښتنلیک شارټ کټونه جوړ کړئ"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="hu" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Megosztott hálózati szerver"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Ossza meg a meghajtókat a hálózaton, hogy lehetővé tegye a RAAS-kliens vezérlését és böngészését"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Lehet újraindítani"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ms" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualisasi untuk aplikasi jauh tersedia sebagai pilihan dalam konfigurasi"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Lihat pelayan RAAS dalam Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Cipta pintasan aplikasi jauh ke aplikasi pelayan pada komputer tempatan"/>

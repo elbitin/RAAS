@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ug" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="تور ئورتاق مۇلازىمېتىرى"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="توردىكى قوزغاتقۇچلارنى ھەمبەھىرلەپ ، RAAS Client دىن كونترول ۋە كۆرۈشنى قوزغىتىڭ"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="قايتا قوزغىتالايدۇ"/>

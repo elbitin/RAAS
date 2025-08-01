@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="pt-PT" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizações para aplicações remotas disponíveis como opção na configuração"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Exibir servidores RAAS no Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Crie atalhos de aplicativos remotos para aplicativos de servidor no computador local"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="mn" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Сүлжээний хуваалцсан сервер"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS Client-аас хянах, үзэхийг идэвхжүүлэхийн тулд сүлжээн дэх драйвуудыг хуваалцаарай"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Дахин ачаалж болно"/>

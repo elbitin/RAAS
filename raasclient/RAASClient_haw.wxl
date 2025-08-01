@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="haw" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Loaʻa nā hiʻohiʻona no nā noi mamao ma ke ʻano he koho i ka hoʻonohonoho"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="E nānā i nā kikowaena RAAS ma Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="E hana i nā ʻaoʻao pōkole no nā polokalamu kikowaena ma ka lolouila kūloko"/>

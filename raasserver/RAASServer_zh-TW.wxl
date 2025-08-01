@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="zh-TW" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="網路共享伺服器"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="在網路上共用驅動器，以便從 RAAS 用戶端進行控制和瀏覽"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="可以重啟"/>

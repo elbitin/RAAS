@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="gd" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Seallaidhean airson tagraidhean iomallach rim faighinn mar roghainn ann an rèiteachadh"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Thoir sùil air frithealaichean RAAS ann an Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Cruthaich ath-ghoiridean tagraidh iomallach gu tagraidhean frithealaiche air coimpiutair ionadail"/>

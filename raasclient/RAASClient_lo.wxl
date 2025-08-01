@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="lo" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations ສໍາລັບຄໍາຮ້ອງສະຫມັກຫ່າງໄກສອກຫຼີກສາມາດໃຊ້ໄດ້ເປັນທາງເລືອກໃນການຕັ້ງຄ່າ"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="ເບິ່ງເຊີບເວີ RAAS ໃນ Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="ສ້າງທາງລັດແອັບພລິເຄຊັນທາງໄກໄປຫາແອັບພລິເຄຊັນເຊີບເວີໃນຄອມພິວເຕີທ້ອງຖິ່ນ"/>

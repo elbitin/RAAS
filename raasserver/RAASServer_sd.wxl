@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="sd" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="نيٽ ورڪ شيئر سرور"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS ڪلائنٽ کان ڪنٽرول ۽ برائوزنگ کي فعال ڪرڻ لاءِ نيٽ ورڪ تي ڊرائيو شيئر ڪريو"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="ريبوٽ ڪري سگھي ٿو"/>

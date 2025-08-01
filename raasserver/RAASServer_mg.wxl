@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="mg" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Network Shared Server"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Mizarà fiara amin'ny tambajotra ahafahana mifehy sy mijery avy amin'ny RAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Afaka reboot"/>

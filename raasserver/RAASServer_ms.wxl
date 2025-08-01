@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ms" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Pelayan Kongsi Rangkaian"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Kongsi pemacu pada rangkaian untuk membolehkan kawalan dan menyemak imbas daripada Klien RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Boleh reboot"/>

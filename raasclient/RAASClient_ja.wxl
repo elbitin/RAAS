@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ja" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="リモート アプリケーションの視覚化は構成オプションとして利用可能"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="エクスプローラーでRAASサーバーを表示する"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="ローカルコンピュータ上のサーバーアプリケーションへのリモートアプリケーションショートカットを作成する"/>

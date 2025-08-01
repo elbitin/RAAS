@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="fr" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Serveur partagé en réseau"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Partager des lecteurs sur le réseau pour permettre le contrôle et la navigation à partir du client RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Peut redémarrer"/>

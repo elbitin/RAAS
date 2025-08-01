@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="su" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualisasi pikeun aplikasi jauh sadia salaku pilihan dina konfigurasi"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Ningali server RAAS di Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Jieun potong kompas aplikasi jauh ka aplikasi server dina komputer lokal"/>

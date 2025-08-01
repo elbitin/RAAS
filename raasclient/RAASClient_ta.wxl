@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ta" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="தொலைநிலை பயன்பாடுகளுக்கான காட்சிப்படுத்தல்கள் உள்ளமைவில் விருப்பமாக கிடைக்கும்"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="எக்ஸ்ப்ளோரரில் RAAS சேவையகங்களைக் காண்க"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="உள்ளூர் கணினியில் சர்வர் பயன்பாடுகளுக்கு தொலைநிலை பயன்பாட்டு குறுக்குவழிகளை உருவாக்கவும்"/>

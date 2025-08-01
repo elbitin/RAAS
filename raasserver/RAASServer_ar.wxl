@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ar" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="خادم مشترك على الشبكة"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="مشاركة محركات الأقراص على الشبكة لتمكين التحكم والتصفح من عميل RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="يمكن إعادة التشغيل"/>

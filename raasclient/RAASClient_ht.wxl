@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ht" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Vizyalizasyon pou aplikasyon aleka disponib kòm opsyon nan konfigirasyon"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Gade sèvè RAAS nan Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Kreye rakoursi aplikasyon aleka nan aplikasyon sèvè sou òdinatè lokal yo"/>

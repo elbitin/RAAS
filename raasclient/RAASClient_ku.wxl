@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ku" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Dîtinên ji bo sepanên ji dûr ve wekî vebijarkek di veavakirinê de peyda dibin"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Pêşkêşkerên RAAS di Explorer de bibînin"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Ji bo serîlêdanên serverê yên li ser komputera herêmî kurtebirên serîlêdana dûr biafirînin"/>

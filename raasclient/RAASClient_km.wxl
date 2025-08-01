@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="km" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="ការមើលឃើញសម្រាប់កម្មវិធីពីចម្ងាយមានជាជម្រើសក្នុងការកំណត់រចនាសម្ព័ន្ធ"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="មើលម៉ាស៊ីនមេ RAAS នៅក្នុង Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="បង្កើតផ្លូវកាត់កម្មវិធីពីចម្ងាយទៅកាន់កម្មវិធីម៉ាស៊ីនមេនៅលើកុំព្យូទ័រមូលដ្ឋាន"/>

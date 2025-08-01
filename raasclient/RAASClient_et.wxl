@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="et" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Kaugrakenduste visualiseeringud on konfiguratsioonis valikuna saadaval"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Vaadake RAAS-servereid Exploreris"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Looge kohalikus arvutis serverirakendustele kaugrakenduste otseteid"/>

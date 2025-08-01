@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="sl" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Strežnik v skupni rabi omrežja"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Delite pogone v omrežju, da omogočite nadzor in brskanje iz odjemalca RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Lahko znova zažene"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="af" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Netwerk gedeelde bediener"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Deel aandrywers op netwerk om beheer en blaai vanaf RAAS-kliënt moontlik te maak"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Kan herlaai"/>

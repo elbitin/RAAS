@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="yo" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Network Pipin Server"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Pin awọn awakọ lori nẹtiwọọki lati mu iṣakoso ṣiṣẹ ati lilọ kiri ayelujara lati ọdọ Client RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Le atunbere"/>

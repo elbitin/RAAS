@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="hy" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Հեռավոր հավելվածների պատկերացումները հասանելի են որպես ընտրանք կոնֆիգուրացիայի մեջ"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Դիտեք RAAS սերվերները Explorer-ում"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Ստեղծեք հեռակա հավելվածների դյուրանցումներ դեպի սերվերային հավելվածներ տեղական համակարգչի վրա"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="mt" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Server Kondiviż tan-Netwerk"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Aqsam drives fuq in-netwerk biex tippermetti l-kontroll u l-ibbrawżjar mill-Klijent RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Jista 'reboot"/>

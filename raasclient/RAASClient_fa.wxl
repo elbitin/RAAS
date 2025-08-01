@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="fa" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="تجسم برای برنامه های از راه دور به عنوان گزینه در پیکربندی موجود است"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="سرورهای RAAS را در Explorer مشاهده کنید"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="میانبرهای برنامه از راه دور برای برنامه های سرور در رایانه محلی ایجاد کنید"/>

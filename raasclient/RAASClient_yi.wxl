@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="yi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="וויסואַליזאַטיאָנס פֿאַר ווייַט אַפּלאַקיישאַנז בנימצא ווי אָפּציע אין קאַנפיגיעריישאַן"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="זען RAAS סערווערס אין Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="שאַפֿן ווייַט אַפּלאַקיישאַן דורכוועג צו סערווער אַפּלאַקיישאַנז אויף היגע קאָמפּיוטער"/>

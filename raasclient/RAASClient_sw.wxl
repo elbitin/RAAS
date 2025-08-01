@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="sw" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Mwonekano wa programu za mbali unapatikana kama chaguo katika usanidi"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Tazama seva za RAAS katika Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Unda njia za mkato za programu za mbali kwa programu za seva kwenye kompyuta ya ndani"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="kn" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="ಕಾನ್ಫಿಗರೇಶನ್‌ನಲ್ಲಿ ಆಯ್ಕೆಯಾಗಿ ಲಭ್ಯವಿರುವ ರಿಮೋಟ್ ಅಪ್ಲಿಕೇಶನ್‌ಗಳಿಗೆ ದೃಶ್ಯೀಕರಣಗಳು"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="ಎಕ್ಸ್‌ಪ್ಲೋರರ್‌ನಲ್ಲಿ RAAS ಸರ್ವರ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="ಸ್ಥಳೀಯ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ಸರ್ವರ್ ಅಪ್ಲಿಕೇಶನ್‌ಗಳಿಗೆ ರಿಮೋಟ್ ಅಪ್ಲಿಕೇಶನ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳನ್ನು ರಚಿಸಿ"/>

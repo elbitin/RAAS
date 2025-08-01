@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="tk" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Tor paýlaşylan serwer"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS Müşderisinden gözegçilik we göz aýlamak mümkinçiligini üpjün etmek üçin torda diskleri paýlaşyň"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Gaýtadan açyp bilersiňiz"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ar" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="تتوفر تصورات للتطبيقات البعيدة كخيار في التكوين"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="عرض خوادم RAAS في Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="إنشاء اختصارات التطبيقات عن بعد لتطبيقات الخادم على الكمبيوتر المحلي"/>

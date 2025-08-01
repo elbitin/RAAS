@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="haw" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Pūnaewele Kaʻana like"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Kaʻana like i nā drive ma ka pūnaewele e hiki ai i ka mana a me ka nānā ʻana mai RAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Hiki ke hoʻomaka hou"/>

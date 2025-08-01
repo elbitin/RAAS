@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="uz" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Umumiy tarmoq serveri"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS Client-dan boshqarish va ko'rishni yoqish uchun tarmoqdagi drayverlarni baham ko'ring"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Qayta ishga tushirish mumkin"/>

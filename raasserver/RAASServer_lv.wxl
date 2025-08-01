@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="lv" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Tīkla koplietots serveris"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Kopīgojiet diskus tīklā, lai iespējotu kontroli un pārlūkošanu no RAAS klienta"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Var pārstartēt"/>

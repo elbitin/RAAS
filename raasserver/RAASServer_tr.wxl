@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="tr" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Ağ Paylaşımlı Sunucu"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS İstemcisinden kontrol ve taramayı etkinleştirmek için sürücüleri ağda paylaşın"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Yeniden başlatılabilir"/>

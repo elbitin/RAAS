@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ku" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Servera parvekirî ya torê"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Li ser torê ajokarên parve bikin da ku kontrol û geroka ji Xerîdar RAAS çalak bikin"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Dikare ji nû ve dest pê bike"/>

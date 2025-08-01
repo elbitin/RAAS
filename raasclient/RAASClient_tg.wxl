@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="tg" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Визуалӣ барои барномаҳои дурдаст ҳамчун вариант дар конфигуратсия дастрас аст"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Дидани серверҳои RAAS дар Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Барои барномаҳои сервер дар компютери маҳаллӣ миёнабурҳои барномаҳои дурдаст эҷод кунед"/>

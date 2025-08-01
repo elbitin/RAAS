@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="jw" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Network Shared Server"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Nuduhake drive ing jaringan kanggo ngaktifake kontrol lan browsing saka Klien RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Bisa reboot"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="id" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualisasi untuk aplikasi jarak jauh tersedia sebagai opsi dalam konfigurasi"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Lihat server RAAS di Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Buat pintasan aplikasi jarak jauh ke aplikasi server di komputer lokal"/>

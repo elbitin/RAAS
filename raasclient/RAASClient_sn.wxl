@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="sn" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations yezvishandiso zviri kure zviripo senge sarudzo mukugadzirisa"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Wona maseva eRAAS muExplorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Gadzira zvidimburiko zvemaapplication ari kure kune server maapplication pakombuta yemuno"/>

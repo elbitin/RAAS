@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ps" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="د شبکې شریک سرور"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="په شبکه کې ډرایو شریک کړئ ترڅو د RAAS پیرودونکي څخه کنټرول او لټون کول فعال کړئ"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="ریبوټ کولی شي"/>

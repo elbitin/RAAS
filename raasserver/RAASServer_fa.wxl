@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="fa" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="سرور اشتراکی شبکه"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="درایوها را در شبکه به اشتراک بگذارید تا کنترل و مرور از RAAS Client فعال شود"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="می تواند راه اندازی مجدد شود"/>

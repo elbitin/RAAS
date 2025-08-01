@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="tt" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Конфигурация варианты буларак ерак кушымталар өчен визуализация"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer'та RAAS серверларын карау"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Localирле санактагы сервер кушымталарына дистанцион кушымта кыска юлларын булдырыгыз"/>

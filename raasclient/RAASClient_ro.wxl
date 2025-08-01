@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ro" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Vizualizări pentru aplicații la distanță disponibile ca opțiune în configurare"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Vizualizați serverele RAAS în Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Creați comenzi rapide pentru aplicații de la distanță către aplicațiile server de pe computerul local"/>

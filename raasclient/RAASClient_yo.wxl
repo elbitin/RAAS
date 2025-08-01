@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="yo" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Awọn iworan fun awọn ohun elo latọna jijin wa bi aṣayan ni iṣeto ni"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Wo awọn olupin RAAS ni Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Ṣẹda awọn ọna abuja ohun elo latọna jijin si awọn ohun elo olupin lori kọnputa agbegbe"/>

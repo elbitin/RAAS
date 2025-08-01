@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="iw" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="הדמיות ליישומים מרוחקים זמינים כאופציה בתצורה"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="הצג שרתי RAAS באקספלורר"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="צור קיצורי דרך ליישומים מרוחקים ליישומי שרת במחשב מקומי"/>

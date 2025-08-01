@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ky" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Тармак бөлүшүлгөн сервер"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS Client аркылуу башкарууну жана серептөөнү иштетүү үчүн дисктерди тармакта бөлүшүңүз"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Кайра жүктөсө болот"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="is" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Sýningarmyndir fyrir fjarforrit fáanlegar sem valkostur í uppsetningu"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Skoðaðu RAAS netþjóna í Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Búðu til flýtileiðir fyrir fjarforrit í netþjónaforrit á staðbundinni tölvu"/>

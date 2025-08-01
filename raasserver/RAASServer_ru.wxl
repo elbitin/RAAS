@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ru" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Сетевой общий сервер"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Предоставьте общий доступ к дискам в сети для управления и просмотра с помощью клиента RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Возможна перезагрузка"/>

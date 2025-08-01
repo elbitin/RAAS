@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="kk" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Қашықтағы қолданбаларға арналған визуализациялар конфигурацияда опция ретінде қол жетімді"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer бағдарламасында RAAS серверлерін қараңыз"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Жергілікті компьютердегі серверлік қолданбаларға қашықтағы қолданба таңбашаларын жасаңыз"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="tr" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Uzak uygulamalar için görselleştirmeler yapılandırmada seçenek olarak mevcuttur"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer'da RAAS sunucularını görüntüleyin"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Yerel bilgisayardaki sunucu uygulamalarına uzak uygulama kısayolları oluşturun"/>

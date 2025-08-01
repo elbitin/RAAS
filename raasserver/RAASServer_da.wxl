@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="da" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Delt netværksserver"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Del drev på netværket for at aktivere kontrol og browsing fra RAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Kan genstarte"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ne" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="कन्फिगरेसनमा विकल्पको रूपमा उपलब्ध रिमोट अनुप्रयोगहरूको लागि भिजुअलाइजेसनहरू"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="एक्सप्लोररमा RAAS सर्भरहरू हेर्नुहोस्"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="स्थानीय कम्प्युटरमा सर्भर अनुप्रयोगहरूमा टाढाको अनुप्रयोग सर्टकटहरू सिर्जना गर्नुहोस्"/>

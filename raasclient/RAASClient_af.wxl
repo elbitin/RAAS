@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="af" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualisasies vir afgeleë toepassings beskikbaar as opsie in konfigurasie"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Bekyk RAAS-bedieners in Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Skep afgeleë toepassingkortpaaie na bedienertoepassings op plaaslike rekenaar"/>

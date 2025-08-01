@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="mt" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Viżwalizzazzjonijiet għal applikazzjonijiet remoti disponibbli bħala għażla fil-konfigurazzjoni"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Ara s-servers RAAS f'Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Oħloq shortcuts tal-applikazzjoni remoti għall-applikazzjonijiet tas-server fuq il-kompjuter lokali"/>

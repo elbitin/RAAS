@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="hu" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="A távoli alkalmazások vizualizációi opcióként elérhetők a konfigurációban"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Tekintse meg a RAAS-kiszolgálókat az Explorerben"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Hozzon létre távoli alkalmazás-parancsikonokat a kiszolgálóalkalmazásokhoz a helyi számítógépen"/>

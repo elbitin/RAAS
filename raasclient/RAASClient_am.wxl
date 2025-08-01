@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="am" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="በማዋቀር ውስጥ እንደ አማራጭ የርቀት መተግበሪያዎች እይታዎች ይገኛሉ"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="ኤክስፕሎረር ውስጥ የ RAAS አገልጋዮችን ይመልከቱ"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="በአካባቢያዊ ኮምፒውተር ላይ ወደ አገልጋይ መተግበሪያዎች የርቀት መተግበሪያ አቋራጮችን ይፍጠሩ"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="fi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Etäsovellusten visualisoinnit ovat valinnaisia kokoonpanossa"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Tarkastele RAAS-palvelimia Explorerissa"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Luo etäsovellusten pikakuvakkeet palvelinsovelluksiin paikallisella tietokoneella"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="sd" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="ريموٽ ايپليڪيشنن لاءِ تصورات موجود آهن جيئن ترتيب ۾ اختيار"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="ڏسو RAAS سرورز Explorer ۾"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="مقامي ڪمپيوٽر تي سرور ايپليڪيشنن لاءِ ريموٽ ايپليڪيشن شارٽ ڪٽ ٺاهيو"/>

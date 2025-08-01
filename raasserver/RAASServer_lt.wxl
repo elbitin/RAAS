@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="lt" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Bendras tinklo serveris"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Bendrinkite diskus tinkle, kad galėtumėte valdyti ir naršyti iš RAAS kliento"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Gali perkrauti"/>

@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="gd" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Frithealaiche lìonra roinnte"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Roinn draibhearan air an lìonra gus smachd agus brobhsadh a chomasachadh bho RAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Faodaidh ath-thòiseachadh"/>

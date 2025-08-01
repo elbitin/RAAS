@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ko" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="구성에서 옵션으로 제공되는 원격 애플리케이션에 대한 시각화"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer에서 RAAS 서버 보기"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="로컬 컴퓨터의 서버 애플리케이션에 대한 원격 애플리케이션 바로 가기 만들기"/>

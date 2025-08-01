@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="el" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Οπτικοποιήσεις για απομακρυσμένες εφαρμογές διαθέσιμες ως επιλογή στη διαμόρφωση"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Προβολή διακομιστών RAAS στον Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Δημιουργήστε συντομεύσεις απομακρυσμένων εφαρμογών σε εφαρμογές διακομιστή στον τοπικό υπολογιστή"/>

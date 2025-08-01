@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="mn" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Алсын хэрэглээний программуудын дүрслэлийг тохиргооны сонголтоор авах боломжтой"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer дээр RAAS серверүүдийг үзэх"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Дотоод компьютер дээрх серверийн програмуудад алсын програмын товчлол үүсгэх"/>

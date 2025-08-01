@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ml" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="വിദൂര ആപ്ലിക്കേഷനുകൾക്കായുള്ള ദൃശ്യവൽക്കരണം കോൺഫിഗറേഷനിൽ ഓപ്ഷനായി ലഭ്യമാണ്"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="എക്സ്പ്ലോററിൽ RAAS സെർവറുകൾ കാണുക"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="പ്രാദേശിക കമ്പ്യൂട്ടറിലെ സെർവർ ആപ്ലിക്കേഷനുകളിലേക്ക് റിമോട്ട് ആപ്ലിക്കേഷൻ കുറുക്കുവഴികൾ സൃഷ്ടിക്കുക"/>

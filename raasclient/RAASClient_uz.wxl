@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="uz" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Masofaviy ilovalar uchun vizualizatsiya konfiguratsiyada opsiya sifatida mavjud"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer-da RAAS serverlarini ko'ring"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Mahalliy kompyuterda server ilovalariga masofaviy dastur yorliqlarini yarating"/>

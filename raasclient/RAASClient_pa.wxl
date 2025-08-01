@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="pa" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="ਸੰਰਚਨਾ ਵਿੱਚ ਵਿਕਲਪ ਵਜੋਂ ਉਪਲਬਧ ਰਿਮੋਟ ਐਪਲੀਕੇਸ਼ਨਾਂ ਲਈ ਵਿਜ਼ੂਅਲਾਈਜ਼ੇਸ਼ਨ"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="ਐਕਸਪਲੋਰਰ ਵਿੱਚ RAAS ਸਰਵਰ ਵੇਖੋ"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="ਸਥਾਨਕ ਕੰਪਿਊਟਰ 'ਤੇ ਸਰਵਰ ਐਪਲੀਕੇਸ਼ਨਾਂ ਲਈ ਰਿਮੋਟ ਐਪਲੀਕੇਸ਼ਨ ਸ਼ਾਰਟਕੱਟ ਬਣਾਓ"/>

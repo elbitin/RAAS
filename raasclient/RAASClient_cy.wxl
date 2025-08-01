@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="cy" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Delweddau ar gyfer cymwysiadau o bell ar gael fel opsiwn mewn ffurfweddiad"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Gweld gweinyddwyr RAAS yn Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Creu llwybrau byr cymhwysiad o bell i gymwysiadau gweinydd ar gyfrifiadur lleol"/>

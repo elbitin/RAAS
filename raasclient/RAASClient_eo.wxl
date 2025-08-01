@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="eo" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Bildigoj por foraj aplikoj disponeblaj kiel opcio en agordo"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Rigardu RAAS-servilojn en Esplorilo"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Kreu forajn aplikaĵajn ŝparvojojn al servilaj aplikoj sur loka komputilo"/>

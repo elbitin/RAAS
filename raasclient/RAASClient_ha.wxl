@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ha" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Abubuwan gani don aikace-aikacen nesa akwai azaman zaɓi a cikin tsari"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Duba sabar RAAS a cikin Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Ƙirƙirar gajerun hanyoyin aikace-aikacen nesa zuwa aikace-aikacen uwar garken akan kwamfutar gida"/>

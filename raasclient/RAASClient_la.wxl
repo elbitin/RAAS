@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="la" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations pro remotis applicationibus available ut bene in configuration"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="View RAAS servers in Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Create remote application shortcuts ut servo applicationes ad loci computatrum"/>

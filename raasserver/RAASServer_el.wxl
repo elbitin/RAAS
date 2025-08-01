@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="el" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Κοινόχρηστος διακομιστής δικτύου"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Μοιραστείτε μονάδες δίσκου στο δίκτυο για να ενεργοποιήσετε τον έλεγχο και την περιήγηση από το RAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Μπορεί να κάνει επανεκκίνηση"/>

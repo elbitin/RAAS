@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ka" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="დისტანციური აპლიკაციების ვიზუალიზაცია ხელმისაწვდომია როგორც პარამეტრი კონფიგურაციაში"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="იხილეთ RAAS სერვერები Explorer-ში"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="შექმენით დისტანციური აპლიკაციის მალსახმობები სერვერის აპლიკაციებისთვის ადგილობრივ კომპიუტერზე"/>

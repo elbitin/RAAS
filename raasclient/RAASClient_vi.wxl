@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="vi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Hình ảnh trực quan cho các ứng dụng từ xa có sẵn dưới dạng tùy chọn trong cấu hình"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Xem máy chủ RAAS trong Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Tạo các phím tắt ứng dụng từ xa đến các ứng dụng máy chủ trên máy tính cục bộ"/>

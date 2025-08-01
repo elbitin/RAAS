@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="tk" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Konfigurasiýa görnüşi hökmünde elýeterli uzakdaky programmalar üçin wizuallaşdyrmalar"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer-de RAAS serwerlerini görüň"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Computerli kompýuterdäki serwer programmalaryna uzakdan programma gysga ýollaryny dörediň"/>
