@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="zh-TW" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="解除安裝 Windows 防火牆配置"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="回滾 Windows 防火牆配置"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="安裝 Windows 防火牆配置"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="回滾 Windows 防火牆配置"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="設定 Windows 防火牆"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="設定 Windows 防火牆"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="無法連線到 Windows 防火牆。 ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="網路共享伺服器"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="在網路上共用驅動器，以便從 RAAS 用戶端進行控制和瀏覽"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="可以重啟"/>

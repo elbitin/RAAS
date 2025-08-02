@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="cy" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="cy" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Cyfrol"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Maint Disg"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Angenrheidiol"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Gwahaniaeth"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Ar gael"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Amser ar ôl:{ [ProductName] munud}{ [ProductName] eiliad}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Mae angen [ProductName] ar y nodwedd hon ar eich gyriant caled. Mae ganddo [ProductName] o [ProductName] is-nodweddion wedi&amp;apos;u dewis. Mae angen [ProductName] ar yr is-nodweddion ar eich gyriant caled."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Mae angen [ProductName] ar y nodwedd hon ar eich gyriant caled. Mae ganddo [ProductName] o [ProductName] is-nodweddion wedi&amp;apos;u dewis. Mae&amp;apos;r subfeatures yn rhyddhau [ProductName] ar eich gyriant caled."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Mae&amp;apos;r nodwedd hon yn rhyddhau [ProductName] ar eich gyriant caled. Mae ganddo [ProductName] o [ProductName] is-nodweddion wedi&amp;apos;u dewis. Mae angen [ProductName] ar yr is-nodweddion ar eich gyriant caled."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Mae&amp;apos;r nodwedd hon yn rhyddhau [ProductName] ar eich gyriant caled. Mae ganddo [ProductName] o [ProductName] is-nodweddion wedi&amp;apos;u dewis. Mae&amp;apos;r subfeatures yn rhyddhau [ProductName] ar eich gyriant caled."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Bydd y nodwedd hon yn parhau i gael ei rhedeg o&amp;apos;r rhwydwaith"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Bydd y nodwedd hon yn newid o redeg o gyflwr rhwydwaith i&amp;apos;w osod ar y gyriant caled lleol"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Bydd y nodwedd hon yn newid o redeg o gyflwr rhwydwaith i set i&amp;apos;w gosod pan fo angen"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei dadosod yn llwyr, ni fyddwch yn gallu ei rhedeg o&amp;apos;r rhwydwaith"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei thynnu oddi ar eich gyriant caled lleol, ond bydd ar gael o hyd i&amp;apos;w rhedeg o&amp;apos;r rhwydwaith"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Bydd y nodwedd hon yn aros ar eich gyriant caled lleol"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei thynnu oddi ar eich gyriant caled lleol, ond bydd yn dal ar gael i&amp;apos;w rhedeg o CD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei thynnu oddi ar eich gyriant caled lleol, ond bydd yn cael ei gosod i&amp;apos;w gosod pan fo angen"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei dileu yn llwyr"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Wrthi&amp;apos;n casglu&amp;apos;r gost ar gyfer y nodwedd hon..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Mae angen [ProductName] ar y nodwedd hon ar eich gyriant caled."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Mae&amp;apos;r nodwedd hon yn rhyddhau [ProductName] ar eich gyriant caled."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Bydd y nodwedd hon yn newid o redeg o gyflwr CD i&amp;apos;w osod ar y gyriant caled lleol"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Bydd y nodwedd hon yn parhau i gael ei rhedeg o CD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Bydd y nodwedd hon yn newid o redeg o gyflwr CD i set i&amp;apos;w gosod pan fo angen"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei dadosod yn gyfan gwbl, ni fyddwch yn gallu ei rhedeg o CD"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Bydd y nodwedd hon ar gael i&amp;apos;w rhedeg o&amp;apos;r rhwydwaith"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei gosod ar eich gyriant caled lleol"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Bydd y nodwedd hon ar gael i&amp;apos;w rhedeg o CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Bydd yn cael ei osod pan fo angen"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Ni fydd y nodwedd hon ar gael"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei gosod i redeg o&amp;apos;r rhwydwaith"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei gosod ar y gyriant caled lleol"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei gosod i redeg o CD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Bydd y nodwedd hon yn cael ei gosod i&amp;apos;w gosod pan fo angen"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Bydd y nodwedd hon yn parhau i fod heb ei gosod"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Wrthi&amp;apos;n casglu&amp;apos;r wybodaeth angenrheidiol..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Ffolder| Ffolder Newydd"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Bydd yn cael ei osod i redeg o&amp;apos;r rhwydwaith"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Bydd yn cael ei osod ar yriant caled lleol"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Bydd yn cael ei osod i redeg o CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Bydd y nodwedd gyfan yn cael ei gosod i redeg o&amp;apos;r rhwydwaith"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Bydd y nodwedd gyfan yn cael ei gosod ar yriant caled lleol"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Bydd nodwedd gyfan yn cael ei gosod i redeg o CD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Bydd nodwedd yn cael ei osod pan fo angen"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Ni fydd y nodwedd gyfan ar gael"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="beit"/>
+	<String Id="Error1938" Overridable="yes" Value="Digwyddodd gwall wrth osod y cynulliad &amp;apos;[ProductName]&amp;apos;. Nid oedd modd dod o hyd i un neu fwy o fodiwlau&amp;apos;r gwasanaeth. HRESULT: [ProductName].{{ rhyngwyneb cydosod: [ProductName], ffwythiant: [ProductName], cydran: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Digwyddodd gwall wrth osod y cynulliad &amp;apos;[ProductName]&amp;apos;. Nid oedd modd gwirio&amp;apos;r llofnod neu&amp;apos;r catalog neu nid yw&amp;apos;n ddilys. HRESULT: [ProductName].{{ rhyngwyneb cydosod: [ProductName], ffwythiant: [ProductName], cydran: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Digwyddodd gwall wrth osod y cynulliad &amp;apos;[ProductName]&amp;apos;. Nid yw&amp;apos;r gwasanaeth wedi&amp;apos;i enwi&amp;apos;n gryf ac nid yw wedi&amp;apos;i lofnodi â&amp;apos;r hyd allwedd lleiaf posibl. HRESULT: [ProductName].{{ rhyngwyneb cydosod: [ProductName], ffwythiant: [ProductName], cydran: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Digwyddodd gwall wrth osod y cynulliad &amp;apos;[ProductName]&amp;apos;. Cyfeiriwch at Help a Chymorth am ragor o wybodaeth. HRESULT: [ProductName].{{ rhyngwyneb cydosod: [ProductName], ffwythiant: [ProductName], cydran: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Mae gosodiadau defnyddwyr wedi&amp;apos;u hanalluogi trwy bolisi ar y peiriant."/>
+	<String Id="Error1933" Overridable="yes" Value="Ni all gwasanaeth Windows Installer ddiweddaru un neu fwy o ffeiliau Windows a ddiogelir.{{ Gwall SFP: [ProductName]. Rhestr o ffeiliau gwarchodedig: \r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Ni all y gwasanaeth Windows Installer ddiweddaru&amp;apos;r ffeil Windows a ddiogelir [ProductName].{{ Fersiwn pecyn: [ProductName], fersiwn wedi&amp;apos;i diogelu gan OS: [ProductName], Gwall SFP: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Ni all gwasanaeth Windows Installer ddiweddaru&amp;apos;r ffeil system [ProductName] oherwydd bod y ffeil wedi&amp;apos;i diogelu gan Windows. Mae&amp;apos;n bosib y bydd angen i chi ddiweddaru eich system weithredu er mwyn i&amp;apos;r rhaglen hon weithio&amp;apos;n gywir.{{ Fersiwn pecyn: [ProductName], fersiwn Gwarchodedig yr OS: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="Nid oedd modd newid y disgrifiad ar gyfer gwasanaeth &amp;apos;[ProductName]&amp;apos; ([ProductName])."/>
+	<String Id="Error1929" Overridable="yes" Value="Gwall wrth ddadgofrestru Cais COM+. Cysylltwch â&amp;apos;ch personél cymorth am ragor o wybodaeth."/>
+	<String Id="Error1928" Overridable="yes" Value="Gwall wrth gofrestru Cais COM+. Cysylltwch â&amp;apos;ch personél cymorth am ragor o wybodaeth."/>
+	<String Id="Error1927" Overridable="yes" Value="Nid yw Gwasanaethau Cydran (COM+ 1.0) wedi&amp;apos;u gosod ar y cyfrifiadur hwn. Mae angen Gwasanaethau Cydran ar gyfer y gosodiad hwn er mwyn ei gwblhau&amp;apos;n llwyddiannus. Mae Gwasanaethau Cydran ar gael ar Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Methu gosod diogelwch ffeil ar gyfer ffeil &amp;apos;[ProductName]&amp;apos;. Gwall: [ProductName]. Gwiriwch fod gennych ddigon o freintiau i addasu&amp;apos;r hawliau diogelwch ar gyfer y ffeil hon."/>
+	<String Id="Error1925" Overridable="yes" Value="Nid oes gennych ddigon o freintiau i gwblhau&amp;apos;r gosodiad hwn ar gyfer holl ddefnyddwyr y peiriant. Mewngofnodwch fel gweinyddwr ac yna rhowch gynnig arall ar y gosodiad hwn."/>
+	<String Id="Error1924" Overridable="yes" Value="Methu â diweddaru newidyn amgylchedd &amp;apos;[ProductName]&amp;apos;. Gwiriwch fod gennych ddigon o freintiau i addasu newidynnau amgylchedd."/>
+	<String Id="Error1923" Overridable="yes" Value="Nid oedd modd gosod gwasanaeth &amp;apos;[ProductName]&amp;apos; ([ProductName]). Gwiriwch fod gennych chi ddigon o freintiau i osod gwasanaethau system."/>
+	<String Id="Error1922" Overridable="yes" Value="Nid oedd modd dileu gwasanaeth &amp;apos;[ProductName]&amp;apos; ([ProductName]). Gwiriwch fod gennych ddigon o freintiau i ddileu gwasanaethau system."/>
+	<String Id="Error1921" Overridable="yes" Value="Nid oedd modd atal gwasanaeth &amp;apos;[ProductName]&amp;apos; ([ProductName]). Gwiriwch fod gennych ddigon o freintiau i atal gwasanaethau system."/>
+	<String Id="Error1920" Overridable="yes" Value="Methodd gwasanaeth &amp;apos;[ProductName]&amp;apos; ([ProductName]) â chychwyn. Gwiriwch fod gennych chi ddigon o freintiau i gychwyn gwasanaethau system."/>
+	<String Id="Error1919" Overridable="yes" Value="Gwall wrth ffurfweddu ffynhonnell ddata ODBC: [ProductName], gwall ODBC [ProductName]: [ProductName]. Gwiriwch fod y ffeil [ProductName] yn bodoli ac y gallwch gael mynediad iddi."/>
+	<String Id="Error1918" Overridable="yes" Value="Gwall wrth osod gyrrwr ODBC: [ProductName], gwall ODBC [ProductName]: [ProductName]. Gwiriwch fod y ffeil [ProductName] yn bodoli ac y gallwch gael mynediad iddi."/>
+	<String Id="Error1917" Overridable="yes" Value="Gwall wrth ddileu gyrrwr ODBC: [ProductName], gwall ODBC [ProductName]: [ProductName]. Gwiriwch fod gennych chi ddigon o freintiau i gael gwared ar yrwyr ODBC."/>
+	<String Id="Error1916" Overridable="yes" Value="Gwall wrth osod rheolwr gyrrwr ODBC, gwall ODBC [ProductName]: [ProductName]. Cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1915" Overridable="yes" Value="Gwall wrth ddileu rheolwr gyrrwr ODBC, gwall ODBC [ProductName]: [ProductName]. Cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1914" Overridable="yes" Value="Methu â threfnu ffeil [ProductName] i gymryd lle ffeil [ProductName] wrth ailgychwyn. Gwiriwch fod gennych ganiatâd ysgrifennu i ffeilio [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Methu â diweddaru&amp;apos;r ffeil ini [ProductName][ProductName]. Gwiriwch fod y ffeil yn bodoli ac y gallwch gael mynediad iddi."/>
+	<String Id="Error1912" Overridable="yes" Value="Methu dadgofrestru llyfrgell math ar gyfer ffeil [ProductName]. Cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1911" Overridable="yes" Value="Methu â chofrestru llyfrgell math ar gyfer ffeil [ProductName]. Cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1910" Overridable="yes" Value="Methu tynnu Shortcut [ProductName]. Gwiriwch fod y ffeil llwybr byr yn bodoli ac y gallwch gael mynediad iddo."/>
+	<String Id="Error1909" Overridable="yes" Value="Methu creu Llwybr Byr [ProductName]. Gwiriwch fod y ffolder cyrchfan yn bodoli ac y gallwch gael mynediad iddo."/>
+	<String Id="Error1908" Overridable="yes" Value="Methu dadgofrestru ffont [ProductName]. Gwiriwch fod gennych chi ddigon o ganiatâd i ddileu ffontiau."/>
+	<String Id="Error1907" Overridable="yes" Value="Methu cofrestru ffont [ProductName]. Gwiriwch fod gennych ganiatâd digonol i osod ffontiau, a bod y system yn cefnogi&amp;apos;r ffont hwn."/>
+	<String Id="Error1906" Overridable="yes" Value="Wedi methu â chadw&amp;apos;r pecyn celc [ProductName]. Gwall: [ProductName]. Cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1905" Overridable="yes" Value="Methodd modiwl [ProductName] â dadgofrestru. HRESULT [ProductName]. Cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1904" Overridable="yes" Value="Methodd modiwl [ProductName] â chofrestru. HRESULT [ProductName]. Cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1903" Overridable="yes" Value="Amserlennu gweithrediad ailgychwyn: Dileu ffeil [ProductName]. Rhaid ailgychwyn i gwblhau gweithrediad."/>
+	<String Id="Error1902" Overridable="yes" Value="Amserlennu gweithrediad ailgychwyn: Ail-enwi ffeil [ProductName] i [ProductName]. Rhaid ailgychwyn i gwblhau gweithrediad."/>
+	<String Id="Error1901" Overridable="yes" Value="Gwall wrth geisio darllen o&amp;apos;r gronfa ddata gosod ffynhonnell: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Nid oedd modd pennu ffolder cyrchfan ddilys ar gyfer y gosodiad."/>
+	<String Id="Error1806" Overridable="yes" Value="Nid oes gennych ddigon o freintiau i ddarllen y ffolder hon."/>
+	<String Id="Error1805" Overridable="yes" Value="Nid yw&amp;apos;r ffolder [ProductName] yn bodoli. Rhowch lwybr i ffolder sy&amp;apos;n bodoli eisoes."/>
+	<String Id="Error1804" Overridable="yes" Value="Nid oes disg yn y gyriant [ProductName]. Mewnosodwch un a chliciwch Ailgeisio, neu cliciwch Diddymu i ddychwelyd i&amp;apos;r deialog bori a dewis cyfrol wahanol."/>
+	<String Id="Error1803" Overridable="yes" Value="Nid oes disg yn y gyriant [ProductName]. Mewnosodwch un a chliciwch Ailgeisio, neu cliciwch Diddymu i fynd yn ôl i&amp;apos;r gyfrol a ddewiswyd yn flaenorol."/>
+	<String Id="Error1802" Overridable="yes" Value="Allan o gof. Caewch gymwysiadau eraill cyn rhoi cynnig arall arni."/>
+	<String Id="Error1801" Overridable="yes" Value="Nid yw&amp;apos;r llwybr [ProductName] yn ddilys. Nodwch lwybr dilys."/>
+	<String Id="Error1732" Overridable="yes" Value="Er mwyn cwblhau gosod [ProductName], rhaid i chi ailgychwyn y cyfrifiadur. Mae defnyddwyr eraill wedi mewngofnodi i&amp;apos;r cyfrifiadur hwn ar hyn o bryd, a gallai ailgychwyn achosi iddynt golli eu gwaith. Ydych chi am ailgychwyn nawr?"/>
+	<String Id="Error1731" Overridable="yes" Value="Nid yw&amp;apos;r pecyn gosod ffynhonnell ar gyfer y cynnyrch [ProductName] wedi&amp;apos;i gysoni â&amp;apos;r pecyn cleient. Rhowch gynnig arall ar y gosodiad gan ddefnyddio copi dilys o&amp;apos;r pecyn gosod &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Rhaid i chi fod yn Weinyddwr i ddileu&amp;apos;r cais hwn. I ddileu&amp;apos;r cais hwn, gallwch fewngofnodi fel Gweinyddwr, neu gysylltu â&amp;apos;ch grŵp cymorth technegol am gymorth."/>
+	<String Id="Error1729" Overridable="yes" Value="Methodd y cyfluniad."/>
+	<String Id="Error1728" Overridable="yes" Value="Cwblhawyd y cyfluniad yn llwyddiannus."/>
+	<String Id="Error1727" Overridable="yes" Value="Methodd yr hysbyseb."/>
+	<String Id="Error1726" Overridable="yes" Value="Cwblhawyd yr hysbyseb yn llwyddiannus."/>
+	<String Id="Error1725" Overridable="yes" Value="Methwyd â thynnu."/>
+	<String Id="Error1724" Overridable="yes" Value="Cwblhawyd y symud yn llwyddiannus."/>
+	<String Id="Error1723" Overridable="yes" Value="Mae problem gyda&amp;apos;r pecyn Windows Installer hwn. Nid oedd modd rhedeg DLL sydd ei angen er mwyn i&amp;apos;r gosodiad hwn ei gwblhau. Cysylltwch â&amp;apos;ch personél cymorth neu werthwr pecynnau.{{ Action [ProductName], cofnod: [ProductName], llyfrgell: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Mae problem gyda&amp;apos;r pecyn Windows Installer hwn. Ni ddaeth rhaglen a redwyd fel rhan o&amp;apos;r gosodiad i ben yn ôl y disgwyl. Cysylltwch â&amp;apos;ch personél cymorth neu werthwr pecynnau.{{ Action [ProductName], location: [ProductName], command: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Mae problem gyda&amp;apos;r pecyn Windows Installer hwn. Nid oedd modd rhedeg rhaglen sydd ei hangen i&amp;apos;r gosodiad hwn ei chwblhau. Cysylltwch â&amp;apos;ch personél cymorth neu&amp;apos;ch gwerthwr pecynnau.{{ Gweithredu: [ProductName], lleoliad: [ProductName], gorchymyn: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Mae problem gyda&amp;apos;r pecyn Windows Installer hwn. Nid oedd modd rhedeg sgript sy&amp;apos;n ofynnol i&amp;apos;r gosodiad hwn ei gwblhau. Cysylltwch â&amp;apos;ch personél cymorth neu werthwr pecynnau.{{ Custom action [ProductName] gwall sgript [ProductName], [ProductName]: [ProductName] Line [ProductName], Colofn [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Nid oedd modd cyrchu Gwasanaeth Gosodwr Windows. Gall hyn ddigwydd os ydych chi&amp;apos;n rhedeg Windows yn y modd diogel, neu os nad yw&amp;apos;r Gosodwr Windows wedi&amp;apos;i osod yn gywir. Cysylltwch â&amp;apos;ch personél cymorth am gymorth."/>
+	<String Id="Error1718" Overridable="yes" Value="Cafodd ffeil [ProductName] ei gwrthod gan bolisi llofnod digidol."/>
+	<String Id="Error1717" Overridable="yes" Value="Wedi&amp;apos;i ddileu [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Wedi&amp;apos;i ffurfweddu [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Wedi&amp;apos;i osod [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Nid oes modd dileu&amp;apos;r fersiwn hŷn o [ProductName]. Cysylltwch â&amp;apos;ch grŵp cymorth technegol.{{ Gwall System [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="Ni all [ProductName] osod un o&amp;apos;i gynhyrchion gofynnol. Cysylltwch â&amp;apos;ch grŵp cymorth technegol.{{ Gwall System: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Nid oedd modd dod o hyd i un neu fwy o&amp;apos;r ffeiliau sydd eu hangen i adfer eich cyfrifiadur i&amp;apos;w gyflwr blaenorol. Ni fydd adferiad yn bosibl."/>
+	<String Id="Error1711" Overridable="yes" Value="Digwyddodd gwall wrth ysgrifennu gwybodaeth gosod i ddisg. Gwiriwch i sicrhau bod digon o le ar y ddisg ar gael, a chliciwch Ailgeisio, neu Canslo i ddod â&amp;apos;r gosodiad i ben."/>
+	<String Id="Error1710" Overridable="yes" Value="Gallwch naill ai adfer eich cyfrifiadur i&amp;apos;w gyflwr blaenorol neu barhau â&amp;apos;r gosodiad yn ddiweddarach. Hoffech chi adfer?"/>
+	<String Id="Error1709" Overridable="yes" Value="Cynnyrch: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Methodd y gosodiad."/>
+	<String Id="Error1707" Overridable="yes" Value="Cwblhawyd y gosodiad yn llwyddiannus."/>
+	<String Id="Error1706" Overridable="yes" Value="Ni ellir dod o hyd i becyn gosod ar gyfer y cynnyrch [ProductName]. Rhowch gynnig arall ar y gosodiad gan ddefnyddio copi dilys o&amp;apos;r pecyn gosod &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="Mae gosodiad blaenorol ar gyfer y cynnyrch hwn ar y gweill. Rhaid i chi ddadwneud y newidiadau a wnaed gan y gosodiad hwnnw i barhau. Ydych chi am ddadwneud y newidiadau hynny?"/>
+	<String Id="Error1704" Overridable="yes" Value="Mae gosodiad ar gyfer [ProductName] wedi&amp;apos;i atal ar hyn o bryd. Rhaid i chi ddadwneud y newidiadau a wnaed gan y gosodiad hwnnw i barhau. Ydych chi am ddadwneud y newidiadau hynny?"/>
+	<String Id="Error1703" Overridable="yes" Value="Rhaid i chi ailgychwyn eich system er mwyn i&amp;apos;r newidiadau ffurfweddu a wnaed i [ProductName] ddod i rym. Cliciwch Ydw i ailgychwyn nawr neu Na os ydych chi&amp;apos;n bwriadu ailgychwyn â llaw yn ddiweddarach."/>
+	<String Id="Error1702" Overridable="yes" Value="Rhaid i&amp;apos;r gosodwr ailgychwyn eich system cyn y gall ffurfweddiad [ProductName] barhau. Cliciwch Ydw i ailgychwyn nawr neu Na os ydych chi&amp;apos;n bwriadu ailgychwyn â llaw yn ddiweddarach."/>
+	<String Id="Error1701" Overridable="yes" Value="Nid yw&amp;apos;r allwedd [ProductName] yn ddilys. Gwiriwch eich bod wedi rhoi&amp;apos;r allwedd gywir."/>
+	<String Id="Error1609" Overridable="yes" Value="Digwyddodd gwall wrth gymhwyso gosodiadau diogelwch. Nid yw [ProductName] yn ddefnyddiwr neu&amp;apos;n grŵp dilys. Gallai hyn fod yn broblem gyda&amp;apos;r pecyn, neu&amp;apos;n broblem cysylltu â rheolydd parth ar y rhwydwaith. Gwiriwch eich cysylltiad rhwydwaith a chliciwch Ailgeisio, neu Canslo i ddod â&amp;apos;r gosodiad i ben. {{Methu lleoli SID y defnyddiwr, gwall system [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Methu dod o hyd i unrhyw gynhyrchion cydymffurfio a osodwyd yn flaenorol ar y peiriant ar gyfer gosod y cynnyrch hwn."/>
+	<String Id="Error1607" Overridable="yes" Value="Dylid cau&amp;apos;r cymwysiadau canlynol cyn parhau â&amp;apos;r gosodiad:"/>
+	<String Id="Error1606" Overridable="yes" Value="Methu cyrchu lleoliad rhwydwaith [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Nid oes digon o le ar y ddisg ar y gyfrol &amp;apos;[ProductName]&amp;apos; i barhau â&amp;apos;r gosodiad gydag adferiad wedi&amp;apos;i alluogi. [ProductName] Mae angen KB, ond dim ond [ProductName] KB sydd ar gael. Cliciwch Anwybyddu i barhau â&amp;apos;r gosodiad heb arbed gwybodaeth adfer, cliciwch Ailgeisio i wirio am le sydd ar gael eto, neu cliciwch Canslo i roi&amp;apos;r gorau i&amp;apos;r gosodiad."/>
+	<String Id="Error1604" Overridable="yes" Value="Mae&amp;apos;r cynnyrch &amp;apos;[ProductName]&amp;apos; eisoes wedi&amp;apos;i osod, gan atal gosod y cynnyrch hwn. Mae&amp;apos;r ddau gynnyrch yn anghydnaws."/>
+	<String Id="Error1603" Overridable="yes" Value="Mae&amp;apos;r ffeil [ProductName][ProductName] yn cael ei defnyddio{ gan y broses ganlynol: Enw: [ProductName], Id: [ProductName], Teitl y Ffenestr: &amp;apos;[ProductName]&amp;apos;}. Caewch y cais hwnnw a rhoi cynnig arall arni."/>
+	<String Id="Error1602" Overridable="yes" Value="Ydych chi&amp;apos;n siŵr eich bod am ganslo?"/>
+	<String Id="Error1601" Overridable="yes" Value="Allan o ofod disg -- Cyfrol: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Mae defnyddiwr &amp;apos;[ProductName]&amp;apos; eisoes wedi cychwyn gosodiad ar gyfer cynnyrch &amp;apos;[ProductName]&amp;apos;. Bydd angen i&amp;apos;r defnyddiwr hwnnw redeg y gosodiad hwnnw eto cyn y gallant ddefnyddio&amp;apos;r cynnyrch hwnnw."/>
+	<String Id="Error1502" Overridable="yes" Value="Mae defnyddiwr &amp;apos;[ProductName]&amp;apos; eisoes wedi cychwyn gosodiad ar gyfer cynnyrch &amp;apos;[ProductName]&amp;apos;. Bydd angen i&amp;apos;r defnyddiwr hwnnw redeg y gosodiad hwnnw eto cyn y gallant ddefnyddio&amp;apos;r cynnyrch hwnnw. Bydd eich gosodiad presennol nawr yn parhau."/>
+	<String Id="Error1501" Overridable="yes" Value="Gwall wrth gyrchu data diogel. Gwnewch yn siŵr bod y Windows Installer wedi&amp;apos;i ffurfweddu&amp;apos;n iawn a rhowch gynnig ar y gosodiad eto."/>
+	<String Id="Error1500" Overridable="yes" Value="Mae gosodiad arall ar y gweill. Rhaid i chi gwblhau&amp;apos;r gosodiad hwnnw cyn parhau â&amp;apos;r un hwn."/>
+	<String Id="Error1410" Overridable="yes" Value="Methu â chynyddu&amp;apos;r gofod cofrestrfa sydd ar gael. [ProductName] Mae angen KB o ofod cofrestrfa am ddim ar gyfer gosod y rhaglen hon."/>
+	<String Id="Error1409" Overridable="yes" Value="Methu darllen gwybodaeth diogelwch ar gyfer allwedd [ProductName].{{Gwall system [ProductName].}} Gwiriwch fod gennych fynediad digonol i&amp;apos;r allwedd honno, neu cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1408" Overridable="yes" Value="Methu â chael enwau is-allwedd ar gyfer allwedd [ProductName].{{Gwall system [ProductName].}} Gwiriwch fod gennych fynediad digonol i&amp;apos;r allwedd honno, neu cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1407" Overridable="yes" Value="Methu â chael enwau gwerth ar gyfer allwedd [ProductName].{{ Gwall system [ProductName].}} Gwiriwch fod gennych fynediad digonol i&amp;apos;r allwedd honno, neu cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1406" Overridable="yes" Value="Methu ysgrifennu gwerth [ProductName] i&amp;apos;r allwedd [ProductName].{{ Gwall system [ProductName].}} Gwiriwch fod gennych fynediad digonol i&amp;apos;r allwedd honno, neu cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1405" Overridable="yes" Value="Methu darllen gwerth [ProductName] o&amp;apos;r allwedd [ProductName].{{ Gwall system [ProductName].}} Gwiriwch fod gennych fynediad digonol i&amp;apos;r allwedd honno, neu cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1404" Overridable="yes" Value="Methu dileu&amp;apos;r allwedd [ProductName].{{Gwall system [ProductName].}} Gwiriwch fod gennych fynediad digonol i&amp;apos;r allwedd honno, neu cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1403" Overridable="yes" Value="Methu dileu gwerth [ProductName] o&amp;apos;r allwedd [ProductName].{{ Gwall system [ProductName].}} Gwiriwch fod gennych fynediad digonol i&amp;apos;r allwedd honno, neu cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1402" Overridable="yes" Value="Methu agor allwedd: [ProductName].{{ Gwall system [ProductName].}} Gwiriwch fod gennych fynediad digonol i&amp;apos;r allwedd honno, neu cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1401" Overridable="yes" Value="Methu creu allwedd: [ProductName].{{Gwall system [ProductName].}} Gwiriwch fod gennych fynediad digonol i&amp;apos;r allwedd honno, neu cysylltwch â&amp;apos;ch personél cymorth."/>
+	<String Id="Error1336" Overridable="yes" Value="Bu gwall wrth greu ffeil dros dro sydd ei hangen i gwblhau&amp;apos;r gosodiad hwn.{{ Folder: [ProductName]. Cod gwall system: [ProductName] }}"/>
+	<String Id="Error1335" Overridable="yes" Value="Mae&amp;apos;r ffeil cabinet &amp;apos;[ProductName]&amp;apos; sydd ei hangen ar gyfer y gosodiad hwn yn llwgr ac ni ellir ei ddefnyddio. Gallai hyn ddangos gwall rhwydwaith, gwall wrth ddarllen o&amp;apos;r CD-ROM, neu broblem gyda&amp;apos;r pecyn hwn."/>
+	<String Id="Error1334" Overridable="yes" Value="Nid oes modd gosod y ffeil &amp;apos;[ProductName]&amp;apos; oherwydd ni ellir dod o hyd i&amp;apos;r ffeil yn ffeil cabinet &amp;apos;[ProductName]&amp;apos;. Gallai hyn ddangos gwall rhwydwaith, gwall wrth ddarllen o&amp;apos;r CD-ROM, neu broblem gyda&amp;apos;r pecyn hwn."/>
+	<String Id="Error1333" Overridable="yes" Value="Wedi methu â chlytio ffeil [ProductName] yn gywir: gwall CRC."/>
+	<String Id="Error1332" Overridable="yes" Value="Wedi methu symud ffeil [ProductName] yn gywir: gwall CRC."/>
+	<String Id="Error1331" Overridable="yes" Value="Wedi methu â chopïo ffeil [ProductName] yn gywir: gwall CRC."/>
+	<String Id="Error1330" Overridable="yes" Value="Nid oes modd gosod ffeil sydd ei hangen oherwydd bod gan y ffeil cabinet [ProductName] lofnod digidol annilys. Gall hyn ddangos bod ffeil y cabinet yn llwgr.{{ Gwall [ProductName] ei ddychwelyd gan WinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Nid oes modd gosod ffeil sydd ei hangen oherwydd nad yw ffeil y cabinet [ProductName] wedi&amp;apos;i harwyddo&amp;apos;n ddigidol. Gall hyn ddangos bod ffeil y cabinet yn llwgr."/>
+	<String Id="Error1328" Overridable="yes" Value="Gwall wrth gymhwyso patch i ffeil [ProductName]. Mae&amp;apos;n debyg ei fod wedi&amp;apos;i ddiweddaru trwy ddulliau eraill, ac ni ellir ei addasu gan y darn hwn mwyach. Am ragor o wybodaeth cysylltwch â&amp;apos;ch gwerthwr clytiau.{{ Gwall System: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Gyriant Annilys: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Gwall wrth gael diogelwch ffeil: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="Nid yw [ProductName]&amp;apos; yn enw ffeil byr dilys."/>
+	<String Id="Error1324" Overridable="yes" Value="Mae&amp;apos;r llwybr ffolder &amp;apos;[ProductName]&amp;apos; yn cynnwys nod annilys."/>
+	<String Id="Error1323" Overridable="yes" Value="Mae&amp;apos;r llwybr ffolder &amp;apos;[ProductName]&amp;apos; yn cynnwys geiriau nad ydynt yn ddilys mewn llwybrau ffolder."/>
+	<String Id="Error1322" Overridable="yes" Value="Mae rhan o lwybr y ffolder &amp;apos;[ProductName]&amp;apos; yn annilys. Mae naill ai&amp;apos;n wag neu&amp;apos;n fwy na&amp;apos;r hyd a ganiateir gan y system."/>
+	<String Id="Error1321" Overridable="yes" Value="Nid oes gan y Gosodwr ddigon o freintiau i addasu&amp;apos;r ffeil hon: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Mae&amp;apos;r llwybr penodedig yn rhy hir: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Digwyddodd gwall rhwydwaith wrth geisio agor y cabinet ffeil ffynhonnell: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Digwyddodd gwall rhwydwaith wrth geisio creu&amp;apos;r cyfeiriadur: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Digwyddodd gwall wrth geisio creu&amp;apos;r cyfeiriadur: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Digwyddodd gwall rhwydwaith wrth geisio darllen o&amp;apos;r ffeil: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Methu ysgrifennu i&amp;apos;r ffolder penodedig: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Nid yw&amp;apos;r llwybr penodedig &amp;apos;[ProductName]&amp;apos; ar gael."/>
+	<String Id="Error1313" Overridable="yes" Value="Nid yw&amp;apos;r gyfrol [ProductName] ar gael ar hyn o bryd. Dewiswch un arall."/>
+	<String Id="Error1312" Overridable="yes" Value="Methu creu&amp;apos;r cyfeiriadur &amp;apos;[ProductName]&amp;apos;. Mae ffeil gyda&amp;apos;r enw hwn eisoes yn bodoli. Ail-enwi neu dynnu&amp;apos;r ffeil a chlicio Ailgynnig, neu cliciwch Diddymu i adael."/>
+	<String Id="Error1311" Overridable="yes" Value="Ffeil ffynhonnell heb ei chanfod{{(cabinet)}}: [ProductName]. Gwiriwch fod y ffeil yn bodoli ac y gallwch gael mynediad iddi."/>
+	<String Id="Error1310" Overridable="yes" Value="Gwall wrth ysgrifennu i ffeil: [ProductName].{{Gwall system [ProductName].}} Gwiriwch fod gennych fynediad i&amp;apos;r cyfeiriadur hwnnw."/>
+	<String Id="Error1309" Overridable="yes" Value="Gwall wrth ddarllen o&amp;apos;r ffeil: [ProductName].{{Gwall system [ProductName].}} Gwiriwch fod y ffeil yn bodoli ac y gallwch gael mynediad iddi."/>
+	<String Id="Error1308" Overridable="yes" Value="Ffeil ffynhonnell heb ei chanfod: [ProductName]. Gwiriwch fod y ffeil yn bodoli ac y gallwch gael mynediad iddi."/>
+	<String Id="Error1307" Overridable="yes" Value="Nid oes digon o le ar y ddisg i osod y ffeil hon: [ProductName]. Rhyddhewch ychydig o le ar y ddisg a chliciwch Ailgeisio, neu cliciwch Canslo i adael."/>
+	<String Id="Error1306" Overridable="yes" Value="Mae gan raglen arall fynediad unigryw i&amp;apos;r ffeil &amp;apos;[ProductName]&amp;apos;. Caewch bob cais arall, yna cliciwch ar Ailgeisio."/>
+	<String Id="Error1305" Overridable="yes" Value="Gwall wrth ddarllen o ffeil [ProductName].{{Gwall system [ProductName].}} Gwiriwch fod y ffeil yn bodoli a&amp;apos;ch bod yn gallu cael mynediad iddi."/>
+	<String Id="Error1304" Overridable="yes" Value="Gwall wrth ysgrifennu i ffeil: [ProductName]. Gwiriwch fod gennych fynediad i&amp;apos;r cyfeiriadur hwnnw."/>
+	<String Id="Error1303" Overridable="yes" Value="Nid oes gan y gosodwr ddigon o freintiau i gael mynediad i&amp;apos;r cyfeiriadur hwn: [ProductName]. Ni all y gosodiad barhau. Mewngofnodwch fel gweinyddwr neu cysylltwch â gweinyddwr eich system."/>
+	<String Id="Error1302" Overridable="yes" Value="Rhowch y ddisg: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Methu creu&amp;apos;r ffeil &amp;apos;[ProductName]&amp;apos;. Mae cyfeiriadur gyda&amp;apos;r enw hwn eisoes yn bodoli. Canslo&amp;apos;r gosodiad a cheisiwch osod i leoliad gwahanol."/>
+	<String Id="Error1101" Overridable="yes" Value="Gwall wrth ddarllen o&amp;apos;r ffeil: [ProductName].{{Gwall system [ProductName].}} Gwiriwch fod y ffeil yn bodoli ac y gallwch gael mynediad iddi."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Methwyd gosod."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Cwblhawyd y gosodiad yn llwyddiannus."/>
+	<String Id="Error23" Overridable="yes" Value="Paratoi i ddileu fersiynau hŷn o&amp;apos;r rhaglen hon..."/>
+	<String Id="Error22" Overridable="yes" Value="Wrthi&amp;apos;n dileu fersiynau hŷn o&amp;apos;r rhaglen hon..."/>
+	<String Id="Error21" Overridable="yes" Value="Wrthi&amp;apos;n casglu&amp;apos;r wybodaeth angenrheidiol..."/>
+	<String Id="Error20" Overridable="yes" Value="Arhoswch tra bod Windows yn ffurfweddu [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Gosodwr stopio cyn pryd."/>
+	<String Id="Error18" Overridable="yes" Value="Nid yw&amp;apos;r gosodwr yn ymateb mwyach."/>
+	<String Id="Error17" Overridable="yes" Value="Allan o gof. Caewch gymwysiadau eraill cyn rhoi cynnig arall arni."/>
+	<String Id="Error16" Overridable="yes" Value="Amser ar ôl: {[ProductName] munud }{[ProductName] eiliad}"/>
+	<String Id="Error15" Overridable="yes" Value="Daeth y weithred i ben [ProductName]: [ProductName]. Gwerth dychwelyd [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Cychwyn gweithredu [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Stopio mewngofnodi: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Dechreuwyd mewngofnodi: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Math o neges: [ProductName], Dadl: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Gweithredu [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{ Disg yn llawn: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Mae&amp;apos;r gosodwr wedi dod ar draws gwall annisgwyl wrth osod y pecyn hwn. Gall hyn ddangos problem gyda&amp;apos;r pecyn hwn. Y cod gwall yw [ProductName]. {{Y dadleuon yw: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Gwybodaeth [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Rhybudd [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{ Gwall [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{ Gwall angheuol: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Dad-gyhoeddi gwybodaeth am gynnyrch"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Cyfeiriadur: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Tynnu ffeiliau sydd wedi&amp;apos;u symud"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Ffeil: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Dileu ffeiliau wrth gefn"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Akce vrácení zpět:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Cyd-destun y Cais:[ProductName], Enw&amp;apos;r Cynulliad:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Dad-gyhoeddi gwybodaeth am y cynulliad"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Cyd-destun y Cais:[ProductName], Enw&amp;apos;r Cynulliad:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Cyhoeddi gwybodaeth am y cynulliad"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Ffeil: [ProductName], Dibyniaethau: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Gosod catalog system"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Cynhyrchu gweithrediadau sgript ar gyfer gweithredu:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Cais hysbysebu"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Allwedd: [ProductName], Enw: [ProductName], Gwerth: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Ysgrifennu gwerthoedd cofrestrfa system"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Adran: [ProductName], Allwedd: [ProductName], Gwerth: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Ysgrifennu gwerthoedd ffeiliau INI"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Enw: [ProductName], Gwerth: [ProductName], Gweithred [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Diweddaru llinynnau amgylchedd"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Llyfrgelloedd tebyg i ddadgofrestru"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Dadgofrestru dynodwyr rhaglen"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME Math o Gynnwys: [ProductName], Estyniad: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Wrthi&amp;apos;n dadgofrestru gwybodaeth MIME"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Ffont: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Dadgofrestru ffontiau"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Estyniad: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Dadgofrestru gweinyddion estyniad"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{/{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Dadgofrestru Cymwysiadau a Chydrannau COM+"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="ID Dosbarth: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Dadgofrestru gweinyddwyr Dosbarth"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Nodwedd: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Dad-gyhoeddi Nodweddion Cynnyrch"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="ID Cydran: [ProductName], Cymhwyswr: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Dad-gyhoeddi Cydrannau Cymwys"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Gwasanaeth: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Rhoi&amp;apos;r gorau i wasanaethau"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Gwasanaeth: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Dechrau gwasanaethau"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Cychwyn cyfeiriaduron ODBC"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Ffolder: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Dadgofrestru modiwlau"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Ffolder: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Cofrestru modiwlau"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Chwilio am gynhyrchion cymwys"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Llwybr byr: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Tynnu llwybrau byr"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Allwedd: [ProductName], Enw: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Dileu gwerthoedd cofrestrfa system"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Dileu cydrannau ODBC"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Adran: [ProductName], Allwedd: [ProductName], Gwerth: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Dileu cofnodion ffeiliau INI"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Ffolder: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Tynnu ffolderi"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Cyfeiriadur: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Tynnu ffeiliau"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Cais: [ProductName], llinell orchymyn: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Dileu cymwysiadau"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Enw: [ProductName], Gwerth: [ProductName], Gweithred [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Diweddaru llinynnau amgylchedd"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Cyfeiriadur: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Tynnu ffeiliau dyblyg"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Cofrestru defnyddiwr"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Llyfrgelloedd tebyg i gofrestru"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Cofrestru cynnyrch"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Ffont: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Cofrestru ffontiau"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Defnyddwyr: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Cofrestru Cymwysiadau a Chydrannau COM+"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Diweddaru cofrestriad cydrannau"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Cyfeiriadur: [ProductName], Maint: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Clytio ffeiliau"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Cyfeiriadur: [ProductName], Maint: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Symud ffeiliau"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Cais: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Cyflyrau nodwedd mudo o gymwysiadau cysylltiedig"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Gwerthuso amodau lansio"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Gwasanaeth: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Gosod gwasanaethau newydd"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Gosod cydrannau ODBC"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Wedi canfod cais: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Chwilio am gymwysiadau cysylltiedig"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Cyfeiriadur: [ProductName], Maint: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Creu ffeiliau dyblyg"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Gwasanaeth: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Dileu gwasanaethau"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Ffolder: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Creu ffolderi"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Chwilio am gynhyrchion cymwys"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Ffeil: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Gweithredadwy rhwymo"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Eiddo: [ProductName], Llofnod: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Chwilio am gymwysiadau wedi&amp;apos;u gosod"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Lle rhydd: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Dyrannu gofod cofrestrfa"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Cofrestru dynodwyr rhaglen"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME Math o Gynnwys: [ProductName], Estyniad: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Cofrestru gwybodaeth MIME"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Estyniad: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Cofrestru gweinyddion estyniad"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="ID Dosbarth: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Cofrestru gweinyddwyr Dosbarth"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Cyhoeddi gwybodaeth am gynnyrch"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Nodwedd: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Cyhoeddi Nodweddion Cynnyrch"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="ID Cydran: [ProductName], Cymhwyswr: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Cyhoeddi Cydrannau Cymwys"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Llwybr byr: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Creu llwybrau byr"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Gofynion gofod cyfrifiadurol"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Gofynion gofod cyfrifiadurol"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Gofynion gofod cyfrifiadurol"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Ffeil: [ProductName], Cyfeiriadur: [ProductName], Maint: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Copïo ffeiliau gosod rhwydwaith"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Ffeil: [ProductName], Cyfeiriadur: [ProductName], Maint: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Copïo ffeiliau newydd"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Dilysu gosodiad"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Darllenwch y Cytundeb Trwydded [ProductName]"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Diweddaru"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Gosod"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Rwyf yn &amp;derbyn telerau&amp;apos;r Cytundeb Trwydded"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Croeso i&amp;apos;r Dewin Gosod [ProductName]"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Bydd y Dewin Gosod yn diweddaru [ProductName] ar eich cyfrifiadur. Cliciwch Next i barhau neu Canslo i adael y Dewin Gosod."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Bydd y Dewin Gosod yn gosod [ProductName] ar eich cyfrifiadur. Cliciwch Next i barhau neu Canslo i adael y Dewin Gosod."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Eicon ebychnod"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Arhoswch tra bydd y gosodwr yn gorffen pennu eich gofynion gofod disg."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Dychwelyd"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Barod i ddiweddaru [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Cliciwch Update i ddiweddaru [ProductName] o&amp;apos;ch cyfrifiadur. Cliciwch Yn ôl i adolygu neu newid unrhyw un o&amp;apos;ch gosodiadau gosod. Cliciwch Canslo i adael y dewin."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Diweddaru"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Barod i ddileu [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Cliciwch Dileu i dynnu [ProductName] oddi ar eich cyfrifiadur. Cliciwch Yn ôl i adolygu neu newid unrhyw un o&amp;apos;ch gosodiadau gosod. Cliciwch Canslo i adael y dewin."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Dileu"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Barod i atgyweirio [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Cliciwch Atgyweirio i atgyweirio gosodiad [ProductName]. Cliciwch Yn ôl i adolygu neu newid unrhyw un o&amp;apos;ch gosodiadau gosod. Cliciwch Canslo i adael y dewin."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Ail&amp;paru"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Barod i newid [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Cliciwch Newid i ddechrau&amp;apos;r gosodiad. Cliciwch Yn ôl i adolygu neu newid unrhyw un o&amp;apos;ch gosodiadau gosod. Cliciwch Canslo i adael y dewin."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Newid"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Barod i osod [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Cliciwch Gosod i gychwyn y gosodiad. Cliciwch Yn ôl i adolygu neu newid unrhyw un o&amp;apos;ch gosodiadau gosod. Cliciwch Canslo i adael y dewin."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Gosod"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Cliciwch ar y botwm Gorffen i adael y Dewin Gosod."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="Amharwyd ar osod [ProductName]. Nid yw eich system wedi&amp;apos;i haddasu. I osod y rhaglen hon yn nes ymlaen, rhedwch y gosodiad eto."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Amharwyd ar y Dewin Gosod"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Bydd holl nodweddion y rhaglen yn cael eu gosod. Mae angen y lle mwyaf ar ddisg."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Mae&amp;apos;n caniatáu i ddefnyddwyr ddewis pa nodweddion rhaglen fydd yn cael eu gosod a ble byddant yn cael eu gosod. Argymhellir ar gyfer defnyddwyr uwch."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Yn gosod y nodweddion rhaglen mwyaf cyffredin. Argymhellir ar gyfer y rhan fwyaf o ddefnyddwyr."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Dewiswch y math gosod sy&amp;apos;n gweddu orau i&amp;apos;ch anghenion"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Dewiswch Fath Gosodiad"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Gosodiad Cyflawn"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C&amp;gyflawn"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Gosod Custom"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ustom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Gosodiad Nodweddiadol"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Nodweddiadol"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Yn ailddechrau&amp;apos;r Dewin Gosod [ProductName]"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Bydd y Dewin Gosod yn cwblhau gosod [ProductName] ar eich cyfrifiadur. Cliciwch Gosod i barhau neu Canslo i adael y Dewin Gosod."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Gosod"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Statws:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Cynnydd wedi ei wneud"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Yn diweddaru [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Arhoswch tra bydd y Dewin Gosod yn diweddaru [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Tynnu [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Arhoswch tra bod y Dewin Gosod yn dileu [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Trwsio [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Arhoswch tra bydd y Dewin Gosod yn trwsio [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Yn newid [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Arhoswch tra bydd y Dewin Gosod yn newid [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Gosod [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Arhoswch tra bydd y Dewin Gosod yn gosod [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Croeso i&amp;apos;r Dewin Gosod [ProductName]"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Arhoswch tra bod y Dewin Gosod yn paratoi i&amp;apos;ch arwain trwy&amp;apos;r gosodiad."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Fel arall, gallwch ddewis analluogi swyddogaeth dychwelyd y gosodwr. Mae analluogi dychwelyd yn atal y gosodwr rhag adfer cyflwr gwreiddiol eich cyfrifiadur pe bai unrhyw ymyrraeth ar y gosodiad. Cliciwch Ie os ydych yn dymuno cymryd y risg o analluogi dychwelyd."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Allan o&amp;apos;r Gofod Disg"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Mae&amp;apos;r gofod disg sydd ei angen ar gyfer y gosodiad yn fwy na&amp;apos;r gofod disg sydd ar gael."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Nid oes gan y cyfrolau a amlygwyd ddigon o le ar y ddisg ar gyfer y nodweddion a ddewiswyd ar hyn o bryd. Gallwch dynnu rhai ffeiliau o&amp;apos;r cyfrolau a amlygwyd, gosod llai o nodweddion, neu ddewis gyriant cyrchfan gwahanol."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Allan o&amp;apos;r Gofod Disg"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Mae&amp;apos;r gofod disg sydd ei angen ar gyfer y gosodiad yn fwy na&amp;apos;r gofod disg sydd ar gael."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Nid oes gan y cyfrolau a amlygwyd ddigon o le ar y ddisg ar gyfer y nodweddion a ddewiswyd ar hyn o bryd. Gallwch dynnu rhai ffeiliau o&amp;apos;r cyfrolau a amlygwyd, gosod llai o nodweddion, neu ddewis gyriant cyrchfan gwahanol."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Peidiwch â chau rhaglenni. Bydd angen ailgychwyn."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Caewch y rhaglenni a cheisiwch eu hail-ddechrau."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ffeiliau sy&amp;apos;n cael eu Defnyddio"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Mae rhai ffeiliau sydd angen eu diweddaru yn cael eu defnyddio ar hyn o bryd."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Mae&amp;apos;r cymwysiadau canlynol yn defnyddio ffeiliau y mae angen eu diweddaru erbyn y gosodiad hwn. Gallwch adael i Setup Wizard eu cau a cheisio eu hailgychwyn neu ailgychwyn y peiriant yn nes ymlaen."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Croeso i&amp;apos;r Dewin Gosod [ProductName]"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Mae&amp;apos;r Dewin Gosod yn eich galluogi i newid y ffordd y mae nodweddion [ProductName] yn cael eu gosod ar eich cyfrifiadur neu i&amp;apos;w tynnu oddi ar eich cyfrifiadur. Cliciwch Next i barhau neu Canslo i adael y Dewin Gosod."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="Nid oes modd trwsio [ProductName]."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Atgyweirio gwallau yn y gosodiad diweddaraf trwy drwsio ffeiliau coll a llwgr, llwybrau byr a chofnodion cofrestrfa."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="Ni ellir dileu [ProductName]."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Yn tynnu [ProductName] o&amp;apos;ch cyfrifiadur."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="Nid oes gan [ProductName] nodweddion y gellir eu dewis yn annibynnol."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Yn gadael i chi newid y ffordd y mae nodweddion yn cael eu gosod."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Newid, trwsio neu ddileu&amp;apos;r gosodiad"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Dewiswch y llawdriniaeth rydych chi am ei chyflawni."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Dileu Gosod"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Dileu"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Gosod Atgyweirio"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Ail&amp;paru"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Newid Gosodiad"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Newid"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Cytundeb Trwydded Defnyddiwr Terfynol"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Darllenwch y cytundeb trwydded canlynol yn ofalus"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Rwyf yn &amp;derbyn telerau&amp;apos;r Cytundeb Trwydded"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Eicon gwybodaeth"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Gwybodaeth"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Rhaid i&amp;apos;r cyfeiriadur gosod fod ar yriant caled lleol."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Newid..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Gosod a ffolder:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="Bydd [ProductName] yn cael ei osod mewn ffolder per-machine yn ddiofyn a bydd ar gael i bob defnyddiwr. Gallwch newid y ffolder gosod rhagosodedig. Rhaid i chi gael breintiau Gweinyddwr lleol."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Pwysleisio}Gosodwch ar gyfer holl ddefnyddwyr y &amp;peiriant hwn"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="Nid yw [ProductName] yn cefnogi gosodiad fesul defnyddiwr."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="Bydd [ProductName] yn cael ei osod mewn ffolder fesul defnyddiwr a bydd ar gael ar gyfer eich cyfrif defnyddiwr yn unig. Nid oes angen breintiau Gweinyddwr lleol arnoch."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Pwysleisio}Gosod &amp;dim ond i chi ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Cwmpas Gosod"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Dewiswch y cwmpas gosod a&amp;apos;r ffolder"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Gosod [ProductName] i:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Cliciwch Next i osod i&amp;apos;r ffolder diofyn neu cliciwch Newid i ddewis un arall."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ffolder Cyrchfan"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Newid..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ffeiliau sy&amp;apos;n cael eu Defnyddio"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Mae rhai ffeiliau sydd angen eu diweddaru yn cael eu defnyddio ar hyn o bryd."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Mae&amp;apos;r cymwysiadau canlynol yn defnyddio ffeiliau y mae angen eu diweddaru erbyn y gosodiad hwn. Caewch y rhaglenni hyn ac yna cliciwch ar &amp;Ailgynnig i barhau i osod neu Gadael i&amp;apos;w adael."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="E&amp;adael"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Newid"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Gosod"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Nodweddion Cynnyrch"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Dewiswch y ffordd rydych chi am i nodweddion gael eu gosod."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Nodweddion cynnyrch"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Cliciwch ar y botwm Gorffen i adael y Dewin Gosod."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Daeth Dewin Gosod i ben yn gynamserol oherwydd gwall. Nid yw eich system wedi&amp;apos;i haddasu. I osod y rhaglen hon yn ddiweddarach, rhedeg Setup Wizard eto."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Daeth Dewin Gosod i ben yn gynamserol"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Wedi cwblhau&amp;apos;r Dewin Gosod [ProductName]"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Cliciwch ar y botwm Gorffen i adael y Dewin Gosod."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Eicon gwybodaeth"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Gwybodaeth"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Testun gwybodaeth"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Gofynion Gofod Disg"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Y gofod disg sydd ei angen ar gyfer gosod y nodweddion a ddewiswyd."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Nid oes gan y cyfrolau a amlygwyd ddigon o le ar ddisg ar gyfer nodweddion dethol. Gallwch naill ai dynnu rhai ffeiliau o&amp;apos;r cyfrolau a amlygwyd, gosod llai o nodweddion, neu ddewis gyriannau cyrchfan gwahanol."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Lleoliad:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Gosod Cwsmer"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Dewiswch y ffordd rydych chi am i nodweddion gael eu gosod."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Cliciwch yr eiconau yn y goeden isod i newid y ffordd y bydd nodweddion yn cael eu gosod."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Disg a Defnydd"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Ailosod"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;rowse..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Coeden o ddetholiadau"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Eicon gwybodaeth"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Gwybodaeth"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Ydych chi&amp;apos;n siŵr eich bod am ganslo gosodiad [ProductName]?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Newid ffolder cyrchfan"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Pori i&amp;apos;r ffolder cyrchfan"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Enw ffolder:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Creu ffolder newydd"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_Newydd"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="I fyny un lefel"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Edrych i mewn:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;dvanced"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Gosod"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Cliciwch Gosod i osod y cynnyrch gydag opsiynau diofyn ar eich cyfer chi yn unig. Cliciwch Uwch i newid opsiynau gosod."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Cliciwch Gosod i osod y cynnyrch gydag opsiynau diofyn ar gyfer pob defnyddiwr. Cliciwch Uwch i newid opsiynau gosod."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Rwyf yn &amp;derbyn telerau&amp;apos;r Cytundeb Trwydded"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Darllenwch y Cytundeb Trwydded [ProductName]"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Baner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Gosod"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Argraffu"/>
+	<String Id="WixUIOK" Overridable="yes" Value="iawn"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Na"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Ie"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Anwybyddu"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Ailgynnig"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Gorffen"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Canslo"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Nesaf"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Nôl"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Dadosod cyfluniad Firewall Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Rholio yn ôl ffurfweddiad Firewall Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Gosod cyfluniad Firewall Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Rholio yn ôl ffurfweddiad Firewall Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Ffurfweddu Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Ffurfweddu Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Methu cysylltu â Windows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Delweddau ar gyfer cymwysiadau o bell ar gael fel opsiwn mewn ffurfweddiad"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Gweld gweinyddwyr RAAS yn Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Creu llwybrau byr cymhwysiad o bell i gymwysiadau gweinydd ar gyfrifiadur lleol"/>

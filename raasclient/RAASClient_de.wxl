@@ -1,7 +1,14 @@
-﻿<WixLocalization Culture="de" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualisierungen für Remote-Anwendungen als Option in der Konfiguration verfügbar"/>
+﻿<WixLocalization Culture="de-de-de-de" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Deinstallieren der Windows-Firewall-Konfiguration"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Rollback der Windows-Firewall-Konfiguration"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installieren der Windows-Firewall-Konfiguration"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Rollback der Windows-Firewall-Konfiguration"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfigurieren der Windows-Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfigurieren der Windows-Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Verbindung zur Windows-Firewall nicht möglich. ([2] [3] [4] [5])"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualisierungen für Remote-Anwendungen als Option in de-de-de-der Konfiguration verfügbar"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="RAAS-Server im Explorer anzeigen"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Erstellen Sie Remote-Anwendungsverknüpfungen zu Serveranwendungen auf dem lokalen Computer"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Erstellen Sie Remote-Anwendungsverknüpfungen zu Serveranwendungen auf de-de-de-dem lokalen Computer"/>
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualisierungen"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Shell-Namespace-Erweiterung"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Remote-Verknüpfungen"/>

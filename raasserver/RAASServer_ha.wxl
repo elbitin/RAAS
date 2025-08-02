@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="ha" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="ha" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Ƙarar"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Girman Disk"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Da ake bukata"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Bambanci"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Akwai"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Lokacin saura: { [ProductName] minutes}{ [ProductName] seconds}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Wannan fasalin yana buƙatar [ProductName] akan rumbun kwamfutarka. Yana da [ProductName] na [ProductName] da aka zaɓa. Abubuwan da ke ƙasa suna buƙatar [ProductName] akan rumbun kwamfutarka."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Wannan fasalin yana buƙatar [ProductName] akan rumbun kwamfutarka. Yana da [ProductName] na [ProductName] da aka zaɓa. Abubuwan da ke ƙasa suna kyauta [ProductName] akan rumbun kwamfutarka."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Wannan fasalin yana &amp;apos;yantar da [ProductName] akan rumbun kwamfutarka. Yana da [ProductName] na [ProductName] da aka zaɓa. Abubuwan da ke ƙasa suna buƙatar [ProductName] akan rumbun kwamfutarka."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Wannan fasalin yana &amp;apos;yantar da [ProductName] akan rumbun kwamfutarka. Yana da [ProductName] na [ProductName] da aka zaɓa. Abubuwan da ke ƙasa suna kyauta [ProductName] akan rumbun kwamfutarka."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Wannan fasalin zai kasance don gudana daga hanyar sadarwar"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Wannan fasalin zai canza daga gudu daga jihar cibiyar sadarwa don shigar dashi akan rumbun kwamfutarka na gida"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Wannan fasalin zai canza daga gudu daga yanayin cibiyar sadarwa zuwa saita don shigar lokacin da ake buƙata"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Za a cire wannan fasalin gaba ɗaya, ba za ku iya sarrafa shi daga hanyar sadarwar ba"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Za a cire wannan fasalin daga rumbun kwamfutarka na gida, amma har yanzu zai kasance don aiki daga hanyar sadarwar"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Wannan fasalin zai kasance a kan rumbun kwamfutarka na gida"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Za a cire wannan fasalin daga rumbun kwamfutarka na gida, amma har yanzu yana nan don aiki daga CD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Za a cire wannan fasalin daga rumbun kwamfutarka na gida, amma za&amp;apos;a saita don shigar dashi lokacin da ake buƙata"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Za a cire wannan fasalin gaba ɗaya"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Haɗa farashi don wannan fasalin..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Wannan fasalin yana buƙatar [ProductName] akan rumbun kwamfutarka."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Wannan fasalin yana &amp;apos;yantar da [ProductName] akan rumbun kwamfutarka."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Wannan fasalin zai canza daga gudu daga jihar CD don shigar dashi akan rumbun kwamfutarka na gida"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Wannan fasalin zai kasance don gudanar da shi daga CD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Wannan fasalin zai canza daga gudu daga jihar CD zuwa saita don shigarwa lokacin da ake buƙata"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Za a cire wannan fasalin gaba ɗaya, ba za ku iya sarrafa shi daga CD ba"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Wannan fasalin zai kasance don gudana daga hanyar sadarwar"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Za a shigar da wannan fasalin akan rumbun kwamfutarka na gida"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Wannan fasalin zai kasance don gudana daga CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Za a shigar lokacin da ake buƙata"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Wannan fasalin zai zama babu"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Za a shigar da wannan fasalin don aiki daga hanyar sadarwar"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Za a shigar da wannan fasalin akan rumbun kwamfutarka na gida"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Za a shigar da wannan fasalin don aiki daga CD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Za a saita wannan fasalin don shigar dashi lokacin da ake buƙata"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Wannan fasalin zai kasance a cire shi"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Ana tattara bayanan da ake buƙata..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Jaka|Sabon Jaka"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Za a shigar da shi don aiki daga hanyar sadarwa"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Za a shigar a kan rumbun kwamfutarka na gida"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Za a shigar da shi don aiki daga CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Za a shigar da gaba ɗaya fasalin don aiki daga hanyar sadarwa"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Za a shigar da gaba ɗaya fasalin akan rumbun kwamfutarka na gida"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Za a shigar da fasalin gaba ɗaya don aiki daga CD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Za a shigar da fasali lokacin da ake buƙata"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Ba za a sami cikakken fasalin ba"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="bytes"/>
+	<String Id="Error1938" Overridable="yes" Value="An sami kuskure yayin shigar da taro &amp;apos;&amp;apos;[ProductName]&amp;apos;. Ba a iya samun ɗaya ko fiye na ƙirar taron. HRESULT: [ProductName].{{ taro interface: [ProductName], aiki: [ProductName], bangaren: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="An sami kuskure yayin shigar da taro &amp;apos;&amp;apos;[ProductName]&amp;apos;. Ba za a iya tabbatar da sa hannun ko katalogin ba ko ba shi da inganci. HRESULT: [ProductName].{{ taro interface: [ProductName], aiki: [ProductName], bangaren: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="An sami kuskure yayin shigar da taro &amp;apos;&amp;apos;[ProductName]&amp;apos;. Ba a ba wa taron suna mai ƙarfi ba ko kuma ba a sanya hannu tare da mafi ƙarancin tsawon maɓalli ba. HRESULT: [ProductName].{{ taro interface: [ProductName], aiki: [ProductName], bangaren: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="An sami kuskure yayin shigar da taro &amp;apos;&amp;apos;[ProductName]&amp;apos;. Da fatan za a koma zuwa Taimako da Tallafi don ƙarin bayani. HRESULT: [ProductName].{{ taro interface: [ProductName], aiki: [ProductName], bangaren: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Ana kashe shigarwar mai amfani ta hanyar manufofin kan na&amp;apos;ura."/>
+	<String Id="Error1933" Overridable="yes" Value="Sabis ɗin Windows Installer ba zai iya sabunta fayilolin Windows ɗaya ko fiye masu kariya ba. {{ Kuskuren SFP: [ProductName]. Jerin fayilolin da aka kare:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Sabis ɗin mai sakawa Windows ba zai iya sabunta fayil ɗin Windows mai kariya ba [ProductName].{{Siffar fakiti: [ProductName], Sigar Kariyar OS: [ProductName], Kuskuren SFP: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Sabis na Mai saka Windows ba zai iya sabunta fayil ɗin tsarin ba [ProductName] saboda Windows yana kiyaye fayil ɗin. Kuna iya buƙatar sabunta tsarin aikin ku don wannan shirin ya yi aiki daidai. {{Sigar fakiti: [ProductName], Sigar Kariyar OS: [ProductName]}"/>
+	<String Id="Error1930" Overridable="yes" Value="Ba za a iya canza bayanin sabis ɗin &amp;apos;&amp;apos;[ProductName]&amp;apos; ([ProductName]) ba."/>
+	<String Id="Error1929" Overridable="yes" Value="Kuskuren cire rajistar aikace-aikacen COM+. Tuntuɓi ma&amp;apos;aikatan tallafi don ƙarin bayani."/>
+	<String Id="Error1928" Overridable="yes" Value="Kuskuren yin rijistar aikace-aikacen COM+. Tuntuɓi ma&amp;apos;aikatan tallafi don ƙarin bayani."/>
+	<String Id="Error1927" Overridable="yes" Value="Ba a shigar da Sabis na Bangaren (COM+ 1.0) akan wannan kwamfutar. Wannan shigarwa yana buƙatar Sabis na Bangaren don kammala cikin nasara. Ana samun Sabis na Bangaren akan Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="An kasa saita tsaron fayil don fayil &amp;apos;[ProductName]&amp;apos;. Kuskure: [ProductName]. Tabbatar cewa kuna da isassun gata don canza izinin tsaro na wannan fayil ɗin."/>
+	<String Id="Error1925" Overridable="yes" Value="Ba ku da isassun gata don kammala wannan shigarwa ga duk masu amfani da injin. Shiga a matsayin mai gudanarwa sannan a sake gwada wannan shigarwar."/>
+	<String Id="Error1924" Overridable="yes" Value="An kasa sabunta canjin yanayi &amp;apos;[ProductName]&amp;apos;. Tabbatar cewa kuna da isassun gata don gyara masu canjin yanayi."/>
+	<String Id="Error1923" Overridable="yes" Value="Ba a iya shigar da sabis &amp;apos;&amp;apos;[ProductName]&amp;apos; ([ProductName]) ba. Tabbatar cewa kuna da isassun gata don shigar da ayyukan tsarin."/>
+	<String Id="Error1922" Overridable="yes" Value="Ba za a iya share sabis &amp;apos;&amp;apos;[ProductName]&amp;apos; ([ProductName]) ba. Tabbatar cewa kuna da isassun gata don cire ayyukan tsarin."/>
+	<String Id="Error1921" Overridable="yes" Value="Ba za a iya dakatar da sabis &amp;apos;&amp;apos;[ProductName]&amp;apos; ([ProductName]) ba. Tabbatar cewa kuna da isassun gata don dakatar da ayyukan tsarin."/>
+	<String Id="Error1920" Overridable="yes" Value="Sabis&amp;apos;[ProductName]&amp;apos; ([ProductName]) ya kasa farawa. Tabbatar cewa kuna da isassun gata don fara ayyukan tsarin."/>
+	<String Id="Error1919" Overridable="yes" Value="Kuskuren daidaita tushen bayanan ODBC: [ProductName], Kuskuren ODBC [ProductName]: [ProductName]. Tabbatar cewa fayil ɗin [ProductName] ya wanzu kuma kuna iya samun dama gare shi."/>
+	<String Id="Error1918" Overridable="yes" Value="Kuskuren shigar da direban ODBC: [ProductName], Kuskuren ODBC [ProductName]: [ProductName]. Tabbatar cewa fayil ɗin [ProductName] ya wanzu kuma zaku iya samun dama gare shi."/>
+	<String Id="Error1917" Overridable="yes" Value="Kuskuren cire direban ODBC: [ProductName], Kuskuren ODBC [ProductName]: [ProductName]. Tabbatar cewa kuna da isassun gata don cire direbobin ODBC."/>
+	<String Id="Error1916" Overridable="yes" Value="Kuskuren shigar da manajan direba na ODBC, Kuskuren ODBC [ProductName]: [ProductName]. Tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1915" Overridable="yes" Value="Kuskuren cire manajan direban ODBC, Kuskuren ODBC [ProductName]: [ProductName]. Tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1914" Overridable="yes" Value="An kasa tsara fayil [ProductName] don maye gurbin fayil [ProductName] akan sake yi. Tabbatar cewa kuna da izini don rubutawa [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="An kasa sabunta fayil din ini [ProductName][ProductName]. Tabbatar cewa akwai fayil ɗin kuma za ku iya samun dama gare shi."/>
+	<String Id="Error1912" Overridable="yes" Value="Ba za a iya cire nau&amp;apos;in ɗakin karatu don fayil ba [ProductName]. Tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1911" Overridable="yes" Value="An kasa yin rijistar nau&amp;apos;in ɗakin karatu don fayil [ProductName]. Tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1910" Overridable="yes" Value="An kasa cire Gajerar hanya [ProductName]. Tabbatar cewa fayil ɗin gajeriyar yana wanzu kuma zaku iya samun dama gare shi."/>
+	<String Id="Error1909" Overridable="yes" Value="An kasa ƙirƙirar Gajerar hanya [ProductName]. Tabbatar da cewa akwai babban fayil ɗin manufa kuma za ku iya samun dama gare ta."/>
+	<String Id="Error1908" Overridable="yes" Value="An kasa cire font [ProductName]. Tabbatar cewa kana da isassun izini don cire fonts."/>
+	<String Id="Error1907" Overridable="yes" Value="Ba za a iya yin rijistar font ba [ProductName]. Tabbatar cewa kuna da isassun izini don shigar da haruffa, kuma tsarin yana goyan bayan wannan font."/>
+	<String Id="Error1906" Overridable="yes" Value="An kasa yin cache kunshin [ProductName]. Kuskure: [ProductName]. Tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1905" Overridable="yes" Value="Module [ProductName] ya kasa cire rajista. KYAUTA [ProductName]. Tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1904" Overridable="yes" Value="Module [ProductName] ya kasa yin rajista. KYAUTA [ProductName]. Tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1903" Overridable="yes" Value="Tsara aikin sake yi: Share fayil [ProductName]. Dole ne a sake kunnawa don kammala aiki."/>
+	<String Id="Error1902" Overridable="yes" Value="Tsara aikin sake yi: Sake sunan fayil [ProductName] zuwa [ProductName]. Dole ne a sake kunnawa don kammala aiki."/>
+	<String Id="Error1901" Overridable="yes" Value="Kuskuren ƙoƙarin karantawa daga tushen shigar bayanai: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Ba a iya tantance ingantacciyar babban fayil ɗin manufa don shigarwa ba."/>
+	<String Id="Error1806" Overridable="yes" Value="Ba ku da isasshen gata don karanta wannan babban fayil ɗin."/>
+	<String Id="Error1805" Overridable="yes" Value="Babban fayil [ProductName] babu shi. Da fatan za a shigar da hanyar zuwa babban fayil ɗin da ke akwai."/>
+	<String Id="Error1804" Overridable="yes" Value="Babu faifai a cikin drive [ProductName]. Da fatan za a saka ɗaya kuma danna Sake gwadawa, ko danna Cancel don komawa cikin maganganun binciken kuma zaɓi ƙarar daban."/>
+	<String Id="Error1803" Overridable="yes" Value="Babu faifai a cikin drive [ProductName]. Da fatan za a saka ɗaya kuma danna Sake gwadawa, ko danna Cancel don komawa zuwa ƙarar da aka zaɓa a baya."/>
+	<String Id="Error1802" Overridable="yes" Value="Ya fita daga ƙwaƙwalwar ajiya. Kashe wasu aikace-aikace kafin sake gwadawa."/>
+	<String Id="Error1801" Overridable="yes" Value="Hanyar [ProductName] ba ta da inganci. Da fatan za a saka ingantacciyar hanya."/>
+	<String Id="Error1732" Overridable="yes" Value="[ProductName] ના ઇન્સ્ટોલેશનને પૂર્ણ કરવા માટે, તમારે કમ્પ્યુટરને પુનઃપ્રારંભ કરવું આવશ્યક છે. અન્ય વપરાશકર્તાઓ હાલમાં આ કમ્પ્યુટર પર લૉગ ઇન છે, અને પુનઃપ્રારંભ કરવાથી તેઓ તેમનું કાર્ય ગુમાવી શકે છે. શું તમે હવે ફરી શરૂ કરવા માંગો છો?"/>
+	<String Id="Error1731" Overridable="yes" Value="Kunshin shigarwa na tushen samfurin [ProductName] ya ƙare aiki tare da fakitin abokin ciniki. A sake gwada shigarwa ta amfani da ingantaccen kwafin kunshin shigarwa &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Dole ne ku zama Mai Gudanarwa don cire wannan aikace-aikacen. Don cire wannan aikace-aikacen, zaku iya shiga azaman Mai Gudanarwa, ko tuntuɓi ƙungiyar tallafin fasaha don taimako."/>
+	<String Id="Error1729" Overridable="yes" Value="Haɓaka ya gaza."/>
+	<String Id="Error1728" Overridable="yes" Value="An kammala aiki cikin nasara."/>
+	<String Id="Error1727" Overridable="yes" Value="Talla ta kasa."/>
+	<String Id="Error1726" Overridable="yes" Value="An kammala talla cikin nasara."/>
+	<String Id="Error1725" Overridable="yes" Value="An kasa cirewa."/>
+	<String Id="Error1724" Overridable="yes" Value="An kammala cirewa cikin nasara."/>
+	<String Id="Error1723" Overridable="yes" Value="Akwai matsala game da wannan kunshin Windows Installer. DLL da ake buƙata don wannan shigarwar don kammala ba za a iya gudanar da shi ba. Tuntuɓi ma&amp;apos;aikatan goyan bayan ku ko mai siyar da kunshin.{{Aikin [ProductName], shigarwa: [ProductName], ɗakin karatu: [ProductName]}"/>
+	<String Id="Error1722" Overridable="yes" Value="Akwai matsala game da wannan kunshin Windows Installer. Shirin da ke gudana azaman ɓangaren saitin bai ƙare kamar yadda aka zata ba. Tuntuɓi ma&amp;apos;aikatan goyan bayan ku ko mai siyar da kunshin.{{Aikin [ProductName], wurin: [ProductName], umarni: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Akwai matsala game da wannan kunshin Windows Installer. Ba za a iya gudanar da shirin da ake buƙata don kammala wannan shigarwa ba. Tuntuɓi ma&amp;apos;aikatan goyan bayan ku ko mai siyar da kunshin.{{Aiki: [ProductName], wuri: [ProductName], umarni: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Akwai matsala game da wannan kunshin Windows Installer. Rubutun da ake buƙata don shigar da wannan don kammala ba zai iya gudana ba. Tuntuɓi ma&amp;apos;aikatan goyan bayan ku ko mai siyar da fakiti.{{Aiki na al&amp;apos;ada [ProductName] Kuskuren rubutun [ProductName], [ProductName]: [ProductName] Layi [ProductName], Rukunin [ProductName], [ProductName]}"/>
+	<String Id="Error1719" Overridable="yes" Value="Ba za a iya isa ga Sabis ɗin Mai saka Windows ba. Wannan na iya faruwa idan kuna gudanar da Windows a cikin yanayin aminci, ko kuma idan ba a shigar da Mai saka Windows daidai ba. Tuntuɓi ma&amp;apos;aikatan tallafi don taimako."/>
+	<String Id="Error1718" Overridable="yes" Value="An ƙi fayil [ProductName] ta tsarin sa hannu na dijital."/>
+	<String Id="Error1717" Overridable="yes" Value="An cire [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="An daidaita [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="An shigar [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Ba za a iya cire tsohuwar sigar [ProductName] ba. Tuntuɓi ƙungiyar tallafin fasaha.{{Kuskuren Tsari [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] ba zai iya shigar da ɗayan samfuran da ake buƙata ba. Tuntuɓi ƙungiyar tallafin fasaha.{{Kuskuren Tsari: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="An kasa samun ɗaya ko fiye na fayilolin da ake buƙata don mayar da kwamfutarka zuwa matsayinta na baya. Maidowa ba zai yiwu ba."/>
+	<String Id="Error1711" Overridable="yes" Value="An sami kuskure yayin rubuta bayanin shigarwa zuwa faifai. Bincika don tabbatar da isassun sararin faifai, kuma danna Sake gwadawa, ko Soke don ƙare shigarwar."/>
+	<String Id="Error1710" Overridable="yes" Value="તમે કાં તો તમારા કમ્પ્યુટરને તેની પાછલી સ્થિતિમાં પુનઃસ્થાપિત કરી શકો છો અથવા પછીથી ઇન્સ્ટોલ કરવાનું ચાલુ રાખી શકો છો. શું તમે પુનઃસ્થાપિત કરવા માંગો છો?"/>
+	<String Id="Error1709" Overridable="yes" Value="samfur: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="An kasa shigarwa."/>
+	<String Id="Error1707" Overridable="yes" Value="An kammala shigarwa cikin nasara."/>
+	<String Id="Error1706" Overridable="yes" Value="Ba za a iya samun fakitin shigarwa don samfurin [ProductName] ba. A sake gwada shigarwa ta amfani da ingantaccen kwafin kunshin shigarwa &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="આ પ્રોડક્ટ માટે અગાઉનું ઇન્સ્ટોલેશન ચાલુ છે. ચાલુ રાખવા માટે તમારે તે ઇન્સ્ટોલેશન દ્વારા કરવામાં આવેલા ફેરફારોને પૂર્વવત્ કરવા આવશ્યક છે. શું તમે તે ફેરફારોને પૂર્વવત્ કરવા માંગો છો?"/>
+	<String Id="Error1704" Overridable="yes" Value="[ProductName] માટેનું ઇન્સ્ટોલેશન હાલમાં સસ્પેન્ડ કરવામાં આવ્યું છે. ચાલુ રાખવા માટે તમારે તે ઇન્સ્ટોલેશન દ્વારા કરવામાં આવેલા ફેરફારોને પૂર્વવત્ કરવા આવશ્યક છે. શું તમે તે ફેરફારોને પૂર્વવત્ કરવા માંગો છો?"/>
+	<String Id="Error1703" Overridable="yes" Value="Dole ne ku sake kunna tsarin ku don canje-canjen da aka yi zuwa [ProductName] don aiwatarwa. Danna Ee don sake farawa yanzu ko A&amp;apos;a idan kuna shirin sake farawa da hannu daga baya."/>
+	<String Id="Error1702" Overridable="yes" Value="Dole ne mai sakawa ya sake kunna tsarin ku kafin daidaitawar [ProductName] ya ci gaba. Danna Ee don sake farawa yanzu ko A&amp;apos;a idan kuna shirin sake farawa da hannu daga baya."/>
+	<String Id="Error1701" Overridable="yes" Value="Maɓallin [ProductName] ba shi da inganci. Tabbatar cewa kun shigar da maɓalli daidai."/>
+	<String Id="Error1609" Overridable="yes" Value="An sami kuskure yayin aiwatar da saitunan tsaro. [ProductName] ba ingantaccen mai amfani ko rukuni ba ne. Wannan na iya zama matsala tare da kunshin, ko matsalar haɗi zuwa mai sarrafa yanki akan hanyar sadarwa. Duba haɗin yanar gizon ku kuma danna Sake gwadawa, ko Soke don ƙare shigarwa. {{Ba za a iya gano SID na mai amfani ba, kuskuren tsarin [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Ba za a iya samun samfuran da aka shigar da su a baya akan injin don shigar da wannan samfur ba."/>
+	<String Id="Error1607" Overridable="yes" Value="Ya kamata a rufe aikace-aikacen masu zuwa kafin a ci gaba da shigarwa:"/>
+	<String Id="Error1606" Overridable="yes" Value="An kasa samun shiga wurin cibiyar sadarwa [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Babu isasshen sarari diski akan ƙarar &amp;apos;&amp;apos;[ProductName]&amp;apos; don ci gaba da shigarwa tare da kunna murmurewa. [ProductName] Ana buƙatar KB, amma [ProductName] KB kawai suna samuwa. Danna Ignore don ci gaba da shigarwa ba tare da adana bayanan dawowa ba, danna Sake gwadawa don sake duba akwai sarari, ko danna Cancel don barin shigarwar."/>
+	<String Id="Error1604" Overridable="yes" Value="An riga an shigar da samfurin &amp;apos;[ProductName]&amp;apos;, yana hana shigar da wannan samfurin. Kayayyakin biyu ba su dace ba."/>
+	<String Id="Error1603" Overridable="yes" Value="Fayil [ProductName] [ProductName] ana amfani da shi ta hanyar tsari mai zuwa: Suna: [ProductName], Id: [ProductName], Taken Window: &amp;apos;[ProductName]&amp;apos;}. Rufe wannan aikace-aikacen kuma sake gwadawa."/>
+	<String Id="Error1602" Overridable="yes" Value="શું તમે ખરેખર રદ કરવા માંગો છો?"/>
+	<String Id="Error1601" Overridable="yes" Value="Ya fita daga sararin faifai -- girma: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Mai amfani &amp;apos;[ProductName]&amp;apos; ya riga ya ƙaddamar da shigarwa don samfurin &amp;apos;&amp;apos;[ProductName]&amp;apos;. Mai amfani zai buƙaci sake shigar da wannan shigarwa kafin su iya amfani da wannan samfurin."/>
+	<String Id="Error1502" Overridable="yes" Value="Mai amfani &amp;apos;[ProductName]&amp;apos; ya riga ya ƙaddamar da shigarwa don samfurin &amp;apos;&amp;apos;[ProductName]&amp;apos;. Wannan mai amfani zai buƙaci sake kunna wannan shigar kafin su iya amfani da wannan samfurin. Shigar da ku na yanzu zai ci gaba."/>
+	<String Id="Error1501" Overridable="yes" Value="Kuskuren samun damar amintattun bayanai. Da fatan za a tabbatar an daidaita Windows Installer yadda ya kamata kuma a sake gwada shigar."/>
+	<String Id="Error1500" Overridable="yes" Value="Wani shigarwa yana ci gaba. Dole ne ku kammala wannan shigarwa kafin ci gaba da wannan."/>
+	<String Id="Error1410" Overridable="yes" Value="Ba za a iya ƙara sararin wurin yin rajista ba. [ProductName] Ana buƙatar KB na sarari rajista kyauta don shigar da wannan aikace-aikacen."/>
+	<String Id="Error1409" Overridable="yes" Value="Ba za a iya karanta bayanan tsaro don maɓalli [ProductName] ba.{{ Kuskuren tsari [ProductName]} Tabbatar cewa kuna da isasshiyar dama ga wannan maɓalli, ko tuntuɓi ma&amp;apos;aikatan goyan bayan ku."/>
+	<String Id="Error1408" Overridable="yes" Value="Ba za a iya samun ƙananan sunaye don maɓalli [ProductName] ba. {{ Kuskuren tsari [ProductName] } Tabbatar cewa kuna da isasshiyar dama ga wannan maɓalli, ko tuntuɓi ma&amp;apos;aikatan tallafin ku."/>
+	<String Id="Error1407" Overridable="yes" Value="Ba za a iya samun sunaye masu ƙima don maɓalli [ProductName] ba. {{ Kuskuren tsari [ProductName]] Tabbatar cewa kuna da isasshiyar dama ga wannan maɓalli, ko tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1406" Overridable="yes" Value="Ba za a iya rubuta ƙima [ProductName] zuwa maɓalli [ProductName] ba.{{ Kuskuren tsari [ProductName]"/>
+	<String Id="Error1405" Overridable="yes" Value="Ba za a iya karanta ƙima [ProductName] daga maɓalli [ProductName] ba. {{ Kuskuren tsari [ProductName]"/>
+	<String Id="Error1404" Overridable="yes" Value="Ba za a iya share maɓalli [ProductName] ba. {{ Kuskuren tsari [ProductName]] Tabbatar cewa kuna da isassun dama ga wannan maɓalli, ko tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1403" Overridable="yes" Value="Ba za a iya share ƙima [ProductName] daga maɓalli [ProductName] ba. {{ Kuskuren tsari [ProductName]"/>
+	<String Id="Error1402" Overridable="yes" Value="Ba za a iya buɗe maɓalli: [ProductName] ba. {{ Kuskuren tsarin [ProductName].}} Tabbatar cewa kuna da isasshiyar dama ga wannan maɓallin, ko tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1401" Overridable="yes" Value="Ba za a iya ƙirƙirar maɓalli: [ProductName] ba. {{ Kuskuren tsarin [ProductName].}} Tabbatar cewa kuna da isasshiyar dama ga wannan maɓalli, ko tuntuɓi ma&amp;apos;aikatan tallafi."/>
+	<String Id="Error1336" Overridable="yes" Value="An sami kuskure ƙirƙirar fayil ɗin wucin gadi wanda ake buƙata don kammala wannan shigarwa.{{ Jaka: [ProductName]. Lambar kuskuren tsarin: [ProductName]}"/>
+	<String Id="Error1335" Overridable="yes" Value="Fayil ɗin majalisar &amp;apos;[ProductName]&amp;apos; da ake buƙata don wannan shigarwa ya lalace kuma ba za a iya amfani da shi ba. Wannan zai iya nuna kuskuren hanyar sadarwa, kuskuren karantawa daga CD-ROM, ko matsala tare da wannan kunshin."/>
+	<String Id="Error1334" Overridable="yes" Value="Ba za a iya shigar da fayil ɗin &amp;apos;[ProductName]&amp;apos; ba saboda ba za a iya samun fayil ɗin a cikin fayil ɗin majalisar &amp;apos;[ProductName]&amp;apos; ba. Wannan zai iya nuna kuskuren hanyar sadarwa, kuskuren karantawa daga CD-ROM, ko matsala tare da wannan kunshin."/>
+	<String Id="Error1333" Overridable="yes" Value="Ba a yi nasarar daidaita fayil ɗin [ProductName] daidai ba: Kuskuren CRC."/>
+	<String Id="Error1332" Overridable="yes" Value="An kasa matsar da fayil [ProductName] daidai: Kuskuren CRC."/>
+	<String Id="Error1331" Overridable="yes" Value="An kasa yin kwafin [ProductName] daidai: Kuskuren CRC."/>
+	<String Id="Error1330" Overridable="yes" Value="Ba za a iya shigar da fayil ɗin da ake buƙata ba saboda fayil ɗin majalisar [ProductName] yana da sa hannun dijital mara inganci. Wannan na iya nuna cewa fayil ɗin majalisar ya lalace.{{ Kuskure [ProductName] WinVerifyTrust ya dawo.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Ba za a iya shigar da fayil ɗin da ake buƙata ba saboda fayil ɗin majalisar [ProductName] ba a sanya hannu a cikin lambobi ba. Wannan na iya nuna cewa fayil ɗin majalisar ya lalace."/>
+	<String Id="Error1328" Overridable="yes" Value="Kuskuren amfani da faci zuwa fayil [ProductName]. Wataƙila an sabunta ta ta wasu hanyoyi, kuma ba za a iya sake canza shi ta wannan facin ba. Don ƙarin bayani tuntuɓi mai siyar da facin ku.{{ Kuskuren Tsari: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Driver mara inganci: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Kuskuren samun tsaron fayil: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; ba ingantaccen sunan fayil ba ne."/>
+	<String Id="Error1324" Overridable="yes" Value="Hanyar babban fayil &amp;apos;&amp;apos;[ProductName]&amp;apos; ta ƙunshi haruffa mara inganci."/>
+	<String Id="Error1323" Overridable="yes" Value="Hanyar babban fayil &amp;apos;[ProductName]&amp;apos; ta ƙunshi kalmomin da ba su da inganci a cikin hanyoyin babban fayil."/>
+	<String Id="Error1322" Overridable="yes" Value="Wani yanki na hanyar babban fayil &amp;apos;&amp;apos;[ProductName]&amp;apos; ba shi da inganci. Ko dai fanko ne ko ya zarce tsawon da tsarin ya yarda."/>
+	<String Id="Error1321" Overridable="yes" Value="Mai sakawa ba shi da isassun gata don gyara wannan fayil: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Hanyar da aka ƙayyade ta yi tsayi da yawa: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Kuskuren hanyar sadarwa ya faru yayin ƙoƙarin buɗe majalisar fayil ɗin tushen: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="An sami kuskuren hanyar sadarwa yayin ƙoƙarin ƙirƙirar kundin adireshin: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="An sami kuskure yayin ƙoƙarin ƙirƙirar kundin adireshin: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="An sami kuskuren hanyar sadarwa yayin ƙoƙarin karantawa daga fayil ɗin: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Ba a iya rubutawa zuwa ƙayyadadden babban fayil: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Babu ƙayyadadden hanyar &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1313" Overridable="yes" Value="Ƙarar [ProductName] a halin yanzu babu. Da fatan za a zaɓi wani."/>
+	<String Id="Error1312" Overridable="yes" Value="Ba za a iya ƙirƙirar kundin adireshin &amp;apos;&amp;apos;[ProductName] ba. An riga an sami fayil mai wannan sunan. Da fatan za a sake suna ko cire fayil ɗin kuma danna Sake gwadawa, ko danna Cancel don fita."/>
+	<String Id="Error1311" Overridable="yes" Value="Ba a samo fayil ɗin tushen ba{{(majalisar)}}: [ProductName]. Tabbatar cewa akwai fayil ɗin kuma za ku iya samun dama gare shi."/>
+	<String Id="Error1310" Overridable="yes" Value="Kuskuren rubutawa zuwa fayil: [ProductName].{{Kuskuren tsari [ProductName]] Tabbatar cewa kuna da damar yin amfani da kundin adireshin."/>
+	<String Id="Error1309" Overridable="yes" Value="Kuskuren karantawa daga fayil: [ProductName].{{Kuskuren tsari [ProductName]] Tabbatar cewa akwai fayil ɗin kuma zaku iya samun dama ga shi."/>
+	<String Id="Error1308" Overridable="yes" Value="Ba a samo fayil ɗin tushen ba: [ProductName]. Tabbatar cewa akwai fayil ɗin kuma za ku iya samun dama gare shi."/>
+	<String Id="Error1307" Overridable="yes" Value="Babu isasshen sarari diski don shigar da wannan fayil: [ProductName]. Yanke wasu sarari diski kuma danna Sake gwadawa, ko danna Cancel don fita."/>
+	<String Id="Error1306" Overridable="yes" Value="Wani aikace-aikacen yana da keɓaɓɓen dama ga fayil &amp;apos;[ProductName]&amp;apos;. Da fatan za a rufe duk sauran aikace-aikacen, sannan danna Sake gwadawa."/>
+	<String Id="Error1305" Overridable="yes" Value="Kuskuren karantawa daga fayil [ProductName].{{ Kuskuren tsari [ProductName]} Tabbatar cewa akwai fayil ɗin kuma zaku iya samun dama ga shi."/>
+	<String Id="Error1304" Overridable="yes" Value="Kuskuren rubutawa zuwa fayil: [ProductName]. Tabbatar cewa kana da damar yin amfani da wannan jagorar."/>
+	<String Id="Error1303" Overridable="yes" Value="Mai sakawa ba shi da isassun gata don samun damar wannan kundin adireshi: [ProductName]. Ba za a iya ci gaba da shigarwa ba. Shiga azaman mai gudanarwa ko tuntuɓi mai sarrafa tsarin ku."/>
+	<String Id="Error1302" Overridable="yes" Value="Da fatan za a saka faifan: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Ba za a iya ƙirƙirar fayil ɗin &amp;apos;[ProductName]&amp;apos; ba. Akwai kundin adireshi mai wannan sunan. Soke shigarwa kuma gwada shigarwa zuwa wani wuri daban."/>
+	<String Id="Error1101" Overridable="yes" Value="Kuskuren karantawa daga fayil: [ProductName].{{ Kuskuren tsari [ProductName]} Tabbatar cewa akwai fayil ɗin kuma zaku iya samun dama ga shi."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] } Saitin ya gaza."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] } An kammala saitin cikin nasara."/>
+	<String Id="Error23" Overridable="yes" Value="Ana shirin cire tsoffin juzu&amp;apos;in wannan aikace-aikacen..."/>
+	<String Id="Error22" Overridable="yes" Value="Ana cire tsofaffin nau&amp;apos;ikan wannan aikace-aikacen..."/>
+	<String Id="Error21" Overridable="yes" Value="Ana tattara bayanan da ake buƙata..."/>
+	<String Id="Error20" Overridable="yes" Value="Da fatan za a jira yayin da Windows ke saita [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Mai sakawa ya tsaya da wuri."/>
+	<String Id="Error18" Overridable="yes" Value="Mai sakawa baya amsawa."/>
+	<String Id="Error17" Overridable="yes" Value="Ya fita daga ƙwaƙwalwar ajiya. Kashe wasu aikace-aikace kafin sake gwadawa."/>
+	<String Id="Error16" Overridable="yes" Value="Sauran lokacin: {[ProductName] mintuna {[ProductName] seconds}"/>
+	<String Id="Error15" Overridable="yes" Value="Aiki ya ƙare [ProductName]: [ProductName]. Ƙimar dawowa [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Fara aiki [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="An dakatar da shiga: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="An fara shiga: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Nau&amp;apos;in saƙo: [ProductName], Hujja: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Aiki [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Cikakken diski:}}"/>
+	<String Id="Error5" Overridable="yes" Value="Mai sakawa ya ci karo da kuskuren da ba a zata ba wajen shigar da wannan kunshin. Wannan na iya nuna matsala tare da wannan kunshin. Lambar kuskure shine [ProductName]. {{Dalili kuwa shine: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Bayani [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Gargadi [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Kuskure [ProductName]. }"/>
+	<String Id="Error0" Overridable="yes" Value="{{Kuskuren kisa:}}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Cire bayanan samfurin"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="File: [ProductName], Jagora: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Cire fayilolin da aka motsa"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Fayil: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Cire madadin fayiloli"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="રોલ બેક ક્રિયા:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Maganar Aikace-aikacen: [ProductName], Sunan Majalisar:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Cire bayanan taro"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Maganar Aikace-aikacen: [ProductName], Sunan Majalisar:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Buga bayanan taro"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="File: [ProductName], Dogara: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Shigar da kundin tsarin"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Samar da ayyukan rubutun don aiki:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Aikace-aikacen talla"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Mabuɗi: [ProductName], Suna: [ProductName], Ƙimar: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Rubutun tsarin yin rajista"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="File: [ProductName], Sashe: [ProductName], Maɓalli: [ProductName], Ƙimar: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Rubuta ƙimar fayilolin INI"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Suna: [ProductName], Darajar: [ProductName], Aiki [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Ana sabunta igiyoyin yanayi"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Nau&amp;apos;in ɗakunan karatu marasa rajista"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Masu gano shirin mara rijista"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="Nau&amp;apos;in Abun MIME: [ProductName], Tsawo: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Cire bayanan MIME rajista"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Font: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Fonts mara rijista"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Tsawo: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Sabar kari mara rijista"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName] {{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Cire Rijista COM+ Aikace-aikace da abubuwan da aka haɗa"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Darasi ID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Cire masu sabar Class rajista"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Siffar: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Cire Halayen Samfura"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="ID na sashi: [ProductName], cancanta: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Cire Ƙwararrun Abubuwan Bugawa"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Sabis: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Tsayawa ayyuka"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Sabis: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Fara ayyuka"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Ƙaddamar da kundayen adireshi na ODBC"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="File: [ProductName], Jaka: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Moduloli marasa rajista"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="File: [ProductName], Jaka: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Moduloli masu rijista"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Neman samfuran cancanta"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Hanyar: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Cire gajerun hanyoyi"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Mabuɗin: [ProductName], Suna: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Cire ƙimar tsarin rajista"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Cire abubuwan ODBC"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="File: [ProductName], Sashe: [ProductName], Maɓalli: [ProductName], Ƙimar: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Cire shigarwar fayilolin INI"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Jaka: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Cire manyan fayiloli"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="File: [ProductName], Jagora: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Cire fayiloli"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Aikace-aikace: [ProductName], layin umarni: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Cire aikace-aikace"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Suna: [ProductName], Darajar: [ProductName], Aiki [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Ana sabunta igiyoyin yanayi"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="File: [ProductName], Jagora: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Cire fayilolin kwafi"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Mai amfani mai rijista"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Nau&amp;apos;in dakunan karatu"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Samfurin rijista"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Font: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Rubutun rijista"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Masu amfani: [ProductName], RSN: [ProductName]}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Yin Rajista COM+ Aikace-aikace da Abubuwan da aka haɗa"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Ana sabunta rijistar bangaren"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="File: [ProductName], Directory: [ProductName], Girman: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Fayiloli masu faci"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="File: [ProductName], Directory: [ProductName], Girman: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Matsar da fayiloli"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Aikace-aikace: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Yanayin ƙaura daga aikace-aikace masu alaƙa"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Ana kimanta yanayin ƙaddamarwa"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Sabis: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Sanya sabbin ayyuka"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Shigar da abubuwan ODBC"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="An samo aikace-aikacen: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Neman aikace-aikace masu alaƙa"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="File: [ProductName], Directory: [ProductName], Girman: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Ƙirƙirar fayilolin kwafi"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Sabis: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Share ayyuka"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Jaka: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Ƙirƙirar manyan fayiloli"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Neman samfuran cancanta"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Fayil: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Daure masu aiwatarwa"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Dukiya: [ProductName], Sa hannu: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Neman shigar aikace-aikace"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Wurin kyauta: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Bayar da sarari wurin yin rajista"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Rijista masu gano shirin"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="Nau&amp;apos;in Abun MIME: [ProductName], Tsawo: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Yin rijistar bayanan MIME"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Tsawo: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Rijista tsawaita sabar"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Darasi ID: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Yin rijistar sabar Class"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Buga bayanin samfur"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Siffar: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Fasalolin Buga Samfurin"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="ID na sashi: [ProductName], cancanta: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Buga Abubuwan da suka cancanta"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Hanyar: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Ƙirƙirar gajerun hanyoyi"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Bukatun sararin samaniya"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Bukatun sararin samaniya"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Bukatun sararin samaniya"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="File: [ProductName], Directory: [ProductName], Girman: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Ana kwafin fayilolin shigar da hanyar sadarwa"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="File: [ProductName], Directory: [ProductName], Girman: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Ana kwafin sabbin fayiloli"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Yana tabbatar da shigarwa"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Da fatan za a karanta yarjejeniyar lasisi [ProductName]"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp; Sabuntawa"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Shigar"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Na &amp; yarda da sharuɗɗan cikin Yarjejeniyar Lasisi"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Barka da zuwa ga [ProductName] Saita Wizard"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Saitin Wizard zai sabunta [ProductName] akan kwamfutarka. Danna gaba don ci gaba ko Soke don fita Saitin Wizard."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Saitin Wizard zai shigar da [ProductName] akan kwamfutarka. Danna gaba don ci gaba ko Soke don fita Saitin Wizard."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Alamar exclamation"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Da fatan za a jira yayin da mai sakawa ya gama tantance buƙatun sararin faifan ku."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Komawa"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title} Shirya don sabunta [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Danna Sabuntawa don sabunta [ProductName] daga kwamfutarka. Danna Baya don dubawa ko canza kowane saitunan shigarwa naka. Danna Cancel don fita maye."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp; Sabuntawa"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title} Shirya don cire [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Danna Cire don cire [ProductName] daga kwamfutarka. Danna Baya don dubawa ko canza kowane saitunan shigarwa naka. Danna Cancel don fita maye."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Cire"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title} Shirya don gyara [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Danna Gyara don gyara shigarwar [ProductName]. Danna Baya don dubawa ko canza kowane saitunan shigarwa naka. Danna Cancel don fita maye."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Sake&amp;hade"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title} Shirya don canza [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Danna Canja don fara shigarwa. Danna Baya don dubawa ko canza kowane saitunan shigarwa naka. Danna Cancel don fita maye."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Canza"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title} Shirya don girka [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Danna Shigar don fara shigarwa. Danna Baya don dubawa ko canza kowane saitunan shigarwa naka. Danna Cancel don fita maye."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Shigar"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Danna maɓallin Gama don fita Wizard Setup."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="An katse saitin [ProductName]. Ba a gyara tsarin ku ba. Don shigar da wannan shirin a wani lokaci na gaba, da fatan za a sake shigar da shigarwar."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="An katse mayen saitin {\WixUI_Font_Bigger[ProductName]"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Za a shigar da duk fasalolin shirin. Yana buƙatar mafi yawan sarari diski."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Yana ba masu amfani damar zaɓar fasalin fasalin shirin da za a shigar da kuma inda za a shigar da su. An ba da shawarar ga masu amfani da ci gaba."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Yana shigar da fasalin shirin gama gari. An ba da shawarar ga yawancin masu amfani."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Zaɓi nau&amp;apos;in saitin da ya fi dacewa da bukatun ku"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Zaɓi Nau&amp;apos;in Saita"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Cikakken Shigarwa"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C&amp;cikakke"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Shigarwa na al&amp;apos;ada"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ustom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Yawan Shigarwa"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Na al&amp;apos;ada"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} Ci gaba da [ProductName] Mayen Saita"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Saitin Wizard zai kammala shigar da [ProductName] akan kwamfutarka. Danna Shigar don ci gaba ko Soke don fita Wizard na Saita."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Shigar"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Matsayi:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Ci gaba yayi"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title} Ana ɗaukaka [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Da fatan za a jira yayin da Saitin Wizard ke sabunta [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title} Cire [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Da fatan za a jira yayin da Saita Wizard ke cire [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title} Ana Gyara [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Da fatan za a jira yayin da Saitin Wizard yana gyara [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Canza [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Da fatan za a jira yayin da Saitin Wizard ya canza [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title} Ana shigar da [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Da fatan za a jira yayin da Saitin Wizard ke shigar da [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Barka da zuwa ga [ProductName] Saita Wizard"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Da fatan za a jira yayin da Saita Wizard ke shirya don jagorance ku ta hanyar shigarwa."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="A madadin, za ka iya zaɓar musaki aikin jujjuyawar mai sakawa. Kashe juyawa yana hana mai sakawa dawo da asalin yanayin kwamfutarka idan an katse shigarwa ta kowace hanya. Danna Ee idan kuna son yin kasadar musaki sake dawowa."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Bare sararin samaniya"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Wurin diski da ake buƙata don shigarwa ya wuce samammun sarari diski."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Ƙididdigar da aka haskaka ba su da isassun sararin faifai don abubuwan da aka zaɓa a halin yanzu. Kuna iya cire wasu fayiloli daga faifan da aka haskaka, shigar da ƴan fasaloli, ko zaɓi wani fayafai na daban."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Bare sararin samaniya"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Wurin diski da ake buƙata don shigarwa ya wuce samammun sarari diski."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Ƙididdigar da aka haskaka ba su da isassun sararin faifai don abubuwan da aka zaɓa a halin yanzu. Kuna iya cire wasu fayiloli daga faifan da aka haskaka, shigar da ƴan fasaloli, ko zaɓi wani fayafai na daban."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Kada a rufe aikace-aikace. Za a buƙaci sake yi."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Rufe aikace-aikacen kuma yi ƙoƙarin sake kunna su."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title} Fayilolin da ake Amfani da su"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Wasu fayilolin da ake buƙatar sabuntawa suna aiki a halin yanzu."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Aikace-aikace masu zuwa suna amfani da fayilolin da ake buƙatar sabunta ta wannan saitin. Kuna iya barin Saita Wizard ya rufe su kuma kuyi ƙoƙarin sake kunna su ko sake kunna injin daga baya."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Barka da zuwa ga [ProductName] Saita Wizard"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Saitin Wizard yana ba ka damar canza yadda ake shigar da fasalin [ProductName] akan kwamfutarka ko cire shi daga kwamfutarka. Danna gaba don ci gaba ko Soke don fita Saitin Wizard."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="Ba za a iya gyara [ProductName] ba."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Yana gyara kurakurai a cikin shigarwa na baya-bayan nan ta hanyar gyara ɓatattun fayiloli, gajerun hanyoyi, da shigarwar rajista."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="Ba za a iya cire [ProductName] ba."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Yana cire [ProductName] daga kwamfutarka."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] ba shi da fasali masu zaɓin kansa."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Yana ba ku damar canza yadda ake shigar da fasali."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Canza, gyara, ko cire shigarwa"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Zaɓi aikin da kuke son yi."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Cire Shigarwa"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Cire"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Gyara Shigarwa"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Sake&amp;hade"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Canja Shigarwa"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Canza"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Yarjejeniyar Lasisi na Ƙarshen"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Da fatan za a karanta yarjejeniyar lasisi mai zuwa a hankali"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Na &amp; yarda da sharuɗɗan cikin Yarjejeniyar Lasisi"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="ikon bayanai"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Bayani"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Dole ne littafin shigarwa ya kasance akan rumbun kwamfutarka na gida."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Canza..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Shigarwa &amp; babban fayil:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="Za a shigar da [ProductName] a cikin babban fayil na kowane inji ta tsohuwa kuma ya kasance ga duk masu amfani. Kuna iya canza babban fayil ɗin shigarwa. Dole ne ku sami gatan Gudanarwa na gida."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized} Shigarwa ga duk masu amfani da wannan &amp; inji"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] baya goyan bayan shigarwa kowane mai amfani."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="Za a shigar da [ProductName] a cikin babban fayil na kowane mai amfani kuma ya kasance don asusun mai amfani kawai. Ba kwa buƙatar gata na Mai Gudanarwa na gida."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized} Shigar da ku kawai ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Iyalin shigarwa"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Zaɓi iyakar shigarwa da babban fayil"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Sanya [ProductName] zuwa:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Danna Next don shigarwa zuwa babban fayil ɗin tsoho ko danna Canja don zaɓar wani."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Jakar Wuta"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Canza..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title} Fayilolin da ake Amfani da su"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Wasu fayilolin da ake buƙatar sabuntawa suna aiki a halin yanzu."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Aikace-aikace masu zuwa suna amfani da fayilolin da ake buƙatar sabunta ta wannan saitin. Rufe waɗannan aikace-aikacen sannan danna &amp;Sake gwadawa don ci gaba da saitin ko Fita don fita ta."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="Fita &amp; fita"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Canza"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Shigar"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItem Girman"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItem Bayanin"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Abubuwan Samfura"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Zaɓi hanyar da kuke son shigar da fasali."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Siffofin samfur"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Danna maɓallin Gama don fita Wizard Setup."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Saita Wizard ya ƙare da wuri saboda kuskure. Ba a gyara tsarin ku ba. Don shigar da wannan shirin a wani lokaci, sake kunna Saita Wizard."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger[ProductName] Saitin Mayen ya ƙare da wuri"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} Ya Kammala [ProductName] Saita Wizard"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Danna maɓallin Gama don fita Wizard Setup."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="ikon bayanai"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Bayani"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Rubutun bayanai"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Abubuwan Bukatun Space Space"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Wurin faifai da ake buƙata don shigar da abubuwan da aka zaɓa."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Ƙididdigar da aka haska ba su da isasshen sararin faifai don zaɓaɓɓun fasaloli. Kuna iya ko dai cire wasu fayiloli daga faifan da aka haskaka, shigar da ƴan fasaloli, ko zaɓi maɓalli daban-daban."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Wuri:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="KeɓanceDlgLocation-MaɓallinDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="Ƙimar GirmanDlgItem-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="Keɓance BayaninDlgItem-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Saitin Na Musamman"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Zaɓi hanyar da kuke son shigar da fasali."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Danna gumakan bishiyar da ke ƙasa don canza yadda za a shigar da fasali."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Disk &amp; Amfani"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Sake&amp; saita"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;rose..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Bishiyar zaɓe"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="ikon bayanai"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Bayani"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="શું તમે ખરેખર [ProductName] ઇન્સ્ટોલેશનને રદ કરવા માંગો છો?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Canja babban fayil ɗin manufa"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Nemo zuwa babban fayil ɗin da aka nufa"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Sunan babban fayil:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Ƙirƙiri sabon babban fayil"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_Sabo"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Up mataki daya"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Duba ciki:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;m"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Shigar"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Danna Shigar don shigar da samfurin tare da zaɓuɓɓukan tsoho a gare ku kawai. Danna Babba don canza zaɓuɓɓukan shigarwa."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Danna Shigar don shigar da samfurin tare da zaɓuɓɓukan tsoho don duk masu amfani. Danna Babba don canza zaɓuɓɓukan shigarwa."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Na &amp; yarda da sharuɗɗan cikin Yarjejeniyar Lasisi"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Da fatan za a karanta yarjejeniyar lasisi [ProductName]"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Saita"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Bugu"/>
+	<String Id="WixUIOK" Overridable="yes" Value="KO"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;A&amp;apos;a"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;I"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Yi watsi da"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Sake gwadawa"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Gama"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Soke"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Na gaba"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Baya"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Ana cire tsarin Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Maida baya Windows Firewall sanyi"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Shigar da tsarin Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Maida baya Windows Firewall sanyi"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Saita Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Saita Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ba za a iya haɗi zuwa Windows Firewall ba. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Sabar Sadarwar Sadarwa"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Raba abubuwan tafiyarwa akan hanyar sadarwa don ba da damar sarrafawa da bincike daga Client RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Za a iya sake yi"/>

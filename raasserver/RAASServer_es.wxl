@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="es" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Desinstalación de la configuración del Firewall de Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Revertir la configuración del Firewall de Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instalación de la configuración del Firewall de Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Revertir la configuración del Firewall de Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Configuración del Firewall de Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Configuración del Firewall de Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="No se puede conectar al Firewall de Windows. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Servidor compartido de red"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Comparta unidades en la red para habilitar el control y la navegación desde el cliente RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Puede reiniciarse"/>

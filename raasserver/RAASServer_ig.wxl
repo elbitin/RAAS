@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="ig" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="ig" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Olu"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Nha diski"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Achọrọ"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Ọdịiche"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Dị"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Oge fọdụrụ:{ [ProductName] nkeji { [ProductName] sekọnd}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Njirimara a chọrọ [ProductName] na draịvụ ike gị. O nwere [ProductName] nke [ProductName] atụmatụ ahọpụtara. Akụkụ ndị a chọrọ [ProductName] na draịvụ ike gị."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Njirimara a chọrọ [ProductName] na draịvụ ike gị. O nwere [ProductName] nke [ProductName] atụmatụ ahọpụtara. Akụkụ ndị a na-ahapụ [ProductName] na draịvụ ike gị."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Njirimara a na-atọhapụ [ProductName] na draịvụ ike gị. O nwere [ProductName] nke [ProductName] atụmatụ ahọpụtara. Akụkụ ndị a chọrọ [ProductName] na draịvụ ike gị."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Njirimara a na-atọhapụ [ProductName] na draịvụ ike gị. O nwere [ProductName] nke [ProductName] atụmatụ ahọpụtara. Akụkụ ndị a na-ahapụ [ProductName] na draịvụ ike gị."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Njirimara a ga-anọgide na-esi na netwọk rụọ ọrụ"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Njirimara a ga-agbanwe site na ọsọ site na steeti netwọk ka etinyere na draịvụ ike mpaghara"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Njirimara a ga-agbanwe site na ọsọ site na steeti netwọk ka ịtọọ ka etinyere ya mgbe achọrọ ya"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="A ga-ewepụ njirimara a kpamkpam, ị gaghị enwe ike ịme ya na netwọk"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="A ga-ewepụ njirimara a na draịvụ ike mpaghara gị, mana ọ ka ga-adị maka ịgba ọsọ na netwọkụ"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Njirimara a ga-anọgide na draịvụ ike mpaghara gị"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="A ga-ewepụ atụmatụ a na draịvụ ike mpaghara gị, mana ọ ka ga-adị maka ịgba ọsọ na CD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="A ga-ewepụ atụmatụ a na draịvụ ike mpaghara gị, mana a ga-ahazi ka etinye ya mgbe achọrọ ya"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="A ga-ewepụ atụmatụ a kpamkpam"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Ịchịkọta ọnụ maka njirimara a..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Njirimara a chọrọ [ProductName] na draịvụ ike gị."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Njirimara a na-atọhapụ [ProductName] na draịvụ ike gị."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Njirimara a ga-agbanwe site na ịgba ọsọ site na steeti CD ka etinyere na draịvụ ike mpaghara"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Njirimara a ga-anọgide na-esi na CD rụọ ọrụ"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Njirimara a ga-agbanwe site na ịgba ọsọ site na steeti CD ka ịtọọ ka etinyere ya mgbe achọrọ ya"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="A ga-ewepụrịrị atụmatụ a kpamkpam, ị gaghị enwe ike iji CD rụọ ya"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Njirimara a ga-adị maka iji netwọkụ rụọ ọrụ"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="A ga-etinye atụmatụ a na draịvụ ike mpaghara gị"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Njirimara a ga-adị maka ịgba ọsọ na CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="A ga-etinye ya mgbe achọrọ ya"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Njirimara a agaghị adị"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="A ga-arụnye njirimara a ka ọ na-agba ọsọ site na netwọk"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="A ga-etinye atụmatụ a na draịvụ ike mpaghara"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="A ga-etinye njirimara a ka ọ na-esi na CD pụta"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="A ga-ahazi atụmatụ a ka etinyere ya mgbe achọrọ ya"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Njirimara a ga-anọgide na-ewepụ ya"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Ịchịkọta ozi achọrọ..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="nchekwa | nchekwa ọhụrụ"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="A ga-etinye ya ka ọ si na netwọk rụọ ọrụ"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="A ga-etinye ya na draịvụ ike mpaghara"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="A ga-etinye ya ka ọ na-agba ọsọ na CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="A ga-arụnye atụmatụ niile ka ọ na-esi na netwọk"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="A ga-etinye ihe niile na draịvụ ike mpaghara"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="A ga-arụnye atụmatụ niile ka ọ na-agba na CD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="A ga-etinye njiri mara mgbe achọrọ ya"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Njirimara niile agaghị adị"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="bytes"/>
+	<String Id="Error1938" Overridable="yes" Value="Enwere mperi n&amp;apos;oge ntinye nke mgbakọ &amp;apos;[ProductName]&amp;apos;. Enweghị ike ịhụ otu modul ma ọ bụ karịa nke mgbakọ ahụ. HRESULT: [ProductName].{{ mgbakọ na mwepụ: [ProductName], ọrụ: [ProductName], akụrụngwa: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Enwere mperi n&amp;apos;oge ntinye nke mgbakọ &amp;apos;[ProductName]&amp;apos;. Enweghị ike ịnwapụta mbinye aka ma ọ bụ katalọgụ ma ọ bụ na ọ dịghị mma. HRESULT: [ProductName].{{ mgbakọ na mwepụ: [ProductName], ọrụ: [ProductName], akụrụngwa: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Enwere mperi n&amp;apos;oge ntinye nke mgbakọ &amp;apos;[ProductName]&amp;apos;. Akpọghị ọgbakọ a aha siri ike ma ọ bụ ejighị ogologo igodo pere mpe bịanye aka na ya. HRESULT: [ProductName].{{ mgbakọ na mwepụ: [ProductName], ọrụ: [ProductName], akụrụngwa: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Enwere mperi n&amp;apos;oge ntinye nke mgbakọ &amp;apos;[ProductName]&amp;apos;. Biko rụtụ aka na Enyemaka na Nkwado maka ozi ndị ọzọ. HRESULT: [ProductName].{{ mgbakọ na mwepụ: [ProductName], ọrụ: [ProductName], akụrụngwa: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Agbanyụrụ nrụnye onye ọrụ site na amụma dị na igwe."/>
+	<String Id="Error1933" Overridable="yes" Value="Ọrụ Windows Installer enweghị ike imelite otu faịlụ Windows echedoro ma ọ bụ karịa.{{ Error SFP: [ProductName]. Ndepụta faịlụ echedoro:\r\n[ProductName]}"/>
+	<String Id="Error1932" Overridable="yes" Value="Ọrụ Windows Installer enweghị ike imelite faịlụ Windows echedoro [ProductName].{{Ngwa ngwugwu: [ProductName], ụdị echedoro OS: [ProductName], Njehie SFP: [ProductName]}"/>
+	<String Id="Error1931" Overridable="yes" Value="Ọrụ Windows Installer enweghị ike imelite faịlụ sistemụ [ProductName] n&amp;apos;ihi na Windows na-echekwa faịlụ a. Ị nwere ike imelite sistemụ arụmọrụ gị ka mmemme a wee rụọ ọrụ nke ọma."/>
+	<String Id="Error1930" Overridable="yes" Value="Enweghị ike ịgbanwe nkọwa maka ọrụ &amp;apos;[ProductName]&amp;apos; ([ProductName])."/>
+	<String Id="Error1929" Overridable="yes" Value="Njehie ịwepu aha ngwa COM+. Kpọtụrụ ndị ọrụ nkwado gị maka ozi ndị ọzọ."/>
+	<String Id="Error1928" Overridable="yes" Value="Njehie ịdenye ngwa COM+. Kpọtụrụ ndị ọrụ nkwado gị maka ozi ndị ọzọ."/>
+	<String Id="Error1927" Overridable="yes" Value="Ejikwaghị ọrụ akụrụngwa (COM+ 1.0) na kọmputa a. Nrụnye a chọrọ ọrụ akụrụngwa iji wuchaa nke ọma. Ọrụ akụrụngwa dị na Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Enweghị ike ịtọ nchekwa faịlụ maka faịlụ &amp;apos;[ProductName]&amp;apos;. Njehie: [ProductName]. Nyochaa na ị nwere ohere zuru oke iji gbanwee ikike nchekwa maka faịlụ a."/>
+	<String Id="Error1925" Overridable="yes" Value="Ị nweghị ohere zuru oke iji wuchaa nrụnye a maka ndị ọrụ niile nke igwe. Banye dị ka onye nchịkwa wee nwaa nrụnye a."/>
+	<String Id="Error1924" Overridable="yes" Value="Enweghị ike imelite mgbanwe gburugburu &amp;apos;[ProductName]&amp;apos;. Chọpụta na ị nwere ohere zuru oke iji gbanwee mgbanwe gburugburu ebe obibi."/>
+	<String Id="Error1923" Overridable="yes" Value="Enweghị ike ịwụnye ọrụ &amp;apos;[ProductName]&amp;apos; ([ProductName]). Nyochaa na ị nwere ohere zuru oke iji wụnye ọrụ sistemụ."/>
+	<String Id="Error1922" Overridable="yes" Value="Enweghị ike ihichapụ ọrụ &amp;apos;[ProductName]&amp;apos; ([ProductName]). Nyochaa na ị nwere ohere zuru oke iji wepụ ọrụ sistemụ."/>
+	<String Id="Error1921" Overridable="yes" Value="Enweghị ike ịkwụsị ọrụ &amp;apos;[ProductName]&amp;apos; ([ProductName]). Nyochaa na ị nwere ohere zuru oke iji kwụsị ọrụ sistemụ."/>
+	<String Id="Error1920" Overridable="yes" Value="Ọrụ &amp;apos;[ProductName]&amp;apos; ([ProductName]) amaliteghị. Nyochaa na ị nwere ohere zuru oke ịmalite ọrụ sistemụ."/>
+	<String Id="Error1919" Overridable="yes" Value="Njehie na-ahazi isi iyi data ODBC: [ProductName], njehie ODBC [ProductName]: [ProductName]. Chọpụta na faịlụ [ProductName] dị yana ị nwere ike ịnweta ya."/>
+	<String Id="Error1918" Overridable="yes" Value="Njehie ịwụnye ọkwọ ụgbọala ODBC: [ProductName], njehie ODBC [ProductName]: [ProductName]. Chọpụta na faịlụ [ProductName] dị yana ị nwere ike ịnweta ya."/>
+	<String Id="Error1917" Overridable="yes" Value="Njehie iwepụ ọkwọ ụgbọala ODBC: [ProductName], njehie ODBC [ProductName]: [ProductName]. Nyochaa na ị nwere ohere zuru oke iji wepu ndị ọkwọ ụgbọala ODBC."/>
+	<String Id="Error1916" Overridable="yes" Value="Njehie ịwụnye njikwa ọkwọ ụgbọ ala ODBC, njehie ODBC [ProductName]: [ProductName]. Kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1915" Overridable="yes" Value="Njehie wepụ onye njikwa ọkwọ ụgbọ ala ODBC, njehie ODBC [ProductName]: [ProductName]. Kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1914" Overridable="yes" Value="Enweghị ike ịhazi faịlụ [ProductName] iji dochie faịlụ [ProductName] na ịmalitegharịa. Nyochaa na ị nwere ikike ide ide faịlụ [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Enweghị ike imelite faịlụ ini [ProductName][ProductName]. Chọpụta na faịlụ ahụ dị yana ị nwere ike ịnweta ya."/>
+	<String Id="Error1912" Overridable="yes" Value="Enweghị ike ịwepụ ụdị ọba akwụkwọ ndekọ aha maka faịlụ [ProductName]. Kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1911" Overridable="yes" Value="Enweghị ike ịdebanye aha ụdị ọba akwụkwọ maka faịlụ [ProductName]. Kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1910" Overridable="yes" Value="Enweghị ike iwepụ Ụzọ mkpirisi [ProductName]. Nyochaa na faịlụ mkpirisi dị na ị nwere ike ịnweta ya."/>
+	<String Id="Error1909" Overridable="yes" Value="Enweghị ike ịmepụta Ụzọ mkpirisi [ProductName]. Nyochaa na ebe nchekwa ebe ị na-aga dị yana ị nwere ike ịnweta ya."/>
+	<String Id="Error1908" Overridable="yes" Value="Enweghị ike ịwepụ font [ProductName]. Nyochaa na ị nwere ikike zuru oke iji wepu mkpụrụedemede."/>
+	<String Id="Error1907" Overridable="yes" Value="Enweghị ike ịdebanye aha font [ProductName]. Chọpụta na ị nwere ikike zuru oke iji wụnye mkpụrụedemede, yana sistemụ na-akwado mkpụrụedemede a."/>
+	<String Id="Error1906" Overridable="yes" Value="Ịdị n&amp;apos;ime ngwungwu cache agaghịkwa [ProductName]. Njehie: [ProductName]. Kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1905" Overridable="yes" Value="Modul [ProductName] agaghị edebanye aha. HERESULT [ProductName]. Kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1904" Overridable="yes" Value="Modul [ProductName] edebanyeghị aha ya. HERESULT [ProductName]. Kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1903" Overridable="yes" Value="Ịhazi ọrụ nrụgharị: ihichapụ faịlụ [ProductName]. Ekwesịrị ịmalitegharị iji rụchaa ọrụ."/>
+	<String Id="Error1902" Overridable="yes" Value="Ịhazi ọrụ nrụgharị: Na-akpọgharị faịlụ [ProductName] ka [ProductName]. Ekwesịrị ịmalitegharị iji rụchaa ọrụ."/>
+	<String Id="Error1901" Overridable="yes" Value="Njehie na-anwa ịgụ site na isi mmalite tinye nchekwa data: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Enweghị ike ikpebi ebe nchekwa ebe ị ga-etinye."/>
+	<String Id="Error1806" Overridable="yes" Value="Ị nweghị ihe ùgwù zuru oke ịgụ folda a."/>
+	<String Id="Error1805" Overridable="yes" Value="Ebe nchekwa [ProductName] adịghị. Biko tinye ụzọ gaa na folda dị."/>
+	<String Id="Error1804" Overridable="yes" Value="Enweghị diski dị na draịva [ProductName]. Biko tinye otu wee pịa Tinyegharịa, ma ọ bụ pịa Kagbuo ka ịlaghachi na mkparịta ụka nchọgharị wee họrọ olu dị iche."/>
+	<String Id="Error1803" Overridable="yes" Value="Enweghị diski dị na draịva [ProductName]. Biko tinye otu wee pịa Tinyegharịa, ma ọ bụ pịa Kagbuo ka ịlaghachi na olu ahọpụtara na mbụ."/>
+	<String Id="Error1802" Overridable="yes" Value="Ebe nchekwa adịghị. Mechie ngwa ndị ọzọ tupu ịmalitegharịa."/>
+	<String Id="Error1801" Overridable="yes" Value="Ụzọ [ProductName] adịghị mma. Biko kọwaa ụzọ ziri ezi."/>
+	<String Id="Error1732" Overridable="yes" Value="Untuk menyelesaikan instalasi [ProductName], Anda harus memulai ulang komputer. Pengguna lain saat ini sedang masuk ke komputer ini, dan memulai ulang dapat menyebabkan mereka kehilangan pekerjaan. Apakah Anda ingin memulai ulang sekarang?"/>
+	<String Id="Error1731" Overridable="yes" Value="Ngwungwu nwụnye isi iyi maka ngwaahịa [ProductName] esighị na ngwungwu ndị ahịa. Gbalịa nrụnye ọzọ site na iji ezigbo ngwungwu nwụnye &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Ị ga-abụrịrị onye nchịkwa iji wepụ ngwa a. Iji wepu ngwa a, ị nwere ike ịbanye dị ka onye nchịkwa, ma ọ bụ kpọtụrụ otu nkwado teknụzụ gị maka enyemaka."/>
+	<String Id="Error1729" Overridable="yes" Value="Nhazi dara."/>
+	<String Id="Error1728" Overridable="yes" Value="Nhazi emechara nke ọma."/>
+	<String Id="Error1727" Overridable="yes" Value="Mgbasa ozi dara."/>
+	<String Id="Error1726" Overridable="yes" Value="Mgbasa ozi emechara nke ọma."/>
+	<String Id="Error1725" Overridable="yes" Value="Mwepụ agaghị."/>
+	<String Id="Error1724" Overridable="yes" Value="Mwepụ mezuru nke ọma."/>
+	<String Id="Error1723" Overridable="yes" Value="Enwere nsogbu na ngwungwu Windows Installer a. Enweghị ike ịme DLL achọrọ maka nrụnye a iji wuchaa. Kpọtụrụ ndị ọrụ nkwado gị ma ọ bụ onye na-ere ngwugwu.{{ Action [ProductName], ntinye: [ProductName], ọba akwụkwọ: [ProductName]}"/>
+	<String Id="Error1722" Overridable="yes" Value="Enwere nsogbu na ngwungwu Windows Installer a. Mmemme na-agba dị ka akụkụ nke nhazi ahụ akwụsịghị ka a tụrụ anya ya. Kpọtụrụ ndị ọrụ nkwado gị ma ọ bụ onye na-ere ngwugwu.{{ Action [ProductName], ebe: [ProductName], iwu: [ProductName]}"/>
+	<String Id="Error1721" Overridable="yes" Value="Enwere nsogbu na ngwungwu Windows Installer a. Enweghị ike ịme mmemme achọrọ maka nrụnye a iji wuchaa. Kpọtụrụ ndị ọrụ nkwado gị ma ọ bụ onye na-ere ngwugwu.{{ Action: [ProductName], ebe: [ProductName], iwu: [ProductName]}"/>
+	<String Id="Error1720" Overridable="yes" Value="Enwere nsogbu na ngwungwu Windows Installer a. Edemede achọrọ maka ịwụnye nke a enweghị ike ịme ya. Kpọtụrụ ndị ọrụ nkwado gị ma ọ bụ onye na-ere ngwugwu."/>
+	<String Id="Error1719" Overridable="yes" Value="Enweghị ike ịnweta Ọrụ Installer Windows. Nke a nwere ike ime ma ọ bụrụ na ị na-agba Windows na ọnọdụ nchekwa, ma ọ bụ ọ bụrụ na etinyeghị Windows Installer nke ọma. Kpọtụrụ ndị ọrụ nkwado gị maka enyemaka."/>
+	<String Id="Error1718" Overridable="yes" Value="Amụma mbinye aka dijitalụ jụrụ faịlụ [ProductName]."/>
+	<String Id="Error1717" Overridable="yes" Value="Ewepụrụ [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Haziri [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="arụnyere [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Enweghị ike iwepụ ụdị ochie nke [ProductName]. Kpọtụrụ otu nkwado teknụzụ gị. {{ Error System [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] enweghị ike ịwụnye otu ngwaahịa achọrọ. Kpọtụrụ otu nkwado teknụzụ gị. {{ Error System: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Enweghị ike ịchọta otu ma ọ bụ karịa faịlụ achọrọ iji weghachi kọmputa gị n&amp;apos;ọnọdụ ọ dịbu. Mweghachi agaghị ekwe omume."/>
+	<String Id="Error1711" Overridable="yes" Value="Enwere mperi mgbe ị na-ede ozi nwụnye na diski. Lelee ka ijide n&amp;apos;aka na ohere diski zuru ezu, wee pịa Tinyegharịa, ma ọ bụ Kagbuo ka ịkwụsị ịwụnye."/>
+	<String Id="Error1710" Overridable="yes" Value="Anda dapat memulihkan komputer ke kondisi sebelumnya atau melanjutkan instalasi nanti. Apakah Anda ingin memulihkannya?"/>
+	<String Id="Error1709" Overridable="yes" Value="Ngwaahịa: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Nwụnye dara."/>
+	<String Id="Error1707" Overridable="yes" Value="Emechara nke ọma."/>
+	<String Id="Error1706" Overridable="yes" Value="Enweghị ike ịchọta ngwugwu nwụnye maka ngwaahịa [ProductName]. Gbalịa nrụnye ọzọ site na iji ezigbo ngwungwu nwụnye &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="Instalasi sebelumnya untuk produk ini sedang berlangsung. Anda harus membatalkan perubahan yang dibuat oleh instalasi tersebut untuk melanjutkan. Apakah Anda ingin membatalkan perubahan tersebut?"/>
+	<String Id="Error1704" Overridable="yes" Value="Instalasi untuk [ProductName] saat ini ditangguhkan. Anda harus membatalkan perubahan yang dibuat oleh instalasi tersebut untuk melanjutkan. Apakah Anda ingin membatalkan perubahan tersebut?"/>
+	<String Id="Error1703" Overridable="yes" Value="Ị ga-amalitegharị sistemụ gị maka mgbanwe nhazi emere na [ProductName] ka ọ rụọ ọrụ. Pịa Ee ka ịmalitegharịa ugbu a ma ọ bụ Mba ma ọ bụrụ na ị na-eme atụmatụ iji aka malitegharịa ma emechaa."/>
+	<String Id="Error1702" Overridable="yes" Value="Onye nrụnye ga-amalitegharị sistemụ gị tupu nhazi nke [ProductName] enwee ike ịga n&amp;apos;ihu. Pịa Ee ka ịmalitegharịa ugbu a ma ọ bụ Mba ma ọ bụrụ na ị na-eme atụmatụ iji aka malitegharịa ma emechaa."/>
+	<String Id="Error1701" Overridable="yes" Value="Igodo [ProductName] adịghị mma. Chọpụta na itinyere igodo ziri ezi."/>
+	<String Id="Error1609" Overridable="yes" Value="Enwere mperi mgbe ị na-etinye ntọala nchekwa. [ProductName] abụghị ezigbo onye ọrụ ma ọ bụ otu. Nke a nwere ike ịbụ nsogbu na ngwugwu ahụ, ma ọ bụ nsogbu ijikọ na ngalaba njikwa na netwọk. Lelee njikọ netwọk gị wee pịa Ọzọ, ma ọ bụ Kagbuo ka kwụsị ịwụnye. {{Enweghị ike ịchọta SID onye ọrụ, njehie sistemu [ProductName]}"/>
+	<String Id="Error1608" Overridable="yes" Value="Enweghị ike ịhụ ngwaahịa na-akwado mbụ arụnyere na igwe maka ịwụnye ngwaahịa a."/>
+	<String Id="Error1607" Overridable="yes" Value="Ekwesịrị imechi ngwa ndị a tupu ịga n&amp;apos;ihu nwụnye:"/>
+	<String Id="Error1606" Overridable="yes" Value="Enweghị ike ịnweta ebe netwọk [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Enweghị ohere diski zuru oke na olu &amp;apos;[ProductName]&amp;apos; iji gaa n&amp;apos;ihu nrụnye site na mgbake gbanyere. [ProductName] KB ka achọrọ, mana naanị [ProductName] KB dị. Pịa Ignore ka ịga n&amp;apos;ihu nrụnye na-echekwaghị ozi mgbake, pịa Tinyegharịa ka ịlele maka ohere dị ọzọ, ma ọ bụ pịa Kagbuo ka ịkwụsị nwụnye."/>
+	<String Id="Error1604" Overridable="yes" Value="Awụnyelarị ngwaahịa &amp;apos;[ProductName]&amp;apos;, na-egbochi ntinye nke ngwaahịa a. Ngwaahịa abụọ ahụ adabaghị."/>
+	<String Id="Error1603" Overridable="yes" Value="A na-eji faịlụ [ProductName] [ProductName] na {site na usoro a: Aha: [ProductName], Id: [ProductName], Aha mpio: &amp;apos;[ProductName]&amp;apos;}. Mechie ngwa ahụ wee nwaa ọzọ."/>
+	<String Id="Error1602" Overridable="yes" Value="Apakah Anda yakin ingin membatalkan?"/>
+	<String Id="Error1601" Overridable="yes" Value="Enweghị ohere diski -- Mpịakọta: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Onye ọrụ &amp;apos;[ProductName]&amp;apos; ebidola ịwụnye maka ngwaahịa &amp;apos;[ProductName]&amp;apos;. Onye ọrụ ahụ ga-achọ ịwụnye nrụnye ahụ ọzọ tupu ha enwee ike iji ngwaahịa ahụ."/>
+	<String Id="Error1502" Overridable="yes" Value="Onye ọrụ &amp;apos;[ProductName]&amp;apos; ebidola ịwụnye maka ngwaahịa &amp;apos;[ProductName]&amp;apos;. Onye ọrụ ahụ ga-achọ ịwụnye nrụnye ahụ ọzọ tupu ha enwee ike iji ngwaahịa ahụ. Nwụnye gị ugbu a ga-aga n&amp;apos;ihu."/>
+	<String Id="Error1501" Overridable="yes" Value="Njehie ịnweta data echekwara. Biko hụ na ahaziri Windows Installer nke ọma wee nwaa wụnye ya ọzọ."/>
+	<String Id="Error1500" Overridable="yes" Value="Nrụnye ọzọ na-aga n&amp;apos;ihu. Ị ga-emecha nrụnye ahụ tupu ịga n&amp;apos;ihu nke a."/>
+	<String Id="Error1410" Overridable="yes" Value="Enweghị ike ịbawanye ohere ndekọ dị. [ProductName] KB nke ohere ndekọ efu ka achọrọ maka ntinye nke ngwa a."/>
+	<String Id="Error1409" Overridable="yes" Value="Enweghị ike ịgụ ozi nchekwa maka igodo [ProductName].{{ Error System [ProductName]} Chọpụta na ị nwere ohere zuru oke na igodo ahụ, ma ọ bụ kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1408" Overridable="yes" Value="Enweghị ike ịnweta sub igodo aha maka igodo [ProductName].{{ Error System [ProductName]} Chọpụta na ị nwere ohere zuru oke na igodo ahụ, ma ọ bụ kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1407" Overridable="yes" Value="Enweghị ike ịnweta aha uru maka igodo [ProductName].{{ Error System [ProductName]} Chọpụta na ị nwere ohere zuru oke na igodo ahụ, ma ọ bụ kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1406" Overridable="yes" Value="Enweghị ike ide uru [ProductName] na igodo [ProductName].{{ Error System [ProductName]} Chọpụta na ị nwere ohere zuru oke na igodo ahụ, ma ọ bụ kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1405" Overridable="yes" Value="Enweghị ike ịgụ uru [ProductName] site na igodo [ProductName].{{ Error System [ProductName]} Chọpụta na ị nwere ohere zuru oke na igodo ahụ, ma ọ bụ kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1404" Overridable="yes" Value="Enweghị ike ihichapụ igodo [ProductName].{{ Error System [ProductName]} Chọpụta na ị nwere ohere zuru oke na igodo ahụ, ma ọ bụ kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1403" Overridable="yes" Value="Enweghị ike ihichapụ uru [ProductName] na igodo [ProductName].{{ Error System [ProductName]} Chọpụta na ị nwere ohere zuru oke na igodo ahụ, ma ọ bụ kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1402" Overridable="yes" Value="Enweghị ike imepe igodo: [ProductName].{{ Error System [ProductName]} Chọpụta na ị nwere ohere zuru oke na igodo ahụ, ma ọ bụ kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1401" Overridable="yes" Value="Enweghị ike ịmepụta igodo: [ProductName].{{ Error System [ProductName]} Chọpụta na ị nwere ohere zuru oke na igodo ahụ, ma ọ bụ kpọtụrụ ndị ọrụ nkwado gị."/>
+	<String Id="Error1336" Overridable="yes" Value="Enwere mperi imepụta faịlụ nwa oge nke achọrọ iji mechaa nrụnye a.{{ nchekwa: [ProductName]. Koodu njehie sistemu: [ProductName]}"/>
+	<String Id="Error1335" Overridable="yes" Value="Faịlụ kabinet &amp;apos;[ProductName]&amp;apos; achọrọ maka nrụnye a rụrụ arụ na enweghị ike iji ya. Nke a nwere ike igosi njehie netwọkụ, mperi ịgụ ihe sitere na CD-ROM, ma ọ bụ nsogbu dị na ngwugwu a."/>
+	<String Id="Error1334" Overridable="yes" Value="Enweghị ike ịwụnye faịlụ &amp;apos;[ProductName]&amp;apos; n&amp;apos;ihi na enweghị ike ịhụ faịlụ ahụ na faịlụ kabinet &amp;apos;[ProductName]&amp;apos;. Nke a nwere ike igosi njehie netwọkụ, mperi ịgụ ihe sitere na CD-ROM, ma ọ bụ nsogbu dị na ngwugwu a."/>
+	<String Id="Error1333" Overridable="yes" Value="Emeghị nke ọma kwachie faịlụ [ProductName]: mperi CRC."/>
+	<String Id="Error1332" Overridable="yes" Value="Emeghị ịkwaga faịlụ [ProductName] nke ọma: mperi CRC."/>
+	<String Id="Error1331" Overridable="yes" Value="Idemighị faịlụ [ProductName] nke ọma: mperi CRC."/>
+	<String Id="Error1330" Overridable="yes" Value="Enweghị ike itinye faịlụ achọrọ n&amp;apos;ihi na faịlụ kabinet [ProductName] nwere mbinye aka dijitalụ na-ezighi ezi. Nke a nwere ike igosi na faịlụ kabinet mebiri emebi."/>
+	<String Id="Error1329" Overridable="yes" Value="Enweghị ike ịwụnye faịlụ achọrọ n&amp;apos;ihi na abịanyeghị aka na kabinet faịlụ [ProductName]. Nke a nwere ike igosi na faịlụ kabinet mebiri emebi."/>
+	<String Id="Error1328" Overridable="yes" Value="Njehie itinye patch na faịlụ [ProductName]. O nwere ike ịbụ na ejiri ụzọ ndị ọzọ emelite ya, enweghịkwa ike ịmezi ya site na patch a. Maka ozi ndị ọzọ kpọtụrụ onye na-ere patch gị. {{ Error System: [ProductName]}"/>
+	<String Id="Error1327" Overridable="yes" Value="Ụgbọ ala na-ezighi ezi: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Njehie ịnweta nchekwa faịlụ: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; abụghị aha faịlụ dị mkpụmkpụ dị mkpụmkpụ."/>
+	<String Id="Error1324" Overridable="yes" Value="Ụzọ nchekwa &amp;apos;[ProductName]&amp;apos; nwere agwa na-ezighi ezi."/>
+	<String Id="Error1323" Overridable="yes" Value="Ụzọ nchekwa &amp;apos;[ProductName]&amp;apos; nwere okwu na-adabaghị na ụzọ nchekwa."/>
+	<String Id="Error1322" Overridable="yes" Value="Akụkụ nke ụzọ nchekwa &amp;apos;[ProductName]&amp;apos; abaghị uru. Ọ bụ ma ọ bụ ihe efu ma ọ bụ gafere ogologo nke usoro ahụ kwere."/>
+	<String Id="Error1321" Overridable="yes" Value="Onye nrụnye enweghị ohere zuru oke iji gbanwee faịlụ a: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Ụzọ akọwapụtara dị ogologo nke ukwuu: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Njehie netwọkụ mere mgbe a na-achọ imepe kabinet faịlụ isi mmalite: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Njehie netwọkụ mere mgbe a na-achọ ịmepụta ndekọ: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Enwere njehie mgbe ị na-achọ ịmepụta ndekọ: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Njehie netwọkụ mere mgbe a na-achọ ịgụ na faịlụ: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Enweghị ike ide na folda akọwapụtara: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Ụzọ akpọrọ &amp;apos;[ProductName]&amp;apos; adịghị."/>
+	<String Id="Error1313" Overridable="yes" Value="Olu [ProductName] adịghị ugbu a. Biko họrọ ọzọ."/>
+	<String Id="Error1312" Overridable="yes" Value="Enweghị ike ịmepụta ndekọ &amp;apos;[ProductName]&amp;apos;. Otu faịlụ nwere aha adịlarị. Biko nyegharịa aha ma ọ bụ wepu faịlụ wee pịa Ọzọ, ma ọ bụ pịa Kagbuo ka ịpụ."/>
+	<String Id="Error1311" Overridable="yes" Value="Achọtaghị faịlụ isi mmalite{{(cabinet)}}: [ProductName]. Chọpụta na faịlụ ahụ dị yana ị nwere ike ịnweta ya."/>
+	<String Id="Error1310" Overridable="yes" Value="Njehie ịde na faịlụ: [ProductName].{{ Error sistemu [ProductName].}} Chọpụta na ị nwere ohere na ndekọ ahụ."/>
+	<String Id="Error1309" Overridable="yes" Value="Enwere mperi ịgụ site na faịlụ: [ProductName].{{ Error sistemu [ProductName].}} Chọpụta na faịlụ ahụ dị na ị nwere ike nweta ya."/>
+	<String Id="Error1308" Overridable="yes" Value="Achọtaghị faịlụ isi mmalite: [ProductName]. Chọpụta na faịlụ ahụ dị yana ị nwere ike ịnweta ya."/>
+	<String Id="Error1307" Overridable="yes" Value="Enweghị ohere diski zuru oke iji wụnye faịlụ a: [ProductName]. Hapụ ụfọdụ ohere diski wee pịa Tinyegharịa, ma ọ bụ pịa Kagbuo ka ịpụ."/>
+	<String Id="Error1306" Overridable="yes" Value="Ngwa ọzọ nwere ohere pụrụ iche na faịlụ &amp;apos;[ProductName]&amp;apos;. Biko mechie ngwa ndị ọzọ niile, wee pịa Tinyegharịa."/>
+	<String Id="Error1305" Overridable="yes" Value="Enwere mperi ịgụ site na faịlụ [ProductName].{{ Error sistemu [ProductName].}} Chọpụta na faịlụ ahụ dị na ị nwere ike nweta ya."/>
+	<String Id="Error1304" Overridable="yes" Value="Njehie ịde na faịlụ: [ProductName]. Chọpụta na ị nwere ohere na ndekọ ahụ."/>
+	<String Id="Error1303" Overridable="yes" Value="Onye nrụnye enweghị ohere zuru oke iji nweta ndekọ aha a: [ProductName]. Nwụnye enweghị ike ịga n&amp;apos;ihu. Banye dị ka onye nchịkwa ma ọ bụ kpọtụrụ onye nchịkwa sistemụ gị."/>
+	<String Id="Error1302" Overridable="yes" Value="Biko tinye diski ahụ: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Enweghị ike ịmepụta faịlụ &amp;apos;[ProductName]&amp;apos;. Ndekọ nwere aha a adịlarị. Kagbuo nrụnye wee nwaa ịwụnye n&amp;apos;ebe ọzọ."/>
+	<String Id="Error1101" Overridable="yes" Value="Enwere mperi ịgụ site na faịlụ: [ProductName].{{ Error sistemu [ProductName].}} Chọpụta na faịlụ ahụ dị na ị nwere ike nweta ya."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName]} Ntọlite dara."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName]} Nhazi emechara nke ọma."/>
+	<String Id="Error23" Overridable="yes" Value="Na-akwado iwepu ụdị ngwa a ochie..."/>
+	<String Id="Error22" Overridable="yes" Value="Na-ewepụ ụdị ngwa a ochie..."/>
+	<String Id="Error21" Overridable="yes" Value="Ịchịkọta ozi achọrọ..."/>
+	<String Id="Error20" Overridable="yes" Value="Biko chere ka Windows na-ahazi [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Installer kwụsịrị n&amp;apos;oge."/>
+	<String Id="Error18" Overridable="yes" Value="Installer anaghị azaghachi."/>
+	<String Id="Error17" Overridable="yes" Value="Ebe nchekwa adịghị. Mechie ngwa ndị ọzọ tupu ịmalitegharịa."/>
+	<String Id="Error16" Overridable="yes" Value="Oge fọdụrụ: {[ProductName] nkeji {[ProductName] sekọnd}"/>
+	<String Id="Error15" Overridable="yes" Value="Omume kwụsịrị [ProductName]: [ProductName]. Nlaghachite uru [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Ihe mmalite [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Etinye osisi kwụsịrị: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Nbanye malitere: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Ụdị ozi: [ProductName], Arụmụka: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Omume [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Dịkị zuru ezu:}}"/>
+	<String Id="Error5" Overridable="yes" Value="Onye nrụnye ahụ enwetala mperi na-atụghị anya ya ịwụnye ngwugwu a. Nke a nwere ike igosi nsogbu na ngwugwu a. Koodu njehie bụ [ProductName]. {{Arụmụka ndị a bụ: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Ozi [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Ịdọ aka ná ntị [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Ero [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Njehie na-egbu egbu:}}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Na-ewepụ ozi ngwaahịa"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], akwụkwọ ndekọ aha: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Na-ewepu faịlụ ebugharị"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Faịlụ: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Na-ewepu ndabere faịlụ"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Tindakan memutar balik:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Usoro ngwa:[ProductName], Aha Mgbakọ:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Iwepu ozi mgbakọ"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Usoro ngwa:[ProductName], Aha Mgbakọ:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Ozi mgbakọ na-ebipụta"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Faịlụ: [ProductName], Ndabere: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Ịwụnye katalọgụ sistemụ"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Na-emepụta ọrụ script maka ime ihe:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Ngwa mgbasa ozi"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Igodo: [ProductName], aha: [ProductName], Uru: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Ụkpụrụ ndekọ usoro ederede"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], Nkebi: [ProductName], Igodo: [ProductName], Uru: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Ịde ụkpụrụ faịlụ INI"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Aha: [ProductName], Uru: [ProductName], Omume [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Na-emelite eriri gburugburu"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="Ebe ID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Ụdị ọba akwụkwọ anaghị edebanye aha"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Edebaghị aha njirimara mmemme"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="Ụdị ọdịnaya MIME: [ProductName], ndọtị: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Na-ewepu ozi MIME"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Ihe odide: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Ụdị mkpụrụedemede na-enweghị aha"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Mgbatị: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Sava ndọtị na-edebanye aha"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Ngwa na akụrụngwa na-ewepụ aha COM+"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Id klas: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Wepu aha sava klaasị"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Njirimara: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Njirimara ngwaahịa anaghị ebipụta"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="NJ akụrụngwa: [ProductName], ntozu: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Ewepụ akụrụngwa ndị ruru eru"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Ọrụ: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Nkwụsị ọrụ"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Ọrụ: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Mmalite ọrụ"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Na-amalite akwụkwọ ndekọ aha ODBC"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], nchekwa: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Modul na-edebanye aha"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], nchekwa: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Modul na-edebanye aha"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Na-achọ ngwaahịa ruru eru"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Ụzọ mkpirisi: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Na-ewepụ ụzọ mkpirisi"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Igodo: [ProductName], aha: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Iwepu ụkpụrụ ndekọ usoro"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Na-ewepu ODBC components"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], Nkebi: [ProductName], Igodo: [ProductName], Uru: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Iwepu ndenye faịlụ INI"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Mpempe akwụkwọ: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Na-ewepụ folda"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], akwụkwọ ndekọ aha: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Na-ewepu faịlụ"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Ngwa: [ProductName], ahịrị iwu: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Iwepu ngwa"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Aha: [ProductName], Uru: [ProductName], Omume [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Na-emelite eriri gburugburu"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], akwụkwọ ndekọ aha: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Na-ewepu faịlụ oyiri"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Onye ọrụ na-edebanye aha"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="Ebe ID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Ụdị ọba akwụkwọ na-edebanye aha"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Ịdenye aha ngwaahịa"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Ihe odide: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Ịdenye aha mkpụrụedemede"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Ndị ọrụ: [ProductName], RSN: [ProductName]}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Ịdenye COM+ Ngwa na akụrụngwa"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Na-emelite ndebanye aha akụrụngwa"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], Akwụkwọ ndekọ aha: [ProductName], nha: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Mechie faịlụ"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], akwụkwọ ndekọ aha: [ProductName], nha: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Na-ebugharị faịlụ"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Ngwa: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Ngosipụta atụmatụ mbugharị site na ngwa emetụtara"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Na-enyocha ọnọdụ mmalite"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Ọrụ: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Ịwụnye ọrụ ọhụrụ"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Ịwụnye akụrụngwa ODBC"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Ngwa achọtara: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Na-achọ ngwa ndị metụtara ya"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], akwụkwọ ndekọ aha: [ProductName], nha: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Ịmepụta faịlụ oyiri"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Ọrụ: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Na-ehichapụ ọrụ"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Mpempe akwụkwọ: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Ịmepụta nchekwa"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Na-achọ ngwaahịa ruru eru"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Faịlụ: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Ejide executables"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Ihe onwunwe: [ProductName], mbinye aka: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Na-achọ ngwa arụnyere"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Oghere efu: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Ịnye oghere ndekọ"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Ịdenye ihe nchọpụta mmemme"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="Ụdị ọdịnaya MIME: [ProductName], ndọtị: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Na-edebanye ozi MIME"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Mgbatị: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Ịdenye aha ndọtị sava"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Id klas: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Na-edebanye aha sava klaasị"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Na-ebipụta ozi ngwaahịa"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Njirimara: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Njirimara ngwaahịa na-ebipụta"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="NJ akụrụngwa: [ProductName], ntozu: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Na-ebipụta akụrụngwa ruru eru"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Ụzọ mkpirisi: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Ịmepụta ụzọ mkpirisi"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Chọrọ oghere kọmputa"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Chọrọ oghere kọmputa"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Chọrọ oghere kọmputa"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Faịlụ: [ProductName], akwụkwọ ndekọ aha: [ProductName], nha: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Na-eṅomi faịlụ wụnye netwọkụ"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Faịlụ: [ProductName], akwụkwọ ndekọ aha: [ProductName], nha: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Na-eṅomi faịlụ ọhụrụ"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Na-akwado ịwụnye"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Biko gụọ nkwekọrịta ikike [ProductName]"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Melite"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Wụnye"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ana m anabata usoro ndị dị na Agreement Ikikere"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Nnọọ na Ọkachamara Nhazi [ProductName]"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Ọkachamara Mbido ahụ ga-emelite [ProductName] na kọmputa gị. Pịa Ọzọ ka ịga n&amp;apos;ihu ma ọ bụ kagbuo ka ịpụ na Ọkachamara Mbido."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Ọkachamara Mbido ahụ ga-etinye [ProductName] na kọmputa gị. Pịa Ọzọ ka ịga n&amp;apos;ihu ma ọ bụ kagbuo ka ịpụ na Ọkachamara Mbido."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Akara ngosi mkpu"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Biko chere ka onye nrụnye ga-emecha chọpụta ohere diski gị chọrọ."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;laghachi"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title} dị njikere imelite [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Pịa Mmelite ka imelite [ProductName] site na kọmputa gị. Pịa azụ ka ịlele ma ọ bụ gbanwee ntọala nwụnye gị ọ bụla. Pịa Kagbuo ka ịpụọ ọkachamara."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Melite"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title} dị njikere iwepu [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Pịa Wepụ iji wepụ [ProductName] na kọmputa gị. Pịa azụ ka ịlele ma ọ bụ gbanwee ntọala nwụnye gị ọ bụla. Pịa Kagbuo ka ịpụọ ọkachamara."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Wepu"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title} dị njikere ịrụzi [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Pịa Mmezi iji rụkwaa nrụnye nke [ProductName]. Pịa azụ ka ịlele ma ọ bụ gbanwee ntọala nwụnye gị ọ bụla. Pịa Kagbuo ka ịpụọ ọkachamara."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Tinyegharịa&amp;kọkọta"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title} dị njikere ịgbanwe [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Pịa Change ka ịmalite nrụnye. Pịa azụ ka ịlele ma ọ bụ gbanwee ntọala nwụnye gị ọ bụla. Pịa Kagbuo ka ịpụọ ọkachamara."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Gbagharịa"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title} dị njikere ịwụnye [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Pịa Wụnye ka ịmalite nrụnye. Pịa azụ ka ịlele ma ọ bụ gbanwee ntọala nwụnye gị ọ bụla. Pịa Kagbuo ka ịpụọ ọkachamara."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Wụnye"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Pịa bọtịnụ rụchaa ka ịpụ na Ọkachamara Mbido."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="Akwụsịla ntọlite [ProductName]. Emezibeghị sistemụ gị. Iji wụnye mmemme a n&amp;apos;oge ọzọ, biko gbagharịa nwụnye ọzọ."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="Akwụsịla ọkachamara ntọlite {\WixUI_Font_Bigger[ProductName]"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="A ga-etinye atụmatụ mmemme niile. Na-achọ ohere diski kacha."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Na-enye ndị ọrụ ohere ịhọrọ atụmatụ mmemme a ga-etinye na ebe a ga-etinye ha. Akwadoro maka ndị ọrụ dị elu."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Na-arụnye atụmatụ mmemme kachasị ewu ewu. Akwadoro maka ọtụtụ ndị ọrụ."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Họrọ ụdị ntọlite ​​kachasị mma maka mkpa gị"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Họrọ Ụdị Ntọala"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Nwụnye zuru ezu"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="Mezue"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Nwụnye omenala"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ustom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Nwụnye a na-ahụkarị"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Ụdị"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Na-amaliteghachi Ọkachamara Nhazi [ProductName]"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Ọkachamara Mbido ahụ ga-emecha nrụnye [ProductName] na kọmputa gị. Pịa Wụnye ka ịga n&amp;apos;ihu ma ọ bụ kagbuo ka ịpụ na Ọkachamara Mbido."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Wụnye"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Ọnọdụ:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Ọganihu emeela"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Na-emelite [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Biko chere ka Ọkachamara Ntọlite na-emelite [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title} na-ewepụ [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Biko chere ka Ọkachamara Mbido na-ewepụ [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Na-emezi [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Biko chere ka Ọkachamara Mbido ahụ na-arụkwa [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Na-agbanwe [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Biko chere ka Ọkachamara Mbido na-agbanwe [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title} na-etinye [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Biko chere ka Ọkachamara Mbido na-etinye [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Nnọọ na Ọkachamara Nhazi [ProductName]"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Biko chere ka Ọkachamara Mbido na-akwado iduzi gị na nrụnye."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="N&amp;apos;aka nke ọzọ, ị nwere ike họrọ gbanyụọ ọrụ ntinyeghachi nke installer. Ịkwụsị nlọghachi azụ na-egbochi installer ịweghachite ọnọdụ mbụ kọmputa gị ma ọ bụrụ na akwụsịre nrụnye ahụ n&amp;apos;ụzọ ọ bụla. Pịa Ee ma ọ bụrụ na-ịchọrọ ị were ihe ize ndụ nke gbanyụọ nlọghachi azụ."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Oghere diski adịghị"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Oghere diski achọrọ maka nrụnye karịrị ohere diski dị."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Mpịakọta ndị a kapịrị ọnụ enweghị ohere diski zuru oke maka njirimara ndị ahọpụtara ugbu a. Ị nwere ike wepụ ụfọdụ faịlụ na mpịakọta ndị a kapịrị ọnụ, wụnye atụmatụ ole na ole, ma ọ bụ họrọ ebe ị ga-aga ọzọ."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Oghere diski adịghị"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Oghere diski achọrọ maka nrụnye karịrị ohere diski dị."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Mpịakọta ndị a kapịrị ọnụ enweghị ohere diski zuru oke maka njirimara ndị ahọpụtara ugbu a. Ị nwere ike wepụ ụfọdụ faịlụ na mpịakọta ndị a kapịrị ọnụ, wụnye atụmatụ ole na ole, ma ọ bụ họrọ ebe ị ga-aga ọzọ."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Emechila ngwa. A ga-achọgharị nrụpụta."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Mechie ngwa ma nwaa ịmalitegharịa ha."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title} Faịlụ na-eji"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Ụfọdụ faịlụ ndị kwesịrị imelite na-eji ugbu a."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Ngwa ndị a na-eji faịlụ ndị kwesịrị imelite site na ntọlite a. Ị nwere ike ikwe ka Ọkachamara Mbido mechie ha wee nwaa ịmalitegharị ha ma ọ bụ malitegharịa igwe ma emechaa."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Nnọọ na Ọkachamara Nhazi [ProductName]"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Ọkachamara Mbido ahụ na-enye gị ohere ịgbanwe otu esi etinye atụmatụ [ProductName] na kọmputa gị ma ọ bụ wepụ ya na kọmputa gị. Pịa Ọzọ ka ịga n&amp;apos;ihu ma ọ bụ kagbuo ka ịpụ na Ọkachamara Mbido."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="Enweghị ike ịrụzi [ProductName]."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Na-edozi mperi na nrụnye kacha ọhụrụ site na idozi faịlụ ndị na-efu efu na ndị mebiri emebi, ụzọ mkpirisi na ndenye ndekọ."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="Enweghị ike iwepụ [ProductName]."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Na-ewepụ [ProductName] na kọmputa gị."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] enweghị atụmatụ nwere ike ịhọrọ onwe ya."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Na-ahapụ gị ka ị gbanwee otu esi etinye atụmatụ."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Gbanwee, rụkwaa ma ọ bụ wepụ nrụnye"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Họrọ ọrụ ị chọrọ ịrụ."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Wepu nwụnye"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Wepu"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Dozie nwụnye"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Tinyegharịa&amp;kọkọta"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Gbanwee nwụnye"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Gbagharịa"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Nkwekọrịta ikike onye ọrụ njedebe"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Biko gụọ nkwekọrịta ikike ndị a nke ọma"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ana m anabata usoro ndị dị na Agreement Ikikere"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Akara ngosi"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Akwụkwọ ndekọ nwụnye ga-abụrịrị na draịvụ ike mpaghara."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Gbagharịa..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Nwụnye &amp; nchekwa:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="A ga-etinye [ProductName] na nchekwa igwe ọ bụla na ndabara ma dịrị maka ndị ọrụ niile. Ị nwere ike ịgbanwe folda nwụnye nke ndabara. Ị ga-enwerịrị ikike onye nchịkwa mpaghara."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized} Wụnye maka ndị ọrụ niile na igwe a"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] anaghị akwado nwụnye onye ọ bụla."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="A ga-etinye [ProductName] na folda onye ọ bụla ma dịrị naanị maka akaụntụ njirimara gị. Ịchọghị ikike ndị nchịkwa mpaghara."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Wụnye &amp; naanị maka gị ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Oke nwụnye"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Họrọ ebe nwụnye na nchekwa"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Wụnye [ProductName] ka:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Pịa Ọzọ ka ịwụnye na ndabara nchekwa ma ọ bụ pịa Change ịhọrọ ọzọ."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Ebe nchekwa nchekwa"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Gbagharịa..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title} Faịlụ na-eji"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Ụfọdụ faịlụ ndị kwesịrị imelite na-eji ugbu a."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Ngwa ndị a na-eji faịlụ ndị kwesịrị imelite site na ntọlite a. Mechie ngwa ndị a wee pịa &amp;Tigharịa ka ịga n&amp;apos;ihu ntọlite ​​ma ọ bụ Wepụ ka ịpụ na ya."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="Ụzọ ọpụpụ"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Gbagharịa"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Wụnye"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="AkụkụDlgItem nha"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="NjirimaraDlgItemNkọwa"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Njirimara ngwaahịa"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Họrọ otu ịchọrọ ka etinyere atụmatụ."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Njirimara ngwaahịa"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Pịa bọtịnụ rụchaa ka ịpụ na Ọkachamara Mbido."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Ọkachamara Mbido kwụsịrị n&amp;apos;aka n&amp;apos;ihi mperi. Emezibeghị sistemụ gị. Iji wụnye mmemme a na oge ọzọ, gbanye Ọkachamara Mbido ọzọ."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="Ọkachamara nhazi {\WixUI_Font_Bigger[ProductName] kwụsịrị n&amp;apos;aka."/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} Emechara Ọkachamara Nhazi [ProductName]"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Pịa bọtịnụ rụchaa ka ịpụ na Ọkachamara Mbido."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Akara ngosi"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Ederede ozi"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Achọrọ ohere diski"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Oghere diski achọrọ maka ntinye nke atụmatụ ahọpụtara."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Mpịakọta ndị egosipụtara enweghị ohere diski zuru oke maka njirimara ahọpụtara. Ị nwere ike wepụ ụfọdụ faịlụ na mpịakọta ndị a kapịrị ọnụ, wụnye atụmatụ ole na ole, ma ọ bụ họrọ draịva ebe dị iche iche."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Ebe:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="HazieDlgLocation-HaziriDlgOgbe"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="HazieDlgItemSize-HazieDlgItem nha"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="HazieDlgItemNkọwa-Haziri nkọwaDlgItem"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Ntọala ahaziri ahazi"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Họrọ otu ịchọrọ ka etinyere atụmatụ."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Pịa akara ngosi dị na osisi dị n&amp;apos;okpuru iji gbanwee ụzọ a ga-esi tinye atụmatụ."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Disk &amp; Ojiji"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Megharịa&amp;tọgharịa"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B &amp; zọọ..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Osisi nke nhọrọ"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Akara ngosi"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Apakah Anda yakin ingin membatalkan instalasi [ProductName]?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Gbanwee ebe ebe nchekwa"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Chọgharịa na ebe nchekwa ebe aga"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Aha nchekwa:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Mepụta folda ọhụrụ"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_Ọhụrụ"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="N&amp;apos;elu otu larịị"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Lebanye anya:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;mgbara elu"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Wụnye"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Pịa Wụnye ka ịwụnye ngwaahịa na nhọrọ ndabara naanị maka gị. Pịa Nke dị elu ka ịgbanwee nhọrọ nwụnye."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Pịa Wụnye ka ịwụnye ngwaahịa na nhọrọ ndabara maka ndị ọrụ niile. Pịa Nke dị elu ka ịgbanwee nhọrọ nwụnye."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ana m anabata usoro ndị dị na Agreement Ikikere"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Biko gụọ nkwekọrịta ikike [ProductName]"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Ntọlite"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Bipụta"/>
+	<String Id="WixUIOK" Overridable="yes" Value="Ọ DỊ MMA"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp; Mba"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Ee"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Na-eleghara anya"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Tigharịa"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Mechaa"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Kagbuo"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Osote"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Azu"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Iwepu nhazi Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Nhazi Windows Firewall na-atụgharị azụ"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Ịwụnye nhazi Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Nhazi Windows Firewall na-atụgharị azụ"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Na-ahazi Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Na-ahazi Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Enweghị ike ijikọ na Windows Firewall. ([2] [3] [4] [5]"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Ihe nkesa nkekọrịta netwọkụ"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Kekọrịta draịva na netwọkụ iji mee ka njikwa na nyocha sitere na Client RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Enwere ike ịmalitegharị"/>

@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="tl" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="tl" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Dami"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Sukat ng Disk"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Kinakailangan"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Pagkakaiba"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Available"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Oras na natitira:{ [ProductName] minuto}{ [ProductName] segundo}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Ang tampok na ito ay nangangailangan ng [ProductName] sa iyong hard drive. Mayroon itong [ProductName] sa [ProductName] mga subfeature na napili. Ang mga subfeature ay nangangailangan ng [ProductName] sa iyong hard drive."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Ang tampok na ito ay nangangailangan ng [ProductName] sa iyong hard drive. Mayroon itong [ProductName] sa [ProductName] mga subfeature na napili. Ang mga subfeature ay nagbibigay ng libreng [ProductName] sa iyong hard drive."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Ang tampok na ito ay nagpapalaya [ProductName] sa iyong hard drive. Mayroon itong [ProductName] sa [ProductName] mga subfeature na napili. Ang mga subfeature ay nangangailangan ng [ProductName] sa iyong hard drive."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Ang tampok na ito ay nagpapalaya [ProductName] sa iyong hard drive. Mayroon itong [ProductName] sa [ProductName] mga subfeature na napili. Ang mga subfeature ay nagbibigay ng libreng [ProductName] sa iyong hard drive."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Ang tampok na ito ay mananatiling tatakbo mula sa network"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Ang tampok na ito ay magbabago mula sa run mula sa estado ng network upang mai-install sa lokal na hard drive"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Ang tampok na ito ay magbabago mula sa pagtakbo mula sa estado ng network upang itakda na mai-install kapag kinakailangan"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Ang tampok na ito ay ganap na maa-uninstall, hindi mo ito mapapatakbo mula sa network"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Ang tampok na ito ay aalisin mula sa iyong lokal na hard drive, ngunit magagamit pa rin upang tumakbo mula sa network"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Ang tampok na ito ay mananatili sa iyong lokal na hard drive"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Ang tampok na ito ay aalisin mula sa iyong lokal na hard drive, ngunit magagamit pa rin upang tumakbo mula sa CD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Aalisin ang feature na ito sa iyong lokal na hard drive, ngunit itatakdang i-install kapag kinakailangan"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Ang tampok na ito ay ganap na aalisin"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Kino-compile ang gastos para sa feature na ito..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Ang tampok na ito ay nangangailangan ng [ProductName] sa iyong hard drive."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Ang tampok na ito ay nagpapalaya [ProductName] sa iyong hard drive."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Ang tampok na ito ay magbabago mula sa pagtakbo mula sa estado ng CD upang mai-install sa lokal na hard drive"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Ang tampok na ito ay mananatiling tatakbo mula sa CD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Ang tampok na ito ay magbabago mula sa run mula sa estado ng CD upang itakda na mai-install kapag kinakailangan"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Ang tampok na ito ay ganap na maa-uninstall, hindi mo ito mapapatakbo mula sa CD"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Ang tampok na ito ay magagamit upang tumakbo mula sa network"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Ang tampok na ito ay mai-install sa iyong lokal na hard drive"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Ang tampok na ito ay magagamit upang tumakbo mula sa CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Mai-install kapag kinakailangan"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Ang tampok na ito ay magiging hindi magagamit"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Ang tampok na ito ay mai-install upang tumakbo mula sa network"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Ang tampok na ito ay mai-install sa lokal na hard drive"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Ang tampok na ito ay mai-install upang tumakbo mula sa CD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Itatakda ang feature na ito na mai-install kapag kinakailangan"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Mananatiling naka-uninstall ang feature na ito"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Nangangalap ng kinakailangang impormasyon..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Folder|Bagong Folder"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Mai-install upang tumakbo mula sa network"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Mai-install sa lokal na hard drive"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Mai-install upang tumakbo mula sa CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Ang buong tampok ay mai-install upang tumakbo mula sa network"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Ang buong feature ay mai-install sa lokal na hard drive"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Ang buong tampok ay mai-install upang tumakbo mula sa CD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Ang tampok ay mai-install kapag kinakailangan"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Hindi magagamit ang buong feature"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="bytes"/>
+	<String Id="Error1938" Overridable="yes" Value="May naganap na error sa panahon ng pag-install ng assembly &amp;apos;[ProductName]&amp;apos;. Ang isa o higit pang mga module ng pagpupulong ay hindi mahanap. HRESULT: [ProductName].{{ assembly interface: [ProductName], function: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="May naganap na error sa panahon ng pag-install ng assembly &amp;apos;[ProductName]&amp;apos;. Ang lagda o catalog ay hindi ma-verify o hindi wasto. HRESULT: [ProductName].{{ assembly interface: [ProductName], function: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="May naganap na error sa panahon ng pag-install ng assembly &amp;apos;[ProductName]&amp;apos;. Ang pagpupulong ay hindi malakas na pinangalanan o hindi nilagdaan na may kaunting haba ng key. HRESULT: [ProductName].{{ assembly interface: [ProductName], function: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="May naganap na error sa panahon ng pag-install ng assembly &amp;apos;[ProductName]&amp;apos;. Mangyaring sumangguni sa Tulong at Suporta para sa higit pang impormasyon. HRESULT: [ProductName].{{ assembly interface: [ProductName], function: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Ang mga pag-install ng user ay hindi pinagana sa pamamagitan ng patakaran sa makina."/>
+	<String Id="Error1933" Overridable="yes" Value="Ang serbisyo ng Windows Installer ay hindi maaaring mag-update ng isa o higit pang mga protektadong Windows file.{{ SFP Error: [ProductName]. Listahan ng mga protektadong file:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Hindi ma-update ng serbisyo ng Windows Installer ang protektadong Windows file [ProductName].{{ Package version: [ProductName], OS Protected version: [ProductName], SFP Error: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Hindi ma-update ng serbisyo ng Windows Installer ang system file [ProductName] dahil ang file ay protektado ng Windows. Maaaring kailanganin mong i-update ang iyong operating system para gumana nang tama ang program na ito.{{ Package version: [ProductName], OS Protected version: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="Ang paglalarawan para sa serbisyong &amp;apos;[ProductName]&amp;apos; ([ProductName]) ay hindi mabago."/>
+	<String Id="Error1929" Overridable="yes" Value="Error sa pag-unregister sa COM+ Application. Makipag-ugnayan sa iyong mga tauhan ng suporta para sa higit pang impormasyon."/>
+	<String Id="Error1928" Overridable="yes" Value="Error sa pagpaparehistro ng COM+ Application. Makipag-ugnayan sa iyong mga tauhan ng suporta para sa higit pang impormasyon."/>
+	<String Id="Error1927" Overridable="yes" Value="Ang Component Services (COM+ 1.0) ay hindi naka-install sa computer na ito. Ang pag-install na ito ay nangangailangan ng Component Services upang matagumpay na makumpleto. Available ang Component Services sa Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Hindi maitakda ang seguridad ng file para sa file na &amp;apos;[ProductName]&amp;apos;. Error: [ProductName]. I-verify na mayroon kang sapat na mga pribilehiyo upang baguhin ang mga pahintulot sa seguridad para sa file na ito."/>
+	<String Id="Error1925" Overridable="yes" Value="Wala kang sapat na mga pribilehiyo upang makumpleto ang pag-install na ito para sa lahat ng mga gumagamit ng makina. Mag-log on bilang administrator at pagkatapos ay subukang muli ang pag-install na ito."/>
+	<String Id="Error1924" Overridable="yes" Value="Hindi ma-update ang variable ng kapaligiran na &amp;apos;[ProductName]&amp;apos;. I-verify na mayroon kang sapat na mga pribilehiyo upang baguhin ang mga variable ng kapaligiran."/>
+	<String Id="Error1923" Overridable="yes" Value="Hindi ma-install ang serbisyong &amp;apos;[ProductName]&amp;apos; ([ProductName]). I-verify na mayroon kang sapat na mga pribilehiyo upang mag-install ng mga serbisyo ng system."/>
+	<String Id="Error1922" Overridable="yes" Value="Hindi matanggal ang serbisyong &amp;apos;[ProductName]&amp;apos; ([ProductName]). I-verify na mayroon kang sapat na mga pribilehiyo upang alisin ang mga serbisyo ng system."/>
+	<String Id="Error1921" Overridable="yes" Value="Hindi mapigil ang serbisyong &amp;apos;[ProductName]&amp;apos; ([ProductName]). I-verify na mayroon kang sapat na mga pribilehiyo upang ihinto ang mga serbisyo ng system."/>
+	<String Id="Error1920" Overridable="yes" Value="Nabigong magsimula ang serbisyong &amp;apos;[ProductName]&amp;apos; ([ProductName]). I-verify na mayroon kang sapat na mga pribilehiyo upang simulan ang mga serbisyo ng system."/>
+	<String Id="Error1919" Overridable="yes" Value="Error sa pag-configure ng ODBC data source: [ProductName], ODBC error [ProductName]: [ProductName]. I-verify na ang file [ProductName] ay umiiral at na maaari mong ma-access ito."/>
+	<String Id="Error1918" Overridable="yes" Value="Error sa pag-install ng ODBC driver: [ProductName], ODBC error [ProductName]: [ProductName]. I-verify na ang file [ProductName] ay umiiral at na maaari mong ma-access ito."/>
+	<String Id="Error1917" Overridable="yes" Value="Error sa pag-alis ng ODBC driver: [ProductName], ODBC error [ProductName]: [ProductName]. I-verify na mayroon kang sapat na mga pribilehiyo upang alisin ang mga driver ng ODBC."/>
+	<String Id="Error1916" Overridable="yes" Value="Error sa pag-install ng ODBC driver manager, ODBC error [ProductName]: [ProductName]. Makipag-ugnayan sa iyong mga tauhan ng suporta."/>
+	<String Id="Error1915" Overridable="yes" Value="Error sa pag-alis ng ODBC driver manager, ODBC error [ProductName]: [ProductName]. Makipag-ugnayan sa iyong mga tauhan ng suporta."/>
+	<String Id="Error1914" Overridable="yes" Value="Hindi maiiskedyul ang file [ProductName] upang palitan ang file [ProductName] sa pag-reboot. I-verify na mayroon kang mga pahintulot sa pagsulat upang mag-file [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Hindi ma-update ang ini file [ProductName][ProductName]. I-verify na umiiral ang file at maaari mo itong ma-access."/>
+	<String Id="Error1912" Overridable="yes" Value="Hindi ma-unregister ang uri ng library para sa file [ProductName]. Makipag-ugnayan sa iyong mga tauhan ng suporta."/>
+	<String Id="Error1911" Overridable="yes" Value="Hindi mairehistro ang uri ng library para sa file [ProductName]. Makipag-ugnayan sa iyong mga tauhan ng suporta."/>
+	<String Id="Error1910" Overridable="yes" Value="Hindi maalis ang Shortcut [ProductName]. I-verify na umiiral ang shortcut file at maa-access mo ito."/>
+	<String Id="Error1909" Overridable="yes" Value="Hindi makalikha ng Shortcut [ProductName]. I-verify na ang destination folder ay umiiral at na maaari mong ma-access ito."/>
+	<String Id="Error1908" Overridable="yes" Value="Hindi ma-unregister ang font [ProductName]. I-verify na mayroon kang sapat na mga pahintulot upang mag-alis ng mga font."/>
+	<String Id="Error1907" Overridable="yes" Value="Hindi mairehistro ang font [ProductName]. I-verify na mayroon kang sapat na mga pahintulot na mag-install ng mga font, at sinusuportahan ng system ang font na ito."/>
+	<String Id="Error1906" Overridable="yes" Value="Nabigong i-cache ang package [ProductName]. Error: [ProductName]. Makipag-ugnayan sa iyong mga tauhan ng suporta."/>
+	<String Id="Error1905" Overridable="yes" Value="Nabigo ang module [ProductName] na alisin sa pagkakarehistro. HRESULT [ProductName]. Makipag-ugnayan sa iyong mga tauhan ng suporta."/>
+	<String Id="Error1904" Overridable="yes" Value="Nabigo ang module [ProductName] na magrehistro. HRESULT [ProductName]. Makipag-ugnayan sa iyong mga tauhan ng suporta."/>
+	<String Id="Error1903" Overridable="yes" Value="Pag-iskedyul ng pagpapatakbo ng pag-reboot: Pagtanggal ng file [ProductName]. Kailangang i-reboot upang makumpleto ang operasyon."/>
+	<String Id="Error1902" Overridable="yes" Value="Pag-iskedyul ng pagpapatakbo ng pag-reboot: Pagpapalit ng pangalan ng file [ProductName] sa [ProductName]. Kailangang i-reboot upang makumpleto ang operasyon."/>
+	<String Id="Error1901" Overridable="yes" Value="Error sa pagtatangkang magbasa mula sa source install database: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Ang isang wastong folder ng patutunguhan para sa pag-install ay hindi matukoy."/>
+	<String Id="Error1806" Overridable="yes" Value="Wala kang sapat na mga pribilehiyo upang basahin ang folder na ito."/>
+	<String Id="Error1805" Overridable="yes" Value="Ang folder [ProductName] ay wala. Mangyaring magpasok ng landas sa isang umiiral nang folder."/>
+	<String Id="Error1804" Overridable="yes" Value="Walang disk sa drive [ProductName]. Mangyaring magpasok ng isa at i-click ang Subukang muli, o i-click ang Kanselahin upang bumalik sa dialog ng pag-browse at pumili ng ibang volume."/>
+	<String Id="Error1803" Overridable="yes" Value="Walang disk sa drive [ProductName]. Mangyaring magpasok ng isa at i-click ang Subukang muli, o i-click ang Kanselahin upang bumalik sa dating napiling volume."/>
+	<String Id="Error1802" Overridable="yes" Value="Wala sa memorya. I-shut down ang ibang mga application bago subukang muli."/>
+	<String Id="Error1801" Overridable="yes" Value="Ang landas [ProductName] ay hindi wasto. Mangyaring tumukoy ng wastong landas."/>
+	<String Id="Error1732" Overridable="yes" Value="[ProductName] gurnamagy tamamlamak üçin kompýuteri täzeden açmaly. Beýleki ulanyjylar häzirki wagtda bu kompýutere girýärler we täzeden başlamak işleriniň ýitmegine sebäp bolup biler. Indi täzeden açmak isleýärsiňizmi?"/>
+	<String Id="Error1731" Overridable="yes" Value="Ang source installation package para sa produkto [ProductName] ay wala sa sync sa client package. Subukang muli ang pag-install gamit ang isang wastong kopya ng package ng pag-install &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Dapat ay isa kang Administrator upang maalis ang application na ito. Upang alisin ang application na ito, maaari kang mag-log on bilang Administrator, o makipag-ugnayan sa iyong technical support group para sa tulong."/>
+	<String Id="Error1729" Overridable="yes" Value="Nabigo ang configuration."/>
+	<String Id="Error1728" Overridable="yes" Value="Matagumpay na nakumpleto ang configuration."/>
+	<String Id="Error1727" Overridable="yes" Value="Nabigo ang ad."/>
+	<String Id="Error1726" Overridable="yes" Value="Matagumpay na nakumpleto ang patalastas."/>
+	<String Id="Error1725" Overridable="yes" Value="Nabigo ang pag-alis."/>
+	<String Id="Error1724" Overridable="yes" Value="Matagumpay na nakumpleto ang pag-alis."/>
+	<String Id="Error1723" Overridable="yes" Value="May problema sa Windows Installer package na ito. Ang isang DLL na kinakailangan para makumpleto ang pag-install na ito ay hindi maaaring patakbuhin. Makipag-ugnayan sa iyong support personnel o package vendor.{{ Action [ProductName], entry: [ProductName], library: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="May problema sa Windows Installer package na ito. Ang isang program na pinapatakbo bilang bahagi ng setup ay hindi natapos gaya ng inaasahan. Makipag-ugnayan sa iyong support personnel o package vendor.{{ Action [ProductName], lokasyon: [ProductName], command: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="May problema sa Windows Installer package na ito. Ang isang program na kinakailangan para makumpleto ang pag-install na ito ay hindi maaaring patakbuhin. Makipag-ugnayan sa iyong support personnel o package vendor.{{ Action: [ProductName], location: [ProductName], command: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="May problema sa Windows Installer package na ito. Ang isang script na kinakailangan para makumpleto ang pag-install na ito ay hindi maaaring patakbuhin. Makipag-ugnayan sa iyong support personnel o package vendor.{{ Custom action [ProductName] script error [ProductName], [ProductName]: [ProductName] Line [ProductName], Column [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Hindi ma-access ang Windows Installer Service. Ito ay maaaring mangyari kung nagpapatakbo ka ng Windows sa safe mode, o kung ang Windows Installer ay hindi naka-install nang tama. Makipag-ugnayan sa iyong mga tauhan ng suporta para sa tulong."/>
+	<String Id="Error1718" Overridable="yes" Value="Ang file [ProductName] ay tinanggihan ng digital signature policy."/>
+	<String Id="Error1717" Overridable="yes" Value="Inalis [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Na-configure [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Naka-install [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Ang mas lumang bersyon ng [ProductName] ay hindi maaaring alisin. Makipag-ugnayan sa iyong pangkat ng teknikal na suporta.{{ System Error [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="Hindi mai-install ng [ProductName] ang isa sa mga kinakailangang produkto nito. Makipag-ugnayan sa iyong pangkat ng teknikal na suporta.{{ System Error: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Ang isa o higit pa sa mga file na kinakailangan upang maibalik ang iyong computer sa dati nitong estado ay hindi mahanap. Hindi magiging posible ang pagpapanumbalik."/>
+	<String Id="Error1711" Overridable="yes" Value="Nagkaroon ng error habang nagsusulat ng impormasyon sa pag-install sa disk. Suriin upang matiyak na sapat na espasyo sa disk ang magagamit, at i-click ang Subukang muli, o Kanselahin upang tapusin ang pag-install."/>
+	<String Id="Error1710" Overridable="yes" Value="Kompýuteriňizi öňki ýagdaýyna getirip ýa-da gurnamany soň dowam etdirip bilersiňiz. Dikeltmek isleýärsiňizmi?"/>
+	<String Id="Error1709" Overridable="yes" Value="Produkto: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Nabigo ang pag-install."/>
+	<String Id="Error1707" Overridable="yes" Value="Matagumpay na nakumpleto ang pag-install."/>
+	<String Id="Error1706" Overridable="yes" Value="Ang pakete ng pag-install para sa produkto [ProductName] ay hindi mahanap. Subukang muli ang pag-install gamit ang isang wastong kopya ng package ng pag-install na &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="Bu önüm üçin öňki gurnama işleri dowam edýär. Dowam etmek üçin şol gurnama tarapyndan edilen üýtgeşmeleri yzyna gaýtarmaly. Şol üýtgeşmeleri yzyna almak isleýärsiňizmi?"/>
+	<String Id="Error1704" Overridable="yes" Value="[ProductName] üçin gurnama häzirki wagtda togtadyldy. Dowam etmek üçin şol gurnama tarapyndan edilen üýtgeşmeleri yzyna gaýtarmaly. Şol üýtgeşmeleri ýatyrmak isleýärsiňizmi?"/>
+	<String Id="Error1703" Overridable="yes" Value="Dapat mong i-restart ang iyong system para magkabisa ang mga pagbabago sa configuration na ginawa sa [ProductName]. I-click ang Oo upang i-restart ngayon o Hindi kung plano mong manu-manong i-restart sa ibang pagkakataon."/>
+	<String Id="Error1702" Overridable="yes" Value="Dapat i-restart ng installer ang iyong system bago magpatuloy ang configuration ng [ProductName]. I-click ang Oo upang i-restart ngayon o Hindi kung plano mong manu-manong i-restart sa ibang pagkakataon."/>
+	<String Id="Error1701" Overridable="yes" Value="Ang susi [ProductName] ay hindi wasto. I-verify na inilagay mo ang tamang key."/>
+	<String Id="Error1609" Overridable="yes" Value="May naganap na error habang inilalapat ang mga setting ng seguridad. [ProductName] ay hindi wastong gumagamit o grupo. Ito ay maaaring isang problema sa package, o isang problema sa pagkonekta sa isang domain controller sa network. Suriin ang iyong koneksyon sa network at i-click ang Subukang muli, o Kanselahin upang tapusin ang pag-install. {{Unable to locate the user&amp;apos;s SID, system error [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Hindi mahanap ang anumang naunang naka-install na sumusunod na mga produkto sa makina para sa pag-install ng produktong ito."/>
+	<String Id="Error1607" Overridable="yes" Value="Dapat isara ang mga sumusunod na application bago ipagpatuloy ang pag-install:"/>
+	<String Id="Error1606" Overridable="yes" Value="Hindi ma-access ang lokasyon ng network [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Walang sapat na espasyo sa disk sa volume na &amp;apos;[ProductName]&amp;apos; para ipagpatuloy ang pag-install nang naka-enable ang pagbawi. [ProductName] KB ang kailangan, ngunit [ProductName] KB lang ang available. I-click ang Huwag pansinin upang ipagpatuloy ang pag-install nang hindi nagse-save ng impormasyon sa pagbawi, i-click ang Subukang muli upang suriin muli ang magagamit na espasyo, o i-click ang Kanselahin upang ihinto ang pag-install."/>
+	<String Id="Error1604" Overridable="yes" Value="Naka-install na ang produktong &amp;apos;[ProductName]&amp;apos;, na pumipigil sa pag-install ng produktong ito. Ang dalawang produkto ay hindi magkatugma."/>
+	<String Id="Error1603" Overridable="yes" Value="Ang file [ProductName][ProductName] ay ginagamit sa pamamagitan ng sumusunod na proseso: Pangalan: [ProductName], Id: [ProductName], Pamagat ng Window: &amp;apos;[ProductName]&amp;apos;}. Isara ang application na iyon at subukang muli."/>
+	<String Id="Error1602" Overridable="yes" Value="Cancelatyrmak isleýändigiňize ynanýarsyňyzmy?"/>
+	<String Id="Error1601" Overridable="yes" Value="Wala sa espasyo sa disk -- Dami: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Ang user na &amp;apos;[ProductName]&amp;apos; ay dati nang nagpasimula ng pag-install para sa produktong &amp;apos;[ProductName]&amp;apos;. Kakailanganin ng user na iyon na patakbuhin muli ang pag-install na iyon bago nila magamit ang produktong iyon."/>
+	<String Id="Error1502" Overridable="yes" Value="Ang user na &amp;apos;[ProductName]&amp;apos; ay dati nang nagpasimula ng pag-install para sa produktong &amp;apos;[ProductName]&amp;apos;. Kakailanganin ng user na iyon na patakbuhin muli ang pag-install na iyon bago nila magamit ang produktong iyon. Magpapatuloy na ang iyong kasalukuyang pag-install."/>
+	<String Id="Error1501" Overridable="yes" Value="Error sa pag-access ng secured na data. Pakitiyak na maayos na na-configure ang Windows Installer at subukang muli ang pag-install."/>
+	<String Id="Error1500" Overridable="yes" Value="Ang isa pang pag-install ay isinasagawa. Dapat mong kumpletuhin ang pag-install na iyon bago ipagpatuloy ang isang ito."/>
+	<String Id="Error1410" Overridable="yes" Value="Hindi madagdagan ang magagamit na espasyo sa pagpapatala. [ProductName] KB ng libreng registry space ay kinakailangan para sa pag-install ng application na ito."/>
+	<String Id="Error1409" Overridable="yes" Value="Hindi mabasa ang impormasyon ng seguridad para sa key [ProductName].{{ System error [ProductName].}} I-verify na mayroon kang sapat na access sa key na iyon, o makipag-ugnayan sa iyong support personnel."/>
+	<String Id="Error1408" Overridable="yes" Value="Hindi makakuha ng mga pangalan ng sub key para sa key [ProductName].{{ System error [ProductName].}} I-verify na mayroon kang sapat na access sa key na iyon, o makipag-ugnayan sa iyong support personnel."/>
+	<String Id="Error1407" Overridable="yes" Value="Hindi makakuha ng mga pangalan ng halaga para sa key [ProductName].{{ System error [ProductName].}} I-verify na mayroon kang sapat na access sa key na iyon, o makipag-ugnayan sa iyong support personnel."/>
+	<String Id="Error1406" Overridable="yes" Value="Hindi maisulat ang value [ProductName] sa key [ProductName].{{ System error [ProductName].}} I-verify na mayroon kang sapat na access sa key na iyon, o makipag-ugnayan sa iyong support personnel."/>
+	<String Id="Error1405" Overridable="yes" Value="Hindi mabasa ang value [ProductName] mula sa key [ProductName].{{ System error [ProductName].}} I-verify na mayroon kang sapat na access sa key na iyon, o makipag-ugnayan sa iyong support personnel."/>
+	<String Id="Error1404" Overridable="yes" Value="Hindi matanggal ang key [ProductName].{{ System error [ProductName].}} I-verify na mayroon kang sapat na access sa key na iyon, o makipag-ugnayan sa iyong support personnel."/>
+	<String Id="Error1403" Overridable="yes" Value="Hindi matanggal ang value [ProductName] mula sa key [ProductName].{{ System error [ProductName].}} I-verify na mayroon kang sapat na access sa key na iyon, o makipag-ugnayan sa iyong support personnel."/>
+	<String Id="Error1402" Overridable="yes" Value="Hindi mabuksan ang key: [ProductName].{{ System error [ProductName].}} I-verify na mayroon kang sapat na access sa key na iyon, o makipag-ugnayan sa iyong support personnel."/>
+	<String Id="Error1401" Overridable="yes" Value="Hindi makagawa ng key: [ProductName].{{ System error [ProductName].}} I-verify na mayroon kang sapat na access sa key na iyon, o makipag-ugnayan sa iyong support personnel."/>
+	<String Id="Error1336" Overridable="yes" Value="Nagkaroon ng error sa paglikha ng pansamantalang file na kailangan upang makumpleto ang pag-install na ito.{{ Folder: [ProductName]. Code ng error ng system: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Ang cabinet file na &amp;apos;[ProductName]&amp;apos; na kinakailangan para sa pag-install na ito ay sira at hindi magagamit. Maaari itong magpahiwatig ng error sa network, error sa pagbabasa mula sa CD-ROM, o problema sa package na ito."/>
+	<String Id="Error1334" Overridable="yes" Value="Hindi ma-install ang file na &amp;apos;[ProductName]&amp;apos; dahil hindi mahanap ang file sa cabinet file na &amp;apos;[ProductName]&amp;apos;. Maaari itong magpahiwatig ng error sa network, error sa pagbabasa mula sa CD-ROM, o problema sa package na ito."/>
+	<String Id="Error1333" Overridable="yes" Value="Nabigong i-patch nang tama ang [ProductName] file: CRC error."/>
+	<String Id="Error1332" Overridable="yes" Value="Nabigong ilipat nang tama ang [ProductName] file: CRC error."/>
+	<String Id="Error1331" Overridable="yes" Value="Nabigong kopyahin nang tama ang [ProductName] file: CRC error."/>
+	<String Id="Error1330" Overridable="yes" Value="Ang isang file na kinakailangan ay hindi ma-install dahil ang cabinet file [ProductName] ay may di-wastong digital signature. Ito ay maaaring magpahiwatig na ang cabinet file ay sira.{{ Error [ProductName] ay ibinalik ng WinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Ang isang file na kinakailangan ay hindi maaaring mai-install dahil ang cabinet file [ProductName] ay hindi digitally sign. Ito ay maaaring magpahiwatig na ang cabinet file ay sira."/>
+	<String Id="Error1328" Overridable="yes" Value="Error sa paglalapat ng patch sa file [ProductName]. Ito ay malamang na na-update sa pamamagitan ng ibang paraan, at hindi na mababago ng patch na ito. Para sa higit pang impormasyon makipag-ugnayan sa iyong patch vendor.{{ System Error: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Di-wastong Drive: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Error sa pagkuha ng seguridad ng file: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; ay hindi wastong maikling pangalan ng file."/>
+	<String Id="Error1324" Overridable="yes" Value="Ang path ng folder na &amp;apos;[ProductName]&amp;apos; ay naglalaman ng hindi wastong character."/>
+	<String Id="Error1323" Overridable="yes" Value="Ang path ng folder na &amp;apos;[ProductName]&amp;apos; ay naglalaman ng mga salita na hindi wasto sa mga path ng folder."/>
+	<String Id="Error1322" Overridable="yes" Value="Ang isang bahagi ng landas ng folder na &amp;apos;[ProductName]&amp;apos; ay hindi wasto. Ito ay maaaring walang laman o lumampas sa haba na pinapayagan ng system."/>
+	<String Id="Error1321" Overridable="yes" Value="Ang Installer ay walang sapat na mga pribilehiyo upang baguhin ang file na ito: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Masyadong mahaba ang tinukoy na landas: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Nagkaroon ng error sa network habang sinusubukang buksan ang source file cabinet: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Isang error sa network ang naganap habang sinusubukang likhain ang direktoryo: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="May naganap na error habang sinusubukang likhain ang direktoryo: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Isang error sa network ang naganap habang sinusubukang basahin mula sa file: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Hindi makapagsulat sa tinukoy na folder: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Ang tinukoy na landas na &amp;apos;[ProductName]&amp;apos; ay hindi magagamit."/>
+	<String Id="Error1313" Overridable="yes" Value="Ang volume [ProductName] ay kasalukuyang hindi magagamit. Mangyaring pumili ng isa pa."/>
+	<String Id="Error1312" Overridable="yes" Value="Hindi malikha ang direktoryo na &amp;apos;[ProductName]&amp;apos;. Mayroon nang file na may ganitong pangalan. Mangyaring palitan ang pangalan o alisin ang file at i-click ang Subukang muli, o i-click ang Kanselahin upang lumabas."/>
+	<String Id="Error1311" Overridable="yes" Value="Hindi nakita ang source file{{(cabinet)}}: [ProductName]. I-verify na umiiral ang file at maaari mo itong ma-access."/>
+	<String Id="Error1310" Overridable="yes" Value="Error sa pagsulat sa file: [ProductName].{{ System error [ProductName].}} I-verify na mayroon kang access sa direktoryong iyon."/>
+	<String Id="Error1309" Overridable="yes" Value="Error sa pagbabasa mula sa file: [ProductName].{{ System error [ProductName].}} I-verify na ang file ay umiiral at na maaari mong ma-access ito."/>
+	<String Id="Error1308" Overridable="yes" Value="Hindi nakita ang source file: [ProductName]. I-verify na umiiral ang file at maaari mo itong ma-access."/>
+	<String Id="Error1307" Overridable="yes" Value="Walang sapat na espasyo sa disk para i-install ang file na ito: [ProductName]. Magbakante ng ilang espasyo sa disk at i-click ang Subukang muli, o i-click ang Kanselahin upang lumabas."/>
+	<String Id="Error1306" Overridable="yes" Value="Ang isa pang application ay may eksklusibong access sa file na &amp;apos;[ProductName]&amp;apos;. Mangyaring isara ang lahat ng iba pang mga application, pagkatapos ay i-click ang Subukang Muli."/>
+	<String Id="Error1305" Overridable="yes" Value="Error sa pagbabasa mula sa file [ProductName].{{ System error [ProductName].}} I-verify na ang file ay umiiral at na maaari mong i-access ito."/>
+	<String Id="Error1304" Overridable="yes" Value="Error sa pagsulat sa file: [ProductName]. I-verify na mayroon kang access sa direktoryong iyon."/>
+	<String Id="Error1303" Overridable="yes" Value="Ang installer ay walang sapat na mga pribilehiyo upang ma-access ang direktoryo na ito: [ProductName]. Ang pag-install ay hindi maaaring magpatuloy. Mag-log on bilang administrator o makipag-ugnayan sa iyong system administrator."/>
+	<String Id="Error1302" Overridable="yes" Value="Mangyaring ipasok ang disk: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Hindi malikha ang file na &amp;apos;[ProductName]&amp;apos;. Mayroon nang direktoryo na may ganitong pangalan. Kanselahin ang pag-install at subukang mag-install sa ibang lokasyon."/>
+	<String Id="Error1101" Overridable="yes" Value="Error sa pagbabasa mula sa file: [ProductName].{{ System error [ProductName].}} I-verify na umiiral ang file at maaari mo itong ma-access."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Nabigo ang pag-setup."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Matagumpay na nakumpleto ang pag-setup."/>
+	<String Id="Error23" Overridable="yes" Value="Naghahanda na alisin ang mga mas lumang bersyon ng application na ito..."/>
+	<String Id="Error22" Overridable="yes" Value="Inaalis ang mga mas lumang bersyon ng application na ito..."/>
+	<String Id="Error21" Overridable="yes" Value="Nangangalap ng kinakailangang impormasyon..."/>
+	<String Id="Error20" Overridable="yes" Value="Mangyaring maghintay habang kino-configure ng Windows ang [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Napatigil ang installer nang maaga."/>
+	<String Id="Error18" Overridable="yes" Value="Hindi na tumutugon ang installer."/>
+	<String Id="Error17" Overridable="yes" Value="Wala sa memorya. I-shut down ang ibang mga application bago subukang muli."/>
+	<String Id="Error16" Overridable="yes" Value="Oras na natitira: {[ProductName] minuto }{[ProductName] segundo}"/>
+	<String Id="Error15" Overridable="yes" Value="Natapos ang pagkilos [ProductName]: [ProductName]. Ibinalik ang halaga [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Pagsisimula ng pagkilos [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Huminto ang pag-log: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Nagsimula ang pag-log: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Uri ng mensahe: [ProductName], Argumento: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Aksyon [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Puno ang disk: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Nakatagpo ang installer ng hindi inaasahang error sa pag-install ng package na ito. Ito ay maaaring magpahiwatig ng problema sa package na ito. Ang error code ay [ProductName]. {{Ang mga argumento ay: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Impormasyon [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Babala [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Error [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Fatal error: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="I-unpublish ang impormasyon ng produkto"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="File: [ProductName], Direktoryo: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Pag-alis ng mga inilipat na file"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="File: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Pag-alis ng mga backup na file"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="การย้อนกลับการดำเนินการ:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Konteksto ng Application:[ProductName], Pangalan ng Assembly:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="I-unpublish ang impormasyon ng assembly"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Konteksto ng Application:[ProductName], Pangalan ng Assembly:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Pag-publish ng impormasyon sa pagpupulong"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="File: [ProductName], Dependencies: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Pag-install ng system catalog"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Pagbuo ng mga pagpapatakbo ng script para sa pagkilos:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Aplikasyon sa advertising"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Susi: [ProductName], Pangalan: [ProductName], Halaga: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Pagsusulat ng mga halaga ng pagpapatala ng system"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="File: [ProductName], Seksyon: [ProductName], Susi: [ProductName], Halaga: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Pagsusulat ng mga halaga ng INI file"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Ady: [ProductName], Gymmatlygy: [ProductName], Hereket [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Ina-update ang mga string ng kapaligiran"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Inaalis sa pagrehistro ang mga uri ng library"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Inaalis sa pagrehistro ang mga identifier ng program"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="Uri ng Nilalaman ng MIME: [ProductName], Extension: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Inaalis sa pagkakarehistro ang impormasyon ng MIME"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Font: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Inaalis sa pagrehistro ang mga font"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Extension: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Inaalis sa pagpaparehistro ang mga server ng extension"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Inaalis sa pagkakarehistro ang COM+ na Mga Application at Bahagi"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Class Id: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Alisin sa pagkakarehistro ang mga server ng Class"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Tampok: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="I-unpublish ang Mga Feature ng Produkto"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Component ID: [ProductName], Qualifier: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="I-unpublish ang mga Kwalipikadong Bahagi"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Serbisyo: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Paghinto ng mga serbisyo"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Serbisyo: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Pagsisimula ng mga serbisyo"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Sinisimulan ang mga direktoryo ng ODBC"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="File: [ProductName], Folder: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Pag-unregister ng mga module"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="File: [ProductName], Folder: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Pagrehistro ng mga module"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Paghahanap para sa mga kwalipikadong produkto"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Shortcut: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Pag-alis ng mga shortcut"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Susi: [ProductName], Pangalan: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Pag-alis ng mga halaga ng pagpapatala ng system"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Pag-alis ng mga bahagi ng ODBC"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="File: [ProductName], Seksyon: [ProductName], Susi: [ProductName], Halaga: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Pag-alis ng mga entry sa INI file"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Folder: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Pag-alis ng mga folder"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="File: [ProductName], Direktoryo: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Pag-alis ng mga file"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Application: [ProductName], Command line: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Pag-alis ng mga application"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Ady: [ProductName], Gymmatlygy: [ProductName], Hereket [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Ina-update ang mga string ng kapaligiran"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="File: [ProductName], Direktoryo: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Pag-alis ng mga duplicate na file"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Pagrerehistro ng user"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Pagrerehistro ng mga uri ng aklatan"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Pagrerehistro ng produkto"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Font: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Pagrerehistro ng mga font"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Mga User: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Pagrerehistro ng COM+ Applications and Components"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Pag-update ng pagpaparehistro ng bahagi"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="File: [ProductName], Direktoryo: [ProductName], Laki: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Pag-patch ng mga file"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="File: [ProductName], Direktoryo: [ProductName], Laki: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Paglipat ng mga file"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Application: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Ang paglipat ng mga estado ng tampok mula sa mga kaugnay na application"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Pagsusuri ng mga kondisyon sa paglulunsad"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Serbisyo: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Pag-install ng mga bagong serbisyo"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Pag-install ng mga bahagi ng ODBC"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Natagpuan ang application: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Naghahanap ng mga kaugnay na aplikasyon"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="File: [ProductName], Direktoryo: [ProductName], Laki: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Paglikha ng mga duplicate na file"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Serbisyo: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Pagtanggal ng mga serbisyo"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Folder: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Paglikha ng mga folder"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Paghahanap para sa mga kwalipikadong produkto"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="File: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Nagbubuklod ng mga executable"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Ari-arian: [ProductName], Lagda: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Naghahanap ng mga naka-install na application"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Libreng espasyo: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Paglalaan ng puwang sa pagpapatala"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Pagrerehistro ng mga identifier ng programa"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="Uri ng Nilalaman ng MIME: [ProductName], Extension: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Pagrerehistro ng impormasyon ng MIME"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Extension: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Pagrerehistro ng mga extension server"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Class Id: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Pagrerehistro ng mga server ng Klase"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Pag-publish ng impormasyon ng produkto"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Tampok: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Mga Tampok ng Produkto sa Pag-publish"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Component ID: [ProductName], Qualifier: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Pag-publish ng mga Kwalipikadong Bahagi"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Shortcut: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Paglikha ng mga shortcut"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Pag-compute ng mga kinakailangan sa espasyo"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Pag-compute ng mga kinakailangan sa espasyo"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Pag-compute ng mga kinakailangan sa espasyo"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="File: [ProductName], Direktoryo: [ProductName], Laki: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Pagkopya ng mga file sa pag-install ng network"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="File: [ProductName], Direktoryo: [ProductName], Laki: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Pagkopya ng mga bagong file"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Pagpapatunay ng pag-install"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pakibasa ang [ProductName] License Agreement"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;I-update"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp; Gurmak"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Welcome sa [ProductName] Setup Wizard"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Ia-update ng Setup Wizard ang [ProductName] sa iyong computer. I-click ang Susunod upang magpatuloy o Kanselahin upang lumabas sa Setup Wizard."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="I-install ng Setup Wizard ang [ProductName] sa iyong computer. I-click ang Susunod upang magpatuloy o Kanselahin upang lumabas sa Setup Wizard."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Icon ng tandang"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Mangyaring maghintay habang tinatapos ng installer ang pagtukoy sa iyong mga kinakailangan sa espasyo sa disk."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Bumalik"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Handa nang i-update ang [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="I-click ang Update upang i-update ang [ProductName] mula sa iyong computer. I-click ang Bumalik upang suriin o baguhin ang alinman sa iyong mga setting ng pag-install. I-click ang Kanselahin upang lumabas sa wizard."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;I-update"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Handa nang alisin ang [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="I-click ang Alisin upang alisin ang [ProductName] mula sa iyong computer. I-click ang Bumalik upang suriin o baguhin ang alinman sa iyong mga setting ng pag-install. I-click ang Kanselahin upang lumabas sa wizard."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Alisin"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Handa nang ayusin ang [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="I-click ang Repair para ayusin ang pag-install ng [ProductName]. I-click ang Bumalik upang suriin o baguhin ang alinman sa iyong mga setting ng pag-install. I-click ang Kanselahin upang lumabas sa wizard."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Muling ipares"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Handa nang baguhin ang [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="I-click ang Baguhin upang simulan ang pag-install. I-click ang Bumalik upang suriin o baguhin ang alinman sa iyong mga setting ng pag-install. I-click ang Kanselahin upang lumabas sa wizard."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp; Üýtget"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Handa nang i-install ang [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="I-click ang I-install upang simulan ang pag-install. I-click ang Bumalik upang suriin o baguhin ang alinman sa iyong mga setting ng pag-install. I-click ang Kanselahin upang lumabas sa wizard."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp; Gurmak"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="I-click ang pindutang Tapusin upang lumabas sa Setup Wizard."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="Naantala ang pag-setup ng [ProductName]. Ang iyong system ay hindi nabago. Upang i-install ang program na ito sa ibang pagkakataon, mangyaring patakbuhin muli ang pag-install."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="Naantala ang {\WixUI_Font_Bigger}[ProductName] Setup Wizard"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Ang lahat ng mga tampok ng programa ay mai-install. Nangangailangan ng pinakamaraming espasyo sa disk."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Nagbibigay-daan sa mga user na pumili kung aling mga feature ng program ang mai-install at kung saan sila i-install. Inirerekomenda para sa mga advanced na user."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Ini-install ang pinakakaraniwang mga tampok ng programa. Inirerekomenda para sa karamihan ng mga user."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Piliin ang uri ng setup na pinakaangkop sa iyong mga pangangailangan"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pumili ng Uri ng Setup"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Kumpletuhin ang Pag-install"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="Kumpletuhin"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Custom na Pag-install"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ustom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Karaniwang Pag-install"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp; Adaty"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Ipinagpapatuloy ang [ProductName] Setup Wizard"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Kukumpleto ng Setup Wizard ang pag-install ng [ProductName] sa iyong computer. I-click ang I-install upang magpatuloy o Kanselahin upang lumabas sa Setup Wizard."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp; Gurmak"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Katayuan:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Tapos na ang pag-unlad"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Ina-update ang [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Mangyaring maghintay habang ina-update ng Setup Wizard ang [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Pag-alis ng [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Mangyaring maghintay habang inaalis ng Setup Wizard ang [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Pag-aayos ng [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Mangyaring maghintay habang inaayos ng Setup Wizard ang [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Pagbabago ng [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Mangyaring maghintay habang binabago ng Setup Wizard ang [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Pag-install ng [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Mangyaring maghintay habang ini-install ng Setup Wizard ang [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Welcome sa [ProductName] Setup Wizard"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Mangyaring maghintay habang naghahanda ang Setup Wizard na gabayan ka sa pag-install."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Bilang kahalili, maaari mong piliing i-disable ang rollback functionality ng installer. Pinipigilan ng hindi pagpapagana ng rollback ang installer na ibalik ang orihinal na estado ng iyong computer sakaling maantala ang pag-install sa anumang paraan. I-click ang Oo kung gusto mong kunin ang panganib na hindi paganahin ang rollback."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Wala sa Disk Space"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Ang espasyo ng disk na kinakailangan para sa pag-install ay lumampas sa magagamit na espasyo sa disk."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Ang mga naka-highlight na volume ay walang sapat na espasyo sa disk na magagamit para sa kasalukuyang napiling mga tampok. Maaari kang mag-alis ng ilang file sa mga naka-highlight na volume, mag-install ng mas kaunting feature, o pumili ng ibang destinasyong drive."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Wala sa Disk Space"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Ang espasyo ng disk na kinakailangan para sa pag-install ay lumampas sa magagamit na espasyo sa disk."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Ang mga naka-highlight na volume ay walang sapat na espasyo sa disk na magagamit para sa kasalukuyang napiling mga tampok. Maaari kang mag-alis ng ilang file sa mga naka-highlight na volume, mag-install ng mas kaunting feature, o pumili ng ibang destinasyong drive."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Huwag isara ang mga application. Kakailanganin ang isang reboot."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="Programmalary ýapyň we täzeden açmaga synanyşyň."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Mga File na Ginagamit"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Ang ilang mga file na kailangang i-update ay kasalukuyang ginagamit."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Ang mga sumusunod na application ay gumagamit ng mga file na kailangang i-update ng setup na ito. Maaari mong hayaan ang Setup Wizard na isara ang mga ito at subukang i-restart ang mga ito o i-reboot ang makina sa ibang pagkakataon."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Welcome sa [ProductName] Setup Wizard"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Binibigyang-daan ka ng Setup Wizard na baguhin ang paraan ng pag-install ng mga feature ng [ProductName] sa iyong computer o alisin ito sa iyong computer. I-click ang Susunod upang magpatuloy o Kanselahin upang lumabas sa Setup Wizard."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="Hindi maaaring ayusin ang [ProductName]."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Nag-aayos ng mga error sa pinakabagong pag-install sa pamamagitan ng pag-aayos ng mga nawawala at sira na file, shortcut, at mga entry sa registry."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="Hindi maalis ang [ProductName]."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Inaalis ang [ProductName] mula sa iyong computer."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="Ang [ProductName] ay walang independiyenteng mapipiling mga tampok."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Hinahayaan kang baguhin ang paraan ng pag-install ng mga feature."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Baguhin, ayusin, o alisin ang pag-install"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Piliin ang operasyon na gusto mong gawin."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Alisin ang Pag-install"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Alisin"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Pag-aayos ng Pag-install"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Muling ipares"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Baguhin ang Pag-install"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp; Üýtget"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kasunduan sa Lisensya ng End-User"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Mangyaring basahin nang mabuti ang sumusunod na kasunduan sa lisensya"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Icon ng impormasyon"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Ang direktoryo ng pag-install ay dapat nasa isang lokal na hard drive."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp; Üýtget ..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Pag-install at folder:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="Ang [ProductName] ay mai-install sa isang per-machine folder bilang default at magiging available para sa lahat ng user. Maaari mong baguhin ang default na folder ng pag-install. Dapat ay mayroon kang mga pribilehiyo ng lokal na Administrator."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}I-install para sa lahat ng user ng &amp;machine na ito"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="Hindi sinusuportahan ng [ProductName] ang pag-install ng bawat user."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="Ang [ProductName] ay mai-install sa isang per-user na folder at magiging available para lang sa iyong user account. Hindi mo kailangan ng mga pribilehiyo ng lokal na Administrator."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}I-install &amp;para lang sa iyo ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Saklaw ng Pag-install"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Piliin ang saklaw at folder ng pag-install"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="I-install ang [ProductName] sa:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="I-click ang Susunod upang i-install sa default na folder o i-click ang Baguhin upang pumili ng isa pa."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Destination Folder"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp; Üýtget ..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Mga File na Ginagamit"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Ang ilang mga file na kailangang i-update ay kasalukuyang ginagamit."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Ang mga sumusunod na application ay gumagamit ng mga file na kailangang i-update ng setup na ito. Isara ang mga application na ito at pagkatapos ay i-click ang &amp;Subukan muli upang magpatuloy sa pag-setup o Lumabas upang lumabas dito."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="Lumabas"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp; Üýtget"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp; Gurmak"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="Mga TampokDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="Mga TampokDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Mga Feature ng Produkto"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Piliin ang paraan na gusto mong mai-install ang mga feature."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Mga tampok ng produkto"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="I-click ang pindutang Tapusin upang lumabas sa Setup Wizard."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Ang Setup Wizard ay natapos nang maaga dahil sa isang error. Ang iyong system ay hindi nabago. Upang i-install ang program na ito sa ibang pagkakataon, patakbuhin muli ang Setup Wizard."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="Natapos ang {\WixUI_Font_Bigger}[ProductName] Setup Wizard nang maaga"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Nakumpleto ang [ProductName] Setup Wizard"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="I-click ang pindutang Tapusin upang lumabas sa Setup Wizard."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Icon ng impormasyon"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Teksto ng impormasyon"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Mga Kinakailangan sa Disk Space"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Ang puwang sa disk na kinakailangan para sa pag-install ng mga napiling tampok."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Ang mga naka-highlight na volume ay walang sapat na espasyo sa disk na magagamit para sa mga napiling feature. Maaari kang mag-alis ng ilang file sa mga naka-highlight na volume, mag-install ng mas kaunting feature, o pumili ng iba&amp;apos;t ibang destination drive."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Lokasyon:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Custom na Setup"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Piliin ang paraan na gusto mong mai-install ang mga feature."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="I-click ang mga icon sa puno sa ibaba upang baguhin ang paraan ng pag-install ng mga feature."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Disk at Paggamit"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Muling&amp;itakda"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;rowse..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Puno ng mga seleksyon"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Icon ng impormasyon"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="[ProductName] gurnamasyny ýatyrmak isleýändigiňize ynanýarsyňyzmy?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Baguhin ang destination folder"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Mag-browse sa destination folder"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp; Papkanyň ady:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Gumawa ng bagong folder"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_Bago"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Pataas ng isang antas"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Tingnan sa:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;advanced"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp; Gurmak"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="I-click ang I-install upang i-install ang produkto na may mga default na opsyon para lang sa iyo. I-click ang Advanced upang baguhin ang mga opsyon sa pag-install."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="I-click ang I-install upang i-install ang produkto na may mga default na opsyon para sa lahat ng user. I-click ang Advanced upang baguhin ang mga opsyon sa pag-install."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pakibasa ang [ProductName] License Agreement"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;I-print"/>
+	<String Id="WixUIOK" Overridable="yes" Value="OK"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Hindi"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Oo"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Huwag pansinin"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Subukan muli"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Tapos na"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Kanselahin"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Susunod"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Bumalik"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Pag-uninstall ng configuration ng Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Ibinabalik ang configuration ng Windows Firewall"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Pag-install ng configuration ng Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Ibinabalik ang configuration ng Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Pag-configure ng Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Pag-configure ng Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Hindi makakonekta sa Windows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Ang mga visualization para sa mga malalayong application ay magagamit bilang opsyon sa pagsasaayos"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Tingnan ang mga server ng RAAS sa Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Gumawa ng mga remote na shortcut sa application sa mga application ng server sa lokal na computer"/>

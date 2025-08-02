@@ -1,9 +1,16 @@
-﻿<WixLocalization Culture="es" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizaciones para aplicaciones remotas disponibles como opción en la configuración"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="Ver servidores RAAS en el Explorador"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Crear accesos directos de aplicaciones remotas a aplicaciones de servidor en la computadora local"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualizaciones"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Extensión del espacio de nombres de Shell"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Atajos remotos"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1034"/>
+﻿<WixLocalization Culture="es-es-es-es" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Desinstalación de la configuración del Firewall de Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Revertir la configuración del Firewall de Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instalación de la configuración del Firewall de Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Revertir la configuración del Firewall de Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Configuración del Firewall de Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Configuración del Firewall de Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="No se puede conectar al Firewall de Windows. ([2] [3] [4] [5])"/>
+	<String Id="VisualizationsDes-es-es-escription" Overridable="yes-es-es-es" Value="Visualizaciones-es-es-es para aplicaciones-es-es-es remotas disponibles-es-es-es como opción en la configuración"/>
+	<String Id="Names-es-es-espaceDes-es-es-escription" Overridable="yes-es-es-es" Value="Ver servidores-es-es-es RAAS en el Explorador"/>
+	<String Id="ShortcutsDes-es-es-escription" Overridable="yes-es-es-es" Value="Crear acces-es-es-esos directos de aplicaciones-es-es-es remotas a aplicaciones-es-es-es de servidor en la computadora local"/>
+	<String Id="VisualizationsTitle" Overridable="yes-es-es-es" Value="Visualizaciones-es-es-es"/>
+	<String Id="Names-es-es-espaceTitle" Overridable="yes-es-es-es" Value="Extensión del es-es-es-espacio de nombres-es-es-es de Shell"/>
+	<String Id="ShortcutsTitle" Overridable="yes-es-es-es" Value="Atajos remotos"/>
+	<String Id="ProductLanguage" Overridable="yes-es-es-es" Value="1034"/>
 </WixLocalization>

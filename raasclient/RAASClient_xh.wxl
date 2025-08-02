@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="xh" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="xh" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Umthamo"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Ubungakanani beDiski"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Kufuneka"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Umahluko"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Iyafumaneka"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Ixesha eliseleyo:{ [ProductName] imizuzu}{ [ProductName] imizuzwana}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Olu phawu lufuna [ProductName] kwihard drive yakho. Ine [ProductName] ye [ProductName] iinxalenye ezincinci ezikhethiweyo. Iinxalenye zifuna [ProductName] kwihard drive yakho."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Olu phawu lufuna [ProductName] kwihard drive yakho. Ine [ProductName] ye [ProductName] iinxalenye ezincinci ezikhethiweyo. Iinxalenye ezincinci zikhulula [ProductName] kwihard drive yakho."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Olu phawu lukhulula [ProductName] kwihard drive yakho. Ine [ProductName] ye [ProductName] iinxalenye ezincinci ezikhethiweyo. Iinxalenye zifuna [ProductName] kwihard drive yakho."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Olu phawu lukhulula [ProductName] kwihard drive yakho. Ine [ProductName] ye [ProductName] iinxalenye ezincinci ezikhethiweyo. Iinxalenye ezincinci zikhulula [ProductName] kwihard drive yakho."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Eli nqaku liza kuhlala liqhutywa kwinethiwekhi"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Eli nqaku liza kutshintsha ukusuka kwimo yenethiwekhi ukuze ifakwe kwi-hard drive yasekhaya"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Eli nqaku liza kutshintsha ukusuka kwimo yothungelwano ukuya kumiselwa ukuze kufakwe xa kufuneka"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Eli nqaku liza kukhutshwa ngokupheleleyo, awuzukwazi ukuyiqhuba kwinethiwekhi"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Eli nqaku liza kususwa kwi-hard drive yakho yasekhaya, kodwa liza kufumaneka ukusebenza kwinethiwekhi"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Olu phawu luya kuhlala kwi-hard drive yakho yasekhaya"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Eli nqaku liza kususwa kwi-hard drive yakho yasekhaya, kodwa liza kufumaneka ukusebenza kwi-CD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Eli nqaku liza kususwa kwi-hard drive yakho yobulali, kodwa iya kumiselwa ukuba ihlohlwe xa ifunwa"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Olu phawu luya kususwa ngokupheleleyo"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Ukuqulunqa iindleko zolu phawu..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Olu phawu lufuna [ProductName] kwihard drive yakho."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Olu phawu lukhulula [ProductName] kwihard drive yakho."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Eli nqaku liza kutshintsha ukusuka kwimeko ye-CD ukuze ifakwe kwi-hard drive yasekhaya"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Eli nqaku liza kuhlala liqhutywa kwi-CD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Eli nqaku liza kutshintsha ukusuka kwimeko ye-CD ukuya kumiselwa ukuze ifakwe xa ifunwa"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Eli nqaku liza kukhutshwa ngokupheleleyo, awuzukwazi ukuyiqhuba isuka kwiCD"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Eli nqaku liza kufumaneka ukusebenza kwinethiwekhi"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Olu phawu luya kufakwa kwi-hard drive yakho yobulali"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Eli nqaku liza kufumaneka ukuba liqhutywe kwi-CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Iza kufakwa xa kuyimfuneko"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Olu phawu aluyi kufumaneka"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Eli nqaku liza kuhlolelwa ukusebenza kwinethiwekhi"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Olu phawu luya kufakwa kwi-hard drive yasekhaya"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Eli nqaku liza kuhlolelwa ukusebenza kwi-CD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Olu phawu luzakusetwa ukuba lufakwe xa lufunwa"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Olu phawu luza kuhlala lungahlohliwe"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Ukuqokelela ulwazi olufunekayo..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Isiqulathi seefayili|Isiqulathi seefayili esitsha"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Iza kuhlolelwa ukusebenza kwinethiwekhi"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Iza kufakwa kwi-hard drive yasekhaya"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Iza kufakelwa ukusebenza kwi-CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Lonke uphawu luza kufakwa ukuze luqhutywe kwinethiwekhi"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Lonke uphawu luya kufakwa kwi-hard drive yasekhaya"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Lonke uphawu luya kufakwa ukuze luqhutywe kwiCD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Uphawu luya kufakwa xa lufuneka"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Lonke uphawu aluyi kufumaneka"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="iibhayithi"/>
+	<String Id="Error1938" Overridable="yes" Value="Kwenzeke impazamo ngexesha lofakelo lwendibano &amp;apos;[ProductName]&amp;apos;. Imodyuli enye okanye ngaphezulu yendibano ayifumanekanga. HRESULT: [ProductName].{{ ujongano lwendibano: [ProductName], umsebenzi: [ProductName], icandelo: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Kwenzeke impazamo ngexesha lofakelo lwendibano &amp;apos;[ProductName]&amp;apos;. Umsayino okanye ikhathalogu ayikwazanga kuqinisekiswa okanye ayisebenzi. HRESULT: [ProductName].{{ ujongano lwendibano: [ProductName], umsebenzi: [ProductName], icandelo: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Kwenzeke impazamo ngexesha lofakelo lwendibano &amp;apos;[ProductName]&amp;apos;. Indibano ayibizwanga ngamandla okanye ayisayinwanga ngobude obuncinci besitshixo. HRESULT: [ProductName].{{ ujongano lwendibano: [ProductName], umsebenzi: [ProductName], icandelo: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Kwenzeke impazamo ngexesha lofakelo lwendibano &amp;apos;[ProductName]&amp;apos;. Nceda ujonge kuNcedo kunye neNkxaso ngolwazi oluthe kratya. HRESULT: [ProductName].{{ ujongano lwendibano: [ProductName], umsebenzi: [ProductName], icandelo: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Ufakelo lwabasebenzisi luvaliwe ngepolisi kumatshini."/>
+	<String Id="Error1933" Overridable="yes" Value="Inkonzo ye-Windows Installer ayinakuhlaziya ifayile enye okanye ezingaphezulu ezikhuselweyo zeWindows.{{ Impazamo ye-SFP: [ProductName]. Uluhlu lweefayile ezikhuselweyo:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Inkonzo ye-Windows Installer ayinakuhlaziya ifayile yeWindows ekhuselweyo [ProductName].{{ Ushicilelo lwepakethe: [ProductName], Uguqulelo oluKhuselweyo lwe-OS: [ProductName], Impazamo ye-SFP: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Inkonzo yeWindows Installer ayinakuhlaziya inkqubo yefayile [ProductName] kuba ifayile ikhuselwe yiWindows. Kusenokufuneka uhlaziye inkqubo yakho yokusebenza ukuze le nkqubo isebenze kakuhle.{{ Ushicilelo lwephakheji: [ProductName], Uguqulelo oluKhuselweyo lwe-OS: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="Inkcazelo yenkonzo &amp;apos;[ProductName]&amp;apos; ([ProductName]) ayinakuguqulwa."/>
+	<String Id="Error1929" Overridable="yes" Value="Imposiso yokungabhalisi i-COM+ Isicelo. Qhagamshelana nabasebenzi benkxaso yakho ngolwazi oluthe kratya."/>
+	<String Id="Error1928" Overridable="yes" Value="Imposiso yokubhalisa i-COM+ Isicelo. Qhagamshelana nabasebenzi benkxaso yakho ngolwazi oluthe kratya."/>
+	<String Id="Error1927" Overridable="yes" Value="Iinkonzo zecandelo (COM+ 1.0) azifakwanga kule khompyutha. Olu fakelo lufuna iiNkonzo zeCandelo ukuze lugqibezele ngempumelelo. Iinkonzo zecandelo ziyafumaneka kwiWindows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Ayikwazanga ukuseta ukhuseleko lwefayile yefayile &amp;apos;[ProductName]&amp;apos;. Impazamo: [ProductName]. Qinisekisa ukuba unamalungelo awoneleyo okuguqula iimvume zokhuseleko zale fayile."/>
+	<String Id="Error1925" Overridable="yes" Value="Awunamalungelo awoneleyo okugqiba olu fakelo kubo bonke abasebenzisi bomatshini. Ngena njengomlawuli kwaye uphinde uzame olufakelo."/>
+	<String Id="Error1924" Overridable="yes" Value="Ayikwazanga ukuhlaziya umahluko wemeko-bume &amp;apos;[ProductName]&amp;apos;. Qinisekisa ukuba unamalungelo awoneleyo okuguqula iimeko eziguquguqukayo."/>
+	<String Id="Error1923" Overridable="yes" Value="Inkonzo &amp;apos;[ProductName]&amp;apos; ([ProductName]) ayikwazanga kufakwa. Qinisekisa ukuba unamalungelo awoneleyo okufaka iinkonzo zesistim."/>
+	<String Id="Error1922" Overridable="yes" Value="Inkonzo &amp;apos;[ProductName]&amp;apos; ([ProductName]) ayikwazanga ukucinywa. Qinisekisa ukuba unamalungelo awoneleyo okususa iinkonzo zenkqubo."/>
+	<String Id="Error1921" Overridable="yes" Value="Inkonzo &amp;apos;[ProductName]&amp;apos; ([ProductName]) ayikwazanga ukuyekwa. Qinisekisa ukuba unamalungelo awoneleyo okumisa iinkonzo zenkqubo."/>
+	<String Id="Error1920" Overridable="yes" Value="Inkonzo &amp;apos;[ProductName]&amp;apos; ([ProductName]) ayiphumelelanga ukuqalisa. Qinisekisa ukuba unamalungelo awoneleyo okuqalisa iinkonzo zesistim."/>
+	<String Id="Error1919" Overridable="yes" Value="Impazamo yokuqwalasela umthombo wedatha ye-ODBC: [ProductName], impazamo ye-ODBC [ProductName]: [ProductName]. Qinisekisa ukuba ifayile [ProductName] ikhona kwaye unako ukufikelela kuyo."/>
+	<String Id="Error1918" Overridable="yes" Value="Impazamo yokufaka umqhubi weODBC: [ProductName], impazamo yeODBC [ProductName]: [ProductName]. Qinisekisa ukuba ifayile [ProductName] ikhona kwaye unako ukufikelela kuyo."/>
+	<String Id="Error1917" Overridable="yes" Value="Impazamo yokususa umqhubi we-ODBC: [ProductName], impazamo ye-ODBC [ProductName]: [ProductName]. Qinisekisa ukuba unamalungelo awoneleyo okususa abaqhubi beODBC."/>
+	<String Id="Error1916" Overridable="yes" Value="Impazamo yokufaka umphathi womqhubi we-ODBC, impazamo ye-ODBC [ProductName]: [ProductName]. Qhagamshelana nabasebenzi bakho benkxaso."/>
+	<String Id="Error1915" Overridable="yes" Value="Impazamo yokususa umphathi womqhubi we-ODBC, impazamo ye-ODBC [ProductName]: [ProductName]. Qhagamshelana nabasebenzi bakho benkxaso."/>
+	<String Id="Error1914" Overridable="yes" Value="Ayikwazanga ukucwangcisa ifayile [ProductName] ukubuyisela ifayile [ProductName] xa kuqalwa ngokutsha. Qinisekisa ukuba unemvume yokubhala yokufayilisha [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Ayikwazanga ukuhlaziya ifayile ye-ini [ProductName][ProductName]. Qinisekisa ukuba ifayile ikhona kwaye unako ukufikelela kuyo."/>
+	<String Id="Error1912" Overridable="yes" Value="Ayikwazanga ukukhupha uhlobo lwethala leencwadi kwifayile [ProductName]. Qhagamshelana nabasebenzi bakho benkxaso."/>
+	<String Id="Error1911" Overridable="yes" Value="Ayikwazanga ukubhalisa uhlobo lwelayibrari yefayile [ProductName]. Qhagamshelana nabasebenzi bakho benkxaso."/>
+	<String Id="Error1910" Overridable="yes" Value="Ayikwazanga ukususa Indlela emfutshane [ProductName]. Qinisekisa ukuba ifayile enqumlayo ikhona kwaye unokufikelela kuyo."/>
+	<String Id="Error1909" Overridable="yes" Value="Ayikwazanga ukwenza indlela emfutshane [ProductName]. Qinisekisa ukuba isiqulathi seefayili sendawo sikhona kwaye ungafikelela kuso."/>
+	<String Id="Error1908" Overridable="yes" Value="Ayikwazanga ukubhalisa ifonti [ProductName]. Qinisekisa ukuba uneemvume ezaneleyo zokususa iifonti."/>
+	<String Id="Error1907" Overridable="yes" Value="Ayikwazanga ukubhalisa ifonti [ProductName]. Qinisekisa ukuba uneemvume ezaneleyo zokufakela iifonti, kwaye inkqubo iyawuxhasa lo mgca."/>
+	<String Id="Error1906" Overridable="yes" Value="Ayiphumelelanga ukufihla ipakethe [ProductName]. Impazamo: [ProductName]. Qhagamshelana nabasebenzi bakho benkxaso."/>
+	<String Id="Error1905" Overridable="yes" Value="Imodyuli [ProductName] ayiphumelelanga ukungabhalisi. HRESULT [ProductName]. Qhagamshelana nabasebenzi bakho benkxaso."/>
+	<String Id="Error1904" Overridable="yes" Value="Imodyuli [ProductName] ayiphumelelanga ukubhalisa. HRESULT [ProductName]. Qhagamshelana nabasebenzi bakho benkxaso."/>
+	<String Id="Error1903" Overridable="yes" Value="Ukucwangcisa umsebenzi wokuqalisa kwakhona: Ukucima ifayile [ProductName]. Kufuneka iqale ngokutsha ukugqiba umsebenzi."/>
+	<String Id="Error1902" Overridable="yes" Value="Ukucwangcisa umsebenzi wokuqalisa kwakhona: Ukuthiya ngokutsha ifayile [ProductName] ukuya [ProductName]. Kufuneka iqale ngokutsha ukugqiba umsebenzi."/>
+	<String Id="Error1901" Overridable="yes" Value="Imposiso yokuzama ukufunda kwisiseko sesiseko sokuhlohla: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Isiqulathi seefayili esisebenzayo sokuhlohla asikwazanga kuqinisekiswa."/>
+	<String Id="Error1806" Overridable="yes" Value="Awunamalungelo aneleyo okufunda esi siqulathi seefayili."/>
+	<String Id="Error1805" Overridable="yes" Value="Isiqulathi seefayili [ProductName] asikho. Nceda ngenisa indlela eya kwisiqulathi seefayili esele sikhona."/>
+	<String Id="Error1804" Overridable="yes" Value="Akukho diski kuqhubo [ProductName]. Nceda ufake enye kwaye ucofe uZama kwakhona, okanye ucofe Rhoxisa ukubuyela kwincoko yababini yebhrawuza kwaye ukhethe ivolyum eyahlukileyo."/>
+	<String Id="Error1803" Overridable="yes" Value="Akukho diski kuqhubo [ProductName]. Nceda ufake enye uze ucofe uZama kwakhona, okanye ucofe u-Rhoxisa ukuze ubuyele kwivolumu ebikhethwe ngaphambili."/>
+	<String Id="Error1802" Overridable="yes" Value="Ngapha kokungagcinwanga. Cima ezinye izicelo phambi kokuba uzame kwakhona."/>
+	<String Id="Error1801" Overridable="yes" Value="Indlela [ProductName] ayisebenzi. Nceda uchaze indlela esebenzayo."/>
+	<String Id="Error1732" Overridable="yes" Value="Để hoàn tất cài đặt [ProductName], bạn phải khởi động lại máy tính. Hiện tại, những người dùng khác đang đăng nhập vào máy tính này và việc khởi động lại có thể khiến họ mất dữ liệu. Bạn có muốn khởi động lại ngay không?"/>
+	<String Id="Error1731" Overridable="yes" Value="Umthombo wofakelo lwempahla yemveliso [ProductName] ayihambisani nempahla yomxhasi. Zama ufakelo kwakhona usebenzisa ikopi esebenzayo yomfakelo wofakelo &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Kufuneka ube nguMlawuli ukususa esi sicelo. Ukususa olu setyenziso, ungangena njengoMlawuli, okanye uqhagamshelane neqela lakho lenkxaso yobugcisa ukuze ufumane uncedo."/>
+	<String Id="Error1729" Overridable="yes" Value="Uqwalaselo aluphumelelanga."/>
+	<String Id="Error1728" Overridable="yes" Value="Ubumbeko lugqitywe ngempumelelo."/>
+	<String Id="Error1727" Overridable="yes" Value="Intengiso ayiphumelelanga."/>
+	<String Id="Error1726" Overridable="yes" Value="Intengiso igqitywe ngempumelelo."/>
+	<String Id="Error1725" Overridable="yes" Value="Ukususwa akuphumelelanga."/>
+	<String Id="Error1724" Overridable="yes" Value="Ukususwa kugqitywe ngempumelelo."/>
+	<String Id="Error1723" Overridable="yes" Value="Kukho ingxaki ngale phakheji yeWindows Installer. I-DLL efunekayo ukuze olu hlohlo lugqitywe ayikwazanga kuqhuba. Qhagamshelana nabasebenzi bakho abaxhasayo okanye umthengisi wephakheji.{{ Isenzo [ProductName], ukungena: [ProductName], ilayibrari: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Kukho ingxaki ngale phakheji yeWindows Installer. Inkqubo eqhutywa njengenxalenye yokuseta ayigqibanga njengoko bekulindelekile. Qhagamshelana nabasebenzi bakho abaxhasayo okanye umthengisi wephakheji.{{ Isenzo [ProductName], indawo: [ProductName], umyalelo: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Kukho ingxaki ngale phakheji yeWindows Installer. Inkqubo efunekayo ukuze olu hlohlo lugqitywe ayikwazanga kuqhuba. Qhagamshelana nabasebenzi bakho benkxaso okanye umthengisi wephakheji.{{ Isenzo: [ProductName], indawo: [ProductName], umyalelo: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Kukho ingxaki ngale phakheji yeWindows Installer. Iscript esifunekayo ukuze olu hlohlo lugqitywe asikwazanga kuqhuba. Qhagamshelana nabasebenzi bakho abaxhasayo okanye umthengisi wephakheji.{{ Isenzo sokwenza [ProductName] impazamo yeskripthi [ProductName], [ProductName]: [ProductName] Umgca [ProductName], Uluhlu [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="INkonzo yokuFakela iWindows ayikwazanga kufikeleleka. Oku kunokwenzeka ukuba usebenzisa iWindows kwimo ekhuselekileyo, okanye ukuba iWindows Installer ayifakelwanga kakuhle. Qhagamshelana nabasebenzi bakho benkxaso ukuze ufumane uncedo."/>
+	<String Id="Error1718" Overridable="yes" Value="Ifayile [ProductName] yaliwe ngumgaqo-nkqubo wotyikityo lwedijithali."/>
+	<String Id="Error1717" Overridable="yes" Value="Isusiwe [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="iqwalaselwe [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="ihlohliwe [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Inguqulelo endala ye [ProductName] ayinakususwa. Qhagamshelana neqela lakho lenkxaso yobugcisa.{{ Impazamo yeNkqubo [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] ayikwazi ukufaka enye yeemveliso zayo ezifunekayo. Qhagamshelana neqela lakho lenkxaso yobugcisa.{{ Impazamo yeNkqubo: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Ifayile enye okanye ezininzi ezifunekayo ukubuyisela ikhomputha yakho kwimeko yayo yangaphambili ayifumanekanga. Ukubuyisela akuyi kwenzeka."/>
+	<String Id="Error1711" Overridable="yes" Value="Kwenzeke imposiso ngexesha ubhala ulwazi lofako kwidiski. Jonga ukuqinisekisa ukuba isithuba sedisk esaneleyo sikhona, kwaye ucofe Phinda uzame, okanye Rhoxisa ukuphelisa ukufakela."/>
+	<String Id="Error1710" Overridable="yes" Value="Bạn có thể khôi phục máy tính về trạng thái trước đó hoặc tiếp tục cài đặt sau. Bạn có muốn khôi phục không?"/>
+	<String Id="Error1709" Overridable="yes" Value="imveliso: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Ukuhlohla akuphumelelanga."/>
+	<String Id="Error1707" Overridable="yes" Value="Ukufakela kugqitywe ngempumelelo."/>
+	<String Id="Error1706" Overridable="yes" Value="Iphakheji yokufakela imveliso [ProductName] ayifumaneki. Zama ufakelo kwakhona usebenzisa ikopi esebenzayo yomfakelo wofakelo &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="Quá trình cài đặt trước đó cho sản phẩm này đang diễn ra. Bạn phải hoàn tác các thay đổi đã thực hiện trong quá trình cài đặt đó để tiếp tục. Bạn có muốn hoàn tác những thay đổi đó không?"/>
+	<String Id="Error1704" Overridable="yes" Value="Cài đặt cho [ProductName] hiện đang bị tạm dừng. Bạn phải hoàn tác các thay đổi được thực hiện bởi cài đặt đó để tiếp tục. Bạn có muốn hoàn tác các thay đổi đó không?"/>
+	<String Id="Error1703" Overridable="yes" Value="Kufuneka uqale ngokutsha isixokelelwano sakho ukuze uhlengahlengiso loqwalaselo olwenziwe kwi [ProductName] lusebenze. Cofa u-Ewe ukuze uqalise kwakhona ngoku okanye Hayi ukuba uceba ukuqalisa kwakhona ngesandla kamva."/>
+	<String Id="Error1702" Overridable="yes" Value="Umfaki kufuneka aqale ngokutsha inkqubo yakho phambi kokuba uqwalaselo lwe [ProductName] luqhubeke. Cofa u-Ewe ukuqalisa kwakhona ngoku okanye Hayi ukuba uceba ukuqalisa kwakhona ngesandla kamva."/>
+	<String Id="Error1701" Overridable="yes" Value="Isitshixo [ProductName] asisebenzi. Qinisekisa ukuba ufake iqhosha elichanekileyo."/>
+	<String Id="Error1609" Overridable="yes" Value="Kwenzeke imposiso xa bekusenziwa useto lokhuseleko. [ProductName] akangomsebenzisi okanye iqela elisebenzayo. Oku kunokuba yingxaki ngepakethe, okanye ingxaki yokudibanisa nomlawuli wendawo kumsebenzi womnatha. Jonga uqhagamshelo lwenethiwekhi yakho kwaye ucofe uZama kwakhona, okanye Rhoxisa ukuphelisa ukufakela. {{Akukwazi kufunyanwa i-SID yomsebenzisi, impazamo kwinkqubo [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Ayikwazanga kufumana naziphi na iimveliso ezithobelayo ezifakwe ngaphambili kumatshini wokuhlohla le mveliso."/>
+	<String Id="Error1607" Overridable="yes" Value="Ezi nkqubo zilandelayo kufuneka zivaliwe phambi kokuba kuqhutyekwe nofakelo:"/>
+	<String Id="Error1606" Overridable="yes" Value="Ayikwazanga ukufikelela kwindawo yenethiwekhi [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Akukho sithuba saneleyo sedisk kumthamo &amp;apos;[ProductName]&amp;apos; ukuqhubeka nofakelo kunye nokubuyisela okuvuliweyo. [ProductName] KB efunekayo, kodwa yi-[ProductName] KB kuphela ekhoyo. Cofa ungahoyi ukuqhubeka nofakelo ngaphandle kokugcina ulwazi lokubuyisela, cofa Phinda uzame ukujonga indawo ekhoyo kwakhona, okanye ucofe u-Rhoxisa ukuyeka ukufakela."/>
+	<String Id="Error1604" Overridable="yes" Value="Imveliso &amp;apos;[ProductName]&amp;apos; sele ifakiwe, inqanda ukufakwa kwale mveliso. Ezi mveliso zimbini azihambelani."/>
+	<String Id="Error1603" Overridable="yes" Value="Ifayile [ProductName][ProductName] igcinwa isetyenziswa{ ngale nkqubo ilandelayo: Igama: [ProductName], Id: [ProductName], Window Title: &amp;apos;[ProductName]&amp;apos;}. Vala eso sicelo kwaye uzame kwakhona."/>
+	<String Id="Error1602" Overridable="yes" Value="Bạn có chắc chắn muốn hủy không?"/>
+	<String Id="Error1601" Overridable="yes" Value="Ngaphandle kwendawo yedisk -- Umthamo: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Umsebenzisi &amp;apos;[ProductName]&amp;apos; ngaphambili uqalise ukufakela imveliso &amp;apos;[ProductName]&amp;apos;. Loo msebenzisi kuyakufuneka aqhube olufakelo kwakhona phambi kokuba asebenzise loo mveliso."/>
+	<String Id="Error1502" Overridable="yes" Value="Umsebenzisi &amp;apos;[ProductName]&amp;apos; ngaphambili uqalise ukufakela imveliso &amp;apos;[ProductName]&amp;apos;. Loo msebenzisi kuyakufuneka aqhube olufakelo kwakhona phambi kokuba asebenzise loo mveliso. Ufakelo lwakho lwangoku luza kuqhubeka."/>
+	<String Id="Error1501" Overridable="yes" Value="Impazamo yokufikelela kwidatha ekhuselweyo. Nceda qinisekisa ukuba i-Windows Installer iqwalaselwe kakuhle kwaye uzame ukufakela kwakhona."/>
+	<String Id="Error1500" Overridable="yes" Value="Olunye ufakelo luyaqhubeka. Kufuneka ugqibe olufakelo phambi kokuba uqhubeke nale."/>
+	<String Id="Error1410" Overridable="yes" Value="Ayikwazanga ukwandisa indawo yobhaliso ekhoyo. [ProductName] KB yendawo yobhaliso yasimahla iyafuneka ukuze kufakwe esi sicelo."/>
+	<String Id="Error1409" Overridable="yes" Value="Ayikwazanga ukufunda iinkcukacha zokhuseleko lwesitshixo [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba unofikelelo olwaneleyo kweso sitshixo, okanye uqhagamshelane nabasebenzi benkxaso yakho."/>
+	<String Id="Error1408" Overridable="yes" Value="Ayikwazanga kufumana amagama amaqhosha asezantsi eqhosha [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba unofikelelo olwaneleyo kweso sitshixo, okanye uqhagamshelane nabasebenzi benkxaso yakho."/>
+	<String Id="Error1407" Overridable="yes" Value="Ayikwazanga kufumana amagama exabiso lesitshixo [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba unofikelelo olwaneleyo kweso sitshixo, okanye uqhagamshelane nabasebenzi benkxaso yakho."/>
+	<String Id="Error1406" Overridable="yes" Value="Ayikwazanga ukubhala ixabiso [ProductName] kwisitshixo [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba unofikelelo olwaneleyo kweso sitshixo, okanye uqhagamshelane nabasebenzi benkxaso yakho."/>
+	<String Id="Error1405" Overridable="yes" Value="Ayikwazanga ukufunda ixabiso [ProductName] ukusuka kwisitshixo [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba unofikelelo olwaneleyo kweso sitshixo, okanye uqhagamshelane nabasebenzi benkxaso yakho."/>
+	<String Id="Error1404" Overridable="yes" Value="Ayikwazanga ukucima isitshixo [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba unofikelelo olwaneleyo kwelo qhosha, okanye uqhagamshelane nabasebenzi benkxaso yakho."/>
+	<String Id="Error1403" Overridable="yes" Value="Ayikwazanga ukucima ixabiso [ProductName] kwisitshixo [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba unofikelelo olwaneleyo kweso sitshixo, okanye uqhagamshelane nabasebenzi benkxaso yakho."/>
+	<String Id="Error1402" Overridable="yes" Value="Ayikwazanga ukuvula isitshixo: [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba unofikelelo olwaneleyo kweso sitshixo, okanye qhagamshelana nabasebenzi benkxaso yakho."/>
+	<String Id="Error1401" Overridable="yes" Value="Ayikwazanga ukwenza isitshixo: [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba unofikelelo olwaneleyo kweso sitshixo, okanye qhagamshelana nabasebenzi benkxaso yakho."/>
+	<String Id="Error1336" Overridable="yes" Value="Kubekho impazamo ekwenzeni ifayile yethutyana efunekayo ukuze kugqitywe olufakelo.{{ Folder: [ProductName]. Ikhowudi yempazamo yenkqubo: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Ifayile yekhabhinethi &amp;apos;[ProductName]&amp;apos; efunekayo kolu fakelo yonakele kwaye ayinakusetyenziswa. Oku kungabonisa impazamo yenethiwekhi, impazamo yokufunda kwi-CD-ROM, okanye ingxaki ngale phakheji."/>
+	<String Id="Error1334" Overridable="yes" Value="Ifayile &amp;apos;[ProductName]&amp;apos; ayinakufakwa kuba ifayile ayinakufunyanwa kwifayile yekhabhinethi &amp;apos;[ProductName]&amp;apos;. Oku kungabonisa impazamo yenethiwekhi, impazamo yokufunda kwi-CD-ROM, okanye ingxaki ngale phakheji."/>
+	<String Id="Error1333" Overridable="yes" Value="Ayiphumelelanga ukupeyisha ngokuchanekileyo [ProductName] ifayile: Impazamo yeCRC."/>
+	<String Id="Error1332" Overridable="yes" Value="Ayiphumelelanga ukuhambisa kakuhle [ProductName] ifayile: Impazamo ye CRC."/>
+	<String Id="Error1331" Overridable="yes" Value="Ayiphumelelanga ukukopa ngokuchanekileyo [ProductName] ifayile: CRC impazamo."/>
+	<String Id="Error1330" Overridable="yes" Value="Ifayile efunekayo ayinakufakwa ngenxa yokuba ifayile yekhabhinethi [ProductName] inomsayino wedijithali ongasebenziyo. Oku kungabonisa ukuba ifayile yekhabhathi yonakele.{{ Impazamo [ProductName] ibuyiselwe nguWinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Ifayile efunekayo ayinakufakwa ngenxa yokuba ifayile yekhabhinethi [ProductName] ayisayinwanga ngokwedijithali. Oku kungabonisa ukuba ifayile yekhabhinethi yonakele."/>
+	<String Id="Error1328" Overridable="yes" Value="Imposiso ekufakeni isiziba kwifayile [ProductName]. Mhlawumbi ihlaziywe ngezinye iindlela, kwaye ayisakwazi ukulungiswa yile patch. Ngolwazi oluthe vetshe qhagamshelana nomthengisi wakho wepetshi.{{ Impazamo yeNkqubo: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="uQhuba olungasebenziyo: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Imposiso ekufumaneni ukhuseleko lwefayile: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; ayilogama lefayile emfutshane esebenzayo."/>
+	<String Id="Error1324" Overridable="yes" Value="Indlela yesiqulathi seefayili &amp;apos;[ProductName]&amp;apos; inombhalo ongasebenziyo."/>
+	<String Id="Error1323" Overridable="yes" Value="Umendo wesiqulathi seefayili &amp;apos;[ProductName]&amp;apos; uqulathe amagama angasebenziyo kwiindlela zencwadi eneenkcukacha."/>
+	<String Id="Error1322" Overridable="yes" Value="Inxalenye yendlela yencwadi &amp;apos;[ProductName]&amp;apos; ayisebenzi. Inokuba ayinanto okanye igqithise ubude obuvunyelwe yinkqubo."/>
+	<String Id="Error1321" Overridable="yes" Value="Umfaki unamalungelo aneleyo okuguqula le fayile: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Indlela ekhankanyiweyo inde kakhulu: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Kwenzeke imposiso kumsebenzi wothungelwano ngelixa ibizama ukuvula umthombo wekhabhathi yefayile: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Kwenzeke imposiso kumsebenzi wothungelwano xa uzama ukwenza uvimba weefayili: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Kwenzeke imposiso ngexesha uzama ukuyila uvimba weefayili: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Kwenzeke imposiso kumsebenzi wothungelwano xa uzama ukufunda kwifayile: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Akuphumelelanga ukubhala kwisiqulathi seefayili esikhankanyiweyo: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Indlela ekhankanyiweyo &amp;apos;[ProductName]&amp;apos; ayifumaneki."/>
+	<String Id="Error1313" Overridable="yes" Value="Umthamo [ProductName] awukho okwangoku. Nceda ukhethe enye."/>
+	<String Id="Error1312" Overridable="yes" Value="Ayinakwenza uvimba weefayili &amp;apos;[ProductName]&amp;apos;. Ifayile eneli gama sele ikhona. Nceda unike igama ngokutsha okanye uyisuse ifayile kwaye ucofe Phinda uzame, okanye ucofe Rhoxisa ukuphuma."/>
+	<String Id="Error1311" Overridable="yes" Value="Ifayile yomthombo ayifunyenwanga{{(ikhabhinethi)}}: [ProductName]. Qinisekisa ukuba ifayile ikhona kwaye unako ukufikelela kuyo."/>
+	<String Id="Error1310" Overridable="yes" Value="Impazamo yokubhala kwifayile: [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba unofikelelo kolo lawulo."/>
+	<String Id="Error1309" Overridable="yes" Value="Impazamo yokufunda kwifayile: [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba ifayile ikhona kwaye unokufikelela kuyo."/>
+	<String Id="Error1308" Overridable="yes" Value="Ifayile yomthombo ayifunyenwanga: [ProductName]. Qinisekisa ukuba ifayile ikhona kwaye unako ukufikelela kuyo."/>
+	<String Id="Error1307" Overridable="yes" Value="Akukho ndawo yaneleyo kwidisk yokufaka le fayile: [ProductName]. Mahala isithuba sedisk kwaye ucofe Phinda uzame, okanye ucofe Rhoxisa ukuphuma."/>
+	<String Id="Error1306" Overridable="yes" Value="Esinye isicelo sinofikelelo olukhethekileyo kwifayile &amp;apos;[ProductName]&amp;apos;. Nceda uvale zonke ezinye izicelo, uze ucofe uZama kwakhona."/>
+	<String Id="Error1305" Overridable="yes" Value="Impazamo yokufunda kwifayile [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba ifayile ikhona kwaye unokufikelela kuyo."/>
+	<String Id="Error1304" Overridable="yes" Value="Impazamo yokubhala kwifayile: [ProductName]. Qinisekisa ukuba unofikelelo kulo vimba weefayili."/>
+	<String Id="Error1303" Overridable="yes" Value="Umfaki unamalungelo awonelanga ukufikelela kolu lawulo: [ProductName]. Ufakelo alunakuqhubeka. Ngena njengomlawuli okanye uqhagamshelane nomphathi wakho wenkqubo."/>
+	<String Id="Error1302" Overridable="yes" Value="Nceda ufake idiski: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Ayinakuyenza ifayile &amp;apos;[ProductName]&amp;apos;. Uluhlu oluneli gama sele lukhona. Rhoxisa ukufakela kwaye uzame ukuhlohla kwindawo eyahlukileyo."/>
+	<String Id="Error1101" Overridable="yes" Value="Impazamo yokufunda kwifayile: [ProductName].{{ Impazamo yenkqubo [ProductName].}} Qinisekisa ukuba ifayile ikhona kwaye unokufikelela kuyo."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Ulungiselelo aluphumelelanga."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Ukumisela kugqitywe ngempumelelo."/>
+	<String Id="Error23" Overridable="yes" Value="Ilungiselela ukususa iinguqulelo ezindala zesi sicelo..."/>
+	<String Id="Error22" Overridable="yes" Value="Kususwa iinguqulelo ezindala zesi sicelo..."/>
+	<String Id="Error21" Overridable="yes" Value="Ukuqokelela ulwazi olufunekayo..."/>
+	<String Id="Error20" Overridable="yes" Value="Nceda linda ngelixa iWindows ilungiselela [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Umfaki wema phambi kwexesha."/>
+	<String Id="Error18" Overridable="yes" Value="Umfaki akasaphenduli."/>
+	<String Id="Error17" Overridable="yes" Value="Ngapha kokungagcinwanga. Cima ezinye izicelo phambi kokuba uzame kwakhona."/>
+	<String Id="Error16" Overridable="yes" Value="Ixesha eliseleyo: {[ProductName] imizuzu {[ProductName] imizuzwana}"/>
+	<String Id="Error15" Overridable="yes" Value="Isenzo siphelile [ProductName]: [ProductName]. Ixabiso lokubuyisela [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Ukuqala kwesenzo [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Ukugawulwa kumisiwe: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Ukuloga kuqalisiwe: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Uhlobo lomyalezo: [ProductName], Impikiswano: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Isenzo [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Idiski igcwele: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Umfakeli ufumene imposiso engalindelekanga xa efaka lo mqulu. Oku kungabonisa ingxaki ngalo mqulu. Ikhowudi yempazamo ithi [ProductName]. {{Iimpikiswano zezi: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Ulwazi [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Isilumkiso [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Impazamo [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Impazamo encinana: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Ukungapapashi ulwazi lwemveliso"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Ifayile: [ProductName], Uluhlu: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Susa iifayile ezisusiweyo"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Ifayile: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Ukususa iifayile zogcino"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Orqaga qaytarish harakati:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Umxholo weSicelo:[ProductName], Igama leNdibano:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Ukungapapashwa kolwazi lwendibano"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Umxholo weSicelo:[ProductName], Igama leNdibano:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Ukupapasha ulwazi lwendibano"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Ifayile: [ProductName], Abaxhomekeke: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Ukufakela ikhathalogu yenkqubo"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Ukuvelisa imisebenzi yeskripthi yesenzo:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Isicelo sentengiso"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Isitshixo: [ProductName], Igama: [ProductName], Ixabiso: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Amaxabiso obhaliso lwesixokelelwano sokubhala"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Ifayile: [ProductName], iCandelo: [ProductName], Isitshixo: [ProductName], Ixabiso: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Ukubhala amaxabiso eefayile ze-INI"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Tên: [ProductName], Giá trị: [ProductName], Hành động [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Ukuhlaziya imitya yokusingqongileyo"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Ukungabhalisi uhlobo lwamathala eencwadi"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="IprogId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Ukungabhalisi izazisi zenkqubo"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="Uhlobo lwesiqulatho se-MIME: [ProductName], Ulwandiso: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Ukungabhalisi ulwazi lwe-MIME"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Ifonti: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Iifonti zokungabhalisi"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Ulwandiso: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Ukungabhalisi iiseva ezondisiweyo"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName] {{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Ukungabhalisi ii-COM+ ii-Aplikheshini kunye neMicimbi"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Isazisi seKlasi: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Susa ukubhalisa iiseva zeKlasi"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Uphawu: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Iimpawu zeMveliso ezingapapashiweyo"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Isazisi secandelo: [ProductName], uMfaneleko: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Ukungashicilelo Amacandelo Afanelekileyo"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Inkonzo: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Ukumisa iinkonzo"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Inkonzo: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Ukuqala iinkonzo"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Kuqalwa abalawuli beODBC"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Ifayile: [ProductName], Isiqulathi seefayili: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Iimodyuli zokungabhalisi"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Ifayile: [ProductName], Isiqulathi seefayili: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Ukubhalisa iimodyuli"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Ukukhangela iimveliso ezifanelekileyo"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="indlela emfutshane: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Ukususa iindlela ezimfutshane"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Isitshixo: [ProductName], Igama: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Ukususa amaxabiso obhaliso lwesixokelelwano"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Ukususa amacandelo e-ODBC"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Ifayile: [ProductName], iCandelo: [ProductName], Isitshixo: [ProductName], Ixabiso: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Susa amangeno eefayile ze-INI"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Isiqulathi seefayili: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Ukususwa kweefolda"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Ifayile: [ProductName], Uluhlu: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Ukususa iifayile"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Isicelo: [ProductName], Umgca womyalelo: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Ukususwa kwezicelo"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Tên: [ProductName], Giá trị: [ProductName], Hành động [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Ukuhlaziya imitya yokusingqongileyo"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Ifayile: [ProductName], Uluhlu: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Ukususa iifayile eziphindiweyo"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Ukubhalisa umsebenzisi"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Uhlobo lobhaliso lwamathala eencwadi"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Ukubhalisa imveliso"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Ifonti: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Iifonti zokubhalisa"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName] {{, AppType: [ProductName], Abasebenzisi: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Ukubhalisa i-COM + Izicelo kunye neMicimbi"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Ukuhlaziya ubhaliso lwecandelo"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Ifayile: [ProductName], Uluhlu: [ProductName], Ubungakanani: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Ukupheca iifayile"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Ifayile: [ProductName], Uluhlu: [ProductName], Ubungakanani: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Ukuhambisa iifayile"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Isicelo: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Ukufuduka kweempawu eziphuma kwizicelo ezinxulumeneyo"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Ukuvavanya iimeko zokuqaliswa"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Inkonzo: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Ukufakela iinkonzo ezintsha"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Ukufakela amacandelo e-ODBC"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="isicelo sifunyenwe: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Ukukhangela izicelo ezinxulumeneyo"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Ifayile: [ProductName], Uluhlu: [ProductName], Ubungakanani: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Ukwenza iifayile eziphindwe kabini"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Inkonzo: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Ukucima iinkonzo"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Isiqulathi seefayili: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Ukwenza iifolda"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Ukukhangela iimveliso ezifanelekileyo"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Ifayile: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Ukubophelela okuphunyeziweyo"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Ipropati: [ProductName], Utyikityo: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Ikhangela izicelo ezifakiweyo"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Isithuba samahala: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Ukwabiwa kwendawo yobhaliso"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="IprogId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Ukubhalisa izazisi zenkqubo"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="Uhlobo lwesiqulatho se-MIME: [ProductName], Ulwandiso: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Ukubhalisa ulwazi lwe-MIME"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Ulwandiso: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Ukubhalisa iiseva ezandisiweyo"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Isazisi seKlasi: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Ukubhalisa iiseva zeKlasi"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Ukupapasha ulwazi lwemveliso"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Uphawu: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Iimpawu zeMveliso yokuPapasha"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Isazisi secandelo: [ProductName], uMfaneleko: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Upapasho lwaMalunga afanelekileyo"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="indlela emfutshane: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Ukudala iindlela ezimfutshane"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Iimfuno zendawo yokubala"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Iimfuno zendawo yokubala"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Iimfuno zendawo yokubala"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Ifayile: [ProductName], Uluhlu: [ProductName], Ubungakanani: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Kukotshwa iifayile zokuhlohla inethiwekhi"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Ifayile: [ProductName], Uluhlu: [ProductName], Ubungakanani: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Kukotshwa iifayile ezintsha"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Ukuqinisekisa ukufakela"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Nceda ufunde i [ProductName] isiVumelwano selayisensi"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Hlaziya"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Cài đặt"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="ampamp"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Bigger} wamkelekile kwi [ProductName] Setup Wizard"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="IWizadi yokuSeta izakuhlaziya [ProductName] kwikhompyuter yakho. Cofa Okulandelayo ukuqhubeka okanye Rhoxisa ukuphuma kwiWizard yoSeto."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="IWizadi yokuSeta izakufakela [ProductName] kwikhompyuter yakho. Cofa Okulandelayo ukuqhubeka okanye Rhoxisa ukuphuma kwiWizard yoSeto."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Uphawu lwesikhuzo"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Nceda linda ngelixa isifakeli sigqiba ukumisela iimfuno zesithuba sedisk yakho."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Buyela"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ukulungele ukuhlaziya [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Cofa uHlaziyo ukuhlaziya [ProductName] kwikhompyuter yakho. Cofa Emva ukuze ujonge okanye utshintshe naziphi na iisetingi zokuhlohla. Cofa ku-Rhoxisa ukuphuma kwiwizadi."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Hlaziya"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ilungele ukususa [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Cofa Susa ukususa [ProductName] kwikhompyuter yakho. Cofa Emva ukuze ujonge okanye utshintshe naziphi na iisetingi zokuhlohla. Cofa ku-Rhoxisa ukuphuma kwiwizadi."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Susa"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ilungele ukulungisa [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Cofa Lungisa ukulungisa ufakelo lwe [ProductName]. Cofa Emva ukuze ujonge okanye utshintshe naziphi na iisetingi zokuhlohla. Cofa ku-Rhoxisa ukuphuma kwiwizadi."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Ukulungisa &amp; ukulungisa"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ukulungele ukuyitshintsha [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Cofa Guqula ukuqalisa ufakelo. Cofa Emva ukuze ujonge okanye utshintshe naziphi na iisetingi zokuhlohla. Cofa ku-Rhoxisa ukuphuma kwiwizadi."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Thay đổi"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ukulungele ukuhlohla [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Cofa u-Hlola ukuqalisa ukuhlohla. Cofa Emva ukuze ujonge okanye utshintshe naziphi na iisetingi zokuhlohla. Cofa ku-Rhoxisa ukuphuma kwiwizadi."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Cài đặt"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Cofa i Gqiba iqhosha ukuphuma kwi-Wizard yoLungiselelo."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] ukuseta kuye kwaphazamiseka. Inkqubo yakho ayilungiswanga. Ukufakela le nkqubo kwixesha elizayo, nceda uqhube ufakelo kwakhona."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Setup Wizard iphazamisekile"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Zonke iimpawu zeprogram ziya kufakwa. Ifuna esona sithuba sediski."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Ivumela abasebenzisi ukuba bakhethe ukuba zeziphi iimpawu zeprogram eziya kufakwa kunye nalapho ziya kufakwa khona. Icetyiswa kubasebenzisi abaphambili."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Ifakela ezona mpawu zenkqubo zixhaphakileyo. Icetyiswa kubasebenzisi abaninzi."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Khetha uhlobo lokuseta olulungele iimfuno zakho"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Khetha isiHlobo sokuSeta"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Gqibezela ukuFakelo"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C&amp; Gqiba"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Ukuhlohla ngokweSiko"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ngokwesiqhelo"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Ukuhlohla okuqhelekileyo"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Đặc trưng"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Qala kwakhona i [ProductName] Setup Wizard"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="IWizadi yoLungiselelo iya kugqiba ukuhlohla kwe [ProductName] kwikhompyuter yakho. Cofa u-Hlola ukuqhubeka okanye Rhoxisa ukuphuma kwiWizard yoLungiso."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Cài đặt"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Ubume:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Inkqubela yenziwe"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Uhlaziyo [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Nceda ulinde ngelixa iWizard yoLungiso ihlaziya [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Isusa [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Nceda linda ngelixa iWizard yoLungiselelo isusa [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Ukulungisa [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Nceda ulinde ngelixa i-Wizard yoLungiso ilungisa [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Ukutshintsha [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Nceda ulinde ngelixa iWizard yoLungiselelo itshintsha [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Kuhlohlwa [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Nceda ulinde ngelixa i-Wizard yoLungiso ihlohla [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Bigger} wamkelekile kwi [ProductName] Setup Wizard"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Nceda linda ngelixa iWizadi yoLungiselelo ilungiselela ukukukhokela kufakelo."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Kungenjalo, unokukhetha ukuyekisa ukusebenza kokubuyisela umva komfaki. Ukukhubaza ukubuyisela umva kuthintela umfaki ekubuyiseleni ubume bekhompuyutha yakho yoqobo ukuba ufako luphazamiseke nangayiphi na indlela. Cofa u-Ewe ukuba unqwenela ukuthatha umngcipheko wokuvala ukubuyisela umva."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title} Ngaphandle kweSithuba seDiski"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Isithuba sediski esifunekayo kufakelo sigqitha indawo ekhoyo kwidisk."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Imiqulu ebonisiweyo ayinaso isithuba sedisk esaneleyo esikhoyo semisebenzi ekhethiweyo ngoku. Ungazisusa ezinye iifayile kwimiqulu ephawulweyo, faka iimpawu ezimbalwa, okanye ukhethe idrayivu eyahlukileyo."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title} Ngaphandle kweSithuba seDiski"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Isithuba sediski esifunekayo kufakelo sigqitha indawo ekhoyo kwidisk."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Imiqulu ebonisiweyo ayinaso isithuba sedisk esaneleyo esikhoyo semisebenzi ekhethiweyo ngoku. Ungazisusa ezinye iifayile kwimiqulu ephawulweyo, faka iimpawu ezimbalwa, okanye ukhethe idrayivu eyahlukileyo."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Sukuvala usetyenziso. Ukuqalisa kwakhona kuya kufuneka."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Đóng các ứng dụng và thử khởi động lại chúng."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Iifayile ezisetyenziswayo"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Ezinye iifayile ezifuna ukuhlaziywa ziyasebenza ngoku."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Ezi nkqubo zilandelayo zisebenzisa iifayile ezifuna ukuhlaziywa ngolu seto. Ungavumela iWizard yoSeto ivale kwaye uzame ukuyiqalisa kwakhona okanye uqalise umatshini kwakhona."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Bigger} wamkelekile kwi [ProductName] Setup Wizard"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="IWizard yoSeto ikuvumela ukuba utshintshe indlela [ProductName] iifitsha ezifakwe ngayo kwikhompyuter yakho okanye uyisuse kwikhompyuter yakho. Cofa Okulandelayo ukuqhubeka okanye Rhoxisa ukuphuma kwiWizard yoSeto."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] ayinakulungiswa."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Ukulungisa iimpazamo kolona ufakelo lwamva nje ngokulungisa iifayile ezingekhoyo nezonakeleyo, iindlela ezimfutshane, kunye namangeniso obhaliso."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] ayinakususwa."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Susa [ProductName] kwikhompyuter yakho."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] ayinazo iimpawu ezikhethiweyo ezizimeleyo."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Ikuvumela ukuba utshintshe indlela iifitsha ezifakwe ngayo."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Tshintsha, lungisa, okanye ususe ukuhlohla"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Khetha umsebenzi onqwenela ukuwenza."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Susa uFakelo"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Susa"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Lungisa uFakelo"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Ukulungisa &amp; ukulungisa"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Tshintsha ukuhlohla"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Thay đổi"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}IsiVumelwano seLayisensi yoMsebenzisi"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Nceda ufunde esi sivumelwano selayisensi silandelayo ngononophelo"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="ampamp"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Uphawu lolwazi"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Uluhlu lofakelo kufuneka lube kwi-hard drive yasekhaya."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Thay đổi..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Ukuhlohla &amp;isiqulathi seefayili:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] iya kufakwa kwisiqulathi seefayili sikamatshini ngamnye ngokuzenzekelayo kwaye ifumaneke kubo bonke abasebenzisi. Ungatshintsha isiqulathi seefayili sokufakela esihlala sikhona. Kufuneka ube namalungelo oMlawuli wasekuhlaleni."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Fakela bonke abasebenzisi balo &amp;mashini"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] ayixhasi ufakelo lomsebenzisi ngamnye."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] iya kufakwa kwifolda yomsebenzisi ngamnye kwaye ifumaneke kwiakhawunti yakho yomsebenzisi. Awudingi malungelo oMphathi walapha."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Fakela &amp;ukwenzela wena ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Umda woFakelo"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Khetha umda wofakelo kunye nefolda"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Faka [ProductName] ku:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Cofa Okulandelayo ukufaka kwisiqulathi seefayili esingagqibekanga okanye ucofe Guqula ukukhetha enye."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Isiqulathi seefayili"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Thay đổi..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Iifayile ezisetyenziswayo"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Ezinye iifayile ezifuna ukuhlaziywa ziyasebenza ngoku."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Ezi nkqubo zilandelayo zisebenzisa iifayile ezifuna ukuhlaziywa ngolu seto. Vala ezi nkqubo kwaye emva koko ucofe &amp;Zama kwakhona ukuqhubeka nokucwangcisa okanye Phuma ukuyiphuma."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="Phuma"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Thay đổi"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Cài đặt"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="IimpawuDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="IimpawuDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Iimpawu zeMveliso"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Khetha indlela ofuna iifitsha zifakwe ngayo."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Iimpawu zemveliso"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Cofa i Gqiba iqhosha ukuphuma kwi-Wizard yoLungiselelo."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Setup Wizard iphele phambi kwexesha ngenxa yempazamo. Inkqubo yakho ayilungiswanga. Ukufakela le nkqubo kwixesha elizayo, sebenzisa iWizard yoSeto kwakhona."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Setup Wizard iphele phambi kwexesha"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Kugqitywe i [ProductName] Setup Wizard"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Cofa i Gqiba iqhosha ukuphuma kwi-Wizard yoLungiselelo."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Uphawu lolwazi"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Isicatshulwa solwazi"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}IiMfuno zeSithuba seDiski"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Isithuba sedisk esifunekayo kufakelo lweempawu ezikhethiweyo."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Imiqulu egqanyisiweyo ayinayo indawo yedisk eyaneleyo ekhoyo yeempawu ezikhethiweyo. Unako ukususa ezinye iifayile ukusuka kwimiqulu ephawulweyo, faka iimpawu ezimbalwa, okanye ukhethe iindawo ezahlukeneyo zokuqhuba."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Indawo:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ukuseta ngokweSiko"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Khetha indlela ofuna iifitsha zifakwe ngayo."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Cofa ii-iyikhoni emthini ongezantsi ukutshintsha indlela iimpawu eziza kufakwa ngayo."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Idiski &amp;Usetyenziso"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Phinda usete kwakhona"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;browser..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Umthi ukhetho"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Uphawu lolwazi"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Bạn có chắc chắn muốn hủy cài đặt [ProductName] không?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Tshintsha isiqulathi seefayili"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Bhrawuza kwisiqulathi seefayili"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Tên thư mục:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Yenza ifolda entsha"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_Entsha"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Phezulu kwinqanaba elinye"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Khangela kwi:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="eTahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="I &amp; iphuculwe"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Cài đặt"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Cofa u-Fakela ukufaka imveliso enokhetho olungagqibekanga ukwenzela wena. Cofa kuNqabileyo ukutshintsha iinketho zokuhlohla."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Cofa u-Fakela ukufaka imveliso enokhetho olungagqibekanga kubo bonke abasebenzisi. Cofa kuNqabileyo ukutshintsha iinketho zokuhlohla."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="ampamp"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Nceda ufunde i [ProductName] isiVumelwano selayisensi"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Cwangcisa"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Shicilela"/>
+	<String Id="WixUIOK" Overridable="yes" Value="KULUNGILE"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Hayi"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Ewe"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Ungahoyi"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Zama kwakhona"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Gqiba"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Rhoxisa"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Okulandelayo"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Umva"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Kukhutshwa ubumbeko lweWindows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Ukuqengqeleka ngasemva koqwalaselo lweWindows Firewall"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Ukuhlohla ubumbeko lweWindows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Ukuqengqeleka ngasemva koqwalaselo lweWindows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Ukuqwalasela iWindows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Ukuqwalasela iWindows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Akunakuqhagamshelwa kwiWindows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Ukubonwa kwezicelo ezikude zikhoyo njengokhetho kuqwalaselo"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Jonga iiseva ze-RAAS kwi-Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Yenza iindlela ezimfutshane zesicelo kwi-aplikeshini zeseva kwikhompyuter yasekhaya"/>

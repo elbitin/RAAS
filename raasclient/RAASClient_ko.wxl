@@ -1,4 +1,11 @@
-﻿<WixLocalization Culture="ko" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ko-KR-KR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows 방화벽 구성 제거"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows 방화벽 구성 롤백"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows 방화벽 구성 설치"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows 방화벽 구성 롤백"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows 방화벽 구성"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows 방화벽 구성"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windows 방화벽에 연결할 수 없습니다. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="구성에서 옵션으로 제공되는 원격 애플리케이션에 대한 시각화"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer에서 RAAS 서버 보기"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="로컬 컴퓨터의 서버 애플리케이션에 대한 원격 애플리케이션 바로 가기 만들기"/>

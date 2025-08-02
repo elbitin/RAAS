@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="pt-BR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Desinstalando a configuração do Firewall do Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Revertendo a configuração do Firewall do Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instalando a configuração do Firewall do Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Revertendo a configuração do Firewall do Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Configurando o Firewall do Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Configurando o Firewall do Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Não é possível conectar ao Firewall do Windows. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizações para aplicações remotas disponíveis como opção na configuração"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Exibir servidores RAAS no Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Crie atalhos de aplicativos remotos para aplicativos de servidor no computador local"/>

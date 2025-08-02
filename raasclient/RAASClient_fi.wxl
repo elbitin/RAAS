@@ -1,4 +1,11 @@
-﻿<WixLocalization Culture="fi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="fi-FI-FI" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsin palomuurikokoonpanon asennuksen poistaminen"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windowsin palomuurin määritysten palauttaminen"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsin palomuurikokoonpanon asentaminen"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windowsin palomuurin määritysten palauttaminen"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windowsin palomuurin määrittäminen"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windowsin palomuurin määrittäminen"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ei voi muodostaa yhteyttä Windowsin palomuuriin. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Etäsovellusten visualisoinnit ovat valinnaisia kokoonpanossa"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Tarkastele RAAS-palvelimia Explorerissa"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Luo etäsovellusten pikakuvakkeet palvelinsovelluksiin paikallisella tietokoneella"/>

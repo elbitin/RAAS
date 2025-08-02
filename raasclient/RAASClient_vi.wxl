@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="vi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="vi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Âm lượng"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Kích thước đĩa"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Yêu cầu"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Sự khác biệt"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Có sẵn"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Thời gian còn lại: { [ProductName] phút} [ProductName] giây}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Tính năng này yêu cầu [ProductName] trên ổ cứng của bạn. Nó đã chọn [ProductName] trong số [ProductName] tính năng phụ. Các tính năng phụ yêu cầu [ProductName] trên ổ cứng của bạn."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Tính năng này yêu cầu [ProductName] trên ổ cứng của bạn. Nó đã chọn [ProductName] trong số [ProductName] tính năng phụ. Các tính năng phụ này sẽ giải phóng [ProductName] trên ổ cứng của bạn."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Tính năng này giải phóng [ProductName] trên ổ cứng của bạn. Nó đã chọn [ProductName] trong số [ProductName] tính năng phụ. Các tính năng phụ này yêu cầu [ProductName] trên ổ cứng của bạn."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Tính năng này giải phóng [ProductName] trên ổ cứng của bạn. Nó đã chọn [ProductName] trong số [ProductName] tính năng phụ. Các tính năng phụ này giải phóng [ProductName] trên ổ cứng của bạn."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Tính năng này sẽ vẫn được chạy từ mạng"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Tính năng này sẽ thay đổi từ trạng thái chạy từ mạng sang được cài đặt trên ổ cứng cục bộ"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Tính năng này sẽ thay đổi từ trạng thái chạy từ mạng thành trạng thái được thiết lập để cài đặt khi cần thiết"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Tính năng này sẽ bị gỡ cài đặt hoàn toàn, bạn sẽ không thể chạy nó từ mạng"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Tính năng này sẽ bị xóa khỏi ổ cứng cục bộ của bạn, nhưng vẫn có thể chạy từ mạng"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Tính năng này sẽ vẫn còn trên ổ cứng cục bộ của bạn"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Tính năng này sẽ bị xóa khỏi ổ cứng cục bộ của bạn, nhưng vẫn có thể chạy từ CD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Tính năng này sẽ bị xóa khỏi ổ cứng cục bộ của bạn nhưng sẽ được thiết lập để cài đặt khi cần thiết"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Tính năng này sẽ bị xóa hoàn toàn"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Đang biên soạn chi phí cho tính năng này..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Tính năng này yêu cầu [ProductName] trên ổ cứng của bạn."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Tính năng này giải phóng [ProductName] trên ổ cứng của bạn."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Tính năng này sẽ thay đổi từ trạng thái chạy từ CD sang trạng thái cài đặt trên ổ cứng cục bộ"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Tính năng này sẽ vẫn được chạy từ CD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Tính năng này sẽ thay đổi từ trạng thái chạy từ CD thành trạng thái được thiết lập để cài đặt khi cần thiết"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Tính năng này sẽ bị gỡ cài đặt hoàn toàn, bạn sẽ không thể chạy nó từ CD"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Tính năng này sẽ có thể chạy từ mạng"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Tính năng này sẽ được cài đặt trên ổ cứng cục bộ của bạn"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Tính năng này sẽ có thể chạy từ CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Sẽ được cài đặt khi cần thiết"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Tính năng này sẽ không còn khả dụng"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Tính năng này sẽ được cài đặt để chạy từ mạng"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Tính năng này sẽ được cài đặt trên ổ cứng cục bộ"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Tính năng này sẽ được cài đặt để chạy từ CD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Tính năng này sẽ được thiết lập để cài đặt khi cần thiết"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Tính năng này sẽ vẫn được gỡ cài đặt"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Đang thu thập thông tin cần thiết..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Thư mục | Thư mục mới"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Sẽ được cài đặt để chạy từ mạng"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Sẽ được cài đặt trên ổ cứng cục bộ"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Sẽ được cài đặt để chạy từ CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Toàn bộ tính năng sẽ được cài đặt để chạy từ mạng"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Toàn bộ tính năng sẽ được cài đặt trên ổ cứng cục bộ"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Toàn bộ tính năng sẽ được cài đặt để chạy từ CD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Tính năng sẽ được cài đặt khi cần thiết"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Toàn bộ tính năng sẽ không khả dụng"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="Anh"/>
+	<String Id="UITextbytes" Overridable="yes" Value="byte"/>
+	<String Id="Error1938" Overridable="yes" Value="Đã xảy ra lỗi trong quá trình cài đặt assembly &amp;apos;[ProductName]&amp;apos;. Không tìm thấy một hoặc nhiều module của assembly. HRESULT: [ProductName].{{ assembly interface: [ProductName], function: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Đã xảy ra lỗi trong quá trình cài đặt assembly &amp;apos;[ProductName]&amp;apos;. Không thể xác minh chữ ký hoặc danh mục hoặc chữ ký hoặc danh mục không hợp lệ. HRESULT: [ProductName].{{ assembly interface: [ProductName], function: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Đã xảy ra lỗi trong quá trình cài đặt assembly &amp;apos;[ProductName]&amp;apos;. Assembly không được đặt tên mạnh hoặc không được ký bằng độ dài khóa tối thiểu. HRESULT: [ProductName].{{ assembly interface: [ProductName], function: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Đã xảy ra lỗi trong quá trình cài đặt assembly &amp;apos;[ProductName]&amp;apos;. Vui lòng tham khảo Trợ giúp và Hỗ trợ để biết thêm thông tin. HRESULT: [ProductName].{{ assembly interface: [ProductName], function: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Cài đặt của người dùng bị vô hiệu hóa thông qua chính sách trên máy."/>
+	<String Id="Error1933" Overridable="yes" Value="Dịch vụ Windows Installer không thể cập nhật một hoặc nhiều tệp Windows được bảo vệ.{{ Lỗi SFP: [ProductName]. Danh sách các tệp được bảo vệ:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Dịch vụ Windows Installer không thể cập nhật tệp Windows được bảo vệ [ProductName].{{ Phiên bản gói: [ProductName], Phiên bản được bảo vệ bởi hệ điều hành: [ProductName], Lỗi SFP: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Dịch vụ Windows Installer không thể cập nhật tệp hệ thống [ProductName] vì tệp này được Windows bảo vệ. Bạn có thể cần cập nhật hệ điều hành để chương trình này hoạt động chính xác.{{ Phiên bản gói: [ProductName], Phiên bản được hệ điều hành bảo vệ: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="Không thể thay đổi mô tả cho dịch vụ &amp;apos;[ProductName]&amp;apos; ([ProductName])."/>
+	<String Id="Error1929" Overridable="yes" Value="Lỗi khi hủy đăng ký Ứng dụng COM+. Vui lòng liên hệ với nhân viên hỗ trợ để biết thêm thông tin."/>
+	<String Id="Error1928" Overridable="yes" Value="Lỗi khi đăng ký Ứng dụng COM+. Vui lòng liên hệ với nhân viên hỗ trợ để biết thêm thông tin."/>
+	<String Id="Error1927" Overridable="yes" Value="Máy tính này chưa cài đặt Component Services (COM+ 1.0). Việc cài đặt này yêu cầu Component Services để hoàn tất. Component Services có sẵn trên Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Không thể thiết lập bảo mật tệp cho tệp &amp;apos;[ProductName]&amp;apos;. Lỗi: [ProductName]. Hãy xác minh rằng bạn có đủ quyền để sửa đổi quyền bảo mật cho tệp này."/>
+	<String Id="Error1925" Overridable="yes" Value="Bạn không có đủ quyền để hoàn tất cài đặt này cho tất cả người dùng trên máy. Vui lòng đăng nhập với tư cách quản trị viên và thử lại cài đặt này."/>
+	<String Id="Error1924" Overridable="yes" Value="Không thể cập nhật biến môi trường &amp;apos;[ProductName]&amp;apos;. Hãy xác minh rằng bạn có đủ quyền để sửa đổi biến môi trường."/>
+	<String Id="Error1923" Overridable="yes" Value="Không thể cài đặt dịch vụ &amp;apos;[ProductName]&amp;apos; ([ProductName]). Hãy xác minh rằng bạn có đủ quyền để cài đặt dịch vụ hệ thống."/>
+	<String Id="Error1922" Overridable="yes" Value="Không thể xóa dịch vụ &amp;apos;[ProductName]&amp;apos; ([ProductName]). Hãy xác minh rằng bạn có đủ quyền để xóa các dịch vụ hệ thống."/>
+	<String Id="Error1921" Overridable="yes" Value="Không thể dừng dịch vụ &amp;apos;[ProductName]&amp;apos; ([ProductName]). Hãy xác minh rằng bạn có đủ quyền để dừng dịch vụ hệ thống."/>
+	<String Id="Error1920" Overridable="yes" Value="Dịch vụ &amp;apos;[ProductName]&amp;apos; ([ProductName]) không khởi động được. Hãy xác minh rằng bạn có đủ quyền để khởi động dịch vụ hệ thống."/>
+	<String Id="Error1919" Overridable="yes" Value="Lỗi cấu hình nguồn dữ liệu ODBC: [ProductName], Lỗi ODBC [ProductName]: [ProductName]. Xác minh rằng tệp [ProductName] tồn tại và bạn có thể truy cập vào tệp đó."/>
+	<String Id="Error1918" Overridable="yes" Value="Lỗi khi cài đặt trình điều khiển ODBC: [ProductName], Lỗi ODBC [ProductName]: [ProductName]. Xác minh rằng tệp [ProductName] tồn tại và bạn có thể truy cập vào tệp đó."/>
+	<String Id="Error1917" Overridable="yes" Value="Lỗi khi xóa trình điều khiển ODBC: [ProductName], Lỗi ODBC [ProductName]: [ProductName]. Xác minh rằng bạn có đủ quyền để xóa trình điều khiển ODBC."/>
+	<String Id="Error1916" Overridable="yes" Value="Lỗi khi cài đặt trình quản lý trình điều khiển ODBC, lỗi ODBC [ProductName]: [ProductName]. Liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1915" Overridable="yes" Value="Lỗi khi xóa trình quản lý trình điều khiển ODBC, lỗi ODBC [ProductName]: [ProductName]. Liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1914" Overridable="yes" Value="Không thể lên lịch tệp [ProductName] để thay thế tệp [ProductName] khi khởi động lại. Hãy xác minh rằng bạn có quyền ghi vào tệp [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Không thể cập nhật tệp ini [ProductName][ProductName]. Hãy xác minh rằng tệp tồn tại và bạn có thể truy cập vào tệp đó."/>
+	<String Id="Error1912" Overridable="yes" Value="Không thể hủy đăng ký thư viện loại cho tệp [ProductName]. Hãy liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1911" Overridable="yes" Value="Không thể đăng ký thư viện kiểu cho tệp [ProductName]. Hãy liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1910" Overridable="yes" Value="Không thể xóa Shortcut [ProductName]. Hãy xác minh rằng tệp shortcut tồn tại và bạn có thể truy cập vào tệp đó."/>
+	<String Id="Error1909" Overridable="yes" Value="Không thể tạo Lối tắt [ProductName]. Xác minh rằng thư mục đích tồn tại và bạn có thể truy cập vào thư mục đó."/>
+	<String Id="Error1908" Overridable="yes" Value="Không thể hủy đăng ký phông chữ [ProductName]. Xác minh rằng bạn có đủ quyền để xóa phông chữ."/>
+	<String Id="Error1907" Overridable="yes" Value="Không thể đăng ký phông chữ [ProductName]. Xác minh rằng bạn có đủ quyền để cài đặt phông chữ và hệ thống hỗ trợ phông chữ này."/>
+	<String Id="Error1906" Overridable="yes" Value="Không lưu được gói vào bộ nhớ đệm [ProductName]. Lỗi: [ProductName]. Hãy liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1905" Overridable="yes" Value="Mô-đun [ProductName] không thể hủy đăng ký. HRESULT [ProductName]. Liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1904" Overridable="yes" Value="Mô-đun [ProductName] không đăng ký được. HRESULT [ProductName]. Liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1903" Overridable="yes" Value="Lên lịch hoạt động khởi động lại: Đang xóa tệp [ProductName]. Phải khởi động lại để hoàn tất hoạt động."/>
+	<String Id="Error1902" Overridable="yes" Value="Lên lịch hoạt động khởi động lại: Đổi tên tệp [ProductName] thành [ProductName]. Phải khởi động lại để hoàn tất hoạt động."/>
+	<String Id="Error1901" Overridable="yes" Value="Lỗi khi cố gắng đọc từ cơ sở dữ liệu cài đặt nguồn: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Không thể xác định thư mục đích hợp lệ để cài đặt."/>
+	<String Id="Error1806" Overridable="yes" Value="Bạn không có đủ quyền để đọc thư mục này."/>
+	<String Id="Error1805" Overridable="yes" Value="Thư mục [ProductName] không tồn tại. Vui lòng nhập đường dẫn đến thư mục hiện có."/>
+	<String Id="Error1804" Overridable="yes" Value="Không có đĩa trong ổ đĩa [ProductName]. Vui lòng lắp đĩa vào và nhấp vào Thử lại hoặc nhấp vào Hủy để quay lại hộp thoại duyệt và chọn một ổ đĩa khác."/>
+	<String Id="Error1803" Overridable="yes" Value="Không có đĩa trong ổ đĩa [ProductName]. Vui lòng lắp đĩa vào và nhấp vào Thử lại hoặc nhấp vào Hủy để quay lại ổ đĩa đã chọn trước đó."/>
+	<String Id="Error1802" Overridable="yes" Value="Hết bộ nhớ. Hãy tắt các ứng dụng khác trước khi thử lại."/>
+	<String Id="Error1801" Overridable="yes" Value="Đường dẫn [ProductName] không hợp lệ. Vui lòng chỉ định đường dẫn hợp lệ."/>
+	<String Id="Error1732" Overridable="yes" Value="[ProductName] ni o&amp;apos;rnatishni yakunlash uchun kompyuterni qayta ishga tushirishingiz kerak. Boshqa foydalanuvchilar hozirda ushbu kompyuterga kirgan va qayta ishga tushirish ularning ishini yo&amp;apos;qotishiga olib kelishi mumkin. Hozir qayta ishga tushirishni xohlaysizmi?"/>
+	<String Id="Error1731" Overridable="yes" Value="Gói cài đặt nguồn cho sản phẩm [ProductName] không đồng bộ với gói máy khách. Hãy thử cài đặt lại bằng bản sao hợp lệ của gói cài đặt &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Bạn phải là Quản trị viên để xóa ứng dụng này. Để xóa ứng dụng này, bạn có thể đăng nhập với tư cách Quản trị viên hoặc liên hệ với nhóm hỗ trợ kỹ thuật để được hỗ trợ."/>
+	<String Id="Error1729" Overridable="yes" Value="Cấu hình không thành công."/>
+	<String Id="Error1728" Overridable="yes" Value="Cấu hình đã hoàn tất thành công."/>
+	<String Id="Error1727" Overridable="yes" Value="Quảng cáo không thành công."/>
+	<String Id="Error1726" Overridable="yes" Value="Quảng cáo đã hoàn tất thành công."/>
+	<String Id="Error1725" Overridable="yes" Value="Không xóa được."/>
+	<String Id="Error1724" Overridable="yes" Value="Đã xóa thành công."/>
+	<String Id="Error1723" Overridable="yes" Value="Có sự cố với gói Windows Installer này. Không thể chạy DLL cần thiết để hoàn tất cài đặt này. Vui lòng liên hệ với nhân viên hỗ trợ hoặc nhà cung cấp gói.{{ Action [ProductName], entry: [ProductName], library: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Có sự cố với gói Windows Installer này. Một chương trình chạy trong quá trình thiết lập không hoàn tất như mong đợi. Vui lòng liên hệ với nhân viên hỗ trợ hoặc nhà cung cấp gói.{{ Action [ProductName], location: [ProductName], command: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Có sự cố với gói Windows Installer này. Không thể chạy chương trình cần thiết để hoàn tất cài đặt này. Vui lòng liên hệ với nhân viên hỗ trợ hoặc nhà cung cấp gói.{{ Action: [ProductName], location: [ProductName], command: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Có sự cố với gói Windows Installer này. Không thể chạy tập lệnh cần thiết để hoàn tất cài đặt này. Vui lòng liên hệ với nhân viên hỗ trợ hoặc nhà cung cấp gói.{{ Hành động tùy chỉnh [ProductName] lỗi tập lệnh [ProductName], [ProductName]: [ProductName] Dòng [ProductName], Cột [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Không thể truy cập Dịch vụ Cài đặt Windows. Sự cố này có thể xảy ra nếu bạn đang chạy Windows ở chế độ an toàn hoặc nếu Trình cài đặt Windows không được cài đặt đúng cách. Vui lòng liên hệ với nhân viên hỗ trợ để được trợ giúp."/>
+	<String Id="Error1718" Overridable="yes" Value="Tệp [ProductName] đã bị từ chối bởi chính sách chữ ký số."/>
+	<String Id="Error1717" Overridable="yes" Value="Đã xóa [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Đã cấu hình [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Đã cài đặt [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Không thể xóa phiên bản cũ hơn của [ProductName]. Hãy liên hệ với nhóm hỗ trợ kỹ thuật của bạn.{{ Lỗi hệ thống [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] không thể cài đặt một trong những sản phẩm cần thiết. Hãy liên hệ với nhóm hỗ trợ kỹ thuật của bạn.{{ Lỗi hệ thống: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Không tìm thấy một hoặc nhiều tệp cần thiết để khôi phục máy tính về trạng thái trước đó. Việc khôi phục sẽ không thể thực hiện được."/>
+	<String Id="Error1711" Overridable="yes" Value="Đã xảy ra lỗi khi ghi thông tin cài đặt vào đĩa. Kiểm tra để đảm bảo có đủ dung lượng đĩa trống và nhấp vào Thử lại hoặc Hủy để kết thúc quá trình cài đặt."/>
+	<String Id="Error1710" Overridable="yes" Value="Siz kompyuteringizni avvalgi holatiga qaytarishingiz yoki o&amp;apos;rnatishni keyinroq davom ettirishingiz mumkin. Qayta tiklashni xohlaysizmi?"/>
+	<String Id="Error1709" Overridable="yes" Value="Sản phẩm: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Cài đặt không thành công."/>
+	<String Id="Error1707" Overridable="yes" Value="Quá trình cài đặt đã hoàn tất thành công."/>
+	<String Id="Error1706" Overridable="yes" Value="Không tìm thấy gói cài đặt cho sản phẩm [ProductName]. Hãy thử cài đặt lại bằng bản sao hợp lệ của gói cài đặt &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="Ushbu mahsulot uchun oldingi oʻrnatish ishlari olib borilmoqda. Davom etish uchun ushbu o&amp;apos;rnatish tomonidan kiritilgan o&amp;apos;zgarishlarni bekor qilishingiz kerak. Ushbu o&amp;apos;zgarishlarni bekor qilmoqchimisiz?"/>
+	<String Id="Error1704" Overridable="yes" Value="[ProductName] uchun oʻrnatish hozirda toʻxtatilgan. Davom etish uchun ushbu o&amp;apos;rnatish tomonidan kiritilgan o&amp;apos;zgarishlarni bekor qilishingiz kerak. Ushbu o&amp;apos;zgarishlarni bekor qilmoqchimisiz?"/>
+	<String Id="Error1703" Overridable="yes" Value="Bạn phải khởi động lại hệ thống để các thay đổi cấu hình được thực hiện đối với [ProductName] có hiệu lực. Nhấp vào Có để khởi động lại ngay hoặc Không nếu bạn định khởi động lại thủ công sau."/>
+	<String Id="Error1702" Overridable="yes" Value="Trình cài đặt phải khởi động lại hệ thống của bạn trước khi có thể tiếp tục cấu hình [ProductName]. Nhấp vào Có để khởi động lại ngay hoặc Không nếu bạn định khởi động lại thủ công sau."/>
+	<String Id="Error1701" Overridable="yes" Value="Khóa [ProductName] không hợp lệ. Hãy xác minh rằng bạn đã nhập đúng khóa."/>
+	<String Id="Error1609" Overridable="yes" Value="Đã xảy ra lỗi khi áp dụng cài đặt bảo mật. [ProductName] không phải là người dùng hoặc nhóm hợp lệ. Điều này có thể do sự cố với gói hoặc do sự cố kết nối với bộ điều khiển miền trên mạng. Hãy kiểm tra kết nối mạng và nhấp vào Thử lại hoặc Hủy để kết thúc cài đặt. {{Không thể xác định vị trí SID của người dùng, lỗi hệ thống [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Không tìm thấy bất kỳ sản phẩm tương thích nào đã được cài đặt trước đó trên máy để cài đặt sản phẩm này."/>
+	<String Id="Error1607" Overridable="yes" Value="Bạn nên đóng các ứng dụng sau trước khi tiếp tục cài đặt:"/>
+	<String Id="Error1606" Overridable="yes" Value="Không thể truy cập vị trí mạng [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Không đủ dung lượng đĩa trên ổ đĩa &amp;apos;[ProductName]&amp;apos; để tiếp tục cài đặt khi đã bật chức năng khôi phục. Cần [ProductName] KB, nhưng hiện tại chỉ có [ProductName] KB khả dụng. Nhấp vào Bỏ qua để tiếp tục cài đặt mà không lưu thông tin khôi phục, nhấp vào Thử lại để kiểm tra lại dung lượng trống hoặc nhấp vào Hủy để thoát khỏi quá trình cài đặt."/>
+	<String Id="Error1604" Overridable="yes" Value="Sản phẩm &amp;apos;[ProductName]&amp;apos; đã được cài đặt, ngăn không cho cài đặt sản phẩm này. Hai sản phẩm này không tương thích."/>
+	<String Id="Error1603" Overridable="yes" Value="Tệp [ProductName][ProductName] đang được giữ trong quá trình sử dụng{ theo quy trình sau: Tên: [ProductName], Id: [ProductName], Tiêu đề cửa sổ: &amp;apos;[ProductName]&amp;apos;}. Đóng ứng dụng đó và thử lại."/>
+	<String Id="Error1602" Overridable="yes" Value="Haqiqatan ham bekor qilmoqchimisiz?"/>
+	<String Id="Error1601" Overridable="yes" Value="Hết dung lượng đĩa -- Khối lượng: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Người dùng &amp;apos;[ProductName]&amp;apos; trước đó đã khởi tạo cài đặt cho sản phẩm &amp;apos;[ProductName]&amp;apos;. Người dùng đó sẽ cần chạy lại cài đặt đó trước khi có thể sử dụng sản phẩm đó."/>
+	<String Id="Error1502" Overridable="yes" Value="Người dùng &amp;apos;[ProductName]&amp;apos; trước đó đã khởi tạo cài đặt cho sản phẩm &amp;apos;[ProductName]&amp;apos;. Người dùng đó sẽ cần chạy lại cài đặt đó trước khi có thể sử dụng sản phẩm đó. Cài đặt hiện tại của bạn sẽ tiếp tục."/>
+	<String Id="Error1501" Overridable="yes" Value="Lỗi khi truy cập dữ liệu bảo mật. Vui lòng đảm bảo Windows Installer được cấu hình đúng cách và thử cài đặt lại."/>
+	<String Id="Error1500" Overridable="yes" Value="Đang tiến hành cài đặt khác. Bạn phải hoàn tất cài đặt đó trước khi tiếp tục cài đặt này."/>
+	<String Id="Error1410" Overridable="yes" Value="Không thể tăng dung lượng sổ đăng ký khả dụng. [ProductName] Cần có KB dung lượng sổ đăng ký trống để cài đặt ứng dụng này."/>
+	<String Id="Error1409" Overridable="yes" Value="Không thể đọc thông tin bảo mật cho khóa [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng bạn có đủ quyền truy cập vào khóa đó hoặc liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1408" Overridable="yes" Value="Không thể lấy tên khóa phụ cho khóa [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng bạn có đủ quyền truy cập vào khóa đó hoặc liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1407" Overridable="yes" Value="Không thể lấy tên giá trị cho khóa [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng bạn có đủ quyền truy cập vào khóa đó hoặc liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1406" Overridable="yes" Value="Không thể ghi giá trị [ProductName] vào khóa [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng bạn có đủ quyền truy cập vào khóa đó hoặc liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1405" Overridable="yes" Value="Không thể đọc giá trị [ProductName] từ khóa [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng bạn có đủ quyền truy cập vào khóa đó hoặc liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1404" Overridable="yes" Value="Không thể xóa khóa [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng bạn có đủ quyền truy cập vào khóa đó hoặc liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1403" Overridable="yes" Value="Không thể xóa giá trị [ProductName] khỏi khóa [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng bạn có đủ quyền truy cập vào khóa đó hoặc liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1402" Overridable="yes" Value="Không thể mở khóa: [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng bạn có đủ quyền truy cập vào khóa đó hoặc liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1401" Overridable="yes" Value="Không thể tạo khóa: [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng bạn có đủ quyền truy cập vào khóa đó hoặc liên hệ với nhân viên hỗ trợ của bạn."/>
+	<String Id="Error1336" Overridable="yes" Value="Đã xảy ra lỗi khi tạo tệp tạm thời cần thiết để hoàn tất cài đặt này.{{ Thư mục: [ProductName]. Mã lỗi hệ thống: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Tệp cabinet &amp;apos;[ProductName]&amp;apos; cần thiết cho quá trình cài đặt này bị hỏng và không thể sử dụng. Điều này có thể chỉ ra lỗi mạng, lỗi đọc từ đĩa CD-ROM hoặc sự cố với gói này."/>
+	<String Id="Error1334" Overridable="yes" Value="Không thể cài đặt tệp &amp;apos;[ProductName]&amp;apos; vì không tìm thấy tệp trong tệp cabinet &amp;apos;[ProductName]&amp;apos;. Điều này có thể chỉ ra lỗi mạng, lỗi đọc từ CD-ROM hoặc sự cố với gói này."/>
+	<String Id="Error1333" Overridable="yes" Value="Không vá đúng tệp [ProductName]: Lỗi CRC."/>
+	<String Id="Error1332" Overridable="yes" Value="Không di chuyển đúng tệp [ProductName]: Lỗi CRC."/>
+	<String Id="Error1331" Overridable="yes" Value="Không sao chép đúng tệp [ProductName]: Lỗi CRC."/>
+	<String Id="Error1330" Overridable="yes" Value="Không thể cài đặt tệp cần thiết vì tệp cabinet [ProductName] có chữ ký số không hợp lệ. Điều này có thể cho thấy tệp cabinet bị hỏng.{{ Lỗi [ProductName] được trả về bởi WinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Không thể cài đặt tệp cần thiết vì tệp cabinet [ProductName] chưa được ký số. Điều này có thể cho thấy tệp cabinet bị hỏng."/>
+	<String Id="Error1328" Overridable="yes" Value="Lỗi khi áp dụng bản vá cho tệp [ProductName]. Có thể tệp đã được cập nhật bằng các phương tiện khác và không thể sửa đổi bằng bản vá này nữa. Để biết thêm thông tin, hãy liên hệ với nhà cung cấp bản vá của bạn.{{ Lỗi hệ thống: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Ổ đĩa không hợp lệ: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Lỗi khi nhận bảo mật tệp: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; không phải là tên tệp ngắn hợp lệ."/>
+	<String Id="Error1324" Overridable="yes" Value="Đường dẫn thư mục &amp;apos;[ProductName]&amp;apos; chứa một ký tự không hợp lệ."/>
+	<String Id="Error1323" Overridable="yes" Value="Đường dẫn thư mục &amp;apos;[ProductName]&amp;apos; chứa các từ không hợp lệ trong đường dẫn thư mục."/>
+	<String Id="Error1322" Overridable="yes" Value="Một phần của đường dẫn thư mục &amp;apos;[ProductName]&amp;apos; không hợp lệ. Đường dẫn này trống hoặc vượt quá độ dài cho phép của hệ thống."/>
+	<String Id="Error1321" Overridable="yes" Value="Trình cài đặt không có đủ quyền để sửa đổi tệp này: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Đường dẫn được chỉ định quá dài: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Đã xảy ra lỗi mạng khi cố gắng mở tủ tệp nguồn: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Đã xảy ra lỗi mạng khi cố gắng tạo thư mục: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Đã xảy ra lỗi khi cố gắng tạo thư mục: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Đã xảy ra lỗi mạng khi cố gắng đọc từ tệp: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Không thể ghi vào thư mục đã chỉ định: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Đường dẫn được chỉ định &amp;apos;[ProductName]&amp;apos; không khả dụng."/>
+	<String Id="Error1313" Overridable="yes" Value="Hiện tại không có sẵn tập [ProductName]. Vui lòng chọn tập khác."/>
+	<String Id="Error1312" Overridable="yes" Value="Không thể tạo thư mục &amp;apos;[ProductName]&amp;apos;. Tệp có tên này đã tồn tại. Vui lòng đổi tên hoặc xóa tệp và nhấp vào Thử lại hoặc nhấp vào Hủy để thoát."/>
+	<String Id="Error1311" Overridable="yes" Value="Không tìm thấy tệp nguồn{{(cabinet)}}: [ProductName]. Hãy xác minh rằng tệp tồn tại và bạn có thể truy cập vào tệp đó."/>
+	<String Id="Error1310" Overridable="yes" Value="Lỗi khi ghi vào tệp: [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng bạn có quyền truy cập vào thư mục đó."/>
+	<String Id="Error1309" Overridable="yes" Value="Lỗi khi đọc từ tệp: [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng tệp tồn tại và bạn có thể truy cập vào tệp đó."/>
+	<String Id="Error1308" Overridable="yes" Value="Không tìm thấy tệp nguồn: [ProductName]. Hãy xác minh rằng tệp tồn tại và bạn có thể truy cập vào tệp đó."/>
+	<String Id="Error1307" Overridable="yes" Value="Không đủ dung lượng đĩa để cài đặt tệp này: [ProductName]. Giải phóng một số dung lượng đĩa và nhấp vào Thử lại hoặc nhấp vào Hủy để thoát."/>
+	<String Id="Error1306" Overridable="yes" Value="Một ứng dụng khác có quyền truy cập độc quyền vào tệp &amp;apos;[ProductName]&amp;apos;. Vui lòng tắt tất cả các ứng dụng khác, sau đó nhấp vào Thử lại."/>
+	<String Id="Error1305" Overridable="yes" Value="Lỗi khi đọc từ tệp [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng tệp tồn tại và bạn có thể truy cập vào tệp đó."/>
+	<String Id="Error1304" Overridable="yes" Value="Lỗi khi ghi vào tệp: [ProductName]. Xác minh rằng bạn có quyền truy cập vào thư mục đó."/>
+	<String Id="Error1303" Overridable="yes" Value="Trình cài đặt không đủ quyền để truy cập thư mục này: [ProductName]. Quá trình cài đặt không thể tiếp tục. Vui lòng đăng nhập với tư cách quản trị viên hoặc liên hệ với quản trị viên hệ thống của bạn."/>
+	<String Id="Error1302" Overridable="yes" Value="Vui lòng chèn đĩa: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Không thể tạo tệp &amp;apos;[ProductName]&amp;apos;. Thư mục có tên này đã tồn tại. Hủy cài đặt và thử cài đặt ở vị trí khác."/>
+	<String Id="Error1101" Overridable="yes" Value="Lỗi khi đọc từ tệp: [ProductName].{{ Lỗi hệ thống [ProductName].}} Xác minh rằng tệp tồn tại và bạn có thể truy cập vào tệp đó."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Thiết lập không thành công."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Quá trình thiết lập đã hoàn tất thành công."/>
+	<String Id="Error23" Overridable="yes" Value="Đang chuẩn bị xóa các phiên bản cũ hơn của ứng dụng này..."/>
+	<String Id="Error22" Overridable="yes" Value="Đang xóa các phiên bản cũ hơn của ứng dụng này..."/>
+	<String Id="Error21" Overridable="yes" Value="Đang thu thập thông tin cần thiết..."/>
+	<String Id="Error20" Overridable="yes" Value="Vui lòng đợi trong khi Windows cấu hình [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Trình cài đặt dừng lại đột ngột."/>
+	<String Id="Error18" Overridable="yes" Value="Trình cài đặt không còn phản hồi nữa."/>
+	<String Id="Error17" Overridable="yes" Value="Hết bộ nhớ. Hãy tắt các ứng dụng khác trước khi thử lại."/>
+	<String Id="Error16" Overridable="yes" Value="Thời gian còn lại: {[ProductName] phút }{[ProductName] giây}"/>
+	<String Id="Error15" Overridable="yes" Value="Hành động kết thúc [ProductName]: [ProductName]. Giá trị trả về [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Hành động bắt đầu [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Đã dừng ghi nhật ký: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Bắt đầu ghi nhật ký: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Kiểu tin nhắn: [ProductName], Đối số: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Hành động [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Đĩa đầy: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Trình cài đặt gặp lỗi không mong muốn khi cài đặt gói này. Điều này có thể cho thấy gói này có vấn đề. Mã lỗi là [ProductName]. {{Các đối số là: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Thông tin [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Cảnh báo [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Lỗi [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Lỗi nghiêm trọng: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Hủy công bố thông tin sản phẩm"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Thư mục: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Xóa các tập tin đã di chuyển"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Tập tin: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Xóa các tập tin sao lưu"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="رول بیک ایکشن:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Bối cảnh ứng dụng:[ProductName], Tên lắp ráp:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Hủy công bố thông tin lắp ráp"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Bối cảnh ứng dụng:[ProductName], Tên lắp ráp:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Xuất bản thông tin lắp ráp"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Tập tin: [ProductName], Phụ thuộc: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Cài đặt danh mục hệ thống"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Tạo các hoạt động tập lệnh cho hành động:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Ứng dụng quảng cáo"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Khóa: [ProductName], Tên: [ProductName], Giá trị: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Viết các giá trị đăng ký hệ thống"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Mục: [ProductName], Khóa: [ProductName], Giá trị: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Viết giá trị tệp INI"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Nomi: [ProductName], Qiymat: [ProductName], Harakat [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Cập nhật chuỗi môi trường"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Hủy đăng ký thư viện kiểu"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="Mã dự án: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Hủy đăng ký mã định danh chương trình"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="Kiểu nội dung MIME: [ProductName], Phần mở rộng: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Hủy đăng ký thông tin MIME"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Phông chữ: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Hủy đăng ký phông chữ"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Phần mở rộng: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Hủy đăng ký máy chủ mở rộng"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Hủy đăng ký các ứng dụng và thành phần COM+"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Mã lớp: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Hủy đăng ký máy chủ lớp"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Tính năng: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Hủy xuất bản tính năng sản phẩm"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="ID thành phần: [ProductName], Trình định tính: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Hủy xuất bản các thành phần đủ điều kiện"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Dịch vụ: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Dừng dịch vụ"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Dịch vụ: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Bắt đầu dịch vụ"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Khởi tạo thư mục ODBC"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Thư mục: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Hủy đăng ký mô-đun"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Thư mục: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Đăng ký mô-đun"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Tìm kiếm sản phẩm đủ điều kiện"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Phím tắt: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Xóa các phím tắt"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Từ khóa: [ProductName], Tên: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Xóa các giá trị sổ đăng ký hệ thống"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Xóa các thành phần ODBC"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Mục: [ProductName], Khóa: [ProductName], Giá trị: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Xóa các mục nhập tệp INI"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Thư mục: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Xóa thư mục"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Thư mục: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Xóa tập tin"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Ứng dụng: [ProductName], Dòng lệnh: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Xóa ứng dụng"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Nomi: [ProductName], Qiymat: [ProductName], Harakat [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Cập nhật chuỗi môi trường"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Thư mục: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Xóa các tập tin trùng lặp"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Đang đăng ký người dùng"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Đăng ký thư viện kiểu"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Đăng ký sản phẩm"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Phông chữ: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Đăng ký phông chữ"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Người dùng: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Đăng ký ứng dụng và thành phần COM+"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Đang cập nhật đăng ký thành phần"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Thư mục: [ProductName], Kích thước: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Vá các tập tin"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Thư mục: [ProductName], Kích thước: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Di chuyển tập tin"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Ứng dụng: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Di chuyển trạng thái tính năng từ các ứng dụng liên quan"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Đánh giá các điều kiện phóng"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Dịch vụ: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Cài đặt dịch vụ mới"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Cài đặt các thành phần ODBC"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Ứng dụng đã tìm thấy: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Tìm kiếm các ứng dụng liên quan"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Thư mục: [ProductName], Kích thước: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Tạo các tập tin trùng lặp"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Dịch vụ: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Xóa dịch vụ"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Thư mục: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Tạo thư mục"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Tìm kiếm sản phẩm đủ điều kiện"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Tập tin: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Liên kết các tệp thực thi"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Thuộc tính: [ProductName], Chữ ký: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Tìm kiếm các ứng dụng đã cài đặt"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Không gian trống: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Phân bổ không gian đăng ký"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="Mã dự án: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Đăng ký mã định danh chương trình"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="Kiểu nội dung MIME: [ProductName], Phần mở rộng: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Đăng ký thông tin MIME"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Phần mở rộng: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Đăng ký máy chủ mở rộng"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Mã lớp: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Đăng ký máy chủ lớp"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Xuất bản thông tin sản phẩm"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Tính năng: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Xuất bản tính năng sản phẩm"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="ID thành phần: [ProductName], Trình định tính: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Xuất bản các thành phần đủ điều kiện"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Phím tắt: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Tạo lối tắt"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Yêu cầu về không gian tính toán"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Yêu cầu về không gian tính toán"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Yêu cầu về không gian tính toán"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Tập tin: [ProductName], Thư mục: [ProductName], Kích thước: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Sao chép các tập tin cài đặt mạng"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Tập tin: [ProductName], Thư mục: [ProductName], Kích thước: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Sao chép các tập tin mới"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Đang xác thực cài đặt"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Vui lòng đọc Thỏa thuận cấp phép [ProductName]"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Cập nhật"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Oʻrnatish"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="Hộp thoại WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Chào mừng bạn đến với Trình hướng dẫn thiết lập [ProductName]"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Trình hướng dẫn thiết lập sẽ cập nhật [ProductName] trên máy tính của bạn. Nhấp vào Tiếp theo để tiếp tục hoặc Hủy để thoát khỏi Trình hướng dẫn thiết lập."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Trình hướng dẫn thiết lập sẽ cài đặt [ProductName] trên máy tính của bạn. Nhấp vào Tiếp theo để tiếp tục hoặc Hủy để thoát khỏi Trình hướng dẫn thiết lập."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="Hộp thoại WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Biểu tượng dấu chấm than"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Vui lòng đợi trong khi trình cài đặt xác định xong yêu cầu về dung lượng ổ đĩa của bạn."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Trở lại"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Sẵn sàng cập nhật [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Nhấp vào Cập nhật để cập nhật [ProductName] từ máy tính của bạn. Nhấp vào Quay lại để xem lại hoặc thay đổi bất kỳ cài đặt nào. Nhấp vào Hủy để thoát khỏi trình hướng dẫn."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Cập nhật"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Sẵn sàng để xóa [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Nhấp vào Xóa để xóa [ProductName] khỏi máy tính của bạn. Nhấp vào Quay lại để xem lại hoặc thay đổi bất kỳ cài đặt nào. Nhấp vào Hủy để thoát khỏi trình hướng dẫn."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Di dời"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Sẵn sàng để sửa chữa [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Nhấp vào Sửa chữa để sửa lỗi cài đặt [ProductName]. Nhấp vào Quay lại để xem lại hoặc thay đổi bất kỳ cài đặt nào của bạn. Nhấp vào Hủy để thoát khỏi trình hướng dẫn."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Sửa"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Sẵn sàng để thay đổi [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Nhấp vào Thay đổi để bắt đầu cài đặt. Nhấp vào Quay lại để xem lại hoặc thay đổi bất kỳ cài đặt nào. Nhấp vào Hủy để thoát khỏi trình hướng dẫn."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Oʻzgartirish"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Sẵn sàng cài đặt [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Nhấp vào Cài đặt để bắt đầu cài đặt. Nhấp vào Quay lại để xem lại hoặc thay đổi bất kỳ cài đặt nào. Nhấp vào Hủy để thoát khỏi trình hướng dẫn."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Oʻrnatish"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Nhấp vào nút Kết thúc để thoát khỏi Trình hướng dẫn thiết lập."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="Quá trình thiết lập [ProductName] đã bị gián đoạn. Hệ thống của bạn chưa được sửa đổi. Để cài đặt chương trình này sau, vui lòng chạy lại trình cài đặt."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Trình hướng dẫn thiết lập đã bị gián đoạn"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="Hộp thoại WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Tất cả các tính năng của chương trình sẽ được cài đặt. Cần nhiều dung lượng đĩa nhất."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Cho phép người dùng chọn tính năng chương trình nào sẽ được cài đặt và vị trí cài đặt. Khuyến nghị cho người dùng nâng cao."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Cài đặt các tính năng chương trình phổ biến nhất. Được khuyến nghị cho hầu hết người dùng."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Chọn loại thiết lập phù hợp nhất với nhu cầu của bạn"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Chọn Loại thiết lập"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Cài đặt hoàn chỉnh"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="Hoàn thành"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Cài đặt tùy chỉnh"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="Phong tục"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Cài đặt điển hình"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Odat"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Tiếp tục Trình hướng dẫn thiết lập [ProductName]"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Trình hướng dẫn thiết lập sẽ hoàn tất việc cài đặt [ProductName] trên máy tính của bạn. Nhấp vào Cài đặt để tiếp tục hoặc Hủy để thoát khỏi Trình hướng dẫn thiết lập."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="Hộp thoại WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Oʻrnatish"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Trạng thái:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Tiến độ đã hoàn thành"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Đang cập nhật [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Vui lòng đợi trong khi Trình hướng dẫn thiết lập cập nhật [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Đang xóa [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Vui lòng đợi trong khi Trình hướng dẫn thiết lập xóa [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Đang sửa chữa [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Vui lòng đợi trong khi Trình hướng dẫn thiết lập sửa chữa [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Đang thay đổi [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Vui lòng đợi trong khi Trình hướng dẫn thiết lập thay đổi [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Đang cài đặt [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Vui lòng đợi trong khi Trình hướng dẫn thiết lập cài đặt [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Chào mừng bạn đến với Trình hướng dẫn thiết lập [ProductName]"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Vui lòng đợi trong khi Trình hướng dẫn thiết lập chuẩn bị hướng dẫn bạn cài đặt."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="Hộp thoại WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Ngoài ra, bạn có thể chọn tắt chức năng khôi phục cài đặt gốc của trình cài đặt. Việc tắt chức năng khôi phục cài đặt gốc sẽ ngăn trình cài đặt khôi phục trạng thái ban đầu của máy tính nếu quá trình cài đặt bị gián đoạn. Nhấp vào Có nếu bạn muốn chấp nhận rủi ro khi tắt chức năng khôi phục cài đặt gốc."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Hết dung lượng ổ đĩa"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Dung lượng đĩa cần thiết để cài đặt vượt quá dung lượng đĩa trống."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Các ổ đĩa được đánh dấu không có đủ dung lượng đĩa cho các tính năng hiện đang được chọn. Bạn có thể xóa một số tệp khỏi các ổ đĩa được đánh dấu, cài đặt ít tính năng hơn hoặc chọn ổ đĩa đích khác."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Hết dung lượng ổ đĩa"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Dung lượng đĩa cần thiết để cài đặt vượt quá dung lượng đĩa trống."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Các ổ đĩa được đánh dấu không có đủ dung lượng đĩa cho các tính năng hiện đang được chọn. Bạn có thể xóa một số tệp khỏi các ổ đĩa được đánh dấu, cài đặt ít tính năng hơn hoặc chọn ổ đĩa đích khác."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Không đóng ứng dụng. Cần phải khởi động lại."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Ilovalarni yoping va ularni qayta ishga tushirishga harakat qiling."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Các tệp đang sử dụng"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Một số tệp cần cập nhật hiện đang được sử dụng."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Các ứng dụng sau đây đang sử dụng các tệp cần được cập nhật bằng thiết lập này. Bạn có thể để Trình hướng dẫn thiết lập đóng chúng và thử khởi động lại hoặc khởi động lại máy sau."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Chào mừng bạn đến với Trình hướng dẫn thiết lập [ProductName]"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Trình hướng dẫn thiết lập cho phép bạn thay đổi cách cài đặt các tính năng [ProductName] trên máy tính hoặc xóa nó khỏi máy tính. Nhấp vào Tiếp theo để tiếp tục hoặc Hủy để thoát Trình hướng dẫn thiết lập."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="Hộp thoại WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] không thể sửa chữa được."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Sửa lỗi trong bản cài đặt gần đây nhất bằng cách sửa các tệp, lối tắt và mục đăng ký bị thiếu hoặc bị hỏng."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="Không thể xóa [ProductName]."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Xóa [ProductName] khỏi máy tính của bạn."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] không có tính năng nào có thể lựa chọn độc lập."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Cho phép bạn thay đổi cách cài đặt tính năng."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Thay đổi, sửa chữa hoặc xóa cài đặt"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Chọn thao tác bạn muốn thực hiện."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Xóa cài đặt"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Di dời"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Sửa chữa lắp đặt"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Sửa"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Thay đổi cài đặt"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Oʻzgartirish"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Thỏa thuận cấp phép người dùng cuối"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Vui lòng đọc kỹ thỏa thuận cấp phép sau đây"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Biểu tượng thông tin"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Thư mục cài đặt phải nằm trên ổ cứng cục bộ."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Oʻzgartirish..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Cài đặt &amp;thư mục:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] sẽ được cài đặt trong thư mục riêng cho từng máy theo mặc định và có sẵn cho tất cả người dùng. Bạn có thể thay đổi thư mục cài đặt mặc định. Bạn phải có quyền Quản trị viên cục bộ."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Cài đặt cho tất cả người dùng của máy này"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] không hỗ trợ cài đặt theo từng người dùng."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] sẽ được cài đặt trong thư mục riêng cho từng người dùng và chỉ khả dụng cho tài khoản người dùng của bạn. Bạn không cần quyền Quản trị viên cục bộ."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Cài đặt &amp;chỉ dành cho bạn ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Phạm vi cài đặt"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Chọn phạm vi cài đặt và thư mục"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Cài đặt [ProductName] vào:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Nhấp vào Tiếp theo để cài đặt vào thư mục mặc định hoặc nhấp vào Thay đổi để chọn thư mục khác."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Thư mục đích"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Oʻzgartirish..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Các tệp đang sử dụng"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Một số tệp cần cập nhật hiện đang được sử dụng."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Các ứng dụng sau đang sử dụng các tệp cần được cập nhật bằng thiết lập này. Đóng các ứng dụng này rồi nhấp vào &amp;Thử lại để tiếp tục thiết lập hoặc Thoát để thoát."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="Ra"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Oʻzgartirish"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Oʻrnatish"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="Tính năngDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="Tính năngDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Tính năng sản phẩm"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Chọn cách bạn muốn cài đặt tính năng."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Tính năng sản phẩm"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Nhấp vào nút Kết thúc để thoát khỏi Trình hướng dẫn thiết lập."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="Trình hướng dẫn cài đặt [ProductName] đã kết thúc sớm do lỗi. Hệ thống của bạn chưa được sửa đổi. Để cài đặt chương trình này sau, hãy chạy lại Trình hướng dẫn cài đặt."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Trình hướng dẫn thiết lập đã kết thúc sớm"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="Hộp thoại WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Đã hoàn tất Trình hướng dẫn thiết lập [ProductName]"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Nhấp vào nút Kết thúc để thoát khỏi Trình hướng dẫn thiết lập."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="Hộp thoại WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Biểu tượng thông tin"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Văn bản thông tin"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Yêu cầu về dung lượng ổ đĩa"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Dung lượng đĩa cần thiết để cài đặt các tính năng đã chọn."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Các ổ đĩa được đánh dấu không có đủ dung lượng đĩa cho các tính năng đã chọn. Bạn có thể xóa một số tệp khỏi các ổ đĩa được đánh dấu, cài đặt ít tính năng hơn hoặc chọn ổ đĩa đích khác."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Vị trí:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-Tùy chỉnhDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Cài đặt tùy chỉnh"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Chọn cách bạn muốn cài đặt tính năng."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Nhấp vào các biểu tượng trong cây bên dưới để thay đổi cách cài đặt các tính năng."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Đĩa &amp; Sử dụng"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Cài lại"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="Duyệt..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Cây lựa chọn"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Biểu tượng thông tin"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Haqiqatan ham [ProductName] oʻrnatilishini bekor qilmoqchimisiz?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Thay đổi thư mục đích"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Duyệt đến thư mục đích"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Papka nomi:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Tạo một thư mục mới"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_Mới"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Lên một cấp độ"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Nhìn vào:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="Trình độ cao"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Oʻrnatish"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Nhấp vào Cài đặt để cài đặt sản phẩm với các tùy chọn mặc định dành riêng cho bạn. Nhấp vào Nâng cao để thay đổi tùy chọn cài đặt."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Nhấp vào Cài đặt để cài đặt sản phẩm với các tùy chọn mặc định cho tất cả người dùng. Nhấp vào Nâng cao để thay đổi tùy chọn cài đặt."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Vui lòng đọc Thỏa thuận cấp phép [ProductName]"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Thiết lập"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;In"/>
+	<String Id="WixUIOK" Overridable="yes" Value="ĐƯỢC RỒI"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;KHÔNG"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Đúng"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Phớt lờ"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Thử lại"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Hoàn thành"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Hủy bỏ"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Kế tiếp"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Mặt sau"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Gỡ cài đặt cấu hình Tường lửa Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Hủy bỏ cấu hình Tường lửa Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Cài đặt cấu hình Tường lửa Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Hủy bỏ cấu hình Tường lửa Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Cấu hình Tường lửa Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Cấu hình Tường lửa Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Không thể kết nối với Tường lửa Windows. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Hình ảnh trực quan cho các ứng dụng từ xa có sẵn dưới dạng tùy chọn trong cấu hình"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Xem máy chủ RAAS trong Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Tạo các phím tắt ứng dụng từ xa đến các ứng dụng máy chủ trên máy tính cục bộ"/>

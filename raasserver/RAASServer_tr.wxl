@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="tr" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını kaldırma"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını geri alma"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını yükleme"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını geri alma"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Güvenlik Duvarını Yapılandırma"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Güvenlik Duvarını Yapılandırma"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windows Güvenlik Duvarına bağlanılamıyor. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Ağ Paylaşımlı Sunucu"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS İstemcisinden kontrol ve taramayı etkinleştirmek için sürücüleri ağda paylaşın"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Yeniden başlatılabilir"/>

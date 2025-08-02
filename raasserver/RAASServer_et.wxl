@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="et" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni desinstallimine"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni tagasipööramine"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni installimine"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni tagasipööramine"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfigureerimine"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfigureerimine"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windowsi tulemüüriga ei saa ühendust. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Võrgu jagatud server"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Jagage draive võrgus, et võimaldada juhtimist ja sirvimist RAAS-kliendi kaudu"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Saab taaskäivitada"/>

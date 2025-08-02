@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="te" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="te" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="వాల్యూమ్"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="డిస్క్ పరిమాణం"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="అవసరం"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="తేడా"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="అందుబాటులో ఉంది"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="మిగిలి ఉన్న సమయం:{ [ProductName] నిమిషాలు}{ [ProductName] సెకన్లు}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="ఈ లక్షణానికి మీ హార్డ్ డ్రైవ్‌లో [ProductName] అవసరం. ఇది [ProductName] [ProductName] ఉప ఫీచర్లను ఎంపిక చేసింది. మీ హార్డ్ డ్రైవ్‌లో ఉపలక్షణాలకు [ProductName] అవసరం."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="ఈ లక్షణానికి మీ హార్డ్ డ్రైవ్‌లో [ProductName] అవసరం. ఇది [ProductName] [ProductName] ఉప ఫీచర్లను ఎంపిక చేసింది. మీ హార్డ్ డ్రైవ్‌లో ఉపలక్షణాలు [ProductName]ను ఖాళీ చేస్తాయి."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="ఈ ఫీచర్ మీ హార్డ్ డ్రైవ్‌లో [ProductName]ని ఖాళీ చేస్తుంది. ఇది [ProductName] [ProductName] ఉప ఫీచర్లను ఎంపిక చేసింది. మీ హార్డ్ డ్రైవ్‌లో ఉపలక్షణాలకు [ProductName] అవసరం."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="ఈ ఫీచర్ మీ హార్డ్ డ్రైవ్‌లో [ProductName]ని ఖాళీ చేస్తుంది. ఇది [ProductName] [ProductName] ఉప ఫీచర్లను ఎంపిక చేసింది. మీ హార్డ్ డ్రైవ్‌లో ఉపలక్షణాలు [ProductName]ను ఖాళీ చేస్తాయి."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="ఈ ఫీచర్ నెట్‌వర్క్ నుండి అమలు చేయబడుతూనే ఉంటుంది"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="స్థానిక హార్డ్ డ్రైవ్‌లో ఇన్‌స్టాల్ చేయబడే నెట్‌వర్క్ స్థితి నుండి రన్ నుండి ఈ ఫీచర్ మారుతుంది"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="ఈ ఫీచర్ నెట్‌వర్క్ స్థితి నుండి అవసరమైనప్పుడు ఇన్‌స్టాల్ చేయడానికి సెట్ చేయడానికి రన్ నుండి మారుతుంది"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="ఈ ఫీచర్ పూర్తిగా అన్‌ఇన్‌స్టాల్ చేయబడుతుంది, మీరు దీన్ని నెట్‌వర్క్ నుండి అమలు చేయలేరు"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="ఈ ఫీచర్ మీ స్థానిక హార్డ్ డ్రైవ్ నుండి తీసివేయబడుతుంది, కానీ నెట్‌వర్క్ నుండి అమలు చేయడానికి ఇప్పటికీ అందుబాటులో ఉంటుంది"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="ఈ ఫీచర్ మీ స్థానిక హార్డ్ డ్రైవ్‌లో అలాగే ఉంటుంది"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="ఈ ఫీచర్ మీ స్థానిక హార్డ్ డ్రైవ్ నుండి తీసివేయబడుతుంది, కానీ CD నుండి అమలు చేయడానికి ఇప్పటికీ అందుబాటులో ఉంటుంది"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="ఈ ఫీచర్ మీ స్థానిక హార్డ్ డ్రైవ్ నుండి తీసివేయబడుతుంది, అయితే అవసరమైనప్పుడు ఇన్‌స్టాల్ అయ్యేలా సెట్ చేయబడుతుంది"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="ఈ ఫీచర్ పూర్తిగా తీసివేయబడుతుంది"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="ఈ ఫీచర్ కోసం ధరను కంపైల్ చేస్తోంది..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="ఈ లక్షణానికి మీ హార్డ్ డ్రైవ్‌లో [ProductName] అవసరం."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="ఈ ఫీచర్ మీ హార్డ్ డ్రైవ్‌లో [ProductName]ని ఖాళీ చేస్తుంది."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="స్థానిక హార్డ్ డ్రైవ్‌లో ఇన్‌స్టాల్ చేయడానికి CD స్థితి నుండి రన్ నుండి ఈ ఫీచర్ మారుతుంది"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="ఈ ఫీచర్ CD నుండి అమలు చేయబడుతూనే ఉంటుంది"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="ఈ ఫీచర్ రన్ నుండి CD స్థితి నుండి అవసరమైనప్పుడు ఇన్‌స్టాల్ అయ్యేలా సెట్ చేయడానికి మారుతుంది"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="ఈ ఫీచర్ పూర్తిగా అన్‌ఇన్‌స్టాల్ చేయబడుతుంది, మీరు దీన్ని CD నుండి అమలు చేయలేరు"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="నెట్‌వర్క్ నుండి అమలు చేయడానికి ఈ ఫీచర్ అందుబాటులో ఉంటుంది"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="ఈ ఫీచర్ మీ స్థానిక హార్డ్ డ్రైవ్‌లో ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="CD నుండి అమలు చేయడానికి ఈ ఫీచర్ అందుబాటులో ఉంటుంది"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="అవసరమైనప్పుడు ఇన్స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="ఈ ఫీచర్ అందుబాటులో ఉండదు"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="నెట్‌వర్క్ నుండి అమలు చేయడానికి ఈ ఫీచర్ ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="ఈ ఫీచర్ లోకల్ హార్డ్ డ్రైవ్‌లో ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="CD నుండి అమలు చేయడానికి ఈ ఫీచర్ ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="అవసరమైనప్పుడు ఈ ఫీచర్ ఇన్‌స్టాల్ అయ్యేలా సెట్ చేయబడుతుంది"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="ఈ ఫీచర్ అన్‌ఇన్‌స్టాల్ చేయబడి ఉంటుంది"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="అవసరమైన సమాచారాన్ని సేకరిస్తోంది..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="ఫోల్డర్|కొత్త ఫోల్డర్"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="నెట్‌వర్క్ నుండి అమలు చేయడానికి ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="స్థానిక హార్డ్ డ్రైవ్‌లో ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="CD నుండి అమలు చేయడానికి ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="నెట్‌వర్క్ నుండి అమలు చేయడానికి పూర్తి ఫీచర్ ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="పూర్తి ఫీచర్ స్థానిక హార్డ్ డ్రైవ్‌లో ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="CD నుండి అమలు చేయడానికి పూర్తి ఫీచర్ ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="అవసరమైనప్పుడు ఫీచర్ ఇన్‌స్టాల్ చేయబడుతుంది"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="పూర్తి ఫీచర్ అందుబాటులో ఉండదు"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="బైట్లు"/>
+	<String Id="Error1938" Overridable="yes" Value="అసెంబ్లీ &amp;apos;[ProductName]&amp;apos; యొక్క ఇన్‌స్టాలేషన్ సమయంలో లోపం సంభవించింది. అసెంబ్లీ యొక్క ఒకటి లేదా అంతకంటే ఎక్కువ మాడ్యూల్‌లు కనుగొనబడలేదు. HRESULT: [ProductName].{{ అసెంబ్లీ ఇంటర్‌ఫేస్: [ProductName], ఫంక్షన్: [ProductName], భాగం: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="అసెంబ్లీ &amp;apos;[ProductName]&amp;apos; యొక్క ఇన్‌స్టాలేషన్ సమయంలో లోపం సంభవించింది. సంతకం లేదా కేటలాగ్ ధృవీకరించబడలేదు లేదా చెల్లదు. HRESULT: [ProductName].{{ అసెంబ్లీ ఇంటర్‌ఫేస్: [ProductName], ఫంక్షన్: [ProductName], భాగం: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="అసెంబ్లీ &amp;apos;[ProductName]&amp;apos; యొక్క ఇన్‌స్టాలేషన్ సమయంలో లోపం సంభవించింది. అసెంబ్లీకి గట్టిగా పేరు పెట్టబడలేదు లేదా కనిష్ట కీ పొడవుతో సంతకం చేయలేదు. HRESULT: [ProductName].{{ అసెంబ్లీ ఇంటర్‌ఫేస్: [ProductName], ఫంక్షన్: [ProductName], భాగం: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="అసెంబ్లీ &amp;apos;[ProductName]&amp;apos; యొక్క ఇన్‌స్టాలేషన్ సమయంలో లోపం సంభవించింది. దయచేసి మరింత సమాచారం కోసం సహాయం మరియు మద్దతును చూడండి. HRESULT: [ProductName].{{ అసెంబ్లీ ఇంటర్‌ఫేస్: [ProductName], ఫంక్షన్: [ProductName], భాగం: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="మెషీన్‌లోని విధానం ద్వారా వినియోగదారు ఇన్‌స్టాలేషన్‌లు నిలిపివేయబడ్డాయి."/>
+	<String Id="Error1933" Overridable="yes" Value="Windows ఇన్‌స్టాలర్ సేవ ఒకటి లేదా అంతకంటే ఎక్కువ రక్షిత Windows ఫైల్‌లను నవీకరించదు.{{ SFP లోపం: [ProductName]. రక్షిత ఫైల్‌ల జాబితా:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="విండోస్ ఇన్‌స్టాలర్ సేవ రక్షిత Windows ఫైల్‌ను అప్‌డేట్ చేయలేదు [ProductName].{{ ప్యాకేజీ వెర్షన్: [ProductName], OS ప్రొటెక్టెడ్ వెర్షన్: [ProductName], SFP లోపం: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="విండోస్ ఇన్‌స్టాలర్ సేవ సిస్టమ్ ఫైల్‌ను అప్‌డేట్ చేయదు [ProductName] ఎందుకంటే ఫైల్ Windows ద్వారా రక్షించబడింది. ఈ ప్రోగ్రామ్ సరిగ్గా పని చేయడానికి మీరు మీ ఆపరేటింగ్ సిస్టమ్‌ను అప్‌డేట్ చేయాల్సి రావచ్చు.{{ ప్యాకేజీ వెర్షన్: [ProductName], OS ప్రొటెక్టెడ్ వెర్షన్: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="సేవ &amp;apos;[ProductName]&amp;apos; ([ProductName]) యొక్క వివరణ మార్చబడదు."/>
+	<String Id="Error1929" Overridable="yes" Value="COM+ అప్లికేషన్ నమోదును తీసివేయడంలో లోపం. మరింత సమాచారం కోసం మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1928" Overridable="yes" Value="COM+ అప్లికేషన్‌ను నమోదు చేయడంలో లోపం. మరింత సమాచారం కోసం మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1927" Overridable="yes" Value="ఈ కంప్యూటర్‌లో కాంపోనెంట్ సేవలు (COM+ 1.0) ఇన్‌స్టాల్ చేయబడలేదు. ఈ ఇన్‌స్టాలేషన్ విజయవంతంగా పూర్తి కావడానికి కాంపోనెంట్ సేవలు అవసరం. Windows 2000లో కాంపోనెంట్ సేవలు అందుబాటులో ఉన్నాయి."/>
+	<String Id="Error1926" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; ఫైల్ కోసం ఫైల్ భద్రతను సెట్ చేయడం సాధ్యపడలేదు. లోపం: [ProductName]. ఈ ఫైల్ కోసం భద్రతా అనుమతులను సవరించడానికి మీకు తగిన అధికారాలు ఉన్నాయని ధృవీకరించండి."/>
+	<String Id="Error1925" Overridable="yes" Value="మెషీన్ యొక్క వినియోగదారులందరికీ ఈ ఇన్‌స్టాలేషన్‌ను పూర్తి చేయడానికి మీకు తగిన అధికారాలు లేవు. నిర్వాహకునిగా లాగిన్ చేసి, ఈ ఇన్‌స్టాలేషన్‌ను మళ్లీ ప్రయత్నించండి."/>
+	<String Id="Error1924" Overridable="yes" Value="ఎన్విరాన్మెంట్ వేరియబుల్ &amp;apos;[ProductName]&amp;apos;ని నవీకరించడం సాధ్యం కాలేదు. ఎన్విరాన్‌మెంట్ వేరియబుల్‌లను సవరించడానికి మీకు తగిన అధికారాలు ఉన్నాయని ధృవీకరించండి."/>
+	<String Id="Error1923" Overridable="yes" Value="సేవ &amp;apos;[ProductName]&amp;apos; ([ProductName]) ఇన్‌స్టాల్ చేయబడలేదు. సిస్టమ్ సేవలను ఇన్‌స్టాల్ చేయడానికి మీకు తగిన అధికారాలు ఉన్నాయని ధృవీకరించండి."/>
+	<String Id="Error1922" Overridable="yes" Value="సేవ &amp;apos;[ProductName]&amp;apos; ([ProductName]) తొలగించబడదు. సిస్టమ్ సేవలను తీసివేయడానికి మీకు తగిన అధికారాలు ఉన్నాయని ధృవీకరించండి."/>
+	<String Id="Error1921" Overridable="yes" Value="సేవ &amp;apos;[ProductName]&amp;apos; ([ProductName]) నిలిపివేయబడలేదు. సిస్టమ్ సేవలను నిలిపివేయడానికి మీకు తగిన అధికారాలు ఉన్నాయని ధృవీకరించండి."/>
+	<String Id="Error1920" Overridable="yes" Value="సేవ &amp;apos;[ProductName]&amp;apos; ([ProductName]) ప్రారంభించడంలో విఫలమైంది. సిస్టమ్ సేవలను ప్రారంభించడానికి మీకు తగిన అధికారాలు ఉన్నాయని ధృవీకరించండి."/>
+	<String Id="Error1919" Overridable="yes" Value="ODBC డేటా మూలాన్ని కాన్ఫిగర్ చేయడంలో లోపం: [ProductName], ODBC లోపం [ProductName]: [ProductName]. ఫైల్ [ProductName] ఉందని మరియు మీరు దానిని యాక్సెస్ చేయగలరని ధృవీకరించండి."/>
+	<String Id="Error1918" Overridable="yes" Value="ODBC డ్రైవర్‌ను ఇన్‌స్టాల్ చేయడంలో లోపం: [ProductName], ODBC లోపం [ProductName]: [ProductName]. ఫైల్ [ProductName] ఉందని మరియు మీరు దానిని యాక్సెస్ చేయగలరని ధృవీకరించండి."/>
+	<String Id="Error1917" Overridable="yes" Value="ODBC డ్రైవర్‌ను తీసివేయడంలో లోపం: [ProductName], ODBC లోపం [ProductName]: [ProductName]. ODBC డ్రైవర్‌లను తీసివేయడానికి మీకు తగిన అధికారాలు ఉన్నాయని ధృవీకరించండి."/>
+	<String Id="Error1916" Overridable="yes" Value="ODBC డ్రైవర్ మేనేజర్‌ని ఇన్‌స్టాల్ చేయడంలో లోపం, ODBC లోపం [ProductName]: [ProductName]. మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1915" Overridable="yes" Value="ODBC డ్రైవర్ మేనేజర్‌ని తీసివేయడంలో లోపం, ODBC లోపం [ProductName]: [ProductName]. మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1914" Overridable="yes" Value="రీబూట్‌లో ఫైల్ [ProductName]ని భర్తీ చేయడానికి ఫైల్ [ProductName] షెడ్యూల్ చేయడం సాధ్యపడలేదు. [ProductName] ఫైల్ చేయడానికి మీకు వ్రాత అనుమతులు ఉన్నాయని ధృవీకరించండి."/>
+	<String Id="Error1913" Overridable="yes" Value="ini ఫైల్ [ProductName][ProductName]ని నవీకరించడం సాధ్యపడలేదు. ఫైల్ ఉనికిలో ఉందని మరియు మీరు దానిని యాక్సెస్ చేయగలరని ధృవీకరించండి."/>
+	<String Id="Error1912" Overridable="yes" Value="ఫైల్ [ProductName] కోసం టైప్ లైబ్రరీని రిజిస్టర్ చేయలేకపోయింది. మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1911" Overridable="yes" Value="ఫైల్ [ProductName] కోసం టైప్ లైబ్రరీని నమోదు చేయడం సాధ్యపడలేదు. మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1910" Overridable="yes" Value="సత్వరమార్గాన్ని తీసివేయడం సాధ్యపడలేదు [ProductName]. సత్వరమార్గం ఫైల్ ఉనికిలో ఉందని మరియు మీరు దానిని యాక్సెస్ చేయగలరని ధృవీకరించండి."/>
+	<String Id="Error1909" Overridable="yes" Value="సత్వరమార్గాన్ని సృష్టించడం సాధ్యపడలేదు [ProductName]. గమ్యం ఫోల్డర్ ఉనికిలో ఉందని మరియు మీరు దానిని యాక్సెస్ చేయగలరని ధృవీకరించండి."/>
+	<String Id="Error1908" Overridable="yes" Value="ఫాంట్ [ProductName] నమోదును తీసివేయడం సాధ్యపడలేదు. ఫాంట్‌లను తీసివేయడానికి మీకు తగిన అనుమతులు ఉన్నాయని ధృవీకరించండి."/>
+	<String Id="Error1907" Overridable="yes" Value="ఫాంట్ [ProductName]ని నమోదు చేయడం సాధ్యపడలేదు. ఫాంట్‌లను ఇన్‌స్టాల్ చేయడానికి మీకు తగిన అనుమతులు ఉన్నాయని మరియు సిస్టమ్ ఈ ఫాంట్‌కు మద్దతు ఇస్తుందని ధృవీకరించండి."/>
+	<String Id="Error1906" Overridable="yes" Value="ప్యాకేజీని కాష్ చేయడంలో విఫలమైంది [ProductName]. లోపం: [ProductName]. మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1905" Overridable="yes" Value="మాడ్యూల్ [ProductName] నమోదును తీసివేయడంలో విఫలమైంది. HRESULT [ProductName]. మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1904" Overridable="yes" Value="మాడ్యూల్ [ProductName] నమోదు చేయడంలో విఫలమైంది. HRESULT [ProductName]. మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1903" Overridable="yes" Value="రీబూట్ ఆపరేషన్ షెడ్యూల్ చేస్తోంది: ఫైల్ [ProductName]ని తొలగిస్తోంది. ఆపరేషన్ పూర్తి చేయడానికి తప్పనిసరిగా రీబూట్ చేయాలి."/>
+	<String Id="Error1902" Overridable="yes" Value="రీబూట్ ఆపరేషన్ షెడ్యూల్ చేస్తోంది: ఫైల్ [ProductName] నుండి [ProductName]కి పేరు మార్చడం. ఆపరేషన్ పూర్తి చేయడానికి తప్పనిసరిగా రీబూట్ చేయాలి."/>
+	<String Id="Error1901" Overridable="yes" Value="సోర్స్ ఇన్‌స్టాల్ డేటాబేస్ నుండి చదవడానికి ప్రయత్నించడంలో లోపం: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="ఇన్‌స్టాల్ కోసం చెల్లుబాటు అయ్యే గమ్యం ఫోల్డర్‌ని నిర్ణయించడం సాధ్యపడలేదు."/>
+	<String Id="Error1806" Overridable="yes" Value="ఈ ఫోల్డర్‌ని చదవడానికి మీకు తగిన అధికారాలు లేవు."/>
+	<String Id="Error1805" Overridable="yes" Value="ఫోల్డర్ [ProductName] ఉనికిలో లేదు. దయచేసి ఇప్పటికే ఉన్న ఫోల్డర్‌కు మార్గాన్ని నమోదు చేయండి."/>
+	<String Id="Error1804" Overridable="yes" Value="డ్రైవ్ [ProductName]లో డిస్క్ లేదు. దయచేసి ఒకదాన్ని చొప్పించి, మళ్లీ ప్రయత్నించండి క్లిక్ చేయండి లేదా బ్రౌజ్ డైలాగ్‌కి తిరిగి రావడానికి రద్దు చేయి క్లిక్ చేయండి మరియు వేరే వాల్యూమ్‌ను ఎంచుకోండి."/>
+	<String Id="Error1803" Overridable="yes" Value="డ్రైవ్ [ProductName]లో డిస్క్ లేదు. దయచేసి ఒకదాన్ని చొప్పించి, మళ్లీ ప్రయత్నించు క్లిక్ చేయండి లేదా గతంలో ఎంచుకున్న వాల్యూమ్‌కు తిరిగి వెళ్లడానికి రద్దు చేయి క్లిక్ చేయండి."/>
+	<String Id="Error1802" Overridable="yes" Value="మెమరీ అయిపోయింది. మళ్లీ ప్రయత్నించే ముందు ఇతర అప్లికేషన్‌లను షట్ డౌన్ చేయండి."/>
+	<String Id="Error1801" Overridable="yes" Value="మార్గం [ProductName] చెల్లదు. దయచేసి చెల్లుబాటు అయ్యే మార్గాన్ని పేర్కొనండి."/>
+	<String Id="Error1732" Overridable="yes" Value="[ProductName] இன் நிறுவலை முடிக்க, நீங்கள் கணினியை மறுதொடக்கம் செய்ய வேண்டும். பிற பயனர்கள் தற்போது இந்த கணினியில் உள்நுழைந்துள்ளனர், மேலும் மறுதொடக்கம் செய்வது அவர்களின் வேலையை இழக்க நேரிடும். இப்போது மீண்டும் தொடங்க வேண்டுமா?"/>
+	<String Id="Error1731" Overridable="yes" Value="ఉత్పత్తికి సంబంధించిన సోర్స్ ఇన్‌స్టాలేషన్ ప్యాకేజీ [ProductName] క్లయింట్ ప్యాకేజీతో సమకాలీకరించబడలేదు. ఇన్‌స్టాలేషన్ ప్యాకేజీ &amp;apos;[ProductName]&amp;apos; చెల్లుబాటు అయ్యే కాపీని ఉపయోగించి ఇన్‌స్టాలేషన్‌ను మళ్లీ ప్రయత్నించండి."/>
+	<String Id="Error1730" Overridable="yes" Value="ఈ అప్లికేషన్‌ను తీసివేయడానికి మీరు తప్పనిసరిగా నిర్వాహకుడిగా ఉండాలి. ఈ అప్లికేషన్‌ను తీసివేయడానికి, మీరు అడ్మినిస్ట్రేటర్‌గా లాగిన్ చేయవచ్చు లేదా సహాయం కోసం మీ సాంకేతిక మద్దతు బృందాన్ని సంప్రదించవచ్చు."/>
+	<String Id="Error1729" Overridable="yes" Value="కాన్ఫిగరేషన్ విఫలమైంది."/>
+	<String Id="Error1728" Overridable="yes" Value="కాన్ఫిగరేషన్ విజయవంతంగా పూర్తయింది."/>
+	<String Id="Error1727" Overridable="yes" Value="ప్రకటన విఫలమైంది."/>
+	<String Id="Error1726" Overridable="yes" Value="ప్రకటన విజయవంతంగా పూర్తయింది."/>
+	<String Id="Error1725" Overridable="yes" Value="తొలగింపు విఫలమైంది."/>
+	<String Id="Error1724" Overridable="yes" Value="తొలగింపు విజయవంతంగా పూర్తయింది."/>
+	<String Id="Error1723" Overridable="yes" Value="ఈ విండోస్ ఇన్‌స్టాలర్ ప్యాకేజీతో సమస్య ఉంది. ఈ ఇన్‌స్టాల్ పూర్తి చేయడానికి అవసరమైన DLL రన్ చేయబడదు. మీ మద్దతు సిబ్బందిని లేదా ప్యాకేజీ విక్రేతను సంప్రదించండి.{{ యాక్షన్ [ProductName], ఎంట్రీ: [ProductName], లైబ్రరీ: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="ఈ విండోస్ ఇన్‌స్టాలర్ ప్యాకేజీతో సమస్య ఉంది. సెటప్‌లో భాగంగా అమలు చేయబడిన ప్రోగ్రామ్ ఆశించిన విధంగా పూర్తి కాలేదు. మీ మద్దతు సిబ్బందిని లేదా ప్యాకేజీ విక్రేతను సంప్రదించండి.{{ చర్య [ProductName], స్థానం: [ProductName], ఆదేశం: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="ఈ విండోస్ ఇన్‌స్టాలర్ ప్యాకేజీతో సమస్య ఉంది. ఈ ఇన్‌స్టాల్‌ను పూర్తి చేయడానికి అవసరమైన ప్రోగ్రామ్ అమలు చేయబడదు. మీ మద్దతు సిబ్బంది లేదా ప్యాకేజీ విక్రేతను సంప్రదించండి.{{ చర్య: [ProductName], స్థానం: [ProductName], ఆదేశం: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="ఈ విండోస్ ఇన్‌స్టాలర్ ప్యాకేజీతో సమస్య ఉంది. ఈ ఇన్‌స్టాల్‌ని పూర్తి చేయడానికి అవసరమైన స్క్రిప్ట్‌ను అమలు చేయడం సాధ్యపడలేదు. మీ మద్దతు సిబ్బందిని లేదా ప్యాకేజీ విక్రేతను సంప్రదించండి.{{ అనుకూల చర్య [ProductName] స్క్రిప్ట్ లోపం [ProductName], [ProductName]: [ProductName] పంక్తి [ProductName], కాలమ్ [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Windows ఇన్‌స్టాలర్ సేవను యాక్సెస్ చేయడం సాధ్యపడలేదు. మీరు విండోస్‌ని సేఫ్ మోడ్‌లో నడుపుతున్నప్పుడు లేదా విండోస్ ఇన్‌స్టాలర్ సరిగ్గా ఇన్‌స్టాల్ చేయనట్లయితే ఇది సంభవించవచ్చు. సహాయం కోసం మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1718" Overridable="yes" Value="డిజిటల్ సంతకం విధానం ద్వారా ఫైల్ [ProductName] తిరస్కరించబడింది."/>
+	<String Id="Error1717" Overridable="yes" Value="తీసివేయబడింది [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="కాన్ఫిగర్ చేయబడింది [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="వ్యవస్థాపించబడింది [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="[ProductName] యొక్క పాత సంస్కరణ తీసివేయబడదు. మీ సాంకేతిక మద్దతు సమూహాన్ని సంప్రదించండి.{{ సిస్టమ్ లోపం [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] దాని అవసరమైన ఉత్పత్తులలో ఒకదానిని ఇన్‌స్టాల్ చేయలేము. మీ సాంకేతిక మద్దతు సమూహాన్ని సంప్రదించండి.{{ సిస్టమ్ లోపం: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="మీ కంప్యూటర్‌ను దాని మునుపటి స్థితికి పునరుద్ధరించడానికి అవసరమైన ఒకటి లేదా అంతకంటే ఎక్కువ ఫైల్‌లు కనుగొనబడలేదు. పునరుద్ధరణ సాధ్యం కాదు."/>
+	<String Id="Error1711" Overridable="yes" Value="ఇన్‌స్టాలేషన్ సమాచారాన్ని డిస్క్‌కి వ్రాస్తున్నప్పుడు లోపం సంభవించింది. తగినంత డిస్క్ స్థలం అందుబాటులో ఉందో లేదో తనిఖీ చేయండి మరియు ఇన్‌స్టాల్‌ను ముగించడానికి మళ్లీ ప్రయత్నించండి లేదా రద్దు చేయి క్లిక్ చేయండి."/>
+	<String Id="Error1710" Overridable="yes" Value="உங்கள் கணினியை அதன் முந்தைய நிலைக்கு மீட்டெடுக்கலாம் அல்லது பின்னர் நிறுவலைத் தொடரலாம். மீட்டெடுக்க விரும்புகிறீர்களா?"/>
+	<String Id="Error1709" Overridable="yes" Value="ఉత్పత్తి: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="ఇన్‌స్టాలేషన్ విఫలమైంది."/>
+	<String Id="Error1707" Overridable="yes" Value="ఇన్‌స్టాలేషన్ విజయవంతంగా పూర్తయింది."/>
+	<String Id="Error1706" Overridable="yes" Value="ఉత్పత్తి [ProductName] కోసం ఇన్‌స్టాలేషన్ ప్యాకేజీ కనుగొనబడలేదు. ఇన్‌స్టాలేషన్ ప్యాకేజీ &amp;apos;[ProductName]&amp;apos; చెల్లుబాటు అయ్యే కాపీని ఉపయోగించి ఇన్‌స్టాలేషన్‌ను మళ్లీ ప్రయత్నించండి."/>
+	<String Id="Error1705" Overridable="yes" Value="இந்த தயாரிப்புக்கான முந்தைய நிறுவல் செயலில் உள்ளது. தொடர, அந்த நிறுவல் செய்த மாற்றங்களை நீங்கள் செயல்தவிர்க்க வேண்டும். அந்த மாற்றங்களைச் செயல்தவிர்க்க விரும்புகிறீர்களா?"/>
+	<String Id="Error1704" Overridable="yes" Value="[ProductName] க்கான நிறுவல் தற்போது இடைநிறுத்தப்பட்டுள்ளது. தொடர, அந்த நிறுவல் செய்த மாற்றங்களை நீங்கள் செயல்தவிர்க்க வேண்டும். அந்த மாற்றங்களைச் செயல்தவிர்க்க விரும்புகிறீர்களா?"/>
+	<String Id="Error1703" Overridable="yes" Value="[ProductName]కి చేసిన కాన్ఫిగరేషన్ మార్పులు అమలులోకి రావడానికి మీరు మీ సిస్టమ్‌ను పునఃప్రారంభించాలి. ఇప్పుడు పునఃప్రారంభించడానికి అవును లేదా మీరు తర్వాత మాన్యువల్‌గా పునఃప్రారంభించాలనుకుంటే కాదు క్లిక్ చేయండి."/>
+	<String Id="Error1702" Overridable="yes" Value="[ProductName] యొక్క కాన్ఫిగరేషన్ కొనసాగడానికి ముందు ఇన్‌స్టాలర్ తప్పనిసరిగా మీ సిస్టమ్‌ను పునఃప్రారంభించాలి. ఇప్పుడు పునఃప్రారంభించడానికి అవును లేదా మీరు తర్వాత మాన్యువల్‌గా పునఃప్రారంభించాలనుకుంటే కాదు క్లిక్ చేయండి."/>
+	<String Id="Error1701" Overridable="yes" Value="కీ [ProductName] చెల్లదు. మీరు సరైన కీని నమోదు చేశారని ధృవీకరించండి."/>
+	<String Id="Error1609" Overridable="yes" Value="భద్రతా సెట్టింగ్‌లను వర్తింపజేస్తున్నప్పుడు లోపం సంభవించింది. [ProductName] చెల్లుబాటు అయ్యే వినియోగదారు లేదా సమూహం కాదు. ఇది ప్యాకేజీతో సమస్య కావచ్చు లేదా నెట్‌వర్క్‌లోని డొమైన్ కంట్రోలర్‌కి కనెక్ట్ చేయడంలో సమస్య కావచ్చు. మీ నెట్‌వర్క్ కనెక్షన్‌ని తనిఖీ చేసి, ఇన్‌స్టాల్‌ను ముగించడానికి మళ్లీ ప్రయత్నించండి లేదా రద్దు చేయి క్లిక్ చేయండి. {{యూజర్ యొక్క SIDని గుర్తించడం సాధ్యం కాలేదు, సిస్టమ్ లోపం [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="ఈ ఉత్పత్తిని ఇన్‌స్టాల్ చేయడం కోసం మెషీన్‌లో మునుపు ఇన్‌స్టాల్ చేసిన కంప్లైంట్ ప్రోడక్ట్‌లు ఏవీ కనుగొనబడలేదు."/>
+	<String Id="Error1607" Overridable="yes" Value="ఇన్‌స్టాల్‌ను కొనసాగించే ముందు కింది అప్లికేషన్‌లను మూసివేయాలి:"/>
+	<String Id="Error1606" Overridable="yes" Value="నెట్‌వర్క్ స్థానాన్ని యాక్సెస్ చేయడం సాధ్యపడలేదు [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="రికవరీ ప్రారంభించబడి ఇన్‌స్టాల్‌ను కొనసాగించడానికి వాల్యూమ్ &amp;apos;[ProductName]&amp;apos;లో తగినంత డిస్క్ స్థలం లేదు. [ProductName] KB అవసరం, కానీ [ProductName] KB మాత్రమే అందుబాటులో ఉన్నాయి. రికవరీ సమాచారాన్ని సేవ్ చేయకుండా ఇన్‌స్టాల్‌ను కొనసాగించడానికి విస్మరించు క్లిక్ చేయండి, అందుబాటులో ఉన్న స్థలాన్ని మళ్లీ తనిఖీ చేయడానికి మళ్లీ ప్రయత్నించండి క్లిక్ చేయండి లేదా ఇన్‌స్టాలేషన్ నుండి నిష్క్రమించడానికి రద్దు చేయి క్లిక్ చేయండి."/>
+	<String Id="Error1604" Overridable="yes" Value="ఉత్పత్తి &amp;apos;[ProductName]&amp;apos; ఇప్పటికే ఇన్‌స్టాల్ చేయబడింది, ఈ ఉత్పత్తి యొక్క ఇన్‌స్టాలేషన్‌ను నిరోధిస్తుంది. రెండు ఉత్పత్తులు అననుకూలమైనవి."/>
+	<String Id="Error1603" Overridable="yes" Value="కింది ప్రక్రియ ద్వారా ఫైల్ [ProductName][ProductName] ఉపయోగంలో ఉంది{: పేరు: [ProductName], Id: [ProductName], విండో శీర్షిక: &amp;apos;[ProductName]&amp;apos;}. ఆ అప్లికేషన్‌ను మూసివేసి, మళ్లీ ప్రయత్నించండి."/>
+	<String Id="Error1602" Overridable="yes" Value="நிச்சயமாக ரத்துசெய்ய விரும்புகிறீர்களா?"/>
+	<String Id="Error1601" Overridable="yes" Value="డిస్క్ స్థలం లేదు -- వాల్యూమ్: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="వినియోగదారు &amp;apos;[ProductName]&amp;apos; గతంలో ఉత్పత్తి &amp;apos;[ProductName]&amp;apos; కోసం ఇన్‌స్టాల్‌ను ప్రారంభించారు. ఆ వినియోగదారు ఆ ఉత్పత్తిని ఉపయోగించే ముందు ఆ ఇన్‌స్టాల్‌ని మళ్లీ అమలు చేయాలి."/>
+	<String Id="Error1502" Overridable="yes" Value="వినియోగదారు &amp;apos;[ProductName]&amp;apos; గతంలో ఉత్పత్తి &amp;apos;[ProductName]&amp;apos; కోసం ఇన్‌స్టాల్‌ను ప్రారంభించారు. ఆ వినియోగదారు ఆ ఉత్పత్తిని ఉపయోగించే ముందు ఆ ఇన్‌స్టాల్‌ని మళ్లీ అమలు చేయాలి. మీ ప్రస్తుత ఇన్‌స్టాల్ ఇప్పుడు కొనసాగుతుంది."/>
+	<String Id="Error1501" Overridable="yes" Value="సురక్షిత డేటాను యాక్సెస్ చేయడంలో లోపం. దయచేసి Windows ఇన్‌స్టాలర్ సరిగ్గా కాన్ఫిగర్ చేయబడిందని నిర్ధారించుకుని, మళ్లీ ఇన్‌స్టాల్ చేయడానికి ప్రయత్నించండి."/>
+	<String Id="Error1500" Overridable="yes" Value="మరొక ఇన్‌స్టాలేషన్ ప్రోగ్రెస్‌లో ఉంది. దీన్ని కొనసాగించే ముందు మీరు తప్పనిసరిగా ఆ ఇన్‌స్టాలేషన్‌ను పూర్తి చేయాలి."/>
+	<String Id="Error1410" Overridable="yes" Value="అందుబాటులో ఉన్న రిజిస్ట్రీ స్థలాన్ని పెంచడం సాధ్యపడలేదు. [ProductName] ఈ అప్లికేషన్ యొక్క ఇన్‌స్టాలేషన్ కోసం KB ఉచిత రిజిస్ట్రీ స్థలం అవసరం."/>
+	<String Id="Error1409" Overridable="yes" Value="కీ [ProductName] కోసం భద్రతా సమాచారాన్ని చదవడం సాధ్యపడలేదు.{{ సిస్టమ్ లోపం [ProductName].}} ఆ కీకి మీకు తగినంత ప్రాప్యత ఉందని ధృవీకరించండి లేదా మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1408" Overridable="yes" Value="కీ [ProductName] కోసం సబ్ కీ పేర్లను పొందడం సాధ్యపడలేదు.{{ సిస్టమ్ లోపం [ProductName].}} ఆ కీకి మీకు తగినంత ప్రాప్యత ఉందని ధృవీకరించండి లేదా మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1407" Overridable="yes" Value="కీ [ProductName] కోసం విలువ పేర్లను పొందడం సాధ్యపడలేదు.{{ సిస్టమ్ లోపం [ProductName].}} ఆ కీకి మీకు తగినంత ప్రాప్యత ఉందని ధృవీకరించండి లేదా మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1406" Overridable="yes" Value="కీ [ProductName]కి విలువ [ProductName]ని వ్రాయడం సాధ్యపడలేదు.{{ సిస్టమ్ లోపం [ProductName].}} ఆ కీకి మీకు తగినంత ప్రాప్యత ఉందని ధృవీకరించండి లేదా మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1405" Overridable="yes" Value="కీ [ProductName] నుండి విలువ [ProductName]ని చదవడం సాధ్యపడలేదు.{{ సిస్టమ్ లోపం [ProductName].}} ఆ కీకి మీకు తగినంత ప్రాప్యత ఉందని ధృవీకరించండి లేదా మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1404" Overridable="yes" Value="కీని తొలగించడం సాధ్యపడలేదు [ProductName].{{ సిస్టమ్ లోపం [ProductName].}} మీకు ఆ కీకి తగిన ప్రాప్యత ఉందని ధృవీకరించండి లేదా మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1403" Overridable="yes" Value="కీ [ProductName] నుండి విలువ [ProductName]ని తొలగించడం సాధ్యపడలేదు.{{ సిస్టమ్ లోపం [ProductName].}} ఆ కీకి మీకు తగినంత ప్రాప్యత ఉందని ధృవీకరించండి లేదా మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1402" Overridable="yes" Value="కీని తెరవడం సాధ్యపడలేదు: [ProductName].{{ సిస్టమ్ లోపం [ProductName].}} మీకు ఆ కీకి తగిన ప్రాప్యత ఉందని ధృవీకరించండి లేదా మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1401" Overridable="yes" Value="కీని సృష్టించడం సాధ్యపడలేదు: [ProductName].{{ సిస్టమ్ లోపం [ProductName].}} ఆ కీకి మీకు తగినంత ప్రాప్యత ఉందని ధృవీకరించండి లేదా మీ మద్దతు సిబ్బందిని సంప్రదించండి."/>
+	<String Id="Error1336" Overridable="yes" Value="ఈ ఇన్‌స్టాలేషన్‌ను పూర్తి చేయడానికి అవసరమైన తాత్కాలిక ఫైల్‌ను సృష్టించడంలో లోపం ఏర్పడింది.{{ ఫోల్డర్: [ProductName]. సిస్టమ్ ఎర్రర్ కోడ్: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="ఈ ఇన్‌స్టాలేషన్‌కు అవసరమైన క్యాబినెట్ ఫైల్ &amp;apos;[ProductName]&amp;apos; పాడైంది మరియు ఉపయోగించబడదు. ఇది నెట్‌వర్క్ లోపం, CD-ROM నుండి చదవడంలో లోపం లేదా ఈ ప్యాకేజీతో సమస్యను సూచిస్తుంది."/>
+	<String Id="Error1334" Overridable="yes" Value="క్యాబినెట్ ఫైల్ &amp;apos;[ProductName]&amp;apos;లో ఫైల్ కనుగొనబడనందున &amp;apos;[ProductName]&amp;apos; ఫైల్ ఇన్‌స్టాల్ చేయబడదు. ఇది నెట్‌వర్క్ లోపం, CD-ROM నుండి చదవడంలో లోపం లేదా ఈ ప్యాకేజీతో సమస్యను సూచిస్తుంది."/>
+	<String Id="Error1333" Overridable="yes" Value="[ProductName] ఫైల్‌ను సరిగ్గా ప్యాచ్ చేయడంలో విఫలమైంది: CRC లోపం."/>
+	<String Id="Error1332" Overridable="yes" Value="[ProductName] ఫైల్‌ను సరిగ్గా తరలించడంలో విఫలమైంది: CRC లోపం."/>
+	<String Id="Error1331" Overridable="yes" Value="[ProductName] ఫైల్‌ని సరిగ్గా కాపీ చేయడంలో విఫలమైంది: CRC లోపం."/>
+	<String Id="Error1330" Overridable="yes" Value="క్యాబినెట్ ఫైల్ [ProductName] చెల్లని డిజిటల్ సంతకాన్ని కలిగి ఉన్నందున అవసరమైన ఫైల్ ఇన్‌స్టాల్ చేయబడదు. క్యాబినెట్ ఫైల్ పాడైందని ఇది సూచించవచ్చు.{{ లోపం [ProductName] WinVerifyTrust ద్వారా తిరిగి వచ్చింది.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="క్యాబినెట్ ఫైల్ [ProductName] డిజిటల్ సంతకం చేయనందున అవసరమైన ఫైల్ ఇన్‌స్టాల్ చేయబడదు. దీంతో కేబినెట్ ఫైల్ అవినీతికి గురైంది."/>
+	<String Id="Error1328" Overridable="yes" Value="ఫైల్ [ProductName]కి ప్యాచ్ వర్తింపజేయడంలో లోపం. ఇది బహుశా ఇతర మార్గాల ద్వారా నవీకరించబడి ఉండవచ్చు మరియు ఈ ప్యాచ్ ద్వారా ఇకపై సవరించబడదు. మరింత సమాచారం కోసం మీ ప్యాచ్ విక్రేతను సంప్రదించండి.{{ సిస్టమ్ లోపం: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="చెల్లని డ్రైవ్: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="ఫైల్ భద్రతను పొందడంలో లోపం: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; అనేది చెల్లుబాటు అయ్యే షార్ట్ ఫైల్ పేరు కాదు."/>
+	<String Id="Error1324" Overridable="yes" Value="ఫోల్డర్ పాత్ &amp;apos;[ProductName]&amp;apos; చెల్లని అక్షరాన్ని కలిగి ఉంది."/>
+	<String Id="Error1323" Overridable="yes" Value="ఫోల్డర్ పాత్ &amp;apos;[ProductName]&amp;apos; ఫోల్డర్ పాత్‌లలో చెల్లని పదాలను కలిగి ఉంది."/>
+	<String Id="Error1322" Overridable="yes" Value="ఫోల్డర్ పాత్ &amp;apos;[ProductName]&amp;apos;లో కొంత భాగం చెల్లదు. ఇది ఖాళీగా ఉంటుంది లేదా సిస్టమ్ అనుమతించిన పొడవును మించిపోయింది."/>
+	<String Id="Error1321" Overridable="yes" Value="ఈ ఫైల్‌ను సవరించడానికి ఇన్‌స్టాలర్‌కు తగిన అధికారాలు లేవు: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="పేర్కొన్న మార్గం చాలా పొడవుగా ఉంది: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="సోర్స్ ఫైల్ క్యాబినెట్‌ను తెరవడానికి ప్రయత్నిస్తున్నప్పుడు నెట్‌వర్క్ లోపం సంభవించింది: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="డైరెక్టరీని సృష్టించడానికి ప్రయత్నిస్తున్నప్పుడు నెట్‌వర్క్ లోపం సంభవించింది: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="డైరెక్టరీని సృష్టించడానికి ప్రయత్నిస్తున్నప్పుడు లోపం సంభవించింది: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="ఫైల్ నుండి చదవడానికి ప్రయత్నిస్తున్నప్పుడు నెట్‌వర్క్ లోపం సంభవించింది: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="పేర్కొన్న ఫోల్డర్‌కి వ్రాయడం సాధ్యం కాలేదు: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="పేర్కొన్న మార్గం &amp;apos;[ProductName]&amp;apos; అందుబాటులో లేదు."/>
+	<String Id="Error1313" Overridable="yes" Value="వాల్యూమ్ [ProductName] ప్రస్తుతం అందుబాటులో లేదు. దయచేసి మరొకటి ఎంచుకోండి."/>
+	<String Id="Error1312" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; డైరెక్టరీని సృష్టించలేరు. ఈ పేరుతో ఫైల్ ఇప్పటికే ఉంది. దయచేసి ఫైల్ పేరు మార్చండి లేదా తీసివేయండి మరియు మళ్లీ ప్రయత్నించండి క్లిక్ చేయండి లేదా నిష్క్రమించడానికి రద్దు చేయి క్లిక్ చేయండి."/>
+	<String Id="Error1311" Overridable="yes" Value="మూలాధార ఫైల్ కనుగొనబడలేదు{{(క్యాబినెట్)}}: [ProductName]. ఫైల్ ఉనికిలో ఉందని మరియు మీరు దానిని యాక్సెస్ చేయగలరని ధృవీకరించండి."/>
+	<String Id="Error1310" Overridable="yes" Value="ఫైల్‌కి వ్రాయడంలో లోపం: [ProductName].{{ సిస్టమ్ లోపం [ProductName].}} మీకు ఆ డైరెక్టరీకి ప్రాప్యత ఉందని ధృవీకరించండి."/>
+	<String Id="Error1309" Overridable="yes" Value="ఫైల్ నుండి చదవడంలో లోపం: [ProductName].{{ సిస్టమ్ లోపం [ProductName].}} ఫైల్ ఉనికిలో ఉందని మరియు మీరు దానిని యాక్సెస్ చేయగలరని ధృవీకరించండి."/>
+	<String Id="Error1308" Overridable="yes" Value="మూలాధార ఫైల్ కనుగొనబడలేదు: [ProductName]. ఫైల్ ఉనికిలో ఉందని మరియు మీరు దానిని యాక్సెస్ చేయగలరని ధృవీకరించండి."/>
+	<String Id="Error1307" Overridable="yes" Value="ఈ ఫైల్‌ను ఇన్‌స్టాల్ చేయడానికి తగినంత డిస్క్ స్థలం లేదు: [ProductName]. కొంత డిస్క్ స్థలాన్ని ఖాళీ చేసి, మళ్లీ ప్రయత్నించండి క్లిక్ చేయండి లేదా నిష్క్రమించడానికి రద్దు చేయి క్లిక్ చేయండి."/>
+	<String Id="Error1306" Overridable="yes" Value="మరొక అప్లికేషన్ &amp;apos;[ProductName]&amp;apos; ఫైల్‌కు ప్రత్యేక ప్రాప్యతను కలిగి ఉంది. దయచేసి అన్ని ఇతర అప్లికేషన్‌లను షట్ డౌన్ చేసి, ఆపై మళ్లీ ప్రయత్నించండి క్లిక్ చేయండి."/>
+	<String Id="Error1305" Overridable="yes" Value="ఫైల్ [ProductName] నుండి చదవడంలో లోపం ఏర్పడింది.{{ సిస్టమ్ లోపం [ProductName].}} ఫైల్ ఉనికిలో ఉందని మరియు మీరు దానిని యాక్సెస్ చేయగలరని ధృవీకరించండి."/>
+	<String Id="Error1304" Overridable="yes" Value="ఫైల్‌కి వ్రాయడంలో లోపం: [ProductName]. మీరు ఆ డైరెక్టరీకి యాక్సెస్ కలిగి ఉన్నారని ధృవీకరించండి."/>
+	<String Id="Error1303" Overridable="yes" Value="ఈ డైరెక్టరీని యాక్సెస్ చేయడానికి ఇన్‌స్టాలర్‌కు తగిన అధికారాలు లేవు: [ProductName]. సంస్థాపన కొనసాగించబడదు. అడ్మినిస్ట్రేటర్‌గా లాగిన్ అవ్వండి లేదా మీ సిస్టమ్ అడ్మినిస్ట్రేటర్‌ని సంప్రదించండి."/>
+	<String Id="Error1302" Overridable="yes" Value="దయచేసి డిస్క్‌ని చొప్పించండి: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; ఫైల్‌ని సృష్టించడం సాధ్యపడదు. ఈ పేరుతో డైరెక్టరీ ఇప్పటికే ఉంది. ఇన్‌స్టాల్‌ని రద్దు చేసి, వేరే స్థానానికి ఇన్‌స్టాల్ చేయడానికి ప్రయత్నించండి."/>
+	<String Id="Error1101" Overridable="yes" Value="ఫైల్ నుండి చదవడంలో లోపం: [ProductName].{{ సిస్టమ్ లోపం [ProductName].}} ఫైల్ ఉనికిలో ఉందని మరియు మీరు దానిని యాక్సెస్ చేయగలరని ధృవీకరించండి."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }సెటప్ విఫలమైంది."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }సెటప్ విజయవంతంగా పూర్తయింది."/>
+	<String Id="Error23" Overridable="yes" Value="ఈ అప్లికేషన్ యొక్క పాత సంస్కరణలను తీసివేయడానికి సిద్ధమవుతోంది..."/>
+	<String Id="Error22" Overridable="yes" Value="ఈ అప్లికేషన్ యొక్క పాత వెర్షన్‌లను తీసివేస్తోంది..."/>
+	<String Id="Error21" Overridable="yes" Value="అవసరమైన సమాచారాన్ని సేకరిస్తోంది..."/>
+	<String Id="Error20" Overridable="yes" Value="Windows [ProductName]ని కాన్ఫిగర్ చేస్తున్నప్పుడు దయచేసి వేచి ఉండండి"/>
+	<String Id="Error19" Overridable="yes" Value="ఇన్‌స్టాలర్ ముందుగానే ఆగిపోయింది."/>
+	<String Id="Error18" Overridable="yes" Value="ఇన్‌స్టాలర్ ఇప్పుడు ప్రతిస్పందించడం లేదు."/>
+	<String Id="Error17" Overridable="yes" Value="మెమరీ అయిపోయింది. మళ్లీ ప్రయత్నించే ముందు ఇతర అప్లికేషన్‌లను షట్ డౌన్ చేయండి."/>
+	<String Id="Error16" Overridable="yes" Value="మిగిలి ఉన్న సమయం: {[ProductName] నిమిషాలు {[ProductName] సెకన్లు}"/>
+	<String Id="Error15" Overridable="yes" Value="చర్య ముగిసింది [ProductName]: [ProductName]. రిటర్న్ విలువ [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="చర్య ప్రారంభం [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="లాగింగ్ ఆగిపోయింది: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="లాగింగ్ ప్రారంభమైంది: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="సందేశ రకం: [ProductName], వాదన: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="చర్య [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{డిస్క్ నిండింది:}}"/>
+	<String Id="Error5" Overridable="yes" Value="ఇన్‌స్టాలర్ ఈ ప్యాకేజీని ఇన్‌స్టాల్ చేయడంలో ఊహించని లోపాన్ని ఎదుర్కొంది. ఇది ఈ ప్యాకేజీతో సమస్యను సూచించవచ్చు. లోపం కోడ్ [ProductName]. {{వాదనలు: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="సమాచారం [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="హెచ్చరిక [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{లోపం [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{ఫాటల్ ఎర్రర్:}}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="ఉత్పత్తి సమాచారాన్ని ప్రచురించడం తీసివేయబడుతోంది"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], డైరెక్టరీ: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="తరలించిన ఫైల్‌లను తొలగిస్తోంది"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="ఫైల్: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="బ్యాకప్ ఫైల్‌లను తీసివేస్తోంది"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Kitendo cha kurudi nyuma:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="అప్లికేషన్ సందర్భం:[ProductName], అసెంబ్లీ పేరు:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="అసెంబ్లీ సమాచారాన్ని ప్రచురించడం తీసివేయబడుతోంది"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="అప్లికేషన్ సందర్భం:[ProductName], అసెంబ్లీ పేరు:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="అసెంబ్లీ సమాచారాన్ని ప్రచురించడం"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="ఫైల్: [ProductName], డిపెండెన్సీలు: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="సిస్టమ్ కేటలాగ్‌ను ఇన్‌స్టాల్ చేస్తోంది"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="చర్య కోసం స్క్రిప్ట్ కార్యకలాపాలను రూపొందిస్తోంది:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="ప్రకటనల అప్లికేషన్"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="కీ: [ProductName], పేరు: [ProductName], విలువ: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="సిస్టమ్ రిజిస్ట్రీ విలువలను వ్రాయడం"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], విభాగం: [ProductName], కీ: [ProductName], విలువ: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="INI ఫైల్స్ విలువలను వ్రాయడం"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="பெயர்: [ProductName], மதிப்பு: [ProductName], செயல் [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="పర్యావరణ స్ట్రింగ్‌లను నవీకరిస్తోంది"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="లిబిడ్: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="రకం లైబ్రరీల నమోదును తీసివేయడం"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="ప్రోగ్రామ్ ఐడెంటిఫైయర్‌ల నమోదును తీసివేయడం"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME కంటెంట్ రకం: [ProductName], పొడిగింపు: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="MIME సమాచారం నమోదు తీసివేయబడుతోంది"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="ఫాంట్: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="ఫాంట్‌లను అన్‌రిజిస్టర్ చేస్తోంది"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="పొడిగింపు: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="పొడిగింపు సర్వర్‌ల నమోదును తీసివేయడం"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="COM+ అప్లికేషన్‌లు మరియు కాంపోనెంట్‌ల నమోదును తీసివేయడం"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="క్లాస్ ఐడి: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="క్లాస్ సర్వర్‌లను అన్‌రిజిస్టర్ చేయండి"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="ఫీచర్: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="ఉత్పత్తి ఫీచర్‌ల ప్రచురణను రద్దు చేస్తోంది"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="కాంపోనెంట్ ID: [ProductName], క్వాలిఫైయర్: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="క్వాలిఫైడ్ కాంపోనెంట్‌ల ప్రచురణను తీసివేయడం"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="సేవ: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="సేవలు నిలిపివేస్తున్నారు"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="సేవ: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="సేవలను ప్రారంభిస్తోంది"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="ODBC డైరెక్టరీలను ప్రారంభించడం"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], ఫోల్డర్: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="మాడ్యూళ్ల నమోదును తీసివేయడం"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], ఫోల్డర్: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="మాడ్యూళ్లను నమోదు చేస్తోంది"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="అర్హత కలిగిన ఉత్పత్తుల కోసం శోధిస్తోంది"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="సత్వరమార్గం: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="సత్వరమార్గాలను తొలగిస్తోంది"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="కీ: [ProductName], పేరు: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="సిస్టమ్ రిజిస్ట్రీ విలువలను తొలగిస్తోంది"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="ODBC భాగాలను తొలగిస్తోంది"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], విభాగం: [ProductName], కీ: [ProductName], విలువ: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="INI ఫైల్స్ ఎంట్రీలను తీసివేస్తోంది"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="ఫోల్డర్: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="ఫోల్డర్‌లను తీసివేస్తోంది"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], డైరెక్టరీ: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="ఫైళ్లను తొలగిస్తోంది"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="అప్లికేషన్: [ProductName], కమాండ్ లైన్: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="అప్లికేషన్‌లను తొలగిస్తోంది"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="பெயர்: [ProductName], மதிப்பு: [ProductName], செயல் [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="పర్యావరణ స్ట్రింగ్‌లను నవీకరిస్తోంది"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], డైరెక్టరీ: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="నకిలీ ఫైళ్లను తొలగిస్తోంది"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="వినియోగదారుని నమోదు చేస్తోంది"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="లిబిడ్: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="రకం లైబ్రరీలను నమోదు చేస్తోంది"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="ఉత్పత్తిని నమోదు చేస్తోంది"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="ఫాంట్: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="ఫాంట్‌లను నమోదు చేస్తోంది"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], వినియోగదారులు: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="COM+ అప్లికేషన్‌లు మరియు కాంపోనెంట్‌లను నమోదు చేస్తోంది"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="భాగం నమోదును నవీకరిస్తోంది"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], డైరెక్టరీ: [ProductName], పరిమాణం: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="ఫైళ్లను ప్యాచ్ చేస్తోంది"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], డైరెక్టరీ: [ProductName], పరిమాణం: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="ఫైళ్లను తరలిస్తోంది"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="అప్లికేషన్: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="సంబంధిత అప్లికేషన్ల నుండి మైగ్రేటింగ్ ఫీచర్ స్టేట్స్"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="ప్రయోగ పరిస్థితుల మూల్యాంకనం"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="సేవ: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="కొత్త సేవలను ఇన్‌స్టాల్ చేస్తోంది"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="ODBC భాగాలను ఇన్‌స్టాల్ చేస్తోంది"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="కనుగొనబడిన అప్లికేషన్: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="సంబంధిత అప్లికేషన్ల కోసం శోధిస్తోంది"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], డైరెక్టరీ: [ProductName], పరిమాణం: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="నకిలీ ఫైళ్లను సృష్టిస్తోంది"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="సేవ: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="సేవలను తొలగిస్తోంది"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="ఫోల్డర్: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="ఫోల్డర్‌లను సృష్టిస్తోంది"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="అర్హత కలిగిన ఉత్పత్తుల కోసం శోధిస్తోంది"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="ఫైల్: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="బైండింగ్ ఎక్జిక్యూటబుల్స్"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="ఆస్తి: [ProductName], సంతకం: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="ఇన్‌స్టాల్ చేసిన అప్లికేషన్‌ల కోసం శోధిస్తోంది"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="ఖాళీ స్థలం: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="రిజిస్ట్రీ స్థలాన్ని కేటాయించడం"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="ప్రోగ్రామ్ ఐడెంటిఫైయర్‌లను నమోదు చేస్తోంది"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME కంటెంట్ రకం: [ProductName], పొడిగింపు: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="MIME సమాచారాన్ని నమోదు చేస్తోంది"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="పొడిగింపు: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="పొడిగింపు సర్వర్‌లను నమోదు చేస్తోంది"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="క్లాస్ ఐడి: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="క్లాస్ సర్వర్‌లను నమోదు చేస్తోంది"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="ఉత్పత్తి సమాచారాన్ని ప్రచురించడం"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="ఫీచర్: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="ఉత్పత్తి ఫీచర్లను ప్రచురించడం"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="కాంపోనెంట్ ID: [ProductName], క్వాలిఫైయర్: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="క్వాలిఫైడ్ కాంపోనెంట్‌లను ప్రచురించడం"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="సత్వరమార్గం: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="సత్వరమార్గాలను సృష్టిస్తోంది"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="స్థల అవసరాలను గణించడం"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="స్థల అవసరాలను గణించడం"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="స్థల అవసరాలను గణించడం"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="ఫైల్: [ProductName], డైరెక్టరీ: [ProductName], పరిమాణం: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="నెట్‌వర్క్ ఇన్‌స్టాల్ ఫైల్‌లను కాపీ చేస్తోంది"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="ఫైల్: [ProductName], డైరెక్టరీ: [ProductName], పరిమాణం: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="కొత్త ఫైళ్లను కాపీ చేస్తోంది"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="ఇన్‌స్టాల్‌ని ధృవీకరిస్తోంది"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}దయచేసి [ProductName] లైసెన్స్ ఒప్పందాన్ని చదవండి"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;నవీకరించండి"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;நிறுவு"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] సెటప్ విజార్డ్‌కి స్వాగతం"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="సెటప్ విజార్డ్ మీ కంప్యూటర్‌లో [ProductName]ని అప్‌డేట్ చేస్తుంది. కొనసాగించడానికి తదుపరి క్లిక్ చేయండి లేదా సెటప్ విజార్డ్ నుండి నిష్క్రమించడానికి రద్దు చేయండి."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="సెటప్ విజార్డ్ మీ కంప్యూటర్‌లో [ProductName]ని ఇన్‌స్టాల్ చేస్తుంది. కొనసాగించడానికి తదుపరి క్లిక్ చేయండి లేదా సెటప్ విజార్డ్ నుండి నిష్క్రమించడానికి రద్దు చేయండి."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="ఆశ్చర్యార్థకం చిహ్నం"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="ఇన్‌స్టాలర్ మీ డిస్క్ స్పేస్ అవసరాలను నిర్ణయించడం పూర్తయ్యే వరకు దయచేసి వేచి ఉండండి."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;తిరిగి"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName]ని నవీకరించడానికి సిద్ధంగా ఉంది"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="మీ కంప్యూటర్ నుండి [ProductName]ని నవీకరించడానికి నవీకరణను క్లిక్ చేయండి. మీ ఇన్‌స్టాలేషన్ సెట్టింగ్‌లలో దేనినైనా సమీక్షించడానికి లేదా మార్చడానికి వెనుకకు క్లిక్ చేయండి. విజార్డ్ నుండి నిష్క్రమించడానికి రద్దు చేయి క్లిక్ చేయండి."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;నవీకరించండి"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title} [ProductName]ని తీసివేయడానికి సిద్ధంగా ఉంది"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="మీ కంప్యూటర్ నుండి [ProductName]ని తీసివేయడానికి తీసివేయి క్లిక్ చేయండి. మీ ఇన్‌స్టాలేషన్ సెట్టింగ్‌లలో దేనినైనా సమీక్షించడానికి లేదా మార్చడానికి వెనుకకు క్లిక్ చేయండి. విజార్డ్ నుండి నిష్క్రమించడానికి రద్దు చేయి క్లిక్ చేయండి."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;తొలగించు"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}రిపేర్ చేయడానికి సిద్ధంగా ఉంది [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="[ProductName] యొక్క ఇన్‌స్టాలేషన్‌ను రిపేర్ చేయడానికి రిపేర్ క్లిక్ చేయండి. మీ ఇన్‌స్టాలేషన్ సెట్టింగ్‌లలో దేనినైనా సమీక్షించడానికి లేదా మార్చడానికి వెనుకకు క్లిక్ చేయండి. విజార్డ్ నుండి నిష్క్రమించడానికి రద్దు చేయి క్లిక్ చేయండి."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="తిరిగి&amp;పెయిర్ చేయండి"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName]ని మార్చడానికి సిద్ధంగా ఉంది"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="ఇన్‌స్టాలేషన్‌ను ప్రారంభించడానికి మార్చు క్లిక్ చేయండి. మీ ఇన్‌స్టాలేషన్ సెట్టింగ్‌లలో దేనినైనా సమీక్షించడానికి లేదా మార్చడానికి వెనుకకు క్లిక్ చేయండి. విజార్డ్ నుండి నిష్క్రమించడానికి రద్దు చేయి క్లిక్ చేయండి."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;மாற்று"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}ఇన్‌స్టాల్ చేయడానికి సిద్ధంగా ఉంది [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="ఇన్‌స్టాలేషన్‌ను ప్రారంభించడానికి ఇన్‌స్టాల్ క్లిక్ చేయండి. మీ ఇన్‌స్టాలేషన్ సెట్టింగ్‌లలో దేనినైనా సమీక్షించడానికి లేదా మార్చడానికి వెనుకకు క్లిక్ చేయండి. విజార్డ్ నుండి నిష్క్రమించడానికి రద్దు చేయి క్లిక్ చేయండి."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;நிறுவு"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="సెటప్ విజార్డ్ నుండి నిష్క్రమించడానికి ముగించు బటన్‌ను క్లిక్ చేయండి."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] సెటప్ అంతరాయం కలిగింది. మీ సిస్టమ్ సవరించబడలేదు. ఈ ప్రోగ్రామ్‌ని తర్వాత సమయంలో ఇన్‌స్టాల్ చేయడానికి, దయచేసి ఇన్‌స్టాలేషన్‌ను మళ్లీ అమలు చేయండి."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] సెటప్ విజార్డ్ అంతరాయం కలిగింది"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="అన్ని ప్రోగ్రామ్ లక్షణాలు ఇన్‌స్టాల్ చేయబడతాయి. చాలా డిస్క్ స్థలం అవసరం."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="ఏ ప్రోగ్రామ్ ఫీచర్‌లు ఇన్‌స్టాల్ చేయబడాలి మరియు అవి ఎక్కడ ఇన్‌స్టాల్ చేయబడతాయో ఎంచుకోవడానికి వినియోగదారులను అనుమతిస్తుంది. అధునాతన వినియోగదారుల కోసం సిఫార్సు చేయబడింది."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="అత్యంత సాధారణ ప్రోగ్రామ్ లక్షణాలను ఇన్‌స్టాల్ చేస్తుంది. చాలా మంది వినియోగదారులకు సిఫార్సు చేయబడింది."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="మీ అవసరాలకు బాగా సరిపోయే సెటప్ రకాన్ని ఎంచుకోండి"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}సెటప్ రకాన్ని ఎంచుకోండి"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="పూర్తి సంస్థాపన"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="పూర్తి చేయి"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="కస్టమ్ ఇన్‌స్టాలేషన్"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;అస్టమ్"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="సాధారణ సంస్థాపన"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;வழக்கமான"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} [ProductName] సెటప్ విజార్డ్‌ని పునఃప్రారంభించడం"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="సెటప్ విజార్డ్ మీ కంప్యూటర్‌లో [ProductName] యొక్క ఇన్‌స్టాలేషన్‌ను పూర్తి చేస్తుంది. కొనసాగించడానికి ఇన్‌స్టాల్ క్లిక్ చేయండి లేదా సెటప్ విజార్డ్ నుండి నిష్క్రమించడానికి రద్దు చేయండి."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;நிறுவு"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="స్థితి:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="పురోగతి సాధించింది"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName]ని నవీకరిస్తోంది"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="సెటప్ విజార్డ్ [ProductName] అప్‌డేట్ అయ్యే వరకు దయచేసి వేచి ఉండండి."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title} [ProductName]ని తీసివేస్తోంది"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="దయచేసి సెటప్ విజార్డ్ [ProductName]ని తీసివేసే వరకు వేచి ఉండండి."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}రిపేరింగ్ [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="దయచేసి సెటప్ విజార్డ్ [ProductName] మరమ్మతులు చేసే వరకు వేచి ఉండండి."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName]ని మార్చడం"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="దయచేసి సెటప్ విజార్డ్ [ProductName]ని మార్చే వరకు వేచి ఉండండి."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}ఇన్‌స్టాల్ చేస్తోంది [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="దయచేసి సెటప్ విజార్డ్ [ProductName]ని ఇన్‌స్టాల్ చేస్తున్నప్పుడు వేచి ఉండండి."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] సెటప్ విజార్డ్‌కి స్వాగతం"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="ఇన్‌స్టాలేషన్ ద్వారా మీకు మార్గనిర్దేశం చేయడానికి సెటప్ విజార్డ్ సిద్ధమవుతున్నప్పుడు దయచేసి వేచి ఉండండి."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="ప్రత్యామ్నాయంగా, మీరు ఇన్‌స్టాలర్ యొక్క రోల్‌బ్యాక్ కార్యాచరణను నిలిపివేయడాన్ని ఎంచుకోవచ్చు. రోల్‌బ్యాక్‌ని నిలిపివేయడం వలన ఇన్‌స్టాలేషన్‌కు ఏ విధంగానైనా అంతరాయం ఏర్పడితే మీ కంప్యూటర్ యొక్క అసలు స్థితిని పునరుద్ధరించకుండా ఇన్‌స్టాలర్‌ను నిరోధిస్తుంది. మీరు రోల్‌బ్యాక్ డిసేబుల్ రిస్క్ తీసుకోవాలనుకుంటే అవును క్లిక్ చేయండి."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}డిస్క్ స్థలం లేదు"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="ఇన్‌స్టాలేషన్‌కు అవసరమైన డిస్క్ స్థలం అందుబాటులో ఉన్న డిస్క్ స్థలాన్ని మించిపోయింది."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="హైలైట్ చేయబడిన వాల్యూమ్‌లలో ప్రస్తుతం ఎంచుకున్న లక్షణాల కోసం తగినంత డిస్క్ స్థలం అందుబాటులో లేదు. మీరు హైలైట్ చేసిన వాల్యూమ్‌ల నుండి కొన్ని ఫైల్‌లను తీసివేయవచ్చు, తక్కువ ఫీచర్‌లను ఇన్‌స్టాల్ చేయవచ్చు లేదా వేరే డెస్టినేషన్ డ్రైవ్‌ని ఎంచుకోవచ్చు."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}డిస్క్ స్థలం లేదు"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="ఇన్‌స్టాలేషన్‌కు అవసరమైన డిస్క్ స్థలం అందుబాటులో ఉన్న డిస్క్ స్థలాన్ని మించిపోయింది."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="హైలైట్ చేయబడిన వాల్యూమ్‌లలో ప్రస్తుతం ఎంచుకున్న లక్షణాల కోసం తగినంత డిస్క్ స్థలం అందుబాటులో లేదు. మీరు హైలైట్ చేసిన వాల్యూమ్‌ల నుండి కొన్ని ఫైల్‌లను తీసివేయవచ్చు, తక్కువ ఫీచర్‌లను ఇన్‌స్టాల్ చేయవచ్చు లేదా వేరే డెస్టినేషన్ డ్రైవ్‌ని ఎంచుకోవచ్చు."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;అప్లికేషన్‌లను మూసివేయవద్దు. రీబూట్ చేయవలసి ఉంటుంది."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;பயன்பாடுகளை மூடிவிட்டு அவற்றை மறுதொடக்கம் செய்ய முயற்சிக்கவும்."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}ఫైల్‌లు వాడుకలో ఉన్నాయి"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="అప్‌డేట్ చేయాల్సిన కొన్ని ఫైల్‌లు ప్రస్తుతం వాడుకలో ఉన్నాయి."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="కింది అప్లికేషన్‌లు ఈ సెటప్ ద్వారా అప్‌డేట్ చేయాల్సిన ఫైల్‌లను ఉపయోగిస్తున్నాయి. మీరు వాటిని మూసివేయడానికి సెటప్ విజార్డ్‌ని అనుమతించవచ్చు మరియు వాటిని పునఃప్రారంభించడానికి లేదా తర్వాత మెషీన్‌ను రీబూట్ చేయడానికి ప్రయత్నించవచ్చు."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] సెటప్ విజార్డ్‌కి స్వాగతం"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="సెటప్ విజార్డ్ మీ కంప్యూటర్‌లో [ProductName] ఫీచర్‌లు ఇన్‌స్టాల్ చేయబడిన విధానాన్ని మార్చడానికి లేదా మీ కంప్యూటర్ నుండి దాన్ని తీసివేయడానికి మిమ్మల్ని అనుమతిస్తుంది. కొనసాగించడానికి తదుపరి క్లిక్ చేయండి లేదా సెటప్ విజార్డ్ నుండి నిష్క్రమించడానికి రద్దు చేయండి."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] రిపేరు చేయబడదు."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="తప్పిపోయిన మరియు పాడైన ఫైల్‌లు, షార్ట్‌కట్‌లు మరియు రిజిస్ట్రీ ఎంట్రీలను పరిష్కరించడం ద్వారా ఇటీవలి ఇన్‌స్టాలేషన్‌లో లోపాలను రిపేర్ చేస్తుంది."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] తీసివేయబడదు."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="మీ కంప్యూటర్ నుండి [ProductName]ని తొలగిస్తుంది."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName]లో స్వతంత్రంగా ఎంచుకోదగిన లక్షణాలు లేవు."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="ఫీచర్‌లను ఇన్‌స్టాల్ చేసే విధానాన్ని మార్చడానికి మిమ్మల్ని అనుమతిస్తుంది."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ఇన్‌స్టాలేషన్‌ను మార్చండి, రిపేర్ చేయండి లేదా తీసివేయండి"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="మీరు చేయాలనుకుంటున్న ఆపరేషన్‌ను ఎంచుకోండి."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="ఇన్‌స్టాలేషన్‌ను తీసివేయండి"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;తొలగించు"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="మరమ్మత్తు సంస్థాపన"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="తిరిగి&amp;పెయిర్ చేయండి"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="ఇన్‌స్టాలేషన్‌ని మార్చండి"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;மாற்று"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ఎండ్-యూజర్ లైసెన్స్ ఒప్పందం"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="దయచేసి క్రింది లైసెన్స్ ఒప్పందాన్ని జాగ్రత్తగా చదవండి"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="సమాచార చిహ్నం"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="ఇన్‌స్టాలేషన్ డైరెక్టరీ తప్పనిసరిగా లోకల్ హార్డ్ డ్రైవ్‌లో ఉండాలి."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;மாற்று..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="ఇన్‌స్టాలేషన్ &amp;ఫోల్డర్:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] డిఫాల్ట్‌గా ఒక్కో మెషీన్ ఫోల్డర్‌లో ఇన్‌స్టాల్ చేయబడుతుంది మరియు వినియోగదారులందరికీ అందుబాటులో ఉంటుంది. మీరు డిఫాల్ట్ ఇన్‌స్టాలేషన్ ఫోల్డర్‌ను మార్చవచ్చు. మీరు తప్పనిసరిగా స్థానిక నిర్వాహక అధికారాలను కలిగి ఉండాలి."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}ఈ &amp;యంత్రం యొక్క వినియోగదారులందరికీ ఇన్‌స్టాల్ చేయండి"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] ప్రతి వినియోగదారు ఇన్‌స్టాలేషన్‌కు మద్దతు ఇవ్వదు."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] ప్రతి వినియోగదారు ఫోల్డర్‌లో ఇన్‌స్టాల్ చేయబడుతుంది మరియు మీ వినియోగదారు ఖాతా కోసం మాత్రమే అందుబాటులో ఉంటుంది. మీకు స్థానిక నిర్వాహక అధికారాలు అవసరం లేదు."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}మీ కోసం &amp;ఇన్‌స్టాల్ చేయండి ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ఇన్‌స్టాలేషన్ స్కోప్"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="ఇన్‌స్టాలేషన్ స్కోప్ మరియు ఫోల్డర్‌ను ఎంచుకోండి"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="దీని కోసం [ProductName]ని ఇన్‌స్టాల్ చేయండి:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="డిఫాల్ట్ ఫోల్డర్‌కు ఇన్‌స్టాల్ చేయడానికి తదుపరి క్లిక్ చేయండి లేదా మరొకదాన్ని ఎంచుకోవడానికి మార్చు క్లిక్ చేయండి."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}గమ్యం ఫోల్డర్"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;மாற்று..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}ఫైల్‌లు వాడుకలో ఉన్నాయి"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="అప్‌డేట్ చేయాల్సిన కొన్ని ఫైల్‌లు ప్రస్తుతం వాడుకలో ఉన్నాయి."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="కింది అప్లికేషన్‌లు ఈ సెటప్ ద్వారా అప్‌డేట్ చేయాల్సిన ఫైల్‌లను ఉపయోగిస్తున్నాయి. ఈ అప్లికేషన్‌లను మూసివేసి, ఆపై సెటప్‌ను కొనసాగించడానికి &amp;మళ్లీ ప్రయత్నించండి లేదా దాని నుండి నిష్క్రమించడానికి నిష్క్రమించు క్లిక్ చేయండి."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="నిష్క్రమించు"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;மாற்று"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;நிறுவு"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="ఫీచర్లుDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="ఫీచర్లుDlgItem వివరణ"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ఉత్పత్తి లక్షణాలు"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="మీరు ఫీచర్‌లను ఇన్‌స్టాల్ చేయాలనుకుంటున్న మార్గాన్ని ఎంచుకోండి."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="ఉత్పత్తి లక్షణాలు"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="సెటప్ విజార్డ్ నుండి నిష్క్రమించడానికి ముగించు బటన్‌ను క్లిక్ చేయండి."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] సెటప్ విజార్డ్ లోపం కారణంగా అకాలంగా ముగిసింది. మీ సిస్టమ్ సవరించబడలేదు. తర్వాత సమయంలో ఈ ప్రోగ్రామ్‌ను ఇన్‌స్టాల్ చేయడానికి, సెటప్ విజార్డ్‌ని మళ్లీ అమలు చేయండి."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] సెటప్ విజార్డ్ ముందుగానే ముగిసింది"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} [ProductName] సెటప్ విజార్డ్‌ని పూర్తి చేసారు"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="సెటప్ విజార్డ్ నుండి నిష్క్రమించడానికి ముగించు బటన్‌ను క్లిక్ చేయండి."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="సమాచార చిహ్నం"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="సమాచార వచనం"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}డిస్క్ స్పేస్ అవసరాలు"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="ఎంచుకున్న లక్షణాల ఇన్‌స్టాలేషన్‌కు డిస్క్ స్థలం అవసరం."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="హైలైట్ చేయబడిన వాల్యూమ్‌లలో ఎంచుకున్న ఫీచర్‌ల కోసం తగినంత డిస్క్ స్థలం అందుబాటులో లేదు. మీరు హైలైట్ చేసిన వాల్యూమ్‌ల నుండి కొన్ని ఫైల్‌లను తీసివేయవచ్చు, తక్కువ ఫీచర్‌లను ఇన్‌స్టాల్ చేయవచ్చు లేదా విభిన్న డెస్టినేషన్ డ్రైవ్‌లను ఎంచుకోవచ్చు."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="స్థానం:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}అనుకూల సెటప్"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="మీరు ఫీచర్‌లను ఇన్‌స్టాల్ చేయాలనుకుంటున్న మార్గాన్ని ఎంచుకోండి."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="ఫీచర్‌లు ఇన్‌స్టాల్ చేయబడే విధానాన్ని మార్చడానికి దిగువ చెట్టులోని చిహ్నాలను క్లిక్ చేయండి."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="డిస్క్ &amp;వినియోగం"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="రీ&amp;సెట్ చేయండి"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;rowse..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="ఎంపికల చెట్టు"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="సమాచార చిహ్నం"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="[ProductName] நிறுவலை நிச்சயமாக ரத்துசெய்ய விரும்புகிறீர்களா?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}గమ్యం ఫోల్డర్‌ని మార్చండి"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="గమ్యం ఫోల్డర్‌కి బ్రౌజ్ చేయండి"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;கோப்புறை பெயர்:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="కొత్త ఫోల్డర్‌ని సృష్టించండి"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="ఒక స్థాయి పైకి"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;చూడండి:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="తహోమా"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;అధునాతనమైనది"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;நிறுவு"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="మీ కోసం డిఫాల్ట్ ఎంపికలతో ఉత్పత్తిని ఇన్‌స్టాల్ చేయడానికి ఇన్‌స్టాల్ క్లిక్ చేయండి. ఇన్‌స్టాలేషన్ ఎంపికలను మార్చడానికి అధునాతన క్లిక్ చేయండి."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="వినియోగదారులందరికీ డిఫాల్ట్ ఎంపికలతో ఉత్పత్తిని ఇన్‌స్టాల్ చేయడానికి ఇన్‌స్టాల్ క్లిక్ చేయండి. ఇన్‌స్టాలేషన్ ఎంపికలను మార్చడానికి అధునాతన క్లిక్ చేయండి."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}దయచేసి [ProductName] లైసెన్స్ ఒప్పందాన్ని చదవండి"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] సెటప్"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;ముద్రించు"/>
+	<String Id="WixUIOK" Overridable="yes" Value="సరే"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;సం"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;అవును"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;విస్మరించండి"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;మళ్లీ ప్రయత్నించండి"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;ముగించు"/>
+	<String Id="WixUICancel" Overridable="yes" Value="రద్దు చేయి"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;తదుపరి"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;వెనుకకు"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="విండోస్ ఫైర్‌వాల్ కాన్ఫిగరేషన్‌ను అన్‌ఇన్‌స్టాల్ చేస్తోంది"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="విండోస్ ఫైర్‌వాల్ కాన్ఫిగరేషన్‌ను రోల్ బ్యాక్ చేస్తోంది"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="విండోస్ ఫైర్‌వాల్ కాన్ఫిగరేషన్‌ను ఇన్‌స్టాల్ చేస్తోంది"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="విండోస్ ఫైర్‌వాల్ కాన్ఫిగరేషన్‌ను రోల్ బ్యాక్ చేస్తోంది"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="విండోస్ ఫైర్‌వాల్‌ను కాన్ఫిగర్ చేస్తోంది"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="విండోస్ ఫైర్‌వాల్‌ను కాన్ఫిగర్ చేస్తోంది"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windows ఫైర్‌వాల్‌కి కనెక్ట్ చేయడం సాధ్యపడదు. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="కాన్ఫిగరేషన్‌లో ఎంపికగా అందుబాటులో ఉన్న రిమోట్ అప్లికేషన్‌ల కోసం విజువలైజేషన్‌లు"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="ఎక్స్‌ప్లోరర్‌లో RAAS సర్వర్‌లను వీక్షించండి"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="స్థానిక కంప్యూటర్‌లో సర్వర్ అప్లికేషన్‌లకు రిమోట్ అప్లికేషన్ షార్ట్‌కట్‌లను సృష్టించండి"/>

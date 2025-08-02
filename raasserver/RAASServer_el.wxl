@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="el" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Απεγκατάσταση της διαμόρφωσης του Τείχους προστασίας των Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Επαναφορά της διαμόρφωσης του Τείχους προστασίας των Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Εγκατάσταση της διαμόρφωσης του τείχους προστασίας των Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Επαναφορά της διαμόρφωσης του Τείχους προστασίας των Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Διαμόρφωση τείχους προστασίας των Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Διαμόρφωση τείχους προστασίας των Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Δεν είναι δυνατή η σύνδεση στο τείχος προστασίας των Windows. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Κοινόχρηστος διακομιστής δικτύου"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Μοιραστείτε μονάδες δίσκου στο δίκτυο για να ενεργοποιήσετε τον έλεγχο και την περιήγηση από το RAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Μπορεί να κάνει επανεκκίνηση"/>

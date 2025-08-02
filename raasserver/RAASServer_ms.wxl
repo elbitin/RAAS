@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="ms" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Codepage="1250" Culture="ms" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Kelantangan"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Saiz Cakera"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Diperlukan"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Perbezaan"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Tersedia"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Masa yang tinggal:{ [ProductName] minit}{ [ProductName] saat}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Ciri ini memerlukan [ProductName] pada cakera keras anda. Ia mempunyai [ProductName] daripada [ProductName] subciri yang dipilih. Subciri memerlukan [ProductName] pada cakera keras anda."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Ciri ini memerlukan [ProductName] pada cakera keras anda. Ia mempunyai [ProductName] daripada [ProductName] subciri yang dipilih. Subciri membebaskan [ProductName] pada cakera keras anda."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Ciri ini membebaskan [ProductName] pada cakera keras anda. Ia mempunyai [ProductName] daripada [ProductName] subciri yang dipilih. Subciri memerlukan [ProductName] pada cakera keras anda."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Ciri ini membebaskan [ProductName] pada cakera keras anda. Ia mempunyai [ProductName] daripada [ProductName] subciri yang dipilih. Subciri membebaskan [ProductName] pada cakera keras anda."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Ciri ini akan kekal dijalankan daripada rangkaian"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Ciri ini akan berubah daripada dijalankan daripada keadaan rangkaian untuk dipasang pada pemacu keras tempatan"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Ciri ini akan berubah daripada dijalankan daripada keadaan rangkaian kepada ditetapkan untuk dipasang apabila diperlukan"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Ciri ini akan dinyahpasang sepenuhnya, anda tidak akan dapat menjalankannya daripada rangkaian"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Ciri ini akan dialih keluar daripada pemacu keras tempatan anda, tetapi masih tersedia untuk dijalankan daripada rangkaian"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Ciri ini akan kekal pada pemacu keras tempatan anda"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Ciri ini akan dialih keluar daripada pemacu keras tempatan anda, tetapi masih tersedia untuk dijalankan daripada CD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Ciri ini akan dialih keluar daripada pemacu keras tempatan anda, tetapi akan ditetapkan untuk dipasang apabila diperlukan"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Ciri ini akan dialih keluar sepenuhnya"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Kos penyusunan untuk ciri ini..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Ciri ini memerlukan [ProductName] pada cakera keras anda."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Ciri ini membebaskan [ProductName] pada cakera keras anda."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Ciri ini akan berubah daripada dijalankan daripada keadaan CD untuk dipasang pada pemacu keras tempatan"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Ciri ini akan kekal dijalankan daripada CD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Ciri ini akan berubah daripada dijalankan daripada keadaan CD kepada ditetapkan untuk dipasang apabila diperlukan"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Ciri ini akan dinyahpasang sepenuhnya, anda tidak akan dapat menjalankannya daripada CD"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Ciri ini akan tersedia untuk dijalankan dari rangkaian"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Ciri ini akan dipasang pada pemacu keras tempatan anda"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Ciri ini akan tersedia untuk dijalankan daripada CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Akan dipasang apabila diperlukan"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Ciri ini akan menjadi tidak tersedia"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Ciri ini akan dipasang untuk dijalankan daripada rangkaian"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Ciri ini akan dipasang pada pemacu keras tempatan"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Ciri ini akan dipasang untuk dijalankan daripada CD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Ciri ini akan ditetapkan untuk dipasang apabila diperlukan"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Ciri ini akan kekal dinyahpasang"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Mengumpul maklumat yang diperlukan..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Folder|Folder Baharu"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Akan dipasang untuk dijalankan dari rangkaian"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Akan dipasang pada pemacu keras tempatan"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Akan dipasang untuk dijalankan dari CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Keseluruhan ciri akan dipasang untuk dijalankan dari rangkaian"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Keseluruhan ciri akan dipasang pada pemacu keras tempatan"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Keseluruhan ciri akan dipasang untuk dijalankan daripada CD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Ciri akan dipasang apabila diperlukan"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Keseluruhan ciri tidak akan tersedia"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="bait"/>
+	<String Id="Error1938" Overridable="yes" Value="Ralat berlaku semasa pemasangan pemasangan &amp;apos;[ProductName]&amp;apos;. Satu atau lebih modul pemasangan tidak ditemui. HRESULT: [ProductName].{{ antara muka pemasangan: [ProductName], fungsi: [ProductName], komponen: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Ralat berlaku semasa pemasangan pemasangan &amp;apos;[ProductName]&amp;apos;. Tandatangan atau katalog tidak dapat disahkan atau tidak sah. HRESULT: [ProductName].{{ antara muka pemasangan: [ProductName], fungsi: [ProductName], komponen: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Ralat berlaku semasa pemasangan pemasangan &amp;apos;[ProductName]&amp;apos;. Perhimpunan tidak dinamakan dengan kuat atau tidak ditandatangani dengan panjang kunci minimum. HRESULT: [ProductName].{{ antara muka pemasangan: [ProductName], fungsi: [ProductName], komponen: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Ralat berlaku semasa pemasangan pemasangan &amp;apos;[ProductName]&amp;apos;. Sila rujuk Bantuan dan Sokongan untuk maklumat lanjut. HRESULT: [ProductName].{{ antara muka pemasangan: [ProductName], fungsi: [ProductName], komponen: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Pemasangan pengguna dilumpuhkan melalui dasar pada mesin."/>
+	<String Id="Error1933" Overridable="yes" Value="Perkhidmatan Pemasang Windows tidak boleh mengemas kini satu atau lebih fail Windows yang dilindungi.{{ Ralat SFP: [ProductName]. Senarai fail yang dilindungi:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Perkhidmatan Pemasang Windows tidak boleh mengemas kini fail Windows yang dilindungi [ProductName].{{ Versi pakej: [ProductName], Versi Dilindungi OS: [ProductName], Ralat SFP: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Perkhidmatan Pemasang Windows tidak boleh mengemas kini fail sistem [ProductName] kerana fail tersebut dilindungi oleh Windows. Anda mungkin perlu mengemas kini sistem pengendalian anda untuk program ini berfungsi dengan betul.{{ Versi pakej: [ProductName], Versi OS Protected: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="Perihalan untuk perkhidmatan &amp;apos;[ProductName]&amp;apos; ([ProductName]) tidak boleh ditukar."/>
+	<String Id="Error1929" Overridable="yes" Value="Ralat semasa menyahdaftarkan Aplikasi COM+. Hubungi kakitangan sokongan anda untuk mendapatkan maklumat lanjut."/>
+	<String Id="Error1928" Overridable="yes" Value="Ralat mendaftarkan Aplikasi COM+. Hubungi kakitangan sokongan anda untuk mendapatkan maklumat lanjut."/>
+	<String Id="Error1927" Overridable="yes" Value="Perkhidmatan Komponen (COM+ 1.0) tidak dipasang pada komputer ini. Pemasangan ini memerlukan Perkhidmatan Komponen untuk berjaya diselesaikan. Perkhidmatan Komponen tersedia pada Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Tidak dapat menetapkan keselamatan fail untuk fail &amp;apos;[ProductName]&amp;apos;. Ralat: [ProductName]. Sahkan bahawa anda mempunyai keistimewaan yang mencukupi untuk mengubah suai kebenaran keselamatan untuk fail ini."/>
+	<String Id="Error1925" Overridable="yes" Value="Anda tidak mempunyai keistimewaan yang mencukupi untuk melengkapkan pemasangan ini untuk semua pengguna mesin. Log masuk sebagai pentadbir dan kemudian cuba semula pemasangan ini."/>
+	<String Id="Error1924" Overridable="yes" Value="Tidak dapat mengemas kini pembolehubah persekitaran &amp;apos;[ProductName]&amp;apos;. Sahkan bahawa anda mempunyai keistimewaan yang mencukupi untuk mengubah suai pembolehubah persekitaran."/>
+	<String Id="Error1923" Overridable="yes" Value="Perkhidmatan &amp;apos;[ProductName]&amp;apos; ([ProductName]) tidak dapat dipasang. Sahkan bahawa anda mempunyai keistimewaan yang mencukupi untuk memasang perkhidmatan sistem."/>
+	<String Id="Error1922" Overridable="yes" Value="Perkhidmatan &amp;apos;[ProductName]&amp;apos; ([ProductName]) tidak dapat dipadamkan. Sahkan bahawa anda mempunyai keistimewaan yang mencukupi untuk mengalih keluar perkhidmatan sistem."/>
+	<String Id="Error1921" Overridable="yes" Value="Perkhidmatan &amp;apos;[ProductName]&amp;apos; ([ProductName]) tidak dapat dihentikan. Sahkan bahawa anda mempunyai keistimewaan yang mencukupi untuk menghentikan perkhidmatan sistem."/>
+	<String Id="Error1920" Overridable="yes" Value="Perkhidmatan &amp;apos;[ProductName]&amp;apos; ([ProductName]) gagal dimulakan. Sahkan bahawa anda mempunyai keistimewaan yang mencukupi untuk memulakan perkhidmatan sistem."/>
+	<String Id="Error1919" Overridable="yes" Value="Ralat mengkonfigurasi sumber data ODBC: [ProductName], ralat ODBC [ProductName]: [ProductName]. Sahkan bahawa fail [ProductName] wujud dan anda boleh mengaksesnya."/>
+	<String Id="Error1918" Overridable="yes" Value="Ralat memasang pemacu ODBC: [ProductName], ralat ODBC [ProductName]: [ProductName]. Sahkan bahawa fail [ProductName] wujud dan anda boleh mengaksesnya."/>
+	<String Id="Error1917" Overridable="yes" Value="Ralat semasa mengalih keluar pemacu ODBC: [ProductName], ralat ODBC [ProductName]: [ProductName]. Sahkan bahawa anda mempunyai keistimewaan yang mencukupi untuk mengalih keluar pemacu ODBC."/>
+	<String Id="Error1916" Overridable="yes" Value="Ralat memasang pengurus pemacu ODBC, ralat ODBC [ProductName]: [ProductName]. Hubungi kakitangan sokongan anda."/>
+	<String Id="Error1915" Overridable="yes" Value="Ralat mengalih keluar pengurus pemacu ODBC, ralat ODBC [ProductName]: [ProductName]. Hubungi kakitangan sokongan anda."/>
+	<String Id="Error1914" Overridable="yes" Value="Tidak dapat menjadualkan fail [ProductName] untuk menggantikan fail [ProductName] semasa but semula. Sahkan bahawa anda mempunyai kebenaran menulis untuk memfailkan [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Tidak dapat mengemas kini fail ini [ProductName][ProductName]. Sahkan bahawa fail itu wujud dan anda boleh mengaksesnya."/>
+	<String Id="Error1912" Overridable="yes" Value="Tidak dapat menyahdaftar jenis perpustakaan untuk fail [ProductName]. Hubungi kakitangan sokongan anda."/>
+	<String Id="Error1911" Overridable="yes" Value="Tidak dapat mendaftarkan perpustakaan jenis untuk fail [ProductName]. Hubungi kakitangan sokongan anda."/>
+	<String Id="Error1910" Overridable="yes" Value="Tidak dapat mengalih keluar Pintasan [ProductName]. Sahkan bahawa fail pintasan itu wujud dan anda boleh mengaksesnya."/>
+	<String Id="Error1909" Overridable="yes" Value="Tidak dapat mencipta Pintasan [ProductName]. Sahkan bahawa folder destinasi wujud dan anda boleh mengaksesnya."/>
+	<String Id="Error1908" Overridable="yes" Value="Tidak dapat menyahdaftar fon [ProductName]. Sahkan bahawa anda mempunyai kebenaran yang mencukupi untuk mengalih keluar fon."/>
+	<String Id="Error1907" Overridable="yes" Value="Tidak dapat mendaftar fon [ProductName]. Sahkan bahawa anda mempunyai kebenaran yang mencukupi untuk memasang fon dan sistem menyokong fon ini."/>
+	<String Id="Error1906" Overridable="yes" Value="Gagal untuk cache pakej [ProductName]. Ralat: [ProductName]. Hubungi kakitangan sokongan anda."/>
+	<String Id="Error1905" Overridable="yes" Value="Modul [ProductName] gagal menyahdaftar. HRESULT [ProductName]. Hubungi kakitangan sokongan anda."/>
+	<String Id="Error1904" Overridable="yes" Value="Modul [ProductName] gagal mendaftar. HRESULT [ProductName]. Hubungi kakitangan sokongan anda."/>
+	<String Id="Error1903" Overridable="yes" Value="Menjadualkan operasi but semula: Memadam fail [ProductName]. Mesti but semula untuk menyelesaikan operasi."/>
+	<String Id="Error1902" Overridable="yes" Value="Menjadualkan operasi but semula: Menamakan semula fail [ProductName] kepada [ProductName]. Mesti but semula untuk menyelesaikan operasi."/>
+	<String Id="Error1901" Overridable="yes" Value="Ralat semasa cuba membaca daripada pangkalan data pemasangan sumber: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Folder destinasi yang sah untuk pemasangan tidak dapat ditentukan."/>
+	<String Id="Error1806" Overridable="yes" Value="Anda tidak mempunyai keistimewaan yang mencukupi untuk membaca folder ini."/>
+	<String Id="Error1805" Overridable="yes" Value="Folder [ProductName] tidak wujud. Sila masukkan laluan ke folder sedia ada."/>
+	<String Id="Error1804" Overridable="yes" Value="Tiada cakera dalam pemacu [ProductName]. Sila masukkan satu dan klik Cuba Semula, atau klik Batal untuk kembali ke dialog semak imbas dan pilih volum lain."/>
+	<String Id="Error1803" Overridable="yes" Value="Tiada cakera dalam pemacu [ProductName]. Sila masukkan satu dan klik Cuba Semula, atau klik Batal untuk kembali ke volum yang dipilih sebelum ini."/>
+	<String Id="Error1802" Overridable="yes" Value="Habis ingatan. Matikan aplikasi lain sebelum mencuba semula."/>
+	<String Id="Error1801" Overridable="yes" Value="Laluan [ProductName] tidak sah. Sila nyatakan laluan yang sah."/>
+	<String Id="Error1732" Overridable="yes" Value="[ProductName] ची स्थापना पूर्ण करण्यासाठी, आपण संगणक रीस्टार्ट करणे आवश्यक आहे. इतर वापरकर्ते सध्या या संगणकावर लॉग इन केलेले आहेत, आणि रीस्टार्ट केल्याने त्यांचे कार्य गमावू शकते. तुम्हाला आता रीस्टार्ट करायचे आहे का?"/>
+	<String Id="Error1731" Overridable="yes" Value="Pakej pemasangan sumber untuk produk [ProductName] tidak segerak dengan pakej pelanggan. Cuba pemasangan sekali lagi menggunakan salinan sah pakej pemasangan &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Anda mesti menjadi Pentadbir untuk mengalih keluar aplikasi ini. Untuk mengalih keluar aplikasi ini, anda boleh log masuk sebagai Pentadbir, atau hubungi kumpulan sokongan teknikal anda untuk mendapatkan bantuan."/>
+	<String Id="Error1729" Overridable="yes" Value="Konfigurasi gagal."/>
+	<String Id="Error1728" Overridable="yes" Value="Konfigurasi berjaya diselesaikan."/>
+	<String Id="Error1727" Overridable="yes" Value="Iklan gagal."/>
+	<String Id="Error1726" Overridable="yes" Value="Iklan berjaya disiapkan."/>
+	<String Id="Error1725" Overridable="yes" Value="Pengalihan keluar gagal."/>
+	<String Id="Error1724" Overridable="yes" Value="Pengalihan keluar berjaya diselesaikan."/>
+	<String Id="Error1723" Overridable="yes" Value="Terdapat masalah dengan pakej Pemasang Windows ini. DLL yang diperlukan untuk pemasangan ini selesai tidak dapat dijalankan. Hubungi kakitangan sokongan atau vendor pakej anda.{{ Tindakan [ProductName], entri: [ProductName], perpustakaan: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Terdapat masalah dengan pakej Pemasang Windows ini. Program yang dijalankan sebagai sebahagian daripada persediaan tidak selesai seperti yang diharapkan. Hubungi kakitangan sokongan atau vendor pakej anda.{{ Tindakan [ProductName], lokasi: [ProductName], arahan: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Terdapat masalah dengan pakej Pemasang Windows ini. Program yang diperlukan untuk pemasangan ini selesai tidak dapat dijalankan. Hubungi kakitangan sokongan atau vendor pakej anda.{{ Tindakan: [ProductName], lokasi: [ProductName], arahan: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Terdapat masalah dengan pakej Pemasang Windows ini. Skrip yang diperlukan untuk pemasangan ini selesai tidak dapat dijalankan. Hubungi kakitangan sokongan atau vendor pakej anda.{{ Tindakan tersuai [ProductName] ralat skrip [ProductName], [ProductName]: [ProductName] Baris [ProductName], Lajur [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Perkhidmatan Pemasang Windows tidak dapat diakses. Ini boleh berlaku jika anda menjalankan Windows dalam mod selamat, atau jika Pemasang Windows tidak dipasang dengan betul. Hubungi kakitangan sokongan anda untuk mendapatkan bantuan."/>
+	<String Id="Error1718" Overridable="yes" Value="Fail [ProductName] telah ditolak oleh dasar tandatangan digital."/>
+	<String Id="Error1717" Overridable="yes" Value="Dialih keluar [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Dikonfigurasikan [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Dipasang [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Versi lama [ProductName] tidak boleh dialih keluar. Hubungi kumpulan sokongan teknikal anda.{{ Ralat Sistem [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] tidak boleh memasang salah satu produk yang diperlukan. Hubungi kumpulan sokongan teknikal anda.{{ Ralat Sistem: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Satu atau lebih daripada fail yang diperlukan untuk memulihkan komputer anda kepada keadaan sebelumnya tidak dapat ditemui. Pemulihan tidak akan dapat dilakukan."/>
+	<String Id="Error1711" Overridable="yes" Value="Ralat berlaku semasa menulis maklumat pemasangan pada cakera. Semak untuk memastikan ruang cakera mencukupi tersedia, dan klik Cuba Semula, atau Batal untuk menamatkan pemasangan."/>
+	<String Id="Error1710" Overridable="yes" Value="तुम्ही एकतर तुमचा संगणक त्याच्या पूर्वीच्या स्थितीत पुनर्संचयित करू शकता किंवा नंतर स्थापना सुरू ठेवू शकता. आपण पुनर्संचयित करू इच्छिता?"/>
+	<String Id="Error1709" Overridable="yes" Value="Produk: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Pemasangan gagal."/>
+	<String Id="Error1707" Overridable="yes" Value="Pemasangan berjaya diselesaikan."/>
+	<String Id="Error1706" Overridable="yes" Value="Pakej pemasangan untuk produk [ProductName] tidak ditemui. Cuba pemasangan sekali lagi menggunakan salinan sah pakej pemasangan &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="या उत्पादनासाठी पूर्वीची स्थापना प्रगतीपथावर आहे. सुरू ठेवण्यासाठी तुम्ही त्या इंस्टॉलेशनद्वारे केलेले बदल पूर्ववत करणे आवश्यक आहे. तुम्हाला ते बदल पूर्ववत करायचे आहेत का?"/>
+	<String Id="Error1704" Overridable="yes" Value="[ProductName] साठी एक स्थापना सध्या निलंबित आहे. सुरू ठेवण्यासाठी तुम्ही त्या इंस्टॉलेशनद्वारे केलेले बदल पूर्ववत करणे आवश्यक आहे. तुम्हाला ते बदल पूर्ववत करायचे आहेत का?"/>
+	<String Id="Error1703" Overridable="yes" Value="Anda mesti memulakan semula sistem anda untuk perubahan konfigurasi yang dibuat kepada [ProductName] berkuat kuasa. Klik Ya untuk memulakan semula sekarang atau Tidak jika anda bercadang untuk memulakan semula secara manual kemudian."/>
+	<String Id="Error1702" Overridable="yes" Value="Pemasang mesti memulakan semula sistem anda sebelum konfigurasi [ProductName] boleh diteruskan. Klik Ya untuk memulakan semula sekarang atau Tidak jika anda bercadang untuk memulakan semula secara manual kemudian."/>
+	<String Id="Error1701" Overridable="yes" Value="Kunci [ProductName] tidak sah. Sahkan bahawa anda memasukkan kunci yang betul."/>
+	<String Id="Error1609" Overridable="yes" Value="Ralat berlaku semasa menggunakan tetapan keselamatan. [ProductName] bukan pengguna atau kumpulan yang sah. Ini mungkin masalah dengan pakej, atau masalah menyambung ke pengawal domain pada rangkaian. Semak sambungan rangkaian anda dan klik Cuba Semula, atau Batal untuk menamatkan pemasangan. {{Tidak dapat mengesan SID pengguna, ralat sistem [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Tidak dapat menjumpai sebarang produk patuh yang dipasang sebelum ini pada mesin untuk memasang produk ini."/>
+	<String Id="Error1607" Overridable="yes" Value="Aplikasi berikut hendaklah ditutup sebelum meneruskan pemasangan:"/>
+	<String Id="Error1606" Overridable="yes" Value="Tidak dapat mengakses lokasi rangkaian [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Ruang cakera tidak mencukupi pada volum &amp;apos;[ProductName]&amp;apos; untuk meneruskan pemasangan dengan pemulihan didayakan. [ProductName] KB diperlukan, tetapi hanya [ProductName] KB tersedia. Klik Abaikan untuk meneruskan pemasangan tanpa menyimpan maklumat pemulihan, klik Cuba Semula untuk menyemak ruang yang tersedia sekali lagi atau klik Batal untuk keluar dari pemasangan."/>
+	<String Id="Error1604" Overridable="yes" Value="Produk &amp;apos;[ProductName]&amp;apos; sudah dipasang, menghalang pemasangan produk ini. Kedua-dua produk tidak serasi."/>
+	<String Id="Error1603" Overridable="yes" Value="Fail [ProductName][ProductName] sedang digunakan{ oleh proses berikut: Nama: [ProductName], Id: [ProductName], Tajuk Tetingkap: &amp;apos;[ProductName]&amp;apos;}. Tutup aplikasi itu dan cuba semula."/>
+	<String Id="Error1602" Overridable="yes" Value="तुमची खात्री आहे की तुम्ही रद्द करू इच्छिता?"/>
+	<String Id="Error1601" Overridable="yes" Value="Kehabisan ruang cakera -- Kelantangan: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Pengguna &amp;apos;[ProductName]&amp;apos; sebelum ini telah memulakan pemasangan untuk produk &amp;apos;[ProductName]&amp;apos;. Pengguna itu perlu menjalankan pemasangan itu semula sebelum mereka boleh menggunakan produk itu."/>
+	<String Id="Error1502" Overridable="yes" Value="Pengguna &amp;apos;[ProductName]&amp;apos; sebelum ini telah memulakan pemasangan untuk produk &amp;apos;[ProductName]&amp;apos;. Pengguna itu perlu menjalankan pemasangan itu semula sebelum mereka boleh menggunakan produk itu. Pemasangan semasa anda kini akan diteruskan."/>
+	<String Id="Error1501" Overridable="yes" Value="Ralat mengakses data selamat. Sila pastikan Pemasang Windows dikonfigurasikan dengan betul dan cuba pasang semula."/>
+	<String Id="Error1500" Overridable="yes" Value="Satu lagi pemasangan sedang dijalankan. Anda mesti melengkapkan pemasangan itu sebelum meneruskan pemasangan ini."/>
+	<String Id="Error1410" Overridable="yes" Value="Tidak dapat menambah ruang pendaftaran yang tersedia. [ProductName] KB ruang pendaftaran percuma diperlukan untuk pemasangan aplikasi ini."/>
+	<String Id="Error1409" Overridable="yes" Value="Tidak dapat membaca maklumat keselamatan untuk kunci [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa anda mempunyai akses yang mencukupi kepada kunci itu, atau hubungi kakitangan sokongan anda."/>
+	<String Id="Error1408" Overridable="yes" Value="Tidak dapat mendapatkan nama subkunci untuk kunci [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa anda mempunyai akses yang mencukupi kepada kunci itu, atau hubungi kakitangan sokongan anda."/>
+	<String Id="Error1407" Overridable="yes" Value="Tidak dapat mendapatkan nama nilai untuk kunci [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa anda mempunyai akses yang mencukupi kepada kunci itu, atau hubungi kakitangan sokongan anda."/>
+	<String Id="Error1406" Overridable="yes" Value="Tidak dapat menulis nilai [ProductName] pada kunci [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa anda mempunyai akses yang mencukupi kepada kunci itu, atau hubungi kakitangan sokongan anda."/>
+	<String Id="Error1405" Overridable="yes" Value="Tidak dapat membaca nilai [ProductName] daripada kunci [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa anda mempunyai akses yang mencukupi kepada kunci itu, atau hubungi kakitangan sokongan anda."/>
+	<String Id="Error1404" Overridable="yes" Value="Tidak dapat memadam kunci [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa anda mempunyai akses yang mencukupi kepada kunci itu, atau hubungi kakitangan sokongan anda."/>
+	<String Id="Error1403" Overridable="yes" Value="Tidak dapat memadam nilai [ProductName] daripada kunci [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa anda mempunyai akses yang mencukupi kepada kunci itu, atau hubungi kakitangan sokongan anda."/>
+	<String Id="Error1402" Overridable="yes" Value="Tidak dapat membuka kunci: [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa anda mempunyai akses yang mencukupi kepada kunci itu, atau hubungi kakitangan sokongan anda."/>
+	<String Id="Error1401" Overridable="yes" Value="Tidak dapat mencipta kunci: [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa anda mempunyai akses yang mencukupi kepada kunci itu, atau hubungi kakitangan sokongan anda."/>
+	<String Id="Error1336" Overridable="yes" Value="Terdapat ralat mencipta fail sementara yang diperlukan untuk melengkapkan pemasangan ini.{{ Folder: [ProductName]. Kod ralat sistem: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Fail kabinet &amp;apos;[ProductName]&amp;apos; yang diperlukan untuk pemasangan ini rosak dan tidak boleh digunakan. Ini boleh menunjukkan ralat rangkaian, ralat membaca daripada CD-ROM, atau masalah dengan pakej ini."/>
+	<String Id="Error1334" Overridable="yes" Value="Fail &amp;apos;[ProductName]&amp;apos; tidak boleh dipasang kerana fail tidak ditemui dalam fail kabinet &amp;apos;[ProductName]&amp;apos;. Ini boleh menunjukkan ralat rangkaian, ralat membaca daripada CD-ROM, atau masalah dengan pakej ini."/>
+	<String Id="Error1333" Overridable="yes" Value="Gagal menampal fail [ProductName] dengan betul: Ralat CRC."/>
+	<String Id="Error1332" Overridable="yes" Value="Gagal mengalihkan fail [ProductName] dengan betul: Ralat CRC."/>
+	<String Id="Error1331" Overridable="yes" Value="Gagal menyalin fail [ProductName] dengan betul: Ralat CRC."/>
+	<String Id="Error1330" Overridable="yes" Value="Fail yang diperlukan tidak boleh dipasang kerana fail kabinet [ProductName] mempunyai tandatangan digital yang tidak sah. Ini mungkin menunjukkan bahawa fail kabinet rosak.{{ Ralat [ProductName] telah dikembalikan oleh WinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Fail yang diperlukan tidak boleh dipasang kerana fail kabinet [ProductName] tidak ditandatangani secara digital. Ini mungkin menunjukkan bahawa fail kabinet rosak."/>
+	<String Id="Error1328" Overridable="yes" Value="Ralat menggunakan tampalan pada fail [ProductName]. Ia mungkin telah dikemas kini dengan cara lain dan tidak lagi boleh diubah suai oleh tampung ini. Untuk mendapatkan maklumat lanjut hubungi vendor tampalan anda.{{ Ralat Sistem: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Drive Tidak Sah: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Ralat mendapatkan keselamatan fail: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; bukan nama fail pendek yang sah."/>
+	<String Id="Error1324" Overridable="yes" Value="Laluan folder &amp;apos;[ProductName]&amp;apos; mengandungi aksara yang tidak sah."/>
+	<String Id="Error1323" Overridable="yes" Value="Laluan folder &amp;apos;[ProductName]&amp;apos; mengandungi perkataan yang tidak sah dalam laluan folder."/>
+	<String Id="Error1322" Overridable="yes" Value="Sebahagian daripada laluan folder &amp;apos;[ProductName]&amp;apos; adalah tidak sah. Ia sama ada kosong atau melebihi panjang yang dibenarkan oleh sistem."/>
+	<String Id="Error1321" Overridable="yes" Value="Pemasang tidak mempunyai keistimewaan yang mencukupi untuk mengubah suai fail ini: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Laluan yang ditentukan terlalu panjang: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Ralat rangkaian berlaku semasa cuba membuka kabinet fail sumber: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Ralat rangkaian berlaku semasa cuba mencipta direktori: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Ralat berlaku semasa cuba mencipta direktori: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Ralat rangkaian berlaku semasa cuba membaca daripada fail: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Tidak dapat menulis ke folder yang ditentukan: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Laluan yang ditentukan &amp;apos;[ProductName]&amp;apos; tidak tersedia."/>
+	<String Id="Error1313" Overridable="yes" Value="Kelantangan [ProductName] tidak tersedia pada masa ini. Sila pilih yang lain."/>
+	<String Id="Error1312" Overridable="yes" Value="Tidak boleh mencipta direktori &amp;apos;[ProductName]&amp;apos;. Fail dengan nama ini sudah wujud. Sila namakan semula atau alih keluar fail dan klik Cuba Semula, atau klik Batal untuk keluar."/>
+	<String Id="Error1311" Overridable="yes" Value="Fail sumber tidak ditemui{{(kabinet)}}: [ProductName]. Sahkan bahawa fail itu wujud dan anda boleh mengaksesnya."/>
+	<String Id="Error1310" Overridable="yes" Value="Ralat menulis ke fail: [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa anda mempunyai akses kepada direktori itu."/>
+	<String Id="Error1309" Overridable="yes" Value="Ralat membaca daripada fail: [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa fail itu wujud dan anda boleh mengaksesnya."/>
+	<String Id="Error1308" Overridable="yes" Value="Fail sumber tidak ditemui: [ProductName]. Sahkan bahawa fail itu wujud dan anda boleh mengaksesnya."/>
+	<String Id="Error1307" Overridable="yes" Value="Ruang cakera tidak mencukupi untuk memasang fail ini: [ProductName]. Kosongkan sedikit ruang cakera dan klik Cuba Semula, atau klik Batal untuk keluar."/>
+	<String Id="Error1306" Overridable="yes" Value="Aplikasi lain mempunyai akses eksklusif kepada fail &amp;apos;[ProductName]&amp;apos;. Sila matikan semua aplikasi lain, kemudian klik Cuba Semula."/>
+	<String Id="Error1305" Overridable="yes" Value="Ralat membaca daripada fail [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa fail itu wujud dan anda boleh mengaksesnya."/>
+	<String Id="Error1304" Overridable="yes" Value="Ralat menulis ke fail: [ProductName]. Sahkan bahawa anda mempunyai akses kepada direktori itu."/>
+	<String Id="Error1303" Overridable="yes" Value="Pemasang tidak mempunyai keistimewaan yang mencukupi untuk mengakses direktori ini: [ProductName]. Pemasangan tidak boleh diteruskan. Log masuk sebagai pentadbir atau hubungi pentadbir sistem anda."/>
+	<String Id="Error1302" Overridable="yes" Value="Sila masukkan cakera: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Tidak boleh mencipta fail &amp;apos;[ProductName]&amp;apos;. Direktori dengan nama ini sudah wujud. Batalkan pemasangan dan cuba pasang ke lokasi lain."/>
+	<String Id="Error1101" Overridable="yes" Value="Ralat membaca daripada fail: [ProductName].{{ Ralat sistem [ProductName].}} Sahkan bahawa fail itu wujud dan anda boleh mengaksesnya."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Penyediaan gagal."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Persediaan berjaya diselesaikan."/>
+	<String Id="Error23" Overridable="yes" Value="Bersedia untuk mengalih keluar versi lama aplikasi ini..."/>
+	<String Id="Error22" Overridable="yes" Value="Mengalih keluar versi lama aplikasi ini..."/>
+	<String Id="Error21" Overridable="yes" Value="Mengumpul maklumat yang diperlukan..."/>
+	<String Id="Error20" Overridable="yes" Value="Sila tunggu sementara Windows mengkonfigurasi [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Pemasang berhenti sebelum waktunya."/>
+	<String Id="Error18" Overridable="yes" Value="Pemasang tidak lagi bertindak balas."/>
+	<String Id="Error17" Overridable="yes" Value="Habis ingatan. Matikan aplikasi lain sebelum mencuba semula."/>
+	<String Id="Error16" Overridable="yes" Value="Masa yang tinggal: {[ProductName] minit }{[ProductName] saat}"/>
+	<String Id="Error15" Overridable="yes" Value="Tindakan tamat [ProductName]: [ProductName]. Nilai pulangan [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Tindakan bermula [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Pembalakan dihentikan: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Pembalakan bermula: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Jenis mesej: [ProductName], Hujah: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Tindakan [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Disk penuh: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Pemasang telah mengalami ralat yang tidak dijangka semasa memasang pakej ini. Ini mungkin menunjukkan masalah dengan pakej ini. Kod ralat ialah [ProductName]. {{Argumennya ialah: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Maklumat [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Amaran [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Ralat [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Ralat maut: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Menyahterbitkan maklumat produk"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Fail: [ProductName], Direktori: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Mengalih keluar fail yang dialihkan"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Fail: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Mengalih keluar fail sandaran"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Буцах үйлдэл:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Konteks Permohonan:[ProductName], Nama Perhimpunan:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Menyahterbitkan maklumat perhimpunan"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Konteks Permohonan:[ProductName], Nama Perhimpunan:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Menerbitkan maklumat perhimpunan"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Fail: [ProductName], Ketergantungan: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Memasang katalog sistem"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Menjana operasi skrip untuk tindakan:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Aplikasi pengiklanan"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Kunci: [ProductName], Nama: [ProductName], Nilai: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Menulis nilai pendaftaran sistem"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Fail: [ProductName], Bahagian: [ProductName], Kunci: [ProductName], Nilai: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Menulis nilai fail INI"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="नाव: [ProductName], मूल्य: [ProductName], कृती [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Mengemas kini rentetan persekitaran"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Menyahdaftar perpustakaan jenis"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Menyahdaftarkan pengecam program"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="Jenis Kandungan MIME: [ProductName], Sambungan: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Menyahdaftar maklumat MIME"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Fon: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Menyahdaftar fon"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Sambungan: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Menyahdaftarkan pelayan sambungan"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Menyahdaftarkan Aplikasi dan Komponen COM+"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Id Kelas: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Nyahdaftar pelayan Kelas"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Ciri: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Menyahterbitkan Ciri Produk"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="ID Komponen: [ProductName], Kelayakan: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Menyahterbitkan Komponen Layak"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Perkhidmatan: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Menghentikan perkhidmatan"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Perkhidmatan: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Memulakan perkhidmatan"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Memulakan direktori ODBC"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Fail: [ProductName], Folder: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Menyahdaftar modul"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Fail: [ProductName], Folder: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Mendaftar modul"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Mencari produk yang layak"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Pintasan: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Mengalih keluar pintasan"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Kunci: [ProductName], Nama: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Mengalih keluar nilai pendaftaran sistem"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Mengeluarkan komponen ODBC"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Fail: [ProductName], Bahagian: [ProductName], Kunci: [ProductName], Nilai: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Mengalih keluar masukan fail INI"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Folder: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Mengalih keluar folder"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Fail: [ProductName], Direktori: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Mengalih keluar fail"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Aplikasi: [ProductName], Baris arahan: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Mengalih keluar aplikasi"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="नाव: [ProductName], मूल्य: [ProductName], कृती [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Mengemas kini rentetan persekitaran"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Fail: [ProductName], Direktori: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Mengalih keluar fail pendua"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Mendaftar pengguna"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Mendaftar perpustakaan jenis"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Mendaftar produk"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Fon: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Mendaftar fon"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Pengguna: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Mendaftarkan Aplikasi dan Komponen COM+"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Mengemas kini pendaftaran komponen"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Fail: [ProductName], Direktori: [ProductName], Saiz: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Menampal fail"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Fail: [ProductName], Direktori: [ProductName], Saiz: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Memindahkan fail"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Permohonan: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Memindahkan keadaan ciri daripada aplikasi berkaitan"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Menilai keadaan pelancaran"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Perkhidmatan: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Memasang perkhidmatan baharu"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Memasang komponen ODBC"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Permohonan ditemui: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Mencari aplikasi berkaitan"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Fail: [ProductName], Direktori: [ProductName], Saiz: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Mencipta fail pendua"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Perkhidmatan: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Memadam perkhidmatan"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Folder: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Mencipta folder"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Mencari produk yang layak"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Fail: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Boleh laku yang mengikat"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Harta: [ProductName], Tandatangan: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Mencari aplikasi yang dipasang"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Ruang kosong: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Memperuntukkan ruang pendaftaran"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Mendaftarkan pengecam program"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="Jenis Kandungan MIME: [ProductName], Sambungan: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Mendaftar maklumat MIME"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Sambungan: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Mendaftarkan pelayan sambungan"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Id Kelas: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Mendaftarkan pelayan Kelas"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Menerbitkan maklumat produk"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Ciri: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Ciri-ciri Produk Penerbitan"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="ID Komponen: [ProductName], Kelayakan: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Menerbitkan Komponen Layak"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Pintasan: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Mencipta jalan pintas"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Mengira keperluan ruang"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Mengira keperluan ruang"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Mengira keperluan ruang"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Fail: [ProductName], Direktori: [ProductName], Saiz: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Menyalin fail pemasangan rangkaian"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Fail: [ProductName], Direktori: [ProductName], Saiz: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Menyalin fail baharu"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Mengesahkan pemasangan"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Sila baca Perjanjian Lesen [ProductName]"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Kemas kini"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;स्थापित करा"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="मी आणि परवाना करारातील अटी स्वीकारतो"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Selamat datang ke Wizard Persediaan [ProductName]"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Wizard Persediaan akan mengemas kini [ProductName] pada komputer anda. Klik Seterusnya untuk meneruskan atau Batal untuk keluar dari Wizard Persediaan."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Wizard Persediaan akan memasang [ProductName] pada komputer anda. Klik Seterusnya untuk meneruskan atau Batal untuk keluar dari Wizard Persediaan."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Ikon seruan"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Sila tunggu sementara pemasang selesai menentukan keperluan ruang cakera anda."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Kembali"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Bersedia untuk mengemas kini [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Klik Kemas Kini untuk mengemas kini [ProductName] daripada komputer anda. Klik Kembali untuk menyemak atau menukar mana-mana tetapan pemasangan anda. Klik Batal untuk keluar dari wizard."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Kemas kini"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Bersedia untuk mengalih keluar [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Klik Alih Keluar untuk mengalih keluar [ProductName] daripada komputer anda. Klik Kembali untuk menyemak atau menukar mana-mana tetapan pemasangan anda. Klik Batal untuk keluar dari wizard."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Alih keluar"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Bersedia untuk membaiki [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Klik Repair untuk membaiki pemasangan [ProductName]. Klik Kembali untuk menyemak atau menukar mana-mana tetapan pemasangan anda. Klik Batal untuk keluar dari wizard."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="&amp;gandingkan semula"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Bersedia untuk menukar [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Klik Tukar untuk memulakan pemasangan. Klik Kembali untuk menyemak atau menukar mana-mana tetapan pemasangan anda. Klik Batal untuk keluar dari wizard."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;बदला"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Bersedia untuk memasang [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Klik Pasang untuk memulakan pemasangan. Klik Kembali untuk menyemak atau menukar mana-mana tetapan pemasangan anda. Klik Batal untuk keluar dari wizard."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;स्थापित करा"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Klik butang Selesai untuk keluar dari Wizard Persediaan."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="Persediaan [ProductName] telah terganggu. Sistem anda belum diubah suai. Untuk memasang program ini kemudian, sila jalankan pemasangan sekali lagi."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Wizard Persediaan telah terganggu"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Semua ciri program akan dipasang. Memerlukan ruang cakera yang paling banyak."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Membenarkan pengguna memilih ciri program yang akan dipasang dan di mana ia akan dipasang. Disyorkan untuk pengguna lanjutan."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Memasang ciri program yang paling biasa. Disyorkan untuk kebanyakan pengguna."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Pilih jenis persediaan yang paling sesuai dengan keperluan anda"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pilih Jenis Persediaan"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Pemasangan Lengkap"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="Selesaikan"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Pemasangan Tersuai"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ustom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Pemasangan Biasa"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;नमुनेदार"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Menyambung semula Wizard Persediaan [ProductName]."/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Wizard Persediaan akan melengkapkan pemasangan [ProductName] pada komputer anda. Klik Pasang untuk meneruskan atau Batal untuk keluar dari Wizard Persediaan."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;स्थापित करा"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Status:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Kemajuan dilakukan"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Mengemas kini [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Sila tunggu sementara Wizard Persediaan mengemas kini [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Mengalih keluar [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Sila tunggu sementara Wizard Persediaan mengalih keluar [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Membaiki [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Sila tunggu sementara Wizard Persediaan membaiki [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Menukar [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Sila tunggu sementara Wizard Persediaan menukar [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Memasang [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Sila tunggu sementara Wizard Persediaan memasang [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Selamat datang ke Wizard Persediaan [ProductName]"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Sila tunggu sementara Wizard Persediaan bersedia untuk membimbing anda melalui pemasangan."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Sebagai alternatif, anda boleh memilih untuk melumpuhkan fungsi rollback pemasang. Melumpuhkan rollback menghalang pemasang daripada memulihkan keadaan asal komputer anda sekiranya pemasangan diganggu dalam apa jua cara. Klik Ya jika anda ingin mengambil risiko melumpuhkan rollback."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kehabisan Ruang Cakera"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Ruang cakera yang diperlukan untuk pemasangan melebihi ruang cakera yang tersedia."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Kelantangan yang diserlahkan tidak mempunyai ruang cakera yang mencukupi untuk ciri yang dipilih pada masa ini. Anda boleh mengalih keluar beberapa fail daripada volum yang diserlahkan, memasang lebih sedikit ciri atau memilih pemacu destinasi lain."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kehabisan Ruang Cakera"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Ruang cakera yang diperlukan untuk pemasangan melebihi ruang cakera yang tersedia."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Kelantangan yang diserlahkan tidak mempunyai ruang cakera yang mencukupi untuk ciri yang dipilih pada masa ini. Anda boleh mengalih keluar beberapa fail daripada volum yang diserlahkan, memasang lebih sedikit ciri atau memilih pemacu destinasi lain."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Jangan tutup aplikasi. But semula akan diperlukan."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;अनुप्रयोग बंद करा आणि ते रीस्टार्ट करण्याचा प्रयत्न करा."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Fail yang Digunakan"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Beberapa fail yang perlu dikemas kini sedang digunakan."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Aplikasi berikut menggunakan fail yang perlu dikemas kini oleh persediaan ini. Anda boleh membiarkan Wizard Persediaan menutupnya dan cuba memulakan semulanya atau but semula mesin kemudian."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Selamat datang ke Wizard Persediaan [ProductName]"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Wizard Persediaan membenarkan anda menukar cara ciri [ProductName] dipasang pada komputer anda atau untuk mengalih keluarnya daripada komputer anda. Klik Seterusnya untuk meneruskan atau Batal untuk keluar dari Wizard Persediaan."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] tidak boleh dibaiki."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Membaiki ralat dalam pemasangan terbaharu dengan membetulkan fail, pintasan dan entri pendaftaran yang hilang dan rosak."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] tidak boleh dialih keluar."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Mengalih keluar [ProductName] daripada komputer anda."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] tidak mempunyai ciri yang boleh dipilih secara bebas."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Membolehkan anda menukar cara ciri dipasang."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Tukar, baiki atau alih keluar pemasangan"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Pilih operasi yang ingin anda lakukan."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Keluarkan Pemasangan"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Alih keluar"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Pembaikan Pemasangan"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="&amp;gandingkan semula"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Tukar Pemasangan"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;बदला"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Perjanjian Lesen Pengguna Akhir"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Sila baca perjanjian lesen berikut dengan teliti"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="मी आणि परवाना करारातील अटी स्वीकारतो"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Ikon maklumat"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Direktori pemasangan mestilah pada pemacu keras tempatan."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;बदला..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Pemasangan &amp;folder:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] akan dipasang dalam folder setiap mesin secara lalai dan tersedia untuk semua pengguna. Anda boleh menukar folder pemasangan lalai. Anda mesti mempunyai keistimewaan Pentadbir tempatan."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Pasang untuk semua pengguna &amp;mesin ini"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] tidak menyokong pemasangan setiap pengguna."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] akan dipasang dalam folder setiap pengguna dan tersedia hanya untuk akaun pengguna anda. Anda tidak memerlukan keistimewaan Pentadbir tempatan."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Pasang &amp;hanya untuk anda ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Skop Pemasangan"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Pilih skop pemasangan dan folder"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Pasang [ProductName] ke:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Klik Seterusnya untuk memasang ke folder lalai atau klik Tukar untuk memilih yang lain."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Folder Destinasi"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;बदला..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Fail yang Digunakan"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Beberapa fail yang perlu dikemas kini sedang digunakan."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Aplikasi berikut menggunakan fail yang perlu dikemas kini oleh persediaan ini. Tutup aplikasi ini dan kemudian klik &amp;Cuba Semula untuk meneruskan persediaan atau Keluar untuk keluar daripadanya."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="Keluar&amp;keluar"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;बदला"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;स्थापित करा"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="CiriDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="CiriDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ciri Produk"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Pilih cara anda mahu ciri dipasang."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Ciri produk"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Klik butang Selesai untuk keluar dari Wizard Persediaan."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Wizard Persediaan tamat lebih awal kerana ralat. Sistem anda belum diubah suai. Untuk memasang program ini kemudian, jalankan Wizard Persediaan sekali lagi."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Wizard Persediaan tamat sebelum waktunya"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Melengkapkan Wizard Persediaan [ProductName]."/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Klik butang Selesai untuk keluar dari Wizard Persediaan."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Ikon maklumat"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Teks maklumat"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Keperluan Ruang Cakera"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Ruang cakera yang diperlukan untuk pemasangan ciri yang dipilih."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Kelantangan yang diserlahkan tidak mempunyai ruang cakera yang mencukupi untuk ciri yang dipilih. Anda boleh sama ada mengalih keluar beberapa fail daripada volum yang diserlahkan, memasang lebih sedikit ciri atau memilih pemacu destinasi yang berbeza."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="lokasi:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Persediaan Tersuai"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Pilih cara anda mahu ciri dipasang."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Klik ikon dalam pepohon di bawah untuk menukar cara ciri akan dipasang."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Cakera &amp;Penggunaan"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="&amp;set semula"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;rowse..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Pokok pilihan"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Ikon maklumat"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="तुम्हाला खात्री आहे की तुम्ही [ProductName] इंस्टॉलेशन रद्द करू इच्छिता?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Tukar folder destinasi"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Semak imbas ke folder destinasi"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;फोल्डरचे नाव:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Buat folder baharu"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Naik satu tingkat"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Lihat dalam:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;lanjutan"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;स्थापित करा"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Klik Pasang untuk memasang produk dengan pilihan lalai hanya untuk anda. Klik Lanjutan untuk menukar pilihan pemasangan."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Klik Pasang untuk memasang produk dengan pilihan lalai untuk semua pengguna. Klik Lanjutan untuk menukar pilihan pemasangan."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="मी आणि परवाना करारातील अटी स्वीकारतो"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Sila baca Perjanjian Lesen [ProductName]"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Persediaan"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Cetak"/>
+	<String Id="WixUIOK" Overridable="yes" Value="OK"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Tidak"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Ya"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Abaikan"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Cuba semula"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Selesai"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Batal"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Seterusnya"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Kembali"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Menyahpasang konfigurasi Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Menggulung semula konfigurasi Windows Firewall"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Memasang konfigurasi Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Menggulung semula konfigurasi Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Mengkonfigurasi Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Mengkonfigurasi Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Tidak dapat menyambung ke Windows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Pelayan Kongsi Rangkaian"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Kongsi pemacu pada rangkaian untuk membolehkan kawalan dan menyemak imbas daripada Klien RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Boleh reboot"/>

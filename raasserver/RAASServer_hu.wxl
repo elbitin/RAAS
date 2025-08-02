@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="hu" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="A Windows tűzfal konfigurációjának eltávolítása"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="A Windows tűzfal konfigurációjának visszaállítása"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="A Windows tűzfal konfigurációjának telepítése"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="A Windows tűzfal konfigurációjának visszaállítása"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="A Windows tűzfal konfigurálása"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="A Windows tűzfal konfigurálása"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Nem lehet csatlakozni a Windows tűzfalhoz. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Megosztott hálózati szerver"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Ossza meg a meghajtókat a hálózaton, hogy lehetővé tegye a RAAS-kliens vezérlését és böngészését"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Lehet újraindítani"/>

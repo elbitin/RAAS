@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="af" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="af" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Volume"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Skyf grootte"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Vereis"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Verskil"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Beskikbaar"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Tyd oor:{ [ProductName] minute}{ [ProductName] sekondes}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Hierdie kenmerk vereis [ProductName] op jou hardeskyf. Dit het [ProductName] van [ProductName] subkenmerke wat gekies is. Die subkenmerke vereis [ProductName] op jou hardeskyf."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Hierdie kenmerk vereis [ProductName] op jou hardeskyf. Dit het [ProductName] van [ProductName] subkenmerke wat gekies is. Die subkenmerke maak [ProductName] op jou hardeskyf vry."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Hierdie kenmerk maak [ProductName] op jou hardeskyf vry. Dit het [ProductName] van [ProductName] subkenmerke wat gekies is. Die subkenmerke vereis [ProductName] op jou hardeskyf."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Hierdie kenmerk maak [ProductName] op jou hardeskyf vry. Dit het [ProductName] van [ProductName] subkenmerke wat gekies is. Die subkenmerke maak [ProductName] op jou hardeskyf vry."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Hierdie kenmerk sal steeds vanaf die netwerk uitgevoer word"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Hierdie kenmerk sal verander van hardloop vanaf netwerkstatus om op die plaaslike hardeskyf geïnstalleer te word"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Hierdie kenmerk sal verander van hardloop van netwerktoestand na stel om geïnstalleer te word wanneer nodig"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Hierdie kenmerk sal heeltemal gedeïnstalleer word, jy sal dit nie vanaf die netwerk kan laat loop nie"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Hierdie kenmerk sal van jou plaaslike hardeskyf verwyder word, maar sal steeds beskikbaar wees om vanaf die netwerk te hardloop"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Hierdie kenmerk sal op jou plaaslike hardeskyf bly"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Hierdie kenmerk sal van jou plaaslike hardeskyf verwyder word, maar sal steeds beskikbaar wees om vanaf CD te hardloop"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Hierdie kenmerk sal van jou plaaslike hardeskyf verwyder word, maar sal gestel word om geïnstalleer te word wanneer nodig"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Hierdie kenmerk sal heeltemal verwyder word"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Stel tans koste vir hierdie kenmerk saam..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Hierdie kenmerk vereis [ProductName] op jou hardeskyf."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Hierdie kenmerk maak [ProductName] op jou hardeskyf vry."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Hierdie kenmerk sal verander van hardloop vanaf CD-toestand om op die plaaslike hardeskyf geïnstalleer te word"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Hierdie kenmerk sal steeds vanaf CD uitgevoer word"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Hierdie kenmerk sal verander van hardloop van CD-toestand na stel om geïnstalleer te word wanneer nodig"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Hierdie kenmerk sal heeltemal gedeïnstalleer word, jy sal dit nie vanaf CD kan laat loop nie"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Hierdie kenmerk sal beskikbaar wees om vanaf die netwerk te hardloop"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Hierdie kenmerk sal op jou plaaslike hardeskyf geïnstalleer word"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Hierdie kenmerk sal beskikbaar wees om vanaf CD te loop"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Sal geïnstalleer word wanneer nodig"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Hierdie kenmerk sal onbeskikbaar word"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Hierdie kenmerk sal geïnstalleer word om vanaf die netwerk te hardloop"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Hierdie kenmerk sal op die plaaslike hardeskyf geïnstalleer word"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Hierdie kenmerk sal geïnstalleer word om vanaf CD te loop"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Hierdie kenmerk sal gestel word om geïnstalleer te word wanneer nodig"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Hierdie kenmerk sal gedeïnstalleer bly"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Versamel tans vereiste inligting..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Folder|Nuwe gids"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Sal geïnstalleer word om vanaf die netwerk te hardloop"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Sal op plaaslike hardeskyf geïnstalleer word"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Sal geïnstalleer word om vanaf CD te loop"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Die hele kenmerk sal geïnstalleer word om vanaf die netwerk te hardloop"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Die hele kenmerk sal op plaaslike hardeskyf geïnstalleer word"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Die hele kenmerk sal geïnstalleer word om vanaf CD te loop"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Funksie sal geïnstalleer word wanneer nodig"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Die hele kenmerk sal nie beskikbaar wees nie"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="grepe"/>
+	<String Id="Error1938" Overridable="yes" Value="&amp;apos;n Fout het voorgekom tydens die installering van samestelling &amp;apos;[ProductName]&amp;apos;. Een of meer modules van die samestelling kon nie gevind word nie. HRESULTAAT: [ProductName].{{ samestelling koppelvlak: [ProductName], funksie: [ProductName], komponent: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="&amp;apos;n Fout het voorgekom tydens die installering van samestelling &amp;apos;[ProductName]&amp;apos;. Die handtekening of katalogus kon nie geverifieer word nie of is nie geldig nie. HRESULTAAT: [ProductName].{{ samestelling koppelvlak: [ProductName], funksie: [ProductName], komponent: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="&amp;apos;n Fout het voorgekom tydens die installering van samestelling &amp;apos;[ProductName]&amp;apos;. Die samestelling is nie sterk genoem nie of is nie onderteken met die minimale sleutellengte nie. HRESULTAAT: [ProductName].{{ samestelling koppelvlak: [ProductName], funksie: [ProductName], komponent: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="&amp;apos;n Fout het voorgekom tydens die installering van samestelling &amp;apos;[ProductName]&amp;apos;. Verwys asseblief na Hulp en Ondersteuning vir meer inligting. HRESULTAAT: [ProductName].{{ samestelling koppelvlak: [ProductName], funksie: [ProductName], komponent: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Gebruikersinstallasies word gedeaktiveer via beleid op die masjien."/>
+	<String Id="Error1933" Overridable="yes" Value="Die Windows Installer-diens kan nie een of meer beskermde Windows-lêers opdateer nie.{{ SFP-fout: [ProductName]. Lys van beskermde lêers:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Die Windows Installer-diens kan nie die beskermde Windows-lêer [ProductName] opdateer nie.{{ Pakketweergawe: [ProductName], OS-beskermde weergawe: [ProductName], SFP-fout: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Die Windows Installer-diens kan nie die stelsellêer [ProductName] opdateer nie omdat die lêer deur Windows beskerm word. Jy sal dalk jou bedryfstelsel moet opdateer vir hierdie program om korrek te werk.{{ Pakketweergawe: [ProductName], OS-beskermde weergawe: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="Die beskrywing vir diens &amp;apos;[ProductName]&amp;apos; ([ProductName]) kon nie verander word nie."/>
+	<String Id="Error1929" Overridable="yes" Value="Kon nie COM+-toepassing deregistreer nie. Kontak jou ondersteuningspersoneel vir meer inligting."/>
+	<String Id="Error1928" Overridable="yes" Value="Kon nie COM+-toepassing registreer nie. Kontak jou ondersteuningspersoneel vir meer inligting."/>
+	<String Id="Error1927" Overridable="yes" Value="Komponentdienste (COM+ 1.0) is nie op hierdie rekenaar geïnstalleer nie. Hierdie installasie vereis komponentdienste om suksesvol te voltooi. Komponentdienste is beskikbaar op Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Kon nie lêersekuriteit vir lêer &amp;apos;[ProductName]&amp;apos; stel nie. Fout: [ProductName]. Verifieer dat jy voldoende voorregte het om die sekuriteitstoestemmings vir hierdie lêer te wysig."/>
+	<String Id="Error1925" Overridable="yes" Value="Jy het nie voldoende voorregte om hierdie installasie vir alle gebruikers van die masjien te voltooi nie. Meld aan as administrateur en probeer dan weer hierdie installasie."/>
+	<String Id="Error1924" Overridable="yes" Value="Kon nie omgewingsveranderlike &amp;apos;[ProductName]&amp;apos; opdateer nie. Verifieer dat jy voldoende voorregte het om omgewingsveranderlikes te wysig."/>
+	<String Id="Error1923" Overridable="yes" Value="Diens &amp;apos;[ProductName]&amp;apos; ([ProductName]) kon nie geïnstalleer word nie. Verifieer dat jy voldoende voorregte het om stelseldienste te installeer."/>
+	<String Id="Error1922" Overridable="yes" Value="Diens &amp;apos;[ProductName]&amp;apos; ([ProductName]) kon nie uitgevee word nie. Verifieer dat jy voldoende voorregte het om stelseldienste te verwyder."/>
+	<String Id="Error1921" Overridable="yes" Value="Diens &amp;apos;[ProductName]&amp;apos; ([ProductName]) kon nie gestop word nie. Verifieer dat jy voldoende voorregte het om stelseldienste te stop."/>
+	<String Id="Error1920" Overridable="yes" Value="Diens &amp;apos;[ProductName]&amp;apos; ([ProductName]) kon nie begin nie. Verifieer dat jy voldoende voorregte het om stelseldienste te begin."/>
+	<String Id="Error1919" Overridable="yes" Value="Fout met konfigurasie van ODBC-databron: [ProductName], ODBC-fout [ProductName]: [ProductName]. Verifieer dat die lêer [ProductName] bestaan en dat jy toegang daartoe het."/>
+	<String Id="Error1918" Overridable="yes" Value="Fout met installering van ODBC-bestuurder: [ProductName], ODBC-fout [ProductName]: [ProductName]. Verifieer dat die lêer [ProductName] bestaan en dat jy toegang daartoe het."/>
+	<String Id="Error1917" Overridable="yes" Value="Fout met die verwydering van ODBC-bestuurder: [ProductName], ODBC-fout [ProductName]: [ProductName]. Verifieer dat jy voldoende voorregte het om ODBC-bestuurders te verwyder."/>
+	<String Id="Error1916" Overridable="yes" Value="Fout met installering van ODBC-bestuurderbestuurder, ODBC-fout [ProductName]: [ProductName]. Kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1915" Overridable="yes" Value="Fout met die verwydering van ODBC-bestuurderbestuurder, ODBC-fout [ProductName]: [ProductName]. Kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1914" Overridable="yes" Value="Kon nie lêer [ProductName] skeduleer om lêer [ProductName] te vervang met herselflaai nie. Verifieer dat jy skryftoestemmings het om [ProductName] te lêer."/>
+	<String Id="Error1913" Overridable="yes" Value="Kon nie die ini-lêer [ProductName][ProductName] opdateer nie. Verifieer dat die lêer bestaan en dat jy toegang daartoe het."/>
+	<String Id="Error1912" Overridable="yes" Value="Kon nie tipe biblioteek vir lêer [ProductName] deregistreer nie. Kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1911" Overridable="yes" Value="Kon nie tipe biblioteek vir lêer [ProductName] registreer nie. Kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1910" Overridable="yes" Value="Kon nie Kortpad [ProductName] verwyder nie. Verifieer dat die kortpadlêer bestaan en dat jy toegang daartoe het."/>
+	<String Id="Error1909" Overridable="yes" Value="Kon nie kortpad [ProductName] skep nie. Verifieer dat die bestemmingslêergids bestaan en dat jy toegang daartoe het."/>
+	<String Id="Error1908" Overridable="yes" Value="Kon nie lettertipe deregistreer nie [ProductName]. Verifieer dat jy genoeg toestemming het om lettertipes te verwyder."/>
+	<String Id="Error1907" Overridable="yes" Value="Kon nie lettertipe registreer nie [ProductName]. Verifieer dat jy voldoende toestemmings het om lettertipes te installeer, en dat die stelsel hierdie lettertipe ondersteun."/>
+	<String Id="Error1906" Overridable="yes" Value="Kon nie pakket kas [ProductName] nie. Fout: [ProductName]. Kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1905" Overridable="yes" Value="Module [ProductName] kon nie deregistreer nie. HRESULTAAT [ProductName]. Kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1904" Overridable="yes" Value="Module [ProductName] kon nie registreer nie. HRESULTAAT [ProductName]. Kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1903" Overridable="yes" Value="Skeduleer herlaai-operasie: Vee lêer uit [ProductName]. Moet herlaai om operasie te voltooi."/>
+	<String Id="Error1902" Overridable="yes" Value="Skeduleer herselflaai operasie: Hernoem lêer [ProductName] na [ProductName]. Moet herlaai om operasie te voltooi."/>
+	<String Id="Error1901" Overridable="yes" Value="Kon nie probeer lees vanaf die broninstallasiedatabasis nie: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="&amp;apos;n Geldige bestemmingsvouer vir die installering kon nie bepaal word nie."/>
+	<String Id="Error1806" Overridable="yes" Value="Jy het onvoldoende regte om hierdie gids te lees."/>
+	<String Id="Error1805" Overridable="yes" Value="Die vouer [ProductName] bestaan nie. Voer asseblief &amp;apos;n pad na &amp;apos;n bestaande vouer in."/>
+	<String Id="Error1804" Overridable="yes" Value="Daar is geen skyf in aandrywer [ProductName] nie. Voeg asseblief een in en klik Herprobeer, of klik Kanselleer om terug te keer na die blaai-dialoog en kies &amp;apos;n ander volume."/>
+	<String Id="Error1803" Overridable="yes" Value="Daar is geen skyf in aandrywer [ProductName] nie. Voeg asseblief een in en klik Herprobeer, of klik Kanselleer om terug te gaan na die voorheen gekose volume."/>
+	<String Id="Error1802" Overridable="yes" Value="Uit geheue. Sluit ander toepassings af voordat jy weer probeer."/>
+	<String Id="Error1801" Overridable="yes" Value="Die pad [ProductName] is nie geldig nie. Spesifiseer asseblief &amp;apos;n geldige pad."/>
+	<String Id="Error1732" Overridable="yes" Value="Om die installering van [ProductName] te voltooi, moet jy die rekenaar herbegin. Ander gebruikers is tans by hierdie rekenaar aangemeld, en herbegin kan veroorsaak dat hulle hul werk verloor. Wil jy nou weer begin?"/>
+	<String Id="Error1731" Overridable="yes" Value="Die broninstallasiepakket vir die produk [ProductName] is nie gesinchroniseer met die kliëntpakket nie. Probeer die installasie weer deur &amp;apos;n geldige kopie van die installasiepakket &amp;apos;[ProductName]&amp;apos; te gebruik."/>
+	<String Id="Error1730" Overridable="yes" Value="Jy moet &amp;apos;n administrateur wees om hierdie toepassing te verwyder. Om hierdie toepassing te verwyder, kan jy as &amp;apos;n administrateur aanmeld, of jou tegniese ondersteuningsgroep kontak vir bystand."/>
+	<String Id="Error1729" Overridable="yes" Value="Konfigurasie het misluk."/>
+	<String Id="Error1728" Overridable="yes" Value="Opstelling suksesvol voltooi."/>
+	<String Id="Error1727" Overridable="yes" Value="Advertensie het misluk."/>
+	<String Id="Error1726" Overridable="yes" Value="Advertensie suksesvol voltooi."/>
+	<String Id="Error1725" Overridable="yes" Value="Verwydering het misluk."/>
+	<String Id="Error1724" Overridable="yes" Value="Verwydering suksesvol voltooi."/>
+	<String Id="Error1723" Overridable="yes" Value="Daar is &amp;apos;n probleem met hierdie Windows Installer-pakket. &amp;apos;n DLL wat nodig is vir hierdie installasie om te voltooi, kon nie uitgevoer word nie. Kontak jou ondersteuningspersoneel of pakketverskaffer.{{ Aksie [ProductName], inskrywing: [ProductName], biblioteek: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Daar is &amp;apos;n probleem met hierdie Windows Installer-pakket. &amp;apos;n Program wat as deel van die opstelling uitgevoer is, het nie voltooi soos verwag nie. Kontak jou ondersteuningspersoneel of pakketverskaffer.{{ Aksie [ProductName], ligging: [ProductName], opdrag: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Daar is &amp;apos;n probleem met hierdie Windows Installer-pakket. &amp;apos;n Program wat nodig is vir hierdie installasie om te voltooi, kon nie uitgevoer word nie. Kontak jou ondersteuningspersoneel of pakketverskaffer.{{ Aksie: [ProductName], ligging: [ProductName], opdrag: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Daar is &amp;apos;n probleem met hierdie Windows Installer-pakket. &amp;apos;n Skrip wat nodig is vir hierdie installering om te voltooi, kon nie uitgevoer word nie. Kontak jou ondersteuningspersoneel of pakketverskaffer.{{ Gepasmaakte aksie [ProductName] skripfout [ProductName], [ProductName]: [ProductName] Reël [ProductName], Kolom [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Die Windows Installer Service kon nie verkry word nie. Dit kan voorkom as jy Windows in veilige modus gebruik, of as die Windows Installer nie korrek geïnstalleer is nie. Kontak jou ondersteuningspersoneel vir bystand."/>
+	<String Id="Error1718" Overridable="yes" Value="Lêer [ProductName] is deur digitale handtekeningbeleid verwerp."/>
+	<String Id="Error1717" Overridable="yes" Value="Verwyder [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Gekonfigureer [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Geïnstalleer [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Die ouer weergawe van [ProductName] kan nie verwyder word nie. Kontak jou tegniese ondersteuningsgroep.{{ Stelselfout [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] kan nie een van sy vereiste produkte installeer nie. Kontak jou tegniese ondersteuningsgroep.{{ Stelselfout: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Een of meer van die lêers wat nodig is om jou rekenaar na sy vorige toestand te herstel, kon nie gevind word nie. Herstel sal nie moontlik wees nie."/>
+	<String Id="Error1711" Overridable="yes" Value="&amp;apos;n Fout het voorgekom tydens die skryf van installasie-inligting na skyf. Maak seker dat daar genoeg skyfspasie beskikbaar is, en klik Herprobeer, of Kanselleer om die installasie te beëindig."/>
+	<String Id="Error1710" Overridable="yes" Value="Jy kan óf jou rekenaar na sy vorige toestand herstel óf later met die installering voortgaan. Wil jy herstel?"/>
+	<String Id="Error1709" Overridable="yes" Value="Produk: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Installasie het misluk."/>
+	<String Id="Error1707" Overridable="yes" Value="Installasie suksesvol voltooi."/>
+	<String Id="Error1706" Overridable="yes" Value="&amp;apos;n Installasiepakket vir die produk [ProductName] kan nie gevind word nie. Probeer die installasie weer deur &amp;apos;n geldige kopie van die installasiepakket &amp;apos;[ProductName]&amp;apos; te gebruik."/>
+	<String Id="Error1705" Overridable="yes" Value="&amp;apos;n Vorige installasie vir hierdie produk is aan die gang. Jy moet die veranderinge wat deur daardie installasie gemaak is, ontdoen om voort te gaan. Wil jy daardie veranderinge ongedaan maak?"/>
+	<String Id="Error1704" Overridable="yes" Value="&amp;apos;n Installasie vir [ProductName] is tans opgeskort. Jy moet die veranderinge wat deur daardie installasie gemaak is, ontdoen om voort te gaan. Wil jy daardie veranderinge ongedaan maak?"/>
+	<String Id="Error1703" Overridable="yes" Value="Jy moet jou stelsel herbegin vir die konfigurasieveranderinge wat aan [ProductName] gemaak is om in werking te tree. Klik Ja om nou te herbegin of Nee as jy van plan is om later handmatig te herbegin."/>
+	<String Id="Error1702" Overridable="yes" Value="Die installeerder moet jou stelsel herbegin voordat konfigurasie van [ProductName] kan voortgaan. Klik Ja om nou te herbegin of Nee as jy van plan is om later handmatig te herbegin."/>
+	<String Id="Error1701" Overridable="yes" Value="Die sleutel [ProductName] is nie geldig nie. Verifieer dat jy die korrekte sleutel ingevoer het."/>
+	<String Id="Error1609" Overridable="yes" Value="&amp;apos;n Fout het voorgekom tydens die toepassing van sekuriteitinstellings. [ProductName] is nie &amp;apos;n geldige gebruiker of groep nie. Dit kan &amp;apos;n probleem met die pakket wees, of &amp;apos;n probleem om aan &amp;apos;n domeinbeheerder op die netwerk te koppel. Gaan jou netwerkverbinding na en klik Herprobeer, of Kanselleer om die installering te beëindig. {{Kan nie die gebruiker se SID opspoor nie, stelselfout [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Kon nie enige voorheen geïnstalleerde produkte op die masjien vind om hierdie produk te installeer nie."/>
+	<String Id="Error1607" Overridable="yes" Value="Die volgende toepassings moet gesluit word voordat die installasie voortgesit word:"/>
+	<String Id="Error1606" Overridable="yes" Value="Kon nie toegang tot netwerkligging kry nie [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Daar is nie genoeg skyfspasie op die volume &amp;apos;[ProductName]&amp;apos; om voort te gaan met die installering met herstel geaktiveer nie. [ProductName] KB word vereis, maar slegs [ProductName] KB is beskikbaar. Klik Ignoreer om voort te gaan met die installering sonder om herstelinligting te stoor, klik Herprobeer om weer te kyk vir beskikbare spasie, of klik Kanselleer om die installasie te verlaat."/>
+	<String Id="Error1604" Overridable="yes" Value="Die produk &amp;apos;[ProductName]&amp;apos; is reeds geïnstalleer, wat die installering van hierdie produk verhoed. Die twee produkte is onversoenbaar."/>
+	<String Id="Error1603" Overridable="yes" Value="Die lêer [ProductName][ProductName] word in gebruik gehou{ deur die volgende proses: Naam: [ProductName], ID: [ProductName], Venstertitel: &amp;apos;[ProductName]&amp;apos;}. Maak daardie toepassing toe en probeer weer."/>
+	<String Id="Error1602" Overridable="yes" Value="Is jy seker jy wil kanselleer?"/>
+	<String Id="Error1601" Overridable="yes" Value="Uit skyfspasie -- Volume: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Gebruiker &amp;apos;[ProductName]&amp;apos; het voorheen &amp;apos;n installasie vir produk &amp;apos;[ProductName]&amp;apos; begin. Daardie gebruiker sal daardie installasie weer moet laat loop voordat hulle daardie produk kan gebruik."/>
+	<String Id="Error1502" Overridable="yes" Value="Gebruiker &amp;apos;[ProductName]&amp;apos; het voorheen &amp;apos;n installasie vir produk &amp;apos;[ProductName]&amp;apos; begin. Daardie gebruiker sal daardie installasie weer moet laat loop voordat hulle daardie produk kan gebruik. Jou huidige installasie sal nou voortgaan."/>
+	<String Id="Error1501" Overridable="yes" Value="Fout met toegang tot beveiligde data. Maak asseblief seker dat die Windows Installer behoorlik gekonfigureer is en probeer weer installeer."/>
+	<String Id="Error1500" Overridable="yes" Value="Nog &amp;apos;n installasie is aan die gang. Jy moet daardie installasie voltooi voordat jy met hierdie een voortgaan."/>
+	<String Id="Error1410" Overridable="yes" Value="Kon nie die beskikbare registerspasie vergroot nie. [ProductName] KB gratis registerspasie word benodig vir die installering van hierdie toepassing."/>
+	<String Id="Error1409" Overridable="yes" Value="Kon nie sekuriteitinligting vir sleutel [ProductName] lees nie.{{ Stelselfout [ProductName].}} Verifieer dat jy voldoende toegang tot daardie sleutel het, of kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1408" Overridable="yes" Value="Kon nie subsleutelname vir sleutel [ProductName] kry nie.{{ Stelselfout [ProductName].}} Verifieer dat jy voldoende toegang tot daardie sleutel het, of kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1407" Overridable="yes" Value="Kon nie waardename vir sleutel [ProductName] kry nie.{{ Stelselfout [ProductName].}} Verifieer dat jy voldoende toegang tot daardie sleutel het, of kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1406" Overridable="yes" Value="Kon nie waarde [ProductName] na sleutel [ProductName] skryf nie.{{ Stelselfout [ProductName].}} Verifieer dat jy voldoende toegang tot daardie sleutel het, of kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1405" Overridable="yes" Value="Kon nie waarde [ProductName] vanaf sleutel [ProductName] lees nie.{{ Stelselfout [ProductName].}} Verifieer dat jy voldoende toegang tot daardie sleutel het, of kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1404" Overridable="yes" Value="Kon nie sleutel [ProductName] uitvee nie.{{ Stelselfout [ProductName].}} Verifieer dat jy voldoende toegang tot daardie sleutel het, of kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1403" Overridable="yes" Value="Kon nie waarde [ProductName] van sleutel [ProductName] uitvee nie.{{ Stelselfout [ProductName].}} Verifieer dat jy voldoende toegang tot daardie sleutel het, of kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1402" Overridable="yes" Value="Kon nie sleutel oopmaak nie: [ProductName].{{ Stelselfout [ProductName].}} Verifieer dat jy voldoende toegang tot daardie sleutel het, of kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1401" Overridable="yes" Value="Kon nie sleutel skep nie: [ProductName].{{ Stelselfout [ProductName].}} Verifieer dat jy voldoende toegang tot daardie sleutel het, of kontak jou ondersteuningspersoneel."/>
+	<String Id="Error1336" Overridable="yes" Value="Daar was &amp;apos;n fout met die skep van &amp;apos;n tydelike lêer wat nodig is om hierdie installasie te voltooi.{{ Folder: [ProductName]. Stelselfoutkode: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Die kabinetlêer &amp;apos;[ProductName]&amp;apos; wat vir hierdie installasie benodig word, is korrup en kan nie gebruik word nie. Dit kan &amp;apos;n netwerkfout, &amp;apos;n fout wat vanaf die CD-ROM lees, of &amp;apos;n probleem met hierdie pakket aandui."/>
+	<String Id="Error1334" Overridable="yes" Value="Die lêer &amp;apos;[ProductName]&amp;apos; kan nie geïnstalleer word nie omdat die lêer nie in kabinetlêer &amp;apos;[ProductName]&amp;apos; gevind kan word nie. Dit kan &amp;apos;n netwerkfout, &amp;apos;n fout wat vanaf die CD-ROM lees, of &amp;apos;n probleem met hierdie pakket aandui."/>
+	<String Id="Error1333" Overridable="yes" Value="Kon nie [ProductName] lêer korrek regmaak nie: CRC-fout."/>
+	<String Id="Error1332" Overridable="yes" Value="Kon nie [ProductName] lêer korrek skuif nie: CRC-fout."/>
+	<String Id="Error1331" Overridable="yes" Value="Kon nie [ProductName] lêer korrek kopieer: CRC-fout."/>
+	<String Id="Error1330" Overridable="yes" Value="&amp;apos;n Lêer wat vereis word, kan nie geïnstalleer word nie omdat die kabinetlêer [ProductName] &amp;apos;n ongeldige digitale handtekening het. Dit kan aandui dat die kabinetlêer korrup is.{{ Fout [ProductName] is deur WinVerifyTrust teruggestuur.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="&amp;apos;n Lêer wat vereis word, kan nie geïnstalleer word nie omdat die kabinetlêer [ProductName] nie digitaal onderteken is nie. Dit kan aandui dat die kabinetlêer korrup is."/>
+	<String Id="Error1328" Overridable="yes" Value="Kon nie pleister toepas op lêer [ProductName]. Dit is waarskynlik op ander maniere opgedateer en kan nie meer deur hierdie pleister gewysig word nie. Kontak jou pleisterverskaffer vir meer inligting.{{ Stelselfout: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Ongeldige Drive: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Kon nie lêersekuriteit kry nie: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; is nie &amp;apos;n geldige kort lêernaam nie."/>
+	<String Id="Error1324" Overridable="yes" Value="Die gidspad &amp;apos;[ProductName]&amp;apos; bevat &amp;apos;n ongeldige karakter."/>
+	<String Id="Error1323" Overridable="yes" Value="Die vouerpad &amp;apos;[ProductName]&amp;apos; bevat woorde wat nie geldig is in vouerpaaie nie."/>
+	<String Id="Error1322" Overridable="yes" Value="&amp;apos;n Gedeelte van die vouerpad &amp;apos;[ProductName]&amp;apos; is ongeldig. Dit is óf leeg óf oorskry die lengte wat deur die stelsel toegelaat word."/>
+	<String Id="Error1321" Overridable="yes" Value="Die installeerder het onvoldoende voorregte om hierdie lêer te wysig: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Die gespesifiseerde pad is te lank: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="&amp;apos;n Netwerkfout het voorgekom tydens die poging om die bronlêerkas oop te maak: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="&amp;apos;n Netwerkfout het voorgekom tydens die skep van die gids: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="&amp;apos;n Fout het voorgekom tydens die skep van die gids: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="&amp;apos;n Netwerkfout het voorgekom tydens &amp;apos;n poging om uit die lêer te lees: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Kan nie na die gespesifiseerde vouer skryf nie: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Die gespesifiseerde pad &amp;apos;[ProductName]&amp;apos; is nie beskikbaar nie."/>
+	<String Id="Error1313" Overridable="yes" Value="Die volume [ProductName] is tans nie beskikbaar nie. Kies asseblief &amp;apos;n ander."/>
+	<String Id="Error1312" Overridable="yes" Value="Kan nie die gids &amp;apos;[ProductName]&amp;apos; skep nie. &amp;apos;n Lêer met hierdie naam bestaan reeds. Hernoem of verwyder asseblief die lêer en klik Herprobeer, of klik Kanselleer om af te sluit."/>
+	<String Id="Error1311" Overridable="yes" Value="Bronlêer nie gevind nie {{(kabinet)}}: [ProductName]. Verifieer dat die lêer bestaan en dat jy toegang daartoe het."/>
+	<String Id="Error1310" Overridable="yes" Value="Kon nie skryf na lêer: [ProductName].{{ Stelselfout [ProductName].}} Verifieer dat jy toegang tot daardie gids het."/>
+	<String Id="Error1309" Overridable="yes" Value="Fout met lees van lêer: [ProductName].{{ Stelselfout [ProductName].}} Verifieer dat die lêer bestaan en dat jy toegang daartoe het."/>
+	<String Id="Error1308" Overridable="yes" Value="Bronlêer nie gevind nie: [ProductName]. Verifieer dat die lêer bestaan en dat jy toegang daartoe het."/>
+	<String Id="Error1307" Overridable="yes" Value="Daar is nie genoeg skyfspasie om hierdie lêer te installeer nie: [ProductName]. Maak &amp;apos;n bietjie skyfspasie vry en klik Herprobeer, of klik Kanselleer om af te sluit."/>
+	<String Id="Error1306" Overridable="yes" Value="&amp;apos;n Ander toepassing het eksklusiewe toegang tot die lêer &amp;apos;[ProductName]&amp;apos;. Skakel asseblief alle ander toepassings af en klik dan weer probeer."/>
+	<String Id="Error1305" Overridable="yes" Value="Kon nie van lêer [ProductName] lees nie.{{ Stelselfout [ProductName].}} Verifieer dat die lêer bestaan en dat jy toegang daartoe het."/>
+	<String Id="Error1304" Overridable="yes" Value="Kon nie skryf na lêer: [ProductName]. Verifieer dat jy toegang tot daardie gids het."/>
+	<String Id="Error1303" Overridable="yes" Value="Die installeerder het onvoldoende voorregte om toegang tot hierdie gids te verkry: [ProductName]. Die installasie kan nie voortgaan nie. Meld aan as administrateur of kontak jou stelseladministrateur."/>
+	<String Id="Error1302" Overridable="yes" Value="Plaas asseblief die skyf: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Kan nie die lêer &amp;apos;[ProductName]&amp;apos; skep nie. &amp;apos;n Gids met hierdie naam bestaan reeds. Kanselleer die installasie en probeer installeer na &amp;apos;n ander plek."/>
+	<String Id="Error1101" Overridable="yes" Value="Fout met lees van lêer: [ProductName].{{ Stelselfout [ProductName].}} Verifieer dat die lêer bestaan en dat jy toegang daartoe het."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Opstelling het misluk."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Opstelling is suksesvol voltooi."/>
+	<String Id="Error23" Overridable="yes" Value="Berei tans voor om ouer weergawes van hierdie toepassing te verwyder..."/>
+	<String Id="Error22" Overridable="yes" Value="Verwyder tans ouer weergawes van hierdie toepassing..."/>
+	<String Id="Error21" Overridable="yes" Value="Versamel tans vereiste inligting..."/>
+	<String Id="Error20" Overridable="yes" Value="Wag asseblief terwyl Windows [ProductName] opstel"/>
+	<String Id="Error19" Overridable="yes" Value="Installeerder het voortydig gestop."/>
+	<String Id="Error18" Overridable="yes" Value="Installeerder reageer nie meer nie."/>
+	<String Id="Error17" Overridable="yes" Value="Uit geheue. Sluit ander toepassings af voordat jy weer probeer."/>
+	<String Id="Error16" Overridable="yes" Value="Oorblywende tyd: {[ProductName] minute }{[ProductName] sekondes}"/>
+	<String Id="Error15" Overridable="yes" Value="Aksie geëindig [ProductName]: [ProductName]. Retourwaarde [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Aksie begin [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Aantekening gestop: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Aantekening het begin: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Boodskaptipe: [ProductName], Argument: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Aksie [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Disk vol: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Die installeerder het &amp;apos;n onverwagte fout teëgekom tydens die installering van hierdie pakket. Dit kan &amp;apos;n probleem met hierdie pakket aandui. Die foutkode is [ProductName]. {{Die argumente is: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Inligting [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Waarskuwing [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Fout [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Noodlottige fout: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Depublisering van produkinligting"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Lêer: [ProductName], Gids: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Verwyder tans geskuifde lêers"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Lêer: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Verwyder tans rugsteunlêers"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Terugrolaksie:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Aansoekkonteks:[ProductName], Samestellingnaam:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Depublisering van samestelling-inligting"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Aansoekkonteks:[ProductName], Samestellingnaam:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Publiseer samestelling inligting"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Lêer: [ProductName], Afhanklikhede: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Installeer stelselkatalogus"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Genereer skripbewerkings vir aksie:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Advertensie aansoek"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Sleutel: [ProductName], Naam: [ProductName], Waarde: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Skryf stelsel register waardes"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Lêer: [ProductName], Afdeling: [ProductName], Sleutel: [ProductName], Waarde: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Skryf INI lêers waardes"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Naam: [ProductName], Waarde: [ProductName], Aksie [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Opdatering van omgewingstringe"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Deregistreer tipe biblioteke"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Deregistrasie van programidentifiseerders"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME-inhoudtipe: [ProductName], Uitbreiding: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Deregistreer tans MIME-inligting"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Lettertipe: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Deregistreer lettertipes"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Uitbreiding: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Deregistreer uitbreidingsbedieners"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="ToepassingId: [ProductName]{{, Toepassingtipe: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Deregistreer COM+ toepassings en komponente"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Klas-ID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Deregistreer Klasbedieners"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Kenmerk: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Depublisering van produkkenmerke"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Komponent-ID: [ProductName], Kwalifiseerder: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Depublisering van gekwalifiseerde komponente"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Diens: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Stop dienste"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Diens: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Begin dienste"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Inisialiseer ODBC-gidse"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Lêer: [ProductName], gids: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Deregistrasie van modules"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Lêer: [ProductName], gids: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Registrasie van modules"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Op soek na kwalifiserende produkte"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Kortpad: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Verwyder kortpaaie"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Sleutel: [ProductName], Naam: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Verwyder stelselregisterwaardes"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Verwyder ODBC-komponente"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Lêer: [ProductName], Afdeling: [ProductName], Sleutel: [ProductName], Waarde: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Verwyder tans INI-lêersinskrywings"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Voer: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Verwyder dopgehou"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Lêer: [ProductName], Gids: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Verwyder tans lêers"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Toepassing: [ProductName], Opdragreël: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Verwyder toepassings"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Naam: [ProductName], Waarde: [ProductName], Aksie [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Opdatering van omgewingstringe"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Lêer: [ProductName], Gids: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Verwyder gedupliseerde lêers"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Registreer gebruiker"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Registreer tipe biblioteke"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Registreer produk"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Lettertipe: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Registreer lettertipes"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="ToepassingId: [ProductName]{{, Toepassingtipe: [ProductName], Gebruikers: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Registrasie van COM+ toepassings en komponente"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Opdatering van komponentregistrasie"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Lêer: [ProductName], Gids: [ProductName], Grootte: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Patch lêers"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Lêer: [ProductName], Gids: [ProductName], Grootte: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Skuif lêers"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Toepassing: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Migreer kenmerkstate vanaf verwante toepassings"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Evalueer lanseringstoestande"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Diens: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Die installering van nuwe dienste"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Installering van ODBC-komponente"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Toepassing gevind: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Soek vir verwante toepassings"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Lêer: [ProductName], Gids: [ProductName], Grootte: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Skep duplikaatlêers"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Diens: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Die verwydering van dienste"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Voer: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Skep dopgehou"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Op soek na kwalifiserende produkte"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Lêer: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Bindende uitvoerbares"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Eiendom: [ProductName], Handtekening: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Soek tans vir geïnstalleerde toepassings"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Vrye spasie: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Toewysing van registerspasie"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Registreer program identifiseerders"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME-inhoudtipe: [ProductName], Uitbreiding: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Registreer tans MIME-inligting"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Uitbreiding: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Registreer uitbreidingsbedieners"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Klas-ID: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Registreer klasbedieners"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Publiseer produkinligting"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Kenmerk: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Publiseer produkkenmerke"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Komponent-ID: [ProductName], Kwalifiseerder: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Publiseer gekwalifiseerde komponente"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Kortpad: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Skep kortpaaie"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Rekenaarruimtevereistes"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Rekenaarruimtevereistes"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Rekenaarruimtevereistes"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Lêer: [ProductName], Gids: [ProductName], Grootte: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Kopieer tans netwerkinstallasielêers"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Lêer: [ProductName], Gids: [ProductName], Grootte: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Kopieer tans nuwe lêers"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Bekragtig installering"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Lees asseblief die [ProductName]-lisensie-ooreenkoms"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Dateer op"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Installeer"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ek &amp;aanvaar die bepalings in die lisensie-ooreenkoms"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Welkom by die [ProductName] Setup Wizard"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Die Setup Wizard sal [ProductName] op jou rekenaar opdateer. Klik Volgende om voort te gaan of Kanselleer om die Setup Wizard te verlaat."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Die Setup Wizard sal [ProductName] op jou rekenaar installeer. Klik Volgende om voort te gaan of Kanselleer om die Setup Wizard te verlaat."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Uitroep-ikoon"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Wag asseblief terwyl die installeerder klaar is met die bepaling van jou skyfspasievereistes."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp; Keer terug"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Gereed om [ProductName] op te dateer"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Klik Update om [ProductName] vanaf jou rekenaar op te dateer. Klik Terug om enige van jou installasie-instellings te hersien of te verander. Klik Kanselleer om die towenaar te verlaat."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Dateer op"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Gereed om [ProductName] te verwyder"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Klik Verwyder om [ProductName] van jou rekenaar te verwyder. Klik Terug om enige van jou installasie-instellings te hersien of te verander. Klik Kanselleer om die towenaar te verlaat."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Verwyder"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Gereed om te herstel [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Klik Herstel om die installasie van [ProductName] te herstel. Klik Terug om enige van jou installasie-instellings te hersien of te verander. Klik Kanselleer om die towenaar te verlaat."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Her&amp;paar"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Gereed om [ProductName] te verander"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Klik Verander om die installasie te begin. Klik Terug om enige van jou installasie-instellings te hersien of te verander. Klik Kanselleer om die towenaar te verlaat."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Verander"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Gereed om [ProductName] te installeer"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Klik Installeer om die installasie te begin. Klik Terug om enige van jou installasie-instellings te hersien of te verander. Klik Kanselleer om die towenaar te verlaat."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Installeer"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Klik op die Voltooi-knoppie om die Setup Wizard te verlaat."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName]-opstelling is onderbreek. Jou stelsel is nie gewysig nie. Om hierdie program op &amp;apos;n later tydstip te installeer, voer asseblief die installasie weer uit."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Setup Wizard is onderbreek"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Alle programkenmerke sal geïnstalleer word. Vereis die meeste skyfspasie."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Laat gebruikers toe om te kies watter programkenmerke geïnstalleer sal word en waar hulle geïnstalleer sal word. Aanbeveel vir gevorderde gebruikers."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Installeer die mees algemene programkenmerke. Aanbeveel vir die meeste gebruikers."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Kies die tipe opstelling wat die beste by jou behoeftes pas"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kies opstellingtipe"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Voltooi installasie"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="Voltooi"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Pasgemaakte installasie"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="Pasgemaak"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Tipiese installasie"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Tipies"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Hervat die [ProductName] Setup Wizard"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Die Setup Wizard sal die installasie van [ProductName] op jou rekenaar voltooi. Klik Installeer om voort te gaan of Kanselleer om die Setup Wizard te verlaat."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Installeer"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Status:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Vordering gedoen"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Dateer tans [ProductName] op"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Wag asseblief terwyl die Setup Wizard [ProductName] opdateer."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Verwyder tans [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Wag asseblief terwyl die Setup Wizard [ProductName] verwyder."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Herstel tans [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Wag asseblief terwyl die Setup Wizard [ProductName] herstel."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Verandering van [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Wag asseblief terwyl die Setup Wizard [ProductName] verander."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Installeer tans [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Wag asseblief terwyl die Setup Wizard [ProductName] installeer."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Welkom by die [ProductName] Setup Wizard"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Wag asseblief terwyl die Setup Wizard voorberei om jou deur die installasie te lei."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Alternatiewelik kan jy kies om die installeerder se terugrolfunksie te deaktiveer. Deaktiveer terugrol verhoed die installeerder om jou rekenaar se oorspronklike toestand te herstel indien die installasie op enige manier onderbreek word. Klik Ja as jy die risiko wil neem om terugrol te deaktiveer."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Buiten skyfspasie"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Skyfspasie benodig vir die installasie oorskry beskikbare skyfspasie."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Die gemerkte volumes het nie genoeg skyfspasie beskikbaar vir die tans geselekteerde kenmerke nie. Jy kan sommige lêers uit die gemerkte volumes verwyder, minder kenmerke installeer of &amp;apos;n ander bestemmingsaandrywer kies."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Buiten skyfspasie"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Skyfspasie benodig vir die installasie oorskry beskikbare skyfspasie."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Die gemerkte volumes het nie genoeg skyfspasie beskikbaar vir die tans geselekteerde kenmerke nie. Jy kan sommige lêers uit die gemerkte volumes verwyder, minder kenmerke installeer of &amp;apos;n ander bestemmingsaandrywer kies."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Moenie toepassings toemaak nie. &amp;apos;n Herlaai sal vereis word."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Maak die toepassings toe en probeer om hulle te herbegin."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Lêers in gebruik"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Sommige lêers wat opgedateer moet word, word tans gebruik."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Die volgende toepassings gebruik lêers wat deur hierdie opstelling opgedateer moet word. Jy kan die Setup Wizard laat toemaak en probeer om hulle te herbegin of die masjien later te herlaai."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Welkom by die [ProductName] Setup Wizard"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Die Setup Wizard laat jou toe om die manier waarop [ProductName]-kenmerke op jou rekenaar geïnstalleer word te verander of om dit van jou rekenaar af te verwyder. Klik Volgende om voort te gaan of Kanselleer om die Setup Wizard te verlaat."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] kan nie herstel word nie."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Herstel foute in die mees onlangse installasie deur ontbrekende en korrupte lêers, kortpaaie en registerinskrywings reg te stel."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] kan nie verwyder word nie."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Verwyder [ProductName] van jou rekenaar."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] het geen onafhanklik kiesbare kenmerke nie."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Laat jou die manier verander waarop kenmerke geïnstalleer word."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Verander, herstel of verwyder installasie"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Kies die operasie wat jy wil uitvoer."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Verwyder installasie"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Verwyder"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Herstel installasie"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Her&amp;paar"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Verander installasie"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Verander"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Eindgebruikerlisensie-ooreenkoms"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Lees asseblief die volgende lisensie-ooreenkoms aandagtig deur"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ek &amp;aanvaar die bepalings in die lisensie-ooreenkoms"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Inligting ikoon"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Installasiegids moet op &amp;apos;n plaaslike hardeskyf wees."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Verander..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Installasie &amp; gids:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] sal by verstek in &amp;apos;n per-masjien-lêergids geïnstalleer word en beskikbaar wees vir alle gebruikers. Jy kan die verstek installasie gids verander. Jy moet plaaslike administrateur-regte hê."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Installeer vir alle gebruikers van hierdie &amp;masjien"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] ondersteun nie installasie per gebruiker nie."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] sal in &amp;apos;n per-gebruiker-lêergids geïnstalleer word en net vir jou gebruikersrekening beskikbaar wees. Jy het nie plaaslike administrateur regte nodig nie."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Installeer &amp;net vir jou ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Installasieomvang"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Kies die installasie omvang en gids"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Installeer [ProductName] om:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Klik Volgende om na die verstekmap te installeer of klik Verander om &amp;apos;n ander te kies."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Bestemmingsvouer"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Verander..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Lêers in gebruik"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Sommige lêers wat opgedateer moet word, word tans gebruik."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Die volgende toepassings gebruik lêers wat deur hierdie opstelling opgedateer moet word. Maak hierdie toepassings toe en klik dan &amp;Herprobeer om voort te gaan met opstelling of Verlaat om dit te verlaat."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="Verlaat"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Verander"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Installeer"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="KenmerkeDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="KenmerkeDlgItemBeskrywing"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Produkkenmerke"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Kies die manier waarop jy wil hê dat kenmerke geïnstalleer moet word."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Produk kenmerke"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Klik op die Voltooi-knoppie om die Setup Wizard te verlaat."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Setup Wizard het voortydig geëindig weens &amp;apos;n fout. Jou stelsel is nie gewysig nie. Om hierdie program op &amp;apos;n later tydstip te installeer, voer Setup Wizard weer uit."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Setup Wizard het voortydig geëindig"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Het die [ProductName] Setup Wizard voltooi"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Klik op die Voltooi-knoppie om die Setup Wizard te verlaat."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Inligting ikoon"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Inligting teks"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Skyfspasievereistes"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Die skyfspasie wat benodig word vir die installering van die geselekteerde kenmerke."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Gemerkte volumes het nie genoeg skyfspasie beskikbaar vir geselekteerde kenmerke nie. Jy kan óf sommige lêers uit die gemerkte volumes verwyder, minder kenmerke installeer, óf verskillende bestemmingsaandrywers kies."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Ligging:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="PasmaakDlgligging-pasmaakDlgligging"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="PasmaakDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Gepasmaakte opstelling"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Kies die manier waarop jy wil hê dat kenmerke geïnstalleer moet word."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Klik op die ikone in die boom hieronder om die manier waarop kenmerke geïnstalleer sal word, te verander."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Skyf &amp; Gebruik"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Her&amp;stel"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;blaai..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Boom van seleksies"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Inligting ikoon"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Is jy seker jy wil die installasie van [ProductName] kanselleer?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Verander bestemmingsvouer"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Blaai na die bestemmingslêergids"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Vou naam:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Skep &amp;apos;n nuwe gids"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Een vlak op"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Kyk in:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;gevorderd"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Installeer"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Klik Installeer om die produk te installeer met verstekopsies net vir jou. Klik Gevorderd om installasie-opsies te verander."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Klik Installeer om die produk te installeer met verstekopsies vir alle gebruikers. Klik Gevorderd om installasie-opsies te verander."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ek &amp;aanvaar die bepalings in die lisensie-ooreenkoms"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Lees asseblief die [ProductName]-lisensie-ooreenkoms"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Opstelling"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Druk"/>
+	<String Id="WixUIOK" Overridable="yes" Value="OK"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Nee"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Ja"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Ignoreer"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Probeer weer"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Voltooi"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Kanselleer"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Volgende"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Terug"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Deïnstalleer Windows Firewall-konfigurasie"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Rol terug Windows Firewall-konfigurasie"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installeer Windows Firewall-konfigurasie"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Rol terug Windows Firewall-konfigurasie"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfigureer Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfigureer Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan nie aan Windows Firewall koppel nie. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Netwerk gedeelde bediener"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Deel aandrywers op netwerk om beheer en blaai vanaf RAAS-kliënt moontlik te maak"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Kan herlaai"/>

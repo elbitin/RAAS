@@ -1,4 +1,11 @@
-﻿<WixLocalization Culture="ru" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ru-ru-ru-ru" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Удаление конфигурации брандмауэра Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Откат конфигурации брандмауэра Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Установка конфигурации брандмауэра Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Откат конфигурации брандмауэра Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Настройка брандмауэра Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Настройка брандмауэра Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Невозможно подключиться к брандмауэру Windows. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Визуализации для удаленных приложений доступны как опция в конфигурации"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Просмотр серверов RAAS в Проводнике"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Создание удаленных ярлыков приложений для серверных приложений на локальном компьютере"/>

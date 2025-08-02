@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="hy" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="hy" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Ծավալը"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Սկավառակի չափը"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Պահանջվում է"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Տարբերություն"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Հասանելի է"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Մնացած ժամանակը՝{ [ProductName] րոպե}{ [ProductName] վայրկյան}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Այս հատկությունը պահանջում է [ProductName] ձեր կոշտ սկավառակի վրա: Այն ունի ընտրված [ProductName] ենթահատկանիշներից [ProductName]: Ենթահատկանիշները պահանջում են [ProductName] ձեր կոշտ սկավառակի վրա:"/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Այս հատկությունը պահանջում է [ProductName] ձեր կոշտ սկավառակի վրա: Այն ունի ընտրված [ProductName] ենթահատկանիշներից [ProductName]: Ենթահատկանիշներն ազատում են [ProductName] ձեր կոշտ սկավառակի վրա:"/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Այս հատկությունը ազատում է [ProductName] ձեր կոշտ սկավառակի վրա: Այն ունի ընտրված [ProductName] ենթահատկանիշներից [ProductName]: Ենթահատկանիշները պահանջում են [ProductName] ձեր կոշտ սկավառակի վրա:"/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Այս հատկությունը ազատում է [ProductName] ձեր կոշտ սկավառակի վրա: Այն ունի ընտրված [ProductName] ենթահատկանիշներից [ProductName]: Ենթահատկանիշներն ազատում են [ProductName] ձեր կոշտ սկավառակի վրա:"/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Այս գործառույթը կմնա ցանցից գործարկվելու համար"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Այս հատկությունը կփոխվի ցանցից գործարկվող վիճակից, որը տեղադրվելու է տեղական կոշտ սկավառակի վրա"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Այս հատկությունը ցանցային վիճակից գործարկվող վիճակից կփոխվի մինչև անհրաժեշտության դեպքում տեղադրվելու համար"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Այս ֆունկցիան ամբողջությամբ կհեռացվի, դուք չեք կարողանա այն գործարկել ցանցից"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Այս հատկությունը կհեռացվի ձեր տեղական կոշտ սկավառակից, բայց դեռ հասանելի կլինի ցանցից գործարկելու համար"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Այս հատկությունը կմնա ձեր տեղական կոշտ սկավառակի վրա"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Այս հատկությունը կհեռացվի ձեր տեղական կոշտ սկավառակից, բայց դեռ հասանելի կլինի CD-ից գործարկելու համար"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Այս հատկությունը կհեռացվի ձեր տեղական կոշտ սկավառակից, բայց կտեղադրվի, երբ անհրաժեշտ լինի"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Այս ֆունկցիան ամբողջությամբ կհեռացվի"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Այս հատկանիշի համար ծախսերի կազմում..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Այս հատկությունը պահանջում է [ProductName] ձեր կոշտ սկավառակի վրա:"/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Այս հատկությունը ազատում է [ProductName] ձեր կոշտ սկավառակի վրա:"/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Այս հատկությունը կփոխվի CD-ից գործարկված վիճակից, որը տեղադրվելու է տեղական կոշտ սկավառակի վրա"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Այս հատկությունը կմնա CD-ից գործարկվելու համար"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Այս հատկությունը կփոխվի՝ գործարկվելուց CD վիճակից մինչև անհրաժեշտության դեպքում տեղադրվելը"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Այս ֆունկցիան ամբողջությամբ կհեռացվի, դուք չեք կարողանա այն գործարկել CD-ից"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Այս գործառույթը հասանելի կլինի ցանցից գործարկելու համար"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Այս հատկությունը կտեղադրվի ձեր տեղական կոշտ սկավառակի վրա"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Այս գործառույթը հասանելի կլինի CD-ից աշխատելու համար"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Անհրաժեշտության դեպքում կտեղադրվի"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Այս գործառույթն անհասանելի կդառնա"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Այս գործառույթը կտեղադրվի ցանցից գործարկելու համար"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Այս հատկությունը կտեղադրվի տեղական կոշտ սկավառակի վրա"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Այս հատկությունը կտեղադրվի CD-ից գործարկելու համար"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Այս հատկությունը կկարգավորվի այնպես, որ տեղադրվի, երբ պահանջվի"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Այս գործառույթը կմնա ապատեղադրված"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Պահանջվող տեղեկատվության հավաքում..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Թղթապանակ|New Folder"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Կտեղադրվի ցանցից գործարկելու համար"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Կտեղադրվի տեղական կոշտ սկավառակի վրա"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Կտեղադրվի CD-ից աշխատելու համար"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Ամբողջ գործառույթը կտեղադրվի ցանցից գործարկելու համար"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Ամբողջ գործառույթը կտեղադրվի տեղական կոշտ սկավառակի վրա"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Ամբողջ գործառույթը կտեղադրվի CD-ից գործարկելու համար"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Ֆունկցիան կտեղադրվի, երբ պահանջվի"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Ամբողջ գործառույթն անհասանելի կլինի"/>
+	<String Id="UITextMB" Overridable="yes" Value="ՄԲ"/>
+	<String Id="UITextKB" Overridable="yes" Value="ԿԲ"/>
+	<String Id="UITextGB" Overridable="yes" Value="ԳԲ"/>
+	<String Id="UITextbytes" Overridable="yes" Value="բայթեր"/>
+	<String Id="Error1938" Overridable="yes" Value="«[ProductName]» հավաքույթի տեղադրման ժամանակ սխալ է տեղի ունեցել: Չհաջողվեց գտնել հավաքի մեկ կամ մի քանի մոդուլ: HRESULT՝ [ProductName]։{{ հավաքման ինտերֆեյս՝ [ProductName], ֆունկցիա՝ [ProductName], բաղադրիչ՝ [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="«[ProductName]» հավաքույթի տեղադրման ժամանակ սխալ է տեղի ունեցել: Ստորագրությունը կամ կատալոգը չհաջողվեց ստուգել կամ վավերական չէ: HRESULT՝ [ProductName]։{{ հավաքման ինտերֆեյս՝ [ProductName], ֆունկցիա՝ [ProductName], բաղադրիչ՝ [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="«[ProductName]» հավաքույթի տեղադրման ժամանակ սխալ է տեղի ունեցել: Համագումարը խիստ անվանված չէ կամ ստորագրված չէ բանալիների նվազագույն երկարությամբ: HRESULT՝ [ProductName]։{{ հավաքման ինտերֆեյս՝ [ProductName], ֆունկցիա՝ [ProductName], բաղադրիչ՝ [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="«[ProductName]» հավաքույթի տեղադրման ժամանակ սխալ է տեղի ունեցել: Լրացուցիչ տեղեկությունների համար դիմեք Օգնություն և Աջակցություն: HRESULT՝ [ProductName]։{{ հավաքման ինտերֆեյս՝ [ProductName], ֆունկցիա՝ [ProductName], բաղադրիչ՝ [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Օգտատիրոջ տեղադրումն անջատված է մեքենայի քաղաքականության միջոցով:"/>
+	<String Id="Error1933" Overridable="yes" Value="Windows Installer ծառայությունը չի կարող թարմացնել մեկ կամ մի քանի պաշտպանված Windows ֆայլ:{{ SFP Սխալ՝ [ProductName]: Պաշտպանված ֆայլերի ցանկ՝\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Windows Installer ծառայությունը չի կարող թարմացնել պաշտպանված Windows ֆայլը [ProductName]:{{ Փաթեթի տարբերակ՝ [ProductName], ՕՀ-ի պաշտպանված տարբերակ՝ [ProductName], SFP սխալ՝ [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Windows Installer ծառայությունը չի կարող թարմացնել համակարգի ֆայլը [ProductName], քանի որ ֆայլը պաշտպանված է Windows-ի կողմից: Հնարավոր է, որ ձեզ անհրաժեշտ լինի թարմացնել ձեր օպերացիոն համակարգը, որպեսզի այս ծրագիրը ճիշտ աշխատի:{{ Փաթեթի տարբերակ՝ [ProductName], ՕՀ-ի պաշտպանված տարբերակ՝ [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="«[ProductName]» ([ProductName]) ծառայության նկարագրությունը հնարավոր չէ փոխել:"/>
+	<String Id="Error1929" Overridable="yes" Value="COM+ հավելվածի գրանցումը չեղարկելու սխալ: Լրացուցիչ տեղեկությունների համար դիմեք ձեր աջակցության անձնակազմին:"/>
+	<String Id="Error1928" Overridable="yes" Value="COM+ հավելվածի գրանցման սխալ: Լրացուցիչ տեղեկությունների համար դիմեք ձեր աջակցության անձնակազմին:"/>
+	<String Id="Error1927" Overridable="yes" Value="Բաղադրիչների ծառայությունները (COM+ 1.0) տեղադրված չեն այս համակարգչում: Այս տեղադրումը պահանջում է Բաղադրիչների ծառայություններ՝ հաջողությամբ ավարտելու համար: Բաղադրիչների ծառայությունները հասանելի են Windows 2000-ում:"/>
+	<String Id="Error1926" Overridable="yes" Value="Չհաջողվեց սահմանել ֆայլի անվտանգությունը «[ProductName]» ֆայլի համար: Սխալ՝ [ProductName]: Համոզվեք, որ ունեք բավարար արտոնություններ այս ֆայլի անվտանգության թույլտվությունները փոփոխելու համար:"/>
+	<String Id="Error1925" Overridable="yes" Value="Դուք չունեք բավարար արտոնություններ այս տեղադրումն ավարտելու համար մեքենայի բոլոր օգտագործողների համար: Մուտք գործեք որպես ադմինիստրատոր և նորից փորձեք այս տեղադրումը:"/>
+	<String Id="Error1924" Overridable="yes" Value="Չհաջողվեց թարմացնել «[ProductName]» միջավայրի փոփոխականը: Ստուգեք, որ ունեք բավարար արտոնություններ՝ փոփոխելու շրջակա միջավայրի փոփոխականները:"/>
+	<String Id="Error1923" Overridable="yes" Value="«[ProductName]» ([ProductName]) ծառայությունը չի կարող տեղադրվել: Ստուգեք, որ ունեք բավարար արտոնություններ՝ համակարգային ծառայություններ տեղադրելու համար:"/>
+	<String Id="Error1922" Overridable="yes" Value="«[ProductName]» ([ProductName]) ծառայությունը չհաջողվեց ջնջել: Ստուգեք, որ ունեք բավարար արտոնություններ՝ հեռացնելու համակարգի ծառայությունները:"/>
+	<String Id="Error1921" Overridable="yes" Value="«[ProductName]» ([ProductName]) ծառայությունը չհաջողվեց դադարեցնել: Ստուգեք, որ ունեք բավարար արտոնություններ՝ դադարեցնելու համակարգի ծառայությունները:"/>
+	<String Id="Error1920" Overridable="yes" Value="«[ProductName]» ([ProductName]) ծառայությունը չհաջողվեց սկսել: Ստուգեք, որ ունեք բավարար արտոնություններ՝ համակարգային ծառայությունները սկսելու համար:"/>
+	<String Id="Error1919" Overridable="yes" Value="ODBC տվյալների աղբյուրի կազմաձևման սխալ՝ [ProductName], ODBC սխալ [ProductName]՝ [ProductName]: Ստուգեք, որ ֆայլը [ProductName] գոյություն ունի, և որ դուք կարող եք մուտք գործել այն:"/>
+	<String Id="Error1918" Overridable="yes" Value="ODBC վարորդի տեղադրման սխալ՝ [ProductName], ODBC սխալ [ProductName]՝ [ProductName]: Ստուգեք, որ ֆայլը [ProductName] գոյություն ունի, և որ դուք կարող եք մուտք գործել այն:"/>
+	<String Id="Error1917" Overridable="yes" Value="ODBC դրայվերը հեռացնելիս սխալ՝ [ProductName], ODBC սխալ [ProductName]՝ [ProductName]: Ստուգեք, որ ունեք բավարար արտոնություններ ODBC դրայվերները հեռացնելու համար:"/>
+	<String Id="Error1916" Overridable="yes" Value="ODBC վարորդի կառավարչի տեղադրման սխալ, ODBC սխալ [ProductName]: [ProductName]: Կապվեք ձեր աջակցության անձնակազմի հետ:"/>
+	<String Id="Error1915" Overridable="yes" Value="Սխալ՝ հեռացնելով ODBC վարորդի կառավարիչը, ODBC սխալ [ProductName]: [ProductName]: Կապվեք ձեր աջակցության անձնակազմի հետ:"/>
+	<String Id="Error1914" Overridable="yes" Value="Չհաջողվեց պլանավորել [ProductName] ֆայլը, որպեսզի փոխարինի [ProductName] ֆայլը վերաբեռնման ժամանակ: Ստուգեք, որ դուք ունեք գրելու թույլտվություններ ֆայլի համար [ProductName]:"/>
+	<String Id="Error1913" Overridable="yes" Value="Չհաջողվեց թարմացնել ini ֆայլը [ProductName][ProductName]: Ստուգեք, որ ֆայլը գոյություն ունի, և որ դուք կարող եք մուտք գործել այն:"/>
+	<String Id="Error1912" Overridable="yes" Value="Չհաջողվեց ապագրանցել տիպի գրադարանը [ProductName] ֆայլի համար: Կապվեք ձեր աջակցության անձնակազմի հետ:"/>
+	<String Id="Error1911" Overridable="yes" Value="Չհաջողվեց գրանցել տիպերի գրադարանը [ProductName] ֆայլի համար: Կապվեք ձեր աջակցության անձնակազմի հետ:"/>
+	<String Id="Error1910" Overridable="yes" Value="Չհաջողվեց հեռացնել դյուրանցումը [ProductName]: Ստուգեք, որ դյուրանցման ֆայլը գոյություն ունի, և որ դուք կարող եք մուտք գործել այն:"/>
+	<String Id="Error1909" Overridable="yes" Value="Չհաջողվեց ստեղծել դյուրանցում [ProductName]: Ստուգեք, որ նպատակակետ թղթապանակը գոյություն ունի, և որ դուք կարող եք մուտք գործել այն:"/>
+	<String Id="Error1908" Overridable="yes" Value="Չհաջողվեց չեղարկել տառատեսակը [ProductName]: Ստուգեք, որ ունեք բավարար թույլտվություններ տառատեսակները հեռացնելու համար:"/>
+	<String Id="Error1907" Overridable="yes" Value="Չհաջողվեց գրանցել տառատեսակը [ProductName]: Ստուգեք, որ դուք ունեք բավարար թույլտվություններ տառատեսակներ տեղադրելու համար, և որ համակարգը աջակցում է այս տառատեսակը:"/>
+	<String Id="Error1906" Overridable="yes" Value="Չհաջողվեց քեշավորել փաթեթը [ProductName]: Սխալ՝ [ProductName]: Կապվեք ձեր աջակցության անձնակազմի հետ:"/>
+	<String Id="Error1905" Overridable="yes" Value="[ProductName] մոդուլը չհաջողվեց չեղարկել գրանցումը: HRESULT [ProductName]. Կապվեք ձեր աջակցության անձնակազմի հետ:"/>
+	<String Id="Error1904" Overridable="yes" Value="Մոդուլը [ProductName] չհաջողվեց գրանցել: HRESULT [ProductName]. Կապվեք ձեր աջակցության անձնակազմի հետ:"/>
+	<String Id="Error1903" Overridable="yes" Value="Վերագործարկման գործողությունների պլանավորում. ֆայլի ջնջում [ProductName]: Գործողությունն ավարտելու համար պետք է վերագործարկվի:"/>
+	<String Id="Error1902" Overridable="yes" Value="Վերաբեռնման գործողության պլանավորում. [ProductName] ֆայլի անվանափոխում [ProductName]: Գործողությունն ավարտելու համար պետք է վերագործարկվի:"/>
+	<String Id="Error1901" Overridable="yes" Value="Աղբյուրի տեղադրման տվյալների բազայից կարդալու փորձի սխալ՝ [ProductName]:"/>
+	<String Id="Error1807" Overridable="yes" Value="Չհաջողվեց որոշել տեղադրման համար վավեր նպատակային թղթապանակ:"/>
+	<String Id="Error1806" Overridable="yes" Value="Դուք չունեք բավարար արտոնություններ այս թղթապանակը կարդալու համար:"/>
+	<String Id="Error1805" Overridable="yes" Value="Թղթապանակը [ProductName] գոյություն չունի։ Խնդրում ենք մուտքագրել ուղի դեպի գոյություն ունեցող թղթապանակ:"/>
+	<String Id="Error1804" Overridable="yes" Value="Սկավառակում չկա [ProductName]: Խնդրում ենք տեղադրեք մեկը և սեղմեք Կրկին փորձել, կամ սեղմեք Չեղարկել՝ զննման երկխոսության պատուհան վերադառնալու և այլ ծավալ ընտրելու համար:"/>
+	<String Id="Error1803" Overridable="yes" Value="Սկավառակում չկա [ProductName]: Խնդրում ենք տեղադրեք մեկը և սեղմեք Կրկին փորձել, կամ սեղմեք Չեղարկել՝ նախկինում ընտրված ծավալին վերադառնալու համար:"/>
+	<String Id="Error1802" Overridable="yes" Value="Հիշողությունից դուրս. Անջատեք այլ հավելվածները՝ նորից փորձելուց առաջ:"/>
+	<String Id="Error1801" Overridable="yes" Value="Ուղին [ProductName] վավեր չէ։ Խնդրում ենք նշել վավեր ուղի:"/>
+	<String Id="Error1732" Overridable="yes" Value="A [ProductName] telepítésének befejezéséhez újra kell indítania a számítógépet. Más felhasználók jelenleg bejelentkeztek erre a számítógépre, és az újraindítás a munkájuk elvesztését okozhatja. Szeretné most újraindítani?"/>
+	<String Id="Error1731" Overridable="yes" Value="Արտադրանքի աղբյուրի տեղադրման փաթեթը [ProductName] համաժամեցված չէ հաճախորդի փաթեթի հետ: Փորձեք նորից տեղադրել՝ օգտագործելով «[ProductName]» տեղադրման փաթեթի վավեր պատճենը:"/>
+	<String Id="Error1730" Overridable="yes" Value="Այս հավելվածը հեռացնելու համար դուք պետք է ադմինիստրատոր լինեք: Այս հավելվածը հեռացնելու համար կարող եք մուտք գործել որպես Ադմինիստրատոր կամ կապվել ձեր տեխնիկական աջակցության խմբի հետ՝ օգնության համար:"/>
+	<String Id="Error1729" Overridable="yes" Value="Կազմաձևումը ձախողվեց:"/>
+	<String Id="Error1728" Overridable="yes" Value="Կարգավորումը հաջողությամբ ավարտվեց:"/>
+	<String Id="Error1727" Overridable="yes" Value="Գովազդը ձախողվեց:"/>
+	<String Id="Error1726" Overridable="yes" Value="Գովազդը հաջողությամբ ավարտվեց:"/>
+	<String Id="Error1725" Overridable="yes" Value="Չհաջողվեց հեռացնել:"/>
+	<String Id="Error1724" Overridable="yes" Value="Հեռացումը հաջողությամբ ավարտվեց:"/>
+	<String Id="Error1723" Overridable="yes" Value="Windows Installer փաթեթի հետ կապված խնդիր կա: Այս տեղադրման ավարտի համար պահանջվող DLL-ը չի կարող գործարկվել: Կապվեք ձեր աջակցման անձնակազմի կամ փաթեթի վաճառողի հետ։{{ Գործողություն [ProductName], մուտք՝ [ProductName], գրադարան՝ [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Windows Installer փաթեթի հետ կապված խնդիր կա: Ծրագիրը, որը գործարկվել է որպես կարգավորումների մաս, չի ավարտվել այնպես, ինչպես սպասվում էր: Կապվեք ձեր աջակցության անձնակազմի կամ փաթեթի վաճառողի հետ:{{ Գործողություն [ProductName], գտնվելու վայրը՝ [ProductName], հրաման՝ [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Windows Installer փաթեթի հետ կապված խնդիր կա: Չհաջողվեց գործարկել այս տեղադրման համար անհրաժեշտ ծրագիրը: Կապվեք ձեր աջակցության անձնակազմի կամ փաթեթի վաճառողի հետ:{{ Գործողություն՝ [ProductName], գտնվելու վայրը՝ [ProductName], հրաման՝ [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Windows Installer փաթեթի հետ կապված խնդիր կա: Այս տեղադրման ավարտի համար պահանջվող սկրիպտը չհաջողվեց գործարկել: Կապվեք ձեր աջակցության անձնակազմի կամ փաթեթի վաճառողի հետ:{{ Հատուկ գործողություն [ProductName] սցենարի սխալ [ProductName], [ProductName]. [ProductName] տող [ProductName], սյունակ [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Չհաջողվեց մուտք գործել Windows Installer ծառայությանը: Սա կարող է առաջանալ, եթե Windows-ը անվտանգ ռեժիմով եք աշխատում, կամ եթե Windows Installer-ը ճիշտ տեղադրված չէ: Օգնության համար դիմեք ձեր աջակցության անձնակազմին:"/>
+	<String Id="Error1718" Overridable="yes" Value="Ֆայլը [ProductName] մերժվել է թվային ստորագրության քաղաքականության կողմից։"/>
+	<String Id="Error1717" Overridable="yes" Value="Հեռացված է [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Կազմաձևված է [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Տեղադրված է [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="[ProductName]-ի հին տարբերակը հնարավոր չէ հեռացնել: Կապվեք ձեր տեխնիկական աջակցության խմբի հետ։{{ Համակարգի սխալ [ProductName]։}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] չի կարող տեղադրել իր պահանջվող արտադրանքներից մեկը: Կապվեք ձեր տեխնիկական աջակցության խմբի հետ։{{ Համակարգի սխալ՝ [ProductName]։}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Ձեր համակարգիչը նախկին վիճակին վերականգնելու համար պահանջվող ֆայլերից մեկը կամ մի քանիսը չեն գտնվել: Վերականգնումը հնարավոր չի լինի."/>
+	<String Id="Error1711" Overridable="yes" Value="Սխալ է տեղի ունեցել տեղադրման տեղեկատվությունը սկավառակի վրա գրելիս: Ստուգեք՝ համոզվելու համար, որ սկավառակի բավականաչափ տարածություն կա, և սեղմեք Կրկին փորձել կամ Չեղարկել՝ տեղադրումն ավարտելու համար:"/>
+	<String Id="Error1710" Overridable="yes" Value="Visszaállíthatja számítógépét korábbi állapotába, vagy később folytathatja a telepítést. Szeretné helyreállítani?"/>
+	<String Id="Error1709" Overridable="yes" Value="Արտադրանք՝ [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Տեղադրումը ձախողվեց:"/>
+	<String Id="Error1707" Overridable="yes" Value="Տեղադրումը հաջողությամբ ավարտվեց:"/>
+	<String Id="Error1706" Overridable="yes" Value="Ապրանքի տեղադրման փաթեթը [ProductName] հնարավոր չէ գտնել: Փորձեք նորից տեղադրել՝ օգտագործելով «[ProductName]» տեղադրման փաթեթի վավեր պատճենը:"/>
+	<String Id="Error1705" Overridable="yes" Value="A termék korábbi telepítése folyamatban van. A folytatáshoz vissza kell vonnia a telepítés által végrehajtott módosításokat. Vissza szeretné vonni ezeket a változtatásokat?"/>
+	<String Id="Error1704" Overridable="yes" Value="A [ProductName] telepítése jelenleg fel van függesztve. A folytatáshoz vissza kell vonnia a telepítés által végrehajtott módosításokat. Vissza szeretné vonni ezeket a változtatásokat?"/>
+	<String Id="Error1703" Overridable="yes" Value="Դուք պետք է վերագործարկեք ձեր համակարգը, որպեսզի [ProductName]-ի կազմաձևման փոփոխություններն ուժի մեջ մտնեն: Սեղմեք Այո՝ հիմա վերագործարկելու համար կամ Ոչ, եթե նախատեսում եք ձեռքով վերագործարկել ավելի ուշ:"/>
+	<String Id="Error1702" Overridable="yes" Value="Նախքան [ProductName]-ի կազմաձևումը շարունակելը, տեղադրողը պետք է վերագործարկի ձեր համակարգը: Սեղմեք Այո՝ հիմա վերագործարկելու համար կամ Ոչ, եթե նախատեսում եք ձեռքով վերագործարկել ավելի ուշ:"/>
+	<String Id="Error1701" Overridable="yes" Value="Բանալին [ProductName] վավեր չէ: Ստուգեք, որ մուտքագրել եք ճիշտ բանալին:"/>
+	<String Id="Error1609" Overridable="yes" Value="Անվտանգության կարգավորումները կիրառելիս սխալ է տեղի ունեցել: [ProductName]-ը վավեր օգտվող կամ խումբ չէ: Սա կարող է լինել փաթեթի հետ կապված խնդիր կամ ցանցի տիրույթի վերահսկիչին միանալու խնդիր: Ստուգեք ձեր ցանցային կապը և կտտացրեք «Նորից փորձեք» կամ «Չեղարկել»՝ տեղադրումն ավարտելու համար: {{Հնարավոր չէ գտնել օգտվողի SID-ը, համակարգի սխալ [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Չհաջողվեց գտնել մեքենայի վրա նախկինում տեղադրված համապատասխան արտադրանք՝ այս արտադրանքը տեղադրելու համար:"/>
+	<String Id="Error1607" Overridable="yes" Value="Հետևյալ հավելվածները պետք է փակվեն՝ նախքան տեղադրումը շարունակելը."/>
+	<String Id="Error1606" Overridable="yes" Value="Չհաջողվեց մուտք գործել ցանցի գտնվելու վայրը [ProductName]:"/>
+	<String Id="Error1605" Overridable="yes" Value="«[ProductName]» ձայնի վրա սկավառակի բավարար տարածք չկա՝ վերականգնումը միացված վիճակում տեղադրումը շարունակելու համար: [ProductName] ԿԲ պահանջվում է, բայց հասանելի է միայն [ProductName] ԿԲ։ Սեղմեք «Անտեսել»՝ տեղադրումը շարունակելու համար՝ առանց վերականգնման տեղեկությունները պահպանելու, «Նորից փորձեք»՝ կրկին հասանելի տարածքը ստուգելու համար, կամ սեղմեք «Չեղարկել»՝ տեղադրումը դադարեցնելու համար:"/>
+	<String Id="Error1604" Overridable="yes" Value="«[ProductName]» արտադրանքն արդեն տեղադրված է՝ կանխելով այս արտադրանքի տեղադրումը: Երկու ապրանքներն անհամատեղելի են:"/>
+	<String Id="Error1603" Overridable="yes" Value="[ProductName][ProductName] ֆայլը օգտագործվում է{ հետևյալ գործընթացով՝ Անուն՝ [ProductName], ID՝ [ProductName], Պատուհանի վերնագիր՝ &amp;apos;[ProductName]&amp;apos;}: Փակեք այդ հավելվածը և նորից փորձեք:"/>
+	<String Id="Error1602" Overridable="yes" Value="Biztosan törölni szeretnéd?"/>
+	<String Id="Error1601" Overridable="yes" Value="Սկավառակի տարածք չկա -- Ծավալ՝ «[ProductName]»"/>
+	<String Id="Error1503" Overridable="yes" Value="«[ProductName]» օգտվողը նախկինում սկսել է «[ProductName]» արտադրանքի տեղադրումը: Այդ օգտատերը պետք է նորից գործարկի այդ տեղադրումը, որպեսզի կարողանա օգտագործել այդ արտադրանքը:"/>
+	<String Id="Error1502" Overridable="yes" Value="«[ProductName]» օգտվողը նախկինում սկսել է «[ProductName]» արտադրանքի տեղադրումը: Այդ օգտատերը պետք է նորից գործարկի այդ տեղադրումը, որպեսզի կարողանա օգտագործել այդ արտադրանքը: Ձեր ընթացիկ տեղադրումն այժմ կշարունակվի:"/>
+	<String Id="Error1501" Overridable="yes" Value="Ապահովված տվյալներ մուտք գործելու սխալ: Համոզվեք, որ Windows Installer-ը ճիշտ կազմաձևված է և նորից փորձեք տեղադրել:"/>
+	<String Id="Error1500" Overridable="yes" Value="Մեկ այլ տեղադրում ընթացքի մեջ է: Դուք պետք է ավարտեք տեղադրումը, նախքան այս մեկը շարունակելը:"/>
+	<String Id="Error1410" Overridable="yes" Value="Չհաջողվեց ավելացնել գրանցամատյանի հասանելի տարածքը: [ProductName] ԿԲ անվճար ռեեստրի տարածք է պահանջվում այս հավելվածի տեղադրման համար:"/>
+	<String Id="Error1409" Overridable="yes" Value="Չհաջողվեց կարդալ անվտանգության տեղեկատվությունը [ProductName]-ի համար:{{ Համակարգի սխալ [ProductName].}} Ստուգեք, որ բավարար մուտք ունեք այդ բանալին կամ դիմեք ձեր աջակցման անձնակազմին:"/>
+	<String Id="Error1408" Overridable="yes" Value="Չհաջողվեց ստանալ [ProductName] ստեղնի ենթաբանալների անունները:{{ Համակարգի սխալ [ProductName].}} Ստուգեք, որ բավականաչափ մուտք ունեք այդ բանալին կամ կապվեք ձեր աջակցման անձնակազմի հետ:"/>
+	<String Id="Error1407" Overridable="yes" Value="Չհաջողվեց ստանալ [ProductName] բանալի արժեքների անունները:{{ Համակարգի սխալ [ProductName]:}} Ստուգեք, որ բավականաչափ մուտք ունեք այդ բանալին կամ կապվեք ձեր աջակցման անձնակազմի հետ:"/>
+	<String Id="Error1406" Overridable="yes" Value="Չհաջողվեց [ProductName] արժեքը գրել [ProductName]-ի վրա:{{ Համակարգի սխալ [ProductName]:}} Ստուգեք, որ բավականաչափ մուտք ունեք դեպի այդ բանալին կամ կապվեք ձեր աջակցման անձնակազմի հետ:"/>
+	<String Id="Error1405" Overridable="yes" Value="Չհաջողվեց կարդալ [ProductName] արժեքը [ProductName] բանալիից:{{ Համակարգի սխալ [ProductName]:}} Ստուգեք, որ բավականաչափ մուտք ունեք դեպի այդ բանալին, կամ կապվեք ձեր աջակցման անձնակազմի հետ:"/>
+	<String Id="Error1404" Overridable="yes" Value="Չհաջողվեց ջնջել [ProductName] բանալին։{{ Համակարգի սխալ [ProductName]։}} Ստուգեք, որ բավականաչափ մուտք ունեք այդ բանալին կամ կապվեք ձեր աջակցման անձնակազմի հետ։"/>
+	<String Id="Error1403" Overridable="yes" Value="Չհաջողվեց ջնջել [ProductName] արժեքը [ProductName] բանալիից:{{ Համակարգի սխալ [ProductName]:}} Ստուգեք, որ բավականաչափ մուտք ունեք դեպի այդ բանալին կամ կապվեք ձեր աջակցման անձնակազմի հետ:"/>
+	<String Id="Error1402" Overridable="yes" Value="Չհաջողվեց բացել բանալին."/>
+	<String Id="Error1401" Overridable="yes" Value="Չհաջողվեց ստեղծել բանալին."/>
+	<String Id="Error1336" Overridable="yes" Value="Այս տեղադրումն ավարտելու համար անհրաժեշտ ժամանակավոր ֆայլ ստեղծելիս սխալ տեղի ունեցավ:{{ Թղթապանակ՝ [ProductName]: Համակարգի սխալի կոդը՝ [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Այս տեղադրման համար պահանջվող «[ProductName]» կաբինետ ֆայլը վնասված է և չի կարող օգտագործվել: Սա կարող է ցույց տալ ցանցի սխալ, CD-ROM-ից կարդալու սխալ կամ այս փաթեթի հետ կապված խնդիր:"/>
+	<String Id="Error1334" Overridable="yes" Value="«[ProductName]» ֆայլը չի կարող տեղադրվել, քանի որ ֆայլը հնարավոր չէ գտնել «[ProductName]» կաբինետային ֆայլում: Սա կարող է ցույց տալ ցանցի սխալ, CD-ROM-ից կարդալու սխալ կամ այս փաթեթի հետ կապված խնդիր:"/>
+	<String Id="Error1333" Overridable="yes" Value="Չհաջողվեց ճիշտ կարկատել [ProductName] ֆայլը. CRC սխալ:"/>
+	<String Id="Error1332" Overridable="yes" Value="Չհաջողվեց ճիշտ տեղափոխել [ProductName] ֆայլը. CRC սխալ:"/>
+	<String Id="Error1331" Overridable="yes" Value="Չհաջողվեց ճիշտ պատճենել [ProductName] ֆայլը. CRC սխալ:"/>
+	<String Id="Error1330" Overridable="yes" Value="Պահանջվող ֆայլը չի կարող տեղադրվել, քանի որ կաբինետի ֆայլը [ProductName] ունի անվավեր թվային ստորագրություն: Սա կարող է ցույց տալ, որ կաբինետի ֆայլը կոռումպացված է:{{ Սխալը [ProductName] վերադարձվել է WinVerifyTrust-ի կողմից:}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Պահանջվող ֆայլը չի կարող տեղադրվել, քանի որ կաբինետի ֆայլը [ProductName] թվային ստորագրված չէ: Սա կարող է ցույց տալ, որ կաբինետի ֆայլը կոռումպացված է:"/>
+	<String Id="Error1328" Overridable="yes" Value="Սխալ՝ կարկատել ֆայլին [ProductName] կիրառելիս: Այն հավանաբար թարմացվել է այլ միջոցներով և այլևս չի կարող փոփոխվել այս կարկատի միջոցով: Լրացուցիչ տեղեկությունների համար դիմեք ձեր կարկատել վաճառողին:{{ Համակարգի սխալ՝ [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Անվավեր դրայվ՝ [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Ֆայլի անվտանգությունը ստանալու սխալ՝ [ProductName] GetLastError՝ [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos;-ը վավեր կարճ ֆայլի անուն չէ:"/>
+	<String Id="Error1324" Overridable="yes" Value="«[ProductName]» պանակի ճանապարհը պարունակում է անվավեր նիշ:"/>
+	<String Id="Error1323" Overridable="yes" Value="«[ProductName]» պանակի ուղին պարունակում է բառեր, որոնք վավեր չեն թղթապանակների ուղիներում:"/>
+	<String Id="Error1322" Overridable="yes" Value="«[ProductName]» պանակի ճանապարհի մի մասն անվավեր է: Այն կա՛մ դատարկ է, կա՛մ գերազանցում է համակարգի կողմից թույլատրված երկարությունը:"/>
+	<String Id="Error1321" Overridable="yes" Value="Տեղադրողն այս ֆայլը փոփոխելու համար բավարար արտոնություններ չունի՝ [ProductName]:"/>
+	<String Id="Error1320" Overridable="yes" Value="Նշված ճանապարհը չափազանց երկար է՝ [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Ցանցային սխալ է տեղի ունեցել սկզբնաղբյուր ֆայլերի պահարանը բացելիս՝ [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Ցանցային սխալ է տեղի ունեցել գրացուցակը ստեղծելու փորձի ժամանակ՝ [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Սխալ է տեղի ունեցել գրացուցակը ստեղծելու փորձի ժամանակ՝ [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Ցանցային սխալ տեղի ունեցավ ֆայլից կարդալու փորձի ժամանակ՝ [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Հնարավոր չէ գրել նշված թղթապանակում՝ [ProductName]:"/>
+	<String Id="Error1314" Overridable="yes" Value="Նշված «[ProductName]» ուղին անհասանելի է:"/>
+	<String Id="Error1313" Overridable="yes" Value="Հատորը [ProductName] ներկայումս անհասանելի է։ Խնդրում ենք ընտրել մեկ ուրիշը:"/>
+	<String Id="Error1312" Overridable="yes" Value="Հնարավոր չէ ստեղծել «[ProductName]» գրացուցակը: Այս անունով ֆայլ արդեն գոյություն ունի: Խնդրում ենք վերանվանել կամ հեռացնել ֆայլը և սեղմել Կրկին փորձել, կամ սեղմել Չեղարկել՝ դուրս գալու համար:"/>
+	<String Id="Error1311" Overridable="yes" Value="Աղբյուրի ֆայլը չի գտնվել{{(կաբինետ)}}՝ [ProductName]: Ստուգեք, որ ֆայլը գոյություն ունի, և որ դուք կարող եք մուտք գործել այն:"/>
+	<String Id="Error1310" Overridable="yes" Value="Ֆայլը գրելու սխալ՝ [ProductName]։{{ Համակարգի սխալ [ProductName]։}} Ստուգեք, որ մուտք ունեք այդ գրացուցակը։"/>
+	<String Id="Error1309" Overridable="yes" Value="Սխալ՝ ֆայլից կարդալիս."/>
+	<String Id="Error1308" Overridable="yes" Value="Աղբյուրի ֆայլը չի գտնվել՝ [ProductName]: Ստուգեք, որ ֆայլը գոյություն ունի, և որ դուք կարող եք մուտք գործել այն:"/>
+	<String Id="Error1307" Overridable="yes" Value="Սկավառակի վրա բավարար տարածք չկա այս ֆայլը տեղադրելու համար՝ [ProductName]: Ազատեք սկավառակի որոշ տարածք և կտտացրեք Կրկին փորձել, կամ կտտացրեք Չեղարկել՝ դուրս գալու համար:"/>
+	<String Id="Error1306" Overridable="yes" Value="Մեկ այլ հավելված ունի բացառիկ մուտք դեպի «[ProductName]» ֆայլը: Խնդրում ենք փակել մնացած բոլոր հավելվածները, այնուհետև սեղմել Կրկին փորձել:"/>
+	<String Id="Error1305" Overridable="yes" Value="Սխալ՝ կարդալիս [ProductName] ֆայլից։{{ Համակարգի սխալ [ProductName]։}} Ստուգեք, որ ֆայլը գոյություն ունի, և որ դուք կարող եք մուտք գործել այն։"/>
+	<String Id="Error1304" Overridable="yes" Value="Ֆայլը գրելու սխալ՝ [ProductName]: Ստուգեք, որ դուք մուտք ունեք այդ գրացուցակը:"/>
+	<String Id="Error1303" Overridable="yes" Value="Տեղադրողն այս գրացուցակ մուտք գործելու համար բավարար արտոնություններ չունի՝ [ProductName]: Տեղադրումը չի կարող շարունակվել: Մուտք գործեք որպես ադմինիստրատոր կամ կապվեք ձեր համակարգի ադմինիստրատորի հետ:"/>
+	<String Id="Error1302" Overridable="yes" Value="Խնդրում ենք տեղադրել սկավառակը՝ [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Հնարավոր չէ ստեղծել «[ProductName]» ֆայլը: Այս անունով գրացուցակ արդեն գոյություն ունի: Չեղարկեք տեղադրումը և փորձեք տեղադրել այլ վայրում:"/>
+	<String Id="Error1101" Overridable="yes" Value="Ֆայլից կարդալիս սխալ՝ [ProductName]։{{ Համակարգի սխալ [ProductName]։}} Ստուգեք, որ ֆայլը գոյություն ունի, և որ դուք կարող եք մուտք գործել այն։"/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Կարգավորումը ձախողվեց:"/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Կարգավորումը հաջողությամբ ավարտվեց:"/>
+	<String Id="Error23" Overridable="yes" Value="Պատրաստվում է հեռացնել այս հավելվածի հին տարբերակները..."/>
+	<String Id="Error22" Overridable="yes" Value="Այս հավելվածի հին տարբերակները հեռացվում են..."/>
+	<String Id="Error21" Overridable="yes" Value="Պահանջվող տեղեկատվության հավաքում..."/>
+	<String Id="Error20" Overridable="yes" Value="Խնդրում ենք սպասել, մինչև Windows-ը կազմաձևի [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Տեղադրիչը ժամանակից շուտ դադարեցրեց:"/>
+	<String Id="Error18" Overridable="yes" Value="Տեղադրողն այլևս չի արձագանքում:"/>
+	<String Id="Error17" Overridable="yes" Value="Հիշողությունից դուրս. Անջատեք այլ հավելվածները՝ նորից փորձելուց առաջ:"/>
+	<String Id="Error16" Overridable="yes" Value="Մնացած ժամանակը՝ {[ProductName] րոպե }{[ProductName] վայրկյան}"/>
+	<String Id="Error15" Overridable="yes" Value="Գործողությունն ավարտվեց [ProductName]՝ [ProductName]: Վերադարձի արժեքը [ProductName]:"/>
+	<String Id="Error14" Overridable="yes" Value="Գործողությունների մեկնարկը [ProductName]՝ [ProductName]:"/>
+	<String Id="Error13" Overridable="yes" Value="Գրանցումը դադարեցվել է՝ [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Մուտքագրումն սկսվել է՝ [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Հաղորդագրության տեսակը՝ [ProductName], փաստարկ՝ [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Գործողություն [ProductName]՝ [ProductName]: [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Սկավառակը լի է: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Տեղադրողը այս փաթեթը տեղադրելիս անսպասելի սխալի է հանդիպել: Սա կարող է ցույց տալ այս փաթեթի հետ կապված խնդիր: Սխալի կոդը [ProductName] է։ {{Փաստարկներն են՝ [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Ինֆո [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Զգուշացում [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Սխալ [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Ճակատագրական սխալ. }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Ապրանքի մասին տեղեկատվության չհրապարակում"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], տեղեկատու՝ [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Տեղափոխված ֆայլերի հեռացում"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Պահուստային ֆայլերի հեռացում"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Visszagörgetési művelet:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Կիրառման համատեքստ՝[ProductName], Ասամբլեայի անվանումը՝[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Հավաքման տեղեկատվության չհրապարակում"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Կիրառման համատեքստ՝[ProductName], Ասամբլեայի անվանումը՝[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Հավաքման տեղեկատվության հրապարակում"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], Կախվածություններ՝ [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Համակարգի կատալոգի տեղադրում"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Գործողությունների համար սցենարի գործողություններ ստեղծելը."/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Գովազդային հավելված"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Բանալի՝ [ProductName], Անունը՝ [ProductName], Արժեքը՝ [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Համակարգի ռեեստրի արժեքների գրում"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], բաժին՝ [ProductName], բանալի՝ [ProductName], արժեքը՝ [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="INI ֆայլերի արժեքները գրելը"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Անուն՝ [ProductName], Արժեք՝ [ProductName], Գործողություն [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Շրջակա միջավայրի տողերի թարմացում"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID՝ [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Տիպային գրադարանների գրանցումից հանում"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId՝ [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Ծրագրի նույնացուցիչների չգրանցում"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME բովանդակության տեսակը՝ [ProductName], ընդլայնումը՝ [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="MIME-ի տվյալների գրանցումից հանվում է"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Տառատեսակը: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Տառատեսակների չգրանցում"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Ընդլայնում՝ [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Ընդլայնման սերվերների չգրանցում"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="Հավելվածի ID՝ [ProductName]{{, AppType՝ [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="COM+ հավելվածների և բաղադրիչների չգրանցում"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Դասի ID՝ [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Չգրանցել դասի սերվերները"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Առանձնահատկություն՝ [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Ապրանքի առանձնահատկությունների չհրապարակում"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Բաղադրիչի ID՝ [ProductName], Որակավորիչ՝ [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Որակավորված բաղադրիչների չհրապարակում"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Ծառայություն՝ [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Ծառայությունների դադարեցում"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Ծառայություն՝ [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Ծառայությունների մեկնարկը"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="ODBC դիրեկտորիաների սկզբնավորում"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], Թղթապանակ՝ [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Մոդուլների չգրանցում"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], Թղթապանակ՝ [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Մոդուլների գրանցում"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Որոնում որակյալ ապրանքներ"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Դյուրանցում՝ [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Դյուրանցումների հեռացում"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Բանալի՝ [ProductName], Անունը՝ [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Համակարգի ռեեստրի արժեքների հեռացում"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="ODBC բաղադրիչների հեռացում"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], բաժին՝ [ProductName], բանալի՝ [ProductName], արժեքը՝ [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="INI ֆայլերի գրառումների հեռացում"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Թղթապանակ՝ [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Թղթապանակների հեռացում"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], տեղեկատու՝ [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Ֆայլերի հեռացում"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Հավելված՝ [ProductName], Հրամանի տող՝ [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Հավելվածների հեռացում"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Անուն՝ [ProductName], Արժեք՝ [ProductName], Գործողություն [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Շրջակա միջավայրի տողերի թարմացում"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], տեղեկատու՝ [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Կրկնվող ֆայլերի հեռացում"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Օգտագործողի գրանցում"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID՝ [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Տիպային գրադարանների գրանցում"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Ապրանքի գրանցում"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Տառատեսակը: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Տառատեսակների գրանցում"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId՝ [ProductName]{{, AppType՝ [ProductName], Users՝ [ProductName], RSN՝ [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="COM+ հավելվածների և բաղադրիչների գրանցում"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Բաղադրիչների գրանցման թարմացում"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], տեղեկատու՝ [ProductName], Չափ՝ [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Ֆայլերի կարկատում"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], տեղեկատու՝ [ProductName], Չափ՝ [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Ֆայլերի տեղափոխում"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Դիմում: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Առանձնահատկությունների վիճակների տեղափոխում հարակից հավելվածներից"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Գործարկման պայմանների գնահատում"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Ծառայություն՝ [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Նոր ծառայությունների տեղադրում"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="ODBC բաղադրիչների տեղադրում"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Գտնված հավելված՝ [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Կապակցված հավելվածների որոնում"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], տեղեկատու՝ [ProductName], Չափ՝ [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Կրկնօրինակ ֆայլերի ստեղծում"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Ծառայություն՝ [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Ծառայությունների ջնջում"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Թղթապանակ՝ [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Թղթապանակների ստեղծում"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Որոնում որակյալ ապրանքներ"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Պարտադիր գործարկվողներ"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Սեփականություն՝ [ProductName], Ստորագրություն՝ [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Տեղադրված հավելվածների որոնում"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Ազատ տարածք՝ [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Ռեեստրի տարածքի հատկացում"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId՝ [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Ծրագրի նույնացուցիչների գրանցում"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME բովանդակության տեսակը՝ [ProductName], ընդլայնումը՝ [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="MIME տեղեկատվության գրանցում"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Ընդլայնում՝ [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Ընդլայնման սերվերների գրանցում"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Դասի ID՝ [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Դասի սերվերների գրանցում"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Արտադրանքի տեղեկատվության հրապարակում"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Առանձնահատկություն՝ [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Հրապարակման արտադրանքի առանձնահատկությունները"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Բաղադրիչի ID՝ [ProductName], Որակավորիչ՝ [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Որակավորված բաղադրիչների հրապարակում"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Դյուրանցում՝ [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Դյուրանցումների ստեղծում"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Համակարգչային տարածքի պահանջներ"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Համակարգչային տարածքի պահանջներ"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Համակարգչային տարածքի պահանջներ"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], տեղեկատու՝ [ProductName], Չափ՝ [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Ցանցի տեղադրման ֆայլերի պատճենում"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Ֆայլ՝ [ProductName], տեղեկատու՝ [ProductName], Չափ՝ [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Նոր ֆայլերի պատճենում"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Տեղադրման վավերացում"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Խնդրում ենք կարդալ [ProductName] լիցենզային պայմանագիրը"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Թարմացնել"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Տեղադրել"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ես և ընդունում եմ Լիցենզիայի պայմանագրի պայմանները"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Բարի գալուստ [ProductName] Setup Wizard"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Setup Wizard-ը կթարմացնի [ProductName]-ը ձեր համակարգչում: Սեղմեք Հաջորդը շարունակելու համար կամ Չեղարկել՝ Setup Wizard-ից դուրս գալու համար:"/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Setup Wizard-ը կտեղադրի [ProductName]-ը ձեր համակարգչում: Սեղմեք Հաջորդը շարունակելու համար կամ Չեղարկել՝ Setup Wizard-ից դուրս գալու համար:"/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Բացականչական պատկերակ"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Խնդրում ենք սպասել, մինչև տեղադրողը կավարտի ձեր սկավառակի տարածության պահանջների որոշումը:"/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Վերադարձ"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Պատրաստ է թարմացնելու [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Սեղմեք Թարմացնել՝ [ProductName]-ը ձեր համակարգչից թարմացնելու համար: Սեղմեք Վերադառնալ՝ ձեր տեղադրման կարգավորումներից որևէ մեկը վերանայելու կամ փոխելու համար: Սեղմեք Չեղարկել՝ կախարդից դուրս գալու համար:"/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Թարմացնել"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Պատրաստ է հեռացնել [ProductName]-ը"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Սեղմեք Հեռացնել՝ [ProductName]-ը ձեր համակարգչից հեռացնելու համար: Սեղմեք Վերադառնալ՝ ձեր տեղադրման կարգավորումներից որևէ մեկը վերանայելու կամ փոխելու համար: Սեղմեք Չեղարկել՝ կախարդից դուրս գալու համար:"/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Հեռացնել"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Պատրաստ է վերանորոգման [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Սեղմեք «Վերանորոգել»՝ [ProductName]-ի տեղադրումը վերանորոգելու համար: Սեղմեք Վերադառնալ՝ ձեր տեղադրման կարգավորումներից որևէ մեկը վերանայելու կամ փոխելու համար: Սեղմեք Չեղարկել՝ կախարդից դուրս գալու համար:"/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Վերանորոգել"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Պատրաստ է փոխել [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Սեղմեք Փոխել՝ տեղադրումը սկսելու համար: Սեղմեք Վերադառնալ՝ ձեր տեղադրման կարգավորումներից որևէ մեկը վերանայելու կամ փոխելու համար: Սեղմեք Չեղարկել՝ կախարդից դուրս գալու համար:"/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Փոխել"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Պատրաստ է տեղադրել [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Սեղմեք Տեղադրել՝ տեղադրումը սկսելու համար: Սեղմեք Վերադառնալ՝ ձեր տեղադրման կարգավորումներից որևէ մեկը վերանայելու կամ փոխելու համար: Սեղմեք Չեղարկել՝ կախարդից դուրս գալու համար:"/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Տեղադրել"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Սեղմեք Ավարտել կոճակը՝ Setup Wizard-ից դուրս գալու համար:"/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] կարգավորումն ընդհատվել է: Ձեր համակարգը չի փոփոխվել: Այս ծրագիրը ավելի ուշ տեղադրելու համար խնդրում ենք նորից գործարկել տեղադրումը:"/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Setup Wizard-ն ընդհատվել է"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Ծրագրի բոլոր հնարավորությունները կտեղադրվեն: Պահանջում է սկավառակի առավելագույն տարածք:"/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Թույլ է տալիս օգտվողներին ընտրել, թե ծրագրի որ հնարավորությունները կտեղադրվեն և որտեղ կտեղադրվեն: Առաջարկվում է առաջադեմ օգտվողների համար:"/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Տեղադրում է ծրագրի ամենատարածված գործառույթները: Առաջարկվում է օգտվողների մեծամասնության համար:"/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Ընտրեք տեղադրման տեսակը, որը լավագույնս համապատասխանում է ձեր կարիքներին"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ընտրեք Կարգավորման տեսակը"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Ամբողջական տեղադրում"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C&amp;լրացնել"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Պատվերով տեղադրում"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;սովորական"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Տիպիկ տեղադրում"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Տիպիկ"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Վերսկսվում է [ProductName] Կարգավորման մոգը"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Setup Wizard-ը կավարտի [ProductName]-ի տեղադրումը ձեր համակարգչում: Սեղմեք Տեղադրել՝ շարունակելու համար կամ Չեղարկել՝ Setup Wizard-ից դուրս գալու համար:"/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Տեղադրել"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Կարգավիճակը:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Կատարված առաջընթաց"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Թարմացվում է [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Խնդրում ենք սպասել, մինչև Setup Wizard-ը թարմացնի [ProductName]-ը:"/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Հեռացվում է [ProductName]-ը"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Խնդրում ենք սպասել, մինչև Setup Wizard-ը կհեռացնի [ProductName]-ը:"/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Վերանորոգում [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Խնդրում ենք սպասել, մինչև Setup Wizard-ը վերանորոգի [ProductName]:"/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Փոխում է [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Խնդրում ենք սպասել, մինչև Setup Wizard-ը փոխի [ProductName]:"/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Տեղադրվում է [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Խնդրում ենք սպասել, մինչև Setup Wizard-ը տեղադրի [ProductName]-ը:"/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Բարի գալուստ [ProductName] Setup Wizard"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Խնդրում ենք սպասել, քանի դեռ Setup Wizard-ը պատրաստվում է ձեզ ուղղորդել տեղադրման ընթացքում:"/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Որպես այլընտրանք, դուք կարող եք անջատել տեղադրողի վերադարձի գործառույթը: Հետադարձ կապի անջատումը թույլ չի տալիս տեղադրողին վերականգնել ձեր համակարգչի սկզբնական վիճակը, եթե տեղադրումը որևէ կերպ ընդհատվի: Սեղմեք Այո, եթե ցանկանում եք ռիսկի դիմել հետադարձ կապի անջատման համար:"/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Սկավառակի տարածությունից դուրս"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Տեղադրման համար պահանջվող սկավառակի տարածքը գերազանցում է սկավառակի հասանելի տարածքը:"/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Նշված ծավալները չունեն բավարար սկավառակի տարածություն տվյալ պահին ընտրված գործառույթների համար: Դուք կարող եք հեռացնել որոշ ֆայլեր ընդգծված ծավալներից, տեղադրել ավելի քիչ գործառույթներ կամ ընտրել այլ նպատակակետ դրայվ:"/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Սկավառակի տարածությունից դուրս"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Տեղադրման համար պահանջվող սկավառակի տարածքը գերազանցում է սկավառակի հասանելի տարածքը:"/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Նշված ծավալները չունեն բավարար սկավառակի տարածություն տվյալ պահին ընտրված գործառույթների համար: Դուք կարող եք հեռացնել որոշ ֆայլեր ընդգծված ծավալներից, տեղադրել ավելի քիչ գործառույթներ կամ ընտրել այլ նպատակակետ դրայվ:"/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Մի փակիր հավելվածները: Կպահանջվի վերաբեռնում:"/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Փակեք հավելվածները և փորձեք վերագործարկել դրանք:"/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Օգտագործվող ֆայլեր"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Որոշ ֆայլեր, որոնք պետք է թարմացվեն, ներկայումս օգտագործվում են:"/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Հետևյալ հավելվածներն օգտագործում են ֆայլեր, որոնք պետք է թարմացվեն այս կարգավորումների միջոցով: Կարող եք թույլ տալ, որ Setup Wizard-ը փակի դրանք և փորձի վերագործարկել դրանք կամ ավելի ուշ վերագործարկել սարքը:"/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Բարի գալուստ [ProductName] Setup Wizard"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Setup Wizard-ը թույլ է տալիս փոխել ձեր համակարգչում [ProductName] գործառույթների տեղադրման եղանակը կամ հեռացնել այն ձեր համակարգչից: Սեղմեք Հաջորդը շարունակելու համար կամ Չեղարկել՝ Setup Wizard-ից դուրս գալու համար:"/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName]-ը հնարավոր չէ վերանորոգել:"/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Վերականգնում է ամենավերջին տեղադրման սխալները՝ շտկելով բացակայող և կոռումպացված ֆայլերը, դյուրանցումները և ռեեստրի գրառումները:"/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName]-ը հնարավոր չէ հեռացնել:"/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Հեռացնում է [ProductName]-ը ձեր համակարգչից:"/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName]-ը չունի ինքնուրույն ընտրվող հատկանիշներ:"/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Թույլ է տալիս փոխել գործառույթների տեղադրման եղանակը:"/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Փոխել, վերանորոգել կամ հեռացնել տեղադրումը"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Ընտրեք այն գործողությունը, որը ցանկանում եք կատարել:"/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Հեռացնել տեղադրումը"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Հեռացնել"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Վերանորոգման տեղադրում"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Վերանորոգել"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Փոխել տեղադրումը"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Փոխել"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Վերջնական օգտվողի լիցենզիայի պայմանագիր"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Խնդրում ենք ուշադիր կարդալ հետևյալ լիցենզային պայմանագիրը"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ես և ընդունում եմ Լիցենզիայի պայմանագրի պայմանները"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Տեղեկատվական պատկերակ"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Տեղադրման գրացուցակը պետք է լինի տեղական կոշտ սկավառակի վրա:"/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Փոխել..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Տեղադրում &amp;թղթապանակ."/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName]-ը լռելյայն կտեղադրվի յուրաքանչյուր մեքենայի թղթապանակում և հասանելի կլինի բոլոր օգտագործողների համար: Դուք կարող եք փոխել լռելյայն տեղադրման թղթապանակը: Դուք պետք է ունենաք տեղական ադմինիստրատորի արտոնություններ:"/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Տեղադրեք այս &amp;մեքենայի բոլոր օգտատերերի համար"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName]-ը չի աջակցում յուրաքանչյուր օգտագործողի տեղադրումը:"/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName]-ը կտեղադրվի յուրաքանչյուր օգտատիրոջ թղթապանակում և հասանելի կլինի միայն ձեր օգտատիրոջ հաշվի համար: Ձեզ հարկավոր չեն տեղական Ադմինիստրատորի արտոնություններ:"/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Տեղադրեք և հենց ձեզ համար ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Տեղադրման շրջանակը"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Ընտրեք տեղադրման շրջանակը և թղթապանակը"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Տեղադրեք [ProductName]՝"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Սեղմեք «Հաջորդ»՝ լռելյայն թղթապանակում տեղադրելու համար կամ սեղմեք «Փոխել»՝ այլ ընտրելու համար:"/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Նպատակակետի թղթապանակ"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Փոխել..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Օգտագործվող ֆայլեր"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Որոշ ֆայլեր, որոնք պետք է թարմացվեն, ներկայումս օգտագործվում են:"/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Հետևյալ հավելվածներն օգտագործում են ֆայլեր, որոնք պետք է թարմացվեն այս կարգավորումների միջոցով: Փակեք այս հավելվածները, այնուհետև սեղմեք &amp;Նորից փորձեք՝ կարգավորումը շարունակելու համար կամ Ելք՝ դրանից դուրս գալու համար:"/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="Ե&amp;ելք"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Փոխել"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Տեղադրել"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ապրանքի առանձնահատկությունները"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Ընտրեք այն եղանակը, որով ցանկանում եք, որ գործառույթները տեղադրվեն:"/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Ապրանքի առանձնահատկությունները"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Սեղմեք Ավարտել կոճակը՝ Setup Wizard-ից դուրս գալու համար:"/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Setup Wizard-ը ժամանակից շուտ ավարտվեց սխալի պատճառով: Ձեր համակարգը չի փոփոխվել: Այս ծրագիրը ավելի ուշ տեղադրելու համար նորից գործարկեք Setup Wizard-ը:"/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Setup Wizard-ը վաղաժամ ավարտվեց"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Ավարտել է [ProductName] Կարգավորման մոգը"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Սեղմեք Ավարտել կոճակը՝ Setup Wizard-ից դուրս գալու համար:"/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Տեղեկատվական պատկերակ"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Տեղեկատվական տեքստ"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Սկավառակի տարածքի պահանջներ"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Ընտրված գործառույթների տեղադրման համար անհրաժեշտ սկավառակի տարածությունը:"/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Ընդգծված ծավալները չունեն բավարար սկավառակի տարածություն ընտրված գործառույթների համար: Դուք կարող եք կամ հեռացնել որոշ ֆայլեր ընդգծված ծավալներից, տեղադրել ավելի քիչ գործառույթներ կամ ընտրել տարբեր նպատակային կրիչներ:"/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Գտնվելու վայրը:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Անհատականացված կարգավորում"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Ընտրեք այն եղանակը, որով ցանկանում եք, որ գործառույթները տեղադրվեն:"/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Կտտացրեք ստորև ծառի պատկերակներին՝ հնարավորությունների տեղադրման եղանակը փոխելու համար:"/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Սկավառակ և օգտագործում"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Վերակայել"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="Թերթիր..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Ընտրությունների ծառ"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Տեղեկատվական պատկերակ"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Biztosan megszakítja a [ProductName] telepítését?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Փոխել նպատակակետի պանակը"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Թերթիր դեպի նպատակակետ թղթապանակ"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Թղթապանակի անունը."/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Ստեղծեք նոր թղթապանակ"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Մեկ մակարդակ բարձրանալ"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Նայեք՝"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Թահոմա"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;ընդլայնված"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Տեղադրել"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Սեղմեք Տեղադրել՝ արտադրանքը լռելյայն ընտրանքներով միայն ձեզ համար տեղադրելու համար: Սեղմեք Ընդլայնված՝ տեղադրման ընտրանքները փոխելու համար:"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Սեղմեք Տեղադրել՝ արտադրանքը բոլոր օգտագործողների համար լռելյայն ընտրանքներով տեղադրելու համար: Սեղմեք Ընդլայնված՝ տեղադրման ընտրանքները փոխելու համար:"/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ես և ընդունում եմ Լիցենզիայի պայմանագրի պայմանները"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Խնդրում ենք կարդալ [ProductName] լիցենզային պայմանագիրը"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Կարգավորում"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Տպել"/>
+	<String Id="WixUIOK" Overridable="yes" Value="Լավ"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Ոչ"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Այո"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Անտեսել"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Նորից փորձեք"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Ավարտել"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Չեղարկել"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Հաջորդ"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Հետ"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall-ի կոնֆիգուրացիայի հեռացում"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall-ի կոնֆիգուրացիայի վերադարձ"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall-ի կոնֆիգուրացիայի տեղադրում"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall-ի կոնֆիգուրացիայի վերադարձ"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall-ի կարգավորում"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall-ի կարգավորում"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Հնարավոր չէ միանալ Windows Firewall-ին: ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Հեռավոր հավելվածների պատկերացումները հասանելի են որպես ընտրանք կոնֆիգուրացիայի մեջ"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Դիտեք RAAS սերվերները Explorer-ում"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Ստեղծեք հեռակա հավելվածների դյուրանցումներ դեպի սերվերային հավելվածներ տեղական համակարգչի վրա"/>

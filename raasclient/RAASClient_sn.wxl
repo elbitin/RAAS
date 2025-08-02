@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="sn" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="sn" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Volume"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Disk Size"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Zvinodiwa"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Musiyano"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Available"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Nguva yasara:{ [ProductName] maminetsi}{ [ProductName] masekonzi}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Iyi ficha inoda [ProductName] pane yako hard drive. Iine [ProductName] ye [ProductName] zvikamu zviduku zvakasarudzwa. Izvo zvikamu zvinoda [ProductName] pane yako hard drive."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Iyi ficha inoda [ProductName] pane yako hard drive. Iine [ProductName] ye [ProductName] zvikamu zviduku zvakasarudzwa. Iwo madiki anosunungura [ProductName] pane yako hard drive."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Ichi chimiro chinosunungura [ProductName] pane yako hard drive. Iine [ProductName] ye [ProductName] zvikamu zviduku zvakasarudzwa. Izvo zvikamu zvinoda [ProductName] pane yako hard drive."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Ichi chimiro chinosunungura [ProductName] pane yako hard drive. Iine [ProductName] ye [ProductName] zvikamu zviduku zvakasarudzwa. Iwo madiki anosunungura [ProductName] pane yako hard drive."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Iyi ficha icharamba ichiitwa kubva kunetiweki"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Iyi ficha ichachinja kubva pakumhanya kubva kunetiweki state kuti iiswe pane yemuno hard drive"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Iyi ficha ichachinja kubva pakumhanya kubva kunetiweki state kuenda kuisirwa kuiswa kana ichidikanwa"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Iyi ficha ichabviswa zvachose, haugone kuimhanyisa kubva kunetiweki"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Iyi ficha ichabviswa kubva kune yako yemunharaunda hard drive, asi ichave iripo kuti imhanye kubva kunetiweki"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Ichi chimiro chicharamba chiri pane yako yemunharaunda hard drive"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Iyi ficha ichabviswa kubva kune yako hard drive, asi ichave iripo kuti imhanye kubva kuCD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Iyi ficha ichabviswa pahard drive yako yemuno, asi ichaiswa kuti iiswe painodiwa"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Ichi chimiro chichabviswa zvachose"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Kuunganidza mutengo wechinhu ichi..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Iyi ficha inoda [ProductName] pane yako hard drive."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Ichi chimiro chinosunungura [ProductName] pane yako hard drive."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Iyi ficha ichachinja kubva kumhanya kubva kuCD state kuti iiswe pane yemuno hard drive"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Ichi chimiro chicharamba chichiitwa kubva kuCD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Iyi ficha ichachinja kubva pakumhanya kubva kuCD state kuenda kuisirwa kuiswa kana ichidikanwa"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Iyi ficha ichabviswa zvachose, haugone kuimhanyisa kubva kuCD"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Iyi ficha ichavepo kuti imhanye kubva kunetiweki"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Iyi ficha ichaiswa pane yako yemunharaunda hard drive"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Iyi ficha ichavepo kuti imhanye kubva kuCD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Ichaiswa pazvinenge zvichidiwa"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Ichi chimiro hachizovepo"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Iyi ficha ichaiswa kuti ishande kubva kunetiweki"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Iyi ficha ichaiswa pane yemuno hard drive"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Iyi ficha ichaiswa kuti imhanye kubva kuCD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Iyi ficha ichaiswa kuti iiswe painodiwa"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Iyi ficha icharamba isina kuisirwa"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Kuunganidza ruzivo runodiwa..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Folder|Itsva Folder"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Ichaiswa kuti imhanye kubva kunetiweki"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Ichaiswa pane yemunharaunda hard drive"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Ichaiswa kuti imhanye kubva kuCD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Yese ficha ichaiswa kuti imhanye kubva kunetiweki"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Yese ficha ichaiswa pane yemuno hard drive"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Yese ficha ichaiswa kuti imhanye kubva kuCD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Feature ichaiswa kana ichidikanwa"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Zvese zvichange zvisipo"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="bytes"/>
+	<String Id="Error1938" Overridable="yes" Value="Pane kukanganisa kwakaitika panguva yekuiswa kwegungano &amp;apos;[ProductName]&amp;apos;. Imwe kana mamwe mamodule egungano haana kuwanikwa. HRESULT: [ProductName].{{ chitarisiko chegungano: [ProductName], basa: [ProductName], chikamu: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Pane kukanganisa kwakaitika panguva yekuiswa kwegungano &amp;apos;[ProductName]&amp;apos;. Siginicha kana katarogu haina kusimbiswa kana kuti haina kushanda. HRESULT: [ProductName].{{ chitarisiko chegungano: [ProductName], basa: [ProductName], chikamu: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Pane kukanganisa kwakaitika panguva yekuiswa kwegungano &amp;apos;[ProductName]&amp;apos;. Gungano harina kudomwa zvakasimba kana kuti harina kusainwa nehurefu hushoma hwekiyi. HRESULT: [ProductName].{{ chitarisiko chegungano: [ProductName], basa: [ProductName], chikamu: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Pane kukanganisa kwakaitika panguva yekuiswa kwegungano &amp;apos;[ProductName]&amp;apos;. Ndokumbira utarise Rubatsiro nerutsigiro kuti uwane rumwe ruzivo. HRESULT: [ProductName].{{ chitarisiko chegungano: [ProductName], basa: [ProductName], chikamu: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Kuisirwa kwemushandisi kwakavharwa kuburikidza nepolicy pamushini."/>
+	<String Id="Error1933" Overridable="yes" Value="Windows Installer sevhisi haigone kugadzirisa rimwe kana mamwe mafaera eWindows akachengetedzwa.{{ SFP Error: [ProductName]. Rondedzero yemafaira akachengetedzwa:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Windows Installer sevhisi haigoni kugadzirisa faira reWindows rakachengetedzwa [ProductName].{{ Package version: [ProductName], OS Protected version: [ProductName], SFP Error: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Iyo Windows Installer sevhisi haigone kugadzirisa iyo system faira [ProductName] nekuti iyo faira inodzivirirwa neWindows. Ungada kugadzirisa masisitimu ako kuti chirongwa ichi chishande nemazvo.{{ Package version: [ProductName], OS Protected version: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="Tsananguro yebasa &amp;apos;[ProductName]&amp;apos; ([ProductName]) haina kushandurwa."/>
+	<String Id="Error1929" Overridable="yes" Value="Kukanganisa pakusunungura COM+ Application. Bata nevatsigiri vako kuti uwane rumwe ruzivo."/>
+	<String Id="Error1928" Overridable="yes" Value="Kukanganisa pakunyoresa COM+ Application. Bata nevatsigiri vako kuti uwane rumwe ruzivo."/>
+	<String Id="Error1927" Overridable="yes" Value="Component Services (COM+ 1.0) haina kuiswa pakombuta iyi. Kuiswa uku kunoda Masevhisi eChikamu kuti upedze zvinobudirira. Component Services inowanikwa paWindows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Hatina kukwanisa kuseta chengetedzo yefaira yefaira &amp;apos;[ProductName]&amp;apos;. Mhosho: [ProductName]. Simbisa kuti une rombo rakanaka rekugadzirisa mvumo dzekuchengetedza faira iri."/>
+	<String Id="Error1925" Overridable="yes" Value="Iwe hauna rombo rakakwana rekupedzisa kuisirwa uku kune vese vashandisi vemuchina. Log on as administrator uye woedzazve kuisa uku."/>
+	<String Id="Error1924" Overridable="yes" Value="Hatina kukwanisa kugadzirisa shanduko yenzvimbo &amp;apos;[ProductName]&amp;apos;. Iva nechokwadi chekuti une rombo rakanaka rekugadzirisa nharaunda."/>
+	<String Id="Error1923" Overridable="yes" Value="Sevhisi &amp;apos;[ProductName]&amp;apos; ([ProductName]) yatadza kuiswa. Simbisa kuti une rombo rakanaka rekuisa masevhisi ehurongwa."/>
+	<String Id="Error1922" Overridable="yes" Value="Sevhisi &amp;apos;[ProductName]&amp;apos; ([ProductName]) haina kukwanisa kudzimwa. Tarisa kuti une rombo rakanaka rekubvisa masevhisi ehurongwa."/>
+	<String Id="Error1921" Overridable="yes" Value="Sevhisi &amp;apos;[ProductName]&amp;apos; ([ProductName]) haina kumiswa. Tarisa kuti une rombo rakanaka rekumisa masevhisi ehurongwa."/>
+	<String Id="Error1920" Overridable="yes" Value="Sevhisi &amp;apos;[ProductName]&amp;apos; ([ProductName]) yatadza kutanga. Tarisa kuti une rombo rakanaka rekutanga masevhisi ehurongwa."/>
+	<String Id="Error1919" Overridable="yes" Value="Kukanganisa kugadzirisa ODBC data source: [ProductName], ODBC kukanganisa [ProductName]: [ProductName]. Tarisa kuti faira [ProductName] iripo uye kuti unogona kuiwana."/>
+	<String Id="Error1918" Overridable="yes" Value="Kukanganisa kuisa ODBC mutyairi: [ProductName], ODBC kukanganisa [ProductName]: [ProductName]. Tarisa kuti faira [ProductName] iripo uye kuti unogona kuiwana."/>
+	<String Id="Error1917" Overridable="yes" Value="Kukanganisa kubvisa ODBC mutyairi: [ProductName], ODBC kukanganisa [ProductName]: [ProductName]. Tarisa kuti une rombo rakanaka rekubvisa madhiraivha eODBC."/>
+	<String Id="Error1916" Overridable="yes" Value="Kukanganisa kuisa ODBC mutyairi maneja, ODBC kukanganisa [ProductName]: [ProductName]. Bata nevatsigiri vako."/>
+	<String Id="Error1915" Overridable="yes" Value="Kukanganisa kubvisa ODBC mutyairi maneja, ODBC kukanganisa [ProductName]: [ProductName]. Bata nevatsigiri vako."/>
+	<String Id="Error1914" Overridable="yes" Value="Hatina kukwanisa kuronga faira [ProductName] kutsiva faira [ProductName] pakutangazve. Tarisa kuti une mvumo yekunyora yekuisa [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Hatina kukwanisa kugadzirisa ini faira [ProductName][ProductName]. Tarisa kuti faira iriko here uye kuti unogona kuriwana."/>
+	<String Id="Error1912" Overridable="yes" Value="Hatina kukwanisa kubvisa raibhurari yemhando yefaira [ProductName]. Bata nevatsigiri vako."/>
+	<String Id="Error1911" Overridable="yes" Value="Hatina kukwanisa kunyoresa raibhurari yemhando yefaira [ProductName]. Bata nevatsigiri vako."/>
+	<String Id="Error1910" Overridable="yes" Value="Hatina kukwanisa kubvisa Shortcut [ProductName]. Wona kuti faira rekudimbudzira riripo uye kuti unokwanisa kuriwana."/>
+	<String Id="Error1909" Overridable="yes" Value="Hatina kukwanisa kugadzira Shortcut [ProductName]. Ona kuti folda yekwainoenda iripo uye kuti unokwanisa kuiwana."/>
+	<String Id="Error1908" Overridable="yes" Value="Hatina kukwanisa kubvisa mafonti [ProductName]. Simbisa kuti iwe une mvumo yakakwana yekubvisa mafonti."/>
+	<String Id="Error1907" Overridable="yes" Value="Hatina kukwanisa kunyoresa mafonti [ProductName]. Tarisa kuti une mvumo yakakwana yekuisa mafonti, uye kuti sisitimu inotsigira iyi font."/>
+	<String Id="Error1906" Overridable="yes" Value="Yatadza kuchengeta pasuru [ProductName]. Kukanganisa: [ProductName]. Bata nevatsigiri vako."/>
+	<String Id="Error1905" Overridable="yes" Value="Module [ProductName] yatadza kunyoresa. HRESULT [ProductName]. Bata nevatsigiri vako."/>
+	<String Id="Error1904" Overridable="yes" Value="Module [ProductName] yatadza kunyoresa. HRESULT [ProductName]. Bata nevatsigiri vako."/>
+	<String Id="Error1903" Overridable="yes" Value="Kuronga reboot operation: Kudzima faira [ProductName]. Inofanirwa kutangazve kuti ipedze kushanda."/>
+	<String Id="Error1902" Overridable="yes" Value="Kuronga reboot operation: Renaming file [ProductName] to [ProductName]. Inofanirwa kutangazve kuti ipedze kushanda."/>
+	<String Id="Error1901" Overridable="yes" Value="Kukanganisa kuyedza kuverenga kubva kunobva kuisirwa dhatabhesi: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Folda yekwainoperera yatadza kuzivikanwa."/>
+	<String Id="Error1806" Overridable="yes" Value="Hauna mukana wakakwana wekuverenga folda iyi."/>
+	<String Id="Error1805" Overridable="yes" Value="Iyo folda [ProductName] haipo. Isa nzira yekuenda kune folda iripo."/>
+	<String Id="Error1804" Overridable="yes" Value="Iko hakuna dhisiki mudhiraivha [ProductName]. Ndokumbira isa imwe wodzvanya Edzazve, kana kudzvanya Kanzura kuti udzoke kubhokisi rekubhurawuza uye sarudza vhoriyamu yakasiyana."/>
+	<String Id="Error1803" Overridable="yes" Value="Iko hakuna dhisiki mudhiraivha [ProductName]. Ndapota isa imwe wodzvanya Edzazve, kana kudzvanya Kanzura kuti udzokere kuvhoriyamu yakambosarudzwa."/>
+	<String Id="Error1802" Overridable="yes" Value="Kubva mundangariro. Dzima mamwe maapplication usati waedza zvakare."/>
+	<String Id="Error1801" Overridable="yes" Value="Nzira [ProductName] haisi kushanda. Ndapota tsanangura nzira inoshanda."/>
+	<String Id="Error1732" Overridable="yes" Value="Če želite dokončati namestitev [ProductName], morate znova zagnati računalnik. Drugi uporabniki so trenutno prijavljeni v ta računalnik in ponovni zagon lahko povzroči, da izgubijo svoje delo. Ali želite znova zagnati zdaj?"/>
+	<String Id="Error1731" Overridable="yes" Value="Iyo sosi yekumisikidza pasuru yechigadzirwa [ProductName] haina kuwiriraniswa neyemutengi package. Edza kumisikidza zvakare uchishandisa kopi inoshanda yekuisa package &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Iwe unofanirwa kuve Administrator kuti ubvise iyi application. Kuti ubvise ichi chishandiso, unogona kupinda seMutungamiriri, kana kubata boka rako rekutsigira tekinoroji kuti ubatsirwe."/>
+	<String Id="Error1729" Overridable="yes" Value="Kugadzirisa kwatadza."/>
+	<String Id="Error1728" Overridable="yes" Value="Kugadzirisa kwakapedzwa zvinobudirira."/>
+	<String Id="Error1727" Overridable="yes" Value="Advertisement yakundikana."/>
+	<String Id="Error1726" Overridable="yes" Value="Advertisement yapera zvinobudirira."/>
+	<String Id="Error1725" Overridable="yes" Value="Kubvisa kwakundikana."/>
+	<String Id="Error1724" Overridable="yes" Value="Kubvisa kwapera zvinobudirira."/>
+	<String Id="Error1723" Overridable="yes" Value="Pane dambudziko neiyi Windows Installer package. DLL inodiwa kuti kuiswa uku kupedze yatadza kushanda. Bata vanokutsigira kana mutengesi wepasuru.{{ Chiito [ProductName], kupinda: [ProductName], raibhurari: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Pane dambudziko neiyi Windows Installer package. Chirongwa chinoitwa sechikamu chegadziriro haina kupera sezvaitarisirwa. Bata vanokutsigira kana mutengesi wepasuru.{{ Chiito [ProductName], nzvimbo: [ProductName], raira: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Pane dambudziko neiyi Windows Installer package. Chirongwa chaidiwa kuti kugadzirwe uku hachina kukwanisa kuitwa. Bata vanotsigira vako kana mutengesi wepasuru.{{ Chiito: [ProductName], nzvimbo: [ProductName], raira: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Pane dambudziko neiyi Windows Installer package. Runyoro runodiwa kuti kugadzikwa uku kupere harina kuvhurwa. Bata vanotsigira vako kana mutengesi wepasuru.{{ Custom action [ProductName] script error [ProductName], [ProductName]: [ProductName] Line [ProductName], Column [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Windows Installer Service yatadza kuwanikwa. Izvi zvinogona kuitika kana iwe uchimhanyisa Windows mune yakachengeteka modhi, kana iyo Windows Installer isina kunyatsoiswa. Bata nevatsigiri vako kuti ubatsirwe."/>
+	<String Id="Error1718" Overridable="yes" Value="Faira [ProductName] rakarambwa nedhijitari siginecha mutemo."/>
+	<String Id="Error1717" Overridable="yes" Value="Zvakabviswa [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Yakagadzirirwa [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Yakaiswa [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Shanduro yekare ye [ProductName] haigone kubviswa. Bata boka rako rerutsigiro.{{ System Error [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] haigone kuisa chimwe chezvigadzirwa zvayo zvinodiwa. Bata boka rako rerutsigiro.{{ System Error: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Imwe kana akawanda emafaira anodiwa kudzoreredza komputa yako kune yayo yakare haina kuwanikwa. Kudzorera hakuzogoneki."/>
+	<String Id="Error1711" Overridable="yes" Value="Pane chikanganiso chakaitika tichinyora ruzivo rwekuisa kudhisiki. Tarisa kuti uone kuti nzvimbo yedhisiki yakakwana iripo, wobva wadzvanya Edzazve, kana Kanzura kuti upedze kuisa."/>
+	<String Id="Error1710" Overridable="yes" Value="Računalnik lahko obnovite v prejšnje stanje ali pa namestitev nadaljujete pozneje. Bi radi obnovili?"/>
+	<String Id="Error1709" Overridable="yes" Value="Chigadzirwa: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Kuisa kwakundikana."/>
+	<String Id="Error1707" Overridable="yes" Value="Kuisa kwapera."/>
+	<String Id="Error1706" Overridable="yes" Value="Pasuru yekuisa yechigadzirwa [ProductName] haigone kuwanikwa. Edza kumisikidza zvakare uchishandisa kopi inoshanda yekuisa package &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="Prejšnja namestitev tega izdelka je v teku. Za nadaljevanje morate razveljaviti spremembe, ki jih je naredila ta namestitev. Ali želite razveljaviti te spremembe?"/>
+	<String Id="Error1704" Overridable="yes" Value="Namestitev za [ProductName] je trenutno prekinjena. Za nadaljevanje morate razveljaviti spremembe, ki jih je naredila ta namestitev. Ali želite razveljaviti te spremembe?"/>
+	<String Id="Error1703" Overridable="yes" Value="Iwe unofanirwa kutangazve yako sisitimu kuitira shanduko dzekugadzirisa dzakaitwa ku [ProductName] kuti dziite. Dzvanya Hongu kuti utangezve izvozvi kana Kwete kana iwe ukaronga kutangazve nemaoko gare gare."/>
+	<String Id="Error1702" Overridable="yes" Value="Iyo yekuisa inofanira kutangazve system yako isati yagadziriswa ye [ProductName] inogona kuenderera. Dzvanya Hongu kuti utangezve izvozvi kana Kwete kana iwe ukaronga kutangazve nemaoko gare gare."/>
+	<String Id="Error1701" Overridable="yes" Value="Kiyi [ProductName] haisi kushanda. Tarisa kuti waisa kiyi chaiyo."/>
+	<String Id="Error1609" Overridable="yes" Value="Pane chikanganiso chakaitika pakushandisa zvigadziriso zvekuchengetedza. [ProductName] haasi mushandisi anoshanda kana boka. Iri rinogona kunge riri dambudziko nepasuru, kana dambudziko rekubatanidza kune domain controller pane network. Tarisa kunetiweki yako wobva wadzvanya Edzazve, kana Kanzura kuti upedze kuisa. {{Haina kukwanisa kuwana SID yemushandisi, system error [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Hatina kuwana chero zvigadzirwa zvakaiswa kare zvinoenderana pamushini wekuisa chigadzirwa ichi."/>
+	<String Id="Error1607" Overridable="yes" Value="Aya anotevera maapplication anofanira kuvharwa asati aenderera mberi nekuisa:"/>
+	<String Id="Error1606" Overridable="yes" Value="Hatina kukwanisa kuwana nzvimbo yenetiweki [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Iko hakuna kukwana disk nzvimbo pavhoriyamu &amp;apos;[ProductName]&amp;apos; kuti uenderere mberi nekuisa nekudzoreredza kunogoneswa. [ProductName] KB inodiwa, asi [ProductName] KB chete ndiyo iripo. Dzvanya Ignore kuti uenderere mberi nekuisa usina kuchengetedza ruzivo rwekudzoreredza, tinya Edzazve kutarisa nzvimbo iripo zvakare, kana kubaya Kanzura kuti usiye kuisa."/>
+	<String Id="Error1604" Overridable="yes" Value="Chigadzirwa &amp;apos;[ProductName]&amp;apos; chakatoiswa, kudzivirira kuiswa kwechigadzirwa ichi. Izvo zvigadzirwa zviviri hazvienderane."/>
+	<String Id="Error1603" Overridable="yes" Value="Iyo faira [ProductName][ProductName] iri kushandiswa{nemaitiro anotevera: Zita: [ProductName], Id: [ProductName], Window Title: &amp;apos;[ProductName]&amp;apos;}. Vhara iyo application woedza zvakare."/>
+	<String Id="Error1602" Overridable="yes" Value="Ali ste prepričani, da želite preklicati?"/>
+	<String Id="Error1601" Overridable="yes" Value="Kunze kwedhisiki nzvimbo -- Vhoriyamu: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Mushandisi &amp;apos;[ProductName]&amp;apos; akambotanga kuiswa kwechigadzirwa &amp;apos;[ProductName]&amp;apos;. Mushandisi iyeye anozoda kumhanyisa iyo yekuisa zvakare vasati vashandisa icho chigadzirwa."/>
+	<String Id="Error1502" Overridable="yes" Value="Mushandisi &amp;apos;[ProductName]&amp;apos; akambotanga kuiswa kwechigadzirwa &amp;apos;[ProductName]&amp;apos;. Mushandisi iyeye anozoda kumhanyisa iyo yekuisa zvakare vasati vashandisa icho chigadzirwa. Kuisa kwako ikozvino kuchaenderera mberi."/>
+	<String Id="Error1501" Overridable="yes" Value="Kutadza kuwana data rakachengetedzwa. Ndokumbirawo uve nechokwadi chekuti Windows Installer yakagadziriswa zvakanaka uye edza kuisa zvakare."/>
+	<String Id="Error1500" Overridable="yes" Value="Kumwe kuiswa kuri kuitika. Unofanira kupedza kuisa ikoko usati waenderera mberi neiyi."/>
+	<String Id="Error1410" Overridable="yes" Value="Hatina kukwanisa kuwedzera nzvimbo yekunyoresa iripo. [ProductName] KB yemahara registry nzvimbo inodiwa pakuiswa kweichi application."/>
+	<String Id="Error1409" Overridable="yes" Value="Hatina kukwanisa kuverenga mashoko ekuchengetedza kiyi [ProductName].{{ System error [ProductName].}} Ona kuti une mvumo yakakwana yekuwana kiyi iyoyo, kana kuti taura nevashandi vako vanokutsigira."/>
+	<String Id="Error1408" Overridable="yes" Value="Hatina kukwanisa kuwana madiki makiyi ekiyi [ProductName].{{ System kukanganisa [ProductName].}} Ona kuti unokwanisa kuwana kiyi yacho yakakwana, kana kuti taura nevashandi vako vanokutsigira."/>
+	<String Id="Error1407" Overridable="yes" Value="Hatina kukwanisa kuwana mazita ekukosha kwekiyi [ProductName].{{ System error [ProductName].}} Ona kuti unokwanisa kuwana kiyi yacho yakakwana, kana kuti taura nevashandi vako vanotsigira."/>
+	<String Id="Error1406" Overridable="yes" Value="Hatina kukwanisa kunyora kukosha [ProductName] kukiyi [ProductName].{{ System kukanganisa [ProductName].}} Ona kuti une mukana wakakwana pakiyi iyoyo, kana kuti taura nevashandi vako vanotsigira."/>
+	<String Id="Error1405" Overridable="yes" Value="Hatina kukwanisa kuverenga kukosha [ProductName] kubva pakiyi [ProductName].{{ System kukanganisa [ProductName].}} Ona kuti unokwanisa kuwana kiyi yacho yakakwana, kana kuti taura nevashandi vako vanokutsigira."/>
+	<String Id="Error1404" Overridable="yes" Value="Hatina kukwanisa kudzima kiyi [ProductName].{{ System error [ProductName].}} Ona kuti unokwanisa kuwana kiyi yacho yakakwana, kana kuti taura nevashandi vako vanokutsigira."/>
+	<String Id="Error1403" Overridable="yes" Value="Hatina kukwanisa kudzima kukosha [ProductName] pakiyi [ProductName].{{ System error [ProductName].}} Ona kuti une mukana wakakwana pakiyi iyoyo, kana kuti taura nevanokutsigira."/>
+	<String Id="Error1402" Overridable="yes" Value="Hatina kukwanisa kuvhura kiyi: [ProductName].{{ System error [ProductName].}} Ona kuti unokwanisa kuwana kiyi yacho yakakwana, kana kuti taura nevashandi vako vanokutsigira."/>
+	<String Id="Error1401" Overridable="yes" Value="Hatina kukwanisa kugadzira kiyi: [ProductName].{{ System error [ProductName].}} Ona kuti unokwanisa kuwana kiyi yacho yakakwana, kana kuti taura nevashandi vako vanokutsigira."/>
+	<String Id="Error1336" Overridable="yes" Value="Paita chikanganiso pakugadzira faira renguva pfupi riri kudiwa kupedzisa kuisa uku.{{ Folder: [ProductName]. Kodhi yekukanganisa kweSisitimu: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Iyo kabhineti faira &amp;apos;[ProductName]&amp;apos; inodiwa pakugadzika uku ine huori uye haigone kushandiswa. Izvi zvinogona kuratidza kukanganisa kwenetiweki, kukanganisa kuverenga kubva kuCD-ROM, kana dambudziko nepasuru iyi."/>
+	<String Id="Error1334" Overridable="yes" Value="Iyo faira &amp;apos;[ProductName]&amp;apos; haigone kuisirwa nekuti iyo faira haigone kuwanikwa mu cabinet file &amp;apos;[ProductName]&amp;apos;. Izvi zvinogona kuratidza kukanganisa kwenetiweki, kukanganisa kuverenga kubva kuCD-ROM, kana dambudziko nepasuru iyi."/>
+	<String Id="Error1333" Overridable="yes" Value="Yatadza kunyatso chigamba [ProductName] faira: CRC kukanganisa."/>
+	<String Id="Error1332" Overridable="yes" Value="Yatadza kufambisa zvakanaka [ProductName] faira: CRC kukanganisa."/>
+	<String Id="Error1331" Overridable="yes" Value="Yatadza kunyatso kukopa [ProductName] faira: CRC kukanganisa."/>
+	<String Id="Error1330" Overridable="yes" Value="Faera rinodiwa harigone kuiswa nekuti faira rekhabhineti [ProductName] rine siginicha yedhijitari isingaite. Izvi zvinogona kuratidza kuti faira recabinet rine huwori.{{ Mhosho [ProductName] yakadzoswa neWinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Faera rinodiwa harigone kuisirwa nekuti iyo cabinet file [ProductName] haina kusainwa nedigital. Izvi zvinogona kuratidza kuti iyo cabinet file ine huori."/>
+	<String Id="Error1328" Overridable="yes" Value="Kukanganisa kuisa chigamba kufaira [ProductName]. Iyo inogona kunge yakagadziridzwa nedzimwe nzira, uye haichagone kugadziridzwa nechigamba ichi. Kuti uwane rumwe ruzivo taura nemutengesi wako wechigamba.{{ System Error: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Dhiraivha isiriyo: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Kukanganisa kuwana chengetedzo yefaira: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; harisi zita refaira pfupi."/>
+	<String Id="Error1324" Overridable="yes" Value="Nzira yefolder &amp;apos;[ProductName]&amp;apos; ine mavara asingaite."/>
+	<String Id="Error1323" Overridable="yes" Value="Iyo folda nzira &amp;apos;[ProductName]&amp;apos; ine mazwi asingashande mumafolda nzira."/>
+	<String Id="Error1322" Overridable="yes" Value="Chikamu chegwara refolda &amp;apos;[ProductName]&amp;apos; hachishandi. Iyo inenge isina chinhu kana kudarika urefu hunobvumirwa nehurongwa."/>
+	<String Id="Error1321" Overridable="yes" Value="Iyo Installer ine rombo rakakwana rekugadzirisa iyi faira: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Nzira yataurwa yakarebesa: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Kukanganisa kwenetiweki kwakaitika uchiedza kuvhura iyo source file cabinet: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Pane kukanganisa kwetiweki kwakaitika uchiedza kugadzira dhairekitori: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Pane mhosho yakaitika tichiyedza kugadzira dhairekitori: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Kukanganisa kwetiweki kwakaitika uchiedza kuverenga kubva mufaira: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Hatikwanisi kunyora kune dhairekitori rataurwa: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Nzira yakataurwa &amp;apos;[ProductName]&amp;apos; haisipo."/>
+	<String Id="Error1313" Overridable="yes" Value="Vhoriyamu [ProductName] haisi kuwanikwa parizvino. Ndapota sarudza imwe."/>
+	<String Id="Error1312" Overridable="yes" Value="Hatikwanise kugadzira dhairekitori &amp;apos;[ProductName]&amp;apos;. Faera rine zita iri ravepo. Ndokumbirawo utumire zita kana bvisa faira wodzvanya Edzazve, kana kudzvanya Kanzura kuti ubude."/>
+	<String Id="Error1311" Overridable="yes" Value="Kwakabva faira hakuna kuwanikwa{{(cabinet)}}: [ProductName]. Tarisa kuti faira iriko here uye kuti unogona kuriwana."/>
+	<String Id="Error1310" Overridable="yes" Value="Zvatadza kunyora kufaira: [ProductName].{{ System kukanganisa [ProductName].}} Ona kuti unokwanisa kuwana dhairekitori iroro."/>
+	<String Id="Error1309" Overridable="yes" Value="Patadza kuverenga kubva mufaira: [ProductName].{{ System kukanganisa [ProductName].}} Ona kuti faira ririko here uye kuti unogona kuriwana."/>
+	<String Id="Error1308" Overridable="yes" Value="Kwakabva faira harina kuwanikwa: [ProductName]. Tarisa kuti faira iriko here uye kuti unogona kuriwana."/>
+	<String Id="Error1307" Overridable="yes" Value="Hapana nzvimbo yakakwana yedhisiki yekuisa iyi faira: [ProductName]. Sunungura imwe nzvimbo yedhisiki wodzvanya Edzazve, kana kudzvanya Kanzura kuti ubude."/>
+	<String Id="Error1306" Overridable="yes" Value="Imwe application ine yakasarudzika yekuwana iyo faira &amp;apos;[ProductName]&amp;apos;. Ndokumbira uvhare mamwe maapplication ese, wobva wadzvanya Edza zvakare."/>
+	<String Id="Error1305" Overridable="yes" Value="Patadza kuverenga kubva mufaira [ProductName].{{ System error [ProductName].}} Ona kuti faira ririko here uye kuti unogona kuriwana."/>
+	<String Id="Error1304" Overridable="yes" Value="Kukanganisa kunyora kufaira: [ProductName]. Ona kuti unokwanisa kuwana dhairekitori iroro."/>
+	<String Id="Error1303" Overridable="yes" Value="Iyo yekumisikidza haina ropafadzo yakakwana yekuwana iyi dhairekitori: [ProductName]. Kuiswa hakugone kuenderera. Log on semaneja kana kubata system yako maneja."/>
+	<String Id="Error1302" Overridable="yes" Value="Ndokumbira uise dhisiki: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Haikwanise kugadzira iyo faira &amp;apos;[ProductName]&amp;apos;. Dhairekitori rine zita iri ravepo. Kanzura kuisa uye edza kuisa kune imwe nzvimbo."/>
+	<String Id="Error1101" Overridable="yes" Value="Patadza kuverenga kubva mufaira: [ProductName].{{ System kukanganisa [ProductName].}} Ona kuti faira ririko here uye kuti unogona kuriwana."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Kuseta kwatadza."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Kugadzirisa kwakapera."/>
+	<String Id="Error23" Overridable="yes" Value="Kugadzirira kubvisa shanduro dzechinyakare dzechirongwa ichi..."/>
+	<String Id="Error22" Overridable="yes" Value="Kubviswa shanduro dzekare dzechirongwa ichi..."/>
+	<String Id="Error21" Overridable="yes" Value="Kuunganidza ruzivo runodiwa..."/>
+	<String Id="Error20" Overridable="yes" Value="Ndokumbira umire Windows ichigadzirisa [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Installer yakamira nguva isati yakwana."/>
+	<String Id="Error18" Overridable="yes" Value="Installer haisisiri kupindura."/>
+	<String Id="Error17" Overridable="yes" Value="Kubva mundangariro. Dzima mamwe maapplication usati waedza zvakare."/>
+	<String Id="Error16" Overridable="yes" Value="Nguva yasara: {[ProductName] maminetsi {[ProductName] masekonzi}"/>
+	<String Id="Error15" Overridable="yes" Value="Chiito chakapera [ProductName]: [ProductName]. Kudzorera kukosha [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Chiito chekutanga [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Kutema miti kwakamira: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Kutema miti kwakatanga: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Rudzi rwemharidzo: [ProductName], Nharo: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Chiito [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Dhisiki rakazara: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Mugadziri asangana nechikanganiso chisingatarisirwi pakuisa pasuru iyi. Izvi zvinogona kuratidza dambudziko pasuru iyi. Kodhi yekukanganisa ndeye [ProductName]. {{Nharo dzacho ndeidzi: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Mashoko [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Yambiro [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Kukanganisa [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Mhosho huru: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Kusabuditsa ruzivo rwechigadzirwa"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Faira: [ProductName], Dhairekitori: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Kubvisa mafaira akafambiswa"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Faira: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Kubvisa mafaira ekuchengetedza"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Akcia vrátenia späť:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Chinyorwa Chekushandisa:[ProductName], Zita reGungano:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Kusaburitsa ruzivo rwegungano"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Chinyorwa Chekushandisa:[ProductName], Zita reGungano:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Kuburitsa ruzivo rwegungano"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Faira: [ProductName], Zvinoenderana: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Kuisa system catalog"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Kugadzira script mashandiro echiito:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Advertising application"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Kiyi: [ProductName], Zita: [ProductName], Kukosha: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Kunyora masisitimu registry kukosha"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Faira: [ProductName], Chikamu: [ProductName], Kiyi: [ProductName], Kukosha: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Kunyora INI mafaera kukosha"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Ime: [ProductName], vrednost: [ProductName], dejanje [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Updating environment strings"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Kusanyoresa mabhuku emhando"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Kusanyoresa zviziviso zvepurogiramu"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME Content Type: [ProductName], Kuwedzera: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Kusanyoresa MIME ruzivo"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Mavara: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Kusanyoresa mafonti"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Kuwedzera: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Kusanyoresa maseva ekuwedzera"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Kusanyoresa COM + Zvishandiso uye Zvikamu"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Kirasi ID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Unregister Kirasi maseva"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Feature: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Unpublishing Product Features"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Chikamu ID: [ProductName], Qualifier: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Kusashambadza Qualified Components"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Sevhisi: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Kumisa mabasa"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Sevhisi: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Kutanga masevhisi"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Kutanga madhairekitori eODBC"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Faira: [ProductName], Folder: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Unregistering modules"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Faira: [ProductName], Folder: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Kunyoresa modules"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Kutsvaga zvigadzirwa zvinokodzera"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Shortcut: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Kubvisa mapfupi"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Kiyi: [ProductName], Zita: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Kubvisa masisitimu registry kukosha"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Kubvisa zvikamu zveODBC"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Faira: [ProductName], Chikamu: [ProductName], Kiyi: [ProductName], Kukosha: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Kubvisa INI mafaera ekupinda"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Folder: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Kubvisa mapepa"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Faira: [ProductName], Dhairekitori: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Kubvisa mafaira"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Chishandiso: [ProductName], Command line: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Kubvisa maapplication"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Ime: [ProductName], vrednost: [ProductName], dejanje [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Updating environment strings"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Faira: [ProductName], Dhairekitori: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Kubvisa mafaira akadhindwa"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Kunyoresa mushandisi"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Kunyoresa maraibhurari emhando"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Kunyoresa chigadzirwa"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Mavara: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Kunyoresa mafonti"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Vashandisi: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Kunyoresa COM + Zvishandiso uye Zvikamu"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Kuvandudza chikamu kunyoresa"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Faira: [ProductName], Dhairekitori: [ProductName], Size: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Kupeta mafaira"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Faira: [ProductName], Dhairekitori: [ProductName], Size: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Kufambisa mafaira"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Chishandiso: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Kutama maficha anoti kubva kune zvinoenderana nemaapplication"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Kuongorora mamiriro ekutanga"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Sevhisi: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Kuisa masevhisi matsva"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Kuisa zvikamu zveODBC"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Yakawana application: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Kutsvaga maapplication anoenderana"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Faira: [ProductName], Dhairekitori: [ProductName], Size: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Kugadzira mafaera maviri"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Sevhisi: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Kudzima masevhisi"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Folder: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Kugadzira mapepa"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Kutsvaga zvigadzirwa zvinokodzera"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Faira: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Kusunga executables"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Property: [ProductName], Siginicha: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Kutsvaga maapplication akaiswa"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Nzvimbo yemahara: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Kugovera registry nzvimbo"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Kunyoresa zviziviso zvepurogiramu"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME Content Type: [ProductName], Kuwedzera: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Kunyoresa MIME ruzivo"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Kuwedzera: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Kunyoresa maseva ekuwedzera"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Kirasi ID: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Kunyoresa Kirasi maseva"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Kuburitsa ruzivo rwechigadzirwa"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Feature: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Publishing Product Features"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Chikamu ID: [ProductName], Qualifier: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Kushambadzira Kwakakodzera Zvikamu"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Shortcut: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Kugadzira mapfupi"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Computing nzvimbo zvinodiwa"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Computing nzvimbo zvinodiwa"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Computing nzvimbo zvinodiwa"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Faira: [ProductName], Dhairekitori: [ProductName], Size: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Kukopa network install mafaira"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Faira: [ProductName], Dhairekitori: [ProductName], Size: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Kukopa mafaera matsva"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Validating install"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Ndokumbira uverenge [ProductName] Rezinesi Agreement"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Kugadziridza"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Namesti"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="&amp;Sprejemam pogoje licenčne pogodbe"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Bigger} Titambire kune [ProductName] Setup Wizard"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Iyo Setup Wizard ichagadzirisa [ProductName] pakombuta yako. Dzvanya Next kuti uenderere mberi kana Kanzura kuti ubude muSetup Wizard."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Iyo Setup Wizard ichaisa [ProductName] pakombuta yako. Dzvanya Next kuti uenderere mberi kana Kanzura kuti ubude muSetup Wizard."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Kushevedzera icon"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Ndokumbira umire apo mugadziri apedza kutara yako disk space zvinodiwa."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Dzoka"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Yagadzirira kugadzirisa [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Dzvanya Gadzirisa kuti uvandudze [ProductName] kubva pakombuta yako. Dzvanya Kudzokera kuti uongorore kana kushandura chero yako yekuisa marongero. Dzvanya Kanzura kuti ubude muwizard."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Kugadziridza"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Yagadzirira kubvisa [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Dzvanya Bvisa kuti ubvise [ProductName] kubva pakombuta yako. Dzvanya Kudzokera kuti uongorore kana kushandura chero yako yekuisa marongero. Dzvanya Kanzura kuti ubude muwizard."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Bvisa"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Yagadzirira kugadzirisa [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Dzvanya Gadzirisa kugadzirisa kuiswa kwe [ProductName]. Dzvanya Kudzokera kuti uongorore kana kushandura chero yako yekuisa marongero. Dzvanya Kanzura kuti ubude muwizard."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Kugadzirisa&amp;kugadzirisa"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Yagadzirira kuchinja [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Dzvanya Change kuti utange kuisa. Dzvanya Kudzokera kuti uongorore kana kushandura chero yako yekuisa marongero. Dzvanya Kanzura kuti ubude muwizard."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Spremeni"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Yagadzirira kuisa [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Dzvanya Install kuti utange kuisa. Dzvanya Kudzokera kuti uongorore kana kushandura chero yako yekuisa marongero. Dzvanya Kanzura kuti ubude muwizard."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Namesti"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Dzvanya bhatani rePedzisa kuti ubudise Setup Wizard."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] setup yakakanganiswa. Sitimu yako haina kuvandudzwa. Kuti uise chirongwa ichi pane imwe nguva inotevera, ndapota mhanyisa yekuisa zvakare."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Setup Wizard yavhiringwa"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Zvose zvirongwa zvepurogiramu zvichaiswa. Inoda yakawanda dhisiki nzvimbo."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Inobvumira vashandisi kuti vasarudze kuti ndeapi mapurogiramu achaiswa uye kuti achaiswa kupi. Inokurudzirwa kune vashandisi vepamusoro."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Inoisa zvinonyanya kuzivikanwa zvechirongwa. Inokurudzirwa kune vakawanda vashandisi."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Sarudza setup type inonyatsoenderana nezvido zvako"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Sarudza Setup Type"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Complete Installation"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C &amp; yakakwana"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Custom Installation"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ustom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Typical Installation"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Tipično"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Bigger}Kutangazve iyo [ProductName] Setup Wizard"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Iyo Setup Wizard inopedzisa kugadzika kwe [ProductName] pakombuta yako. Dzvanya Isa kuti uenderere mberi kana Kanzura kuti ubude muSetup Wizard."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Namesti"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Mamiriro"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Progress yaitwa"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Kuvandudza [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Ndapota mira apo Setup Wizard ichigadziridza [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Kubvisa [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Ndapota mira apo Setup Wizard yabvisa [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Kugadzirisa [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Ndapota mira apo Setup Wizard ichigadzirisa [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Kuchinja [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Ndokumbira umire apo Setup Wizard yachinja [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Kuisa [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Ndapota mira apo Setup Wizard yaisa [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Bigger} Titambire kune [ProductName] Setup Wizard"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Ndapota mira apo Setup Wizard inogadzirira kukutungamira kuburikidza nekuiswa."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Neimwe nzira, iwe unogona kusarudza kudzima iyo installer&amp;apos;s rollback mashandiro. Kudzima kudzoreredza kunodzivirira mugadziri kubva kudzoreredza mamiriro ekutanga ekombuta yako kana kuiswa kwacho kukavhiringwa neimwe nzira. Dzvanya Ehe kana iwe uchida kutora njodzi yekudzima rollback."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title} Kunze kweDisk Space"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Disk nzvimbo inodiwa pakugadzika inodarika iripo disk space."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Iwo mavhoriyamu akaiswa pachena haana nzvimbo yakakwana yedhisiki iripo kune izvo zvasarudzwa izvozvi. Unogona kubvisa mamwe mafaera kubva kumavhoriyamu akataridzwa, kuisa mashoma maficha, kana kusarudza imwe nzira yekuenda nayo."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title} Kunze kweDisk Space"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Disk nzvimbo inodiwa pakugadzika inodarika iripo disk space."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Iwo mavhoriyamu akaiswa pachena haana nzvimbo yakakwana yedhisiki iripo kune izvo zvasarudzwa izvozvi. Unogona kubvisa mamwe mafaera kubva kumavhoriyamu akataridzwa, kuisa mashoma maficha, kana kusarudza imwe nzira yekuenda nayo."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Usavhara maapplication. A reboot ichadiwa."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Zaprite aplikacije in jih poskusite znova zagnati."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Mafaira Ari Kushandiswa"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Mamwe mafaera anoda kuvandudzwa ari kushandiswa parizvino."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Maapplication anotevera ari kushandisa mafaera anoda kuvandudzwa neseti iyi. Iwe unogona kurega Setup Wizard ivhare ivo uye edza kuvatangazve kana kutangazve muchina gare gare."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Bigger} Titambire kune [ProductName] Setup Wizard"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Iyo Setup Wizard inokutendera kuti uchinje nzira yekuiswa nayo [ProductName] pakombuta yako kana kuibvisa kubva pakombuta yako. Dzvanya Next kuti uenderere mberi kana Kanzura kuti ubude muSetup Wizard."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] haigone kugadzirwa."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Inogadzirisa zvikanganiso mukumisikidzwa kwazvino nekugadzirisa mafaera asipo uye ane huori, mapfupi, uye zvinyorwa zvekunyoresa."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] haigone kubviswa."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Inobvisa [ProductName] kubva pakombuta yako."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] haina zvimiro zvinosarudzika zvakazvimirira."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Inokutendera kuti uchinje nzira iyo maficha anoiswa."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Shandura, gadzirisa, kana bvisa kuisa"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Sarudza oparesheni yaunoda kuita."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Bvisa Installation"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Bvisa"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Repair Installation"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Kugadzirisa&amp;kugadzirisa"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Chinja Installation"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Spremeni"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Chibvumirano cherezinesi rekupedzisira"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Ndokumbira uverenge chibvumirano cherezinesi chinotevera"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="&amp;Sprejemam pogoje licenčne pogodbe"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Information icon"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Dhairekitori rekuisa rinofanira kunge riri pane hard drive yemuno."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Spremeni ..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Kuisa &amp;folder:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] ichaiswa mu-per-muchina folda nekukasira uye inowanikwa kune vese vashandisi. Iwe unogona kushandura iyo default yekuisa folda. Iwe unofanirwa kuve nemvumo yeMutongi wenzvimbo."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Isa kune vese vashandisi veiyi &amp;muchina"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] haitsigire mushandisi wega wega."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] ichaiswa mu-per-user folda uye inongowanikwa kune yako mushandisi account. Iwe haudi maruramiro emuno Administrator."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\ WixUI_Font_Emphasized}Isa &amp; chete iwe ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kuisa Sikuru"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Sarudza iyo yekuisa scope uye folda"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Isa [ProductName] ku:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Dzvanya Next kuti uise kune iyo default folda kana kudzvanya Shandura kusarudza imwe."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Nzvimbo Yekuenda"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Spremeni ..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Mafaira Ari Kushandiswa"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Mamwe mafaera anoda kuvandudzwa ari kushandiswa parizvino."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Maapplication anotevera ari kushandisa mafaera anoda kuvandudzwa neseti iyi. Vhara maapplication aya wobva wadzvanya &amp;Edzazve kuti uenderere mberi neseta kana Buda kuti ubude."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="Enda&amp;kubuda"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Spremeni"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Namesti"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Zvinhu Zvigadzirwa"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Sarudza nzira yaunoda kuti maficha aiswe."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Product features"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Dzvanya bhatani rePedzisa kuti ubudise Setup Wizard."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Setup Wizard yakapera nguva isati yakwana nekuda kwechikanganiso. Sitimu yako haina kuvandudzwa. Kuisa chirongwa ichi pane imwe nguva inotevera, mhanya Setup Wizard zvakare."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Setup Wizard yakapera nguva isati yakwana"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\ WixUI_Font_Bigger}Yakapedza [ProductName] Setup Wizard"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Dzvanya bhatani rePedzisa kuti ubudise Setup Wizard."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Information icon"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Ruzivo rwechinyorwa"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Disiki Space Zvinodiwa"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Iyo disk space inodiwa pakuiswa kwezvinhu zvakasarudzwa."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Mavhoriyamu akakwidziridzwa haana nzvimbo yakakwana yedhisiki inowanikwa kune zvakasarudzwa. Unogona kubvisa mamwe mafaera kubva kumavhoriyamu akaiswa, kuisa mashoma maficha, kana kusarudza akasiyana madhiraivha."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Nzvimbo:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kugadzika Kwetsika"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Sarudza nzira yaunoda kuti maficha aiswe."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Dzvanya zvidhori mumuti pazasi kuti uchinje nzira iyo maficha achaiswa."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Disk &amp;Kushandisa"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Re&amp;set"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;rowser..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Muti wezvisarudzo"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Information icon"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Ali ste prepričani, da želite preklicati namestitev [ProductName]?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Shandura folda yekwauri kuenda"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Bhurawuza kune folda yekuenda"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Ime mape:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Gadzira folda itsva"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Kukwira nhanho imwe"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Tarisa mukati:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;advanced"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Namesti"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Dzvanya Insta kuti uise chigadzirwa chine default sarudzo iwe chete. Dzvanya Advanced kuti uchinje sarudzo dzekuisa."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Dzvanya Insta kuti uise chigadzirwa chine default sarudzo kune vese vashandisi. Dzvanya Advanced kuti uchinje sarudzo dzekuisa."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="&amp;Sprejemam pogoje licenčne pogodbe"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\ WixUI_Font_Title}Ndokumbira uverenge [ProductName] Rezinesi Agreement"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Dhinda"/>
+	<String Id="WixUIOK" Overridable="yes" Value="OK"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Aihwa"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Ehe"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Ignore"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Edzazve"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Pedzisa"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Cancel"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Next"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Kumashure"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Uninstalling Windows Firewall kumisikidza"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Kudzosera kumashure Windows Firewall kumisikidza"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Kuisa Windows Firewall configuration"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Kudzosera kumashure Windows Firewall kumisikidza"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Kugadzirisa Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Kugadzirisa Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Haikwanise kubatana neWindows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations yezvishandiso zviri kure zviripo senge sarudzo mukugadzirisa"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Wona maseva eRAAS muExplorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Gadzira zvidimburiko zvemaapplication ari kure kune server maapplication pakombuta yemuno"/>

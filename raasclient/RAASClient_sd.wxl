@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="sd" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="sd" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="حجم"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="ڊسڪ سائيز"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="گهربل"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="فرق"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="دستياب"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="باقي وقت: { [ProductName] منٽ { [ProductName] سيڪنڊ}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="هي مضمون توهان جي هارڊ ڊرائيو تي [ProductName] جي ضرورت آهي. ان ۾ [ProductName] مان [ProductName] ذيلي خصوصيتون چونڊيل آهن. توهان جي هارڊ ڊرائيو تي ذيلي خصوصيتن جي ضرورت آهي [ProductName]."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="هي مضمون توهان جي هارڊ ڊرائيو تي [ProductName] جي ضرورت آهي. ان ۾ [ProductName] مان [ProductName] ذيلي خصوصيتون چونڊيل آهن. ذيلي خصوصيتون توهان جي هارڊ ڊرائيو تي آزاد ٿين ٿيون [ProductName]."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="هي مضمون توهان جي هارڊ ڊرائيو تي [ProductName] کي آزاد ڪري ٿو. ان ۾ [ProductName] مان [ProductName] ذيلي خصوصيتون چونڊيل آهن. توهان جي هارڊ ڊرائيو تي ذيلي خصوصيتن جي ضرورت آهي [ProductName]."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="هي مضمون توهان جي هارڊ ڊرائيو تي [ProductName] کي آزاد ڪري ٿو. ان ۾ [ProductName] مان [ProductName] ذيلي خصوصيتون چونڊيل آهن. ذيلي خصوصيتون توهان جي هارڊ ڊرائيو تي آزاد ٿين ٿيون [ProductName]."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="هي خصوصيت نيٽ ورڪ مان هلائڻ لاءِ رهندي"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="ھي خصوصيت تبديل ٿي ويندي رن کان نيٽ ورڪ اسٽيٽ تان مقامي هارڊ ڊرائيو تي انسٽال ٿيڻ لاءِ"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="هي خصوصيت تبديل ٿي ويندي رن کان نيٽ ورڪ اسٽيٽ کان سيٽ ڪرڻ لاءِ جڏهن گهربل هجي"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="هي خصوصيت مڪمل طور تي انسٽال ٿي ويندي، توهان ان کي نيٽ ورڪ تان هلائڻ جي قابل نه هوندا"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="هي مضمون توهان جي مقامي هارڊ ڊرائيو مان هٽايو ويندو، پر اڃا تائين نيٽ ورڪ تان هلائڻ لاء دستياب هوندو"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="هي مضمون توهان جي مقامي هارڊ ڊرائيو تي رهندو"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="هي مضمون توهان جي مقامي هارڊ ڊرائيو مان هٽايو ويندو، پر سي ڊي مان هلائڻ لاءِ اڃا به موجود هوندو"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="هي فيچر توهان جي مقامي هارڊ ڊرائيو مان هٽايو ويندو، پر جڏهن گهربل هجي انسٽال ڪيو ويندو"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="هي مضمون مڪمل طور تي هٽايو ويندو"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="ھن خصوصيت لاءِ قيمت گڏ ڪرڻ..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="هي مضمون توهان جي هارڊ ڊرائيو تي [ProductName] جي ضرورت آهي."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="هي مضمون توهان جي هارڊ ڊرائيو تي [ProductName] کي آزاد ڪري ٿو."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="هي فيچر تبديل ٿي ويندو رن مان CD اسٽيٽ تان مقامي هارڊ ڊرائيو تي انسٽال ٿيڻ لاءِ"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="هي فيچر سي ڊي مان هلائڻ لاءِ باقي رهندو"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="هي خصوصيت تبديل ٿي ويندي رن کان سي ڊي اسٽيٽ کان سيٽ ڪرڻ لاءِ جڏهن گهربل هجي"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="هي فيچر مڪمل طور تي انسٽال ڪيو ويندو، توهان ان کي سي ڊي مان هلائي نه سگهندا"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="هي خصوصيت نيٽ ورڪ تان هلائڻ لاءِ دستياب هوندي"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="هي مضمون توهان جي مقامي هارڊ ڊرائيو تي نصب ڪيو ويندو"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="هي فيچر سي ڊي مان هلائڻ لاءِ موجود هوندو"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="انسٽال ڪيو ويندو جڏهن ضرورت هجي"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="هي خصوصيت غير دستياب ٿي ويندي"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="هي فيچر انسٽال ڪيو ويندو نيٽ ورڪ تان هلائڻ لاءِ"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="هي مضمون مقامي هارڊ ڊرائيو تي نصب ڪيو ويندو"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="هي فيچر سي ڊي مان هلائڻ لاءِ انسٽال ڪيو ويندو"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="هي فيچر مقرر ڪيو ويندو جڏهن گهربل هجي انسٽال ڪيو وڃي"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="هي فيچر انسٽال ٿيل نه رهندو"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="گهربل معلومات گڏ ڪرڻ..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="فولڊر|نئون فولڊر"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="نيٽ ورڪ کان هلائڻ لاء نصب ڪيو ويندو"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="مقامي هارڊ ڊرائيو تي نصب ڪيو ويندو"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="سي ڊي مان هلائڻ لاءِ انسٽال ڪيو ويندو"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="نيٽ ورڪ مان هلائڻ لاءِ پوري خصوصيت انسٽال ڪئي ويندي"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="سموري خصوصيت مقامي هارڊ ڊرائيو تي نصب ڪئي ويندي"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="سي ڊي مان هلائڻ لاءِ پوري فيچر انسٽال ڪئي ويندي"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="فيچر انسٽال ڪيو ويندو جڏهن ضرورت هجي"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="پوري خصوصيت موجود نه هوندي"/>
+	<String Id="UITextMB" Overridable="yes" Value="ايم بي"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="جي بي"/>
+	<String Id="UITextbytes" Overridable="yes" Value="بائيٽ"/>
+	<String Id="Error1938" Overridable="yes" Value="اسيمبلي جي انسٽاليشن دوران هڪ نقص پيدا ٿيو &amp;apos;[ProductName]&amp;apos;. اسيمبليءَ جا هڪ يا وڌيڪ ماڊل نه ملي سگهيا آهن. HRESULT: [ProductName].{{اسمبلي انٽرفيس: [ProductName]، فنڪشن: [ProductName]، جزو: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="اسيمبلي جي انسٽاليشن دوران هڪ نقص پيدا ٿيو &amp;apos;[ProductName]&amp;apos;. دستخط يا فهرست جي تصديق نه ٿي سگهي آهي يا صحيح ناهي. HRESULT: [ProductName].{{اسمبلي انٽرفيس: [ProductName]، فنڪشن: [ProductName]، جزو: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="اسيمبلي جي انسٽاليشن دوران هڪ نقص پيدا ٿيو &amp;apos;[ProductName]&amp;apos;. اسيمبلي کي مضبوط طور تي نالو نه ڏنو ويو آهي يا گهٽ ۾ گهٽ اهم ڊيگهه سان دستخط نه ڪيو ويو آهي. HRESULT: [ProductName].{{اسمبلي انٽرفيس: [ProductName]، فنڪشن: [ProductName]، جزو: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="اسيمبلي جي انسٽاليشن دوران هڪ نقص پيدا ٿيو &amp;apos;[ProductName]&amp;apos;. مهرباني ڪري حوالو ڏيو مدد ۽ سپورٽ وڌيڪ معلومات لاءِ. HRESULT: [ProductName].{{اسمبلي انٽرفيس: [ProductName]، فنڪشن: [ProductName]، جزو: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="مشين تي پاليسي ذريعي استعمال ڪندڙ تنصيب بند ٿيل آهن."/>
+	<String Id="Error1933" Overridable="yes" Value="ونڊوز انسٽالر سروس هڪ يا وڌيڪ محفوظ ٿيل ونڊوز فائلن کي اپڊيٽ نه ڪري سگهي ٿي.{ SFP غلطي: [ProductName]. محفوظ فائلن جي فهرست:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="ونڊوز انسٽالر سروس محفوظ ٿيل ونڊوز فائل کي اپڊيٽ نه ڪري سگهي ٿي [ProductName]."/>
+	<String Id="Error1931" Overridable="yes" Value="ونڊوز انسٽالر سروس سسٽم فائل کي اپڊيٽ نٿو ڪري سگهي [ProductName] ڇاڪاڻ ته فائل ونڊوز طرفان محفوظ ٿيل آهي. هن پروگرام جي صحيح ڪم ڪرڻ لاءِ توهان کي پنهنجي آپريٽنگ سسٽم کي اپڊيٽ ڪرڻ جي ضرورت ٿي سگھي ٿي."/>
+	<String Id="Error1930" Overridable="yes" Value="خدمت جي وضاحت &amp;apos;[ProductName]&amp;apos; ([ProductName]) تبديل نه ٿي سگهي."/>
+	<String Id="Error1929" Overridable="yes" Value="COM+ ايپليڪيشن کي غير رجسٽر ڪرڻ ۾ غلطي. وڌيڪ معلومات لاءِ پنهنجي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1928" Overridable="yes" Value="COM+ ايپليڪيشن رجسٽر ڪرڻ ۾ غلطي. وڌيڪ معلومات لاءِ پنهنجي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1927" Overridable="yes" Value="جزو خدمتون (COM+ 1.0) هن ڪمپيوٽر تي نصب نه آهن. ھن انسٽاليشن کي ڪاميابيءَ سان مڪمل ڪرڻ لاءِ اجزاء جي خدمتن جي ضرورت آھي. اجزاء جون خدمتون ونڊوز 2000 تي دستياب آهن."/>
+	<String Id="Error1926" Overridable="yes" Value="فائل &amp;apos;[ProductName]&amp;apos; لاءِ فائل سيڪيورٽي سيٽ نه ٿي سگھي. غلطي: [ProductName]. تصديق ڪريو ته توھان وٽ ڪافي استحقاق آھن ھن فائل لاءِ حفاظتي اجازتن کي تبديل ڪرڻ لاءِ."/>
+	<String Id="Error1925" Overridable="yes" Value="توهان وٽ ڪافي استحقاق نه آهن هن انسٽاليشن کي مڪمل ڪرڻ لاءِ مشين جي سڀني استعمال ڪندڙن لاءِ. ايڊمنسٽريٽر طور لاگ ان ٿيو ۽ پوءِ هن انسٽاليشن جي ٻيهر ڪوشش ڪريو."/>
+	<String Id="Error1924" Overridable="yes" Value="ماحوليات جي متغير کي تازه ڪاري نه ٿي سگهيو &amp;apos;[ProductName]&amp;apos;. تصديق ڪريو ته توهان وٽ ڪافي استحقاق آهن ماحول جي تبديلين کي تبديل ڪرڻ لاءِ."/>
+	<String Id="Error1923" Overridable="yes" Value="سروس &amp;apos;[ProductName]&amp;apos; ([ProductName]) انسٽال نه ٿي سگھي. تصديق ڪريو ته توھان وٽ ڪافي استحقاق آھن سسٽم سروسز کي انسٽال ڪرڻ لاءِ."/>
+	<String Id="Error1922" Overridable="yes" Value="خدمت &amp;apos;[ProductName]&amp;apos; ([ProductName]) ڊهي نه ٿي سگهي. تصديق ڪريو ته توھان وٽ ڪافي استحقاق آھن سسٽم سروسز کي ختم ڪرڻ لاءِ."/>
+	<String Id="Error1921" Overridable="yes" Value="سروس &amp;apos;[ProductName]&amp;apos; ([ProductName]) روڪي نه ٿي سگهي. تصديق ڪريو ته توھان وٽ ڪافي استحقاق آھن سسٽم سروسز کي روڪڻ لاءِ."/>
+	<String Id="Error1920" Overridable="yes" Value="سروس &amp;apos;[ProductName]&amp;apos; ([ProductName]) شروع ٿيڻ ۾ ناڪام ٿي. تصديق ڪريو ته توھان وٽ ڪافي استحقاق آھن سسٽم خدمتون شروع ڪرڻ لاءِ."/>
+	<String Id="Error1919" Overridable="yes" Value="ODBC ڊيٽا ماخذ کي ترتيب ڏيڻ ۾ غلطي: [ProductName]، ODBC غلطي [ProductName]: [ProductName]. تصديق ڪريو ته فائل [ProductName] موجود آهي ۽ توهان ان تائين رسائي ڪري سگهو ٿا."/>
+	<String Id="Error1918" Overridable="yes" Value="ODBC ڊرائيور نصب ڪرڻ ۾ غلطي: [ProductName]، ODBC غلطي [ProductName]: [ProductName]. تصديق ڪريو ته فائل [ProductName] موجود آهي ۽ توهان ان تائين رسائي ڪري سگهو ٿا."/>
+	<String Id="Error1917" Overridable="yes" Value="ODBC ڊرائيور کي هٽائڻ ۾ غلطي: [ProductName]، ODBC غلطي [ProductName]: [ProductName]. تصديق ڪريو ته توهان وٽ ODBC ڊرائيورن کي هٽائڻ لاءِ ڪافي استحقاق آهن."/>
+	<String Id="Error1916" Overridable="yes" Value="ODBC ڊرائيور مئنيجر کي نصب ڪرڻ ۾ غلطي، ODBC غلطي [ProductName]: [ProductName]. توهان جي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1915" Overridable="yes" Value="ODBC ڊرائيور مئنيجر کي هٽائڻ ۾ غلطي، ODBC غلطي [ProductName]: [ProductName]. توهان جي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1914" Overridable="yes" Value="فائل [ProductName] کي ريبوٽ ڪرڻ تي فائل [ProductName] کي تبديل ڪرڻ لاءِ شيڊول نه ٿي سگھيو. تصديق ڪريو ته توهان وٽ فائل لکڻ جي اجازت آهي [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="ini فائل کي اپڊيٽ نه ڪري سگهيو [ProductName][ProductName]. تصديق ڪريو ته فائل موجود آهي ۽ توهان ان تائين رسائي ڪري سگهو ٿا."/>
+	<String Id="Error1912" Overridable="yes" Value="فائل لاءِ قسم جي لائبريري کي غير رجسٽر نه ٿي سگھيو [ProductName]. توهان جي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1911" Overridable="yes" Value="فائل لاءِ قسم جي لائبريري رجسٽر نه ٿي سگھي [ProductName]. توهان جي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1910" Overridable="yes" Value="شارٽ ڪٽ ختم نه ٿي سگهيو [ProductName]. تصديق ڪريو ته شارٽ کٽ فائل موجود آهي ۽ توهان ان تائين رسائي ڪري سگهو ٿا."/>
+	<String Id="Error1909" Overridable="yes" Value="شارٽ ڪٽ ٺاهي نه سگهيو [ProductName]. تصديق ڪريو ته منزل فولڊر موجود آهي ۽ توهان ان تائين رسائي ڪري سگهو ٿا."/>
+	<String Id="Error1908" Overridable="yes" Value="فونٽ کي غير رجسٽر نه ٿي سگھيو [ProductName]. پڪ ڪريو ته توهان وٽ ڪافي اجازتون آهن فونٽ هٽائڻ لاءِ."/>
+	<String Id="Error1907" Overridable="yes" Value="فونٽ رجسٽر نه ٿي سگهيو [ProductName]. تصديق ڪريو ته توهان وٽ فونٽ انسٽال ڪرڻ لاءِ ڪافي اجازتون آهن، ۽ اهو سسٽم هن فونٽ کي سپورٽ ڪري ٿو."/>
+	<String Id="Error1906" Overridable="yes" Value="پيڪيج کي ڪيش ڪرڻ ۾ ناڪام ٿيو [ProductName]. غلطي: [ProductName]. توهان جي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1905" Overridable="yes" Value="ماڊل [ProductName] غير رجسٽر ٿيڻ ۾ ناڪام ٿيو. HRESULT [ProductName]. توهان جي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1904" Overridable="yes" Value="ماڊل [ProductName] رجسٽر ٿيڻ ۾ ناڪام ٿيو. HRESULT [ProductName]. توهان جي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1903" Overridable="yes" Value="ريبوٽ آپريشن کي شيڊول ڪرڻ: فائل کي حذف ڪرڻ [ProductName]. آپريشن مڪمل ڪرڻ لاءِ ريبوٽ ڪرڻ گھرجي."/>
+	<String Id="Error1902" Overridable="yes" Value="ريبوٽ آپريشن کي شيڊول ڪرڻ: فائل جو نالو تبديل ڪرڻ [ProductName] کان [ProductName]. آپريشن مڪمل ڪرڻ لاءِ ريبوٽ ڪرڻ گھرجي."/>
+	<String Id="Error1901" Overridable="yes" Value="ماخذ انسٽال ڊيٽابيس مان پڙهڻ جي ڪوشش ۾ غلطي: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="تنصيب لاءِ صحيح منزل فولڊر مقرر نه ٿي سگهيو."/>
+	<String Id="Error1806" Overridable="yes" Value="توھان وٽ ڪافي استحقاق آھن ھن فولڊر کي پڙھڻ لاءِ."/>
+	<String Id="Error1805" Overridable="yes" Value="فولڊر [ProductName] موجود ناهي. مھرباني ڪري موجوده فولڊر ڏانھن رستو داخل ڪريو."/>
+	<String Id="Error1804" Overridable="yes" Value="ڊرائيو ۾ ڪا به ڊسڪ نه آهي [ProductName]. مھرباني ڪري ھڪڙي داخل ڪريو ۽ ٻيهر ڪوشش ڪريو تي ڪلڪ ڪريو، يا براؤز ڊائلاگ ڏانھن موٽڻ لاءِ منسوخ ڪريو تي ڪلڪ ڪريو ۽ ھڪڙو مختلف حجم چونڊيو."/>
+	<String Id="Error1803" Overridable="yes" Value="ڊرائيو ۾ ڪا به ڊسڪ نه آهي [ProductName]. مھرباني ڪري ھڪڙي داخل ڪريو ۽ ڪلڪ ڪريو ٻيهر ڪوشش ڪريو، يا ڪلڪ ڪريو منسوخ ڪريو اڳئين منتخب ٿيل حجم ڏانھن واپس وڃڻ لاء."/>
+	<String Id="Error1802" Overridable="yes" Value="ياداشت کان ٻاهر. ٻيهر ڪوشش ڪرڻ کان اڳ ٻين ايپليڪيشنن کي بند ڪريو."/>
+	<String Id="Error1801" Overridable="yes" Value="رستو [ProductName] صحيح ناهي. مھرباني ڪري صحيح رستو بيان ڪريو."/>
+	<String Id="Error1732" Overridable="yes" Value="Для завершения установки [ProductName] необходимо перезагрузить компьютер. Другие пользователи уже вошли в систему, и перезапуск может привести к потере ими своих результатов. Хотите перезагрузить компьютер сейчас?"/>
+	<String Id="Error1731" Overridable="yes" Value="پراڊڪٽ [ProductName] لاءِ ماخذ تنصيب پيڪيج ڪلائنٽ پيڪيج سان هم وقت سازي کان ٻاهر آهي. انسٽاليشن پيڪيج جي صحيح ڪاپي استعمال ڪندي ٻيهر انسٽال ڪرڻ جي ڪوشش ڪريو &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="هن ايپليڪيشن کي هٽائڻ لاءِ توهان کي ايڊمنسٽريٽر هجڻ گهرجي. هن ايپليڪيشن کي هٽائڻ لاءِ، توهان ايڊمنسٽريٽر طور لاگ ان ڪري سگهو ٿا، يا مدد لاءِ پنهنجي ٽيڪنيڪل سپورٽ گروپ سان رابطو ڪري سگهو ٿا."/>
+	<String Id="Error1729" Overridable="yes" Value="ٺاھ جوڙ ناڪام."/>
+	<String Id="Error1728" Overridable="yes" Value="ٺاھ جوڙ ڪاميابي سان مڪمل."/>
+	<String Id="Error1727" Overridable="yes" Value="اشتهار ناڪام ٿيو."/>
+	<String Id="Error1726" Overridable="yes" Value="اشتهار ڪاميابي سان مڪمل ٿيو."/>
+	<String Id="Error1725" Overridable="yes" Value="هٽائڻ ناڪام ٿيو."/>
+	<String Id="Error1724" Overridable="yes" Value="هٽائڻ ڪاميابي سان مڪمل ٿيو."/>
+	<String Id="Error1723" Overridable="yes" Value="ھن ونڊوز انسٽالر پيڪيج سان ڪو مسئلو آھي. هن انسٽاليشن لاءِ گهربل هڪ DLL مڪمل نه ٿي سگهيو. پنهنجي مدد ڪندڙ اهلڪارن يا پيڪيج وينڊر سان رابطو ڪريو.{{ عمل [ProductName]، داخلا: [ProductName]، لائبريري: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="ھن ونڊوز انسٽالر پيڪيج سان ڪو مسئلو آھي. سيٽ اپ جي حصي جي طور تي هلندڙ پروگرام توقع جي مطابق ختم نه ٿيو. پنهنجي سپورٽ اهلڪار يا پيڪيج وينڊر سان رابطو ڪريو.{{ عمل [ProductName]، مقام: [ProductName]، حڪم: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="ھن ونڊوز انسٽالر پيڪيج سان ڪو مسئلو آھي. هن انسٽاليشن کي مڪمل ڪرڻ لاءِ گهربل پروگرام هلائي نه سگهيو. پنهنجي سپورٽ اهلڪار يا پيڪيج وينڊر سان رابطو ڪريو.{{ عمل: [ProductName]، مقام: [ProductName]، حڪم: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="ھن ونڊوز انسٽالر پيڪيج سان ڪو مسئلو آھي. ھن انسٽاليشن کي مڪمل ڪرڻ لاءِ گھربل اسڪرپٽ ھلائي نہ سگھيو. پنهنجي سپورٽ اهلڪار يا پيڪيج وينڊر سان رابطو ڪريو."/>
+	<String Id="Error1719" Overridable="yes" Value="ونڊوز انسٽالر سروس تائين رسائي نه ٿي سگھي. اهو ٿي سگهي ٿو جيڪڏهن توهان ونڊوز کي محفوظ موڊ ۾ هلائي رهيا آهيو، يا جيڪڏهن ونڊوز انسٽالر صحيح طريقي سان نصب نه ڪيو ويو آهي. مدد لاءِ پنهنجي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1718" Overridable="yes" Value="فائل [ProductName] رد ڪيو ويو ڊجيٽل دستخط پاليسي طرفان."/>
+	<String Id="Error1717" Overridable="yes" Value="هٽايو ويو [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="ترتيب ڏنل [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="نصب ٿيل [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="[ProductName] جو پراڻو نسخو ختم نٿو ڪري سگھجي. پنھنجي ٽيڪنيڪل سپورٽ گروپ سان رابطو ڪريو.{{ سسٽم جي غلطي [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] ان جي گهربل شين مان هڪ کي انسٽال نٿو ڪري سگهي. پنهنجي ٽيڪنيڪل سپورٽ گروپ سان رابطو ڪريو.{{ سسٽم جي غلطي: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="توهان جي ڪمپيوٽر کي ان جي پوئين حالت ۾ بحال ڪرڻ لاءِ گهربل هڪ يا وڌيڪ فائلون نه ملي سگهيون آهن. بحالي ممڪن نه ٿيندي."/>
+	<String Id="Error1711" Overridable="yes" Value="ڊسڪ تي انسٽاليشن جي معلومات لکڻ دوران هڪ غلطي ٿي وئي. چيڪ ڪريو پڪ ڪريو ته ڪافي ڊسڪ اسپيس موجود آهي، ۽ ڪلڪ ڪريو ٻيهر ڪوشش ڪريو، يا انسٽال کي ختم ڪرڻ لاءِ منسوخ ڪريو."/>
+	<String Id="Error1710" Overridable="yes" Value="Вы можете восстановить компьютер до предыдущего состояния или продолжить установку позже. Хотите восстановить?"/>
+	<String Id="Error1709" Overridable="yes" Value="پيداوار: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="تنصيب ناڪام ٿي."/>
+	<String Id="Error1707" Overridable="yes" Value="انسٽاليشن ڪاميابي سان مڪمل ٿي وئي."/>
+	<String Id="Error1706" Overridable="yes" Value="پيداوار لاء هڪ انسٽاليشن پيڪيج [ProductName] نه ملي سگهي. انسٽاليشن پيڪيج جي صحيح ڪاپي استعمال ڪندي ٻيهر انسٽاليشن جي ڪوشش ڪريو &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="Выполняется предыдущая установка этого продукта. Для продолжения необходимо отменить изменения, внесённые в ходе этой установки. Отменить эти изменения?"/>
+	<String Id="Error1704" Overridable="yes" Value="Установка [ProductName] в настоящее время приостановлена. Для продолжения необходимо отменить изменения, внесённые в ходе этой установки. Отменить эти изменения?"/>
+	<String Id="Error1703" Overridable="yes" Value="توهان کي پنهنجي سسٽم کي ٻيهر شروع ڪرڻ گهرجي ترتيب واري تبديلين لاءِ جيڪا [ProductName] تي اثر انداز ٿئي ٿي. ھاڻي ٻيهر شروع ڪرڻ لاءِ ھائو ڪلڪ ڪريو يا نه جيڪڏھن توھان دستي طور تي بعد ۾ ٻيهر شروع ڪرڻ جو ارادو ڪيو."/>
+	<String Id="Error1702" Overridable="yes" Value="انسٽالر کي توهان جي سسٽم کي ٻيهر شروع ڪرڻ گهرجي ان کان اڳ جو [ProductName] جي ترتيب جاري رکي سگهي. ھاڻي ٻيهر شروع ڪرڻ لاءِ ھائو ڪلڪ ڪريو يا نه جيڪڏھن توھان دستي طور تي بعد ۾ ٻيهر شروع ڪرڻ جو ارادو ڪيو."/>
+	<String Id="Error1701" Overridable="yes" Value="ڪنجي [ProductName] صحيح نه آهي. پڪ ڪريو ته توهان صحيح چيڪ داخل ڪيو آهي."/>
+	<String Id="Error1609" Overridable="yes" Value="سيڪيورٽي سيٽنگون لاڳو ڪرڻ دوران هڪ نقص پيدا ٿيو. [ProductName] صحيح استعمال ڪندڙ يا گروپ نه آهي. اهو مسئلو ٿي سگهي ٿو پيڪيج سان، يا مسئلو ٿي سگهي ٿو نيٽ ورڪ تي ڊومين ڪنٽرولر سان ڳنڍڻ ۾. پنھنجي نيٽ ورڪ ڪنيڪشن چيڪ ڪريو ۽ ڪلڪ ڪريو ٻيهر ڪوشش ڪريو، يا انسٽال کي ختم ڪرڻ لاءِ منسوخ ڪريو. {{استعمال ڪندڙ جي SID ڳولڻ ۾ ناڪام، سسٽم جي غلطي [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="هن پراڊڪٽ کي انسٽال ڪرڻ لاءِ مشين تي ڪا به اڳئين نصب ڪيل تعميل پراڊڪٽ نه ملي سگهي."/>
+	<String Id="Error1607" Overridable="yes" Value="انسٽاليشن کي جاري رکڻ کان اڳ ھيٺ ڏنل ايپليڪيشنن کي بند ڪيو وڃي."/>
+	<String Id="Error1606" Overridable="yes" Value="نيٽ ورڪ جي جڳھ تائين رسائي نه ٿي سگھي [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="حجم &amp;apos;[ProductName]&amp;apos; تي ڪافي ڊسڪ اسپيس نه آهي ريٽوري فعال سان انسٽال کي جاري رکڻ لاءِ. [ProductName] KB گهربل آهن، پر صرف [ProductName] KB موجود آهن. ريٽوري معلومات کي محفوظ ڪرڻ کان سواءِ انسٽال کي جاري رکڻ لاءِ نظر انداز ڪريو تي ڪلڪ ڪريو، ٻيهر دستياب جاءِ جي جانچ ڪرڻ لاءِ ٻيهر ڪوشش ڪريو، يا انسٽاليشن کي ڇڏڻ لاءِ منسوخ ڪريو تي ڪلڪ ڪريو."/>
+	<String Id="Error1604" Overridable="yes" Value="پراڊڪٽ &amp;apos;[ProductName]&amp;apos; اڳ ۾ ئي انسٽال ٿيل آهي، هن پراڊڪٽ جي انسٽاليشن کي روڪيندي. ٻئي پراڊڪٽ غير مطابقت رکندڙ آهن."/>
+	<String Id="Error1603" Overridable="yes" Value="فائل [ProductName][ProductName] هيٺ ڏنل عمل ذريعي استعمال ۾ رکيل آهي: نالو: [ProductName]، Id: [ProductName]، Window Title: &amp;apos;[ProductName]&amp;apos;}. انهي ايپليڪيشن کي بند ڪريو ۽ ٻيهر ڪوشش ڪريو."/>
+	<String Id="Error1602" Overridable="yes" Value="Вы уверены, что хотите отменить?"/>
+	<String Id="Error1601" Overridable="yes" Value="ڊسڪ اسپيس کان ٻاهر -- حجم: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="استعمال ڪندڙ &amp;apos;[ProductName]&amp;apos; اڳ ۾ پراڊڪٽ &amp;apos;[ProductName]&amp;apos; لاءِ انسٽاليشن شروع ڪئي آهي. انهي صارف کي ٻيهر انسٽال ڪرڻ جي ضرورت پوندي انهي کان پهريان اهي اهي پراڊڪٽ استعمال ڪري سگهن."/>
+	<String Id="Error1502" Overridable="yes" Value="استعمال ڪندڙ &amp;apos;[ProductName]&amp;apos; اڳ ۾ پراڊڪٽ &amp;apos;[ProductName]&amp;apos; لاءِ انسٽاليشن شروع ڪئي آهي. انهي صارف کي ٻيهر انسٽال ڪرڻ جي ضرورت پوندي انهي کان پهريان اهي اهي پراڊڪٽ استعمال ڪري سگهن. توھان جي موجوده تنصيب ھاڻي جاري رھندي."/>
+	<String Id="Error1501" Overridable="yes" Value="محفوظ ڊيٽا تائين رسائي ۾ غلطي. مھرباني ڪري پڪ ڪريو ته ونڊوز انسٽالر صحيح ترتيب ڏنل آھي ۽ ٻيهر انسٽال ڪرڻ جي ڪوشش ڪريو."/>
+	<String Id="Error1500" Overridable="yes" Value="ٻي انسٽاليشن جاري آهي. توھان کي اھو انسٽاليشن مڪمل ڪرڻ گھرجي ھن کي جاري رکڻ کان اڳ."/>
+	<String Id="Error1410" Overridable="yes" Value="دستياب رجسٽري اسپيس کي وڌائي نه سگھيو. [ProductName] هن ايپليڪيشن جي انسٽاليشن لاءِ KB مفت رجسٽري اسپيس جي ضرورت آهي."/>
+	<String Id="Error1409" Overridable="yes" Value="چيڪ لاءِ حفاظتي معلومات پڙهي نه ٿي سگھي [ProductName].{{ سسٽم جي غلطي [ProductName].}} تصديق ڪريو ته توهان وٽ ان ڪيچي تائين ڪافي پهچ آهي، يا پنهنجي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1408" Overridable="yes" Value="ڪنجي لاءِ ذيلي ڪيئي نالا حاصل نه ٿي سگھيا [ProductName].{{ سسٽم جي غلطي [ProductName].}} تصديق ڪريو ته توهان وٽ ان ڪيچي تائين ڪافي پهچ آهي، يا پنهنجي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1407" Overridable="yes" Value="ڪيچي [ProductName] لاءِ قدر جا نالا حاصل نه ٿي سگھيا."/>
+	<String Id="Error1406" Overridable="yes" Value="قدر [ProductName] کي ڪيئي [ProductName] ڏانهن لکي نه سگهيو.{{ سسٽم جي غلطي [ProductName].}} تصديق ڪريو ته توهان وٽ ان ڪيچي تائين ڪافي پهچ آهي، يا پنهنجي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1405" Overridable="yes" Value="قدر پڙهي نه سگهيو [ProductName] مان ڪيئي [ProductName].{{ سسٽم جي غلطي [ProductName].}} تصديق ڪريو ته توهان وٽ ان ڪيچي تائين ڪافي پهچ آهي، يا پنهنجي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1404" Overridable="yes" Value="چاٻي کي ختم نه ڪري سگهيو [ProductName].{{ سسٽم جي غلطي [ProductName].}} تصديق ڪريو ته توهان وٽ ان ڪيچي تائين ڪافي پهچ آهي، يا پنهنجي سپورٽ اهلڪار سان رابطو ڪريو."/>
+	<String Id="Error1403" Overridable="yes" Value="قدر حذف نه ٿي سگھيو [ProductName] ڪيچي مان [ProductName]."/>
+	<String Id="Error1402" Overridable="yes" Value="چاٻي نه کولي سگھي: [ProductName].{{ سسٽم جي غلطي [ProductName].}} تصديق ڪريو ته توهان وٽ ان ڪيچي تائين ڪافي پهچ آهي، يا پنهنجي سپورٽ اهلڪارن سان رابطو ڪريو."/>
+	<String Id="Error1401" Overridable="yes" Value="ڪيڏي نه ٿي سگھي: [ProductName].{{ سسٽم جي غلطي [ProductName].}} تصديق ڪريو ته توھان وٽ ان ڪيچي تائين ڪافي پهچ آھي، يا پنھنجي مدد ڪندڙ عملدار سان رابطو ڪريو."/>
+	<String Id="Error1336" Overridable="yes" Value="ھڪڙي عارضي فائل ٺاھڻ ۾ غلطي ٿي آھي جيڪا ھن انسٽاليشن کي مڪمل ڪرڻ لاءِ گھربل آھي.{ فولڊر: [ProductName]. سسٽم غلطي ڪوڊ: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="هن انسٽاليشن لاءِ گهربل ڪابينا فائل &amp;apos;[ProductName]&amp;apos; خراب آهي ۽ استعمال نه ٿي ڪري سگھجي. اهو ظاهر ڪري سگهي ٿو نيٽ ورڪ جي غلطي، CD-ROM مان پڙهڻ ۾ غلطي، يا هن پيڪيج سان ڪو مسئلو."/>
+	<String Id="Error1334" Overridable="yes" Value="فائل &amp;apos;[ProductName]&amp;apos; انسٽال نه ٿي ڪري سگھجي ڇاڪاڻ ته فائل ڪيبنٽ فائل &amp;apos;[ProductName]&amp;apos; ۾ نٿي ملي. اهو ظاهر ڪري سگهي ٿو نيٽ ورڪ جي غلطي، CD-ROM مان پڙهڻ ۾ غلطي، يا هن پيڪيج سان ڪو مسئلو."/>
+	<String Id="Error1333" Overridable="yes" Value="درست ڪرڻ ۾ ناڪام ٿيو [ProductName] فائل: CRC غلطي."/>
+	<String Id="Error1332" Overridable="yes" Value="[ProductName] فائل صحيح طور تي منتقل ڪرڻ ۾ ناڪامي: CRC غلطي."/>
+	<String Id="Error1331" Overridable="yes" Value="[ProductName] فائل کي صحيح طور تي نقل ڪرڻ ۾ ناڪام ٿيو: CRC غلطي."/>
+	<String Id="Error1330" Overridable="yes" Value="هڪ فائل جيڪا گهربل هجي انسٽال نه ٿي ڪري سگھجي ڇاڪاڻ ته ڪابينا فائل [ProductName] ۾ غلط ڊجيٽل دستخط آهي. اهو ظاهر ڪري سگھي ٿو ته ڪابينا فائل خراب آهي.{{ نقص [ProductName] WinVerifyTrust پاران واپس ڪيو ويو"/>
+	<String Id="Error1329" Overridable="yes" Value="هڪ فائل جيڪا گهربل هجي انسٽال نه ٿي ڪري سگھجي ڇاڪاڻ ته ڪابينا فائل [ProductName] ڊجيٽل طور تي دستخط ٿيل نه آهي. اهو ظاهر ڪري سگھي ٿو ته ڪابينا فائل خراب آهي."/>
+	<String Id="Error1328" Overridable="yes" Value="فائل ۾ پيچ لاڳو ڪرڻ ۾ غلطي [ProductName]. اهو شايد ٻين طريقن سان اپڊيٽ ڪيو ويو آهي، ۽ هاڻي هن پيچ ذريعي تبديل نه ٿو ڪري سگهجي. وڌيڪ معلومات لاءِ پنهنجي پيچ وينڊار سان رابطو ڪريو.{{سسٽم جي غلطي: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="غلط ڊرائيو: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="فائل سيڪيورٽي حاصل ڪرڻ ۾ غلطي: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; صحيح مختصر فائل نالو ناهي."/>
+	<String Id="Error1324" Overridable="yes" Value="فولڊر جو رستو &amp;apos;[ProductName]&amp;apos; غلط اکر تي مشتمل آھي."/>
+	<String Id="Error1323" Overridable="yes" Value="فولڊر پاتھ &amp;apos;[ProductName]&amp;apos; ۾ اھي لفظ آھن جيڪي فولڊر پاٿن ۾ درست نه آھن."/>
+	<String Id="Error1322" Overridable="yes" Value="فولڊر جي رستي جو هڪ حصو &amp;apos;[ProductName]&amp;apos; غلط آهي. اهو يا ته خالي آهي يا سسٽم طرفان اجازت ڏنل ڊيگهه کان وڌيڪ آهي."/>
+	<String Id="Error1321" Overridable="yes" Value="انسٽالر وٽ هن فائل کي تبديل ڪرڻ لاءِ ڪافي استحقاق نه آهن: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="بيان ڪيل رستو تمام ڊگهو آهي: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="هڪ نيٽ ورڪ نقص پيدا ٿيو جڏهن سورس فائل ڪابينا کولڻ جي ڪوشش ڪئي وئي: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="ڊاريڪٽري ٺاهڻ جي ڪوشش دوران نيٽ ورڪ جي غلطي ٿي وئي: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="ڊاريڪٽري ٺاهڻ جي ڪوشش دوران هڪ غلطي ٿي وئي: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="فائل مان پڙهڻ جي ڪوشش دوران نيٽ ورڪ ۾ غلطي ٿي وئي: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="مخصوص فولڊر ۾ لکڻ جي قابل ناهي: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="بيان ڪيل رستو &amp;apos;[ProductName]&amp;apos; دستياب ناهي."/>
+	<String Id="Error1313" Overridable="yes" Value="حجم [ProductName] في الحال دستياب ناهي. مھرباني ڪري ٻيو چونڊيو."/>
+	<String Id="Error1312" Overridable="yes" Value="ڊاريڪٽري &amp;apos;[ProductName]&amp;apos; ٺاهي نه ٿي سگھي. هن نالي سان هڪ فائيل اڳ ۾ ئي موجود آهي. مھرباني ڪري نالو تبديل ڪريو يا فائل کي هٽايو ۽ ڪلڪ ڪريو ٻيهر ڪوشش ڪريو، يا ڪلڪ ڪريو منسوخ ڪريو نڪرڻ لاءِ."/>
+	<String Id="Error1311" Overridable="yes" Value="ماخذ فائل نه ملي {{(cabinet)}}: [ProductName]. تصديق ڪريو ته فائل موجود آهي ۽ توهان ان تائين رسائي ڪري سگهو ٿا."/>
+	<String Id="Error1310" Overridable="yes" Value="فائل ۾ لکڻ ۾ غلطي: [ProductName]."/>
+	<String Id="Error1309" Overridable="yes" Value="فائل مان پڙهڻ ۾ غلطي: [ProductName].{{ سسٽم جي غلطي [ProductName].}} تصديق ڪريو ته فائل موجود آهي ۽ توهان ان تائين رسائي ڪري سگهو ٿا."/>
+	<String Id="Error1308" Overridable="yes" Value="ماخذ فائل نه مليو: [ProductName]. تصديق ڪريو ته فائل موجود آهي ۽ توهان ان تائين رسائي ڪري سگهو ٿا."/>
+	<String Id="Error1307" Overridable="yes" Value="هن فائل کي انسٽال ڪرڻ لاءِ ڪافي ڊسڪ اسپيس نه آهي: [ProductName]. ڪجھ ڊسڪ اسپيس خالي ڪريو ۽ ڪلڪ ڪريو ٻيهر ڪوشش ڪريو، يا ڪلڪ ڪريو منسوخ ڪريو نڪرڻ لاءِ."/>
+	<String Id="Error1306" Overridable="yes" Value="ٻي ايپليڪيشن کي &amp;apos;[ProductName]&amp;apos; فائل تائين خاص پهچ آهي. مھرباني ڪري ٻين سڀني ايپليڪيشنن کي بند ڪريو، پوء ڪلڪ ڪريو ٻيهر ڪوشش ڪريو."/>
+	<String Id="Error1305" Overridable="yes" Value="فائل مان پڙهڻ ۾ غلطي [ProductName].{{ سسٽم جي غلطي [ProductName].}} تصديق ڪريو ته فائل موجود آهي ۽ توهان ان تائين رسائي ڪري سگهو ٿا."/>
+	<String Id="Error1304" Overridable="yes" Value="فائل ۾ لکڻ ۾ غلطي: [ProductName]. پڪ ڪريو ته توهان وٽ ان ڊاريڪٽري تائين رسائي آهي."/>
+	<String Id="Error1303" Overridable="yes" Value="انسٽالر وٽ هن ڊاريڪٽري تائين رسائي لاءِ ڪافي استحقاق نه آهن: [ProductName]. انسٽاليشن جاري نه ٿي سگھي. ايڊمنسٽريٽر طور لاگ ان ٿيو يا پنهنجي سسٽم ايڊمنسٽريٽر سان رابطو ڪريو."/>
+	<String Id="Error1302" Overridable="yes" Value="مهرباني ڪري ڊسڪ داخل ڪريو: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="فائل &amp;apos;[ProductName]&amp;apos; ٺاهي نه ٿي سگھي. هن نالي سان هڪ ڊاريڪٽري اڳ ۾ ئي موجود آهي. انسٽال کي منسوخ ڪريو ۽ ڪوشش ڪريو مختلف جڳھ تي انسٽال ڪريو."/>
+	<String Id="Error1101" Overridable="yes" Value="فائل مان پڙهڻ ۾ غلطي: [ProductName].{{ سسٽم جي غلطي [ProductName].}} تصديق ڪريو ته فائل موجود آهي ۽ توهان ان تائين رسائي ڪري سگهو ٿا."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }سيٽ اپ ناڪام ٿيو."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }سيٽ اپ ڪاميابيءَ سان مڪمل ٿيو."/>
+	<String Id="Error23" Overridable="yes" Value="هن ايپليڪيشن جا پراڻا ورجن هٽائڻ لاءِ تياري ڪري رهيا آهيون..."/>
+	<String Id="Error22" Overridable="yes" Value="هن ايپليڪيشن جا پراڻا ورجن هٽائي رهيا آهن..."/>
+	<String Id="Error21" Overridable="yes" Value="گهربل معلومات گڏ ڪرڻ..."/>
+	<String Id="Error20" Overridable="yes" Value="مھرباني ڪري انتظار ڪريو جيستائين ونڊوز ترتيب ڏئي [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="انسٽالر وقت کان اڳ بند ٿي ويو."/>
+	<String Id="Error18" Overridable="yes" Value="انسٽالر هاڻي جواب نه ڏئي رهيو آهي."/>
+	<String Id="Error17" Overridable="yes" Value="ياداشت کان ٻاهر. ٻيهر ڪوشش ڪرڻ کان اڳ ٻين ايپليڪيشنن کي بند ڪريو."/>
+	<String Id="Error16" Overridable="yes" Value="باقي وقت: {[ProductName] منٽ }{[ProductName] سيڪنڊ}"/>
+	<String Id="Error15" Overridable="yes" Value="عمل ختم ٿيو [ProductName]: [ProductName]. واپسي جي قيمت [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="عمل جي شروعات [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="لاگنگ بند ٿي وئي: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="لاگنگ شروع ٿي: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="پيغام جو قسم: [ProductName]، دليل: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}، [ProductName]}، [ProductName]"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="عمل [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{ڊسڪ مڪمل: }}"/>
+	<String Id="Error5" Overridable="yes" Value="انسٽالر کي هن پيڪيج کي انسٽال ڪرڻ ۾ اڻڄاتل غلطي پيش آئي. اهو شايد هن پيڪيج سان هڪ مسئلو ظاهر ڪري سگهي ٿو. غلطي ڪوڊ آهي [ProductName]. {{دليل آهن: [ProductName]، [ProductName]، [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="ڄاڻ [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="خبردار [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{غلطي [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{فاني غلطي: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="پيداوار جي معلومات کي ختم ڪرڻ"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="فائل: [ProductName]، ڊائريڪٽري: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="منتقل ٿيل فائلن کي هٽائڻ"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="فائل: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="بيڪ اپ فائلن کي هٽائڻ"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Acțiune de derulare înapoi:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="درخواست جو حوالو:[ProductName]، اسيمبلي جو نالو:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="اسيمبليءَ جي معلومات کي ختم ڪرڻ"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="درخواست جو حوالو:[ProductName]، اسيمبلي جو نالو:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="اشاعت اسيمبلي جي معلومات"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="فائل: [ProductName]، انحصار: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="انسٽاليشن سسٽم جي فهرست"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="عمل لاءِ اسڪرپٽ آپريشنز پيدا ڪرڻ:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="اشتهارن جي درخواست"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="ڪيڏو: [ProductName]، نالو: [ProductName]، قدر: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="لکڻ جو نظام رجسٽري قدر"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="فائل: [ProductName]، سيڪشن: [ProductName]، ڪيچ: [ProductName]، قدر: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="INI فائلن جي قيمت لکڻ"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Имя: [ProductName], Значение: [ProductName], Действие [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="ماحول جي تارن کي اپڊيٽ ڪرڻ"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="غير رجسٽر ٿيل قسم جي لائبريرين"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="پروجيڪٽ: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="پروگرام جي سڃاڻپ ڪندڙن کي غير رجسٽر ڪرڻ"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME مواد جو قسم: [ProductName]، واڌارو: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="MIME معلومات کي غير رجسٽر ڪرڻ"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="فونٽ: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="غير رجسٽرڊ فونٽس"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="واڌارو: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="ايڪسٽينشن سرورز کي غير رجسٽر ڪرڻ"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{، App ٽائپ: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="COM+ ايپليڪيشنن ۽ اجزاء کي غير رجسٽر ڪرڻ"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="ڪلاس جي سڃاڻپ: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="ڪلاس سرورز کي غير رجسٽر ڪريو"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="خصوصيت: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="پراڊڪٽ جي خصوصيتن کي ختم ڪرڻ"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="اجزاء جي سڃاڻپ: [ProductName]، قابليت: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="اڻ ڇپيل قابليت اجزاء"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="خدمت: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="بند ڪرڻ جون خدمتون"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="خدمت: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="شروع ٿيندڙ خدمتون"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="ODBC ڊائريڪٽرن کي شروع ڪرڻ"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="فائل: [ProductName]، فولڊر: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="غير رجسٽرڊ ماڊلز"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="فائل: [ProductName]، فولڊر: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="رجسٽريشن ماڊلز"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="قابليت جي شين جي ڳولا"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="شارٽ ڪٽ: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="شارٽ ڪٽ ڪڍڻ"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="چاٻي: [ProductName]، نالو: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="سسٽم رجسٽري جي قيمت کي ختم ڪرڻ"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="ODBC اجزاء کي هٽائڻ"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="فائل: [ProductName]، سيڪشن: [ProductName]، ڪيچ: [ProductName]، قدر: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="INI فائلن جي داخلا کي هٽائڻ"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="فولڊر: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="فولڊر ڪڍڻ"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="فائل: [ProductName]، ڊائريڪٽري: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="فائلون ڪڍڻ"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="درخواست: [ProductName]، ڪمانڊ لائن: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="ايپليڪيشنن کي هٽائڻ"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Имя: [ProductName], Значение: [ProductName], Действие [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="ماحول جي تارن کي اپڊيٽ ڪرڻ"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="فائل: [ProductName]، ڊائريڪٽري: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="نقل ٿيل فائلن کي هٽائڻ"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="استعمال ڪندڙ کي رجسٽر ڪرڻ"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="رجسٽري قسم جي لائبريريون"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="پراڊڪٽ جي رجسٽريشن"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="فونٽ: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="رجسٽري فونٽس"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{، App ٽائپ: [ProductName]، استعمال ڪندڙ: [ProductName]، RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="COM+ ايپليڪيشنون ۽ اجزاء رجسٽر ڪرڻ"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="اجزاء جي رجسٽريشن کي اپڊيٽ ڪرڻ"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="فائل: [ProductName]، ڊاريڪٽري: [ProductName]، سائيز: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="پيچنگ فائلون"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="فائل: [ProductName]، ڊاريڪٽري: [ProductName]، سائيز: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="منتقل ٿيل فائلون"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="درخواست: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="لاڳاپيل ايپليڪيشنن مان لڏپلاڻ خصوصيت رياستون"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="لانچ جي حالتن جو جائزو وٺڻ"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="خدمت: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="نئين خدمتن کي انسٽال ڪرڻ"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="ODBC اجزاء کي نصب ڪرڻ"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="مليل ايپليڪيشن: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="لاڳاپيل ايپليڪيشنن جي ڳولا"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="فائل: [ProductName]، ڊاريڪٽري: [ProductName]، سائيز: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="نقل فائلون ٺاهڻ"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="خدمت: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="خدمتون ختم ڪرڻ"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="فولڊر: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="فولڊر ٺاهڻ"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="قابليت جي شين جي ڳولا"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="فائل: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="پابند عملدار"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="ملڪيت: [ProductName]، دستخط: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="انسٽال ٿيل ايپليڪيشنن جي ڳولا"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="خالي جاء: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="رجسٽري جي جاءِ مختص ڪرڻ"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="پروجيڪٽ: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="رجسٽريشن پروگرام جي سڃاڻپ ڪندڙ"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME مواد جو قسم: [ProductName]، واڌارو: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="MIME ڄاڻ رجسٽر ڪرڻ"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="واڌارو: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="ايڪسٽينشن سرورز جي رجسٽريشن"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="ڪلاس جي سڃاڻپ: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="رجسٽري ڪلاس سرورز"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="پيداوار جي معلومات شايع ڪرڻ"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="خصوصيت: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="پبلشنگ پراڊڪٽ جون خاصيتون"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="اجزاء جي سڃاڻپ: [ProductName]، قابليت: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="قابليت جا حصا شايع ڪرڻ"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="شارٽ ڪٽ: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="شارٽ ڪٽ ٺاهڻ"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="ڪمپيوٽنگ خلائي گهرجون"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="ڪمپيوٽنگ خلائي گهرجون"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="ڪمپيوٽنگ خلائي گهرجون"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="فائل: [ProductName]، ڊاريڪٽري: [ProductName]، سائيز: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="ڪاپي نيٽ ورڪ انسٽال فائلون"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="فائل: [ProductName]، ڊاريڪٽري: [ProductName]، سائيز: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="نئين فائلن کي نقل ڪندي"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="تنصيب جي تصديق"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}مهرباني ڪري پڙهو [ProductName] لائسنس جو معاهدو"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="۽ تازه ڪاري"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Установить"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Я принимаю условия лицензионного соглашения"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} ڀلي ڪري آيا [ProductName] سيٽ اپ مددگار"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="سيٽ اپ مددگار توهان جي ڪمپيوٽر تي [ProductName] کي اپڊيٽ ڪندو. جاري رکڻ لاءِ اڳيون ڪلڪ ڪريو يا سيٽ اپ مددگار مان نڪرڻ لاءِ منسوخ ڪريو."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="سيٽ اپ مددگار توهان جي ڪمپيوٽر تي [ProductName] انسٽال ڪندو. جاري رکڻ لاءِ اڳيون ڪلڪ ڪريو يا سيٽ اپ مددگار مان نڪرڻ لاءِ منسوخ ڪريو."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="عجب جي نشاني"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="مھرباني ڪري انتظار ڪريو جيستائين انسٽالر توھان جي ڊسڪ اسپيس گھرجون پوريون ڪري."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="۽ واپسي"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title} اپڊيٽ ڪرڻ لاءِ تيار [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="پنهنجي ڪمپيوٽر مان [ProductName] کي اپڊيٽ ڪرڻ لاءِ تازه ڪاري تي ڪلڪ ڪريو. واپسي تي ڪلڪ ڪريو نظرثاني ڪرڻ يا پنھنجي انسٽاليشن سيٽنگن مان ڪنھن کي تبديل ڪرڻ لاء. وزرڊ مان نڪرڻ لاءِ منسوخ ڪريو تي ڪلڪ ڪريو."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="۽ تازه ڪاري"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title} هٽائڻ لاءِ تيار [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="پنهنجي ڪمپيوٽر مان [ProductName] هٽائڻ لاءِ هٽايو ڪلڪ ڪريو. واپسي تي ڪلڪ ڪريو نظرثاني ڪرڻ يا پنھنجي انسٽاليشن سيٽنگن مان ڪنھن کي تبديل ڪرڻ لاء. وزرڊ مان نڪرڻ لاءِ منسوخ ڪريو تي ڪلڪ ڪريو."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp; هٽايو"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title} مرمت ڪرڻ لاءِ تيار [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="[ProductName] جي تنصيب کي مرمت ڪرڻ لاءِ مرمت تي ڪلڪ ڪريو. واپسي تي ڪلڪ ڪريو نظرثاني ڪرڻ يا پنھنجي انسٽاليشن سيٽنگن مان ڪنھن کي تبديل ڪرڻ لاء. وزرڊ مان نڪرڻ لاءِ منسوخ ڪريو تي ڪلڪ ڪريو."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="ٻيهر ۽ جوڙيو"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title} تبديل ڪرڻ لاءِ تيار [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="انسٽاليشن شروع ڪرڻ لاء تبديلي تي ڪلڪ ڪريو. واپسي تي ڪلڪ ڪريو نظرثاني ڪرڻ يا پنھنجي انسٽاليشن سيٽنگن مان ڪنھن کي تبديل ڪرڻ لاء. وزرڊ مان نڪرڻ لاءِ منسوخ ڪريو تي ڪلڪ ڪريو."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Изменять"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title} انسٽال ڪرڻ لاءِ تيار [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="انسٽاليشن شروع ڪرڻ لاء انسٽال ڪريو تي ڪلڪ ڪريو. واپسي تي ڪلڪ ڪريو نظرثاني ڪرڻ يا پنھنجي انسٽاليشن سيٽنگن مان ڪنھن کي تبديل ڪرڻ لاء. وزرڊ مان نڪرڻ لاءِ منسوخ ڪريو تي ڪلڪ ڪريو."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Установить"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="سيٽ اپ مددگار مان نڪرڻ لاءِ Finish بٽڻ تي ڪلڪ ڪريو."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] سيٽ اپ ۾ مداخلت ڪئي وئي. توھان جو سسٽم تبديل نه ڪيو ويو آھي. هن پروگرام کي بعد ۾ انسٽال ڪرڻ لاءِ، مهرباني ڪري انسٽاليشن کي ٻيهر هلايو."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger[ProductName] سيٽ اپ مددگار مداخلت ڪئي وئي"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="پروگرام جون سڀئي خاصيتون نصب ڪيون وينديون. سڀ کان وڌيڪ ڊسڪ اسپيس جي ضرورت آهي."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="صارفين کي چونڊڻ جي اجازت ڏئي ٿي ته ڪهڙي پروگرام جي خاصيتن کي نصب ڪيو ويندو ۽ اهي ڪٿي نصب ڪيا ويندا. ترقي يافته استعمال ڪندڙن لاء تجويز ڪيل."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="انسٽال ڪري ٿو سڀ کان عام پروگرام خاصيتون. اڪثر استعمال ڪندڙن لاءِ تجويز ڪيل."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="سيٽ اپ جو قسم چونڊيو جيڪو توهان جي ضرورتن کي بهتر بڻائي ٿو"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} چونڊيو سيٽ اپ جو قسم"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="انسٽاليشن مڪمل ڪريو"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="مڪمل ۽ مڪمل"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="حسب ضرورت تنصيب"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="دستور ۽ رواج"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="عام تنصيب"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Типичный"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} ٻيهر شروع ڪرڻ [ProductName] سيٽ اپ مددگار"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="سيٽ اپ مددگار توهان جي ڪمپيوٽر تي [ProductName] جي انسٽاليشن مڪمل ڪندو. جاري رکڻ لاءِ انسٽال ڪريو تي ڪلڪ ڪريو يا سيٽ اپ مددگار مان نڪرڻ لاءِ منسوخ ڪريو."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Установить"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="حالت:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="پيش رفت ٿي وئي"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title} اپڊيٽ ڪيو پيو وڃي [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="مھرباني ڪري انتظار ڪريو جيستائين سيٽ اپ مددگار تازه ڪاري ڪري [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title} هٽائڻ [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="مھرباني ڪري انتظار ڪريو جيستائين سيٽ اپ مددگار [ProductName] کي ختم ڪري."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title} مرمت ڪرڻ [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="مھرباني ڪري انتظار ڪريو جيستائين سيٽ اپ مددگار مرمت ڪري ٿو [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}تبديل ڪندي [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="مھرباني ڪري انتظار ڪريو جيستائين سيٽ اپ مددگار تبديل ٿئي [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title} انسٽال ڪرڻ [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="مھرباني ڪري انتظار ڪريو جيستائين سيٽ اپ مددگار انسٽال ٿئي [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} ڀلي ڪري آيا [ProductName] سيٽ اپ مددگار"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="مھرباني ڪري انتظار ڪريو جيستائين سيٽ اپ مددگار تيار ڪري توھان کي انسٽاليشن جي ذريعي ھدايت ڪرڻ لاءِ."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="متبادل طور تي، توھان چونڊي سگھوٿا انسٽالر جي رولبڪ ڪارڪردگي کي غير فعال ڪرڻ. رول بيڪ کي غير فعال ڪرڻ انسٽالر کي توهان جي ڪمپيوٽر جي اصل حالت کي بحال ڪرڻ کان روڪي ٿو ته انسٽاليشن کي ڪنهن به طريقي سان روڪيو وڃي. ها تي ڪلڪ ڪريو جيڪڏهن توهان رول بيڪ کي غير فعال ڪرڻ جو خطرو کڻڻ چاهيو ٿا."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} ڊسڪ اسپيس کان ٻاهر"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="انسٽاليشن لاءِ گھربل ڊسڪ اسپيس موجود ڊسڪ اسپيس کان وڌيڪ آھي."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="نمايان ٿيل حجمن ۾ موجوده چونڊيل خصوصيتن لاءِ ڪافي ڊسڪ اسپيس موجود نه آھي. توھان ھلائي سگھوٿا ڪجھ فائلون نمايان ٿيل حجمن مان، ڪجھ خاصيتون انسٽال ڪريو، يا ھڪ مختلف منزل ڊرائيو چونڊيو."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} ڊسڪ اسپيس کان ٻاهر"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="انسٽاليشن لاءِ گھربل ڊسڪ اسپيس موجود ڊسڪ اسپيس کان وڌيڪ آھي."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="نمايان ٿيل حجمن ۾ موجوده چونڊيل خصوصيتن لاءِ ڪافي ڊسڪ اسپيس موجود نه آھي. توھان ھلائي سگھوٿا ڪجھ فائلون نمايان ٿيل حجمن مان، ڪجھ خاصيتون انسٽال ڪريو، يا ھڪ مختلف منزل ڊرائيو چونڊيو."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="۽ ايپليڪيشنون بند نه ڪريو. هڪ ريبوٽ جي ضرورت پوندي."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Закройте приложения и попробуйте перезапустить их."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title} استعمال ۾ فائلون"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="ڪجھ فائلون جن کي اپڊيٽ ڪرڻ جي ضرورت آھي في الحال استعمال ۾ آھن."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="هيٺيون ايپليڪيشنون فائلون استعمال ڪري رهيون آهن جن کي هن سيٽ اپ ذريعي اپڊيٽ ڪرڻ جي ضرورت آهي. توھان ڪري سگھوٿا سيٽ اپ مددگار انھن کي بند ڪريو ۽ انھن کي ٻيهر شروع ڪرڻ جي ڪوشش ڪريو يا مشين کي بعد ۾ ريبوٽ ڪريو."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} ڀلي ڪري آيا [ProductName] سيٽ اپ مددگار"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="سيٽ اپ مددگار توهان کي اجازت ڏئي ٿو ته توهان جي ڪمپيوٽر تي [ProductName] خاصيتون انسٽال ٿيل طريقي سان تبديل ڪرڻ يا ان کي توهان جي ڪمپيوٽر مان هٽائڻ. جاري رکڻ لاءِ اڳيون ڪلڪ ڪريو يا سيٽ اپ مددگار مان نڪرڻ لاءِ منسوخ ڪريو."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] مرمت نه ٿي ڪري سگھجي."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="گم ٿيل ۽ خراب فائلن، شارٽ ڪٽ، ۽ رجسٽري داخلن کي درست ڪندي سڀ کان تازي تنصيب ۾ غلطين جي مرمت ڪريو."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] ختم نه ٿو ڪري سگھجي."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="توهان جي ڪمپيوٽر مان [ProductName] هٽائي ٿو."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] ڪا به آزاد چونڊيل خصوصيتون نه آهن."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="توھان کي تبديل ڪرڻ جي اجازت ڏئي ٿي خاصيتون انسٽال ٿيل آھن."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} انسٽاليشن کي تبديل ڪريو، مرمت ڪريو، يا هٽايو"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="آپريشن چونڊيو جيڪو توهان انجام ڏيڻ چاهيو ٿا."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="تنصيب کي هٽايو"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp; هٽايو"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="مرمت جي انسٽاليشن"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="ٻيهر ۽ جوڙيو"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="انسٽاليشن تبديل ڪريو"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Изменять"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}آخر استعمال ڪندڙ لائسنس جو معاهدو"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="مهرباني ڪري هيٺ ڏنل لائسنس جي معاهدي کي احتياط سان پڙهو"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Я принимаю условия лицензионного соглашения"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="معلوماتي آئڪن"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="انسٽاليشن ڊاريڪٽري مقامي هارڊ ڊرائيو تي هجڻ گهرجي."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Изменять..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="انسٽاليشن ۽ فولڊر:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] هڪ في مشين فولڊر ۾ ڊفالٽ طور انسٽال ڪيو ويندو ۽ سڀني استعمال ڪندڙن لاءِ دستياب هوندو. توھان تبديل ڪري سگھو ٿا ڊفالٽ انسٽاليشن فولڊر. توھان وٽ لازمي آھي مقامي منتظم جا استحقاق."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}هن ۽ مشين جي سڀني استعمال ڪندڙن لاءِ انسٽال ڪريو"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] في صارف تنصيب کي سپورٽ نٿو ڪري."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] انسٽال ڪيو ويندو في يوزر فولڊر ۾ ۽ دستياب هوندو صرف توهان جي يوزر اڪائونٽ لاءِ. توهان کي مقامي منتظم جي استحقاق جي ضرورت ناهي."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized} انسٽال ڪريو ۽ صرف توهان لاءِ ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} تنصيب جو دائرو"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="انسٽاليشن اسڪوپ ۽ فولڊر چونڊيو"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="انسٽال ڪريو [ProductName] تي:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="ڊفالٽ فولڊر ۾ انسٽال ڪرڻ لاءِ اڳيون ڪلڪ ڪريو يا ٻيو چونڊڻ لاءِ تبديل ڪريو تي ڪلڪ ڪريو."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} منزل جو فولڊر"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Изменять..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title} استعمال ۾ فائلون"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="ڪجھ فائلون جن کي اپڊيٽ ڪرڻ جي ضرورت آھي في الحال استعمال ۾ آھن."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="هيٺيون ايپليڪيشنون فائلون استعمال ڪري رهيون آهن جن کي هن سيٽ اپ ذريعي اپڊيٽ ڪرڻ جي ضرورت آهي. انهن ايپليڪيشنن کي بند ڪريو ۽ پوءِ ڪلڪ ڪريو ۽ سيٽ اپ جاري رکڻ لاءِ ٻيهر ڪوشش ڪريو يا ان مان نڪرڻ لاءِ Exit ڪريو."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="ٻاهر نڪرڻ"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Изменять"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Установить"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="خاصيتونDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="خاصيتونDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} پراڊڪٽ جون خاصيتون"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="اھو طريقو چونڊيو جيڪو توھان چاھيو ٿا خاصيتون انسٽال ڪرڻ لاءِ."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="پيداوار جون خاصيتون"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="سيٽ اپ مددگار مان نڪرڻ لاءِ Finish بٽڻ تي ڪلڪ ڪريو."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] سيٽ اپ مددگار هڪ غلطي جي ڪري وقت کان اڳ ختم ٿي ويو. توھان جو سسٽم تبديل نه ڪيو ويو آھي. ھن پروگرام کي بعد ۾ انسٽال ڪرڻ لاءِ، سيٽ اپ وزرڊ کي وري هلايو."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger[ProductName] سيٽ اپ مددگار وقت کان اڳ ختم ٿي ويو"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} مڪمل ڪيو [ProductName] سيٽ اپ مددگار"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="سيٽ اپ مددگار مان نڪرڻ لاءِ Finish بٽڻ تي ڪلڪ ڪريو."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="معلوماتي آئڪن"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="معلوماتي متن"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} ڊسڪ اسپيس جون گهرجون"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="منتخب ٿيل خصوصيتن جي انسٽاليشن لاءِ گهربل ڊسڪ اسپيس."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="نمايان ٿيل حجمن ۾ منتخب ٿيل خاصيتن لاءِ ڪافي ڊسڪ اسپيس موجود ناهي. توهان يا ته نمايان ٿيل حجمن مان ڪجهه فائلن کي هٽائي سگهو ٿا، گهٽ خاصيتون انسٽال ڪري سگهو ٿا، يا مختلف منزلون ڊرائيو چونڊيو."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="جڳھ:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation- CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize- CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription- CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} ڪسٽم سيٽ اپ"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="اھو طريقو چونڊيو جيڪو توھان چاھيو ٿا خاصيتون انسٽال ڪرڻ لاءِ."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="هيٺ ڏنل وڻ ۾ موجود آئڪن تي ڪلڪ ڪريو ته جيئن فيچرز کي انسٽال ڪيو وڃي."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="ڊسڪ ۽ استعمال"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="ٻيهر سيٽ ڪريو"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="براؤز ڪريو..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="چونڊ جو وڻ"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="معلوماتي آئڪن"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Вы уверены, что хотите отменить установку [ProductName]?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}منزل فولڊر تبديل ڪريو"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="برائوز ڪريو منزل فولڊر"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Имя папки:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="نئون فولڊر ٺاهيو"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="هڪ سطح مٿي"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="۽ ڏسو:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="تاهوما"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;dvanced"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Установить"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="پروڊڪٽ کي انسٽال ڪرڻ لاءِ انسٽال ڪريو تي ڪلڪ ڪريو ڊفالٽ اختيارن سان صرف توھان لاءِ. انسٽاليشن جي اختيارن کي تبديل ڪرڻ لاء ترقي يافته تي ڪلڪ ڪريو."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="سڀني استعمال ڪندڙن لاءِ ڊفالٽ اختيارن سان پراڊڪٽ کي انسٽال ڪرڻ لاءِ انسٽال تي ڪلڪ ڪريو. انسٽاليشن جي اختيارن کي تبديل ڪرڻ لاء ترقي يافته تي ڪلڪ ڪريو."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Я принимаю условия лицензионного соглашения"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}مهرباني ڪري پڙهو [ProductName] لائسنس جو معاهدو"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] سيٽ اپ"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp; ڇاپيو"/>
+	<String Id="WixUIOK" Overridable="yes" Value="ٺيڪ"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;نه"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;ها"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp; نظر انداز ڪريو"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;ٻيهر ڪوشش ڪريو"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;ختم ڪر"/>
+	<String Id="WixUICancel" Overridable="yes" Value="منسوخ ڪريو"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;اڳيون"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp; واپس"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="ونڊوز فائر وال جي ترتيب کي انسٽال ڪرڻ"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="ونڊوز فائر وال جي ترتيب کي واپس آڻڻ"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="ونڊوز فائر وال جي ترتيب کي انسٽال ڪرڻ"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="ونڊوز فائر وال جي ترتيب کي واپس آڻڻ"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="ونڊوز فائر وال کي ترتيب ڏيڻ"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="ونڊوز فائر وال کي ترتيب ڏيڻ"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windows Firewall سان ڳنڍجي نٿو سگھي. ([2] [3] [4] [5]"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="ريموٽ ايپليڪيشنن لاءِ تصورات موجود آهن جيئن ترتيب ۾ اختيار"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="ڏسو RAAS سرورز Explorer ۾"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="مقامي ڪمپيوٽر تي سرور ايپليڪيشنن لاءِ ريموٽ ايپليڪيشن شارٽ ڪٽ ٺاهيو"/>

@@ -1,4 +1,570 @@
-﻿<WixLocalization Culture="lo" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="lo" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="ປະລິມານ"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="ຂະໜາດແຜ່ນ"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="ຕ້ອງການ"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="ຄວາມແຕກຕ່າງ"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="ມີໃຫ້"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="ເວລາຍັງເຫຼືອ:{ [ProductName] ນາທີ}{ [ProductName] ວິນາທີ}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຕ້ອງການ [ProductName] ໃນຮາດໄດຂອງທ່ານ. ມັນ​ມີ [ProductName] ຂອງ [ProductName] subfeatures ເລືອກ​. subfeatures ຕ້ອງການ [ProductName] ໃນຮາດໄດຂອງທ່ານ."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຕ້ອງການ [ProductName] ໃນຮາດໄດຂອງທ່ານ. ມັນ​ມີ [ProductName] ຂອງ [ProductName] subfeatures ເລືອກ​. ຄຸນ​ນະ​ສົມ​ບັດ​ຍ່ອຍ​ເພີ່ມ​ຂຶ້ນ [ProductName] ໃນ​ຮາດ​ດິດ​ຂອງ​ທ່ານ​."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​ນີ້​ເພີ່ມ​ຂຶ້ນ [ProductName] ໃນ​ຮາດ​ດິດ​ຂອງ​ທ່ານ​. ມັນ​ມີ [ProductName] ຂອງ [ProductName] subfeatures ເລືອກ​. subfeatures ຕ້ອງການ [ProductName] ໃນຮາດໄດຂອງທ່ານ."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​ນີ້​ເພີ່ມ​ຂຶ້ນ [ProductName] ໃນ​ຮາດ​ດິດ​ຂອງ​ທ່ານ​. ມັນ​ມີ [ProductName] ຂອງ [ProductName] subfeatures ເລືອກ​. ຄຸນ​ນະ​ສົມ​ບັດ​ຍ່ອຍ​ເພີ່ມ​ຂຶ້ນ [ProductName] ໃນ​ຮາດ​ດິດ​ຂອງ​ທ່ານ​."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະຍັງຄົງຖືກເປີດໃຊ້ຈາກເຄືອຂ່າຍ"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະປ່ຽນຈາກການແລ່ນຈາກສະຖານະເຄືອຂ່າຍເພື່ອຕິດຕັ້ງຢູ່ໃນຮາດໄດພາຍໃນເຄື່ອງ"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະປ່ຽນຈາກການແລ່ນຈາກສະຖານະເຄືອຂ່າຍເພື່ອຕັ້ງໃຫ້ຕິດຕັ້ງເມື່ອຕ້ອງການ"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະຖືກຖອນການຕິດຕັ້ງຢ່າງສົມບູນ, ທ່ານຈະບໍ່ສາມາດດໍາເນີນການມັນຈາກເຄືອຂ່າຍ"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​ນີ້​ຈະ​ຖືກ​ເອົາ​ອອກ​ຈາກ​ຮາດ​ດິດ​ໃນ​ທ້ອງ​ຖິ່ນ​ຂອງ​ທ່ານ​, ແຕ່​ວ່າ​ຈະ​ຍັງ​ມີ​ໃຫ້​ດໍາ​ເນີນ​ການ​ຈາກ​ເຄືອ​ຂ່າຍ​"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະຍັງຄົງຢູ່ໃນຮາດໄດໃນເຄື່ອງຂອງທ່ານ"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​ນີ້​ຈະ​ຖືກ​ລົບ​ອອກ​ຈາກ​ຮາດ​ດິດ​ໃນ​ທ້ອງ​ຖິ່ນ​ຂອງ​ທ່ານ​, ແຕ່​ຈະ​ຍັງ​ມີ​ໃຫ້​ດໍາ​ເນີນ​ການ​ຈາກ CD​"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​ນີ້​ຈະ​ຖືກ​ເອົາ​ອອກ​ຈາກ​ຮາດ​ດິດ​ໃນ​ທ້ອງ​ຖິ່ນ​ຂອງ​ທ່ານ​, ແຕ່​ຈະ​ຖືກ​ຕັ້ງ​ໃຫ້​ໄດ້​ຮັບ​ການ​ຕິດ​ຕັ້ງ​ໃນ​ເວ​ລາ​ທີ່​ຕ້ອງ​ການ​"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະຖືກລຶບອອກໝົດ"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="ກຳລັງລວບລວມຄ່າໃຊ້ຈ່າຍສຳລັບຄຸນສົມບັດນີ້..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຕ້ອງການ [ProductName] ໃນຮາດໄດຂອງທ່ານ."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​ນີ້​ເພີ່ມ​ຂຶ້ນ [ProductName] ໃນ​ຮາດ​ດິດ​ຂອງ​ທ່ານ​."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​ນີ້​ຈະ​ປ່ຽນ​ຈາກ​ການ​ແລ່ນ​ຈາກ​ສະ​ຖາ​ນະ CD ທີ່​ຈະ​ໄດ້​ຮັບ​ການ​ຕິດ​ຕັ້ງ​ໃນ​ຮາດ​ດິດ​ທ້ອງ​ຖິ່ນ​"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະຍັງຄົງດໍາເນີນການຈາກ CD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​ນີ້​ຈະ​ປ່ຽນ​ຈາກ​ການ​ແລ່ນ​ຈາກ​ສະ​ຖາ​ນະ CD ເພື່ອ​ຕັ້ງ​ໃຫ້​ໄດ້​ຮັບ​ການ​ຕິດ​ຕັ້ງ​ໃນ​ເວ​ລາ​ທີ່​ຕ້ອງ​ການ​"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​ນີ້​ຈະ​ໄດ້​ຮັບ​ການ​ຖອນ​ການ​ຕິດ​ຕັ້ງ​ຢ່າງ​ສົມ​ບູນ​, ທ່ານ​ຈະ​ບໍ່​ສາ​ມາດ​ແລ່ນ​ມັນ​ຈາກ CD​"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະສາມາດໃຊ້ໄດ້ຈາກເຄືອຂ່າຍ"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="ຄຸນນະສົມບັດນີ້ຈະຖືກຕິດຕັ້ງຢູ່ໃນຮາດໄດທ້ອງຖິ່ນຂອງທ່ານ"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະສາມາດໃຊ້ໄດ້ຈາກ CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="ຈະຖືກຕິດຕັ້ງເມື່ອຕ້ອງການ"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະບໍ່ສາມາດໃຊ້ໄດ້"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະຖືກຕິດຕັ້ງເພື່ອແລ່ນຈາກເຄືອຂ່າຍ"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະຖືກຕິດຕັ້ງຢູ່ໃນຮາດໄດພາຍໃນເຄື່ອງ"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະຖືກຕິດຕັ້ງເພື່ອແລ່ນຈາກ CD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະຖືກຕັ້ງໃຫ້ຕິດຕັ້ງເມື່ອຕ້ອງການ"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="ຄຸນສົມບັດນີ້ຈະຍັງຄົງຖືກຖອນການຕິດຕັ້ງ"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="ກຳລັງເກັບກຳຂໍ້ມູນທີ່ຕ້ອງການ..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="ໂຟນເດີ|ໂຟນເດີໃໝ່"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="ຈະຖືກຕິດຕັ້ງເພື່ອດໍາເນີນການຈາກເຄືອຂ່າຍ"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="ຈະຖືກຕິດຕັ້ງຢູ່ໃນຮາດໄດທ້ອງຖິ່ນ"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="ຈະຖືກຕິດຕັ້ງເພື່ອດໍາເນີນການຈາກ CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="ຄຸນສົມບັດທັງໝົດຈະຖືກຕິດຕັ້ງເພື່ອແລ່ນຈາກເຄືອຂ່າຍ"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="ຄຸນສົມບັດທັງໝົດຈະຖືກຕິດຕັ້ງຢູ່ໃນຮາດໄດພາຍໃນເຄື່ອງ"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="ຄຸນສົມບັດທັງໝົດຈະຖືກຕິດຕັ້ງເພື່ອແລ່ນຈາກ CD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="ຄຸນສົມບັດຈະຖືກຕິດຕັ້ງເມື່ອຕ້ອງການ"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="ຄຸນສົມບັດທັງໝົດຈະບໍ່ສາມາດໃຊ້ໄດ້"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="ໄບຕ໌"/>
+	<String Id="Error1938" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນລະຫວ່າງການຕິດຕັ້ງການປະກອບ &amp;apos;[ProductName]&amp;apos;. ບໍ່ພົບໜຶ່ງ ຫຼືຫຼາຍໂມດູນຂອງເຄື່ອງປະກອບ. HRESULT: [ProductName].{{ ການໂຕ້ຕອບປະກອບ: [ProductName], ຟັງຊັນ: [ProductName], ອົງປະກອບ: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນລະຫວ່າງການຕິດຕັ້ງການປະກອບ &amp;apos;[ProductName]&amp;apos;. ລາຍເຊັນ ຫຼືລາຍການບໍ່ສາມາດຢັ້ງຢືນໄດ້ ຫຼືບໍ່ຖືກຕ້ອງ. HRESULT: [ProductName].{{ ການໂຕ້ຕອບປະກອບ: [ProductName], ຟັງຊັນ: [ProductName], ອົງປະກອບ: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນລະຫວ່າງການຕິດຕັ້ງການປະກອບ &amp;apos;[ProductName]&amp;apos;. ສະພາແຫ່ງບໍ່ມີຊື່ທີ່ເຂັ້ມແຂງຫຼືບໍ່ໄດ້ເຊັນຊື່ທີ່ມີຄວາມຍາວຂອງກະແຈຫນ້ອຍທີ່ສຸດ. HRESULT: [ProductName].{{ ການໂຕ້ຕອບປະກອບ: [ProductName], ຟັງຊັນ: [ProductName], ອົງປະກອບ: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນລະຫວ່າງການຕິດຕັ້ງການປະກອບ &amp;apos;[ProductName]&amp;apos;. ກະລຸນາອ້າງອີງເຖິງການຊ່ວຍເຫຼືອ ແລະການຊ່ວຍເຫຼືອສຳລັບຂໍ້ມູນເພີ່ມເຕີມ. HRESULT: [ProductName].{{ ການໂຕ້ຕອບປະກອບ: [ProductName], ຟັງຊັນ: [ProductName], ອົງປະກອບ: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="ການຕິດຕັ້ງຜູ້ໃຊ້ຖືກປິດການນຳໃຊ້ຜ່ານນະໂຍບາຍໃນເຄື່ອງ."/>
+	<String Id="Error1933" Overridable="yes" Value="ບໍລິການຕິດຕັ້ງ Windows ບໍ່ສາມາດອັບເດດໜຶ່ງ ຫຼືຫຼາຍໄຟລ໌ Windows ທີ່ມີການປ້ອງກັນໄດ້.{{ SFP Error: [ProductName]. ລາຍຊື່ໄຟລ໌ທີ່ຖືກປ້ອງກັນ:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="ບໍລິການຕິດຕັ້ງ Windows ບໍ່ສາມາດອັບເດດໄຟລ໌ Windows ທີ່ມີການປ້ອງກັນ [ProductName] ໄດ້.{{ Package version: [ProductName], OS Protected version: [ProductName], SFP Error: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="ບໍລິການຕິດຕັ້ງ Windows ບໍ່ສາມາດອັບເດດໄຟລ໌ລະບົບ [ProductName] ເພາະວ່າໄຟລ໌ຖືກປ້ອງກັນໂດຍ Windows. ທ່ານອາດຕ້ອງອັບເດດລະບົບປະຕິບັດການຂອງທ່ານເພື່ອໃຫ້ໂປຣແກມນີ້ເຮັດວຽກໄດ້ຢ່າງຖືກຕ້ອງ.{{ Package version: [ProductName], OS Protected version: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="ຄໍາອະທິບາຍສໍາລັບການບໍລິການ &amp;apos;[ProductName]&amp;apos; ([ProductName]) ບໍ່ສາມາດປ່ຽນແປງໄດ້."/>
+	<String Id="Error1929" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການຍົກເລີກການລົງທະບຽນແອັບພລິເຄຊັນ COM+. ຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານສໍາລັບຂໍ້ມູນເພີ່ມເຕີມ."/>
+	<String Id="Error1928" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການລົງທະບຽນແອັບພລິເຄຊັນ COM+. ຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານສໍາລັບຂໍ້ມູນເພີ່ມເຕີມ."/>
+	<String Id="Error1927" Overridable="yes" Value="ບໍລິການອົງປະກອບ (COM+ 1.0) ບໍ່ໄດ້ຕິດຕັ້ງຢູ່ໃນຄອມພິວເຕີເຄື່ອງນີ້. ການຕິດຕັ້ງນີ້ຕ້ອງການການບໍລິການອົງປະກອບເພື່ອໃຫ້ສໍາເລັດຢ່າງສໍາເລັດຜົນ. ການບໍລິການອົງປະກອບແມ່ນມີຢູ່ໃນ Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="ບໍ່ສາມາດກໍານົດຄວາມປອດໄພຂອງໄຟລ໌ສໍາລັບໄຟລ໌ &amp;apos;[ProductName]&amp;apos;. ຄວາມຜິດພາດ: [ProductName]. ກວດ​ສອບ​ວ່າ​ທ່ານ​ມີ​ສິດ​ທິ​ພຽງ​ພໍ​ທີ່​ຈະ​ແກ້​ໄຂ​ການ​ອະ​ນຸ​ຍາດ​ຄວາມ​ປອດ​ໄພ​ສໍາ​ລັບ​ໄຟລ​໌​ນີ້​."/>
+	<String Id="Error1925" Overridable="yes" Value="ທ່ານບໍ່ມີສິດທິພິເສດພຽງພໍທີ່ຈະເຮັດສໍາເລັດການຕິດຕັ້ງນີ້ສໍາລັບຜູ້ໃຊ້ທັງຫມົດຂອງເຄື່ອງ. ເຂົ້າ​ສູ່​ລະ​ບົບ​ເປັນ​ຜູ້​ບໍ​ລິ​ຫານ​ແລະ​ຫຼັງ​ຈາກ​ນັ້ນ​ພະ​ຍາ​ຍາມ​ການ​ຕິດ​ຕັ້ງ​ນີ້​ໃຫມ່​."/>
+	<String Id="Error1924" Overridable="yes" Value="ບໍ່ສາມາດອັບເດດຕົວແປສະພາບແວດລ້ອມ &amp;apos;[ProductName]&amp;apos;. ກວດສອບວ່າທ່ານມີສິດພຽງພໍເພື່ອແກ້ໄຂຕົວແປສະພາບແວດລ້ອມ."/>
+	<String Id="Error1923" Overridable="yes" Value="ບໍລິການ &amp;apos;[ProductName]&amp;apos; ([ProductName]) ບໍ່ສາມາດຕິດຕັ້ງໄດ້. ກວດສອບວ່າທ່ານມີສິດພຽງພໍໃນການຕິດຕັ້ງການບໍລິການລະບົບ."/>
+	<String Id="Error1922" Overridable="yes" Value="ບໍລິການ &amp;apos;[ProductName]&amp;apos; ([ProductName]) ບໍ່ສາມາດລຶບໄດ້. ກວດ​ສອບ​ວ່າ​ທ່ານ​ມີ​ສິດ​ທິ​ພຽງ​ພໍ​ທີ່​ຈະ​ເອົາ​ການ​ບໍ​ລິ​ການ​ລະ​ບົບ​ອອກ​."/>
+	<String Id="Error1921" Overridable="yes" Value="ບໍລິການ &amp;apos;[ProductName]&amp;apos; ([ProductName]) ບໍ່ສາມາດຢຸດໄດ້. ກວດ​ສອບ​ວ່າ​ທ່ານ​ມີ​ສິດ​ທິ​ພຽງ​ພໍ​ທີ່​ຈະ​ຢຸດ​ເຊົາ​ການ​ບໍ​ລິ​ການ​ລະ​ບົບ​."/>
+	<String Id="Error1920" Overridable="yes" Value="ບໍລິການ &amp;apos;[ProductName]&amp;apos; ([ProductName]) ລົ້ມເຫລວໃນການເລີ່ມຕົ້ນ. ກວດ​ສອບ​ວ່າ​ທ່ານ​ມີ​ສິດ​ທິ​ພຽງ​ພໍ​ທີ່​ຈະ​ເລີ່ມ​ຕົ້ນ​ການ​ບໍ​ລິ​ການ​ລະ​ບົບ​."/>
+	<String Id="Error1919" Overridable="yes" Value="ຄວາມຜິດພາດໃນການຕັ້ງຄ່າແຫຼ່ງຂໍ້ມູນ ODBC: [ProductName], ຄວາມຜິດພາດ ODBC [ProductName]: [ProductName]. ກວດ​ສອບ​ວ່າ​ໄຟລ​໌ [ProductName] ມີ​ຢູ່​ແລະ​ທີ່​ທ່ານ​ສາ​ມາດ​ເຂົ້າ​ເຖິງ​ມັນ​."/>
+	<String Id="Error1918" Overridable="yes" Value="ຂໍ້ຜິດພາດໃນການຕິດຕັ້ງໄດເວີ ODBC: [ProductName], ຂໍ້ຜິດພາດ ODBC [ProductName]: [ProductName]. ກວດ​ສອບ​ວ່າ​ໄຟລ​໌ [ProductName] ມີ​ຢູ່​ແລະ​ທີ່​ທ່ານ​ສາ​ມາດ​ເຂົ້າ​ເຖິງ​ມັນ​."/>
+	<String Id="Error1917" Overridable="yes" Value="ຄວາມຜິດພາດໃນການເອົາໄດເວີ ODBC: [ProductName], ຄວາມຜິດພາດ ODBC [ProductName]: [ProductName]. ກວດ​ສອບ​ວ່າ​ທ່ານ​ມີ​ສິດ​ທິ​ພຽງ​ພໍ​ທີ່​ຈະ​ເອົາ​ຄົນ​ຂັບ ODBC ອອກ."/>
+	<String Id="Error1916" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການຕິດຕັ້ງ ODBC driver manager, ODBC error [ProductName]: [ProductName]. ຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1915" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການຖອນຕົວຈັດການໄດເວີ ODBC, ຄວາມຜິດພາດ ODBC [ProductName]: [ProductName]. ຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1914" Overridable="yes" Value="ບໍ່​ສາ​ມາດ​ກໍາ​ນົດ​ເວ​ລາ​ໄຟລ​໌ [ProductName] ເພື່ອ​ທົດ​ແທນ​ໄຟລ​໌ [ProductName] ໃນ​ການ reboot​. ກວດ​ສອບ​ວ່າ​ທ່ານ​ໄດ້​ຮັບ​ການ​ອະ​ນຸ​ຍາດ​ໃຫ້​ການ​ຂຽນ [ProductName]​."/>
+	<String Id="Error1913" Overridable="yes" Value="ບໍ່ສາມາດອັບເດດໄຟລ໌ ini [ProductName][ProductName]. ກວດ​ສອບ​ວ່າ​ມີ​ໄຟລ​໌​ແລະ​ທີ່​ທ່ານ​ສາ​ມາດ​ເຂົ້າ​ເຖິງ​ມັນ​."/>
+	<String Id="Error1912" Overridable="yes" Value="ບໍ່​ສາ​ມາດ​ຖອນ​ການ​ລົງ​ທະ​ບຽນ​ຫ້ອງ​ສະ​ຫມຸດ​ປະ​ເພດ​ສໍາ​ລັບ​ໄຟລ​໌ [ProductName]​. ຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1911" Overridable="yes" Value="ບໍ່ສາມາດລົງທະບຽນຫ້ອງສະໝຸດປະເພດສຳລັບໄຟລ໌ [ProductName]. ຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1910" Overridable="yes" Value="ບໍ່ສາມາດເອົາທາງລັດ [ProductName] ອອກໄດ້. ກວດ​ສອບ​ວ່າ​ໄຟລ​໌​ທາງ​ລັດ​ມີ​ຢູ່​ແລະ​ທີ່​ທ່ານ​ສາ​ມາດ​ເຂົ້າ​ເຖິງ​ມັນ​."/>
+	<String Id="Error1909" Overridable="yes" Value="ບໍ່ສາມາດສ້າງທາງລັດ [ProductName]. ກວດ​ສອບ​ວ່າ​ໂຟ​ເດີ​ປາຍ​ທາງ​ມີ​ຢູ່​ແລະ​ທີ່​ທ່ານ​ສາ​ມາດ​ເຂົ້າ​ເຖິງ​ມັນ​."/>
+	<String Id="Error1908" Overridable="yes" Value="ບໍ່ສາມາດຍົກເລີກການລົງທະບຽນຟອນ [ProductName]. ກວດສອບວ່າທ່ານມີສິດພຽງພໍໃນການລຶບຟອນ."/>
+	<String Id="Error1907" Overridable="yes" Value="ບໍ່ສາມາດລົງທະບຽນຕົວອັກສອນ [ProductName]. ກວດ​ສອບ​ວ່າ​ທ່ານ​ມີ​ການ​ອະ​ນຸ​ຍາດ​ພຽງ​ພໍ​ໃນ​ການ​ຕິດ​ຕັ້ງ​ຕົວ​ອັກ​ສອນ​, ແລະ​ວ່າ​ລະ​ບົບ​ສະ​ຫນັບ​ສະ​ຫນູນ​ຕົວ​ອັກ​ສອນ​ນີ້​."/>
+	<String Id="Error1906" Overridable="yes" Value="ລົ້ມເຫລວໃນ cache package [ProductName]. ຂໍ້ຜິດພາດ: [ProductName]. ຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1905" Overridable="yes" Value="ໂມດູນ [ProductName] ລົ້ມເຫລວໃນການຍົກເລີກການລົງທະບຽນ. HRESULT [ProductName]. ຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1904" Overridable="yes" Value="ໂມດູນ [ProductName] ລົ້ມເຫລວໃນການລົງທະບຽນ. HRESULT [ProductName]. ຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1903" Overridable="yes" Value="ການກໍານົດເວລາການດໍາເນີນງານ reboot: ການລຶບໄຟລ໌ [ProductName]. ຕ້ອງປິດເປີດເຄື່ອງໃໝ່ເພື່ອສຳເລັດການດຳເນີນການ."/>
+	<String Id="Error1902" Overridable="yes" Value="ກໍາ​ນົດ​ເວ​ລາ​ການ​ດໍາ​ເນີນ​ງານ reboot​: ການ​ປ່ຽນ​ຊື່​ໄຟລ​໌ [ProductName] ເປັນ [ProductName]​. ຕ້ອງປິດເປີດເຄື່ອງໃໝ່ເພື່ອສຳເລັດການດຳເນີນການ."/>
+	<String Id="Error1901" Overridable="yes" Value="ຄວາມ​ຜິດ​ພາດ​ໃນ​ການ​ພະ​ຍາ​ຍາມ​ທີ່​ຈະ​ອ່ານ​ຈາກ​ແຫຼ່ງ​ຖານ​ຂໍ້​ມູນ​ການ​ຕິດ​ຕັ້ງ​: [ProductName]​."/>
+	<String Id="Error1807" Overridable="yes" Value="ບໍ່ສາມາດກຳນົດໂຟນເດີປາຍທາງທີ່ຖືກຕ້ອງສຳລັບການຕິດຕັ້ງໄດ້."/>
+	<String Id="Error1806" Overridable="yes" Value="ທ່ານມີສິດທິພິເສດບໍ່ພຽງພໍໃນການອ່ານໂຟນເດີນີ້."/>
+	<String Id="Error1805" Overridable="yes" Value="ໂຟນເດີ [ProductName] ບໍ່ມີ. ກະລຸນາໃສ່ເສັ້ນທາງໄປຫາໂຟນເດີທີ່ມີຢູ່ແລ້ວ."/>
+	<String Id="Error1804" Overridable="yes" Value="ບໍ່ມີແຜ່ນຢູ່ໃນໄດ [ProductName]. ກະ​ລຸ​ນາ​ໃສ່​ອັນ​ຫນຶ່ງ​ແລະ​ໃຫ້​ຄລິກ​ໃສ່​ລອງ​ໃຫມ່​, ຫຼື​ຄລິກ​ຍົກ​ເລີກ​ເພື່ອ​ກັບ​ຄືນ​ໄປ​ບ່ອນ​ປ່ອງ​ຢ້ຽມ​ຊອກ​ຫາ​ແລະ​ເລືອກ​ເອົາ​ປະ​ລິ​ມານ​ທີ່​ແຕກ​ຕ່າງ​ກັນ​."/>
+	<String Id="Error1803" Overridable="yes" Value="ບໍ່ມີແຜ່ນຢູ່ໃນໄດ [ProductName]. ກະ​ລຸ​ນາ​ໃສ່​ຫນຶ່ງ​ແລະ​ໃຫ້​ຄລິກ​ໃສ່​ລອງ​ໃຫມ່​, ຫຼື​ຄລິກ​ຍົກ​ເລີກ​ເພື່ອ​ກັບ​ຄືນ​ໄປ​ບ່ອນ​ປະ​ລິ​ມານ​ທີ່​ເລືອກ​ໄວ້​ກ່ອນ​ຫນ້າ​ນີ້​."/>
+	<String Id="Error1802" Overridable="yes" Value="ອອກຈາກຄວາມຊົງຈໍາ. ປິດແອັບພລິເຄຊັນອື່ນກ່ອນທີ່ຈະລອງໃໝ່."/>
+	<String Id="Error1801" Overridable="yes" Value="ເສັ້ນທາງ [ProductName] ບໍ່ຖືກຕ້ອງ. ກະລຸນາລະບຸເສັ້ນທາງທີ່ຖືກຕ້ອງ."/>
+	<String Id="Error1732" Overridable="yes" Value="Ad institutionem perficiendam [ProductName], computatorium sileo debet. Alii usores currently initium huic computanti sunt, et restarting ut labore amittant. Visne nunc sileo?"/>
+	<String Id="Error1731" Overridable="yes" Value="ຊຸດການຕິດຕັ້ງແຫຼ່ງສໍາລັບຜະລິດຕະພັນ [ProductName] ບໍ່ໄດ້ sync ກັບຊຸດລູກຄ້າ. ລອງຕິດຕັ້ງອີກຄັ້ງໂດຍໃຊ້ສຳເນົາຊຸດການຕິດຕັ້ງ &amp;apos;[ProductName]&amp;apos; ທີ່ຖືກຕ້ອງ."/>
+	<String Id="Error1730" Overridable="yes" Value="ທ່ານຕ້ອງເປັນຜູ້ເບິ່ງແຍງລະບົບເພື່ອລຶບແອັບພລິເຄຊັນນີ້ອອກ. ເພື່ອເອົາແອັບພລິເຄຊັນນີ້ອອກ, ທ່ານສາມາດເຂົ້າສູ່ລະບົບເປັນຜູ້ເບິ່ງແຍງລະບົບ, ຫຼືຕິດຕໍ່ກັບກຸ່ມສະຫນັບສະຫນູນດ້ານວິຊາການຂອງທ່ານສໍາລັບການຊ່ວຍເຫຼືອ."/>
+	<String Id="Error1729" Overridable="yes" Value="ການຕັ້ງຄ່າລົ້ມເຫລວ."/>
+	<String Id="Error1728" Overridable="yes" Value="ສຳເລັດການຕັ້ງຄ່າສຳເລັດແລ້ວ."/>
+	<String Id="Error1727" Overridable="yes" Value="ການໂຄສະນາລົ້ມເຫລວ."/>
+	<String Id="Error1726" Overridable="yes" Value="ການໂຄສະນາສຳເລັດຜົນ."/>
+	<String Id="Error1725" Overridable="yes" Value="ການໂຍກຍ້າຍລົ້ມເຫລວ."/>
+	<String Id="Error1724" Overridable="yes" Value="ການລຶບສຳເລັດແລ້ວ."/>
+	<String Id="Error1723" Overridable="yes" Value="ມີບັນຫາກັບຊຸດຕິດຕັ້ງ Windows ນີ້. DLL ທີ່ຕ້ອງການສໍາລັບການຕິດຕັ້ງນີ້ເພື່ອໃຫ້ສໍາເລັດບໍ່ສາມາດດໍາເນີນການໄດ້. ຕິດ​ຕໍ່​ພະ​ນັກ​ງານ​ສະ​ຫນັບ​ສະ​ຫນູນ​ຫຼື​ຜູ້​ຂາຍ​ຊຸດ​ຂອງ​ທ່ານ.{{ ປະ​ຕິ​ບັດ [ProductName], ເຂົ້າ: [ProductName], ຫ້ອງ​ສະ​ຫມຸດ: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="ມີບັນຫາກັບຊຸດຕິດຕັ້ງ Windows ນີ້. ໂປຣແກມທີ່ແລ່ນເປັນສ່ວນໜຶ່ງຂອງການຕິດຕັ້ງບໍ່ສຳເລັດຕາມທີ່ຄາດໄວ້. ຕິດ​ຕໍ່​ພະ​ນັກ​ງານ​ສະ​ຫນັບ​ສະ​ຫນູນ​ຫຼື​ຜູ້​ຂາຍ​ຊຸດ​ຂອງ​ທ່ານ.{{ ປະ​ຕິ​ບັດ [ProductName], ສະ​ຖານ​ທີ່: [ProductName], ຄໍາ​ສັ່ງ: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="ມີບັນຫາກັບຊຸດຕິດຕັ້ງ Windows ນີ້. ໂປຣແກມທີ່ຈຳເປັນສຳລັບການຕິດຕັ້ງນີ້ເພື່ອສຳເລັດບໍ່ສາມາດແລ່ນໄດ້. ຕິດ​ຕໍ່​ພະ​ນັກ​ງານ​ສະ​ຫນັບ​ສະ​ຫນູນ​ຫຼື​ຜູ້​ຂາຍ​ຊຸດ​ຂອງ​ທ່ານ.{{ ປະ​ຕິ​ບັດ: [ProductName], ສະ​ຖານ​ທີ່: [ProductName], ຄໍາ​ສັ່ງ: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="ມີບັນຫາກັບຊຸດຕິດຕັ້ງ Windows ນີ້. script ທີ່ຕ້ອງການສໍາລັບການຕິດຕັ້ງນີ້ເພື່ອໃຫ້ສໍາເລັດບໍ່ສາມາດດໍາເນີນການໄດ້. ຕິດ​ຕໍ່​ພະ​ນັກ​ງານ​ສະ​ຫນັບ​ສະ​ຫນູນ​ຫຼື​ຜູ້​ຂາຍ​ຊຸດ​ຂອງ​ທ່ານ.{{ ການ​ປະ​ຕິ​ບັດ​ທີ່​ກໍາ​ນົດ​ເອງ [ProductName] script error [ProductName], [ProductName]: [ProductName] Line [ProductName], Column [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="ບໍລິການຕິດຕັ້ງ Windows ບໍ່ສາມາດເຂົ້າເຖິງໄດ້. ນີ້ສາມາດເກີດຂຶ້ນໄດ້ຖ້າຫາກວ່າທ່ານກໍາລັງແລ່ນ Windows ໃນໂຫມດປອດໄພ, ຫຼືຖ້າຫາກວ່າການຕິດຕັ້ງ Windows ບໍ່ໄດ້ຕິດຕັ້ງຢ່າງຖືກຕ້ອງ. ຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານເພື່ອຂໍຄວາມຊ່ວຍເຫຼືອ."/>
+	<String Id="Error1718" Overridable="yes" Value="ໄຟລ໌ [ProductName] ຖືກປະຕິເສດໂດຍນະໂຍບາຍລາຍເຊັນດິຈິຕອນ."/>
+	<String Id="Error1717" Overridable="yes" Value="ເອົາອອກ [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="ຕັ້ງຄ່າ [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="ຕິດຕັ້ງແລ້ວ [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="ເວີຊັນເກົ່າຂອງ [ProductName] ບໍ່ສາມາດເອົາອອກໄດ້. ຕິດ​ຕໍ່​ກຸ່ມ​ສະ​ຫນັບ​ສະ​ຫນູນ​ດ້ານ​ວິ​ຊາ​ການ​ຂອງ​ທ່ານ.{{ ລະ​ບົບ​ຜິດ​ພາດ [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] ບໍ່​ສາ​ມາດ​ຕິດ​ຕັ້ງ​ຫນຶ່ງ​ຂອງ​ຜະ​ລິດ​ຕະ​ພັນ​ທີ່​ຕ້ອງ​ການ​ຂອງ​ຕົນ​. ຕິດ​ຕໍ່​ກຸ່ມ​ສະ​ຫນັບ​ສະ​ຫນູນ​ດ້ານ​ວິ​ຊາ​ການ​ຂອງ​ທ່ານ.{{ ລະ​ບົບ​ຜິດ​ພາດ: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="ບໍ່ພົບໄຟລ໌ໜຶ່ງ ຫຼືຫຼາຍກວ່າໜຶ່ງໄຟລ໌ທີ່ຕ້ອງການເພື່ອຟື້ນຟູຄອມພິວເຕີຂອງທ່ານກັບສະພາບເດີມຂອງມັນ. ການຟື້ນຟູຈະບໍ່ເປັນໄປໄດ້."/>
+	<String Id="Error1711" Overridable="yes" Value="ມີຂໍ້ຜິດພາດເກີດຂຶ້ນໃນຂະນະທີ່ຂຽນຂໍ້ມູນການຕິດຕັ້ງໃສ່ແຜ່ນ. ກວດເບິ່ງໃຫ້ແນ່ໃຈວ່າມີພື້ນທີ່ດິສກ໌ພຽງພໍ, ແລະຄລິກລອງໃຫມ່, ຫຼືຍົກເລີກເພື່ອສິ້ນສຸດການຕິດຕັ້ງ."/>
+	<String Id="Error1710" Overridable="yes" Value="Aut computatrum tuum in statum priorem restitues aut inauguratum postea pergas. Vis restituat?"/>
+	<String Id="Error1709" Overridable="yes" Value="ຜະ​ລິດ​ຕະ​ພັນ​: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="ການຕິດຕັ້ງລົ້ມເຫລວ."/>
+	<String Id="Error1707" Overridable="yes" Value="ການຕິດຕັ້ງສຳເລັດແລ້ວ."/>
+	<String Id="Error1706" Overridable="yes" Value="ບໍ່ພົບຊຸດການຕິດຕັ້ງສໍາລັບຜະລິດຕະພັນ [ProductName]. ລອງຕິດຕັ້ງອີກຄັ້ງໂດຍໃຊ້ສຳເນົາຊຸດການຕິດຕັ້ງ &amp;apos;[ProductName]&amp;apos; ທີ່ຖືກຕ້ອງ."/>
+	<String Id="Error1705" Overridable="yes" Value="Instructio prior huius operis in progressu est. Mutationes ab ea institutione factas solvere debeas ut pergas. Visne mutationes illas solvere?"/>
+	<String Id="Error1704" Overridable="yes" Value="Institutionem pro [ProductName] nunc suspensus est. Mutationes ab illa institutione factas dissolvere debes ut pergas. Visne mutationes illas solvere?"/>
+	<String Id="Error1703" Overridable="yes" Value="ທ່ານ​ຕ້ອງ​ປິດ​ເປີດ​ລະ​ບົບ​ຂອງ​ທ່ານ​ຄືນ​ໃໝ່​ສຳ​ລັບ​ການ​ປ່ຽນ​ແປງ​ການ​ຕັ້ງ​ຄ່າ​ທີ່​ເຮັດ​ໃຫ້ [ProductName] ມີ​ຜົນ. ຄລິກແມ່ນແລ້ວເພື່ອຣີສະຕາດດຽວນີ້ ຫຼືບໍ່ ຖ້າເຈົ້າວາງແຜນທີ່ຈະປິດເປີດໃໝ່ດ້ວຍຕົນເອງໃນພາຍຫຼັງ."/>
+	<String Id="Error1702" Overridable="yes" Value="ຜູ້ຕິດຕັ້ງຕ້ອງປິດເປີດລະບົບຂອງເຈົ້າຄືນໃໝ່ກ່ອນທີ່ຈະກຳນົດຄ່າ [ProductName] ສາມາດສືບຕໍ່ໄດ້. ຄລິກແມ່ນແລ້ວເພື່ອຣີສະຕາດດຽວນີ້ ຫຼືບໍ່ ຖ້າເຈົ້າວາງແຜນທີ່ຈະປິດເປີດໃໝ່ດ້ວຍຕົນເອງໃນພາຍຫຼັງ."/>
+	<String Id="Error1701" Overridable="yes" Value="ຄີ [ProductName] ບໍ່ຖືກຕ້ອງ. ກວດສອບວ່າທ່ານໃສ່ລະຫັດທີ່ຖືກຕ້ອງ."/>
+	<String Id="Error1609" Overridable="yes" Value="ເກີດຄວາມຜິດພາດຂຶ້ນໃນຂະນະທີ່ນຳໃຊ້ການຕັ້ງຄ່າຄວາມປອດໄພ. [ProductName] ບໍ່ແມ່ນຜູ້ໃຊ້ ຫຼືກຸ່ມທີ່ຖືກຕ້ອງ. ນີ້ອາດຈະເປັນບັນຫາກັບແພັກເກັດ, ຫຼືບັນຫາການເຊື່ອມຕໍ່ກັບຕົວຄວບຄຸມໂດເມນໃນເຄືອຂ່າຍ. ກວດເບິ່ງການເຊື່ອມຕໍ່ເຄືອຂ່າຍຂອງທ່ານແລະຄລິກລອງໃຫມ່, ຫຼືຍົກເລີກເພື່ອສິ້ນສຸດການຕິດຕັ້ງ. {{ບໍ່ສາມາດຊອກຫາ SID ຂອງຜູ້ໃຊ້ໄດ້, ລະບົບຜິດພາດ [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="ບໍ່ສາມາດຊອກຫາຜະລິດຕະພັນທີ່ສອດຄ່ອງໃນເມື່ອກ່ອນຢູ່ໃນເຄື່ອງສໍາລັບການຕິດຕັ້ງຜະລິດຕະພັນນີ້."/>
+	<String Id="Error1607" Overridable="yes" Value="ແອັບພລິເຄຊັນຕໍ່ໄປນີ້ຄວນປິດກ່ອນທີ່ຈະສືບຕໍ່ການຕິດຕັ້ງ:"/>
+	<String Id="Error1606" Overridable="yes" Value="ບໍ່ສາມາດເຂົ້າເຖິງສະຖານທີ່ເຄືອຂ່າຍ [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="ມີພື້ນທີ່ດິດບໍ່ພຽງພໍໃນປະລິມານ &amp;apos;[ProductName]&amp;apos; ເພື່ອສືບຕໍ່ການຕິດຕັ້ງດ້ວຍການເປີດໃຊ້ການກູ້ຂໍ້ມູນ. [ProductName] KB ແມ່ນຕ້ອງການ, ແຕ່ມີພຽງ [ProductName] KB ເທົ່ານັ້ນ. ຄລິກບໍ່ສົນໃຈເພື່ອສືບຕໍ່ການຕິດຕັ້ງໂດຍບໍ່ມີການບັນທຶກຂໍ້ມູນການກູ້ຂໍ້ມູນ, ຄລິກລອງອີກຄັ້ງເພື່ອກວດເບິ່ງພື້ນທີ່ຫວ່າງອີກຄັ້ງ, ຫຼືຄລິກຍົກເລີກເພື່ອອອກຈາກການຕິດຕັ້ງ."/>
+	<String Id="Error1604" Overridable="yes" Value="ຜະລິດຕະພັນ &amp;apos;[ProductName]&amp;apos; ຖືກຕິດຕັ້ງແລ້ວ, ປ້ອງກັນການຕິດຕັ້ງຜະລິດຕະພັນນີ້. ທັງສອງຜະລິດຕະພັນບໍ່ເຂົ້າກັນໄດ້."/>
+	<String Id="Error1603" Overridable="yes" Value="ໄຟລ໌ [ProductName][ProductName] ກຳລັງຖືກນຳໃຊ້{ ໂດຍຂະບວນການຕໍ່ໄປນີ້: ຊື່: [ProductName], Id: [ProductName], ຫົວຂໍ້ໜ້າຕ່າງ: &amp;apos;[ProductName]&amp;apos;}. ປິດແອັບພລິເຄຊັນນັ້ນແລ້ວລອງໃໝ່."/>
+	<String Id="Error1602" Overridable="yes" Value="Certusne esne me velle rescindere?"/>
+	<String Id="Error1601" Overridable="yes" Value="ບໍ່ມີພື້ນທີ່ຈັດເກັບຂໍ້ມູນ -- ປະລິມານ: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="ຜູ້ໃຊ້ &amp;apos;[ProductName]&amp;apos; ກ່ອນຫນ້ານີ້ໄດ້ລິເລີ່ມການຕິດຕັ້ງສໍາລັບຜະລິດຕະພັນ &amp;apos;[ProductName]&amp;apos;. ຜູ້ໃຊ້ນັ້ນຈະຕ້ອງດໍາເນີນການຕິດຕັ້ງນັ້ນອີກຄັ້ງກ່ອນທີ່ເຂົາເຈົ້າຈະສາມາດໃຊ້ຜະລິດຕະພັນນັ້ນໄດ້."/>
+	<String Id="Error1502" Overridable="yes" Value="ຜູ້ໃຊ້ &amp;apos;[ProductName]&amp;apos; ກ່ອນຫນ້ານີ້ໄດ້ລິເລີ່ມການຕິດຕັ້ງສໍາລັບຜະລິດຕະພັນ &amp;apos;[ProductName]&amp;apos;. ຜູ້ໃຊ້ນັ້ນຈະຕ້ອງດໍາເນີນການຕິດຕັ້ງນັ້ນອີກຄັ້ງກ່ອນທີ່ເຂົາເຈົ້າຈະສາມາດໃຊ້ຜະລິດຕະພັນນັ້ນໄດ້. ການຕິດຕັ້ງປັດຈຸບັນຂອງທ່ານຈະສືບຕໍ່."/>
+	<String Id="Error1501" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການເຂົ້າເຖິງຂໍ້ມູນທີ່ປອດໄພ. ກະ​ລຸ​ນາ​ກວດ​ສອບ​ໃຫ້​ແນ່​ໃຈວ່​າ​ຕົວ​ຕິດ​ຕັ້ງ Windows ໄດ້​ຖືກ​ຕັ້ງ​ຄ່າ​ຖືກ​ຕ້ອງ​ແລະ​ພະ​ຍາ​ຍາມ​ຕິດ​ຕັ້ງ​ອີກ​ເທື່ອ​ຫນຶ່ງ​."/>
+	<String Id="Error1500" Overridable="yes" Value="ການຕິດຕັ້ງອື່ນກຳລັງດຳເນີນຢູ່. ທ່ານຕ້ອງສໍາເລັດການຕິດຕັ້ງນັ້ນກ່ອນທີ່ຈະສືບຕໍ່ອັນນີ້."/>
+	<String Id="Error1410" Overridable="yes" Value="ບໍ່ສາມາດເພີ່ມພື້ນທີ່ລົງທະບຽນທີ່ມີຢູ່. [ProductName] KB ຂອງພື້ນທີ່ລົງທະບຽນຟຣີແມ່ນຕ້ອງການສໍາລັບການຕິດຕັ້ງຄໍາຮ້ອງສະຫມັກນີ້."/>
+	<String Id="Error1409" Overridable="yes" Value="ບໍ່​ສາ​ມາດ​ອ່ານ​ຂໍ້​ມູນ​ຄວາມ​ປອດ​ໄພ​ສໍາ​ລັບ​ກະ​ແຈ [ProductName] ໄດ້.{{ ລະ​ບົບ​ຜິດ​ພາດ [ProductName].}} ກວດ​ສອບ​ວ່າ​ທ່ານ​ມີ​ການ​ເຂົ້າ​ເຖິງ​ທີ່​ພຽງ​ພໍ​ກັບ​ກະ​ແຈ​, ຫຼື​ຕິດ​ຕໍ່​ຫາ​ພະ​ນັກ​ງານ​ສະ​ຫນັບ​ສະ​ຫນູນ​ຂອງ​ທ່ານ​."/>
+	<String Id="Error1408" Overridable="yes" Value="ບໍ່ສາມາດເອົາຊື່ລະຫັດຍ່ອຍຂອງລະຫັດ [ProductName] ໄດ້.{{ ລະບົບຜິດພາດ [ProductName].}} ກວດສອບວ່າທ່ານມີການເຂົ້າເຖິງລະຫັດນັ້ນພຽງພໍ, ຫຼືຕິດຕໍ່ກັບພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1407" Overridable="yes" Value="ບໍ່ສາມາດໄດ້ຮັບຊື່ມູນຄ່າສໍາລັບກະແຈ [ProductName].{{ ລະບົບຜິດພາດ [ProductName].}} ກວດສອບວ່າທ່ານມີການເຂົ້າເຖິງລະຫັດນັ້ນພຽງພໍ, ຫຼືຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1406" Overridable="yes" Value="ບໍ່ສາມາດຂຽນຄ່າ [ProductName] ໃສ່ກະແຈ [ProductName] ໄດ້.{{ System error [ProductName].}} ຢືນຢັນວ່າເຈົ້າມີການເຂົ້າເຖິງກະແຈນັ້ນພຽງພໍ, ຫຼືຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງເຈົ້າ."/>
+	<String Id="Error1405" Overridable="yes" Value="ບໍ່ສາມາດອ່ານຄ່າ [ProductName] ຈາກກະແຈ [ProductName].{{ ລະບົບຜິດພາດ [ProductName].}} ກວດສອບວ່າທ່ານມີການເຂົ້າເຖິງກະແຈນັ້ນພຽງພໍ, ຫຼືຕິດຕໍ່ກັບພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1404" Overridable="yes" Value="ບໍ່​ສາ​ມາດ​ລຶບ​ກະ​ແຈ [ProductName] ໄດ້.{{ ລະ​ບົບ​ຜິດ​ພາດ [ProductName].}} ກວດ​ສອບ​ວ່າ​ທ່ານ​ມີ​ການ​ເຂົ້າ​ເຖິງ​ກະ​ແຈ​ທີ່​ພຽງ​ພໍ, ຫຼື​ຕິດ​ຕໍ່​ຫາ​ພະ​ນັກ​ງານ​ສະ​ຫນັບ​ສະ​ຫນູນ​ຂອງ​ທ່ານ."/>
+	<String Id="Error1403" Overridable="yes" Value="ບໍ່ສາມາດລຶບຄ່າ [ProductName] ອອກຈາກກະແຈ [ProductName] ໄດ້.{{ ລະບົບຜິດພາດ [ProductName].}} ກວດສອບວ່າທ່ານມີການເຂົ້າເຖິງກະແຈນັ້ນພຽງພໍ, ຫຼືຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງທ່ານ."/>
+	<String Id="Error1402" Overridable="yes" Value="ບໍ່ສາມາດເປີດກະແຈໄດ້: [ProductName].{{ System error [ProductName].}} ຢືນຢັນວ່າເຈົ້າມີການເຂົ້າເຖິງກະແຈນັ້ນພຽງພໍ, ຫຼືຕິດຕໍ່ພະນັກງານຊ່ວຍເຫຼືອຂອງເຈົ້າ."/>
+	<String Id="Error1401" Overridable="yes" Value="ບໍ່​ສາ​ມາດ​ສ້າງ​ກະ​ແຈ: [ProductName].{{ ລະ​ບົບ​ຜິດ​ພາດ [ProductName].}} ກວດ​ສອບ​ວ່າ​ທ່ານ​ມີ​ການ​ເຂົ້າ​ເຖິງ​ກະ​ແຈ​ທີ່​ພຽງ​ພໍ, ຫຼື​ຕິດ​ຕໍ່​ຫາ​ພະ​ນັກ​ງານ​ສະ​ຫນັບ​ສະ​ຫນູນ​ຂອງ​ທ່ານ."/>
+	<String Id="Error1336" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການສ້າງໄຟລ໌ຊົ່ວຄາວທີ່ຈຳເປັນເພື່ອເຮັດສຳເລັດການຕິດຕັ້ງນີ້.{{ Folder: [ProductName]. ລະຫັດຂໍ້ຜິດພາດຂອງລະບົບ: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="ໄຟລ໌ຕູ້ &amp;apos;[ProductName]&amp;apos; ທີ່ຕ້ອງການສໍາລັບການຕິດຕັ້ງນີ້ແມ່ນເສຍຫາຍແລະບໍ່ສາມາດໃຊ້ໄດ້. ອັນນີ້ສາມາດຊີ້ບອກເຖິງຄວາມຜິດພາດຂອງເຄືອຂ່າຍ, ການອ່ານຂໍ້ຜິດພາດຈາກ CD-ROM, ຫຼືມີບັນຫາກັບຊຸດນີ້."/>
+	<String Id="Error1334" Overridable="yes" Value="ບໍ່​ສາ​ມາດ​ຕິດ​ຕັ້ງ​ໄຟລ​໌ &amp;apos;[ProductName]​&amp;apos; ໄດ້​ເນື່ອງ​ຈາກ​ວ່າ​ໄຟລ​໌​ບໍ່​ສາ​ມາດ​ພົບ​ເຫັນ​ໃນ​ໄຟລ​໌​ຕູ້ &amp;apos;[ProductName]​&amp;apos;​. ອັນນີ້ສາມາດຊີ້ບອກເຖິງຄວາມຜິດພາດຂອງເຄືອຂ່າຍ, ຄວາມຜິດພາດໃນການອ່ານຈາກ CD-ROM, ຫຼືມີບັນຫາກັບຊຸດນີ້."/>
+	<String Id="Error1333" Overridable="yes" Value="ລົ້ມເຫລວໃນການແກ້ໄຂໄຟລ໌ [ProductName] ຢ່າງຖືກຕ້ອງ: CRC ຜິດພາດ."/>
+	<String Id="Error1332" Overridable="yes" Value="ລົ້ມເຫລວໃນການຍ້າຍໄຟລ໌ [ProductName] ຢ່າງຖືກຕ້ອງ: CRC ຜິດພາດ."/>
+	<String Id="Error1331" Overridable="yes" Value="ລົ້ມເຫລວໃນການສຳເນົາໄຟລ໌ [ProductName] ຢ່າງຖືກຕ້ອງ: CRC ຜິດພາດ."/>
+	<String Id="Error1330" Overridable="yes" Value="ໄຟລ໌ທີ່ຕ້ອງການບໍ່ສາມາດຕິດຕັ້ງໄດ້ເພາະວ່າໄຟລ໌ຕູ້ [ProductName] ມີລາຍເຊັນດິຈິຕອນທີ່ບໍ່ຖືກຕ້ອງ. ອັນນີ້ອາດຈະຊີ້ບອກວ່າໄຟລ໌ຕູ້ເສຍຫາຍ.{{ Error [ProductName] ຖືກສົ່ງຄືນໂດຍ WinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="ໄຟລ໌ທີ່ຕ້ອງການບໍ່ສາມາດຕິດຕັ້ງໄດ້ເພາະວ່າໄຟລ໌ຕູ້ [ProductName] ບໍ່ໄດ້ເຊັນດິຈິຕອນ. ນີ້ອາດຈະຊີ້ໃຫ້ເຫັນວ່າໄຟລ໌ຕູ້ເສຍຫາຍ."/>
+	<String Id="Error1328" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການໃຊ້ແພັດກັບໄຟລ໌ [ProductName]. ມັນອາດຈະຖືກປັບປຸງໂດຍວິທີອື່ນ, ແລະບໍ່ສາມາດແກ້ໄຂໄດ້ໂດຍ patch ນີ້. ສໍາ​ລັບ​ຂໍ້​ມູນ​ເພີ່ມ​ເຕີມ​ຕິດ​ຕໍ່​ຫາ​ຜູ້​ຂາຍ patch ຂອງ​ທ່ານ.{{ ລະ​ບົບ​ຜິດ​ພາດ​: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Drive ບໍ່ຖືກຕ້ອງ: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="ຄວາມຜິດພາດໃນການໄດ້ຮັບຄວາມປອດໄພໄຟລ໌: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; ບໍ່ແມ່ນຊື່ໄຟລ໌ສັ້ນທີ່ຖືກຕ້ອງ."/>
+	<String Id="Error1324" Overridable="yes" Value="ເສັ້ນທາງໂຟນເດີ &amp;apos;[ProductName]&amp;apos; ມີຕົວອັກສອນທີ່ບໍ່ຖືກຕ້ອງ."/>
+	<String Id="Error1323" Overridable="yes" Value="ເສັ້ນທາງໂຟນເດີ &amp;apos;[ProductName]&amp;apos; ມີຄຳສັບທີ່ບໍ່ຖືກຕ້ອງຢູ່ໃນເສັ້ນທາງໂຟນເດີ."/>
+	<String Id="Error1322" Overridable="yes" Value="ບາງສ່ວນຂອງເສັ້ນທາງໂຟນເດີ &amp;apos;[ProductName]&amp;apos; ບໍ່ຖືກຕ້ອງ. ມັນຫວ່າງເປົ່າ ຫຼືເກີນຄວາມຍາວທີ່ລະບົບອະນຸຍາດ."/>
+	<String Id="Error1321" Overridable="yes" Value="ຕົວຕິດຕັ້ງມີສິດທິພິເສດບໍ່ພຽງພໍເພື່ອແກ້ໄຂໄຟລ໌ນີ້: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="ເສັ້ນທາງທີ່ລະບຸນັ້ນຍາວເກີນໄປ: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="ເຄືອຂ່າຍຜິດພາດເກີດຂຶ້ນໃນຂະນະທີ່ພະຍາຍາມເປີດຕູ້ໄຟລ໌ແຫຼ່ງ: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="ເກີດຄວາມຜິດພາດເຄືອຂ່າຍໃນຂະນະທີ່ພະຍາຍາມສ້າງໄດເລກະທໍລີ: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="ມີຂໍ້ຜິດພາດເກີດຂຶ້ນໃນຂະນະທີ່ພະຍາຍາມສ້າງໄດເລກະທໍລີ: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="ເກີດຄວາມຜິດພາດເຄືອຂ່າຍໃນຂະນະທີ່ພະຍາຍາມອ່ານໄຟລ໌: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="ບໍ່ສາມາດຂຽນໃສ່ໂຟນເດີທີ່ລະບຸໄດ້: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="ເສັ້ນທາງທີ່ລະບຸໄວ້ &amp;apos;[ProductName]&amp;apos; ແມ່ນບໍ່ສາມາດໃຊ້ໄດ້."/>
+	<String Id="Error1313" Overridable="yes" Value="ປະລິມານ [ProductName] ບໍ່ສາມາດໃຊ້ໄດ້ໃນຂະນະນີ້. ກະລຸນາເລືອກອັນອື່ນ."/>
+	<String Id="Error1312" Overridable="yes" Value="ບໍ່ສາມາດສ້າງໄດເລກະທໍລີ &amp;apos;[ProductName]&amp;apos;. ໄຟລ໌ທີ່ມີຊື່ນີ້ມີຢູ່ແລ້ວ. ກະລຸນາປ່ຽນຊື່ ຫຼືລຶບໄຟລ໌ອອກແລ້ວຄລິກລອງໃໝ່, ຫຼືຄລິກຍົກເລີກເພື່ອອອກ."/>
+	<String Id="Error1311" Overridable="yes" Value="ບໍ່ພົບໄຟລ໌ແຫຼ່ງ{{(ຕູ້)}}: [ProductName]. ກວດ​ສອບ​ວ່າ​ມີ​ໄຟລ​໌​ແລະ​ທີ່​ທ່ານ​ສາ​ມາດ​ເຂົ້າ​ເຖິງ​ມັນ​."/>
+	<String Id="Error1310" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການຂຽນໄຟລ໌: [ProductName].{{ System error [ProductName].}} ກວດສອບວ່າທ່ານມີການເຂົ້າເຖິງໄດເລກະທໍລີນັ້ນ."/>
+	<String Id="Error1309" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການອ່ານໄຟລ໌: [ProductName].{{ System error [ProductName].}} ກວດສອບວ່າໄຟລ໌ນັ້ນມີຢູ່ ແລະເຈົ້າສາມາດເຂົ້າເຖິງມັນໄດ້."/>
+	<String Id="Error1308" Overridable="yes" Value="ບໍ່ພົບໄຟລ໌ແຫຼ່ງ: [ProductName]. ກວດ​ສອບ​ວ່າ​ມີ​ໄຟລ​໌​ແລະ​ທີ່​ທ່ານ​ສາ​ມາດ​ເຂົ້າ​ເຖິງ​ມັນ​."/>
+	<String Id="Error1307" Overridable="yes" Value="ບໍ່ມີພື້ນທີ່ດິດພຽງພໍເພື່ອຕິດຕັ້ງໄຟລ໌ນີ້: [ProductName]. ຫວ່າງບາງພື້ນທີ່ດິສກ໌ແລ້ວຄລິກລອງໃໝ່, ຫຼືຄລິກຍົກເລີກເພື່ອອອກ."/>
+	<String Id="Error1306" Overridable="yes" Value="ແອັບພລິເຄຊັນອື່ນມີການເຂົ້າເຖິງໄຟລ໌ &amp;apos;[ProductName]&amp;apos; ສະເພາະ. ກະລຸນາປິດແອັບພລິເຄຊັນອື່ນທັງໝົດ, ຈາກນັ້ນຄລິກລອງໃໝ່."/>
+	<String Id="Error1305" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການອ່ານໄຟລ໌ [ProductName].{{ System error [ProductName].}} ກວດສອບວ່າໄຟລ໌ນັ້ນມີຢູ່ ແລະເຈົ້າສາມາດເຂົ້າເຖິງມັນໄດ້."/>
+	<String Id="Error1304" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການຂຽນໄຟລ໌: [ProductName]. ກວດ​ສອບ​ວ່າ​ທ່ານ​ມີ​ການ​ເຂົ້າ​ເຖິງ​ລະ​ບົບ​ນັ້ນ​."/>
+	<String Id="Error1303" Overridable="yes" Value="ຕົວຕິດຕັ້ງມີສິດທິພິເສດບໍ່ພຽງພໍໃນການເຂົ້າເຖິງໄດເລກະທໍລີນີ້: [ProductName]. ການຕິດຕັ້ງບໍ່ສາມາດສືບຕໍ່ໄດ້. ເຂົ້າສູ່ລະບົບເປັນຜູ້ເບິ່ງແຍງລະບົບຫຼືຕິດຕໍ່ຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານ."/>
+	<String Id="Error1302" Overridable="yes" Value="ກະລຸນາໃສ່ແຜ່ນ: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="ບໍ່ສາມາດສ້າງໄຟລ໌ &amp;apos;[ProductName]&amp;apos;. ໄດເຣັກທໍຣີທີ່ມີຊື່ນີ້ມີຢູ່ແລ້ວ. ຍົກເລີກການຕິດຕັ້ງແລ້ວລອງຕິດຕັ້ງໃສ່ບ່ອນອື່ນ."/>
+	<String Id="Error1101" Overridable="yes" Value="ເກີດຄວາມຜິດພາດໃນການອ່ານໄຟລ໌: [ProductName].{{ System error [ProductName].}} ກວດສອບວ່າໄຟລ໌ນັ້ນມີຢູ່ ແລະເຈົ້າສາມາດເຂົ້າເຖິງມັນໄດ້."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }ຕັ້ງບໍ່ສຳເລັດ."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }ສຳເລັດການຕິດຕັ້ງສຳເລັດແລ້ວ."/>
+	<String Id="Error23" Overridable="yes" Value="ກຳລັງກະກຽມທີ່ຈະລຶບແອັບພລິເຄຊັນເວີຊັນເກົ່າອອກ..."/>
+	<String Id="Error22" Overridable="yes" Value="ກຳລັງລຶບເວີຊັນເກົ່າຂອງແອັບພລິເຄຊັນນີ້ອອກ..."/>
+	<String Id="Error21" Overridable="yes" Value="ກຳລັງເກັບກຳຂໍ້ມູນທີ່ຕ້ອງການ..."/>
+	<String Id="Error20" Overridable="yes" Value="ກະລຸນາລໍຖ້າໃນຂະນະທີ່ Windows ຕັ້ງຄ່າ [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="ການຕິດຕັ້ງຢຸດກ່ອນໄວອັນຄວນ."/>
+	<String Id="Error18" Overridable="yes" Value="ຕົວຕິດຕັ້ງບໍ່ຕອບສະໜອງອີກຕໍ່ໄປ."/>
+	<String Id="Error17" Overridable="yes" Value="ອອກຈາກຄວາມຊົງຈໍາ. ປິດແອັບພລິເຄຊັນອື່ນກ່ອນທີ່ຈະລອງໃໝ່."/>
+	<String Id="Error16" Overridable="yes" Value="ເວລາຍັງເຫຼືອ: {[ProductName] ນາທີ }{[ProductName] ວິນາທີ}"/>
+	<String Id="Error15" Overridable="yes" Value="ການປະຕິບັດສິ້ນສຸດລົງ [ProductName]: [ProductName]. ຄ່າກັບຄືນ [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="ເລີ່ມປະຕິບັດ [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="ຢຸດການບັນທຶກ: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="ເລີ່ມຕົ້ນການບັນທຶກ: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="ປະເພດຂໍ້ຄວາມ: [ProductName], ການໂຕ້ຖຽງ: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="ການປະຕິບັດ [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{ດິສເຕັມ: }}"/>
+	<String Id="Error5" Overridable="yes" Value="ຕົວຕິດຕັ້ງໄດ້ພົບຄວາມຜິດພາດທີ່ບໍ່ຄາດຄິດໃນການຕິດຕັ້ງຊຸດນີ້. ນີ້ອາດຈະຊີ້ໃຫ້ເຫັນເຖິງບັນຫາກັບຊຸດນີ້. ລະຫັດຂໍ້ຜິດພາດແມ່ນ [ProductName]. {{ການໂຕ້ຖຽງແມ່ນ: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="ຂໍ້ມູນ [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="ຄໍາເຕືອນ [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{ຄວາມຜິດພາດ [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{ຄວາມຜິດພາດຮ້າຍແຮງ: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="ກຳລັງຍົກເລີກການເຜີຍແຜ່ຂໍ້ມູນຜະລິດຕະພັນ"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], Directory: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="ການລຶບໄຟລ໌ທີ່ຍ້າຍອອກ"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="ການຖອນໄຟລ໌ສໍາຮອງຂໍ້ມູນ"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Actio revolvere"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="ສະ​ພາບ​ການ​ຄໍາ​ຮ້ອງ​ສະ​ຫມັກ​:[ProductName]​, ຊື່​ສະ​ພາ​ແຫ່ງ​:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="ກຳລັງຍົກເລີກການເຜີຍແຜ່ຂໍ້ມູນການປະກອບ"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="ສະ​ພາບ​ການ​ຄໍາ​ຮ້ອງ​ສະ​ຫມັກ​:[ProductName]​, ຊື່​ສະ​ພາ​ແຫ່ງ​:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="ເຜີຍແຜ່ຂໍ້ມູນການປະກອບ"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], ຂຶ້ນກັບ: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="ການຕິດຕັ້ງລາຍການລະບົບ"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="ການສ້າງການດໍາເນີນການ script ສໍາລັບການປະຕິບັດ:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="ຄໍາ​ຮ້ອງ​ສະ​ຫມັກ​ການ​ໂຄ​ສະ​ນາ​"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="ຄີ: [ProductName], ຊື່: [ProductName], ມູນຄ່າ: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="ການຂຽນຄ່າການລົງທະບຽນລະບົບ"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="ໄຟລ​໌​: [ProductName]​, ພາກ​: [ProductName]​, Key​: [ProductName]​, ມູນ​ຄ່າ​: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="ການຂຽນຄ່າ INI ໄຟລ໌"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="ກຳລັງອັບເດດສະຕຣິງສະພາບແວດລ້ອມ"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="ຍົກເລີກການລົງທະບຽນຫ້ອງສະໝຸດປະເພດ"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="ຍົກເລີກການລົງທະບຽນຕົວລະບຸໂຄງການ"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME ປະເພດເນື້ອຫາ: [ProductName], ສ່ວນຂະຫຍາຍ: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="ກຳລັງຍົກເລີກການລົງທະບຽນຂໍ້ມູນ MIME"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="ຕົວອັກສອນ: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="ກຳລັງຍົກເລີກການລົງທະບຽນຟອນ"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="ສ່ວນຂະຫຍາຍ: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="ກຳລັງຍົກເລີກການລົງທະບຽນເຊີບເວີສ່ວນຂະຫຍາຍ"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="ຍົກເລີກການລົງທະບຽນແອັບພລິເຄຊັນ COM+ ແລະອົງປະກອບ"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="ID ຫ້ອງ: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="ຍົກເລີກການລົງທະບຽນເຊີບເວີ Class"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="ການຍົກເລີກການເຜີຍແຜ່ຄຸນສົມບັດຜະລິດຕະພັນ"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="ID ອົງປະກອບ: [ProductName], ຄຸນສົມບັດ: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="ການຍົກເລີກການເຜີຍແຜ່ອົງປະກອບທີ່ມີຄຸນສົມບັດ"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="ບໍລິການ: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="ການຢຸດເຊົາການບໍລິການ"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="ບໍລິການ: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="ການບໍລິການເລີ່ມຕົ້ນ"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="ການເລີ່ມຕົ້ນໄດເລກະທໍລີ ODBC"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], ໂຟນເດີ: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="ກຳລັງຍົກເລີກການລົງທະບຽນໂມດູນ"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], ໂຟນເດີ: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="ການລົງທະບຽນໂມດູນ"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="ຄົ້ນຫາຜະລິດຕະພັນທີ່ມີຄຸນນະພາບ"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="ທາງລັດ: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="ກຳລັງລຶບທາງລັດອອກ"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="ຄີ: [ProductName], ຊື່: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="ການຖອນຄ່າການລົງທະບຽນລະບົບ"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="ການຖອນອົງປະກອບ ODBC"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="ໄຟລ​໌​: [ProductName]​, ພາກ​: [ProductName]​, Key​: [ProductName]​, ມູນ​ຄ່າ​: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="ກຳລັງລຶບລາຍການໄຟລ໌ INI ອອກ"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="ໂຟນເດີ: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="ກຳລັງລຶບໂຟນເດີອອກ"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], Directory: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="ກຳລັງລຶບໄຟລ໌ອອກ"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="ຄໍາ​ຮ້ອງ​ສະ​ຫມັກ​: [ProductName]​, ເສັ້ນ​ຄໍາ​ສັ່ງ​: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="ກຳລັງລຶບແອັບພລິເຄຊັນອອກ"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="ກຳລັງອັບເດດສະຕຣິງສະພາບແວດລ້ອມ"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], Directory: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="ການລຶບໄຟລ໌ທີ່ຊໍ້າກັນ"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="ກຳລັງລົງທະບຽນຜູ້ໃຊ້"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="ການລົງທະບຽນຫ້ອງສະຫມຸດປະເພດ"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="ການລົງທະບຽນຜະລິດຕະພັນ"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="ຕົວອັກສອນ: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="ການລົງທະບຽນຟອນ"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Users: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="ການລົງທະບຽນແອັບພລິເຄຊັນ COM+ ແລະອົງປະກອບ"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="ການປັບປຸງການລົງທະບຽນອົງປະກອບ"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], Directory: [ProductName], ຂະຫນາດ: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="ການ​ແກ້​ໄຂ​ໄຟລ​໌​"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], Directory: [ProductName], ຂະຫນາດ: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="ຍ້າຍໄຟລ໌"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="ຄໍາຮ້ອງສະຫມັກ: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="ການຍ້າຍສະຖານະຄຸນສົມບັດຈາກແອັບພລິເຄຊັນທີ່ກ່ຽວຂ້ອງ"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="ການປະເມີນເງື່ອນໄຂການເປີດຕົວ"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="ບໍລິການ: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="ການຕິດຕັ້ງບໍລິການໃຫມ່"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="ການຕິດຕັ້ງອົງປະກອບ ODBC"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="ພົບ​ຄໍາ​ຮ້ອງ​ສະ​ຫມັກ​: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="ຊອກຫາຄໍາຮ້ອງສະຫມັກທີ່ກ່ຽວຂ້ອງ"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], Directory: [ProductName], ຂະຫນາດ: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="ການສ້າງໄຟລ໌ຊໍ້າກັນ"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="ບໍລິການ: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="ການບໍລິການລຶບ"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="ໂຟນເດີ: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="ການສ້າງໂຟນເດີ"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="ຄົ້ນຫາຜະລິດຕະພັນທີ່ມີຄຸນນະພາບ"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="ການ​ປະ​ຕິ​ບັດ​ການ​ຜູກ​ມັດ​"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="ຊັບສິນ: [ProductName], ລາຍເຊັນ: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="ຊອກຫາແອັບພລິເຄຊັນທີ່ຕິດຕັ້ງ"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="ພື້ນທີ່ຫວ່າງ: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="ການຈັດສັນພື້ນທີ່ລົງທະບຽນ"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="ການລົງທະບຽນຕົວລະບຸໂຄງການ"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME ປະເພດເນື້ອຫາ: [ProductName], ສ່ວນຂະຫຍາຍ: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="ກຳລັງລົງທະບຽນຂໍ້ມູນ MIME"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="ສ່ວນຂະຫຍາຍ: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="ກຳລັງລົງທະບຽນເຊີບເວີສ່ວນຂະຫຍາຍ"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="ID ຫ້ອງ: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="ການລົງທະບຽນເຊີບເວີ Class"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="ເຜີຍແຜ່ຂໍ້ມູນຜະລິດຕະພັນ"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="ຄຸນ​ນະ​ສົມ​ບັດ​: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="ການເຜີຍແຜ່ຄຸນສົມບັດຂອງຜະລິດຕະພັນ"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="ID ອົງປະກອບ: [ProductName], ຄຸນສົມບັດ: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="ເຜີຍແຜ່ອົງປະກອບທີ່ມີຄຸນສົມບັດ"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="ທາງລັດ: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="ການສ້າງທາງລັດ"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="ຄວາມຕ້ອງການພື້ນທີ່ຄອມພິວເຕີ"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="ຄວາມຕ້ອງການພື້ນທີ່ຄອມພິວເຕີ"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="ຄວາມຕ້ອງການພື້ນທີ່ຄອມພິວເຕີ"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], Directory: [ProductName], ຂະຫນາດ: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="ສຳເນົາໄຟລ໌ຕິດຕັ້ງເຄືອຂ່າຍ"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="ໄຟລ໌: [ProductName], Directory: [ProductName], ຂະຫນາດ: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="ສຳເນົາໄຟລ໌ໃໝ່"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="ກຳລັງກວດສອບການຕິດຕັ້ງ"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ກະລຸນາອ່ານ [ProductName] ຂໍ້ຕົກລົງໃບອະນຸຍາດ"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;ອັບເດດ"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;ຕິດຕັ້ງ"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ego &amp; accipio verba in License Agreement"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}ຍິນດີຕ້ອນຮັບສູ່ [ProductName] ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="ຕົວຊ່ວຍສ້າງການຕັ້ງຄ່າຈະອັບເດດ [ProductName] ໃນຄອມພິວເຕີຂອງທ່ານ. ຄລິກຕໍ່ໄປເພື່ອສືບຕໍ່ ຫຼືຍົກເລີກເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງຈະຕິດຕັ້ງ [ProductName] ໃນຄອມພິວເຕີຂອງທ່ານ. ຄລິກຕໍ່ໄປເພື່ອສືບຕໍ່ ຫຼືຍົກເລີກເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="ໄອຄອນອຸທານ"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="ກະລຸນາລໍຖ້າໃນຂະນະທີ່ຕົວຕິດຕັ້ງສໍາເລັດການກໍານົດຄວາມຕ້ອງການພື້ນທີ່ດິດຂອງທ່ານ."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;ກັບຄືນ"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}ພ້ອມທີ່ຈະອັບເດດ [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="ຄລິກອັບເດດເພື່ອອັບເດດ [ProductName] ຈາກຄອມພິວເຕີຂອງທ່ານ. ຄລິກກັບຄືນເພື່ອທົບທວນ ຫຼືປ່ຽນການຕັ້ງຄ່າການຕິດຕັ້ງຂອງທ່ານ. ຄລິກຍົກເລີກເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງ."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;ອັບເດດ"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}ພ້ອມແລ້ວທີ່ຈະລຶບ [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="ກົດ Remove ເພື່ອເອົາ [ProductName] ອອກຈາກຄອມພິວເຕີຂອງທ່ານ. ຄລິກກັບຄືນເພື່ອທົບທວນ ຫຼືປ່ຽນການຕັ້ງຄ່າການຕິດຕັ້ງຂອງທ່ານ. ຄລິກຍົກເລີກເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງ."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;ລົບອອກ"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}ພ້ອມທີ່ຈະສ້ອມແປງ [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="ກົດ Repair ເພື່ອສ້ອມແປງການຕິດຕັ້ງ [ProductName]. ຄລິກກັບຄືນເພື່ອທົບທວນ ຫຼືປ່ຽນການຕັ້ງຄ່າການຕິດຕັ້ງຂອງທ່ານ. ຄລິກຍົກເລີກເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງ."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="ຈັບຄູ່ຄືນໃໝ່"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}ພ້ອມທີ່ຈະປ່ຽນ [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="ກົດປ່ຽນເພື່ອເລີ່ມຕົ້ນການຕິດຕັ້ງ. ຄລິກກັບຄືນເພື່ອທົບທວນ ຫຼືປ່ຽນການຕັ້ງຄ່າການຕິດຕັ້ງຂອງທ່ານ. ຄລິກຍົກເລີກເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງ."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;ປ່ຽນ"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}ພ້ອມຕິດຕັ້ງ [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="ກົດຕິດຕັ້ງເພື່ອເລີ່ມຕົ້ນການຕິດຕັ້ງ. ຄລິກກັບຄືນເພື່ອທົບທວນ ຫຼືປ່ຽນການຕັ້ງຄ່າການຕິດຕັ້ງຂອງທ່ານ. ຄລິກຍົກເລີກເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງ."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;ຕິດຕັ້ງ"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="ກົດປຸ່ມ Finish ເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="ການຕິດຕັ້ງ [ProductName] ຖືກລົບກວນ. ລະບົບຂອງທ່ານບໍ່ໄດ້ຖືກດັດແກ້. ເພື່ອຕິດຕັ້ງໂປຣແກຣມນີ້ໃນເວລາຕໍ່ມາ, ກະລຸນາດໍາເນີນການຕິດຕັ້ງອີກຄັ້ງ."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງຖືກລົບກວນ"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="ຄຸນສົມບັດຂອງໂປຣແກຣມທັງໝົດຈະຖືກຕິດຕັ້ງ. ຕ້ອງການພື້ນທີ່ດິດຫຼາຍທີ່ສຸດ."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="ອະ​ນຸ​ຍາດ​ໃຫ້​ຜູ້​ໃຊ້​ເລືອກ​ທີ່​ຈະ​ຕິດ​ຕັ້ງ​ຄຸນ​ນະ​ສົມ​ບັດ​ຂອງ​ໂຄງ​ການ​ແລະ​ບ່ອນ​ທີ່​ເຂົາ​ເຈົ້າ​ຈະ​ໄດ້​ຮັບ​ການ​ຕິດ​ຕັ້ງ​. ແນະນຳສຳລັບຜູ້ໃຊ້ຂັ້ນສູງ."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="ຕິດຕັ້ງຄຸນສົມບັດຂອງໂປຣແກຣມທົ່ວໄປທີ່ສຸດ. ແນະນຳສຳລັບຜູ້ໃຊ້ສ່ວນໃຫຍ່."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="ເລືອກປະເພດການຕັ້ງຄ່າທີ່ເຫມາະສົມທີ່ສຸດກັບຄວາມຕ້ອງການຂອງທ່ານ"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ເລືອກປະເພດການຕັ້ງຄ່າ"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="ສໍາເລັດການຕິດຕັ້ງ"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="ສຳເລັດ"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="ການຕິດຕັ້ງແບບກຳນົດເອງ"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp; custom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="ການຕິດຕັ້ງແບບປົກກະຕິ"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;ປົກກະຕິ"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}ກຳລັງສືບຕໍ່ຕັ້ງຄ່າ [ProductName] Wizard"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງຈະສໍາເລັດການຕິດຕັ້ງ [ProductName] ໃນຄອມພິວເຕີຂອງທ່ານ. ຄລິກຕິດຕັ້ງເພື່ອສືບຕໍ່ ຫຼືຍົກເລີກເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;ຕິດຕັ້ງ"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="ສະຖານະ:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="ຄວາມຄືບໜ້າສຳເລັດແລ້ວ"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}ກຳລັງອັບເດດ [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="ກະລຸນາລໍຖ້າໃນຂະນະທີ່ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງອັບເດດ [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}ກຳລັງລຶບ [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="ກະລຸນາລໍຖ້າໃນຂະນະທີ່ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງເອົາ [ProductName] ອອກ."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}ການສ້ອມແປງ [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="ກະລຸນາລໍຖ້າໃນຂະນະທີ່ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງສ້ອມແປງ [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}ການປ່ຽນ [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="ກະລຸນາລໍຖ້າໃນຂະນະທີ່ຕົວຊ່ວຍສ້າງການຕັ້ງຄ່າປ່ຽນ [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}ກຳລັງຕິດຕັ້ງ [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="ກະລຸນາລໍຖ້າໃນຂະນະທີ່ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}ຍິນດີຕ້ອນຮັບສູ່ [ProductName] ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="ກະລຸນາລໍຖ້າໃນຂະນະທີ່ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງກະກຽມເພື່ອນໍາພາທ່ານຜ່ານການຕິດຕັ້ງ."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="ອີກທາງເລືອກ, ທ່ານອາດຈະເລືອກທີ່ຈະປິດການທໍາງານ rollback ຂອງຕົວຕິດຕັ້ງ. ການປິດໃຊ້ງານ rollback ປ້ອງກັນຕົວຕິດຕັ້ງຈາກການຟື້ນຟູສະພາບເດີມຂອງຄອມພິວເຕີຂອງທ່ານຖ້າການຕິດຕັ້ງຖືກລົບກວນໃນທາງໃດກໍ່ຕາມ. ຄລິກແມ່ນແລ້ວຖ້າທ່ານຕ້ອງການສ່ຽງຕໍ່ການປິດການໃຊ້ງານ rollback."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ອອກຈາກພື້ນທີ່ດິສກ໌"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="ພື້ນທີ່ດິສກ໌ທີ່ຕ້ອງການສໍາລັບການຕິດຕັ້ງເກີນພື້ນທີ່ດິດທີ່ມີຢູ່."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="ປະລິມານທີ່ເນັ້ນໃສ່ບໍ່ມີພື້ນທີ່ດິສກ໌ພຽງພໍສໍາລັບຄຸນສົມບັດທີ່ເລືອກໃນປັດຈຸບັນ. ທ່ານ​ສາ​ມາດ​ເອົາ​ບາງ​ໄຟລ​໌​ອອກ​ຈາກ​ປະ​ລິ​ມານ​ທີ່​ເນັ້ນ​ໃສ່​, ຕິດ​ຕັ້ງ​ຄຸນ​ສົມ​ບັດ​ຫນ້ອຍ​, ຫຼື​ເລືອກ​ເອົາ​ຈຸດ​ຫມາຍ​ປາຍ​ທາງ​ທີ່​ແຕກ​ຕ່າງ​ກັນ​."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ອອກຈາກພື້ນທີ່ດິສກ໌"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="ພື້ນທີ່ດິສກ໌ທີ່ຕ້ອງການສໍາລັບການຕິດຕັ້ງເກີນພື້ນທີ່ດິດທີ່ມີຢູ່."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="ປະລິມານທີ່ເນັ້ນໃສ່ບໍ່ມີພື້ນທີ່ດິສກ໌ພຽງພໍສໍາລັບຄຸນສົມບັດທີ່ເລືອກໃນປັດຈຸບັນ. ທ່ານ​ສາ​ມາດ​ເອົາ​ບາງ​ໄຟລ​໌​ອອກ​ຈາກ​ປະ​ລິ​ມານ​ທີ່​ເນັ້ນ​ໃສ່​, ຕິດ​ຕັ້ງ​ຄຸນ​ສົມ​ບັດ​ຫນ້ອຍ​, ຫຼື​ເລືອກ​ເອົາ​ຈຸດ​ຫມາຍ​ປາຍ​ທາງ​ທີ່​ແຕກ​ຕ່າງ​ກັນ​."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;ຢ່າປິດແອັບພລິເຄຊັນ. ຈະຕ້ອງປິດເປີດເຄື່ອງໃໝ່."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="ປິດແອັບພລິເຄຊັນ ແລະພະຍາຍາມຣີສະຕາດພວກມັນ."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}ໄຟລ໌ທີ່ໃຊ້ຢູ່"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="ບາງໄຟລ໌ທີ່ຕ້ອງໄດ້ຮັບການປັບປຸງແມ່ນຖືກນໍາໃຊ້ໃນປັດຈຸບັນ."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="ແອັບພລິເຄຊັນຕໍ່ໄປນີ້ກຳລັງໃຊ້ໄຟລ໌ທີ່ຕ້ອງການອັບເດດໂດຍການຕັ້ງຄ່ານີ້. ທ່ານສາມາດໃຫ້ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງປິດພວກມັນ ແລະພະຍາຍາມຣີສະຕາດພວກມັນ ຫຼືເປີດເຄື່ອງໃໝ່ໃນພາຍຫຼັງ."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}ຍິນດີຕ້ອນຮັບສູ່ [ProductName] ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງອະນຸຍາດໃຫ້ທ່ານປ່ຽນວິທີການຕິດຕັ້ງຄຸນສົມບັດ [ProductName] ໃນຄອມພິວເຕີຂອງທ່ານ ຫຼືເອົາມັນອອກຈາກຄອມພິວເຕີຂອງທ່ານ. ຄລິກຕໍ່ໄປເພື່ອສືບຕໍ່ ຫຼືຍົກເລີກເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] ບໍ່ສາມາດສ້ອມແປງໄດ້."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="ແກ້ໄຂຂໍ້ຜິດພາດໃນການຕິດຕັ້ງຫຼ້າສຸດໂດຍການແກ້ໄຂໄຟລ໌ທີ່ຂາດຫາຍໄປແລະເສຍຫາຍ, ທາງລັດ, ແລະລາຍການລີຈິດຊີ."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] ບໍ່ສາມາດເອົາອອກໄດ້."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="ເອົາ [ProductName] ອອກຈາກຄອມພິວເຕີຂອງທ່ານ."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] ບໍ່ມີຄຸນສົມບັດທີ່ສາມາດເລືອກໄດ້ຢ່າງເປັນອິດສະຫຼະ."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="ໃຫ້ທ່ານປ່ຽນວິທີການຕິດຕັ້ງຄຸນສົມບັດ."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ປ່ຽນ, ສ້ອມແປງ ຫຼືລຶບການຕິດຕັ້ງອອກ"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="ເລືອກ​ການ​ດໍາ​ເນີນ​ງານ​ທີ່​ທ່ານ​ຕ້ອງ​ການ​ທີ່​ຈະ​ປະ​ຕິ​ບັດ​."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="ຖອນການຕິດຕັ້ງ"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;ລົບອອກ"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="ຕິດຕັ້ງສ້ອມແປງ"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="ຈັບຄູ່ຄືນໃໝ່"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="ປ່ຽນການຕິດຕັ້ງ"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;ປ່ຽນ"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ຂໍ້ຕົກລົງໃບອະນຸຍາດຜູ້ໃຊ້ສຸດທ້າຍ"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="ກະລຸນາອ່ານຂໍ້ຕົກລົງໃບອະນຸຍາດຕໍ່ໄປນີ້ຢ່າງລະມັດລະວັງ"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ego &amp; accipio verba in License Agreement"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="ໄອຄອນຂໍ້ມູນ"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="ໄດເລກະທໍລີການຕິດຕັ້ງຕ້ອງຢູ່ໃນຮາດໄດພາຍໃນເຄື່ອງ."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;ປ່ຽນ..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="ການຕິດຕັ້ງ &amp; ໂຟນເດີ:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] ຈະຖືກຕິດຕັ້ງຢູ່ໃນໂຟນເດີຕໍ່ເຄື່ອງຕາມຄ່າເລີ່ມຕົ້ນ ແລະສາມາດໃຊ້ໄດ້ກັບຜູ້ໃຊ້ທັງໝົດ. ທ່ານສາມາດປ່ຽນໂຟນເດີການຕິດຕັ້ງເລີ່ມຕົ້ນ. ທ່ານຕ້ອງມີສິດທິຜູ້ເບິ່ງແຍງລະບົບທ້ອງຖິ່ນ."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}ຕິດຕັ້ງສຳລັບຜູ້ໃຊ້ທັງໝົດຂອງເຄື່ອງນີ້"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] ບໍ່ຮອງຮັບການຕິດຕັ້ງຕໍ່ຜູ້ໃຊ້."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] ຈະຖືກຕິດຕັ້ງຢູ່ໃນໂຟນເດີຂອງຜູ້ໃຊ້ຕໍ່ຄົນ ແລະສາມາດໃຊ້ໄດ້ກັບບັນຊີຜູ້ໃຊ້ຂອງເຈົ້າເທົ່ານັ້ນ. ທ່ານບໍ່ຕ້ອງການສິດທິຜູ້ເບິ່ງແຍງລະບົບທ້ອງຖິ່ນ."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}ຕິດຕັ້ງ &amp; ພຽງແຕ່ສໍາລັບທ່ານ ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ຂອບເຂດການຕິດຕັ້ງ"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="ເລືອກຂອບເຂດການຕິດຕັ້ງແລະໂຟນເດີ"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="ຕິດຕັ້ງ [ProductName] ເພື່ອ:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="ຄລິກຕໍ່ໄປເພື່ອຕິດຕັ້ງໃສ່ໂຟນເດີເລີ່ມຕົ້ນ ຫຼືຄລິກປ່ຽນເພື່ອເລືອກອັນອື່ນ."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ໂຟນເດີປາຍທາງ"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;ປ່ຽນ..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}ໄຟລ໌ທີ່ໃຊ້ຢູ່"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="ບາງໄຟລ໌ທີ່ຕ້ອງໄດ້ຮັບການປັບປຸງແມ່ນຖືກນໍາໃຊ້ໃນປັດຈຸບັນ."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="ແອັບພລິເຄຊັນຕໍ່ໄປນີ້ກຳລັງໃຊ້ໄຟລ໌ທີ່ຕ້ອງການອັບເດດໂດຍການຕັ້ງຄ່ານີ້. ປິດແອັບພລິເຄຊັນເຫຼົ່ານີ້ແລ້ວຄລິກ &amp;ລອງໃໝ່ເພື່ອສືບຕໍ່ການຕັ້ງຄ່າ ຫຼື Exit ເພື່ອອອກຈາກມັນ."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="ອອກໄປ"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;ປ່ຽນ"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;ຕິດຕັ້ງ"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="ຄຸນນະສົມບັດDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="ຄຸນສົມບັດDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ຄຸນສົມບັດຂອງຜະລິດຕະພັນ"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="ເລືອກວິທີທີ່ທ່ານຕ້ອງການຕິດຕັ້ງຄຸນສົມບັດ."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="ຄຸນສົມບັດຂອງຜະລິດຕະພັນ"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="ກົດປຸ່ມ Finish ເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງສິ້ນສຸດລົງກ່ອນໄວອັນຄວນເນື່ອງຈາກມີຂໍ້ຜິດພາດ. ລະບົບຂອງທ່ານບໍ່ໄດ້ຖືກດັດແກ້. ເພື່ອຕິດຕັ້ງໂປຣແກຣມນີ້ໃນເວລາຕໍ່ມາ, ໃຫ້ເປີດໃຊ້ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງອີກຄັ້ງ."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] ຕົວຊ່ວຍສ້າງການຕິດຕັ້ງສິ້ນສຸດລົງກ່ອນໄວອັນຄວນ"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}ສຳເລັດການຕັ້ງ [ProductName] Wizard"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="ກົດປຸ່ມ Finish ເພື່ອອອກຈາກຕົວຊ່ວຍສ້າງການຕິດຕັ້ງ."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="ໄອຄອນຂໍ້ມູນ"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="ຂໍ້​ຄວາມ​ຂໍ້​ມູນ​ຂ່າວ​ສານ​"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ຄວາມຕ້ອງການພື້ນທີ່ດິສກ໌"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="ພື້ນທີ່ດິສກ໌ທີ່ຕ້ອງການສໍາລັບການຕິດຕັ້ງຄຸນສົມບັດທີ່ເລືອກ."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="ປະລິມານທີ່ເນັ້ນໃສ່ບໍ່ມີພື້ນທີ່ດິສກ໌ພຽງພໍສໍາລັບຄຸນສົມບັດທີ່ເລືອກ. ທ່ານສາມາດລຶບບາງໄຟລ໌ອອກຈາກປະລິມານທີ່ເນັ້ນໃສ່, ຕິດຕັ້ງຄຸນສົມບັດໜ້ອຍລົງ, ຫຼືເລືອກໄດຣຟ໌ປາຍທາງທີ່ແຕກຕ່າງກັນ."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="ສະຖານທີ່:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="ປັບແຕ່ງDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="ປັບແຕ່ງDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="ປັບແຕ່ງDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ການຕັ້ງຄ່າແບບກຳນົດເອງ"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="ເລືອກວິທີທີ່ທ່ານຕ້ອງການຕິດຕັ້ງຄຸນສົມບັດ."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="ຄລິກທີ່ໄອຄອນຢູ່ໃນຕົ້ນໄມ້ຂ້າງລຸ່ມນີ້ເພື່ອປ່ຽນວິທີການຕິດຕັ້ງຄຸນສົມບັດຕ່າງໆ."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Disk &amp; ການ​ນໍາ​ໃຊ້​"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="ຕັ້ງຄ່າຄືນໃໝ່"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="ເລືອກເບິ່ງ..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="ຕົ້ນໄມ້ຂອງການຄັດເລືອກ"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="ໄອຄອນຂໍ້ມູນ"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Visne vero institutionem [ProductName] rescindere?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ປ່ຽນໂຟນເດີປາຍທາງ"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="ທ່ອງໄປຫາໂຟນເດີປາຍທາງ"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;ຊື່ໂຟນເດີ:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="ສ້າງໂຟນເດີໃຫມ່"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="ຂຶ້ນ​ໄປ​ໃນ​ລະ​ດັບ​ຫນຶ່ງ​"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;ເບິ່ງໃນ:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="ທາໂຮມາ"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;ກ້າວໜ້າ"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;ຕິດຕັ້ງ"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="ຄລິກຕິດຕັ້ງເພື່ອຕິດຕັ້ງຜະລິດຕະພັນດ້ວຍຕົວເລືອກເລີ່ມຕົ້ນສຳລັບທ່ານ. ຄລິກທີ່ຂັ້ນສູງເພື່ອປ່ຽນຕົວເລືອກການຕິດຕັ້ງ."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="ຄລິກຕິດຕັ້ງເພື່ອຕິດຕັ້ງຜະລິດຕະພັນດ້ວຍຕົວເລືອກເລີ່ມຕົ້ນສຳລັບຜູ້ໃຊ້ທັງໝົດ. ຄລິກທີ່ຂັ້ນສູງເພື່ອປ່ຽນຕົວເລືອກການຕິດຕັ້ງ."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ego &amp; accipio verba in License Agreement"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ກະລຸນາອ່ານ [ProductName] ຂໍ້ຕົກລົງໃບອະນຸຍາດ"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] ຕັ້ງ"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;ພິມ"/>
+	<String Id="WixUIOK" Overridable="yes" Value="ຕົກລົງ"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;ບໍ່"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;ແມ່ນແລ້ວ"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;ບໍ່ສົນໃຈ"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;ລອງໃໝ່"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="ສໍາເລັດຮູບ"/>
+	<String Id="WixUICancel" Overridable="yes" Value="ຍົກເລີກ"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;ຕໍ່ໄປ"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;ກັບຄືນ"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="ການຖອນການຕິດຕັ້ງການຕັ້ງຄ່າ Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="ກຳລັງກັບຄືນການຕັ້ງຄ່າ Windows Firewall"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="ການຕິດຕັ້ງການຕັ້ງຄ່າ Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="ກຳລັງກັບຄືນການຕັ້ງຄ່າ Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="ການຕັ້ງຄ່າ Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="ການຕັ້ງຄ່າ Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="ບໍ່ສາມາດເຊື່ອມຕໍ່ກັບ Windows Firewall ໄດ້. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Network Shared Server"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Share drives on network to enable control and browsing from RAAS Client"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Can reboot"/>

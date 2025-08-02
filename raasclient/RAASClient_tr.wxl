@@ -1,9 +1,16 @@
-﻿<WixLocalization Culture="tr" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Uzak uygulamalar için görselleştirmeler yapılandırmada seçenek olarak mevcuttur"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer'da RAAS sunucularını görüntüleyin"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Yerel bilgisayardaki sunucu uygulamalarına uzak uygulama kısayolları oluşturun"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="Görselleştirmeler"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Kabuk Ad Alanı Uzantısı"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Uzaktan Kısayollar"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1055"/>
+﻿<WixLocalization Culture="tr-TR-TR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını kaldırma"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını geri alma"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını yükleme"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını geri alma"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Güvenlik Duvarını Yapılandırma"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Güvenlik Duvarını Yapılandırma"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windows Güvenlik Duvarına bağlanılamıyor. ([2] [3] [4] [5])"/>
+	<Str-TR-TRing Id="VisualizationsDescription" Overridable="yes" Value="Uzak uygulamalar için görselleştirmeler yapılandırmada seçenek olarak mevcuttur"/>
+	<Str-TR-TRing Id="NamespaceDescription" Overridable="yes" Value="Explorer'da RAAS sunucularını görüntüleyin"/>
+	<Str-TR-TRing Id="ShortcutsDescription" Overridable="yes" Value="Yerel bilgisayardaki sunucu uygulamalarına uzak uygulama kısayolları oluşturun"/>
+	<Str-TR-TRing Id="VisualizationsTitle" Overridable="yes" Value="Görselleştirmeler"/>
+	<Str-TR-TRing Id="NamespaceTitle" Overridable="yes" Value="Kabuk Ad Alanı Uzantısı"/>
+	<Str-TR-TRing Id="ShortcutsTitle" Overridable="yes" Value="Uzaktan Kısayollar"/>
+	<Str-TR-TRing Id="ProductLanguage" Overridable="yes" Value="1055"/>
 </WixLocalization>

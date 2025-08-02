@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="eo" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="eo" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Volumo"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Diska Grandeco"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Bezonata"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Diferenco"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Disponebla"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Restanta tempo:{ [ProductName] minutoj}{ [ProductName] sekundoj}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Ĉi tiu funkcio postulas [ProductName] en via malmola disko. Ĝi havas [ProductName] el [ProductName] subtrajtoj elektitaj. La subfunkcioj postulas [ProductName] sur via malmola disko."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Ĉi tiu funkcio postulas [ProductName] en via malmola disko. Ĝi havas [ProductName] el [ProductName] subtrajtoj elektitaj. La subfunkcioj liberigas [ProductName] sur via malmola disko."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Ĉi tiu funkcio liberigas [ProductName] sur via malmola disko. Ĝi havas [ProductName] el [ProductName] subtrajtoj elektitaj. La subfunkcioj postulas [ProductName] sur via malmola disko."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Ĉi tiu funkcio liberigas [ProductName] sur via malmola disko. Ĝi havas [ProductName] el [ProductName] subtrajtoj elektitaj. La subfunkcioj liberigas [ProductName] sur via malmola disko."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Ĉi tiu funkcio restos rulebla de la reto"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Ĉi tiu funkcio ŝanĝiĝos de funkciado de reta stato por esti instalita sur la loka malmola disko"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Ĉi tiu funkcio ŝanĝiĝos de funkciado de reto-stato al agordo por esti instalita kiam necese"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Ĉi tiu funkcio estos tute malinstalita, vi ne povos ruli ĝin de la reto"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Ĉi tiu funkcio estos forigita de via loka malmola disko, sed ankoraŭ estos disponebla por funkcii el la reto"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Ĉi tiu funkcio restos sur via loka malmola disko"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Ĉi tiu funkcio estos forigita de via loka malmola disko, sed ankoraŭ estos disponebla por funkcii de KD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Ĉi tiu funkcio estos forigita de via loka malmola disko, sed estos instalita kiam necese"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Ĉi tiu funkcio estos tute forigita"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Kompilkosto por ĉi tiu funkcio..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Ĉi tiu funkcio postulas [ProductName] en via malmola disko."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Ĉi tiu funkcio liberigas [ProductName] sur via malmola disko."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Ĉi tiu funkcio ŝanĝiĝos de funkciado de KD-ŝtato por esti instalita sur la loka malmola disko"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Ĉi tiu funkcio restos rulebla de KD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Ĉi tiu funkcio ŝanĝiĝos de funkciado de KD-stato al agordo por esti instalita kiam necese"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Ĉi tiu funkcio estos tute malinstalita, vi ne povos ruli ĝin de KD"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Ĉi tiu funkcio estos disponebla por funkcii de la reto"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Ĉi tiu funkcio estos instalita sur via loka malmola disko"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Ĉi tiu funkcio estos disponebla por ruliĝi de KD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Estos instalita kiam necese"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Ĉi tiu funkcio fariĝos neatingebla"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Ĉi tiu funkcio estos instalita por funkcii de la reto"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Ĉi tiu funkcio estos instalita sur la loka malmola disko"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Ĉi tiu funkcio estos instalita por funkcii de KD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Ĉi tiu funkcio estos instalita kiam necese"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Ĉi tiu funkcio restos malinstalita"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Kolektante bezonatajn informojn..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Dosierujo|Nova Dosierujo"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Estos instalita por funkcii de reto"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Estos instalita sur loka malmola disko"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Estos instalita por funkcii de KD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="La tuta funkcio estos instalita por funkcii de reto"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="La tuta funkcio estos instalita sur loka malmola disko"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="La tuta funkcio estos instalita por funkcii de KD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Karakterizaĵo estos instalita kiam necese"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="La tuta funkcio estos nedisponebla"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="bajtoj"/>
+	<String Id="Error1938" Overridable="yes" Value="Okazis eraro dum la instalado de aro &amp;apos;[ProductName]&amp;apos;. Unu aŭ pluraj moduloj de la kunigo ne estis trovitaj. HRESULT: [ProductName].{{ kuniginterfaco: [ProductName], funkcio: [ProductName], komponanto: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Okazis eraro dum la instalado de aro &amp;apos;[ProductName]&amp;apos;. La subskribo aŭ katalogo ne povis esti kontrolita aŭ ne validas. HRESULT: [ProductName].{{ kuniginterfaco: [ProductName], funkcio: [ProductName], komponanto: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Okazis eraro dum la instalado de aro &amp;apos;[ProductName]&amp;apos;. La aro ne estas forte nomita aŭ ne estas subskribita kun la minimuma ŝlosillongo. HRESULT: [ProductName].{{ kuniginterfaco: [ProductName], funkcio: [ProductName], komponanto: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Okazis eraro dum la instalado de aro &amp;apos;[ProductName]&amp;apos;. Bonvolu raporti al Helpo kaj Subteno por pliaj informoj. HRESULT: [ProductName].{{ kuniginterfaco: [ProductName], funkcio: [ProductName], komponanto: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Uzantinstalaĵoj estas malŝaltitaj per politiko sur la maŝino."/>
+	<String Id="Error1933" Overridable="yes" Value="La servo de Windows Installer ne povas ĝisdatigi unu aŭ plurajn protektitajn Vindozajn dosierojn.{{ SFP Eraro: [ProductName]. Listo de protektitaj dosieroj:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="La servo de Windows Installer ne povas ĝisdatigi la protektitan Vindozan dosieron [ProductName].{{ Paka versio: [ProductName], OS Protektita versio: [ProductName], SFP Eraro: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="La servo de Windows Installer ne povas ĝisdatigi la sistemdosieron [ProductName] ĉar la dosiero estas protektita de Vindozo. Vi eble bezonos ĝisdatigi vian operaciumon por ke ĉi tiu programo funkciu ĝuste.{{ Paka versio: [ProductName], OS Protektita versio: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="La priskribo por servo &amp;apos;[ProductName]&amp;apos; ([ProductName]) ne povus esti ŝanĝita."/>
+	<String Id="Error1929" Overridable="yes" Value="Eraro malregistrante COM+-Aplikon. Kontaktu vian helppersonaron por pliaj informoj."/>
+	<String Id="Error1928" Overridable="yes" Value="Eraro dum registrado de COM+-Apliko. Kontaktu vian helppersonaron por pliaj informoj."/>
+	<String Id="Error1927" Overridable="yes" Value="Komponantaj Servoj (COM+ 1.0) ne estas instalitaj sur ĉi tiu komputilo. Ĉi tiu instalaĵo postulas Komponantajn Servojn por kompletigi sukcese. Komponantaj Servoj estas haveblaj en Vindozo 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Ne eblis agordi dosiersekurecon por dosiero &amp;apos;[ProductName]&amp;apos;. Eraro: [ProductName]. Kontrolu, ke vi havas sufiĉajn privilegiojn por modifi la sekurecajn permesojn por ĉi tiu dosiero."/>
+	<String Id="Error1925" Overridable="yes" Value="Vi ne havas sufiĉajn privilegiojn por kompletigi ĉi tiun instaladon por ĉiuj uzantoj de la maŝino. Ensalutu kiel administranto kaj poste reprovu ĉi tiun instaladon."/>
+	<String Id="Error1924" Overridable="yes" Value="Ne eblis ĝisdatigi mediovariablon &amp;apos;[ProductName]&amp;apos;. Kontrolu, ke vi havas sufiĉajn privilegiojn por modifi mediajn variablojn."/>
+	<String Id="Error1923" Overridable="yes" Value="Servo &amp;apos;[ProductName]&amp;apos; ([ProductName]) ne povis esti instalita. Kontrolu, ke vi havas sufiĉajn privilegiojn por instali sistemajn servojn."/>
+	<String Id="Error1922" Overridable="yes" Value="Servo &amp;apos;[ProductName]&amp;apos; ([ProductName]) ne povis esti forigita. Kontrolu, ke vi havas sufiĉajn privilegiojn por forigi sistemajn servojn."/>
+	<String Id="Error1921" Overridable="yes" Value="Servo &amp;apos;[ProductName]&amp;apos; ([ProductName]) ne eblis haltigi. Kontrolu, ke vi havas sufiĉajn privilegiojn por haltigi sistemajn servojn."/>
+	<String Id="Error1920" Overridable="yes" Value="Servo &amp;apos;[ProductName]&amp;apos; ([ProductName]) malsukcesis komenci. Kontrolu, ke vi havas sufiĉajn privilegiojn por komenci sistemajn servojn."/>
+	<String Id="Error1919" Overridable="yes" Value="Eraro agordante ODBC-datumfonton: [ProductName], ODBC-eraro [ProductName]: [ProductName]. Kontrolu, ke la dosiero [ProductName] ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error1918" Overridable="yes" Value="Eraro instalante ODBC-ŝoforon: [ProductName], ODBC-eraro [ProductName]: [ProductName]. Kontrolu, ke la dosiero [ProductName] ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error1917" Overridable="yes" Value="Eraro forigo de ODBC-ŝoforo: [ProductName], ODBC-eraro [ProductName]: [ProductName]. Kontrolu, ke vi havas sufiĉajn privilegiojn por forigi ODBC-ŝoforojn."/>
+	<String Id="Error1916" Overridable="yes" Value="Eraro instalante ODBC-ŝoformanaĝeron, ODBC-eraro [ProductName]: [ProductName]. Kontaktu vian helppersonaron."/>
+	<String Id="Error1915" Overridable="yes" Value="Eraro forigo de ODBC-ŝoformanaĝero, ODBC-eraro [ProductName]: [ProductName]. Kontaktu vian helppersonaron."/>
+	<String Id="Error1914" Overridable="yes" Value="Ne eblis plani dosieron [ProductName] por anstataŭigi dosieron [ProductName] ĉe rekomenco. Kontrolu, ke vi havas skribpermesojn al dosiero [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Ne eblis ĝisdatigi la ini-dosieron [ProductName][ProductName]. Kontrolu, ke la dosiero ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error1912" Overridable="yes" Value="Ne eblis malregistri tajpbibliotekon por dosiero [ProductName]. Kontaktu vian helppersonaron."/>
+	<String Id="Error1911" Overridable="yes" Value="Ne eblis registri tipbibliotekon por dosiero [ProductName]. Kontaktu vian helppersonaron."/>
+	<String Id="Error1910" Overridable="yes" Value="Ne eblis forigi Ŝparvojon [ProductName]. Kontrolu, ke la ŝparvoja dosiero ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error1909" Overridable="yes" Value="Ne eblis krei Ŝparvojon [ProductName]. Kontrolu, ke la cela dosierujo ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error1908" Overridable="yes" Value="Ne eblis malregistri tiparon [ProductName]. Kontrolu, ke vi havas sufiĉajn permesojn por forigi tiparojn."/>
+	<String Id="Error1907" Overridable="yes" Value="Ne eblis registri tiparon [ProductName]. Kontrolu, ke vi havas sufiĉajn permesojn por instali tiparojn, kaj ke la sistemo subtenas ĉi tiun tiparon."/>
+	<String Id="Error1906" Overridable="yes" Value="Malsukcesis konservi pakaĵon [ProductName]. Eraro: [ProductName]. Kontaktu vian helppersonaron."/>
+	<String Id="Error1905" Overridable="yes" Value="Modulo [ProductName] malsukcesis malregistriĝi. HRESULT [ProductName]. Kontaktu vian helppersonaron."/>
+	<String Id="Error1904" Overridable="yes" Value="Modulo [ProductName] malsukcesis registri. HRESULT [ProductName]. Kontaktu vian helppersonaron."/>
+	<String Id="Error1903" Overridable="yes" Value="Planado de rekomenca operacio: Forigo de dosiero [ProductName]. Devas rekomenci por kompletigi operacion."/>
+	<String Id="Error1902" Overridable="yes" Value="Planado de rekomenca operacio: Alinomado de dosiero [ProductName] al [ProductName]. Devas rekomenci por kompletigi operacion."/>
+	<String Id="Error1901" Overridable="yes" Value="Eraro dum provo legi el la fonta instala datumbazo: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Valida celdosierujo por la instalo ne povis esti determinita."/>
+	<String Id="Error1806" Overridable="yes" Value="Vi havas nesufiĉajn privilegiojn por legi ĉi tiun dosierujon."/>
+	<String Id="Error1805" Overridable="yes" Value="La dosierujo [ProductName] ne ekzistas. Bonvolu enigi vojon al ekzistanta dosierujo."/>
+	<String Id="Error1804" Overridable="yes" Value="Ne estas disko en la disko [ProductName]. Bonvolu enmeti unu kaj alklaku Reprovi, aŭ alklaku Nuligi por reveni al la foliuma dialogo kaj elekti alian volumon."/>
+	<String Id="Error1803" Overridable="yes" Value="Ne estas disko en la disko [ProductName]. Bonvolu enmeti unu kaj alklaku Reprovi, aŭ alklaku Nuligi por reiri al la antaŭe elektita volumeno."/>
+	<String Id="Error1802" Overridable="yes" Value="Sen memoro. Fermu aliajn aplikojn antaŭ reprovi."/>
+	<String Id="Error1801" Overridable="yes" Value="La vojo [ProductName] ne validas. Bonvolu specifi validan vojon."/>
+	<String Id="Error1732" Overridable="yes" Value="In order to complete the installation of [2], you must restart the computer. Other users are currently logged on to this computer, and restarting may cause them to lose their work. Do you want to restart now?"/>
+	<String Id="Error1731" Overridable="yes" Value="La font-instala pako por la produkto [ProductName] estas malsinkronigita kun la klientpakaĵo. Provu la instaladon denove uzante validan kopion de la instala pako &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Vi devas esti Administranto por forigi ĉi tiun aplikaĵon. Por forigi ĉi tiun aplikaĵon, vi povas ensaluti kiel Administranto aŭ kontakti vian teknikan subtengrupon por helpo."/>
+	<String Id="Error1729" Overridable="yes" Value="Agordo malsukcesis."/>
+	<String Id="Error1728" Overridable="yes" Value="Agordo kompletigita sukcese."/>
+	<String Id="Error1727" Overridable="yes" Value="Anonco malsukcesis."/>
+	<String Id="Error1726" Overridable="yes" Value="Anonco kompletigita sukcese."/>
+	<String Id="Error1725" Overridable="yes" Value="Forigo malsukcesis."/>
+	<String Id="Error1724" Overridable="yes" Value="Forigo kompletigita sukcese."/>
+	<String Id="Error1723" Overridable="yes" Value="Estas problemo kun ĉi tiu pako de Windows Installer. DLL bezonata por ke ĉi tiu instalado finiĝos ne eblis ruliĝi. Kontaktu vian helppersonaron aŭ pakvendiston.{{ Ago [ProductName], enskribo: [ProductName], biblioteko: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Estas problemo kun ĉi tiu pako de Windows Installer. Programo rulita kiel parto de la aranĝo ne finiĝis kiel atendite. Kontaktu vian helppersonaron aŭ pakvendiston.{{ Ago [ProductName], loko: [ProductName], komando: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Estas problemo kun ĉi tiu pako de Windows Installer. Programo bezonata por ke ĉi tiu instalado finiĝos ne eblis ruliĝi. Kontaktu vian helpan personaron aŭ pakvendiston.{{ Ago: [ProductName], loko: [ProductName], komando: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Estas problemo kun ĉi tiu pako de Windows Installer. Ne eblis ruliĝi skripto bezonata por ke ĉi tiu instalo finiĝos. Kontaktu vian helppersonaron aŭ pakvendiston.{{ Propra ago [ProductName] skripto-eraro [ProductName], [ProductName]: [ProductName] Linio [ProductName], Kolumno [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="La Servo de Vindoza Instalilo ne estis alirebla. Ĉi tio povas okazi se vi rulas Vindozon en sekura reĝimo, aŭ se la Vindoza Instalilo ne estas ĝuste instalita. Kontaktu vian helppersonaron por helpo."/>
+	<String Id="Error1718" Overridable="yes" Value="Dosiero [ProductName] estis malaprobita per cifereca subskriba politiko."/>
+	<String Id="Error1717" Overridable="yes" Value="Forigita [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Agordita [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Instalita [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="La pli malnova versio de [ProductName] ne povas esti forigita. Kontaktu vian teknikan subtengrupon.{{ Sistemeraro [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] ne povas instali unu el ĝiaj postulataj produktoj. Kontaktu vian teknikan subtenan grupon.{{ Sistema Eraro: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Unu aŭ pluraj el la dosieroj necesaj por restarigi vian komputilon al ĝia antaŭa stato ne estis trovitaj. Restarigo ne eblos."/>
+	<String Id="Error1711" Overridable="yes" Value="Okazis eraro dum skribado de instalinformoj al disko. Kontrolu por certigi, ke sufiĉa diskspaco estas disponebla, kaj alklaku Reprovi, aŭ Nuligi por ĉesigi la instaladon."/>
+	<String Id="Error1710" Overridable="yes" Value="You may either restore your computer to its previous state or continue the install later. Would you like to restore?"/>
+	<String Id="Error1709" Overridable="yes" Value="Produkto: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Instalado malsukcesis."/>
+	<String Id="Error1707" Overridable="yes" Value="Instalado finiĝis sukcese."/>
+	<String Id="Error1706" Overridable="yes" Value="Instala pako por la produkto [ProductName] ne troveblas. Provu la instaladon denove uzante validan kopion de la instala pako &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="A previous installation for this product is in progress. You must undo the changes made by that installation to continue. Do you want to undo those changes?"/>
+	<String Id="Error1704" Overridable="yes" Value="An installation for [2] is currently suspended. You must undo the changes made by that installation to continue. Do you want to undo those changes?"/>
+	<String Id="Error1703" Overridable="yes" Value="Vi devas rekomenci vian sistemon por ke la agordaj ŝanĝoj faritaj al [ProductName] ekvalidu. Alklaku Jes por rekomenci nun aŭ Ne se vi planas poste rekomenci permane."/>
+	<String Id="Error1702" Overridable="yes" Value="La instalilo devas rekomenci vian sistemon antaŭ ol agordo de [ProductName] povas daŭri. Alklaku Jes por rekomenci nun aŭ Ne se vi planas poste rekomenci permane."/>
+	<String Id="Error1701" Overridable="yes" Value="La ŝlosilo [ProductName] ne validas. Kontrolu, ke vi enigis la ĝustan ŝlosilon."/>
+	<String Id="Error1609" Overridable="yes" Value="Okazis eraro dum aplikado de sekurecaj agordoj. [ProductName] ne estas valida uzanto aŭ grupo. Ĉi tio povus esti problemo kun la pakaĵo, aŭ problemo konektiĝi al domajna regilo en la reto. Kontrolu vian retkonekton kaj alklaku Reprovi, aŭ Nuligi por ĉesigi la instaladon. {{Ne eblas trovi la SID de la uzanto, sistema eraro [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Ne eblis trovi iujn antaŭe instalitajn konformajn produktojn sur la maŝino por instali ĉi tiun produkton."/>
+	<String Id="Error1607" Overridable="yes" Value="La sekvaj aplikoj devas esti fermitaj antaŭ daŭrigi la instaladon:"/>
+	<String Id="Error1606" Overridable="yes" Value="Ne eblis aliri retlokon [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Ne estas sufiĉe da diskspaco sur la volumo &amp;apos;[ProductName]&amp;apos; por daŭrigi la instaladon kun reakiro ebligita. [ProductName] KB estas postulataj, sed nur [ProductName] KB estas disponeblaj. Alklaku Ignori por daŭrigi la instaladon sen konservi informojn pri reakiro, alklaku Reprovi por kontroli disponeblan spacon denove, aŭ alklaku Nuligi por ĉesi la instaladon."/>
+	<String Id="Error1604" Overridable="yes" Value="La produkto &amp;apos;[ProductName]&amp;apos; jam estas instalita, malhelpante la instaladon de ĉi tiu produkto. La du produktoj estas nekongruaj."/>
+	<String Id="Error1603" Overridable="yes" Value="La dosiero [ProductName][ProductName] estas tenita en uzo{ per la sekva procezo: Nomo: [ProductName], Id: [ProductName], Fenestra Titolo: &amp;apos;[ProductName]&amp;apos;}. Fermu tiun aplikaĵon kaj reprovu."/>
+	<String Id="Error1602" Overridable="yes" Value="Are you sure you want to cancel?"/>
+	<String Id="Error1601" Overridable="yes" Value="Sen diskspaco -- Volumo: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Uzanto &amp;apos;[ProductName]&amp;apos; antaŭe iniciatis instalon por produkto &amp;apos;[ProductName]&amp;apos;. Tiu uzanto devos ruli tiun instalon denove antaŭ ol ili povas uzi tiun produkton."/>
+	<String Id="Error1502" Overridable="yes" Value="Uzanto &amp;apos;[ProductName]&amp;apos; antaŭe iniciatis instalon por produkto &amp;apos;[ProductName]&amp;apos;. Tiu uzanto devos ruli tiun instalon denove antaŭ ol ili povas uzi tiun produkton. Via nuna instalado nun daŭros."/>
+	<String Id="Error1501" Overridable="yes" Value="Eraro alirante sekurigitajn datumojn. Bonvolu certigi, ke la Vindoza Instalilo estas agordita ĝuste kaj provu la instalon denove."/>
+	<String Id="Error1500" Overridable="yes" Value="Alia instalado estas en progreso. Vi devas kompletigi tiun instaladon antaŭ daŭrigi ĉi tiun."/>
+	<String Id="Error1410" Overridable="yes" Value="Ne eblis pliigi la disponeblan registran spacon. [ProductName] KB da libera registra spaco estas postulata por la instalado de ĉi tiu aplikaĵo."/>
+	<String Id="Error1409" Overridable="yes" Value="Ne eblis legi sekurecajn informojn por ŝlosilo [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke vi havas sufiĉan aliron al tiu ŝlosilo, aŭ kontaktu vian helpan personaron."/>
+	<String Id="Error1408" Overridable="yes" Value="Ne eblis ricevi subŝlosilnomojn por ŝlosilo [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke vi havas sufiĉan aliron al tiu ŝlosilo, aŭ kontaktu vian helppersonaron."/>
+	<String Id="Error1407" Overridable="yes" Value="Ne eblis akiri valornomojn por ŝlosilo [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke vi havas sufiĉan aliron al tiu ŝlosilo, aŭ kontaktu vian helppersonaron."/>
+	<String Id="Error1406" Overridable="yes" Value="Ne eblis skribi valoron [ProductName] al klavo [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke vi havas sufiĉan aliron al tiu ŝlosilo, aŭ kontaktu vian helppersonaron."/>
+	<String Id="Error1405" Overridable="yes" Value="Ne eblis legi valoron [ProductName] de ŝlosilo [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke vi havas sufiĉan aliron al tiu ŝlosilo, aŭ kontaktu vian helpan personaron."/>
+	<String Id="Error1404" Overridable="yes" Value="Ne eblis forigi ŝlosilon [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke vi havas sufiĉan aliron al tiu ŝlosilo, aŭ kontaktu vian helppersonaron."/>
+	<String Id="Error1403" Overridable="yes" Value="Ne eblis forigi valoron [ProductName] de ŝlosilo [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke vi havas sufiĉan aliron al tiu ŝlosilo, aŭ kontaktu vian helpan personaron."/>
+	<String Id="Error1402" Overridable="yes" Value="Ne eblis malfermi ŝlosilon: [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke vi havas sufiĉan aliron al tiu ŝlosilo, aŭ kontaktu vian helpan personaron."/>
+	<String Id="Error1401" Overridable="yes" Value="Ne eblis krei ŝlosilon: [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke vi havas sufiĉan aliron al tiu ŝlosilo, aŭ kontaktu vian helpan personaron."/>
+	<String Id="Error1336" Overridable="yes" Value="Okazis eraro dum kreado de provizora dosiero necesa por kompletigi ĉi tiun instalaĵon.{{ Dosierujo: [ProductName]. Sistema erarkodo: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="La kabineta dosiero &amp;apos;[ProductName]&amp;apos; necesa por ĉi tiu instalado estas difektita kaj ne povas esti uzata. Ĉi tio povus indiki retan eraron, eraron legante el la KD-ROM aŭ problemon kun ĉi tiu pako."/>
+	<String Id="Error1334" Overridable="yes" Value="La dosiero &amp;apos;[ProductName]&amp;apos; ne povas esti instalita ĉar la dosiero ne troveblas en kabineta dosiero &amp;apos;[ProductName]&amp;apos;. Ĉi tio povus indiki retan eraron, eraron legante el la KD-ROM aŭ problemon kun ĉi tiu pako."/>
+	<String Id="Error1333" Overridable="yes" Value="Malsukcesis ĝuste fliki [ProductName] dosieron: CRC-eraro."/>
+	<String Id="Error1332" Overridable="yes" Value="Malsukcesis ĝuste movi [ProductName] dosieron: CRC-eraro."/>
+	<String Id="Error1331" Overridable="yes" Value="Malsukcesis ĝuste kopii [ProductName] dosieron: CRC-eraro."/>
+	<String Id="Error1330" Overridable="yes" Value="Dosiero kiu estas postulata ne povas esti instalita ĉar la kabineta dosiero [ProductName] havas nevalidan ciferecan subskribon. Ĉi tio povas indiki ke la kabineta dosiero estas korupta.{{ Eraro [ProductName] estis resendita de WinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Dosiero kiu estas postulata ne povas esti instalita ĉar la kabineta dosiero [ProductName] ne estas ciferece subskribita. Ĉi tio povas indiki, ke la kabineta dosiero estas korupta."/>
+	<String Id="Error1328" Overridable="yes" Value="Eraro aplikante flikilon al dosiero [ProductName]. Ĝi verŝajne estis ĝisdatigita per aliaj rimedoj, kaj ne plu povas esti modifita per ĉi tiu flikilo. Por pliaj informoj kontaktu vian vendiston de flikaĵoj.{{ Sistemeraro: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Nevalida Veturado: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Eraro akiri dosiersekurecon: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; ne estas valida mallonga dosiernomo."/>
+	<String Id="Error1324" Overridable="yes" Value="La dosierujo &amp;apos;[ProductName]&amp;apos; enhavas nevalidan signon."/>
+	<String Id="Error1323" Overridable="yes" Value="La dosierujo-vojo &amp;apos;[ProductName]&amp;apos; enhavas vortojn, kiuj ne validas en dosierujoj."/>
+	<String Id="Error1322" Overridable="yes" Value="Parto de la dosierujo-vojo &amp;apos;[ProductName]&amp;apos; estas nevalida. Ĝi estas aŭ malplena aŭ superas la longon permesitan de la sistemo."/>
+	<String Id="Error1321" Overridable="yes" Value="La Instalilo havas nesufiĉajn privilegiojn por modifi ĉi tiun dosieron: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="La specifita vojo estas tro longa: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Reta eraro okazis provante malfermi la fontdosierujon: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Reta eraro okazis dum provo krei la dosierujon: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Okazis eraro dum provo krei la dosierujon: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Reta eraro okazis dum provo legi el la dosiero: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Ne eblas skribi al la specifita dosierujo: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="La specifita vojo &amp;apos;[ProductName]&amp;apos; estas nedisponebla."/>
+	<String Id="Error1313" Overridable="yes" Value="La volumo [ProductName] estas nuntempe neatingebla. Bonvolu elekti alian."/>
+	<String Id="Error1312" Overridable="yes" Value="Ne povas krei la dosierujon &amp;apos;[ProductName]&amp;apos;. Dosiero kun ĉi tiu nomo jam ekzistas. Bonvolu renomi aŭ forigi la dosieron kaj alklaku Reprovi, aŭ alklaku Nuligi por eliri."/>
+	<String Id="Error1311" Overridable="yes" Value="Fontdosiero ne trovita{{(kabineto)}}: [ProductName]. Kontrolu, ke la dosiero ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error1310" Overridable="yes" Value="Eraro skribante al dosiero: [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke vi havas aliron al tiu dosierujo."/>
+	<String Id="Error1309" Overridable="yes" Value="Eraro legante el dosiero: [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke la dosiero ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error1308" Overridable="yes" Value="Fontdosiero ne trovita: [ProductName]. Kontrolu, ke la dosiero ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error1307" Overridable="yes" Value="Ne estas sufiĉe da diskospaco por instali ĉi tiun dosieron: [ProductName]. Liberigu iom da diskospaco kaj alklaku Reprovi, aŭ alklaku Nuligi por eliri."/>
+	<String Id="Error1306" Overridable="yes" Value="Alia aplikaĵo havas ekskluzivan aliron al la dosiero &amp;apos;[ProductName]&amp;apos;. Bonvolu fermi ĉiujn aliajn aplikojn, tiam alklaku Reprovi."/>
+	<String Id="Error1305" Overridable="yes" Value="Eraro legante el dosiero [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke la dosiero ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error1304" Overridable="yes" Value="Eraro skribante al dosiero: [ProductName]. Kontrolu, ke vi havas aliron al tiu dosierujo."/>
+	<String Id="Error1303" Overridable="yes" Value="La instalilo havas nesufiĉajn privilegiojn por aliri ĉi tiun dosierujon: [ProductName]. La instalado ne povas daŭri. Ensalutu kiel administranto aŭ kontaktu vian sistemadministranton."/>
+	<String Id="Error1302" Overridable="yes" Value="Bonvolu enmeti la diskon: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Ne povas krei la dosieron &amp;apos;[ProductName]&amp;apos;. Dosierujo kun ĉi tiu nomo jam ekzistas. Nuligi la instaladon kaj provu instali al alia loko."/>
+	<String Id="Error1101" Overridable="yes" Value="Eraro legante el dosiero: [ProductName].{{ Sistemeraro [ProductName].}} Kontrolu, ke la dosiero ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Agordo malsukcesis."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Agordo kompletigita sukcese."/>
+	<String Id="Error23" Overridable="yes" Value="Preparante forigi pli malnovajn versiojn de ĉi tiu aplikaĵo..."/>
+	<String Id="Error22" Overridable="yes" Value="Forigante malnovajn versiojn de ĉi tiu aplikaĵo..."/>
+	<String Id="Error21" Overridable="yes" Value="Kolektante bezonatajn informojn..."/>
+	<String Id="Error20" Overridable="yes" Value="Bonvolu atendi dum Vindozo agordas [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Instalilo ĉesis antaŭtempe."/>
+	<String Id="Error18" Overridable="yes" Value="Instalilo ne plu respondas."/>
+	<String Id="Error17" Overridable="yes" Value="Sen memoro. Fermu aliajn aplikojn antaŭ reprovi."/>
+	<String Id="Error16" Overridable="yes" Value="Restanta tempo: {[ProductName] minutoj }{[ProductName] sekundoj}"/>
+	<String Id="Error15" Overridable="yes" Value="Ago finiĝis [ProductName]: [ProductName]. Revena valoro [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Ago-komenco [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Registrado ĉesis: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Registrado komenciĝis: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Mesaĝo-tipo: [ProductName], Argumento: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Ago [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Disko plena: }}"/>
+	<String Id="Error5" Overridable="yes" Value="La instalilo renkontis neatenditan eraron instalante ĉi tiun pakaĵon. Ĉi tio povas indiki problemon kun ĉi tiu pako. La erarkodo estas [ProductName]. {{La argumentoj estas: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Informoj [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Averto [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{ Eraro [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Fata eraro: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Malpublikigi informojn pri produkto"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dosierujo: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Forigante movitajn dosierojn"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Dosiero: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Forigante rezervajn dosierojn"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Rolling back action:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Aplika Kunteksto:[ProductName], Nomo de Asembleo:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Malpublikigi informojn pri asembleo"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Aplika Kunteksto:[ProductName], Nomo de Asembleo:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Eldonado de asembleaj informoj"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dependecoj: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Instalante sisteman katalogon"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Generante skriptooperaciojn por ago:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Reklama aplikaĵo"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Ŝlosilo: [ProductName], Nomo: [ProductName], Valoro: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Skribante sistemajn registrajn valorojn"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Sekcio: [ProductName], Ŝlosilo: [ProductName], Valoro: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Skribante INI-dosiervalorojn"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Nomo: [ProductName], Valoro: [ProductName], Ago [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Ĝisdatigante medioŝnurojn"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Malregistrado de tipbibliotekoj"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgIdo: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Malregistrado de programidentigiloj"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME-Enhavo-Tipo: [ProductName], Etendo: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Malregistrado de MIME-informoj"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Tiparo: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Malregistrado de tiparoj"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Etendo: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Malregistrado de etendaj serviloj"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Malregistrado de COM+ Aplikoj kaj Komponentoj"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Klaso Id: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Malregistru Klasajn servilojn"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Karakterizaĵo: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Malpublikigado de Produktaj Trajtoj"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Komponanta ID: [ProductName], Kvalifikilo: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Malpublikigado de Kvalifikitaj Komponentoj"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Servo: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Ĉesigi servojn"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Servo: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Komencante servojn"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Inicializante ODBC-dosierujojn"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dosierujo: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Malregistrado de moduloj"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dosierujo: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Registrante modulojn"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Serĉante kvalifikajn produktojn"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Ŝparvojo: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Forigante ŝparvojojn"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Ŝlosilo: [ProductName], Nomo: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Forigante sistemajn registrajn valorojn"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Forigante ODBC-komponentojn"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Sekcio: [ProductName], Ŝlosilo: [ProductName], Valoro: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Forigante INI-dosierajn enirojn"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Dosierujo: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Forigante dosierujojn"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dosierujo: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Forigante dosierojn"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Apliko: [ProductName], Komandlinio: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Forigante aplikojn"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Nomo: [ProductName], Valoro: [ProductName], Ago [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Ĝisdatigante medioŝnurojn"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dosierujo: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Forigante duobligitajn dosierojn"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Registrante uzanton"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Registrado de tipbibliotekoj"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Registrante produkton"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Tiparo: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Registrante tiparojn"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Uzantoj: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Registrado de COM+ Aplikoj kaj Komponentoj"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Ĝisdatigi komponan registradon"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dosierujo: [ProductName], Grandeco: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Fliki dosierojn"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dosierujo: [ProductName], Grandeco: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Movante dosierojn"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Apliko: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Migri trajtostatojn de rilataj aplikoj"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Taksante lanĉajn kondiĉojn"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Servo: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Instalado de novaj servoj"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Instalante ODBC-komponentojn"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Trovita aplikaĵo: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Serĉante rilatajn aplikojn"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dosierujo: [ProductName], Grandeco: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Kreante duplikatajn dosierojn"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Servo: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Forigo de servoj"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Dosierujo: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Kreante dosierujojn"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Serĉante kvalifikajn produktojn"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Dosiero: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Ligado de ekzekutaĵoj"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Posedaĵo: [ProductName], Subskribo: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Serĉante instalitajn aplikaĵojn"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Libera spaco: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Asignante registran spacon"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgIdo: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Registrante programidentigilojn"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME-Enhavo-Tipo: [ProductName], Etendo: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Registrante MIME-informojn"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Etendo: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Registrante etendajn servilojn"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Klaso Id: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Registrante Klasajn servilojn"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Eldonado de produktaj informoj"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Karakterizaĵo: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Eldonado de Produktaj Trajtoj"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Komponanta ID: [ProductName], Kvalifikilo: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Eldonado de Kvalifikitaj Komponentoj"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Ŝparvojo: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Kreante ŝparvojojn"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Komputilaj spacpostuloj"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Komputilaj spacpostuloj"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Komputilaj spacpostuloj"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dosierujo: [ProductName], Grandeco: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Kopiante retajn instalajn dosierojn"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Dosiero: [ProductName], Dosierujo: [ProductName], Grandeco: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Kopiante novajn dosierojn"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Validigante instalon"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Bonvolu legi la [ProductName] Licenca Interkonsento"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Ĝisdatigi"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Instali"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Mi &amp;akceptas la kondiĉojn en la Licenca Interkonsento"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Bonvenon al la [ProductName] Agorda Sorĉisto"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="La Agorda Sorĉisto ĝisdatigos [ProductName] en via komputilo. Alklaku Poste por daŭrigi aŭ Nuligi por eliri la Agordan Sorĉiston."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="La Agorda Sorĉisto instalos [ProductName] en via komputilo. Alklaku Poste por daŭrigi aŭ Nuligi por eliri la Agordan Sorĉiston."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Ekkria ikono"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Bonvolu atendi dum la instalilo finas determini viajn diskspacpostulojn."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Revenu"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Preta ĝisdatigi [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Alklaku Ĝisdatigi por ĝisdatigi [ProductName] de via komputilo. Alklaku Reen por revizii aŭ ŝanĝi iun ajn el viaj instalaj agordoj. Alklaku Nuligi por eliri la sorĉiston."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Ĝisdatigi"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Preta por forigi [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Alklaku Forigi por forigi [ProductName] de via komputilo. Alklaku Reen por revizii aŭ ŝanĝi iun ajn el viaj instalaj agordoj. Alklaku Nuligi por eliri la sorĉiston."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Forigi"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Preta por ripari [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Alklaku Ripari por ripari la instaladon de [ProductName]. Alklaku Reen por revizii aŭ ŝanĝi iun ajn el viaj instalaj agordoj. Alklaku Nuligi por eliri la sorĉiston."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Re&amp;parigi"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Preta por ŝanĝi [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Alklaku Ŝanĝi por komenci la instaladon. Alklaku Reen por revizii aŭ ŝanĝi iun ajn el viaj instalaj agordoj. Alklaku Nuligi por eliri la sorĉiston."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Ŝanĝi"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Preta por instali [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Alklaku Instali por komenci la instaladon. Alklaku Reen por revizii aŭ ŝanĝi iun ajn el viaj instalaj agordoj. Alklaku Nuligi por eliri la sorĉiston."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Instali"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Alklaku la butonon Fini por eliri la Agordan Sorĉiston."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] agordo estis interrompita. Via sistemo ne estis modifita. Por instali ĉi tiun programon poste, bonvolu ruli la instaladon denove."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Agorda Sorĉisto estis interrompita"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Ĉiuj programaj funkcioj estos instalitaj. Postulas plej multe da diskospaco."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Permesas al uzantoj elekti kiuj programaj funkcioj estos instalitaj kaj kie ili estos instalitaj. Rekomendita por progresintaj uzantoj."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Instalas la plej oftajn programajn funkciojn. Rekomendita por plej multaj uzantoj."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Elektu la agordan tipon, kiu plej taŭgas por viaj bezonoj"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Elektu Agordan Tipon"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Kompleta Instalado"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C&amp;kompleta"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Propra Instalado"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;custom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Tipa Instalado"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Tipa"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Rekomencante la [ProductName] Agordan Sorĉiston"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="La Agorda Sorĉisto kompletigos la instaladon de [ProductName] en via komputilo. Alklaku Instali por daŭrigi aŭ Nuligi por eliri la Agordan Sorĉiston."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Instali"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Statuso:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Progreso farita"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Ĝisdatigante [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Bonvolu atendi dum la Agorda Sorĉisto ĝisdatigas [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Forigante [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Bonvolu atendi dum la Agorda Sorĉisto forigas [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Riparante [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Bonvolu atendi dum la Agorda Sorĉisto riparas [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Ŝanĝante [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Bonvolu atendi dum la Agorda Sorĉisto ŝanĝas [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Instalado de [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Bonvolu atendi dum la Agorda Sorĉisto instalas [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Bonvenon al la [ProductName] Agorda Sorĉisto"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Bonvolu atendi dum la Agorda Sorĉisto prepariĝas gvidi vin tra la instalado."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Alternative, vi povas elekti malŝalti la restarigi funkcion de la instalilo. Malebligi la malfunkciigon malhelpas la instalilon restarigi la originan staton de via komputilo se la instalado estus iel ajn interrompita. Alklaku Jes, se vi volas riski malŝalti la malfunkciigon."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}El Diskospaco"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Diskospaco necesa por la instalado superas disponeblan diskspacon."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="La elstarigitaj volumoj ne havas sufiĉe da diskspaco disponebla por la nuntempe elektitaj funkcioj. Vi povas forigi kelkajn dosierojn el la elstarigitaj volumoj, instali malpli da funkcioj aŭ elekti malsaman cel-diskon."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}El Diskospaco"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Diskospaco necesa por la instalado superas disponeblan diskspacon."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="La elstarigitaj volumoj ne havas sufiĉe da diskspaco disponebla por la nuntempe elektitaj funkcioj. Vi povas forigi kelkajn dosierojn el la elstarigitaj volumoj, instali malpli da funkcioj aŭ elekti malsaman cel-diskon."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Ne fermu aplikojn. Rekomenco estos postulata."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Fermu la aplikaĵojn kaj provu rekomenci ilin."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Uzeblaj dosieroj"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Iuj dosieroj, kiuj devas esti ĝisdatigitaj, estas nuntempe uzataj."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="La sekvaj aplikaĵoj uzas dosierojn, kiuj devas esti ĝisdatigitaj per ĉi tiu agordo. Vi povas lasi Setup Wizard fermi ilin kaj provi rekomenci ilin aŭ rekomenci la maŝinon poste."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Bonvenon al la [ProductName] Agorda Sorĉisto"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="La Agorda Sorĉisto permesas vin ŝanĝi la manieron kiel [ProductName] funkcioj estas instalitaj sur via komputilo aŭ forigi ĝin de via komputilo. Alklaku Poste por daŭrigi aŭ Nuligi por eliri la Agordan Sorĉiston."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] ne povas esti riparita."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Riparas erarojn en la plej lastatempa instalado riparante mankantajn kaj koruptajn dosierojn, ŝparvojojn kaj registrajn enirojn."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] ne povas esti forigita."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Forigas [ProductName] de via komputilo."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] ne havas sendepende elekteblajn funkciojn."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Permesas vin ŝanĝi la manieron kiel funkcioj estas instalitaj."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ŝanĝi, ripari aŭ forigi instaladon"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Elektu la operacion, kiun vi volas fari."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Forigi Instaladon"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Forigi"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Ripara Instalado"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Re&amp;parigi"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Ŝanĝi Instaladon"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Ŝanĝi"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Interkonsento pri Licenco por Fina Uzanto"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Bonvolu legi atente la sekvan licencinterkonsenton"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Mi &amp;akceptas la kondiĉojn en la Licenca Interkonsento"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Informa ikono"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Instala dosierujo devas esti sur loka malmola disko."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Ŝanĝi..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Instala &amp;dosierujo:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] estos instalita en pomaŝina dosierujo defaŭlte kaj estos disponebla por ĉiuj uzantoj. Vi povas ŝanĝi la defaŭltan instalan dosierujon. Vi devas havi lokajn Administrantajn privilegiojn."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Instali por ĉiuj uzantoj de ĉi tiu &amp;maŝino"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] ne subtenas po-uzantan instaladon."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] estos instalita en po-uzanta dosierujo kaj estos disponebla nur por via uzantkonto. Vi ne bezonas lokajn Administrantajn privilegiojn."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Instali &amp;nur por vi ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Instala Amplekso"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Elektu la instalan amplekson kaj dosierujon"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Instalu [ProductName] al:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Alklaku Poste por instali al la defaŭlta dosierujo aŭ alklaku Ŝanĝi por elekti alian."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Celina Dosierujo"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Ŝanĝi..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Uzeblaj dosieroj"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Iuj dosieroj, kiuj devas esti ĝisdatigitaj, estas nuntempe uzataj."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="La sekvaj aplikaĵoj uzas dosierojn, kiuj devas esti ĝisdatigitaj per ĉi tiu agordo. Fermu ĉi tiujn aplikaĵojn kaj poste alklaku &amp;Reprovi por daŭrigi agordon aŭ Eliri por eliri ĝin."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="E&amp;eliro"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Ŝanĝi"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Instali"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="TrajtojDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="TrajtojDlgItemPriskribo"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Produktaj Trajtoj"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Elektu kiel vi volas instali funkciojn."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Produktaj trajtoj"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Alklaku la butonon Fini por eliri la Agordan Sorĉiston."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Agorda Sorĉisto finiĝis trofrue pro eraro. Via sistemo ne estis modifita. Por instali ĉi tiun programon poste, rulu Setup Wizard denove."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Agorda Sorĉisto finiĝis antaŭtempe"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Finigis la [ProductName] Agordan Sorĉiston"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Alklaku la butonon Fini por eliri la Agordan Sorĉiston."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Informa ikono"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Informteksto"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kondiĉoj pri diskspaco"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="La diskospaco necesa por la instalado de la elektitaj funkcioj."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Elstarigitaj volumoj ne havas sufiĉe da diskspaco disponebla por elektitaj funkcioj. Vi povas aŭ forigi iujn dosierojn el la elstarigitaj volumoj, instali malpli da funkcioj aŭ elekti malsamajn celajn diskojn."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Loko:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-PersonigiDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-PersonigiDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="AgorduDlgItemDescription-PersonigiDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Persona Agordo"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Elektu kiel vi volas instali funkciojn."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Alklaku la ikonojn en la suba arbo por ŝanĝi la manieron kiel funkcioj estos instalitaj."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Disko &amp;Uzado"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Re&amp;agordi"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;foliumu..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Arbo de elektoj"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Informa ikono"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Are you sure you want to cancel [ProductName] installation?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ŝanĝi celdosierujon"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Foliumi al la cela dosierujo"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="Nomo de &amp;dosierujo:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Kreu novan dosierujon"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_Nova"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Supren unu nivelon"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Rigardu:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahomo"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp; progresinta"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Instali"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Alklaku Instali por instali la produkton kun defaŭltaj opcioj nur por vi. Klaku Altnivela por ŝanĝi instalajn opciojn."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Alklaku Instali por instali la produkton kun defaŭltaj opcioj por ĉiuj uzantoj. Klaku Altnivela por ŝanĝi instalajn opciojn."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Mi &amp;akceptas la kondiĉojn en la Licenca Interkonsento"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Bonvolu legi la [ProductName] Licenca Interkonsento"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Agordo"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Presi"/>
+	<String Id="WixUIOK" Overridable="yes" Value="Bone"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Ne"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Jes"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Ignoru"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Reprovi"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Finu"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Nuligi"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Sekva"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Reen"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Malinstalado de Windows Firewall agordo"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Refari la agordon de Windows Firewall"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instalante Windows Firewall agordo"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Refari la agordon de Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Agordante Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Agordante Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ne povas konekti al Windows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Bildigoj por foraj aplikoj disponeblaj kiel opcio en agordo"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Rigardu RAAS-servilojn en Esplorilo"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Kreu forajn aplikaĵajn ŝparvojojn al servilaj aplikoj sur loka komputilo"/>

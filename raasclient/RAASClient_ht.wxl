@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="ht" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="ht" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Volim"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Gwosè Disk"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Obligatwa"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Diferans"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Disponib"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Tan ki rete:{ [ProductName] minit}{ [ProductName] segonn}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Karakteristik sa a mande pou [ProductName] sou disk ou a. Li gen [ProductName] nan [ProductName] sous-karakteristik yo chwazi. Sou-karakteristik yo mande pou [ProductName] sou kondwi di ou."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Karakteristik sa a mande pou [ProductName] sou disk ou a. Li gen [ProductName] nan [ProductName] sous-karakteristik yo chwazi. Sou-karakteristik yo libere [ProductName] sou disk di ou."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Karakteristik sa a libere [ProductName] sou disk di ou. Li gen [ProductName] nan [ProductName] sous-karakteristik yo chwazi. Sou-karakteristik yo mande pou [ProductName] sou kondwi di ou."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Karakteristik sa a libere [ProductName] sou disk di ou. Li gen [ProductName] nan [ProductName] sous-karakteristik yo chwazi. Sou-karakteristik yo libere [ProductName] sou disk di ou."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Karakteristik sa a ap rete kouri soti nan rezo a"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Karakteristik sa a pral chanje soti nan kouri soti nan eta rezo a yo dwe enstale sou kondwi difisil lokal la"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Karakteristik sa a pral chanje soti nan kouri soti nan eta rezo a yo mete yo dwe enstale lè sa nesesè"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Karakteristik sa a pral dezenstale nèt, ou pa pral kapab kouri li nan rezo a"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Karakteristik sa a pral retire nan kondwi difisil lokal ou a, men yo pral toujou disponib pou kouri soti nan rezo a"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Karakteristik sa a ap rete sou dis lou lokal ou a"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Karakteristik sa a pral retire nan kondwi dis lokal ou a, men yo pral toujou disponib nan kouri soti nan CD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Karakteristik sa a pral retire nan kondwi difisil lokal ou a, men yo pral mete yo dwe enstale lè sa nesesè"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Karakteristik sa a pral konplètman retire"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Konpile pri pou karakteristik sa a..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Karakteristik sa a mande pou [ProductName] sou disk ou a."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Karakteristik sa a libere [ProductName] sou disk di ou."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Karakteristik sa a pral chanje soti nan kouri soti nan eta CD yo dwe enstale sou kondwi a difisil lokal yo"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Karakteristik sa a ap rete kouri soti nan CD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Karakteristik sa a pral chanje soti nan kouri soti nan eta CD yo mete yo dwe enstale lè sa nesesè"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Karakteristik sa a pral dezenstale nèt, ou pa pral kapab kouri li soti nan CD"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Karakteristik sa a ap disponib pou kouri soti nan rezo a"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Karakteristik sa a pral enstale sou disk lokal ou a"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Karakteristik sa a ap disponib pou kouri soti nan CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Yo pral enstale lè sa nesesè"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Karakteristik sa a ap vin pa disponib"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Karakteristik sa a pral enstale pou kouri soti nan rezo a"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Karakteristik sa a pral enstale sou disk lokal la"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Karakteristik sa a pral enstale pou kouri soti nan CD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Karakteristik sa a pral mete yo dwe enstale lè sa nesesè"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Karakteristik sa a ap rete dezenstale"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Rasanble enfòmasyon ki nesesè yo..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Dosye|Nouvo Dosye"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Yo pral enstale pou kouri soti nan rezo a"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Yo pral enstale sou kondwi difisil lokal yo"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Èske yo pral enstale kouri soti nan CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Tout karakteristik yo pral enstale pou kouri soti nan rezo a"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Tout karakteristik yo pral enstale sou kondwi difisil lokal yo"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Tout karakteristik yo pral enstale pou kouri soti nan CD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Karakteristik yo pral enstale lè sa nesesè"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Tout karakteristik yo pral pa disponib"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="byte"/>
+	<String Id="Error1938" Overridable="yes" Value="Yon erè ki te fèt pandan enstalasyon asanble &amp;apos;[ProductName]&amp;apos;. Youn oswa plizyè modil nan asanble a pa t &amp;apos;kapab jwenn. HRESULT: [ProductName].{{ koòdone asanble: [ProductName], fonksyon: [ProductName], eleman: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Yon erè ki te fèt pandan enstalasyon asanble &amp;apos;[ProductName]&amp;apos;. Siyati a oswa katalòg la pa t &amp;apos;kapab verifye oswa li pa valab. HRESULT: [ProductName].{{ koòdone asanble: [ProductName], fonksyon: [ProductName], eleman: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Yon erè ki te fèt pandan enstalasyon asanble &amp;apos;[ProductName]&amp;apos;. Asanble a pa fòtman non oswa yo pa siyen ak longè kle minimòm lan. HRESULT: [ProductName].{{ koòdone asanble: [ProductName], fonksyon: [ProductName], eleman: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Yon erè ki te fèt pandan enstalasyon asanble &amp;apos;[ProductName]&amp;apos;. Tanpri gade nan Èd ak Sipò pou plis enfòmasyon. HRESULT: [ProductName].{{ koòdone asanble: [ProductName], fonksyon: [ProductName], eleman: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Enstalasyon itilizatè yo enfim atravè politik sou machin nan."/>
+	<String Id="Error1933" Overridable="yes" Value="Sèvis Windows Installer la pa kapab mete ajou youn oswa plizyè dosye Windows ki pwoteje.{{ Erè SFP: [ProductName]. Lis dosye ki pwoteje:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Sèvis Windows Installer la pa ka mete ajou dosye Windows ki pwoteje [ProductName].{{ Vèsyon pake a: [ProductName], OS Pwoteje vèsyon: [ProductName], Erè SFP: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Sèvis Windows Installer pa kapab mete ajou fichye sistèm nan [ProductName] paske dosye a pwoteje pa Windows. Ou ka bezwen mete ajou sistèm operasyon ou a pou pwogram sa a fonksyone kòrèkteman.{{ Vèsyon pake: [ProductName], OS Pwoteje vèsyon: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="Deskripsyon sèvis &amp;apos;[ProductName]&amp;apos; ([ProductName]) pa t &amp;apos;kapab chanje."/>
+	<String Id="Error1929" Overridable="yes" Value="Erè lè w ap retire aplikasyon COM+ la. Kontakte pèsonèl sipò ou pou plis enfòmasyon."/>
+	<String Id="Error1928" Overridable="yes" Value="Erè anrejistreman Aplikasyon COM+. Kontakte pèsonèl sipò ou pou plis enfòmasyon."/>
+	<String Id="Error1927" Overridable="yes" Value="Sèvis Konpozan (COM+ 1.0) pa enstale sou òdinatè sa a. Enstalasyon sa a mande Sèvis Konpozan pou yo ka konplete avèk siksè. Sèvis Konpozan yo disponib sou Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Pa t &amp;apos;kapab mete sekirite dosye pou fichye &amp;apos;[ProductName]&amp;apos;. Erè: [ProductName]. Verifye ke ou gen ase privilèj pou modifye otorizasyon sekirite pou dosye sa a."/>
+	<String Id="Error1925" Overridable="yes" Value="Ou pa gen ase privilèj pou konplete enstalasyon sa a pou tout itilizatè machin nan. Konekte kòm administratè epi reesye enstalasyon sa a."/>
+	<String Id="Error1924" Overridable="yes" Value="Pa t &amp;apos;kapab mete ajou varyab anviwònman &amp;apos;[ProductName]&amp;apos;. Verifye ke ou gen ase privilèj pou modifye varyab anviwònman yo."/>
+	<String Id="Error1923" Overridable="yes" Value="Sèvis &amp;apos;[ProductName]&amp;apos; ([ProductName]) pa t &amp;apos;kapab enstale. Verifye ke ou gen ase privilèj pou enstale sèvis sistèm yo."/>
+	<String Id="Error1922" Overridable="yes" Value="Sèvis &amp;apos;[ProductName]&amp;apos; ([ProductName]) pa t &amp;apos;kapab efase. Verifye ke ou gen ase privilèj pou retire sèvis sistèm yo."/>
+	<String Id="Error1921" Overridable="yes" Value="Sèvis &amp;apos;[ProductName]&amp;apos; ([ProductName]) pa t &amp;apos;kapab sispann. Verifye ke ou gen ase privilèj pou sispann sèvis sistèm yo."/>
+	<String Id="Error1920" Overridable="yes" Value="Sèvis &amp;apos;[ProductName]&amp;apos; ([ProductName]) echwe pou kòmanse. Verifye ke ou gen ase privilèj pou kòmanse sèvis sistèm yo."/>
+	<String Id="Error1919" Overridable="yes" Value="Erè konfigirasyon sous done ODBC: [ProductName], erè ODBC [ProductName]: [ProductName]. Verifye ke fichye a [ProductName] egziste e ke ou ka jwenn aksè nan li."/>
+	<String Id="Error1918" Overridable="yes" Value="Erè enstale chofè ODBC: [ProductName], erè ODBC [ProductName]: [ProductName]. Verifye ke fichye a [ProductName] egziste e ke ou ka jwenn aksè nan li."/>
+	<String Id="Error1917" Overridable="yes" Value="Erè retire chofè ODBC: [ProductName], erè ODBC [ProductName]: [ProductName]. Verifye ke ou gen ase privilèj pou retire chofè ODBC."/>
+	<String Id="Error1916" Overridable="yes" Value="Erè enstale manadjè chofè ODBC, erè ODBC [ProductName]: [ProductName]. Kontakte pèsonèl sipò ou."/>
+	<String Id="Error1915" Overridable="yes" Value="Erè retire manadjè chofè ODBC, erè ODBC [ProductName]: [ProductName]. Kontakte pèsonèl sipò ou."/>
+	<String Id="Error1914" Overridable="yes" Value="Pa t &amp;apos;kapab pwograme fichye [ProductName] ranplase fichye [ProductName] sou rdemare. Verifye ke ou gen otorizasyon ekri nan dosye [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Pa t &amp;apos;kapab mete ajou fichye a ini [ProductName][ProductName]. Verifye ke fichye a egziste e ke ou ka jwenn aksè nan li."/>
+	<String Id="Error1912" Overridable="yes" Value="Pa t &amp;apos;kapab derejistre kalite bibliyotèk pou fichye [ProductName]. Kontakte pèsonèl sipò ou."/>
+	<String Id="Error1911" Overridable="yes" Value="Pa t &amp;apos;kapab anrejistre bibliyotèk kalite pou dosye [ProductName]. Kontakte pèsonèl sipò ou."/>
+	<String Id="Error1910" Overridable="yes" Value="Pa t &amp;apos;kapab retire chemen kout [ProductName]. Verifye ke dosye rakoursi a egziste e ke ou ka jwenn aksè nan li."/>
+	<String Id="Error1909" Overridable="yes" Value="Pa t &amp;apos;kapab kreye chemen kout [ProductName]. Verifye ke Katab destinasyon an egziste e ke ou ka jwenn aksè nan li."/>
+	<String Id="Error1908" Overridable="yes" Value="Pa t &amp;apos;kapab derejistre font [ProductName]. Verifye ke ou gen ase otorizasyon pou retire polis yo."/>
+	<String Id="Error1907" Overridable="yes" Value="Pa t &amp;apos;kapab anrejistre font [ProductName]. Verifye ke ou gen otorizasyon ase pou enstale polis, epi ke sistèm lan sipòte font sa a."/>
+	<String Id="Error1906" Overridable="yes" Value="Echwe pou pake kachèt [ProductName]. Erè: [ProductName]. Kontakte pèsonèl sipò ou."/>
+	<String Id="Error1905" Overridable="yes" Value="Modil [ProductName] echwe pou retire anrejistreman an. HRESULT [ProductName]. Kontakte pèsonèl sipò ou."/>
+	<String Id="Error1904" Overridable="yes" Value="Modil [ProductName] echwe pou enskri. HRESULT [ProductName]. Kontakte pèsonèl sipò ou."/>
+	<String Id="Error1903" Overridable="yes" Value="Orè operasyon rdemare: Efase fichye [ProductName]. Ou dwe rekòmanse pou konplete operasyon an."/>
+	<String Id="Error1902" Overridable="yes" Value="Pwogramasyon operasyon rdemare: Chanje non fichye [ProductName] a [ProductName]. Ou dwe rekòmanse pou konplete operasyon an."/>
+	<String Id="Error1901" Overridable="yes" Value="Erè eseye li nan baz done a enstale sous: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Yon katab destinasyon valab pou enstalasyon an pa t &amp;apos;kapab detèmine."/>
+	<String Id="Error1806" Overridable="yes" Value="Ou pa gen ase privilèj pou li katab sa a."/>
+	<String Id="Error1805" Overridable="yes" Value="Katab [ProductName] a pa egziste. Tanpri antre yon chemen nan yon katab ki egziste deja."/>
+	<String Id="Error1804" Overridable="yes" Value="Pa gen okenn disk nan kondwi [ProductName]. Tanpri mete youn epi klike Reesye, oswa klike sou Anile pou retounen nan dyalòg browse a epi chwazi yon volim diferan."/>
+	<String Id="Error1803" Overridable="yes" Value="Pa gen okenn disk nan kondwi [ProductName]. Tanpri mete youn epi klike Reesye, oswa klike sou Anile pou retounen nan volim te chwazi anvan an."/>
+	<String Id="Error1802" Overridable="yes" Value="Soti nan memwa. Fèmen lòt aplikasyon anvan ou eseye ankò."/>
+	<String Id="Error1801" Overridable="yes" Value="Chemen [ProductName] pa valab. Tanpri presize yon chemen ki valab."/>
+	<String Id="Error1732" Overridable="yes" Value="Kako biste dovršili instalaciju [ProductName], morate ponovno pokrenuti računalo. Drugi korisnici trenutno su prijavljeni na ovo računalo i ponovno pokretanje može uzrokovati gubitak posla. Želite li sada ponovno pokrenuti?"/>
+	<String Id="Error1731" Overridable="yes" Value="Pake enstalasyon sous pou pwodwi a [ProductName] pa senkronize ak pake kliyan an. Eseye enstalasyon an ankò lè l sèvi avèk yon kopi valab pake enstalasyon &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Ou dwe yon Administratè pou retire aplikasyon sa a. Pou retire aplikasyon sa a, ou ka konekte kòm yon Administratè, oswa kontakte gwoup sipò teknik ou a pou asistans."/>
+	<String Id="Error1729" Overridable="yes" Value="Konfigirasyon echwe."/>
+	<String Id="Error1728" Overridable="yes" Value="Konfigirasyon konplete avèk siksè."/>
+	<String Id="Error1727" Overridable="yes" Value="Piblisite echwe."/>
+	<String Id="Error1726" Overridable="yes" Value="Piblisite konplete avèk siksè."/>
+	<String Id="Error1725" Overridable="yes" Value="Retire echwe."/>
+	<String Id="Error1724" Overridable="yes" Value="Retire konplete avèk siksè."/>
+	<String Id="Error1723" Overridable="yes" Value="Gen yon pwoblèm ak pake Windows Installer sa a. Yon DLL ki nesesè pou enstalasyon sa a fini pa t &amp;apos;kapab kouri. Kontakte pèsonèl sipò w oswa machann pake w la.{{ Aksyon [ProductName], antre: [ProductName], bibliyotèk: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Gen yon pwoblèm ak pake Windows Installer sa a. Yon pwogram kouri kòm yon pati nan konfigirasyon an pa te fini jan yo espere. Kontakte pèsonèl sipò w oswa machann pake w la.{{ Aksyon [ProductName], kote: [ProductName], kòmandman: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Gen yon pwoblèm ak pake Windows Installer sa a. Yon pwogram ki nesesè pou enstalasyon sa a fini pa t &amp;apos;kapab kouri. Kontakte pèsonèl sipò w oswa machann pake w la.{{ Aksyon: [ProductName], kote: [ProductName], kòmandman: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Gen yon pwoblèm ak pake Windows Installer sa a. Yon script ki nesesè pou enstalasyon sa a fini pa t &amp;apos;kapab kouri. Kontakte pèsonèl sipò w oswa machann pake w la.{{ Aksyon personnalisé [ProductName] erè script [ProductName], [ProductName]: [ProductName] Liy [ProductName], Kolòn [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Sèvis enstalasyon Windows pa t &amp;apos;kapab jwenn aksè. Sa ka rive si w ap kouri Windows nan mòd san danje, oswa si Windows Installer la pa enstale kòrèkteman. Kontakte pèsonèl sipò w pou asistans."/>
+	<String Id="Error1718" Overridable="yes" Value="Fichye [ProductName] te rejte pa politik siyati dijital."/>
+	<String Id="Error1717" Overridable="yes" Value="Retire [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Konfigirasyon [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Enstale [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Ansyen vèsyon an nan [ProductName] pa ka retire. Kontakte gwoup sipò teknik ou a. {{ Erè sistèm [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] pa ka enstale youn nan pwodwi obligatwa li yo. Kontakte gwoup sipò teknik ou a.{{ Erè sistèm: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Youn oswa plizyè nan dosye ki nesesè pou retabli òdinatè w lan nan eta anvan li yo pa t &amp;apos;kapab jwenn. Retablisman pap posib."/>
+	<String Id="Error1711" Overridable="yes" Value="Yon erè ki te fèt pandan w ap ekri enfòmasyon enstalasyon sou disk. Tcheke pou asire w gen ase espas disk ki disponib, epi klike sou Reeseye, oswa Anile pou fini enstalasyon an."/>
+	<String Id="Error1710" Overridable="yes" Value="Možete ili vratiti svoje računalo u prethodno stanje ili nastaviti instalaciju kasnije. Želite li vratiti?"/>
+	<String Id="Error1709" Overridable="yes" Value="Pwodwi: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Enstalasyon echwe."/>
+	<String Id="Error1707" Overridable="yes" Value="Enstalasyon konplete avèk siksè."/>
+	<String Id="Error1706" Overridable="yes" Value="Yon pake enstalasyon pou pwodwi a [ProductName] pa ka jwenn. Eseye enstalasyon an ankò lè l sèvi avèk yon kopi valab pake enstalasyon &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="U tijeku je prethodna instalacija za ovaj proizvod. Za nastavak morate poništiti promjene koje je napravila ta instalacija. Želite li poništiti te promjene?"/>
+	<String Id="Error1704" Overridable="yes" Value="Instalacija za [ProductName] trenutno je obustavljena. Za nastavak morate poništiti promjene koje je napravila ta instalacija. Želite li poništiti te promjene?"/>
+	<String Id="Error1703" Overridable="yes" Value="Ou dwe rekòmanse sistèm ou a pou chanjman konfigirasyon yo te fè nan [ProductName] pran efè. Klike sou Wi pou rekòmanse kounye a oswa Non si w gen plan pou rekòmanse manyèlman pita."/>
+	<String Id="Error1702" Overridable="yes" Value="Enstalatè a dwe rekòmanse sistèm ou a anvan konfigirasyon [ProductName] ka kontinye. Klike sou Wi pou rekòmanse kounye a oswa Non si w gen plan pou rekòmanse manyèlman pita."/>
+	<String Id="Error1701" Overridable="yes" Value="Kle [ProductName] a pa valab. Verifye ke ou te antre kle ki kòrèk la."/>
+	<String Id="Error1609" Overridable="yes" Value="Yon erè te fèt pandan y ap aplike paramèt sekirite yo. [ProductName] se pa yon itilizatè valab oswa yon gwoup. Sa a ta ka yon pwoblèm ak pake a, oswa yon pwoblèm konekte ak yon kontwolè domèn sou rezo a. Tcheke koneksyon rezo ou a epi klike sou Reese, oswa Anile pou fini enstalasyon an. {{Pa kapab jwenn SID itilizatè a, erè sistèm [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Pa t &amp;apos;kapab jwenn nenpòt ki te deja enstale pwodwi konfòme sou machin nan pou enstale pwodui sa a."/>
+	<String Id="Error1607" Overridable="yes" Value="Aplikasyon sa yo ta dwe fèmen anvan ou kontinye enstalasyon an:"/>
+	<String Id="Error1606" Overridable="yes" Value="Pa t &amp;apos;kapab jwenn aksè nan kote rezo [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Pa gen ase espas disk sou volim &amp;apos;[ProductName]&amp;apos; pou kontinye enstalasyon an ak rekiperasyon pèmèt. [ProductName] KB yo mande, men sèlman [ProductName] KB ki disponib. Klike sou Ignore pou kontinye enstalasyon an san yo pa sove enfòmasyon rekiperasyon an, klike sou Reeseye pou tcheke espas ki disponib ankò, oswa klike sou Anile pou kite enstalasyon an."/>
+	<String Id="Error1604" Overridable="yes" Value="Pwodwi &amp;apos;[ProductName]&amp;apos; deja enstale, sa ki anpeche enstalasyon pwodui sa a. De pwodwi yo enkonpatib."/>
+	<String Id="Error1603" Overridable="yes" Value="Fichye a [ProductName][ProductName] ap kenbe nan itilize { pa pwosesis sa a: Non: [ProductName], Id: [ProductName], Tit Fenèt la: &amp;apos;[ProductName]&amp;apos;}. Fèmen aplikasyon sa a epi eseye ankò."/>
+	<String Id="Error1602" Overridable="yes" Value="Jeste li sigurni da želite otkazati?"/>
+	<String Id="Error1601" Overridable="yes" Value="Soti nan espas disk -- Volim: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Itilizatè &amp;apos;[ProductName]&amp;apos; te deja inisye yon enstalasyon pou pwodwi &amp;apos;[ProductName]&amp;apos;. Itilizatè sa a pral bezwen kouri enstale sa a ankò anvan yo ka itilize pwodui sa a."/>
+	<String Id="Error1502" Overridable="yes" Value="Itilizatè &amp;apos;[ProductName]&amp;apos; te deja inisye yon enstalasyon pou pwodwi &amp;apos;[ProductName]&amp;apos;. Itilizatè sa a pral bezwen kouri enstale sa a ankò anvan yo ka itilize pwodui sa a. Enstalasyon aktyèl ou a pral kontinye kounye a."/>
+	<String Id="Error1501" Overridable="yes" Value="Erè ak aksè nan done ki an sekirite. Tanpri asire w ke Windows Enstalatè a konfigirasyon byen epi eseye enstale a ankò."/>
+	<String Id="Error1500" Overridable="yes" Value="Yon lòt enstalasyon an ap fèt. Ou dwe ranpli enstalasyon sa a anvan ou kontinye yon sèl sa a."/>
+	<String Id="Error1410" Overridable="yes" Value="Pa t &amp;apos;kapab ogmante espas ki disponib nan rejis la. [ProductName] KB espas rejis gratis nesesè pou enstalasyon aplikasyon sa a."/>
+	<String Id="Error1409" Overridable="yes" Value="Pa t &amp;apos;kapab li enfòmasyon sekirite pou kle [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke ou gen ase aksè a kle sa a, oswa kontakte pèsonèl sipò ou."/>
+	<String Id="Error1408" Overridable="yes" Value="Pa t &amp;apos;kapab jwenn non sous-kle pou kle [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke ou gen ase aksè a kle sa a, oswa kontakte pèsonèl sipò ou."/>
+	<String Id="Error1407" Overridable="yes" Value="Pa t &amp;apos;kapab jwenn non valè pou kle [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke ou gen ase aksè a kle sa a, oswa kontakte pèsonèl sipò ou."/>
+	<String Id="Error1406" Overridable="yes" Value="Pa t &amp;apos;kapab ekri valè [ProductName] nan kle [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke ou gen ase aksè a kle sa a, oswa kontakte pèsonèl sipò ou."/>
+	<String Id="Error1405" Overridable="yes" Value="Pa t &amp;apos;kapab li valè [ProductName] nan kle [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke ou gen ase aksè a kle sa a, oswa kontakte pèsonèl sipò ou."/>
+	<String Id="Error1404" Overridable="yes" Value="Pa t &amp;apos;kapab efase kle [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke ou gen ase aksè a kle sa a, oswa kontakte pèsonèl sipò ou."/>
+	<String Id="Error1403" Overridable="yes" Value="Pa t &amp;apos;kapab efase valè [ProductName] nan kle [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke ou gen ase aksè a kle sa a, oswa kontakte pèsonèl sipò ou."/>
+	<String Id="Error1402" Overridable="yes" Value="Pa t &amp;apos;kapab louvri kle: [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke ou gen ase aksè a kle sa a, oswa kontakte pèsonèl sipò ou."/>
+	<String Id="Error1401" Overridable="yes" Value="Pa t &amp;apos;kapab kreye kle: [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke ou gen ase aksè a kle sa a, oswa kontakte pèsonèl sipò ou."/>
+	<String Id="Error1336" Overridable="yes" Value="Te gen yon erè nan kreye yon dosye tanporè ki nesesè pou konplete enstalasyon sa a.{{ Dosye: [ProductName]. Kòd erè sistèm: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Fichye kabinè &amp;apos;[ProductName]&amp;apos; ki nesesè pou enstalasyon sa a fin pouri epi li pa ka itilize. Sa a ka endike yon erè rezo, yon erè lekti nan CD-ROM la, oswa yon pwoblèm ak pake sa a."/>
+	<String Id="Error1334" Overridable="yes" Value="Fichye &amp;apos;[ProductName]&amp;apos; pa ka enstale paske fichye a pa ka jwenn nan dosye kabinè &amp;apos;[ProductName]&amp;apos;. Sa a ka endike yon erè rezo, yon erè lekti nan CD-ROM la, oswa yon pwoblèm ak pake sa a."/>
+	<String Id="Error1333" Overridable="yes" Value="Echwe pou kòrèkteman patch [ProductName] fichye a: erè CRC."/>
+	<String Id="Error1332" Overridable="yes" Value="Echwe pou kòrèkteman deplase [ProductName] fichye: erè CRC."/>
+	<String Id="Error1331" Overridable="yes" Value="Echwe pou kopi kòrèkteman [ProductName] fichye: erè CRC."/>
+	<String Id="Error1330" Overridable="yes" Value="Yon dosye ki nesesè yo pa ka enstale paske dosye kabinè a [ProductName] gen yon siyati dijital ki pa valab. Sa ka endike ke dosye kabinè a fin pouri. {{ WinVerifyTrust te retounen Erè [ProductName].}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Yon dosye ki nesesè yo pa ka enstale paske dosye kabinè a [ProductName] pa siyen nimerik. Sa ka endike ke dosye kabinè a fin pouri."/>
+	<String Id="Error1328" Overridable="yes" Value="Erè lè w ap aplike patch nan dosye [ProductName]. Pwobableman li te mete ajou pa lòt mwayen, epi patch sa a pa ka modifye ankò. Pou plis enfòmasyon kontakte machann patch ou a.{{ Erè sistèm: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Kondwi ki pa valab: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Erè lè w ap resevwa sekirite fichye a: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; se pa yon non fichye kout valab."/>
+	<String Id="Error1324" Overridable="yes" Value="Chemen katab &amp;apos;[ProductName]&amp;apos; gen yon karaktè ki pa valab."/>
+	<String Id="Error1323" Overridable="yes" Value="Chemen katab &amp;apos;[ProductName]&amp;apos; gen mo ki pa valab nan chemen katab."/>
+	<String Id="Error1322" Overridable="yes" Value="Yon pati nan chemen katab &amp;apos;[ProductName]&amp;apos; pa valab. Li se swa vid oswa depase longè sistèm lan pèmèt."/>
+	<String Id="Error1321" Overridable="yes" Value="Enstalatè a pa gen ase privilèj pou modifye fichye sa a: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Chemen espesifye a twò long: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Yon erè rezo te fèt pandan y ap eseye louvri kabinè dosye sous la: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Yon erè rezo te fèt pandan y ap eseye kreye anyè a: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Yon erè te fèt pandan y ap eseye kreye anyè a: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Yon erè rezo te fèt pandan y ap eseye li nan fichye a: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Pa kapab ekri nan katab la espesifye: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Chemen espesifye &amp;apos;[ProductName]&amp;apos; pa disponib."/>
+	<String Id="Error1313" Overridable="yes" Value="Volim [ProductName] la pa disponib kounye a. Tanpri chwazi yon lòt."/>
+	<String Id="Error1312" Overridable="yes" Value="Pa ka kreye anyè &amp;apos;[ProductName]&amp;apos;. Yon dosye ki gen non sa a deja egziste. Tanpri chanje non oswa retire fichye a epi klike sou Reesye, oswa klike sou Anile pou sòti."/>
+	<String Id="Error1311" Overridable="yes" Value="Fichye sous yo pa jwenn {{(kabinè)}}: [ProductName]. Verifye ke fichye a egziste e ke ou ka jwenn aksè nan li."/>
+	<String Id="Error1310" Overridable="yes" Value="Erè ekri nan dosye a: [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke ou gen aksè a anyè sa a."/>
+	<String Id="Error1309" Overridable="yes" Value="Erè li nan fichye a: [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke fichye a egziste epi ou ka jwenn aksè nan li."/>
+	<String Id="Error1308" Overridable="yes" Value="Fichye sous yo pa jwenn: [ProductName]. Verifye ke fichye a egziste e ke ou ka jwenn aksè nan li."/>
+	<String Id="Error1307" Overridable="yes" Value="Pa gen ase espas disk pou enstale dosye sa a: [ProductName]. Gratis kèk espas disk epi klike sou Reesye, oswa klike sou Anile pou sòti."/>
+	<String Id="Error1306" Overridable="yes" Value="Yon lòt aplikasyon gen aksè eksklizif nan dosye a &amp;apos;[ProductName]&amp;apos;. Tanpri fèmen tout lòt aplikasyon yo, epi klike sou Reeseye."/>
+	<String Id="Error1305" Overridable="yes" Value="Erè li nan fichye [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke fichye a egziste epi ou ka jwenn aksè nan li."/>
+	<String Id="Error1304" Overridable="yes" Value="Erè ekri nan dosye: [ProductName]. Verifye ke ou gen aksè nan anyè sa a."/>
+	<String Id="Error1303" Overridable="yes" Value="Enstalatè a pa gen ase privilèj pou jwenn aksè nan anyè sa a: [ProductName]. Enstalasyon an pa ka kontinye. Konekte kòm administratè oswa kontakte administratè sistèm ou a."/>
+	<String Id="Error1302" Overridable="yes" Value="Tanpri mete disk la: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Pa ka kreye fichye &amp;apos;[ProductName]&amp;apos;. Yon anyè ki gen non sa a deja egziste. Anile enstalasyon an epi eseye enstale nan yon lòt kote."/>
+	<String Id="Error1101" Overridable="yes" Value="Erè li nan fichye a: [ProductName].{{ Erè sistèm [ProductName].}} Verifye ke fichye a egziste epi ou ka jwenn aksè nan li."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Enstalasyon echwe."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Enstalasyon konplete avèk siksè."/>
+	<String Id="Error23" Overridable="yes" Value="Preparasyon pou retire ansyen vèsyon aplikasyon sa a..."/>
+	<String Id="Error22" Overridable="yes" Value="Retire ansyen vèsyon aplikasyon sa a..."/>
+	<String Id="Error21" Overridable="yes" Value="Rasanble enfòmasyon ki nesesè yo..."/>
+	<String Id="Error20" Overridable="yes" Value="Tanpri tann pandan Windows konfigirasyon [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Enstalatè sispann prematireman."/>
+	<String Id="Error18" Overridable="yes" Value="Enstalatè pa reponn ankò."/>
+	<String Id="Error17" Overridable="yes" Value="Soti nan memwa. Fèmen lòt aplikasyon anvan ou eseye ankò."/>
+	<String Id="Error16" Overridable="yes" Value="Tan ki rete: {[ProductName] minit }{[ProductName] segonn}"/>
+	<String Id="Error15" Overridable="yes" Value="Aksyon te fini [ProductName]: [ProductName]. Valè retounen [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Aksyon kòmanse [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Anrejistreman sispann: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Enregistrement te kòmanse: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Kalite mesaj: [ProductName], Agiman: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Aksyon [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Disk plen:}}"/>
+	<String Id="Error5" Overridable="yes" Value="Enstalatè a te rankontre yon erè inatandi enstale pake sa a. Sa a ka endike yon pwoblèm ak pake sa a. Kòd erè a se [ProductName]. {{Agiman yo se: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Enfòmasyon [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Avètisman [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Erè [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Erè fatal: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Anile enfòmasyon pwodwi yo"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Dosye: [ProductName], Anyè: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Retire fichye deplase yo"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Dosye: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Retire dosye backup"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Vraćanje radnje:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Kontèks aplikasyon:[ProductName], Non Asanble:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Anile enfòmasyon asanble yo"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Kontèks aplikasyon:[ProductName], Non Asanble:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Pibliye enfòmasyon asanble yo"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Dosye: [ProductName], Depandans: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Enstale katalòg sistèm lan"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Jenere operasyon script pou aksyon:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Aplikasyon piblisite"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Kle: [ProductName], Non: [ProductName], Valè: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Ekri sistèm rejis valè"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Fichye: [ProductName], Seksyon: [ProductName], Kle: [ProductName], Valè: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Ekri INI dosye valè"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Non: [ProductName], Valè: [ProductName], Aksyon [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Mete ajou strings anviwònman yo"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Anrejistre bibliyotèk tip"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="PwogID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Anrejistre idantifyan pwogram yo"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="Kalite kontni MIME: [ProductName], ekstansyon: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Anrejistre enfòmasyon MIME yo"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Polis: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Anrejistre polis yo"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Ekstansyon: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Anrejistre sèvè ekstansyon yo"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Anrejistre aplikasyon COM+ ak eleman yo"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Id klas: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Anrejistre sèvè klas yo"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Karakteristik: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Unpublishing Karakteristik pwodwi yo"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="ID eleman: [ProductName], Kalifikasyon: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Anile Konpozan Kalifye"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Sèvis: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Sispann sèvis yo"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Sèvis: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Kòmanse sèvis yo"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Inisyalize anyè ODBC"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Dosye: [ProductName], Dosye: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Anrejistre modil yo"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Dosye: [ProductName], Dosye: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Anrejistre modil yo"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Chèche pwodwi ki kalifye yo"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="chemen kout: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Retire rakoursi"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Kle: [ProductName], Non: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Retire valè rejis sistèm yo"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Retire konpozan ODBC"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Fichye: [ProductName], Seksyon: [ProductName], Kle: [ProductName], Valè: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Retire dosye INI antre yo"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Dosye: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Retire dosye yo"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Dosye: [ProductName], Anyè: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Retire fichye yo"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Aplikasyon: [ProductName], Liy kòmand: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Retire aplikasyon yo"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Non: [ProductName], Valè: [ProductName], Aksyon [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Mete ajou strings anviwònman yo"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Dosye: [ProductName], Anyè: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Retire fichye doub"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Anrejistre itilizatè"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Anrejistre kalite bibliyotèk"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Anrejistre pwodwi"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Polis: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Anrejistre polis yo"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Itilizatè yo: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Anrejistre COM+ Aplikasyon ak Konpozan"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Mete ajou enskripsyon eleman yo"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Fichye: [ProductName], Anyè: [ProductName], Gwosè: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Patching dosye yo"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Fichye: [ProductName], Anyè: [ProductName], Gwosè: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Deplase fichye yo"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Aplikasyon: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Migrasyon eta karakteristik soti nan aplikasyon ki gen rapò"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Evalye kondisyon lansman"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Sèvis: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Enstale nouvo sèvis yo"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Enstale konpozan ODBC"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Jwenn aplikasyon: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Chèche aplikasyon ki gen rapò"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Fichye: [ProductName], Anyè: [ProductName], Gwosè: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Kreye fichye kopi"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Sèvis: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Efase sèvis yo"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Dosye: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Kreye dosye"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Chèche pwodwi ki kalifye yo"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Dosye: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Obligatwa ègzèkutabl"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Pwopriyete: [ProductName], Siyati: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Chèche aplikasyon enstale"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Espas gratis: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Afektasyon espas rejis la"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="PwogID: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Anrejistre idantifyan pwogram yo"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="Kalite kontni MIME: [ProductName], ekstansyon: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Anrejistre enfòmasyon MIME"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Ekstansyon: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Anrejistre sèvè ekstansyon yo"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Id klas: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Anrejistre sèvè klas yo"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Pibliye enfòmasyon sou pwodwi"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Karakteristik: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Piblikasyon Karakteristik pwodwi"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="ID eleman: [ProductName], Kalifikasyon: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Piblikasyon Konpozan Kalifye"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="chemen kout: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Kreye rakoursi"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Kondisyon espas enfòmatik"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Kondisyon espas enfòmatik"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Kondisyon espas enfòmatik"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Fichye: [ProductName], Anyè: [ProductName], Gwosè: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Kopi fichye enstalasyon rezo yo"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Fichye: [ProductName], Anyè: [ProductName], Gwosè: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Kopye nouvo fichye yo"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Validasyon enstalasyon"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Tanpri li Akò Lisans [ProductName]"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Mizajou"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Enstale"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Mwen &amp;aksepte kondisyon ki nan Akò Lisans lan"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Byenveni nan [ProductName] Setup Wizard la"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Sòsye Enstalasyon an pral mete ajou [ProductName] sou òdinatè w lan. Klike sou Next pou kontinye oswa Anile pou sòti nan Sòsye Enstalasyon an."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Sòsye Enstalasyon an pral enstale [ProductName] sou òdinatè w lan. Klike sou Next pou kontinye oswa Anile pou sòti nan Sòsye Enstalasyon an."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Ikòn eksklamasyon"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Tanpri tann pandan enstalatè a fini detèmine kondisyon espas disk ou a."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Retounen"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pare pou mete ajou [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Klike Mizajou pou mete ajou [ProductName] nan òdinatè w lan. Klike sou Retounen pou revize oswa chanje nenpòt nan paramèt enstalasyon w yo. Klike sou Anile pou sòti nan sòsye an."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Mizajou"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pare pou retire [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Klike sou Retire pou retire [ProductName] nan òdinatè w lan. Klike sou Retounen pou revize oswa chanje nenpòt nan paramèt enstalasyon w yo. Klike sou Anile pou sòti nan sòsye an."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Retire"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pare pou repare [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Klike sou Repare pou repare enstalasyon [ProductName]. Klike sou Retounen pou revize oswa chanje nenpòt nan paramèt enstalasyon w yo. Klike sou Anile pou sòti nan sòsye an."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Re&amp;pè"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pare pou chanje [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Klike sou Chanje pou kòmanse enstalasyon an. Klike sou Retounen pou revize oswa chanje nenpòt nan paramèt enstalasyon w yo. Klike sou Anile pou sòti nan sòsye an."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Chanje"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pare pou enstale [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Klike sou Enstale pou kòmanse enstalasyon an. Klike sou Retounen pou revize oswa chanje nenpòt nan paramèt enstalasyon w yo. Klike sou Anile pou sòti nan sòsye an."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Enstale"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Klike sou bouton Fini pou sòti nan Sòsye Enstalasyon an."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="Konfigirasyon [ProductName] te entèwonp. Sistèm ou a pa te modifye. Pou enstale pwogram sa a nan yon moman pita, tanpri kouri enstalasyon an ankò."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Enstalasyon Sòsye yo te entèwonp"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Tout karakteristik pwogram yo pral enstale. Mande espas ki pi disk la."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Pèmèt itilizatè yo chwazi ki karakteristik pwogram yo pral enstale ak ki kote yo pral enstale. Rekòmande pou itilizatè avanse."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Enstale karakteristik pwogram ki pi komen yo. Rekòmande pou pifò itilizatè yo."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Chwazi kalite konfigirasyon ki pi byen adapte ak bezwen ou yo"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Chwazi Kalite Enstalasyon"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Ranpli Enstalasyon"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C&amp;fini"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Custom Enstalasyon"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C &amp; koutim"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Enstalasyon tipik"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Tipik"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Rekòmanse Sòsye Enstalasyon [ProductName] la"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Sòsye Enstalasyon an pral konplete enstalasyon [ProductName] sou òdinatè w lan. Klike sou Enstale pou kontinye oswa Anile pou sòti nan Sòsye Enstalasyon an."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Enstale"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Estati:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Pwogrè fèt"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Ajou [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Tanpri tann pandan Asistan Enstalasyon an mete ajou [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Retire [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Tanpri tann pandan Sòsye Enstalasyon an retire [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Reparasyon [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Tanpri tann pandan Sòsye Enstalasyon an ap repare [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Kanje [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Tanpri tann pandan Asistan Enstalasyon an chanje [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Enstale [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Tanpri tann pandan Asistan Enstalasyon an enstale [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Byenveni nan [ProductName] Setup Wizard la"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Tanpri tann pandan Sòsye Enstalasyon an ap prepare pou gide w atravè enstalasyon an."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Altènativman, ou ka chwazi enfim fonksyonalite rollback enstalatè a. Enfimite rollback anpeche enstalasyon an retabli eta orijinal òdinatè w lan ta dwe entèwonp enstalasyon an nenpòt fason. Klike sou Wi si ou vle pran risk pou enfim rollback."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pa Espas Disk"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Espas disk ki nesesè pou enstalasyon an depase espas disk ki disponib."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Komèsan make yo pa gen ase espas disk disponib pou karakteristik yo chwazi kounye a. Ou ka retire kèk dosye nan komèsan yo make, enstale mwens karakteristik, oswa chwazi yon kondwi destinasyon diferan."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pa Espas Disk"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Espas disk ki nesesè pou enstalasyon an depase espas disk ki disponib."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Komèsan make yo pa gen ase espas disk disponib pou karakteristik yo chwazi kounye a. Ou ka retire kèk dosye nan komèsan yo make, enstale mwens karakteristik, oswa chwazi yon kondwi destinasyon diferan."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Pa fèmen aplikasyon yo. Yon rdemare pral obligatwa."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Fèmen aplikasyon yo epi eseye rekòmanse yo."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Fichye yo itilize"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Gen kèk dosye ki bezwen mete ajou yo kounye a nan itilize."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Aplikasyon sa yo ap itilize dosye ki bezwen mete ajou pa konfigirasyon sa a. Ou ka kite Setup Wizard fèmen yo epi eseye rekòmanse yo oswa rdemare machin nan pita."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Byenveni nan [ProductName] Setup Wizard la"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Sòsye Enstalasyon an pèmèt ou chanje fason yo enstale karakteristik [ProductName] sou òdinatè w la oswa pou w retire li nan òdinatè w lan. Klike sou Next pou kontinye oswa Anile pou sòti nan Sòsye Enstalasyon an."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] pa ka repare."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Reparasyon erè nan enstalasyon ki pi resan an lè li repare dosye ki manke ak koripsyon, rakoursi, ak antre rejis yo."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] pa ka retire."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Retire [ProductName] nan òdinatè w lan."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] pa gen okenn karakteristik ki ka chwazi poukont li."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Pèmèt ou chanje fason yo enstale karakteristik yo."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Chanje, repare, oswa retire enstalasyon yo"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Chwazi operasyon an ou vle fè."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Retire Enstalasyon"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Retire"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Enstalasyon reparasyon"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Re&amp;pè"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Chanje enstalasyon"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Chanje"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Akò lisans itilizatè fen"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Tanpri li akò lisans sa a ak anpil atansyon"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Mwen &amp;aksepte kondisyon ki nan Akò Lisans lan"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Icône enfòmasyon"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Anyè enstalasyon dwe sou yon dis lou lokal."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Chanje..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Enstalasyon ak dosye:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] pral enstale nan yon katab pou chak machin pa default epi yo pral disponib pou tout itilizatè. Ou ka chanje dosye enstalasyon default la. Ou dwe genyen privilèj Administratè lokal yo."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Enstale pou tout itilizatè sa a &amp;machin"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] pa sipòte enstalasyon pa itilizatè."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] pral enstale nan yon katab pou chak itilizatè epi yo pral disponib jis pou kont itilizatè ou an. Ou pa bezwen privilèj Administratè lokal yo."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Enstale &amp;jis pou ou ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Dimansyon Enstalasyon"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Chwazi sijè ki abòde lan enstalasyon ak katab"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Enstale [ProductName] nan:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Klike Next pou enstale nan katab default la oswa klike sou Chanje pou chwazi yon lòt."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Dosye Destinasyon"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Chanje..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Fichye yo itilize"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Gen kèk dosye ki bezwen mete ajou yo kounye a nan itilize."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Aplikasyon sa yo ap itilize dosye ki bezwen mete ajou pa konfigirasyon sa a. Fèmen aplikasyon sa yo epi klike sou &amp;Reesye pou kontinye konfigirasyon oswa Soti pou sòti nan li."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="E&amp; sòti"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Chanje"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Enstale"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Karakteristik pwodwi yo"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Chwazi fason ou vle karakteristik yo dwe enstale."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Karakteristik pwodwi"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Klike sou bouton Fini pou sòti nan Sòsye Enstalasyon an."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Setup Wizard te fini prematireman akòz yon erè. Sistèm ou a pa te modifye. Pou enstale pwogram sa a pita, kouri Sòsye Enstalasyon ankò."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="Sòsye Enstalasyon {\WixUI_Font_Bigger}[ProductName] te fini twò bonè"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Konplete [ProductName] Enstalasyon Sòsye a"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Klike sou bouton Fini pou sòti nan Sòsye Enstalasyon an."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Icône enfòmasyon"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Tèks enfòmasyon"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kondisyon pou Espas Disk"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Espas ki gen kapasite ki nesesè pou enstalasyon karakteristik yo chwazi yo."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Komèsan make yo pa gen ase espas disk disponib pou karakteristik chwazi yo. Ou ka swa retire kèk dosye nan komèsan yo make, enstale mwens karakteristik, oswa chwazi kondui destinasyon diferan."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Kote:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Enstalasyon Customized"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Chwazi fason ou vle karakteristik yo dwe enstale."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Klike sou ikon ki nan pye bwa ki anba a pou chanje fason yo pral enstale karakteristik yo."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Disk &amp; Itilizasyon"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Re&amp;mete"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;browse..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Pye bwa seleksyon yo"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Icône enfòmasyon"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Jeste li sigurni da želite otkazati [ProductName] instalaciju?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Chanje katab destinasyon an"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Navige nan katab destinasyon an"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Non Dosye:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Kreye yon nouvo katab"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Monte yon nivo"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Gade nan:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp; avanse"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Enstale"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Klike sou Enstale pou enstale pwodwi a ak opsyon default jis pou ou. Klike sou Avanse pou chanje opsyon enstalasyon yo."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Klike sou Enstale pou enstale pwodwi a ak opsyon default pou tout itilizatè yo. Klike sou Avanse pou chanje opsyon enstalasyon yo."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Mwen &amp;aksepte kondisyon ki nan Akò Lisans lan"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Tanpri li Akò Lisans [ProductName]"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Enstalasyon"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Enprime"/>
+	<String Id="WixUIOK" Overridable="yes" Value="OK"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Non"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Wi"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Ignore"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Reesye"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Fini"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Anile"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Apre"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Retounen"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Dezenstalasyon Windows Firewall konfigirasyon"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Woule tounen konfigirasyon Windows Firewall"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Enstale konfigirasyon Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Woule tounen konfigirasyon Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfigirasyon Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfigirasyon Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Pa ka konekte ak Windows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Vizyalizasyon pou aplikasyon aleka disponib kòm opsyon nan konfigirasyon"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Gade sèvè RAAS nan Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Kreye rakoursi aplikasyon aleka nan aplikasyon sèvè sou òdinatè lokal yo"/>

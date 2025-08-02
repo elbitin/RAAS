@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="ga" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="ga" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Toirt"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Méid Diosca"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Ag teastáil"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Difríocht"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Ar fáil"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Am fágtha:{ [ProductName] nóiméad}{ [ProductName] soicind}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Éilíonn an ghné seo [ProductName] ar do thiomáint crua. Tá [ProductName] de [ProductName] foghnéithe roghnaithe aige. Éilíonn na fo-ghnéithe [ProductName] ar do thiomáint crua."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Éilíonn an ghné seo [ProductName] ar do thiomáint crua. Tá [ProductName] de [ProductName] foghnéithe roghnaithe aige. Saorann na fo-ghnéithe [ProductName] ar do thiomáint crua."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Saorann an gné seo [ProductName] ar do thiomáint crua. Tá [ProductName] de [ProductName] foghnéithe roghnaithe aige. Éilíonn na fo-ghnéithe [ProductName] ar do thiomáint crua."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Saorann an gné seo [ProductName] ar do thiomáint crua. Tá [ProductName] de [ProductName] foghnéithe roghnaithe aige. Saorann na fo-ghnéithe [ProductName] ar do thiomáint crua."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Beidh an ghné seo fós le reáchtáil ón líonra"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Athróidh an ghné seo ó reáchtáil ó staid líonra le bheith suiteáilte ar an tiomántán crua áitiúil"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Athróidh an ghné seo ó reáchtáil ó staid an líonra go dtí socrú le suiteáil nuair is gá"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Díshuiteálfar an ghné seo go hiomlán, ní bheidh tú in ann é a rith ón líonra"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Bainfear an ghné seo de do thiomáint crua áitiúil, ach beidh sé fós ar fáil le rith ón líonra"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Fanfaidh an ghné seo ar do thiomáint crua áitiúil"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Bainfear an ghné seo de do thiomáint crua áitiúil, ach beidh sé fós ar fáil le rith ó CD"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Bainfear an ghné seo de do thiomáint crua áitiúil, ach socrófar é le suiteáil nuair is gá"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Bainfear an ghné seo go hiomlán"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Costas tiomsaithe don ghné seo..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Éilíonn an ghné seo [ProductName] ar do thiomáint crua."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Saorann an gné seo [ProductName] ar do thiomáint crua."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Athróidh an ghné seo ó reáchtáil ó staid CD le bheith suiteáilte ar an tiomántán crua áitiúil"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Beidh an ghné seo fós le rith ó CD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Athróidh an ghné seo ó reáchtáil ó staid CD go dtí socrú le suiteáil nuair is gá"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Díshuiteálfar an ghné seo go hiomlán, ní bheidh tú in ann é a rith ó CD"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Beidh an ghné seo ar fáil le rith ón líonra"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Suiteálfar an ghné seo ar do thiomáint crua áitiúil"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Beidh an ghné seo ar fáil le rith ó CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Déanfar é a shuiteáil nuair is gá"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Ní bheidh an ghné seo ar fáil"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Suiteálfar an ghné seo le rith ón líonra"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Suiteálfar an ghné seo ar an tiomántán crua áitiúil"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Suiteálfar an ghné seo le rith ó CD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Socrófar an ghné seo le suiteáil nuair is gá"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Fanfaidh an ghné seo díshuiteáilte"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Faisnéis riachtanach a bhailiú..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Fillteán|Fillteán Nua"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Suiteáilfear é chun rith ón líonra"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Suiteáilfear é ar an tiomántán crua áitiúil"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Beidh a shuiteáil a rith ó CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Beidh an ghné iomlán a shuiteáil a rith ó líonra"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Suiteálfar an ghné iomlán ar an tiomántán crua áitiúil"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Beidh an ghné iomlán a shuiteáil a rith ó CD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Déanfar gné a shuiteáil nuair is gá"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Ní bheidh an ghné iomlán ar fáil"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="bearta"/>
+	<String Id="Error1938" Overridable="yes" Value="Tharla earráid le linn suiteáil an chomhthionóil &amp;apos;[ProductName]&amp;apos;. Níorbh fhéidir modúl amháin nó níos mó den tionól a aimsiú. HRESULT: [ProductName].{{ comhéadan cóimeála: [ProductName], feidhm: [ProductName], comhpháirt: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Tharla earráid le linn suiteáil an chomhthionóil &amp;apos;[ProductName]&amp;apos;. Níorbh fhéidir an síniú nó an chatalóg a fhíorú nó níl sé bailí. HRESULT: [ProductName].{{ comhéadan cóimeála: [ProductName], feidhm: [ProductName], comhpháirt: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Tharla earráid le linn suiteáil an chomhthionóil &amp;apos;[ProductName]&amp;apos;. Níl an tionól ainmnithe go láidir nó níl sé sínithe leis an íosfhad eochrach. HRESULT: [ProductName].{{ comhéadan cóimeála: [ProductName], feidhm: [ProductName], comhpháirt: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Tharla earráid le linn suiteáil an chomhthionóil &amp;apos;[ProductName]&amp;apos;. Déan tagairt le do thoil do Cabhair agus Tacaíocht le haghaidh tuilleadh eolais. HRESULT: [ProductName].{{ comhéadan cóimeála: [ProductName], feidhm: [ProductName], comhpháirt: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Díchumasaítear suiteálacha úsáideoirí trí bheartas ar an meaisín."/>
+	<String Id="Error1933" Overridable="yes" Value="Ní féidir le seirbhís Windows Installer comhad Windows amháin nó níos mó faoi chosaint a nuashonrú.{{ Earráid SFP: [ProductName]. Liosta comhad cosanta:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Ní féidir leis an tseirbhís Windows Installer an comhad Windows faoi chosaint [ProductName] a nuashonrú.{{ Leagan an phacáiste: [ProductName], leagan Cosanta an OS: [ProductName], Earráid SFP: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Ní féidir le seirbhís Windows Installer an comhad córais [ProductName] a nuashonrú toisc go bhfuil an comhad cosanta ag Windows. Seans go mbeidh ort do chóras oibriúcháin a nuashonrú le go n-oibreoidh an ríomhchlár seo i gceart.{{ Leagan an phacáiste: [ProductName], leagan Cosanta OS: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="Níorbh fhéidir an tuairisc le haghaidh seirbhíse &amp;apos;[ProductName]&amp;apos; ([ProductName]) a athrú."/>
+	<String Id="Error1929" Overridable="yes" Value="Earráid agus Feidhmchlár COM+ á dhíchlárú. Déan teagmháil le do phearsanra tacaíochta le haghaidh tuilleadh eolais."/>
+	<String Id="Error1928" Overridable="yes" Value="Earráid agus Feidhmchlár COM+ á chlárú. Déan teagmháil le do phearsanra tacaíochta le haghaidh tuilleadh eolais."/>
+	<String Id="Error1927" Overridable="yes" Value="Níl Seirbhísí Comhpháirte (COM+ 1.0) suiteáilte ar an ríomhaire seo. Teastaíonn Seirbhísí Comhpháirte leis an tsuiteáil seo chun é a chur i gcrích go rathúil. Tá Seirbhísí Comhpháirte ar fáil ar Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="Níorbh fhéidir slándáil comhaid a shocrú do chomhad &amp;apos;[ProductName]&amp;apos;. Earráid: [ProductName]. Deimhnigh go bhfuil go leor pribhléidí agat chun na ceadanna slándála don chomhad seo a mhodhnú."/>
+	<String Id="Error1925" Overridable="yes" Value="Níl go leor pribhléidí agat chun an tsuiteáil seo a chur i gcrích d&amp;apos;úsáideoirí uile an mheaisín. Logáil isteach mar riarthóir agus ansin bain triail eile as an tsuiteáil seo."/>
+	<String Id="Error1924" Overridable="yes" Value="Níorbh fhéidir athróg timpeallachta &amp;apos;[ProductName]&amp;apos; a nuashonrú. Deimhnigh go bhfuil go leor pribhléidí agat chun athróga timpeallachta a mhodhnú."/>
+	<String Id="Error1923" Overridable="yes" Value="Níorbh fhéidir an tseirbhís &amp;apos;[ProductName]&amp;apos; ([ProductName]) a shuiteáil. Deimhnigh go bhfuil go leor pribhléidí agat chun seirbhísí córais a shuiteáil."/>
+	<String Id="Error1922" Overridable="yes" Value="Níorbh fhéidir an tseirbhís &amp;apos;[ProductName]&amp;apos; ([ProductName]) a scriosadh. Fíoraigh go bhfuil go leor pribhléidí agat chun seirbhísí córais a bhaint."/>
+	<String Id="Error1921" Overridable="yes" Value="Níorbh fhéidir seirbhís ‘[ProductName]’ ([ProductName]) a stopadh. Fíoraigh go bhfuil go leor pribhléidí agat chun stop a chur le seirbhísí córais."/>
+	<String Id="Error1920" Overridable="yes" Value="Theip ar an tseirbhís ‘[ProductName]’ ([ProductName]) a thosú. Deimhnigh go bhfuil go leor pribhléidí agat chun tús a chur le seirbhísí córais."/>
+	<String Id="Error1919" Overridable="yes" Value="Earráid agus foinse sonraí ODBC á chumrú: [ProductName], earráid ODBC [ProductName]: [ProductName]. Fíoraigh go bhfuil an comhad [ProductName] ann agus gur féidir leat rochtain a fháil air."/>
+	<String Id="Error1918" Overridable="yes" Value="Earráid agus tiománaí ODBC á shuiteáil: [ProductName], earráid ODBC [ProductName]: [ProductName]. Fíoraigh go bhfuil an comhad [ProductName] ann agus gur féidir leat rochtain a fháil air."/>
+	<String Id="Error1917" Overridable="yes" Value="Earráid agus an tiománaí ODBC á bhaint: [ProductName], earráid ODBC [ProductName]: [ProductName]. Cinntigh go bhfuil go leor pribhléidí agat chun tiománaithe ODBC a bhaint."/>
+	<String Id="Error1916" Overridable="yes" Value="Earráid agus bainisteoir tiománaí ODBC á shuiteáil, earráid ODBC [ProductName]: [ProductName]. Déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1915" Overridable="yes" Value="Earráid agus bainisteoir tiománaithe ODBC á bhaint, earráid ODBC [ProductName]: [ProductName]. Déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1914" Overridable="yes" Value="Níorbh fhéidir comhad [ProductName] a sceidealú chun comhad a athsholáthar [ProductName] nuair a atosaigh tú. Fíoraigh go bhfuil ceadanna scríofa agat chun an comhad a chomhdú [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Níorbh fhéidir an comhad ini a nuashonrú [ProductName][ProductName]. Deimhnigh go bhfuil an comhad ann agus gur féidir leat é a rochtain."/>
+	<String Id="Error1912" Overridable="yes" Value="Níorbh fhéidir leabharlann cineáil a dhíchlárú don chomhad [ProductName]. Déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1911" Overridable="yes" Value="Níorbh fhéidir leabharlann cineáil a chlárú le haghaidh comhad [ProductName]. Déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1910" Overridable="yes" Value="Níorbh fhéidir Aicearra a bhaint [ProductName]. Deimhnigh go bhfuil an comhad aicearra ann agus gur féidir leat é a rochtain."/>
+	<String Id="Error1909" Overridable="yes" Value="Níorbh fhéidir Aicearra a chruthú [ProductName]. Fíoraigh go bhfuil an fillteán sprice ann agus gur féidir leat rochtain a fháil air."/>
+	<String Id="Error1908" Overridable="yes" Value="Níorbh fhéidir an cló a dhíchlárú [ProductName]. Deimhnigh go bhfuil go leor ceadanna agat chun clónna a bhaint."/>
+	<String Id="Error1907" Overridable="yes" Value="Níorbh fhéidir an cló a chlárú [ProductName]. Deimhnigh go bhfuil go leor ceadanna agat chun clónna a shuiteáil, agus go dtacaíonn an córas leis an gcló seo."/>
+	<String Id="Error1906" Overridable="yes" Value="Theip ar an bpacáiste taisce [ProductName]. Earráid: [ProductName]. Déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1905" Overridable="yes" Value="Theip ar mhodúl [ProductName] a dhíchlárú. HRESULT [ProductName]. Déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1904" Overridable="yes" Value="Theip ar mhodúl [ProductName] a chlárú. HRESULT [ProductName]. Déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1903" Overridable="yes" Value="Oibríocht atosaithe a sceidealú: Comhad a scriosadh [ProductName]. Ní mór atosaigh chun an oibríocht a chríochnú."/>
+	<String Id="Error1902" Overridable="yes" Value="Oibríocht atosaithe a sceidealú: Comhad [ProductName] á athainmniú go [ProductName]. Ní mór atosú chun an oibríocht a chríochnú."/>
+	<String Id="Error1901" Overridable="yes" Value="Earráid agus iarracht á déanamh léamh ón mbunachar sonraí suiteála foinse: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Níorbh fhéidir fillteán sprice bailí don suiteáil a chinneadh."/>
+	<String Id="Error1806" Overridable="yes" Value="Níl dóthain pribhléidí agat chun an fillteán seo a léamh."/>
+	<String Id="Error1805" Overridable="yes" Value="Níl an fillteán [ProductName] ann. Cuir isteach conair chuig fillteán atá ann cheana féin."/>
+	<String Id="Error1804" Overridable="yes" Value="Níl aon diosca sa tiomántán [ProductName]. Cuir isteach ceann le do thoil agus cliceáil Atriail, nó cliceáil Cealaigh chun filleadh ar an dialóg bhrabhsála agus roghnaigh imleabhar difriúil."/>
+	<String Id="Error1803" Overridable="yes" Value="Níl aon diosca sa tiomántán [ProductName]. Cuir isteach ceann amháin le do thoil agus cliceáil ar Atriail, nó cliceáil Cealaigh chun dul ar ais chuig an imleabhar a roghnaíodh roimhe seo."/>
+	<String Id="Error1802" Overridable="yes" Value="As cuimhne. Múch feidhmchláir eile sula ndéanfaidh tú iarracht eile."/>
+	<String Id="Error1801" Overridable="yes" Value="Níl an cosán [ProductName] bailí. Sonraigh cosán bailí."/>
+	<String Id="Error1732" Overridable="yes" Value="Pour terminer l&amp;apos;installation de [ProductName], vous devez redémarrer l&amp;apos;ordinateur. D&amp;apos;autres utilisateurs sont actuellement connectés à cet ordinateur et un redémarrage pourrait leur faire perdre leur travail. Voulez-vous redémarrer maintenant ?"/>
+	<String Id="Error1731" Overridable="yes" Value="Níl an pacáiste suiteála foinse don táirge [ProductName] as sioncronú leis an bpacáiste cliant. Bain triail eile as an tsuiteáil agus úsáid á baint agat as cóip bhailí den phacáiste suiteála &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Ní mór duit a bheith i do Riarthóir chun an feidhmchlár seo a bhaint. Chun an feidhmchlár seo a bhaint, is féidir leat logáil isteach mar Riarthóir, nó dul i dteagmháil le do ghrúpa tacaíochta teicniúla chun cúnamh a fháil."/>
+	<String Id="Error1729" Overridable="yes" Value="Theip ar chumraíocht."/>
+	<String Id="Error1728" Overridable="yes" Value="Críochnaíodh an chumraíocht go rathúil."/>
+	<String Id="Error1727" Overridable="yes" Value="Theip ar an bhfógra."/>
+	<String Id="Error1726" Overridable="yes" Value="Críochnaíodh an fógra go rathúil."/>
+	<String Id="Error1725" Overridable="yes" Value="Theip ar bhaint."/>
+	<String Id="Error1724" Overridable="yes" Value="Críochnaíodh an bhaint go rathúil."/>
+	<String Id="Error1723" Overridable="yes" Value="Tá fadhb leis an bpacáiste Suiteálaí Windows seo. Níorbh fhéidir DLL a theastaíonn chun an tsuiteáil seo a chríochnú a rith. Déan teagmháil le do phearsanra tacaíochta nó díoltóir pacáistí.{{ Gníomh [ProductName], iontráil: [ProductName], leabharlann: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Tá fadhb leis an bpacáiste Suiteálaí Windows seo. Níor chríochnaigh clár a ritheadh mar chuid den socrú mar a bhíothas ag súil leis. Déan teagmháil le do phearsanra tacaíochta nó díoltóir pacáiste.{{ Gníomh [ProductName], suíomh: [ProductName], ordú: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Tá fadhb leis an bpacáiste Suiteálaí Windows seo. Níorbh fhéidir clár a theastaíonn chun an tsuiteáil seo a chríochnú a rith. Déan teagmháil le do phearsanra tacaíochta nó díoltóir pacáiste.{{ Gníomh: [ProductName], suíomh: [ProductName], ordú: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Tá fadhb leis an bpacáiste Suiteálaí Windows seo. Níorbh fhéidir script a theastaíonn chun an tsuiteáil seo a chríochnú a rith. Déan teagmháil le do phearsanra tacaíochta nó díoltóir pacáiste.{{ Earráid scripte gnímh shaincheaptha [ProductName] [ProductName], [ProductName]: [ProductName] Líne [ProductName], Colún [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Níorbh fhéidir an tSeirbhís Suiteálaí Windows a rochtain. Féadfaidh sé seo tarlú má tá tú ag rith Windows i mód sábháilte, nó mura bhfuil an Suiteálaí Windows suiteáilte i gceart. Déan teagmháil le do phearsanra tacaíochta chun cúnamh a fháil."/>
+	<String Id="Error1718" Overridable="yes" Value="Diúltaíodh do chomhad [ProductName] ag polasaí sínithe digiteach."/>
+	<String Id="Error1717" Overridable="yes" Value="Bainte [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Cumraithe [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Suiteáilte [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Ní féidir an leagan níos sine de [ProductName] a bhaint. Déan teagmháil le do ghrúpa tacaíochta theicniúil.{{ Earráid Chórais [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] ní féidir ceann dá tháirgí riachtanacha a shuiteáil. Déan teagmháil le do ghrúpa tacaíochta theicniúil.{{ Earráid Chórais: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Níorbh fhéidir ceann amháin nó níos mó de na comhaid a theastaíonn chun do ríomhaire a chur ar ais go dtí an staid roimhe a aimsiú. Ní bheidh athchóiriú indéanta."/>
+	<String Id="Error1711" Overridable="yes" Value="Tharla earráid agus an fhaisnéis suiteála á scríobh chuig an diosca. Seiceáil chun a chinntiú go bhfuil go leor spáis diosca ar fáil, agus cliceáil ar Atriail, nó Cealaigh chun deireadh a chur leis an suiteáil."/>
+	<String Id="Error1710" Overridable="yes" Value="Vous pouvez restaurer votre ordinateur à son état précédent ou poursuivre l&amp;apos;installation ultérieurement. Souhaitez-vous restaurer ?"/>
+	<String Id="Error1709" Overridable="yes" Value="Táirge: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Theip ar an tsuiteáil."/>
+	<String Id="Error1707" Overridable="yes" Value="D&amp;apos;éirigh leis an tsuiteáil."/>
+	<String Id="Error1706" Overridable="yes" Value="Ní féidir pacáiste suiteála don táirge [ProductName] a aimsiú. Bain triail eile as an tsuiteáil agus úsáid á baint agat as cóip bhailí den phacáiste suiteála &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="Une installation précédente de ce produit est en cours. Vous devez annuler les modifications apportées par cette installation pour continuer. Voulez-vous annuler ces modifications ?"/>
+	<String Id="Error1704" Overridable="yes" Value="L&amp;apos;installation de [ProductName] est actuellement suspendue. Vous devez annuler les modifications apportées par cette installation pour continuer. Voulez-vous annuler ces modifications ?"/>
+	<String Id="Error1703" Overridable="yes" Value="Ní mór duit do chóras a atosú chun na hathruithe cumraíochta a rinneadh go [ProductName] a chur i bhfeidhm. Cliceáil Sea chun atosú anois nó Níl má tá sé ar intinn agat atosú de láimh níos déanaí."/>
+	<String Id="Error1702" Overridable="yes" Value="Ní mór don suiteálaí do chóras a atosú sular féidir le cumraíocht [ProductName] leanúint ar aghaidh. Cliceáil Sea chun atosú anois nó Níl má tá sé ar intinn agat atosú de láimh níos déanaí."/>
+	<String Id="Error1701" Overridable="yes" Value="Níl an eochair [ProductName] bailí. Deimhnigh gur chuir tú isteach an eochair cheart."/>
+	<String Id="Error1609" Overridable="yes" Value="Tharla earráid agus na socruithe slándála á gcur i bhfeidhm. [ProductName] ní úsáideoir nó grúpa bailí é [ProductName]. D&amp;apos;fhéadfadh sé seo a bheith ina fhadhb leis an bpacáiste, nó fadhb ag nascadh le rialtóir fearainn ar an líonra. Seiceáil do nasc líonra agus cliceáil ar Atriail, nó Cealaigh chun deireadh a chur leis an suiteáil. {{Ní féidir SID an úsáideora a aimsiú, earráid chórais [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Níorbh fhéidir aon táirgí comhlíontacha a suiteáladh roimhe seo a aimsiú ar an meaisín chun an táirge seo a shuiteáil."/>
+	<String Id="Error1607" Overridable="yes" Value="Ba cheart na feidhmchláir seo a leanas a dhúnadh roimh leanúint leis an suiteáil:"/>
+	<String Id="Error1606" Overridable="yes" Value="Níorbh fhéidir suíomh líonra a rochtain [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Níl go leor spáis diosca ar an imleabhar &amp;apos;[ProductName]&amp;apos; chun leanúint leis an tsuiteáil agus an t-athshlánú cumasaithe. Tá [ProductName] KB ag teastáil, ach níl ach [ProductName] KB ar fáil. Cliceáil Déan neamhaird chun leanúint leis an tsuiteáil gan faisnéis athshlánaithe a shábháil, cliceáil ar Atriail chun seiceáil an bhfuil spás ar fáil arís, nó cliceáil Cealaigh chun an tsuiteáil a scor."/>
+	<String Id="Error1604" Overridable="yes" Value="Tá an táirge &amp;apos;[ProductName]&amp;apos; suiteáilte cheana féin, rud a chuireann cosc ar shuiteáil an táirge seo. Tá an dá tháirge neamh-chomhoiriúnach."/>
+	<String Id="Error1603" Overridable="yes" Value="Tá an comhad [ProductName][ProductName] á choinneáil in úsáid{ ag an bpróiseas seo a leanas: Ainm: [ProductName], ID: [ProductName], Teideal na Fuinneog: &amp;apos;[ProductName]&amp;apos;}. Dún an feidhmchlár sin agus bain triail eile as."/>
+	<String Id="Error1602" Overridable="yes" Value="Êtes-vous sûr de vouloir annuler ?"/>
+	<String Id="Error1601" Overridable="yes" Value="As spás diosca -- Toirt: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Chuir úsáideoir &amp;apos;[ProductName]&amp;apos; tús le suiteáil don táirge &amp;apos;[ProductName]&amp;apos; roimhe seo. Beidh ar an úsáideoir sin an tsuiteáil sin a rith arís sular féidir leo an táirge sin a úsáid."/>
+	<String Id="Error1502" Overridable="yes" Value="Chuir úsáideoir &amp;apos;[ProductName]&amp;apos; tús le suiteáil don táirge &amp;apos;[ProductName]&amp;apos; roimhe seo. Beidh ar an úsáideoir sin an tsuiteáil sin a rith arís sular féidir leo an táirge sin a úsáid. Leanfaidh do shuiteáil reatha ar aghaidh anois."/>
+	<String Id="Error1501" Overridable="yes" Value="Earráid agus rochtain á fáil ar shonraí daingnithe. Cinntigh le do thoil go bhfuil an Suiteálaí Windows cumraithe i gceart agus bain triail eile as an suiteáil."/>
+	<String Id="Error1500" Overridable="yes" Value="Tá suiteáil eile ar siúl. Ní mór duit an tsuiteáil sin a chríochnú sula leanann tú ar aghaidh leis an gceann seo."/>
+	<String Id="Error1410" Overridable="yes" Value="Níorbh fhéidir an spás clárlainne atá ar fáil a mhéadú. [ProductName] Tá KB de spás saor sa chlár ag teastáil chun an feidhmchlár seo a shuiteáil."/>
+	<String Id="Error1409" Overridable="yes" Value="Níorbh fhéidir an fhaisnéis slándála le haghaidh eochair [ProductName] a léamh.{{ Earráid chórais [ProductName].}} Fíoraigh go bhfuil rochtain leordhóthanach agat ar an eochair sin, nó déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1408" Overridable="yes" Value="Níorbh fhéidir fo-ainmneacha a fháil le haghaidh eochair [ProductName].{{ Earráid chórais [ProductName].}} Deimhnigh go bhfuil rochtain leordhóthanach agat ar an eochair sin, nó déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1407" Overridable="yes" Value="Níorbh fhéidir ainmneacha luacha a fháil le haghaidh eochrach [ProductName].{{ Earráid chórais [ProductName].}} Deimhnigh go bhfuil rochtain leordhóthanach agat ar an eochair sin, nó déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1406" Overridable="yes" Value="Níorbh fhéidir luach [ProductName] a scríobh mar eochair [ProductName].{{ Earráid chórais [ProductName].}} Deimhnigh go bhfuil rochtain leordhóthanach agat ar an eochair sin, nó déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1405" Overridable="yes" Value="Níorbh fhéidir an luach [ProductName] ón eochair [ProductName] a léamh.{{ Earráid chórais [ProductName].}} Cinntigh go bhfuil rochtain leordhóthanach agat ar an eochair sin, nó déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1404" Overridable="yes" Value="Níorbh fhéidir eochair [ProductName] a scriosadh.{{ Earráid chórais [ProductName].}} Cinntigh go bhfuil rochtain leordhóthanach agat ar an eochair sin, nó déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1403" Overridable="yes" Value="Níorbh fhéidir luach [ProductName] a scriosadh ón eochair [ProductName].{{ Earráid chórais [ProductName].}} Deimhnigh go bhfuil rochtain leordhóthanach agat ar an eochair sin, nó déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1402" Overridable="yes" Value="Níorbh fhéidir an eochair a oscailt: [ProductName].{{ Earráid chórais [ProductName].}} Cinntigh go bhfuil rochtain leordhóthanach agat ar an eochair sin, nó déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1401" Overridable="yes" Value="Níorbh fhéidir eochair a chruthú: [ProductName].{{ Earráid chórais [ProductName].}} Deimhnigh go bhfuil rochtain leordhóthanach agat ar an eochair sin, nó déan teagmháil le do phearsanra tacaíochta."/>
+	<String Id="Error1336" Overridable="yes" Value="Tharla earráid agus comhad sealadach á chruthú a theastaíonn chun an tsuiteáil seo a chur i gcrích.{{ Fillteán: [ProductName]. Cód earráide córais: [ProductName] }}"/>
+	<String Id="Error1335" Overridable="yes" Value="Tá an comhad comh-aireachta &amp;apos;[ProductName]&amp;apos; atá riachtanach don suiteáil seo truaillithe agus ní féidir é a úsáid. D’fhéadfadh sé seo earráid líonra a léiriú, earráid á léamh ón CD-ROM, nó fadhb leis an bpacáiste seo."/>
+	<String Id="Error1334" Overridable="yes" Value="Ní féidir an comhad &amp;apos;[ProductName]&amp;apos; a shuiteáil toisc nach féidir an comhad a aimsiú i gcomhad comh-aireachta &amp;apos;[ProductName]&amp;apos;. D’fhéadfadh sé seo earráid líonra a léiriú, earráid á léamh ón CD-ROM, nó fadhb leis an bpacáiste seo."/>
+	<String Id="Error1333" Overridable="yes" Value="Theip ar an gcomhad [ProductName] a phaisteáil i gceart: earráid CRC."/>
+	<String Id="Error1332" Overridable="yes" Value="Theip ar an gcomhad [ProductName] a bhogadh i gceart: earráid CRC."/>
+	<String Id="Error1331" Overridable="yes" Value="Níorbh fhéidir an comhad [ProductName] a chóipeáil i gceart: earráid CRC."/>
+	<String Id="Error1330" Overridable="yes" Value="Ní féidir comhad atá ag teastáil a shuiteáil toisc go bhfuil síniú digiteach neamhbhailí ar an gcomhad comh-aireachta [ProductName]. Seans go dtugann sé seo le fios go bhfuil comhad na comh-aireachta truaillithe.{{ Earráid [ProductName] a d’fhill WinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Ní féidir comhad atá ag teastáil a shuiteáil toisc nach bhfuil an comhad comh-aireachta [ProductName] sínithe go digiteach. D&amp;apos;fhéadfadh sé seo a léiriú go bhfuil an comhad comh-aireachta truaillithe."/>
+	<String Id="Error1328" Overridable="yes" Value="Earráid agus paiste á chur i bhfeidhm ar an gcomhad [ProductName]. Is dócha go ndearnadh é a nuashonrú ar bhealaí eile, agus ní féidir é a mhodhnú leis an bpaiste seo a thuilleadh. Le haghaidh tuilleadh faisnéise déan teagmháil le do dhíoltóir paiste.{{ Earráid Chórais: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Tiomántán Neamhbhailí: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Earráid agus slándáil comhaid á fáil: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; ní ainm gearr comhaid bailí é."/>
+	<String Id="Error1324" Overridable="yes" Value="Tá carachtar neamhbhailí i gconair an fhillteáin &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1323" Overridable="yes" Value="Tá focail i gconair an fhillteáin &amp;apos;[ProductName]&amp;apos; nach bhfuil bailí i gconairí fillteáin."/>
+	<String Id="Error1322" Overridable="yes" Value="Tá cuid de chonair an fhillteáin &amp;apos;[ProductName]&amp;apos; neamhbhailí. Tá sé folamh nó níos mó ná an fad atá ceadaithe ag an gcóras."/>
+	<String Id="Error1321" Overridable="yes" Value="Níl dóthain pribhléidí ag an Suiteálaí chun an comhad seo a mhodhnú: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Tá an chonair shonraithe rófhada: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Tharla earráid líonra agus iarracht á déanamh an comh-aireachta comhaid foinse a oscailt: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Tharla earráid líonra agus iarracht á déanamh an t-eolaire a chruthú: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Tharla earráid agus iarracht á déanamh an t-eolaire a chruthú: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Tharla earráid líonra agus iarracht á déanamh an comhad a léamh: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Ní féidir scríobh chuig an bhfillteán sonraithe: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Níl an cosán sonraithe &amp;apos;[ProductName]&amp;apos; ar fáil."/>
+	<String Id="Error1313" Overridable="yes" Value="Níl an toirt [ProductName] ar fáil faoi láthair. Roghnaigh ceann eile le do thoil."/>
+	<String Id="Error1312" Overridable="yes" Value="Ní féidir an t-eolaire &amp;apos;[ProductName]&amp;apos; a chruthú. Tá comhad leis an ainm seo ann cheana. Athainmnigh nó bain an comhad agus cliceáil ar Atriail, nó cliceáil Cealaigh chun imeacht."/>
+	<String Id="Error1311" Overridable="yes" Value="Comhad foinse gan aimsiú{{(comh-aireachta)}}: [ProductName]. Deimhnigh go bhfuil an comhad ann agus gur féidir leat é a rochtain."/>
+	<String Id="Error1310" Overridable="yes" Value="Earráid agus an comhad á scríobh: [ProductName].{{ Earráid chórais [ProductName].}} Deimhnigh go bhfuil rochtain agat ar an gcomhadlann sin."/>
+	<String Id="Error1309" Overridable="yes" Value="Earráid agus an comhad á léamh: [ProductName].{{ Earráid chórais [ProductName].}} Deimhnigh go bhfuil an comhad ann agus gur féidir leat é a rochtain."/>
+	<String Id="Error1308" Overridable="yes" Value="Níor aimsíodh an comhad foinse: [ProductName]. Deimhnigh go bhfuil an comhad ann agus gur féidir leat é a rochtain."/>
+	<String Id="Error1307" Overridable="yes" Value="Níl go leor spás diosca ann chun an comhad seo a shuiteáil: [ProductName]. Saor roinnt spás diosca agus cliceáil ar Atriail, nó cliceáil Cealaigh chun imeacht."/>
+	<String Id="Error1306" Overridable="yes" Value="Tá rochtain eisiach ag feidhmchlár eile ar an gcomhad ‘[ProductName]’. Cuir stop le gach feidhmchlár eile, agus ansin cliceáil ar Atriail."/>
+	<String Id="Error1305" Overridable="yes" Value="Earráid agus an comhad [ProductName] á léamh.{{ Earráid chórais [ProductName].}} Deimhnigh go bhfuil an comhad ann agus gur féidir leat é a rochtain."/>
+	<String Id="Error1304" Overridable="yes" Value="Earráid agus an comhad á scríobh: [ProductName]. Deimhnigh go bhfuil rochtain agat ar an eolaire sin."/>
+	<String Id="Error1303" Overridable="yes" Value="Níl dóthain pribhléidí ag an suiteálaí chun an t-eolaire seo a rochtain: [ProductName]. Ní féidir leis an tsuiteáil leanúint ar aghaidh. Logáil isteach mar riarthóir nó déan teagmháil le riarthóir do chórais."/>
+	<String Id="Error1302" Overridable="yes" Value="Cuir isteach an diosca le do thoil: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Ní féidir an comhad &amp;apos;[ProductName]&amp;apos; a chruthú. Tá eolaire leis an ainm seo ann cheana. Cealaigh an tsuiteáil agus bain triail as an tsuiteáil chuig áit eile."/>
+	<String Id="Error1101" Overridable="yes" Value="Earráid agus an comhad á léamh: [ProductName].{{ Earráid chórais [ProductName].}} Deimhnigh go bhfuil an comhad ann agus gur féidir leat é a rochtain."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Theip ar an socrú."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }D&amp;apos;éirigh leis an socrú a chur i gcrích."/>
+	<String Id="Error23" Overridable="yes" Value="Ag ullmhú chun leaganacha níos sine den fheidhmchlár seo a bhaint..."/>
+	<String Id="Error22" Overridable="yes" Value="Leaganacha níos sine den fheidhmchlár seo á mbaint..."/>
+	<String Id="Error21" Overridable="yes" Value="Faisnéis riachtanach a bhailiú..."/>
+	<String Id="Error20" Overridable="yes" Value="Fan go fóill agus Windows ag cumrú [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Stopadh an suiteálaí roimh am."/>
+	<String Id="Error18" Overridable="yes" Value="Níl an suiteálaí ag freagairt a thuilleadh."/>
+	<String Id="Error17" Overridable="yes" Value="As cuimhne. Múch feidhmchláir eile sula ndéanfaidh tú iarracht eile."/>
+	<String Id="Error16" Overridable="yes" Value="Am fágtha: {[ProductName] nóiméad }{[ProductName] soicind}"/>
+	<String Id="Error15" Overridable="yes" Value="Gníomh dar críoch [ProductName]: [ProductName]. Luach aischuir [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Tús gníomhaíochta [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Stopadh logáil: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Thosaigh an logáil: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Cineál na teachtaireachta: [ProductName], Argóint: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Gníomh [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{ Diosca lán: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Tháinig earráid gan choinne leis an suiteálaí agus an pacáiste seo á shuiteáil. Seans go léiríonn sé seo fadhb leis an bpacáiste seo. Is é [ProductName] an cód earráide. {{Is iad seo a leanas na hargóintí: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Eolas [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Rabhadh [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{ Earráid [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{ Earráid mharfach: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Faisnéis táirge a dhífhoilsiú"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Comhad: [ProductName], Eolaire: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Comhaid bogtha á mbaint"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Comhad: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Comhaid chúltaca a bhaint"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Action de retour en arrière :"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Comhthéacs an Iarratais:[ProductName], Ainm an Tionóil:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Faisnéis tionóil a dhífhoilsiú"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Comhthéacs an Iarratais:[ProductName], Ainm an Tionóil:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Eolas tionóil a fhoilsiú"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Comhad: [ProductName], Spleáchais: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Suiteáil catalóg córais"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Oibríochtaí scripte a ghiniúint le haghaidh gnímh:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Feidhmchlár fógraíochta"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Eochair: [ProductName], Ainm: [ProductName], Luach: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Scríobh luachanna clárlainne an chórais"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Comhad: [ProductName], Roinn: [ProductName], Eochair: [ProductName], Luach: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Scríobh luachanna comhaid INI"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Ainm: [ProductName], Luach: [ProductName], Gníomh [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Nuashonrú teaghráin timpeallachta"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Leabharlann de chineál a gan chlárú"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Aitheantóirí clár a dhíchlárú"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="Cineál Ábhar MIME: [ProductName], Síneadh: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Faisnéis MIME a dhíchlárú"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Cló: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Clónna a dhíchlárú"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Síneadh: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Freastalaithe síneadh a dhíchlárú"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{/{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Feidhmchláir agus Comhpháirteanna COM+ a dhíchlárú"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Aitheantas Aicme: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Díchláraigh freastalaithe Aicme"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Gné: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Gnéithe Táirge a dhífhoilsiú"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Aitheantas na Comhpháirte: [ProductName], Cáilitheoir: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Comhpháirteanna Cáilithe gan Fhoilsiú"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Seirbhís: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Seirbhísí a stopadh"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Seirbhís: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Seirbhísí tosaithe"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Eolairí ODBC a thionscnamh"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Comhad: [ProductName], Fillteán: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Modúil a gan chlárú"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Comhad: [ProductName], Fillteán: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Modúil a chlárú"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Ag cuardach táirgí cáilitheacha"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Aicearra: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Aicearraí a bhaint"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Eochair: [ProductName], Ainm: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Luachanna clárlainne an chórais a bhaint"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Comhpháirteanna ODBC a bhaint"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Comhad: [ProductName], Roinn: [ProductName], Eochair: [ProductName], Luach: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Iontrálacha comhaid INI a bhaint"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Fillteán: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Fillteáin á mbaint"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Comhad: [ProductName], Eolaire: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Comhaid a bhaint"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Feidhmchlár: [ProductName], Líne ordaithe: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Feidhmchláir a bhaint"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Ainm: [ProductName], Luach: [ProductName], Gníomh [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Nuashonrú teaghráin timpeallachta"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Comhad: [ProductName], Eolaire: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Comhaid dhúbailt a bhaint"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Úsáideoir a chlárú"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Leabharlanna cineálacha clárúcháin"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Táirge a chlárú"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Cló: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Clónna a chlárú"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{/{, AppType: [ProductName], Úsáideoirí: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Feidhmchláir agus Comhpháirteanna COM+ a chlárú"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Clárú comhpháirteanna a nuashonrú"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Comhad: [ProductName], Eolaire: [ProductName], Méid: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Comhaid a phaisteáil"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Comhad: [ProductName], Eolaire: [ProductName], Méid: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Comhaid á mbogadh"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Feidhmchlár: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Gné-stáit a aistriú ó fheidhmchláir ghaolmhara"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Coinníollacha seolta a mheas"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Seirbhís: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Seirbhísí nua a shuiteáil"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="Comhpháirteanna ODBC a shuiteáil"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Feidhmchlár aimsithe: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Cuardach feidhmchláir ghaolmhara"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Comhad: [ProductName], Eolaire: [ProductName], Méid: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Comhaid dhúbailt a chruthú"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Seirbhís: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Seirbhísí a scriosadh"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Fillteán: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Fillteáin a chruthú"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Ag cuardach táirgí cáilitheacha"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Comhad: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Inrite ceangailteach"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Airí: [ProductName], Síniú: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Ag cuardach feidhmchláir suiteáilte"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Spás saor in aisce: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Spás clárlainne a leithdháileadh"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Aitheantóirí clár a chlárú"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="Cineál Ábhar MIME: [ProductName], Síneadh: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Faisnéis MIME a chlárú"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Síneadh: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Freastalaithe síneadh a chlárú"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Aitheantas Aicme: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Freastalaithe Ranga a chlárú"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Faisnéis táirge a fhoilsiú"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Gné: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Gnéithe Táirge Foilsitheoireachta"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Aitheantas na Comhpháirte: [ProductName], Cáilitheoir: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Comhpháirteanna Cáilithe a Fhoilsiú"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Aicearra: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Aicearraí á gcruthú"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Riachtanais spáis ríomhaireachta"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Riachtanais spáis ríomhaireachta"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Riachtanais spáis ríomhaireachta"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Comhad: [ProductName], Eolaire: [ProductName], Méid: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Líonra a chóipeáil comhaid a shuiteáil"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Comhad: [ProductName], Eolaire: [ProductName], Méid: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Comhaid nua a chóipeáil"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Suiteáil a bhailíochtú"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Léigh an Comhaontú Ceadúnais [ProductName], le do thoil"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Nuashonraigh"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Suiteáil"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Glacaim leis na téarmaí sa Chomhaontú Ceadúnais"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialóg"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Fáilte go Treoraí Socraithe [ProductName]"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Nuashonróidh an Treoraí Socraithe [ProductName] ar do ríomhaire. Cliceáil Ar Aghaidh chun leanúint ar aghaidh nó Cealaigh chun an Treoraí Socraithe a fhágáil."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Déanfaidh an Treoraí Socraithe [ProductName] a shuiteáil ar do ríomhaire. Cliceáil Ar Aghaidh chun leanúint ar aghaidh nó Cealaigh chun an Treoraí Socraithe a fhágáil."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialóg"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Deilbhín exclamation"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Fan le do thoil agus an suiteálaí ag críochnú ag socrú do riachtanais spáis diosca."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Fill"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Réidh le [ProductName] a nuashonrú"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Cliceáil Nuashonrú chun [ProductName] a nuashonrú ó do ríomhaire. Cliceáil Ar Ais chun aon cheann de do shocruithe suiteála a athbhreithniú nó a athrú. Cliceáil Cealaigh chun an draoi a fhágáil."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Nuashonraigh"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Réidh le [ProductName] a bhaint"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Cliceáil Bain chun [ProductName] a bhaint de do ríomhaire. Cliceáil Ar Ais chun aon cheann de do shocruithe suiteála a athbhreithniú nó a athrú. Cliceáil Cealaigh chun an draoi a fhágáil."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Bain"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Réidh le deisiú [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Cliceáil Deisiúchán chun suiteáil [ProductName] a dheisiú. Cliceáil Ar Ais chun aon cheann de do shocruithe suiteála a athbhreithniú nó a athrú. Cliceáil Cealaigh chun an draoi a fhágáil."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Athchóirigh"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Réidh chun [ProductName] a athrú"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Cliceáil Athrú chun tús a chur leis an tsuiteáil. Cliceáil Ar Ais chun aon cheann de do shocruithe suiteála a athbhreithniú nó a athrú. Cliceáil Cealaigh chun an draoi a fhágáil."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Athraigh"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Réidh le [ProductName] a shuiteáil"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Cliceáil Suiteáil chun tús a chur leis an tsuiteáil. Cliceáil Ar Ais chun aon cheann de do shocruithe suiteála a athbhreithniú nó a athrú. Cliceáil Cealaigh chun an draoi a fhágáil."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Suiteáil"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Cliceáil ar an gcnaipe Críochnaigh chun an Treoraí Socraithe a fhágáil."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="Cuireadh isteach ar shocrú [ProductName]. Níor athraíodh do chóras. Chun an clár seo a shuiteáil níos déanaí, rith an tsuiteáil arís."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Cuireadh isteach ar an Treoraí Socraithe"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialóg"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Déanfar gach gné cláir a shuiteáil. Teastaíonn an spás diosca is mó."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Ligeann sé d&amp;apos;úsáideoirí a roghnú cé na gnéithe cláir a shuiteálfar agus cén áit a shuiteálfar iad. Molta d&amp;apos;úsáideoirí chun cinn."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Suiteáil na gnéithe cláir is coitianta. Molta don chuid is mó d’úsáideoirí."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Roghnaigh an cineál suiteála is fearr a oireann do do chuid riachtanas"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Roghnaigh Cineál an tSocraithe"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Suiteáil Críochnaithe"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C&amp;iomlán"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Suiteáil Chustaim"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ustom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Suiteáil tipiciúla"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Tipiciúil"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Atógáil an Draoi Socraithe [ProductName]"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Críochnóidh an Treoraí Socraithe suiteáil [ProductName] ar do ríomhaire. Cliceáil Suiteáil chun leanúint ar aghaidh nó Cealaigh chun an Treoraí Socraithe a fhágáil."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialóg"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Suiteáil"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Stádas:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Dul chun cinn déanta"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] á nuashonrú"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Fan le do thoil fad a nuashonraíonn an Treoraí Socraithe [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Ag baint [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Fan go mbainfidh an Draoi Socraithe [ProductName] amach."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] á dheisiú"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Fan le do thoil agus an Draoi Socraithe deisiúcháin [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Athrú [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Fan go fóill agus an Draoi Socraithe ag athrú [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] a shuiteáil"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Fan le do thoil fad a shuiteálann an Draoi Socraithe [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Fáilte go Treoraí Socraithe [ProductName]"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Fan le do thoil agus an Draoi Socraithe ag ullmhú chun tú a threorú tríd an tsuiteáil."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialóg"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Mar mhalairt air sin, is féidir leat feidhmiúlacht rolladh siar an suiteálaí a dhíchumasú. Má dhéantar rolladh siar a dhíchumasú, ní féidir leis an suiteálaí staid bhunaidh do ríomhaire a athchóiriú má chuirtear isteach ar an tsuiteáil ar aon bhealach. Cliceáil Tá más mian leat an baol a ghlacadh go ndíchumasófar an aisíocaíocht."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Amach as Spás Diosca"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Sáraíonn an spás diosca atá riachtanach don suiteáil an spás diosca atá ar fáil."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Níl go leor spáis diosca sna himleabhair aibhsithe do na gnéithe roghnaithe faoi láthair. Is féidir leat roinnt comhad a bhaint as na méideanna aibhsithe, níos lú gnéithe a shuiteáil, nó tiomáint ceann scríbe eile a roghnú."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Amach as Spás Diosca"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Sáraíonn an spás diosca atá riachtanach don suiteáil an spás diosca atá ar fáil."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Níl go leor spáis diosca sna himleabhair aibhsithe do na gnéithe roghnaithe faoi láthair. Is féidir leat roinnt comhad a bhaint as na méideanna aibhsithe, níos lú gnéithe a shuiteáil, nó tiomáint ceann scríbe eile a roghnú."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Ná dún feidhmchláir. Beidh atosaigh ag teastáil."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Dún na feidhmchláir agus déan iarracht iad a atosú."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Comhaid in Úsáid"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Tá roinnt comhad nach mór a nuashonrú in úsáid faoi láthair."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Tá na feidhmchláir seo a leanas ag baint úsáide as comhaid ar gá iad a nuashonrú faoin socrú seo. Is féidir leat ligean don Draoi Socraithe iad a dhúnadh agus iarracht a dhéanamh iad a atosú nó an meaisín a atosú níos déanaí."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Fáilte go Treoraí Socraithe [ProductName]"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Ligeann an Treoraí Socraithe duit an chaoi a bhfuil gnéithe [ProductName] suiteáilte ar do ríomhaire a athrú nó chun iad a bhaint de do ríomhaire. Cliceáil Ar Aghaidh chun leanúint ar aghaidh nó Cealaigh chun an Treoraí Socraithe a fhágáil."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialóg"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="Ní féidir [ProductName] a dheisiú."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Deisiúcháin earráidí sa suiteáil is déanaí trí chomhaid atá in easnamh agus truaillithe, aicearraí agus iontrálacha clárlainne a shocrú."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="Ní féidir [ProductName] a bhaint."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Bain [ProductName] de do ríomhaire."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="Níl aon ghnéithe inroghnaithe neamhspleách ag [ProductName]."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Ligeann sé duit an bealach a shuiteáiltear gnéithe a athrú."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Athraigh, deisigh nó bain an tsuiteáil"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Roghnaigh an oibríocht is mian leat a dhéanamh."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Bain Suiteáil"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Bain"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Suiteáil Deisiúchán"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Athchóirigh"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Athraigh Suiteáil"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Athraigh"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Comhaontú um Cheadúnas Úsáideora Deiridh"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Léigh an comhaontú ceadúnais seo a leanas go cúramach, le do thoil"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Glacaim leis na téarmaí sa Chomhaontú Ceadúnais"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Deilbhín faisnéise"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Faisnéis"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Caithfidh an t-eolaire suiteála a bheith ar thiomántán crua áitiúil."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Athraigh..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Suiteáil &amp; fillteán:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="Suiteálfar [ProductName] i bhfillteán in aghaidh an mheaisín de réir réamhshocraithe agus beidh sé ar fáil do gach úsáideoir. Is féidir leat an fillteán suiteála réamhshocraithe a athrú. Ní mór pribhléidí Riarthóir áitiúil a bheith agat."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Suiteáil do gach úsáideoir an &amp;mheaisín seo"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="Ní thacaíonn [ProductName] le suiteáil in aghaidh an úsáideora."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="Suiteálfar [ProductName] i bhfillteán in aghaidh an úsáideora agus beidh sé ar fáil do do chuntas úsáideora amháin. Ní gá duit pribhléidí Riarthóra áitiúil."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Suiteáil &amp;díreach duitse ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Scóip Suiteála"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Roghnaigh an raon feidhme suiteála agus fillteán"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Suiteáil [ProductName] chuig:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Cliceáil Ar Aghaidh a shuiteáil chuig an bhfillteán réamhshocraithe nó cliceáil Athrú chun ceann eile a roghnú."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Fillteán Ceann Scríbe"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Athraigh..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Comhaid in Úsáid"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Tá roinnt comhad nach mór a nuashonrú in úsáid faoi láthair."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Tá na feidhmchláir seo a leanas ag baint úsáide as comhaid ar gá iad a nuashonrú faoin socrú seo. Dún na feidhmchláir seo agus ansin cliceáil &amp;triail arís chun leanúint ar aghaidh leis an socrú nó Scoir chun é a fhágáil."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="E&amp;scoir"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Athraigh"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Suiteáil"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Gnéithe Táirge"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Roghnaigh an bealach is mian leat gnéithe a shuiteáil."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Gnéithe táirge"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Cliceáil ar an gcnaipe Críochnaigh chun an Treoraí Socraithe a fhágáil."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Tháinig deireadh ró-luath le Treoraí Socraithe mar gheall ar earráid. Níor athraíodh do chóras. Chun an clár seo a shuiteáil níos déanaí, reáchtáil Treoraí Socraithe arís."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Tháinig deireadh le Treoraí Socraithe roimh am"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialóg"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Chríochnaigh an Draoi Socraithe [ProductName]"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Cliceáil ar an gcnaipe Críochnaigh chun an Treoraí Socraithe a fhágáil."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialóg"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Deilbhín faisnéise"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Faisnéis"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Téacs faisnéise"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Riachtanais Spáis Diosca"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="An spás diosca atá ag teastáil chun na gnéithe roghnaithe a shuiteáil."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Níl go leor spáis diosca ar fáil in imleabhair aibhsithe le haghaidh gnéithe roghnaithe. Is féidir leat roinnt comhad a bhaint as na méideanna aibhsithe, níos lú gnéithe a shuiteáil, nó tiomántáin scríbe éagsúla a roghnú."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Suíomh:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Socrú Saincheaptha"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Roghnaigh an bealach is mian leat gnéithe a shuiteáil."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Cliceáil ar na deilbhíní sa chrann thíos chun an bealach a shuiteálfar gnéithe a athrú."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Diosca &amp; Úsáid"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Ath&amp;shocraigh"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;rós..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Crann rogha"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Deilbhín faisnéise"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Faisnéis"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Êtes-vous sûr de vouloir annuler l’installation de [ProductName] ?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Athraigh fillteán sprice"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Brabhsáil chuig an bhfillteán sprice"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Ainm fillteáin:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Cruthaigh fillteán nua"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_Nua"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Suas leibhéal amháin"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Suas"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Féach isteach:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;chun cinn"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Suiteáil"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Cliceáil Suiteáil chun an táirge a shuiteáil le roghanna réamhshocraithe díreach duitse. Cliceáil Casta chun roghanna suiteála a athrú."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Cliceáil Suiteáil chun an táirge a shuiteáil le roghanna réamhshocraithe do gach úsáideoir. Cliceáil Casta chun roghanna suiteála a athrú."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Glacaim leis na téarmaí sa Chomhaontú Ceadúnais"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Léigh an Comhaontú Ceadúnais [ProductName], le do thoil"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Meirge"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Socrú"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Priontáil"/>
+	<String Id="WixUIOK" Overridable="yes" Value="ceart go leor"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Níl"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Tá"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Déan neamhaird"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Atriail"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Críoch"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Cealaigh"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Ar Aghaidh"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Ar ais"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Cumraíocht Balla Dóiteáin Windows a dhíshuiteáil"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Cumraíocht Balla Dóiteáin Windows á rolladh siar"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Cumraíocht Balla Dóiteáin Windows a shuiteáil"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Cumraíocht Balla Dóiteáin Windows á rolladh siar"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Cumraíocht Balla Dóiteáin Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Cumraíocht Balla Dóiteáin Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ní féidir ceangal le Windows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Amharcléirithe d'fheidhmchláir chianda ar fáil mar rogha i gcumraíocht"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Féach ar fhreastalaithe RAAS in Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Cruthaigh aicearraí feidhmchláir chianda chuig feidhmchláir fhreastalaí ar ríomhaire áitiúil"/>

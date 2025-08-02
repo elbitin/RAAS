@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="nl" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall-configuratie verwijderen"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall-configuratie terugdraaien"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall-configuratie installeren"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall-configuratie terugdraaien"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall configureren"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall configureren"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan geen verbinding maken met Windows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Netwerk gedeelde server"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Deel schijven op het netwerk om controle en browsen vanuit RAAS Client mogelijk te maken"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Kan opnieuw opstarten"/>

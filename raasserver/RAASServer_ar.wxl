@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="ar" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="إلغاء تثبيت تكوين جدار حماية Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="التراجع عن تكوين جدار حماية Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="تثبيت تكوين جدار حماية Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="التراجع عن تكوين جدار حماية Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="تكوين جدار حماية Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="تكوين جدار حماية Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="لا يمكن الاتصال بجدار حماية Windows. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="خادم مشترك على الشبكة"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="مشاركة محركات الأقراص على الشبكة لتمكين التحكم والتصفح من عميل RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="يمكن إعادة التشغيل"/>

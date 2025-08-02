@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="kk" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows брандмауэр конфигурациясын жою"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows брандмауэр конфигурациясын қайтару"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows брандмауэр конфигурациясын орнату"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows брандмауэр конфигурациясын қайтару"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows брандмауэрін конфигурациялау"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows брандмауэрін конфигурациялау"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windows брандмауэріне қосылу мүмкін емес. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Желінің ортақ сервері"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS Client арқылы басқаруды және шолуды қосу үшін желідегі дискілерді ортақ пайдаланыңыз"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Қайта жүктеуге болады"/>

@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="la" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="la" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Volumen"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Orbis Size"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="required"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="differentia"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Praesto"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Tempus reliquum:{ [ProductName] minuta}{ [ProductName] secundis}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Pluma hoc postulat [ProductName] in tua ferrea coegi. Is has[ProductName] ex[ProductName] subfeaturis delegit. Subfeaturae in duris tuis coegi."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Pluma hoc postulat [ProductName] in tua ferrea coegi. Is has[ProductName] ex[ProductName] subfeaturis delegit. Subfeatures in duris tuis coegi."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Haec factura sursum [ProductName] in dura coegi. Is has[ProductName] ex[ProductName] subfeaturis delegit. Subfeaturae in duris tuis coegi."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Haec factura sursum [ProductName] in dura coegi. Is has[ProductName] ex[ProductName] subfeaturis delegit. Subfeatures in duris tuis coegi."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Pluma haec remanebit ut currendum a retiacula"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Haec pluma mutabitur ex currendo e statu retis ut in locali ferreus coegi instituatur"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Haec pluma mutabitur ab retis statu currendi ut instituatur cum requiritur"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Pluma haec plane inaugurata erit, illud e reticulo currere non poteris"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Haec factura e locali tuo ferreo coegi tolletur, sed adhuc praesto erit ut e retis currendum sit"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Hoc pluma remanebit in locus ferreus coegi"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Haec factura e locali tuo ferreo coegi tolletur, sed adhuc praesto erit ut ex CD . currendum sit"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Haec factura e locali tuo ferreo coegi tolletur, sed instituetur cum opus erit"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Hoc pluma omnino removeatur"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Componendis pretium pro hoc pluma..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Pluma hoc postulat [ProductName] in tua ferrea coegi."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Haec factura sursum [ProductName] in dura coegi."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Haec pluma mutabitur ex currendo ex statu CD ut instituatur in locali ferreus coegi"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Haec factura remanebit ut ex CD . currendum sit"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Haec pluma mutabitur ex statu currendi ex CD statu ut instituatur cum requiritur"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Haec factura omnino uninstalled, eam ex CD currere non poteris"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Hoc pluma erit praesto currere a network"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Haec factura installatur in locus ferreus coegi"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Haec pluma erit praesto currere ex CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Et cum requiratur installed"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Hoc pluma fiet unavailable"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Pluma haec voluntas installed a network currere"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Haec factura in locali dura coegi"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Haec factura instituetur ut decurrat ex CD"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Hoc pluma ut instituatur cum requiratur"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Hoc pluma remanebit uninstalled"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Percunctanti notitia..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Folder|New Folder"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Erit installed currere a network"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Erit installed in locus ferreus coegi"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="Erit installed currere a CD"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Pluma tota voluntas installed a network currere"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Tota pluma installabitur in locus ferreus coegi"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Tota pluma instituetur ut run ex CD"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Pluma voluntas instituatur, cum requiratur"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Totum pluma erit unavailable"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="bytes"/>
+	<String Id="Error1938" Overridable="yes" Value="Error in institutione congregationis occurrit. Unus pluresve moduli conventus inveniri non potuerunt. HRESULT: [ProductName].{{ contio interface: [ProductName], munus: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Error in institutione congregationis occurrit. Subscriptio vel catalogus verificari potuit vel non valet. HRESULT: [ProductName].{{ contio interface: [ProductName], munus: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Error in institutione congregationis occurrit. Coetus non fortiter nominatur vel non minima longitudinis clavi signatur. HRESULT: [ProductName].{{ contio interface: [ProductName], munus: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Error in institutione congregationis occurrit. Auxilium et Support pro magis ad placere ad informationem. HRESULT: [ProductName].{{ contio interface: [ProductName], munus: [ProductName], component: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="User officinae per consilium in machina debiles sunt."/>
+	<String Id="Error1933" Overridable="yes" Value="In Fenestra Installer muneris non potest unam vel plures Fenestras tabulas muniri.{{SFP Error: [ProductName]. Index imaginum munitorum:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="In Fenestra Installer ministerium non potest Fenestra lima tutanda renovare [ProductName].{{ Versionem sarcinis: [ProductName], OS versionis tuta: [ProductName], SFP Error: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="In Fenestra Installer opera lima systematica renovare non potest [ProductName] quia tabella ab Fenestra munitur. Ratio operandi rationem hanc tuam renovare debes ut hoc programma ad recte operandum.{{Pacamentum versio: [ProductName], OS versionis tuta: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="descriptio pro servitio &amp;apos;[ProductName]&amp;apos; ([ProductName]) mutari non potuit."/>
+	<String Id="Error1929" Overridable="yes" Value="Error unregistering COM+ Application. Contactus auxilium tuum personas pro magis notitia."/>
+	<String Id="Error1928" Overridable="yes" Value="Error perscriptum COM+ Application. Contactus auxilium tuum personas pro magis notitia."/>
+	<String Id="Error1927" Overridable="yes" Value="Component Services (COM+ 1.0) in hoc computatorio non installantur. Hanc institutionem Component Services requirit ut feliciter perficiatur. Component Services in Fenestra 2000 praesto sunt."/>
+	<String Id="Error1926" Overridable="yes" Value="File securitatem pro lima non poterat apponere &amp;apos;[ProductName]&amp;apos;. Error: [ProductName]. Cognoscere quod sufficiens habes privilegia ad licentias securitatis huius fasciculi mutandas."/>
+	<String Id="Error1925" Overridable="yes" Value="Non habes privilegia sufficiens ad hanc institutionem pro omnibus utentibus machinae perficiendis. Log in ut administrator et tunc retry hanc institutionem."/>
+	<String Id="Error1924" Overridable="yes" Value="Ambituum variabile renovare non poterat&amp;apos;[ProductName]. Cognoscere te habere privilegia sufficiens ad variabiles ambitus mutandas."/>
+	<String Id="Error1923" Overridable="yes" Value="Ministerium [ProductName] ([ProductName]) institui non potuit. Cognoscere te habere privilegia sufficiens ratio muneris instituendi."/>
+	<String Id="Error1922" Overridable="yes" Value="Servitium &amp;apos;[ProductName]&amp;apos; ([ProductName]) deleri non potuit. Cognoscere quod tibi sufficiens est privilegiis ad officia ratio tollenda."/>
+	<String Id="Error1921" Overridable="yes" Value="&amp;apos;Servitium&amp;apos; [ProductName]&amp;apos; ([ProductName]) sisti non potuit. Quin habes sufficientes privilegia sistendi ratio muneris."/>
+	<String Id="Error1920" Overridable="yes" Value="Servitium &amp;apos;[ProductName]&amp;apos; ([ProductName]) initium neglexit. Cognoscere quae tibi sufficiens est privilegiis ratio muneris committitur."/>
+	<String Id="Error1919" Overridable="yes" Value="Error configurans ODBC notitia principium: [ProductName], ODBC error [ProductName]: [ProductName]. Cognoscere tabella [ProductName] existere et accedere ad eam potes."/>
+	<String Id="Error1918" Overridable="yes" Value="Error installing ODBC agitator: [ProductName], ODBC error [ProductName]: [ProductName]. Cognoscere tabella [ProductName] existere et accedere ad eam potes."/>
+	<String Id="Error1917" Overridable="yes" Value="Error tollens ODBC agitator: [ProductName], ODBC error [ProductName]: [ProductName]. Quin habes privilegia sufficiens rectoribus ODBC ad tollendum."/>
+	<String Id="Error1916" Overridable="yes" Value="Error installing ODBC procuratoris exactoris, ODBC error [ProductName]: [ProductName]. Contact auxilium personas."/>
+	<String Id="Error1915" Overridable="yes" Value="Error sublato ODBC procuratoris exactoris, ODBC errorem [ProductName]: [ProductName]. Contact auxilium personas."/>
+	<String Id="Error1914" Overridable="yes" Value="Non potuit fasciculum RATIONARIUM [ProductName] reficere lima [ProductName] in reboot. Cognoscere te licentias scribere ad limandum [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Ini fasciculum renovare non poterat [ProductName][ProductName]. Cognoscere tabellam esse et accedere potes."/>
+	<String Id="Error1912" Overridable="yes" Value="Poteratne unregister typus bibliothecae pro lima [ProductName]. Contact auxilium personas."/>
+	<String Id="Error1911" Overridable="yes" Value="Non potui typum bibliothecae pro fasciculo subcriptio [ProductName]. Contact auxilium personas."/>
+	<String Id="Error1910" Overridable="yes" Value="Brevis auferre non poterat[ProductName]. Cognoscere brevem fasciculum esse et illum accedere potes."/>
+	<String Id="Error1909" Overridable="yes" Value="Brevis creare non potuit[ProductName]. Cognoscere folder quod destinatum existit et illud accedere potes."/>
+	<String Id="Error1908" Overridable="yes" Value="Fons non poterat unregister [ProductName]. Cognoscite te facultates sufficientes habere ad fontes removendos."/>
+	<String Id="Error1907" Overridable="yes" Value="FONTEM NON POTEST TABERE [ProductName]. Cognoscere te facultates sufficientes habere ad fontes instituendos, et systema hunc fontem sustinet."/>
+	<String Id="Error1906" Overridable="yes" Value="Deficio ad sarcinam cache[ProductName]. Error: [ProductName]. Contact auxilium personas."/>
+	<String Id="Error1905" Overridable="yes" Value="OMNIBUS[ProductName] rēgister neglexit. HRESULT [ProductName]. Contact auxilium personas."/>
+	<String Id="Error1904" Overridable="yes" Value="OMNIBUS [ProductName] descriptis neglexit. HRESULT [ProductName]. Contact auxilium personas."/>
+	<String Id="Error1903" Overridable="yes" Value="Scheduling reboot operationem: Deletio lima [ProductName]. Oportet reboot ad perficiendam operationem."/>
+	<String Id="Error1902" Overridable="yes" Value="Scheduling reboot operationem: Renaming file [ProductName] ad [ProductName]. Oportet reboot ad perficiendam operationem."/>
+	<String Id="Error1901" Overridable="yes" Value="Error nititur legere e fonte datorum install: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Validum destination folder pro institutione determinari non potuit."/>
+	<String Id="Error1806" Overridable="yes" Value="Insufficiens privilegia habes hunc folder ut legas."/>
+	<String Id="Error1805" Overridable="yes" Value="Folder[ProductName] nōn est. Quaeso viam ingredi ad folder existentem."/>
+	<String Id="Error1804" Overridable="yes" Value="Nulla orbis in drive[ProductName]. Quaeso inserere unum et preme Retry, vel preme Cancel ut redeas ad alternis percurrere et aliud volumen eligere."/>
+	<String Id="Error1803" Overridable="yes" Value="Nulla orbis in drive[ProductName]. Quaeso inserere unum et preme Retry, vel preme Cancel ut redeas ad volumen antea delectum."/>
+	<String Id="Error1802" Overridable="yes" Value="Ex memoria. Alia medicamenta inclusi antequam retrying."/>
+	<String Id="Error1801" Overridable="yes" Value="Via[ProductName] nōn valet. Quaeso viam validam."/>
+	<String Id="Error1732" Overridable="yes" Value="[ProductName] орнотууну аяктоо үчүн компьютерди өчүрүп күйгүзүшүңүз керек. Башка колдонуучулар учурда бул компьютерге кирип жатышат жана өчүрүп күйгүзүү алардын ишин жоготуп коюшу мүмкүн. Азыр кайра баштагыңыз келеби?"/>
+	<String Id="Error1731" Overridable="yes" Value="Fons involucrum institutionis productum pro [ProductName] sync cum sarcina clientis est. Conare institutionem iterum utendo valido exemplari sarcinae institutionis &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="Administratorem esse debes ad hanc applicationem removendam. Ad hanc applicationem auferendam, in Administratore potes, vel coetus subsidii technici contactu tuo adiumento."/>
+	<String Id="Error1729" Overridable="yes" Value="Configuratio defecit."/>
+	<String Id="Error1728" Overridable="yes" Value="Configurationis perficitur feliciter."/>
+	<String Id="Error1727" Overridable="yes" Value="Vendo incassum."/>
+	<String Id="Error1726" Overridable="yes" Value="Management feliciter consummarunt."/>
+	<String Id="Error1725" Overridable="yes" Value="Remotio incassum."/>
+	<String Id="Error1724" Overridable="yes" Value="Remotio completur feliciter."/>
+	<String Id="Error1723" Overridable="yes" Value="Difficultas cum hac sarcina Fenestra Installer. A DLL requiritur ad hanc institutionem ad perficiendam currendum esse non posse. Contactus subsidia tua personas seu sarcinas vendentis.{{ Actio [ProductName], viscus: [ProductName], bibliotheca: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Difficultas cum hac sarcina Fenestra Installer. A progressio currere ut pars setup non perfecit sicut expectatur. Contactus subsidia tua personas seu sarcinas vendentis.{{ Actio [ProductName], locus: [ProductName], impera: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Difficultas cum hac sarcina Fenestra Installer. Propositum requisitum pro hac institutione ad perficiendum currere non potuit. Contactus subsidia tua personas seu sarcinas vendentes.{{ Actio: [ProductName], locus: [ProductName], impera: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Difficultas cum hac sarcina Fenestra Installer. Scriptum requisitum pro hac institutione ad perficiendum currere non potuit. Contactus subsidia tua personas seu sarcina venditoris.{{ Custom action [ProductName] scriptor error [ProductName], [ProductName]: [ProductName] Line [ProductName], Columna [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="In Fenestra Installer Muneris accessed non poterat. Hoc fieri potest si Fenestra in tuto curris, vel si in Fenestra Installer non recte installatur. Contact vestri auxilium personas ad auxilium."/>
+	<String Id="Error1718" Overridable="yes" Value="Tabularium [ProductName] reiectus est consilium actis digitalis."/>
+	<String Id="Error1717" Overridable="yes" Value="dēmōtī[ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Conformatus [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Instituit[ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Vetustio versionis [ProductName] amoveri non potest. Contact technicam coetus firmamentum tuum.{{ Ratio Error[ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] Non potest unum ex suis productis requisitis instituere. Contact technicam coetus firmamentum tuum.{{Fra> Error: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Una vel plurium schedarum quaeruntur ut computatrum tuum ad priorem statum suum restituendum inveniri non possent. Restitutio non poterit."/>
+	<String Id="Error1711" Overridable="yes" Value="Error occurrit cum informationes institutionis scribebat in disco. Perscriptio fac spatium orbis satis in promptu est, et Retry preme, vel Cancel ad finem institutionem."/>
+	<String Id="Error1710" Overridable="yes" Value="Сиз компьютериңизди мурунку абалына келтирип же орнотууну кийинчерээк уланта аласыз. Калыбына келтиргиңиз келеби?"/>
+	<String Id="Error1709" Overridable="yes" Value="Product: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Institutionem defuit."/>
+	<String Id="Error1707" Overridable="yes" Value="Institutionem complevit feliciter."/>
+	<String Id="Error1706" Overridable="yes" Value="Involucrum installation pro productum [ProductName] inveniri non potest. Conare institutionem iterum utendo valido exemplari sarcinae institutionis &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="Бул продукт үчүн мурунку орнотуу жүрүп жатат. Улантуу үчүн ошол орнотуу киргизген өзгөртүүлөрдү артка кайтарышыңыз керек. Ал өзгөртүүлөрдү жокко чыгаргыңыз келеби?"/>
+	<String Id="Error1704" Overridable="yes" Value="[ProductName] үчүн орнотуу учурда токтотулган. Улантуу үчүн ошол орнотуу киргизген өзгөртүүлөрдү артка кайтарышыңыз керек. Ал өзгөртүүлөрдү жокко чыгаргыңыз келеби?"/>
+	<String Id="Error1703" Overridable="yes" Value="Systema tuum sileo pro configuratione mutationibus factis ad effectum adducendi. Preme Ita ut sileo nunc vel non, si cogitas manually sileo postea."/>
+	<String Id="Error1702" Overridable="yes" Value="Inauguratus ratiocinationem tuam silere debet antequam schematismi [ProductName] pergere possit. Preme Ita ut sileo nunc vel non, si cogitas manually sileo postea."/>
+	<String Id="Error1701" Overridable="yes" Value="Clavis[ProductName] nōn valet. Cognoscere quod ingressus es ad rectam clavem."/>
+	<String Id="Error1609" Overridable="yes" Value="Error occurrit applicando securitatem occasus. [ProductName] User aut coetus validus non est. Hoc problema cum involucro esse potest, vel quaestio connectens cum gubernatrix ditione retis. Compesce nexum retis tuae et Retry preme, vel Cancel ad finem institutionem. {{Narratio in SID utentis collocare, ratio erroris [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Non potui reperire aliquas ante paratas faciles productos in machina ad hoc opus inaugurari."/>
+	<String Id="Error1607" Overridable="yes" Value="Sequuntur applicationes ante institutionem continuae claudentur:"/>
+	<String Id="Error1606" Overridable="yes" Value="Locus retis accedere non poterat [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Non sufficit orbis tractus in volumine&amp;apos; [ProductName] ad institutionem cum recuperatione continuandam para. [ProductName] KB requiruntur, sed tantum [ProductName] KB praesto sunt. Preme Ignore pergere institutionem sine informatione recuperandi salva, preme Retry ut reprimas pro spatio iterum praesto, vel preme Cancel deserere institutionem."/>
+	<String Id="Error1604" Overridable="yes" Value="Productum &amp;apos;[ProductName] iam institutum est, impedita institutionem huius operis. Duo producta repugnant."/>
+	<String Id="Error1603" Overridable="yes" Value="Tabella [ProductName][ProductName] in usu tenetur{ sequenti processu: Name: [ProductName], Id: [ProductName], Fenestra Title: &amp;apos;[ProductName]&amp;apos;}. Prope illam applicationem et retry."/>
+	<String Id="Error1602" Overridable="yes" Value="Чын эле жокко чыгаргыңыз келеби?"/>
+	<String Id="Error1601" Overridable="yes" Value="De orbis spatio -- Volume: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Usoris &amp;apos;[ProductName] ante institutionem producti initiavit. Ille usor necesse erit currere ut iterum instituatur antequam illo facto uti possint."/>
+	<String Id="Error1502" Overridable="yes" Value="Usoris &amp;apos;[ProductName] ante institutionem producti initiavit. Ille usor necesse erit currere ut iterum instituatur antequam illo facto uti possint. Vena tua install nunc pergo."/>
+	<String Id="Error1501" Overridable="yes" Value="Error accessu parta data. Quaeso fac ut Fenestra Installer apte configuratur ac denuo inaugurare conare."/>
+	<String Id="Error1500" Overridable="yes" Value="Aliam institutionem in progressu est. Hanc institutionem complere debes antequam hanc pergamus."/>
+	<String Id="Error1410" Overridable="yes" Value="Subcriptio spatium praesto non auget. [ProductName] MB spatium subcriptio gratuiti ad institutionem applicationis huius requiritur."/>
+	<String Id="Error1409" Overridable="yes" Value="Non potui legere notitias securitatis pro clavis [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere te satis accessum habere ad illam clavem, vel ad personas suscipiendas."/>
+	<String Id="Error1408" Overridable="yes" Value="Sub clavibus nominibus clavem obtinere non potuit [ProductName].{{ Ratio error [ProductName].}} Cognoscere te satis accessum habere ad illam clavem, vel ad personas suscipiendas."/>
+	<String Id="Error1407" Overridable="yes" Value="Non poterant nomina pretii obtinere pro clavis [ProductName].{{ Ratio error [ProductName].}} Cognoscere te satis accessum habere ad illam clavem, vel ad personas suscipiendas."/>
+	<String Id="Error1406" Overridable="yes" Value="Non potui scribere valorem [ProductName] ad clavem [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere te satis accessum ad illam clavem habere, vel ad personas tuas sustentandas."/>
+	<String Id="Error1405" Overridable="yes" Value="Non potui legere valorem [ProductName] ex clavis [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere te satis accessum ad illam clavem habere, vel ad personas tuas sustentandas."/>
+	<String Id="Error1404" Overridable="yes" Value="Clavem delere non potuit [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere te satis habere accessum ad illam clavem, vel ad personas suscipiendas."/>
+	<String Id="Error1403" Overridable="yes" Value="Valorem delere non potuit [ProductName] ex clavis [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere te satis accessum ad illam clavem habere, vel ad personas tuas sustentandas."/>
+	<String Id="Error1402" Overridable="yes" Value="Clavem aperire non potuit: [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere te satis habere accessum ad illam clavem, vel ad personas tuas suscipiendas."/>
+	<String Id="Error1401" Overridable="yes" Value="Clavem creare non potuit: [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere te satis habere accessum ad clavem, vel ad personas suscipiendas."/>
+	<String Id="Error1336" Overridable="yes" Value="Error inerat limam temporalem creandi quae ad hanc institutionem perficiendam opus est. Ratio erroris codice: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Tabulae scrinii II ad hanc institutionem requisiti corruptum est et adhiberi non possunt. Hoc indicare potuit errorem retis, errorem legendi CD-ROM, vel problema cum hac sarcina."/>
+	<String Id="Error1334" Overridable="yes" Value="Tabella &amp;apos;[ProductName] inaugurari non potest quia tabella in scrinio tabellae reperiri non potest&amp;apos;[ProductName]&amp;apos;. Hoc indicare potuit errorem retis, errorem legendi CD-ROM, vel problema cum hac sarcina."/>
+	<String Id="Error1333" Overridable="yes" Value="Defecit recte repeciare [ProductName] fasciculus: CRC error."/>
+	<String Id="Error1332" Overridable="yes" Value="File: CRC error."/>
+	<String Id="Error1331" Overridable="yes" Value="Defecit ad recte exemplum [ProductName] fasciculus: CRC error."/>
+	<String Id="Error1330" Overridable="yes" Value="Fasciculus qui requiritur, non potest institui quod scrinium fasciculus [ProductName] invalidam subscriptionem digitalem habet. Hoc fortasse indicare potest tabulam scrinium corruptam esse.{{ Error [ProductName] reversus est a WinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Fasciculus qui requiritur, non potest institui, quia scrinium fasciculus [ProductName] non est digitally signatus. Hoc fortasse indicare potest Scapus scrinium corruptum esse."/>
+	<String Id="Error1328" Overridable="yes" Value="Error applicans panni rudis ad limam [ProductName]. Probabiliter aliis modis renovatum est, et hac commissura immutari amplius non potest. Ad maiorem informationem tuam contactum venditoris commissuram.{{ Error system: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Invalida Drive: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Error securitatis file questus: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName] &amp;apos;Nomen fasciculi brevis non valet."/>
+	<String Id="Error1324" Overridable="yes" Value="Folder iter &amp;apos;[ProductName]&amp;apos; characterem erratum continet."/>
+	<String Id="Error1323" Overridable="yes" Value="Folder iter &amp;apos;[ProductName]&amp;apos; continet verba quae in viis folder non valet."/>
+	<String Id="Error1322" Overridable="yes" Value="Pars viae folder &amp;apos;2&amp;apos; invalida est. Est vel inanis, vel superat ratio longitudinis permissa."/>
+	<String Id="Error1321" Overridable="yes" Value="Installer privilegiis insufficiens habet ad hanc fasciam mutandam: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Via certa nimis longa est: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Error retis incidit dum conanti fontem scrinium tabellarii aperire: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Error retis occurrit cum indicem creare conatur: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Error occurrit conanti indicem creare: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Error retis occurrit conanti e tabella legere: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="&amp;apos;Non scribere certum folder: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Semita certa &amp;apos;[ProductName] est unavailable."/>
+	<String Id="Error1313" Overridable="yes" Value="Volumen [ProductName] est currently unavailable. Aliud placet eligere."/>
+	<String Id="Error1312" Overridable="yes" Value="Inscriptio creare non potest &amp;apos;[ProductName]&amp;apos;. Fasciculus huic nomini iam exstat. Quaeso rename vel remove tabellam et preme Retry, vel preme Cancel ad exitum."/>
+	<String Id="Error1311" Overridable="yes" Value="Fons fasciculus non inventus {{(arca)}}: [ProductName]. Cognoscere tabellam esse et accedere potes."/>
+	<String Id="Error1310" Overridable="yes" Value="Error scribens ad fasciculum: [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere te accessum habere ad directorium illud."/>
+	<String Id="Error1309" Overridable="yes" Value="Error e lima legendi: [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere tabellam esse et accedere ad eam potes."/>
+	<String Id="Error1308" Overridable="yes" Value="Fons fasciculus non inventus est: [ProductName]. Cognoscere tabellam esse et accedere potes."/>
+	<String Id="Error1307" Overridable="yes" Value="Spatium orbis satis non est ut hanc fasciculum inaugurarem: [ProductName]. Libera aliquod orbis tractus ac preme Retry, or click Abrigavi exire."/>
+	<String Id="Error1306" Overridable="yes" Value="Alia applicatio exclusivum aditum habet ad fasciculi &amp;apos;[ProductName]&amp;apos;. Quaeso claude omnes alias applicationes, deinde Retry preme."/>
+	<String Id="Error1305" Overridable="yes" Value="Error ex lima legendi [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere tabellam esse et accedere ad eam potes."/>
+	<String Id="Error1304" Overridable="yes" Value="Error scribentis ad lima: [ProductName]. Cognoscere te accessum ad illud directorium habes."/>
+	<String Id="Error1303" Overridable="yes" Value="Installer insufficiens privilegia habet huic directorio accessuri: [ProductName]. Institutionem non potest permanere. Log in ut administrator vel contact ratio administrator."/>
+	<String Id="Error1302" Overridable="yes" Value="Quaeso disco inserere: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Tabellam creare &amp;apos;[ProductName]&amp;apos; non potest. Directorium cum hoc nomine iam exstat. Rescindere institutionem et tentare inaugurari ad alium locum."/>
+	<String Id="Error1101" Overridable="yes" Value="Error e lima legendi: [ProductName].{{ Ratio erroris [ProductName].}} Cognoscere tabellam esse et accedere ad eam potes."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] } Setup defecit."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName]} Setup feliciter consummarunt."/>
+	<String Id="Error23" Overridable="yes" Value="Praeparans removere maiores versiones huius applicationis..."/>
+	<String Id="Error22" Overridable="yes" Value="Maiores versiones huius applicationis removere..."/>
+	<String Id="Error21" Overridable="yes" Value="Percunctanti notitia..."/>
+	<String Id="Error20" Overridable="yes" Value="Quaeso expectare dum Fenestra configurat [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="Praemature Installer cessaverunt."/>
+	<String Id="Error18" Overridable="yes" Value="Installer iam non respondeo."/>
+	<String Id="Error17" Overridable="yes" Value="Ex memoria. Alia medicamenta inclusi antequam retrying."/>
+	<String Id="Error16" Overridable="yes" Value="Tempus reliquum: {[ProductName] minuta}{[ProductName] secundis}"/>
+	<String Id="Error15" Overridable="yes" Value="Actio finita [ProductName]: [ProductName]. Valorem redi[ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Actio initium [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Logging stoped: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Logging incepit: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Nuntius type: [ProductName], Argumentum: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Actio [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{orbus plenus: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Inopinatum errorem invasit instrumentum hanc sarcinam installans. Hoc problema cum hac sarcina indicari potest. Error codicis est [ProductName]. {{Rationes sunt: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Info [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Admonitio [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Error[ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Fatal error: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Product informationes"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Indicis: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Removere motus files"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Tabularium: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Removere tergum files"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Артка кайтаруу аракети:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Applicationem Context: [ProductName], Conventus Name:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Notitia inedita conventus"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Applicationem Context: [ProductName], Conventus Name:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Contio libellorum informationes"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Dependentiae: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Installing systema catalog"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Scriptum generans operationes agendi:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Applicationem venditare"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Clavis: [ProductName], Nomen: [ProductName], Value: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Scribere systema subcriptio values"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Sectio: [ProductName], Clavis: [ProductName], Value: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Scribens INI files values"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Nomen: [ProductName], Pendo: [ProductName], Actio [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Adaequationis amet chordis"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Genus bibliothecae Unregistering"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Progressio Unregistering identifiers"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME Content Type: [ProductName], Extensio: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="INEXPLICABILIS MIME info"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Font: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Unregistering fonts"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Extensio: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Extensio servientes Unregistering"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="INEXPLICABILIS COM+ Applications et Components"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Class Id: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Unregister classis servers"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Pluma: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Product Features:"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Component ID: [ProductName], Qualifier: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Inedita secundum quid Components"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Servitium: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Restitit officia"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Servitium: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Satus officia"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="ODBC directoria initializing"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Tabularium: [ProductName], Folder: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Moduli Unregistering"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Tabularium: [ProductName], Folder: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Perscriptum modulorum"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Quaerendo simpliciter products"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Brevis: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Removere shortcuts"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Clavis: [ProductName], Nomen: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Removere ratio subcriptio values"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="ODBC components removere"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Sectio: [ProductName], Clavis: [ProductName], Value: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Removere INI files entries"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Folder: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Removere folders"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Indicis: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Removere files"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Applicatio: [ProductName], impera linea: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Removere applications"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Nomen: [ProductName], Pendo: [ProductName], Actio [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Adaequationis amet chordis"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Indicis: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Effingo removere files"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Perscriptum user"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Genus perscriptum bibliothecae"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Perscriptum product"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Font: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Perscriptum fonts"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], User: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Perscriptum COM+ Applications et Components"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Adaequationis pars registration"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Indicis: [ProductName], Size: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="patching files"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Indicis: [ProductName], Size: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="movere files"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Applicatio: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Migrantis pluma civitatibus ab affinibus applicationibus"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Aestimandis Lorem conditionibus"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Service: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Installing nova officia"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="ODBC components installing"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Inventa application: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Quaere applicationes related"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Indicis: [ProductName], Size: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Creando duplicata files"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Servitium: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Deleting officia"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Folder: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Partum folders"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Quaerendo simpliciter products"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Tabularium: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Binding executables"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Proprietas: [ProductName], Subscriptio: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Exquirendo installed applications"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Free space: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Disponere subcriptio spatium"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Perscriptum programma identifiers"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME Content Type: [ProductName], Extensio: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Perscriptum MIME info"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Extensio: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Extensio perscriptum servers"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Class Id: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Perscriptum Classis servers"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Productum informationem"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Pluma: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Product Features"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Component ID: [ProductName], Qualifier: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Publishing Secundum quid Components"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Brevis: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Partum shortcuts"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Computando spatium opus"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Computando spatium opus"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Computando spatium opus"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Indicis: [ProductName], Size: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Effingo network install files"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Fasciculus: [ProductName], Indicis: [ProductName], Size: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Effingo novas"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Validating install"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Quaeso lege [ProductName] License Agreement"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp; Update"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp; Install"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Мен Лицензиялык келишимдеги шарттарды кабыл алам"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} Gratus [ProductName] Setup Veneficus"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Veneficus setup [ProductName] in computatrum tuum renovabit. Click Next pergere vel Abrigavi exire setup Veneficus."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Veneficus setup [ProductName] in computatrum tuum instituet. Click Next pergere vel Abrigavi exire setup Veneficus."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Exclamatio icon"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Obsecro, exspecta dum instrumentum orbis spatium determinat determinat."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Redi"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title} Promptus ad renovationem [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Click Update ut update [ProductName] ex computatrum tuum. Click Back to review or change any of your installation settings. Click Abrigavi exire magus."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp; Update"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title} Paratus removere [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Click Aufer ut remove [ProductName] ex computatrum tuum. Click Back to review or change any of your installation settings. Click Abrigavi exire magus."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp; Remove"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title} Promptus ad refice [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Click Reparare ad restaurationem institutionis [ProductName]. Click Back to review or change any of your installation settings. Click Abrigavi exire magus."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Re &amp; par"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title} Promptus ad mutandum [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Click Mutare ad institutionem incipere. Click Back to review or change any of your installation settings. Click Abrigavi exire magus."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Mutare"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title} Promptus ad instituendum [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Click Install incipere institutionem. Click Back to review or change any of your installation settings. Click Abrigavi exire magus."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp; Install"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Click Perago puga exire setup Veneficus."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] setup interruptus est. Tua ratio non mutata est. Ut hoc programma posteriori tempore instituat, institutionem iterum curre quaeso."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Setup Veneficus interruptus est"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Omnes rationes programmata instituentur. Maxime requirit orbis tractus."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Permittit utentes eligere quae programmata instituantur et ubi instituantur. Suspendisse utentium ante."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Instruit notas maxime communes programma. Suspendisse eget orci magna."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Elige quod setup genus quod maxime interpellatio vestri necessitates"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Elige Setup Type"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Integram institutionem"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C&amp;omplete"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Custom Installation"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ustom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Typical Installation"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp; Typical"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} repetens [ProductName] Setup Veneficus"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Veneficus PRAEFIXUS institutionem [ProductName] in computatrum tuum complebit. Click Install pergere vel Abrigavi exire setup Veneficus."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp; Install"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Status:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Progressus fieri"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Updating [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Placet expectare dum updates Veneficus setup [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title} Removere [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Placet expectare dum Veneficus Setup removet [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title} Reparatio [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Obsecro dum moratur Setup Veneficus reparationibus [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title} Mutans [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Placet expectare dum Veneficus Setup mutationes [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title} Installing [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Obsecro, exspecta dum installs Veneficus Setup [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} Gratus [ProductName] Setup Veneficus"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Quaeso expecta dum Setup Veneficus te per institutionem dirigere parat."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Vel aliter, eligere potest lapsus instrumentum functionis in reversum. Inactivare reverti prohibet instrumentum restituendo statum pristinum computatrum tuum quovis modo institutio interrumpatur. Preme Si vis periculum inactivare reverti."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Ex Space Orbis"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Orbis tractus ad institutionem requiritur spatium orbis available."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Volumina elucidata non satis discri spatii praesto sunt ad lineamenta electissima. Potes limacula quaedam e voluminibus illustratis tollere, notas pauciores instituere, vel diversam destinationem coegi eligere."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Ex Space Orbis"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Orbis tractus ad institutionem requiritur spatium orbis available."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Volumina elucidata non satis discri spatii praesto sunt ad lineamenta electissima. Potes limacula quaedam e voluminibus illustratis tollere, notas pauciores instituere, vel diversam destinationem coegi eligere."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp; Noli claudere applications. A reboot requiretur."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp; Claude applicationes et sileo eos conari."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title} Tabulariorum in usu"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Aliquae tabulae quae renovandae sunt hodie in usu sunt."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Sequuntur applicationes lima utentes quae renovandae sunt ab hoc setup. Veneficus PRAEFIXUS eas claudere potes et conari ut sileo eos vel postea machinam reboot."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} Gratus [ProductName] Setup Veneficus"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Setup Veneficus permittit te mutare modum [ProductName] notae inaugurari in computatro tuo vel ex computatro tuo removere. Click Next pergere vel Abrigavi exire setup Veneficus."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] reparari non potest."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Errores in recentissima institutione reparat figens tabulas absentes et corruptas, breves, et subcriptio entries."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] amoveri non potest."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Removet a ornare."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] notiones selectabiles independentes non habet."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Mutare permittit modo features installantur."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Mutare, reparare, vel removere institutionem"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Lego operationem quam vis facere."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Remove Installation"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp; Remove"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Installation instaurabo"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Re &amp; par"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Mutare Installation"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Mutare"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} End-User License Agreement"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Placet haec licentia consensum diligenter lege"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Мен Лицензиялык келишимдеги шарттарды кабыл алам"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Information icon"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Installation directory must be in a local hard drive."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Mutare..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Installation &amp; folder:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] instituetur in folder machina per defaltam et omnibus usoribus praesto erit. Default institutionem folder mutare potes. Privilegia localia habere debes."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized} Install pro omnibus utentibus huius &amp; machinae"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] institutionem per-usoris non sustinet."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] instituetur in folder per-usoris et praesto erit iusta pro ratione usoris tui. Administratore locali non indiget privilegiis."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized} Install &amp; justi tibi ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Installation Scope"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Elige institutionem scope ac folder"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Instrue [ProductName] ad:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Click Deinde ut install defaltam ut folder vel click Mutare alium eligere."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Destination Folder"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Mutare..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title} Tabulariorum in usu"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Aliquae tabulae quae renovandae sunt hodie in usu sunt."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Sequuntur applicationes lima utentes quae renovandae sunt ab hoc setup. Has applicationes claude et tunc deprime &amp; Retry ut pergere paro vel Exire ad exire."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="E&amp;xit"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Mutare"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp; Install"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Product Features"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Elige quomodo voles lineamenta instituenda esse."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Product features"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Click Perago puga exire setup Veneficus."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Setup Veneficus praemature finivit propter errorem. Tua ratio non mutata est. Ut hoc programma sequenti tempore instituat, iterum currite Setup Veneficus."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Setup Veneficus praemature finivit"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} perfecit [ProductName] Setup Veneficus"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Click Perago puga exire setup Veneficus."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Information icon"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Informationes text"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Disk Space Requisita"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Orbis tractus ad institutionem notarum delectarum requiritur."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Volumina illustrata non satis discri spatii ad notas selectas praesto sunt. Potes vel aliquas tabulas ex voluminibus illustratis removere, notas pauciores institue, vel diversa destinationis agitet eligere."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Locus:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Custom Setup"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Elige quomodo voles lineamenta instituenda esse."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Preme icones in arbore inferiore ad mutandum modo lineamenta instituenda erunt."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Orbis &amp; Ritus"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Re&amp;set"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;rowse..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Arbor excerpta"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Information icon"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="[ProductName] орнотууну чын эле жокко чыгаргыңыз келеби?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Muta destination folder"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Pasco ad locum folder"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp; Pellentesque nomen:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Novam folder"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Uno gradu"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp; Vide in:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;dvanced"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp; Install"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Click Install to install the product with default options just for you. Click Advanced ad mutationem institutionem optiones."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Click Install to install the product with default options for all users. Click Advanced ad mutationem institutionem optiones."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Мен Лицензиялык келишимдеги шарттарды кабыл алам"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} Quaeso lege [ProductName] License Agreement"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Setup"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Print"/>
+	<String Id="WixUIOK" Overridable="yes" Value="OK"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;No"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp; Ita"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp; Ignore"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp; Retry"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Finish"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Cancel"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Next"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Back"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Uninstalling Fenestra Agnitum configuratione"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Revolvere Fenestra Agnitum configuratione"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installing Fenestra Agnitum configuratione"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Revolvere Fenestra Agnitum configuratione"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Vestibulum Fenestra Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Vestibulum Fenestra Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Agnitum Fenestra non coniungere est. ([2] [3] [4][5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations pro remotis applicationibus available ut bene in configuration"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="View RAAS servers in Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Create remote application shortcuts ut servo applicationes ad loci computatrum"/>

@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="ca" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Desinstal·lació de la configuració del tallafoc de Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Tornar enrere la configuració del tallafoc de Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instal·lació de la configuració del tallafoc de Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Tornar enrere la configuració del tallafoc de Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Configuració del tallafoc de Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Configuració del tallafoc de Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="No es pot connectar al tallafoc de Windows. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Servidor compartit en xarxa"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Compartiu unitats a la xarxa per permetre el control i la navegació des del client RAAS"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Es pot reiniciar"/>

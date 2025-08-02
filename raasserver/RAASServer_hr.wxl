@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="hr" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Deinstaliranje konfiguracije vatrozida za Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Vraćanje konfiguracije Windows vatrozida"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instaliranje konfiguracije vatrozida za Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Vraćanje konfiguracije Windows vatrozida"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfiguriranje Windows vatrozida"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfiguriranje Windows vatrozida"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ne mogu se spojiti na Windows vatrozid. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Mrežni dijeljeni poslužitelj"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Podijelite diskove na mreži kako biste omogućili kontrolu i pregledavanje iz RAAS klijenta"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Može se ponovno pokrenuti"/>

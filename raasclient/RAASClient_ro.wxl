@@ -1,9 +1,16 @@
-﻿<WixLocalization Culture="ro" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ro-RO-RO" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Dezinstalarea configurației Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Revenire la configurația Windows Firewall"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instalarea configurației Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Revenire la configurația Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Configurarea paravanului de protecție Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Configurarea paravanului de protecție Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Nu se poate conecta la Windows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Vizualizări pentru aplicații la distanță disponibile ca opțiune în configurare"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Vizualizați serverele RAAS în Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Creați comenzi rapide pentru aplicații de la distanță către aplicațiile server de pe computerul local"/>
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Vizualizări"/>
 	<String Id="NamespaceTitle" Overridable="yes" Value="Extensie de spațiu de nume Shell"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Comenzi rapide de la distanță"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1048"/>
+	<String Id="Pro-RO-ROductLanguage" Overridable="yes" Value="1048"/>
 </WixLocalization>

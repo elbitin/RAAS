@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="ky" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="ky" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Көлөм"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Дисктин өлчөмү"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Талап кылынат"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Айырма"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="жеткиликтүү"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Калган убакыт:{ [ProductName] мүнөт}{ [ProductName] секунд}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Бул өзгөчөлүк катуу дискиңизде [ProductName] болушун талап кылат. Анын [ProductName] ичинен [ProductName] тандалды. Чакан өзгөчөлүктөр катуу дискиңизде [ProductName] талап кылат."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Бул өзгөчөлүк катуу дискиңизде [ProductName] болушун талап кылат. Анын [ProductName] ичинен [ProductName] тандалды. Чакан функциялар [ProductName] катуу дискиңизди бошотот."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Бул өзгөчөлүк катуу дискиңизден [ProductName] бошойт. Анын [ProductName] ичинен [ProductName] тандалды. Чакан өзгөчөлүктөр катуу дискиңизде [ProductName] талап кылат."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Бул өзгөчөлүк катуу дискиңизден [ProductName] бошойт. Анын [ProductName] ичинен [ProductName] тандалды. Чакан функциялар [ProductName] катуу дискиңизди бошотот."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Бул функция тармактан иштетилген бойдон кала берет"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Бул өзгөчөлүк жергиликтүү катуу дискке орнотула турган тармак абалынан иштетилгенден өзгөрөт"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Бул өзгөчөлүк керек болгондо орнотула турган тармак абалынан иштетилгенге чейин өзгөрөт"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Бул функция толугу менен өчүрүлөт, сиз аны тармактан иштете албайсыз"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Бул өзгөчөлүк жергиликтүү катуу дискиңизден өчүрүлөт, бирок тармактан иштетүү үчүн жеткиликтүү болот"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Бул өзгөчөлүк жергиликтүү катуу дискиңизде кала берет"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Бул өзгөчөлүк жергиликтүү катуу дискиңизден өчүрүлөт, бирок CDден иштетүү үчүн дагы эле жеткиликтүү болот"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Бул өзгөчөлүк жергиликтүү катуу дискиңизден алынып салынат, бирок керек болгондо орнотулат"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Бул өзгөчөлүк толугу менен өчүрүлөт"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Бул функциянын баасы түзүлүүдө..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Бул өзгөчөлүк катуу дискиңизде [ProductName] болушун талап кылат."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Бул өзгөчөлүк катуу дискиңизден [ProductName] бошойт."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Бул өзгөчөлүк жергиликтүү катуу дискке орнотула турган CD абалынан иштетилгенден өзгөрөт"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Бул функция CDден иштей берет"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Бул өзгөчөлүк керек болгондо орнотула турган CD абалынан иштетилгенге чейин өзгөрөт"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Бул функция толугу менен өчүрүлөт, сиз аны CDден иштете албайсыз"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Бул функция тармактан иштетүү үчүн жеткиликтүү болот"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Бул өзгөчөлүк жергиликтүү катуу дискиңизге орнотулат"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Бул функция CDден иштетүү үчүн жеткиликтүү болот"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Керек болгондо орнотулат"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Бул функция жеткиликсиз болуп калат"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Бул функция тармактан иштөө үчүн орнотулат"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Бул өзгөчөлүк жергиликтүү катуу дискке орнотулат"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Бул функция CDден иштетүү үчүн орнотулат"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Бул функция керек болгондо орнотулат"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Бул функция орнотулбай калат"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Керектүү маалымат топтолууда..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Папка|Жаңы папка"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Тармактан иштетүү үчүн орнотулат"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Жергиликтүү катуу дискке орнотулат"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="CDден иштетүү үчүн орнотулат"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Толук функция тармактан иштөө үчүн орнотулат"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Бардык функция жергиликтүү катуу дискке орнотулат"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Бардык функция CDден иштөө үчүн орнотулат"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Функция керек болгондо орнотулат"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Толук функция жеткиликсиз болот"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="байт"/>
+	<String Id="Error1938" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; монтаждоо учурунда ката кетти. Жыйындын бир же бир нече модулдары табылган жок. ЖЫЙЫНТЫК: [ProductName].{{ монтаж интерфейси: [ProductName], функция: [ProductName], компонент: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; монтаждоо учурунда ката кетти. Кол коюу же каталогду текшерүү мүмкүн эмес же жараксыз. ЖЫЙЫНТЫК: [ProductName].{{ монтаж интерфейси: [ProductName], функция: [ProductName], компонент: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; монтаждоо учурунда ката кетти. Ассамблея катуу аталган эмес же минималдуу ачкыч узундугу менен кол коюлган эмес. ЖЫЙЫНТЫК: [ProductName].{{ монтаж интерфейси: [ProductName], функция: [ProductName], компонент: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; монтаждоо учурунда ката кетти. Көбүрөөк маалымат үчүн Жардам жана Колдоо бөлүмүнө кайрылыңыз. ЖЫЙЫНТЫК: [ProductName].{{ монтаж интерфейси: [ProductName], функция: [ProductName], компонент: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Колдонуучунун орнотуулары машинадагы саясат аркылуу өчүрүлгөн."/>
+	<String Id="Error1933" Overridable="yes" Value="Windows Installer кызматы бир же бир нече корголгон Windows файлдарын жаңырта албайт.{{ SFP катасы: [ProductName]. Корголгон файлдардын тизмеси:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Windows Installer кызматы корголгон Windows файлын [ProductName] жаңырта албайт.{{ Пакет версиясы: [ProductName], ОС корголгон версиясы: [ProductName], SFP катасы: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Windows Installer кызматы тутум файлын [ProductName] жаңылай албайт, анткени файл Windows тарабынан корголгон. Бул программа туура иштеши үчүн операциялык системаңызды жаңыртышыңыз керек болушу мүмкүн.{{ Пакет версиясы: [ProductName], OS корголгон версиясы: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; ([ProductName]) кызматынын сыпаттамасын өзгөртүү мүмкүн эмес."/>
+	<String Id="Error1929" Overridable="yes" Value="COM+ тиркемесин каттоодон чыгарууда ката кетти. Көбүрөөк маалымат алуу үчүн колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1928" Overridable="yes" Value="COM+ тиркемесин каттоодо ката кетти. Көбүрөөк маалымат алуу үчүн колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1927" Overridable="yes" Value="Компоненттик кызматтар (COM+ 1.0) бул компьютерде орнотулган эмес. Бул орнотуу ийгиликтүү аяктоо үчүн Компонент кызматтарын талап кылат. Компоненттик кызматтар Windows 2000де жеткиликтүү."/>
+	<String Id="Error1926" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; файлы үчүн файл коопсуздугу орнотулбай койду. Ката: [ProductName]. Бул файл үчүн коопсуздук уруксаттарын өзгөртүү үчүн жетиштүү артыкчылыктарга ээ экениңизди текшериңиз."/>
+	<String Id="Error1925" Overridable="yes" Value="Машинанын бардык колдонуучулары үчүн бул орнотууну аяктоо үчүн сизде жетиштүү артыкчылыктар жок. Администратор катары кириңиз жана бул орнотууну кайра аракет кылыңыз."/>
+	<String Id="Error1924" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; чөйрө өзгөрмөсүн жаңыртуу мүмкүн болгон жок. Айлана-чөйрө өзгөрмөлөрүн өзгөртүү үчүн жетиштүү артыкчылыктарга ээ экениңизди текшериңиз."/>
+	<String Id="Error1923" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; ([ProductName]) кызматы орнотулбай койду. Тутум кызматтарын орнотуу үчүн жетиштүү артыкчылыктарга ээ экениңизди текшериңиз."/>
+	<String Id="Error1922" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; ([ProductName]) кызматы жок кылынган жок. Тутум кызматтарын алып салуу үчүн жетиштүү артыкчылыктарга ээ экениңизди текшериңиз."/>
+	<String Id="Error1921" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; ([ProductName]) кызматын токтотуу мүмкүн эмес. Тутум кызматтарын токтотуу үчүн жетиштүү артыкчылыктарга ээ экениңизди текшериңиз."/>
+	<String Id="Error1920" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; ([ProductName]) кызматы башталбай калды. Тутум кызматтарын баштоо үчүн жетиштүү артыкчылыктарга ээ экениңизди текшериңиз."/>
+	<String Id="Error1919" Overridable="yes" Value="ODBC маалымат булагын конфигурациялоо катасы: [ProductName], ODBC катасы [ProductName]: [ProductName]. [ProductName] файлы бар экенин жана ага кире аларыңызды текшериңиз."/>
+	<String Id="Error1918" Overridable="yes" Value="ODBC драйверин орнотуудагы ката: [ProductName], ODBC катасы [ProductName]: [ProductName]. [ProductName] файлы бар экенин жана ага кире аларыңызды текшериңиз."/>
+	<String Id="Error1917" Overridable="yes" Value="ODBC драйверин алып салуу катасы: [ProductName], ODBC катасы [ProductName]: [ProductName]. ODBC драйверлерин алып салуу үчүн жетиштүү артыкчылыктарга ээ экениңизди текшериңиз."/>
+	<String Id="Error1916" Overridable="yes" Value="ODBC драйвер менеджерин орнотууда ката, ODBC катасы [ProductName]: [ProductName]. Колдоо кызматкерлериңиз менен байланышыңыз."/>
+	<String Id="Error1915" Overridable="yes" Value="ODBC драйвер башкаруучусун алып салуудагы ката, ODBC катасы [ProductName]: [ProductName]. Колдоо кызматкерлериңиз менен байланышыңыз."/>
+	<String Id="Error1914" Overridable="yes" Value="[ProductName] файлын кайра жүктөөдө [ProductName] файлын алмаштырууга пландаштырылган жок. [ProductName] файлына жазуу уруксаттары бар экенин текшериңиз."/>
+	<String Id="Error1913" Overridable="yes" Value="ini файлы жаңыртылган жок [ProductName][ProductName]. Файл бар экенин жана ага кире аларыңызды текшериңиз."/>
+	<String Id="Error1912" Overridable="yes" Value="[ProductName] файлы үчүн типтер китепканасын каттоодон чыгара алган жок. Колдоо кызматкерлериңиз менен байланышыңыз."/>
+	<String Id="Error1911" Overridable="yes" Value="[ProductName] файлы үчүн типтер китепканасы катталбай койду. Колдоо кызматкерлериңиз менен байланышыңыз."/>
+	<String Id="Error1910" Overridable="yes" Value="Жарлык [ProductName] алынып салынбай койду. Жарлык файлы бар экенин жана ага кире аларыңызды текшериңиз."/>
+	<String Id="Error1909" Overridable="yes" Value="Жарлык [ProductName] түзүлбөй койду. Бара турган папка бар экенин жана ага кире аларыңызды текшериңиз."/>
+	<String Id="Error1908" Overridable="yes" Value="Шрифти [ProductName] каттоодон чыгара алган жок. Ариптерди алып салууга жетиштүү уруксаттарыңыз бар экенин текшериңиз."/>
+	<String Id="Error1907" Overridable="yes" Value="Шрифт [ProductName] катталбай койду. Ариптерди орнотууга жетиштүү уруксаттарыңыз бар экенин жана система бул шрифтти колдой тургандыгын текшериңиз."/>
+	<String Id="Error1906" Overridable="yes" Value="Пакетти кэштей албай койду [ProductName]. Ката: [ProductName]. Колдоо кызматкерлериңиз менен байланышыңыз."/>
+	<String Id="Error1905" Overridable="yes" Value="Модуль [ProductName] каттоодон чыга алган жок. ЖЫЙЫНТЫК [ProductName]. Колдоо кызматкерлериңиз менен байланышыңыз."/>
+	<String Id="Error1904" Overridable="yes" Value="Модуль [ProductName] катталбай калды. ЖЫЙЫНТЫК [ProductName]. Колдоо кызматкерлериңиз менен байланышыңыз."/>
+	<String Id="Error1903" Overridable="yes" Value="Кайра жүктөө операциясын пландаштыруу: Файлды жок кылуу [ProductName]. Ишти аяктоо үчүн кайра жүктөө керек."/>
+	<String Id="Error1902" Overridable="yes" Value="Кайра жүктөө операциясын пландаштыруу: Файлдын атын [ProductName] [ProductName] деп өзгөртүү. Ишти аяктоо үчүн кайра жүктөө керек."/>
+	<String Id="Error1901" Overridable="yes" Value="Булак орнотуу базасынан окууга аракет кылган ката: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Орнотуу үчүн жарактуу көздөгөн папка аныкталган жок."/>
+	<String Id="Error1806" Overridable="yes" Value="Бул папканы окуу үчүн сиздин артыкчылыктарыңыз жетишсиз."/>
+	<String Id="Error1805" Overridable="yes" Value="Папка [ProductName] жок. Учурдагы папкага жолду киргизиңиз."/>
+	<String Id="Error1804" Overridable="yes" Value="Дискте диск жок [ProductName]. Сураныч, бирин киргизип, Кайра аракет кылуу баскычын басыңыз же серептөө диалогуна кайтып келип, башка томду тандоо үчүн Жокко чыгаруу баскычын басыңыз."/>
+	<String Id="Error1803" Overridable="yes" Value="Дискте диск жок [ProductName]. Сураныч, бирин киргизип, Кайра аракет кылуу баскычын чыкылдатыңыз же мурун тандалган томго кайтуу үчүн Жокко чыгаруу баскычын басыңыз."/>
+	<String Id="Error1802" Overridable="yes" Value="Эсте калган. Кайра аракет кылуудан мурун башка колдонмолорду өчүрүңүз."/>
+	<String Id="Error1801" Overridable="yes" Value="Жол [ProductName] жарактуу эмес. Жарактуу жолду көрсөтүңүз."/>
+	<String Id="Error1732" Overridable="yes" Value="Ji bo temamkirina sazkirina [ProductName]-ê, divê hûn komputerê ji nû ve bidin destpêkirin. Bikarhênerên din niha têketî vê komputerê ne, û ji nû ve destpêkirinê dibe ku ew karê xwe winda bikin. Ma hûn dixwazin niha ji nû ve dest pê bikin?"/>
+	<String Id="Error1731" Overridable="yes" Value="Продукт үчүн булак орнотуу пакети [ProductName] кардар пакети менен синхрондогон эмес. &amp;apos;[ProductName]&amp;apos; орнотуу пакетинин жарактуу көчүрмөсүн колдонуп, орнотууну кайра аракет кылыңыз."/>
+	<String Id="Error1730" Overridable="yes" Value="Бул колдонмону алып салуу үчүн сиз администратор болушуңуз керек. Бул колдонмону алып салуу үчүн, сиз администратор катары кирсеңиз болот же жардам алуу үчүн техникалык колдоо тобуңузга кайрылыңыз."/>
+	<String Id="Error1729" Overridable="yes" Value="Конфигурацияланбай калды."/>
+	<String Id="Error1728" Overridable="yes" Value="Конфигурация ийгиликтүү аяктады."/>
+	<String Id="Error1727" Overridable="yes" Value="Жарнама ишке ашкан жок."/>
+	<String Id="Error1726" Overridable="yes" Value="Жарнама ийгиликтүү аяктады."/>
+	<String Id="Error1725" Overridable="yes" Value="Алып салуу ишке ашкан жок."/>
+	<String Id="Error1724" Overridable="yes" Value="Алып салуу ийгиликтүү аяктады."/>
+	<String Id="Error1723" Overridable="yes" Value="Бул Windows Installer топтомунда көйгөй бар. Бул орнотууну аяктоо үчүн талап кылынган DLLди иштетүү мүмкүн эмес. Колдоо кызматкерлериңизге же пакет сатуучуга кайрылыңыз.{{ Аракет [ProductName], жазуу: [ProductName], китепкана: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Бул Windows Installer топтомунда көйгөй бар. Орнотуунун бир бөлүгү катары иштетилген программа күтүлгөндөй аяктаган жок. Колдоо кызматкерлериңизге же таңгак сатуучуга кайрылыңыз.{{ Аракет [ProductName], жайгашкан жер: [ProductName], буйрук: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Бул Windows Installer топтомунда көйгөй бар. Бул орнотууну аяктоо үчүн талап кылынган программаны иштетүү мүмкүн эмес. Колдоо кызматкерлериңизге же таңгак сатуучуга кайрылыңыз.{{ Аракет: [ProductName], жайгашкан жер: [ProductName], буйрук: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Бул Windows Installer топтомунда көйгөй бар. Бул орнотууну аяктоо үчүн талап кылынган скрипт иштетилбей койду. Колдоо кызматкерлериңизге же пакет сатуучуга кайрылыңыз.{{ Ыңгайлаштырылган аракет [ProductName] скрипт катасы [ProductName], [ProductName]: [ProductName] Сап [ProductName], Мамыча [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Windows орнотуучу кызматына кирүү мүмкүн болгон жок. Бул Windowsту коопсуз режимде иштетип жатсаңыз же Windows Орнотуучусу туура орнотулбаган болсо пайда болушу мүмкүн. Жардам алуу үчүн колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1718" Overridable="yes" Value="Файл [ProductName] санариптик кол коюу саясаты менен четке кагылды."/>
+	<String Id="Error1717" Overridable="yes" Value="Алынып салынды [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Конфигурацияланган [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Орнотулган [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="[ProductName] эски версиясын алып салуу мүмкүн эмес. Техникалык колдоо тобуңузга кайрылыңыз.{{ Система катасы [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] талап кылынган өнүмдөрдүн бирин орното албайт. Техникалык колдоо тобуңузга кайрылыңыз.{{ Система катасы: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Компьютериңизди мурунку абалына келтирүүгө керектүү файлдардын бири же бир нечеси табылган жок. Калыбына келтирүү мүмкүн болбой калат."/>
+	<String Id="Error1711" Overridable="yes" Value="Орнотуу маалыматын дискке жазып жатканда ката кетти. Жетиштүү диск мейкиндиги бар экенин текшерип, орнотууну аяктоо үчүн Кайра аракет кылуу же Жокко чыгаруу баскычын чыкылдатыңыз."/>
+	<String Id="Error1710" Overridable="yes" Value="Hûn dikarin komputera xwe vegerînin rewşa wê ya berê an jî paşê sazkirinê bidomînin. Ma hûn dixwazin sererast bikin?"/>
+	<String Id="Error1709" Overridable="yes" Value="Продукт: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Орнотуу ишке ашкан жок."/>
+	<String Id="Error1707" Overridable="yes" Value="Орнотуу ийгиликтүү аяктады."/>
+	<String Id="Error1706" Overridable="yes" Value="Продукт үчүн орнотуу пакети [ProductName] табылган жок. &amp;apos;[ProductName]&amp;apos; орнотуу пакетинин жарактуу көчүрмөсүн колдонуп, орнотууну кайра аракет кылыңыз."/>
+	<String Id="Error1705" Overridable="yes" Value="Sazkirinek berê ya ji bo vê hilberê di pêş de ye. Pêdivî ye ku hûn guheztinên ku ji hêla wê sazkirinê ve hatine çêkirin betal bikin da ku hûn berdewam bikin. Ma hûn dixwazin van guhertinan paşde bikin?"/>
+	<String Id="Error1704" Overridable="yes" Value="Sazkirinek ji bo [ProductName] niha hatiye rawestandin. Pêdivî ye ku hûn guheztinên ku ji hêla wê sazkirinê ve hatine çêkirin betal bikin da ku hûn berdewam bikin. Ma hûn dixwazin van guhertinan paşde bikin?"/>
+	<String Id="Error1703" Overridable="yes" Value="[ProductName] конфигурациясына киргизилген өзгөртүүлөр күчүнө кириши үчүн системаңызды өчүрүп күйгүзүшүңүз керек. Азыр өчүрүп күйгүзүү үчүн Ооба же кийинчерээк кол менен өчүрүүнү пландап жатсаңыз, Жок дегенди басыңыз."/>
+	<String Id="Error1702" Overridable="yes" Value="[ProductName] конфигурациясын улантуудан мурун орнотуучу тутумуңузду өчүрүп күйгүзүшү керек. Азыр өчүрүп күйгүзүү үчүн Ооба же кийинчерээк кол менен өчүрүүнү пландап жатсаңыз, Жок дегенди басыңыз."/>
+	<String Id="Error1701" Overridable="yes" Value="Ачкыч [ProductName] жараксыз. Туура ачкычты киргизгениңизди текшериңиз."/>
+	<String Id="Error1609" Overridable="yes" Value="Коопсуздук жөндөөлөрүн колдонууда ката кетти. [ProductName] жарактуу колдонуучу же топ эмес. Бул топтомдогу көйгөй же тармактагы домен контроллерине туташуу көйгөйү болушу мүмкүн. Тармак туташууңузду текшерип, Орнотууну аяктоо үчүн Кайра аракет кылуу же Жокко чыгарууну басыңыз. {{Колдонуучунун SID жайгашкан жери табылбай жатат, система катасы [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Бул өнүмдү орнотуу үчүн машинада мурда орнотулган шайкеш өнүмдөрдү таба алган жок."/>
+	<String Id="Error1607" Overridable="yes" Value="Орнотууну улантуудан мурун төмөнкү колдонмолор жабылышы керек:"/>
+	<String Id="Error1606" Overridable="yes" Value="Тармактын жайгашкан жерине кире алган жок [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Калыбына келтирүү иштетилген менен орнотууну улантуу үчүн &amp;apos;[ProductName]&amp;apos; томунда дискте орун жетишсиз. [ProductName] КБ талап кылынат, бирок [ProductName] КБ гана жеткиликтүү. Калыбына келтирүү маалыматын сактабастан орнотууну улантуу үчүн Игнор баскычын чыкылдатыңыз, бош орун бар экенин кайра текшерүү үчүн Кайра аракет кылуу баскычын басыңыз же орнотуудан чыгуу үчүн Жокко чыгаруу баскычын басыңыз."/>
+	<String Id="Error1604" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; продукт мурунтан эле орнотулган, бул продуктту орнотууга жол бербейт. Бул эки продукт бири-бирине дал келбейт."/>
+	<String Id="Error1603" Overridable="yes" Value="[ProductName][ProductName] файлы төмөнкү процесс менен колдонулууда{: Аты: [ProductName], Id: [ProductName], Терезе аталышы: &amp;apos;[ProductName]&amp;apos;}. Бул колдонмону жаап, кайра аракет кылыңыз."/>
+	<String Id="Error1602" Overridable="yes" Value="Ma tu bi rastî dixwazî betal bikî?"/>
+	<String Id="Error1601" Overridable="yes" Value="Дисктеги бош орун жок -- Көлөм: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="Колдонуучу &amp;apos;[ProductName]&amp;apos; мурда &amp;apos;[ProductName]&amp;apos; продуктусун орнотууну баштаган. Бул колдонуучу ал продуктту колдонуудан мурун ошол орнотууну кайра иштетиши керек болот."/>
+	<String Id="Error1502" Overridable="yes" Value="Колдонуучу &amp;apos;[ProductName]&amp;apos; мурда &amp;apos;[ProductName]&amp;apos; продуктусун орнотууну баштаган. Бул колдонуучу ал продуктту колдонуудан мурун ошол орнотууну кайра иштетиши керек болот. Учурдагы орнотууңуз азыр уланат."/>
+	<String Id="Error1501" Overridable="yes" Value="Корголгон дайындарга кирүү катасы. Сураныч, Windows Орноткучтун туура конфигурацияланганын текшерип, кайра орнотуп көрүңүз."/>
+	<String Id="Error1500" Overridable="yes" Value="Дагы бир орнотуу жүрүп жатат. Сиз бул орнотууну улантуудан мурун бүтүрүү керек."/>
+	<String Id="Error1410" Overridable="yes" Value="Жеткиликтүү реестр мейкиндигин көбөйтүү мүмкүн эмес. [ProductName] Бул тиркемени орнотуу үчүн KB бош реестр мейкиндиги талап кылынат."/>
+	<String Id="Error1409" Overridable="yes" Value="[ProductName] ачкычынын коопсуздук маалыматы окулбай койду.{{ Система катасы [ProductName].}} Ошол ачкычка жетиштүү мүмкүнчүлүгүңүз бар экенин текшериңиз же колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1408" Overridable="yes" Value="[ProductName] ачкычынын ички ачкычтарынын аталыштары алынбай койду.{{ Системанын катасы [ProductName].}} Ошол ачкычка жетиштүү мүмкүнчүлүгүңүз бар экенин текшериңиз же колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1407" Overridable="yes" Value="[ProductName] ачкычынын маани аттары алынбай койду.{{ Системанын катасы [ProductName].}} Ошол ачкычка жетиштүү мүмкүнчүлүгүңүз бар экенин текшериңиз же колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1406" Overridable="yes" Value="[ProductName] ачкычына [ProductName] мааниси жазылбай койду.{{ Системанын катасы [ProductName].}} Ошол ачкычка жетиштүү мүмкүнчүлүгүңүз бар экенин текшериңиз же колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1405" Overridable="yes" Value="[ProductName] ачкычынан [ProductName] маанисин окуй алган жок.{{ Системанын катасы [ProductName].}} Ошол ачкычка жетиштүү мүмкүнчүлүгүңүз бар экенин текшериңиз же колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1404" Overridable="yes" Value="[ProductName] ачкычы жок кылынбай койду.{{ Системанын катасы [ProductName].}} Ал ачкычка жетиштүү мүмкүнчүлүгүңүз бар экенин текшериңиз же колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1403" Overridable="yes" Value="[ProductName] ачкычынан [ProductName] мааниси жок кылынган жок.{{ Системанын катасы [ProductName].}} Ошол ачкычка жетиштүү мүмкүнчүлүгүңүз бар экенин текшериңиз же колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1402" Overridable="yes" Value="Ачкыч ачылбай койду: [ProductName].{{ Системанын катасы [ProductName].}} Ошол ачкычка жетиштүү мүмкүнчүлүгүңүз бар экенин текшериңиз же колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1401" Overridable="yes" Value="Ачкыч түзүлбөй койду: [ProductName].{{ Системанын катасы [ProductName].}} Ошол ачкычка жетиштүү мүмкүнчүлүгүңүз бар экенин текшериңиз же колдоо кызматкерлерине кайрылыңыз."/>
+	<String Id="Error1336" Overridable="yes" Value="Бул орнотууну аяктоо үчүн зарыл болгон убактылуу файлды түзүүдө ката кетти.{{ Папка: [ProductName]. Системанын ката коду: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Бул орнотуу үчүн талап кылынган &amp;apos;[ProductName]&amp;apos; кабинет файлы бузулган жана аны колдонууга болбойт. Бул тармак катасын, CD-ROMдон окуу катасын же бул топтомдогу көйгөйдү көрсөтүшү мүмкүн."/>
+	<String Id="Error1334" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; файлын орнотуу мүмкүн эмес, анткени файл &amp;apos;[ProductName]&amp;apos; кабинеттик файлында табылбайт. Бул тармак катасын, CD-ROMдон окуу катасын же бул топтомдогу көйгөйдү көрсөтүшү мүмкүн."/>
+	<String Id="Error1333" Overridable="yes" Value="[ProductName] файлын туура түзө албай койду: CRC катасы."/>
+	<String Id="Error1332" Overridable="yes" Value="[ProductName] файл туура жылдырылган жок: CRC катасы."/>
+	<String Id="Error1331" Overridable="yes" Value="[ProductName] файлды туура көчүрүү ишке ашкан жок: CRC катасы."/>
+	<String Id="Error1330" Overridable="yes" Value="Кабинет файлында [ProductName] жараксыз санарип кол тамгасы бар болгондуктан, талап кылынган файлды орнотуу мүмкүн эмес. Бул кабинет файлы бузулганын көрсөтүп турат.{{ Ката [ProductName] WinVerifyTrust тарабынан кайтарылган.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Кабинет файлына [ProductName] санарип кол коюлбагандыктан, талап кылынган файлды орнотуу мүмкүн эмес. Бул кабинеттин файлы бузулганын көрсөтүшү мүмкүн."/>
+	<String Id="Error1328" Overridable="yes" Value="Файлга патчты колдонууда ката кетти [ProductName]. Ал, балким, башка жолдор менен жаңыртылган жана мындан ары бул патч менен өзгөртүлбөйт. Көбүрөөк маалымат алуу үчүн патч сатуучуга кайрылыңыз.{{ Системалык ката: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Жараксыз диск: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Файлдын коопсуздугун алууда ката кетти: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; жарактуу кыска файл аты эмес."/>
+	<String Id="Error1324" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; папка жолу жараксыз белгини камтыйт."/>
+	<String Id="Error1323" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; папка жолу папка жолдорунда жараксыз сөздөрдү камтыйт."/>
+	<String Id="Error1322" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; папка жолунун бир бөлүгү жараксыз. Ал бош же система уруксат берген узундуктан ашып кетти."/>
+	<String Id="Error1321" Overridable="yes" Value="Орноткучтун бул файлды өзгөртүү үчүн укуктары жетишсиз: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Көрсөтүлгөн жол өтө узун: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Булак файл шкафын ачууга аракет кылып жатканда тармак катасы кетти: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Каталог түзүүгө аракет кылып жатканда тармак катасы кетти: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Каталог түзүүгө аракет кылып жатканда ката кетти: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Файлдан окууга аракет кылып жатканда тармак катасы кетти: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Көрсөтүлгөн папкага жазуу мүмкүн эмес: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Көрсөтүлгөн жол &amp;apos;[ProductName]&amp;apos; жеткиликсиз."/>
+	<String Id="Error1313" Overridable="yes" Value="[ProductName] тому учурда жеткиликсиз. Башкасын тандаңыз."/>
+	<String Id="Error1312" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; каталогун түзүү мүмкүн эмес. Мындай аталыштагы файл мурунтан эле бар. Сураныч, файлдын атын өзгөртүп же алып салып, Кайра аракет кылуу баскычын чыкылдатыңыз же чыгуу үчүн Жокко чыгаруу баскычын басыңыз."/>
+	<String Id="Error1311" Overridable="yes" Value="Булак файл табылган жок{{(кабинет)}}: [ProductName]. Файл бар экенин жана ага кире аларыңызды текшериңиз."/>
+	<String Id="Error1310" Overridable="yes" Value="Файлга жазуу катасы: [ProductName].{{ Системалык ката [ProductName].}} Ошол каталогго кирүү мүмкүнчүлүгүңүз бар экенин текшериңиз."/>
+	<String Id="Error1309" Overridable="yes" Value="Файлдан окуу катасы: [ProductName].{{ Системалык ката [ProductName].}} Файл бар экенин жана ага кире алаарыңызды текшериңиз."/>
+	<String Id="Error1308" Overridable="yes" Value="Булак файл табылган жок: [ProductName]. Файл бар экенин жана ага кире аларыңызды текшериңиз."/>
+	<String Id="Error1307" Overridable="yes" Value="Бул файлды орнотуу үчүн дискте орун жетишсиз: [ProductName]. Дисктеги мейкиндикти бошотуп, Кайра аракет кылуу баскычын басыңыз же чыгуу үчүн Жокко чыгаруу баскычын басыңыз."/>
+	<String Id="Error1306" Overridable="yes" Value="Башка колдонмонун &amp;apos;[ProductName]&amp;apos; файлына эксклюзивдүү мүмкүнчүлүгү бар. Сураныч, бардык башка колдонмолорду өчүрүп, андан кийин Кайра аракет кылуу баскычын чыкылдатыңыз."/>
+	<String Id="Error1305" Overridable="yes" Value="[ProductName] файлынан окуу катасы.{{ Системалык ката [ProductName].}} Файлдын бар экенин жана ага кире алаарыңызды текшериңиз."/>
+	<String Id="Error1304" Overridable="yes" Value="Файлга жазуу катасы: [ProductName]. Ошол каталогго кирүү мүмкүнчүлүгүңүз бар экенин текшериңиз."/>
+	<String Id="Error1303" Overridable="yes" Value="Орноткучтун бул каталогго кирүү үчүн укуктары жетишсиз: [ProductName]. Орнотууну улантуу мүмкүн эмес. Администратор катары кириңиз же система администраторуңузга кайрылыңыз."/>
+	<String Id="Error1302" Overridable="yes" Value="Сураныч, дискти салыңыз: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; файлын түзүү мүмкүн эмес. Мындай аталыштагы каталог мурунтан эле бар. Орнотууну жокко чыгарып, башка жерге орнотуп көрүңүз."/>
+	<String Id="Error1101" Overridable="yes" Value="Файлдан окуу катасы: [ProductName].{{ Системалык ката [ProductName].}} Файл бар экенин жана ага кире алаарыңызды текшериңиз."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Орнотуу ишке ашкан жок."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Орнотуу ийгиликтүү аяктады."/>
+	<String Id="Error23" Overridable="yes" Value="Бул колдонмонун эски версияларын алып салууга даярдалууда..."/>
+	<String Id="Error22" Overridable="yes" Value="Бул колдонмонун эски версиялары өчүрүлүүдө..."/>
+	<String Id="Error21" Overridable="yes" Value="Керектүү маалымат топтолууда..."/>
+	<String Id="Error20" Overridable="yes" Value="Сураныч, Windows [ProductName] конфигурациялаганга чейин күтө туруңуз"/>
+	<String Id="Error19" Overridable="yes" Value="Орнотуучу мөөнөтүнөн мурда токтоп калды."/>
+	<String Id="Error18" Overridable="yes" Value="Орноткуч мындан ары жооп бербей жатат."/>
+	<String Id="Error17" Overridable="yes" Value="Эсте калган. Кайра аракет кылуудан мурун башка колдонмолорду өчүрүңүз."/>
+	<String Id="Error16" Overridable="yes" Value="Калган убакыт: {[ProductName] мүнөт {[ProductName] секунд}"/>
+	<String Id="Error15" Overridable="yes" Value="Аракет аяктады [ProductName]: [ProductName]. Кайтаруучу маани [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Аракеттин башталышы [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Каттоо токтотулду: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Каттоо башталды: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Билдирүүнүн түрү: [ProductName], Аргумент: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Аракет [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Диск толду: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Орноткуч бул топтомду орнотууда күтүүсүз катага туш болду. Бул пакетте көйгөй бар экенин көрсөтүшү мүмкүн. Ката коду [ProductName]. {{Аргументтер: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Маалымат [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Эскертүү [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Ката [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Өчүрүүчү ката: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Продукт маалыматын жарыялоодон чыгаруу"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Файл: [ProductName], Каталог: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Жылдырылган файлдарды алып салуу"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Файл: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Камдык файлдарды алып салуу"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Çalakiya veguhestinê:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Колдонмо контексти:[ProductName], Ассамблеянын аталышы:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Чогулуш маалыматы жарыяланууда"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Колдонмо контексти:[ProductName], Ассамблеянын аталышы:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Жыйын маалыматын жарыялоо"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Файл: [ProductName], Көз карандылыктар: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Системалык каталогду орнотуу"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Аракет үчүн скрипт операцияларын түзүү:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Жарнамалык колдонмо"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Ачкыч: [ProductName], Аты: [ProductName], Мааниси: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Системанын реестринин баалуулуктарын жазуу"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Файл: [ProductName], Бөлүм: [ProductName], Ачкыч: [ProductName], Мааниси: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="INI файлдарынын маанилерин жазуу"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Аты: [ProductName], Мааниси: [ProductName], Аракет [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Айлана-чөйрө саптарын жаңыртуу"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Типтүү китепканаларды каттоодон чыгаруу"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Программанын идентификаторлорун каттоодон чыгаруу"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME Мазмун түрү: [ProductName], Кеңейтүү: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="MIME маалыматын каттоодон чыгаруу"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Арип: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Ариптерди каттоодон чыгаруу"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Кеңейтүү: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Кеңейтүү серверлерин каттоодон чыгаруу"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="COM+ тиркемелерин жана компоненттерин каттоодон чыгаруу"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Класс ID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Класс серверлерин каттоодон чыгарыңыз"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Өзгөчөлүк: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Өнүмдүн өзгөчөлүктөрүн жарыялоодон чыгаруу"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Компонент ID: [ProductName], Квалификациялоочу: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Квалификациялуу компоненттерди жарыялоодон чыгаруу"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Кызмат: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Кызматтарды токтотуу"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Кызмат: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Кызматтарды баштоо"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="ODBC каталогдорун баштоо"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Файл: [ProductName], Папка: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Модулдарды каттоодон чыгаруу"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Файл: [ProductName], Папка: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Модулдарды каттоо"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Квалификациялуу өнүмдөрдү издөө"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Кыска жол: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Жарлыктарды алып салуу"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Ачкыч: [ProductName], Аты-жөнү: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Системалык реестр баалуулуктарын алып салуу"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="ODBC компоненттерин алып салуу"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Файл: [ProductName], Бөлүм: [ProductName], Ачкыч: [ProductName], Мааниси: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="INI файлдарынын жазууларын алып салуу"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Папка: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Папкаларды алып салуу"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Файл: [ProductName], Каталог: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Файлдарды алып салуу"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Колдонмо: [ProductName], Буйрук сабы: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Колдонмолорду алып салуу"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Аты: [ProductName], Мааниси: [ProductName], Аракет [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Айлана-чөйрө саптарын жаңыртуу"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Файл: [ProductName], Каталог: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Кайталанган файлдарды алып салуу"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Колдонуучу катталууда"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Түрдүү китепканаларды каттоо"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Продукцияны каттоо"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Арип: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Ариптер катталууда"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Колдонуучулар: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="COM+ тиркемелерин жана компоненттерин каттоо"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Компонентти каттоо жаңыртылууда"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Файл: [ProductName], Каталог: [ProductName], Өлчөмү: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Файлдарды оңдоо"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Файл: [ProductName], Каталог: [ProductName], Өлчөмү: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Файлдарды жылдыруу"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Колдонмо: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Тиешелүү колдонмолордон өзгөчөлүк абалын көчүрүү"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Ишке киргизүү шарттарын баалоо"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Кызмат: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Жаңы кызматтарды орнотуу"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="ODBC компоненттерин орнотуу"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Табылган тиркеме: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Тиешелүү колдонмолорду издөө"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Файл: [ProductName], Каталог: [ProductName], Өлчөмү: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Кайталанма файлдарды түзүү"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Кызмат: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Кызматтарды жок кылуу"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Папка: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Папкаларды түзүү"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Квалификациялуу өнүмдөрдү издөө"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Файл: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Аткаруучу файлдарды бириктирүү"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Мүлк: [ProductName], Кол: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Орнотулган колдонмолорду издөө"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Бош орун: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Реестр мейкиндигин бөлүштүрүү"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Программанын идентификаторлорун каттоо"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME Мазмун түрү: [ProductName], Кеңейтүү: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="MIME маалыматы катталууда"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Кеңейтүү: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Кеңейтүү серверлерин каттоо"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Класс ID: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Класс серверлерин каттоо"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Продукт маалыматын жарыялоо"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Өзгөчөлүк: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Өнүмдүн өзгөчөлүктөрүн жарыялоо"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Компонент ID: [ProductName], Квалификациялоочу: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Квалификациялуу компоненттерди жарыялоо"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Кыска жол: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Жарлыктарды түзүү"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Эсептөө мейкиндигине талаптар"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Эсептөө мейкиндигине талаптар"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Эсептөө мейкиндигине талаптар"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Файл: [ProductName], Каталог: [ProductName], Өлчөмү: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Тармактык орнотуу файлдары көчүрүлүүдө"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Файл: [ProductName], Каталог: [ProductName], Өлчөмү: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Жаңы файлдарды көчүрүү"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Орнотуу текшерилүүдө"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Сураныч, [ProductName] Лицензиялык келишимин окуп чыгыңыз"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Жаңыртуу"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Орнотуу"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ez şert û mercên Peymana Lîsansê qebûl dikim"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] орнотуу устасына кош келиңиз"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Орнотуу чебери [ProductName] компьютериңизде жаңыртат. Улантуу үчүн Кийинки чыкылдатыңыз же Орнотуу устасынан чыгуу үчүн жокко чыгарыңыз."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Орнотуу устасы [ProductName] компьютериңизге орнотот. Улантуу үчүн Кийинки чыкылдатыңыз же Орнотуу устасынан чыгуу үчүн жокко чыгарыңыз."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Илеп белгиси"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Орноткуч сиздин диск мейкиндигине болгон талаптарды аныктап бүткүчө күтө туруңуз."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Кайрылуу"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] жаңыртууга даяр"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Компьютериңизден [ProductName] жаңыртуу үчүн Жаңыртуу чыкылдатыңыз. Орнотуу орнотууларыңыздын бирин карап чыгуу же өзгөртүү үчүн Артка чыкылдатыңыз. Устодон чыгуу үчүн Жокко чыгарууну басыңыз."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Жаңыртуу"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title} [ProductName] алып салууга даяр"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="[ProductName] компьютериңизден алып салуу үчүн Чыгарууну басыңыз. Орнотуу орнотууларыңыздын бирин карап чыгуу же өзгөртүү үчүн Артка чыкылдатыңыз. Устодон чыгуу үчүн Жокко чыгаруу баскычын басыңыз."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Алып салуу"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Оңдогонго даяр [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="[ProductName] орнотуусун оңдоо үчүн Оңдоону басыңыз. Орнотуу орнотууларыңыздын бирин карап чыгуу же өзгөртүү үчүн Артка чыкылдатыңыз. Устодон чыгуу үчүн Жокко чыгарууну басыңыз."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Калыбына келтирүү"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] өзгөртүүгө даяр"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Орнотууну баштоо үчүн өзгөртүү чыкылдатыңыз. Орнотуу орнотууларыңыздын бирин карап чыгуу же өзгөртүү үчүн Артка чыкылдатыңыз. Устодон чыгуу үчүн Жокко чыгаруу баскычын басыңыз."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Өзгөртүү"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] орнотууга даяр"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Орнотууну баштоо үчүн орнотууну басыңыз. Орнотуу орнотууларыңыздын бирин карап чыгуу же өзгөртүү үчүн Артка чыкылдатыңыз. Устодон чыгуу үчүн Жокко чыгарууну басыңыз."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Орнотуу"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Орнотуу устасынан чыгуу үчүн Аяктоо баскычын басыңыз."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] орнотуу үзгүлтүккө учурады. Системаңыз өзгөртүлгөн жок. Бул программаны кийинчерээк орнотуу үчүн орнотууну кайра иштетиңиз."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Орнотуу чебери үзгүлтүккө учурады"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Программанын бардык мүмкүнчүлүктөрү орнотулат. Эң көп диск мейкиндигин талап кылат."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Колдонуучуларга кайсы программанын мүмкүнчүлүктөрү орнотула турганын жана алар кайда орнотула тургандыгын тандоо мүмкүнчүлүгүн берет. Өнүккөн колдонуучулар үчүн сунушталат."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Эң кеңири таралган программа функцияларын орнотот. Көпчүлүк колдонуучуларга сунушталат."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Сиздин муктаждыктарыңызга эң туура келген орнотуу түрүн тандаңыз"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Орнотуу түрүн тандаңыз"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Толук орнотуу"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="Б&amp;толуктоо"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Ыңгайлаштырылган орнотуу"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ustom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Типтүү орнотуу"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Типтүү"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] орнотуу устасын улантуу"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Орнотуу чебери [ProductName] компьютериңизге орнотууну аяктайт. Улантуу үчүн Орнотуу же Орнотуу устасынан чыгуу үчүн Жокко чыгаруу чыкылдатыңыз."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Орнотуу"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Статусу:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Прогресс аткарылды"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Жаңыртылууда [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Орнотуу чебери [ProductName] жаңырткыча күтө туруңуз."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] алынып салынууда"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Орнотуу чебери [ProductName]ди алып салганга чейин күтө туруңуз."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Оңдолууда [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Орнотуу чебери [ProductName] оңдогонго чейин күтө туруңуз."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] өзгөртүү"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Орнотуу чебери [ProductName] өзгөрткүчө күтө туруңуз."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Орнотулууда [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Орнотуу чебери [ProductName] орнотулганча күтө туруңуз."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] орнотуу устасына кош келиңиз"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Орнотуу устасы орнотуу боюнча сизге жетекчилик кылууга даярданып жатканда күтө туруңуз."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Же болбосо, орнотуучунун артка кайтаруу функциясын өчүрүүнү тандасаңыз болот. Артка кайтарууну өчүрүү, орнотуу кандайдыр бир жол менен үзгүлтүккө учураса, орнотуучуга компьютериңиздин баштапкы абалын калыбына келтирүүгө жол бербейт. Артка кайтарууну өчүрүү тобокелдигине баргыңыз келсе, Ооба дегенди басыңыз."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Дисктеги бош орун жок"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Орнотуу үчүн талап кылынган диск мейкиндиги жеткиликтүү диск мейкиндигинен ашат."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Белгиленген томдордо учурда тандалган функциялар үчүн жетиштүү диск мейкиндиги жок. Белгиленген томдордон кээ бир файлдарды алып салсаңыз, азыраак функцияларды орнотуп же башка көздөгөн дискти тандай аласыз."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Дисктеги бош орун жок"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Орнотуу үчүн талап кылынган диск мейкиндиги жеткиликтүү диск мейкиндигинен ашат."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Белгиленген томдордо учурда тандалган функциялар үчүн жетиштүү диск мейкиндиги жок. Белгиленген томдордон кээ бир файлдарды алып салсаңыз, азыраак функцияларды орнотуп же башка көздөгөн дискти тандай аласыз."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Колдонмолорду жаппаңыз. Кайра жүктөө талап кылынат."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Тиркемелерди жаап, аларды кайра иштетүүгө аракет кылыңыз."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Колдонулуп жаткан файлдар"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Жаңыртылышы керек болгон кээ бир файлдар учурда колдонулууда."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Төмөнкү колдонмолор бул орнотуу менен жаңыртылышы керек болгон файлдарды колдонууда. Орнотуу устасына аларды жабууга уруксат берип, аларды өчүрүп күйгүзүүгө же кийинчерээк машинаны кайра жүктөөгө аракет кылсаңыз болот."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] орнотуу устасына кош келиңиз"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Орнотуу чебери [ProductName] функцияларын компьютериңизге орнотуу жолун өзгөртүүгө же аны компьютериңизден алып салууга мүмкүндүк берет. Улантуу үчүн Кийинки чыкылдатыңыз же Орнотуу устасынан чыгуу үчүн жокко чыгарыңыз."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] оңдоого болбойт."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Жок жана бузулган файлдарды, жарлыктарды жана реестрдеги жазууларды оңдоо менен эң акыркы орнотуудагы каталарды оңдойт."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] өчүрүлбөйт."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="[ProductName] компьютериңизден алып салат."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] өз алдынча тандалуучу өзгөчөлүктөргө ээ эмес."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Функцияларды орнотуу ыкмасын өзгөртүүгө мүмкүндүк берет."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Орнотууну өзгөртүү, оңдоо же алып салуу"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Сиз аткаргыңыз келген операцияны тандаңыз."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Орнотууну алып салуу"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Алып салуу"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Оңдоо орнотуу"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Калыбына келтирүү"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Орнотууну өзгөртүү"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Өзгөртүү"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Акыркы колдонуучунун лицензиялык келишими"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Сураныч, төмөнкү лицензиялык келишимди кунт коюп окуп чыгыңыз"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ez şert û mercên Peymana Lîsansê qebûl dikim"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Маалымат сөлөкөтү"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Орнотуу каталогу жергиликтүү катуу дискте болушу керек."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Өзгөртүү..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Орнотуу &amp; папка:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] демейки боюнча ар бир машина папкасына орнотулат жана бардык колдонуучулар үчүн жеткиликтүү болот. Сиз демейки орнотуу папкасын өзгөртө аласыз. Сизде жергиликтүү администратор артыкчылыктары болушу керек."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Бул &amp;машинанын бардык колдонуучулары үчүн орнотуу"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] ар бир колдонуучу үчүн орнотууну колдобойт."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] ар бир колдонуучу үчүн папкага орнотулат жана колдонуучу каттоо эсебиңиз үчүн гана жеткиликтүү болот. Сизге жергиликтүү администратор артыкчылыктары керек эмес."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Сиз үчүн &amp;орнотуу ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Орнотуу аймагы"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Орнотуу аймагын жана папканы тандаңыз"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="[ProductName]ди төмөнкүгө орнотуңуз:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Демейки папкага орнотуу үчүн Кийинки баскычын басыңыз же башкасын тандоо үчүн Өзгөртүү баскычын басыңыз."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Белгиленген папка"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Өзгөртүү..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Колдонулуп жаткан файлдар"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Жаңыртылышы керек болгон кээ бир файлдар учурда колдонулууда."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Төмөнкү колдонмолор бул орнотуу менен жаңыртылышы керек болгон файлдарды колдонууда. Бул колдонмолорду жаап, андан кийин орнотууну улантуу үчүн &amp;Кайра аракет кылуу же андан чыгуу үчүн Чыгууну басыңыз."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="E&amp;чыгуу"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Өзгөртүү"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Орнотуу"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Өнүмдүн өзгөчөлүктөрү"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Функцияларды орнотууну каалаган жолду тандаңыз."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Продукт өзгөчөлүктөрү"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Орнотуу устасынан чыгуу үчүн Аяктоо баскычын басыңыз."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Орнотуу чебери катадан улам мөөнөтүнөн мурда аяктады. Системаңыз өзгөртүлгөн жок. Бул программаны кийинчерээк орнотуу үчүн Орнотуу чеберин кайра иштетиңиз."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Орнотуу чебери мөөнөтүнөн мурда аяктады"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] орнотуу устасын аяктады"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Орнотуу устасынан чыгуу үчүн Аяктоо баскычын басыңыз."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Маалымат сөлөкөтү"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Маалымат тексти"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Диск мейкиндигине талаптар"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Тандалган функцияларды орнотуу үчүн талап кылынган диск мейкиндиги."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Бөлүнгөн томдордо тандалган функциялар үчүн жетиштүү диск мейкиндиги жок. Белгиленген томдордон кээ бир файлдарды алып салсаңыз, азыраак функцияларды орнотуп же башка көздөгөн дисктерди тандасаңыз болот."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Жайгашкан жери:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ыңгайлаштырылган орнотуу"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Функцияларды орнотууну каалаган жолду тандаңыз."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Функциялар орнотула турган жолду өзгөртүү үчүн төмөнкү дарактагы сүрөтчөлөрдү чыкылдатыңыз."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Диск &amp; Колдонуу"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Кайра коюу"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="Б&amp;карап көрүү..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Тандоо дарагы"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Маалымат сөлөкөтү"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Ma tu bi rastî dixwazî sazkirina [ProductName] betal bikî?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Бара турган папканы өзгөртүү"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Көздөгөн папканы карап чыгыңыз"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Папканын аты:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Жаңы папка түзүңүз"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Бир деңгээлге өйдө"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Кара:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Тахома"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp; өркүндөтүлгөн"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Орнотуу"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Сиз үчүн демейки параметрлери бар продуктту орнотуу үчүн Орнотуу баскычын чыкылдатыңыз. Орнотуу параметрлерин өзгөртүү үчүн Өркүндөтүлгөн баскычты басыңыз."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Бардык колдонуучулар үчүн демейки параметрлери бар продуктту орнотуу үчүн Орнотуу баскычын чыкылдатыңыз. Орнотуу параметрлерин өзгөртүү үчүн Өркүндөтүлгөн баскычты басыңыз."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Ez şert û mercên Peymana Lîsansê qebûl dikim"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Сураныч, [ProductName] Лицензиялык келишимин окуп чыгыңыз"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Орнотуу"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Басып чыгаруу"/>
+	<String Id="WixUIOK" Overridable="yes" Value="Läser in ..."/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Жок"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Ооба"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Игнорир"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Кайра аракет кылуу"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Бүтүрүү"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Жокко чыгаруу"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Кийинки"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Артка"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall конфигурациясын алып салуу"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall конфигурациясын артка кайтаруу"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall конфигурациясын орнотуу"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall конфигурациясын артка кайтаруу"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall конфигурацияланууда"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall конфигурацияланууда"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windows Firewall менен туташуу мүмкүн эмес. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Алыскы колдонмолор үчүн визуализациялар конфигурацияда опция катары жеткиликтүү"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Explorerде RAAS серверлерин көрүңүз"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Жергиликтүү компьютерде сервердик тиркемелерге алыскы колдонмо жарлыктарын түзүңүз"/>

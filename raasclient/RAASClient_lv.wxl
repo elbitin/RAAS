@@ -1,4 +1,11 @@
-﻿<WixLocalization Culture="lv" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="lv-LV-LV" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows ugunsmūra konfigurācijas atinstalēšana"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows ugunsmūra konfigurācijas atgriešana"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows ugunsmūra konfigurācijas instalēšana"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows ugunsmūra konfigurācijas atgriešana"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows ugunsmūra konfigurēšana"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows ugunsmūra konfigurēšana"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Nevar izveidot savienojumu ar Windows ugunsmūri. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizations for remote applications available as option in configuration"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="View RAAS servers in Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Create remote application shortcuts to server applications on local computer"/>

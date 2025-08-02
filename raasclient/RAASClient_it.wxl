@@ -1,4 +1,11 @@
-﻿<WixLocalization Culture="it" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="it-it-it-it" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Disinstallazione della configurazione di Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Ripristino della configurazione di Windows Firewall"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installazione della configurazione di Windows Firewall"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Ripristino della configurazione di Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Configurazione del firewall di Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Configurazione del firewall di Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Impossibile connettersi a Windows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="test. ([2] [3] [4] [5])"/>
 	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="test"/>
 	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="test"/>
@@ -9,8 +16,8 @@
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualizzazioni per applicazioni remote disponibili come opzione nella configurazione"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Visualizza i server RAAS in Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Crea collegamenti ad applicazioni remote per le applicazioni server sul computer locale"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualizzazioni"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Estensione dello spazio dei nomi Shell"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Scorciatoie remote"/>
+	<String Id="VisualizationsTit-it-it-itle" Overridable="yes" Value="Visualizzazioni"/>
+	<String Id="NamespaceTit-it-it-itle" Overridable="yes" Value="Estensione dello spazio dei nomi Shell"/>
+	<String Id="ShortcutsTit-it-it-itle" Overridable="yes" Value="Scorciatoie remote"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1040"/>
 </WixLocalization>

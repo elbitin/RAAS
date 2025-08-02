@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="si" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="si" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="පරිමාව"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="තැටි ප්රමාණය"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="අවශ්යයි"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="වෙනස"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="ලබා ගත හැක"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="ඉතිරි කාලය:{ [ProductName] මිනිත්තු { [ProductName] තත්පර}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="මෙම විශේෂාංගයට ඔබගේ දෘඪ තැටියේ [ProductName] අවශ්‍ය වේ. එහි [ProductName] [ProductName] උප විශේෂාංග තෝරා ඇත. ඔබගේ දෘඪ තැටියේ උප විශේෂාංග සඳහා [ProductName] අවශ්‍ය වේ."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="මෙම විශේෂාංගයට ඔබගේ දෘඪ තැටියේ [ProductName] අවශ්‍ය වේ. එහි [ProductName] [ProductName] උප විශේෂාංග තෝරා ඇත. උප විශේෂාංග ඔබගේ දෘඪ තැටියේ [ProductName] නිදහස් කරයි."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="මෙම විශේෂාංගය ඔබගේ දෘඪ තැටියේ [ProductName] නිදහස් කරයි. එහි [ProductName] [ProductName] උප විශේෂාංග තෝරා ඇත. ඔබගේ දෘඪ තැටියේ උප විශේෂාංග සඳහා [ProductName] අවශ්‍ය වේ."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="මෙම විශේෂාංගය ඔබගේ දෘඪ තැටියේ [ProductName] නිදහස් කරයි. එහි [ProductName] [ProductName] උප විශේෂාංග තෝරා ඇත. උප විශේෂාංග ඔබගේ දෘඪ තැටියේ [ProductName] නිදහස් කරයි."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="මෙම විශේෂාංගය ජාලයෙන් ක්‍රියාත්මක වීමට පවතිනු ඇත"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="මෙම විශේෂාංගය දේශීය දෘඪ තැටියේ ස්ථාපනය කිරීමට ජාල තත්වයෙන් ධාවනයෙන් වෙනස් වේ"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="මෙම විශේෂාංගය ජාල තත්වයේ සිට අවශ්‍ය විට ස්ථාපනය කිරීමට සැකසීමට වෙනස් වේ"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="මෙම විශේෂාංගය සම්පූර්ණයෙන්ම අස්ථාපනය කරනු ඇත, ඔබට එය ජාලයෙන් ධාවනය කිරීමට නොහැකි වනු ඇත"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="මෙම විශේෂාංගය ඔබගේ ප්‍රාදේශීය දෘඪ තැටියෙන් ඉවත් කරනු ඇත, නමුත් ජාලයෙන් ක්‍රියාත්මක වීමට තවමත් පවතිනු ඇත"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="මෙම විශේෂාංගය ඔබගේ දේශීය දෘඪ තැටියේ පවතිනු ඇත"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="මෙම විශේෂාංගය ඔබගේ දේශීය දෘඪ තැටියෙන් ඉවත් කරනු ඇත, නමුත් CD තැටියෙන් ධාවනය කිරීමට තවමත් පවතී"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="මෙම විශේෂාංගය ඔබගේ ප්‍රාදේශීය දෘඪ තැටියෙන් ඉවත් කරනු ඇත, නමුත් අවශ්‍ය විට ස්ථාපනය කිරීමට සකසනු ඇත"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="මෙම විශේෂාංගය සම්පූර්ණයෙන්ම ඉවත් කරනු ලැබේ"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="මෙම විශේෂාංගය සඳහා පිරිවැය සම්පාදනය කරමින්..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="මෙම විශේෂාංගයට ඔබගේ දෘඪ තැටියේ [ProductName] අවශ්‍ය වේ."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="මෙම විශේෂාංගය ඔබගේ දෘඪ තැටියේ [ProductName] නිදහස් කරයි."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="මෙම විශේෂාංගය දේශීය දෘඪ තැටියේ ස්ථාපනය කිරීමට CD තත්වයෙන් ධාවනයෙන් වෙනස් වේ"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="මෙම විශේෂාංගය CD තැටියෙන් ධාවනය කිරීමට පවතිනු ඇත"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="මෙම විශේෂාංගය CD තත්වයේ සිට ධාවනයේ සිට අවශ්‍ය විට ස්ථාපනය කිරීමට සකසන්න වෙනස් වේ"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="මෙම විශේෂාංගය සම්පූර්ණයෙන්ම අස්ථාපනය කරනු ඇත, ඔබට එය CD තැටියෙන් ධාවනය කිරීමට නොහැකි වනු ඇත"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="ජාලයෙන් ධාවනය කිරීමට මෙම විශේෂාංගය ලබා ගත හැකි වනු ඇත"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="මෙම විශේෂාංගය ඔබගේ දේශීය දෘඪ තැටියේ ස්ථාපනය කෙරේ"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="මෙම විශේෂාංගය සීඩී තැටියෙන් ක්‍රියාත්මක කිරීමට හැකි වනු ඇත"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="අවශ්‍ය විටෙක ස්ථාපනය කෙරේ"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="මෙම විශේෂාංගය ලබා ගත නොහැකි වනු ඇත"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="ජාලයෙන් ධාවනය කිරීමට මෙම විශේෂාංගය ස්ථාපනය කෙරේ"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="මෙම විශේෂාංගය දේශීය දෘඪ තැටියේ ස්ථාපනය කරනු ඇත"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="මෙම විශේෂාංගය CD තැටියෙන් ක්‍රියාත්මක වීමට ස්ථාපනය කෙරේ"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="මෙම අංගය අවශ්‍ය විට ස්ථාපනය කිරීමට සකසනු ඇත"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="මෙම විශේෂාංගය අස්ථාපනය කර පවතිනු ඇත"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="අවශ්‍ය තොරතුරු රැස් කරමින්..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="ෆෝල්ඩරය|නව ෆෝල්ඩරය"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="ජාලයෙන් ධාවනය කිරීමට ස්ථාපනය කරනු ඇත"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="දේශීය දෘඪ තැටියේ ස්ථාපනය කරනු ඇත"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="සංයුක්ත තැටියෙන් ධාවනය කිරීමට ස්ථාපනය කරනු ඇත"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="ජාලයෙන් ධාවනය කිරීමට සම්පූර්ණ විශේෂාංගය ස්ථාපනය කෙරේ"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="සම්පූර්ණ විශේෂාංගය දේශීය දෘඪ තැටියේ ස්ථාපනය කෙරේ"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="සංයුක්ත තැටියෙන් ධාවනය කිරීමට සම්පූර්ණ අංගය ස්ථාපනය කෙරේ"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="අවශ්‍ය විට විශේෂාංගය ස්ථාපනය කෙරේ"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="සම්පූර්ණ විශේෂාංගය නොතිබෙනු ඇත"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="කේ.බී"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="බයිට්"/>
+	<String Id="Error1938" Overridable="yes" Value="එකලස් කිරීම &amp;apos;[ProductName]&amp;apos; ස්ථාපනය කිරීමේදී දෝෂයක් ඇති විය. එකලස් කිරීමේ මොඩියුල එකක් හෝ කිහිපයක් සොයාගත නොහැකි විය. HRESULT: [ProductName].{{ එකලස් අතුරුමුහුණත: [ProductName], ශ්‍රිතය: [ProductName], සංරචකය: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="එකලස් කිරීම &amp;apos;[ProductName]&amp;apos; ස්ථාපනය කිරීමේදී දෝෂයක් ඇති විය. අත්සන හෝ නාමාවලිය සත්‍යාපනය කළ නොහැකි හෝ වලංගු නැත. HRESULT: [ProductName].{{ එකලස් අතුරුමුහුණත: [ProductName], ශ්‍රිතය: [ProductName], සංරචකය: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="එකලස් කිරීම &amp;apos;[ProductName]&amp;apos; ස්ථාපනය කිරීමේදී දෝෂයක් ඇති විය. එකලස් කිරීම දැඩි ලෙස නම් කර නැත හෝ අවම යතුරු දිගකින් අත්සන් කර නැත. HRESULT: [ProductName].{{ එකලස් අතුරුමුහුණත: [ProductName], ශ්‍රිතය: [ProductName], සංරචකය: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="එකලස් කිරීම &amp;apos;[ProductName]&amp;apos; ස්ථාපනය කිරීමේදී දෝෂයක් ඇති විය. වැඩි විස්තර සඳහා කරුණාකර උදව් සහ සහාය වෙත යොමු වන්න. HRESULT: [ProductName].{{ එකලස් අතුරුමුහුණත: [ProductName], ශ්‍රිතය: [ProductName], සංරචකය: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="යන්ත්‍රයේ ප්‍රතිපත්ති හරහා පරිශීලක ස්ථාපනයන් අක්‍රිය කර ඇත."/>
+	<String Id="Error1933" Overridable="yes" Value="Windows Installer සේවාවට ආරක්ෂිත Windows ගොනු එකක් හෝ කිහිපයක් යාවත්කාලීන කළ නොහැක.{{ SFP දෝෂය: [ProductName]. ආරක්ෂිත ගොනු ලැයිස්තුව:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Windows Installer සේවාවට ආරක්ෂිත Windows ගොනුව යාවත්කාලීන කළ නොහැක [ProductName].{{ Package version: [ProductName], OS Protected version: [ProductName], SFP දෝෂය: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="වින්ඩෝස් ස්ථාපක සේවාවට පද්ධති ගොනුව [ProductName] යාවත්කාලීන කළ නොහැක, මන්ද ගොනුව වින්ඩෝස් විසින් ආරක්ෂා කර ඇත. මෙම වැඩසටහන නිවැරදිව ක්‍රියා කිරීම සඳහා ඔබට ඔබගේ මෙහෙයුම් පද්ධතිය යාවත්කාලීන කිරීමට අවශ්‍ය විය හැක.{{ පැකේජ අනුවාදය: [ProductName], OS ආරක්ෂිත අනුවාදය: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="සේවාව සඳහා විස්තරය &amp;apos;[ProductName]&amp;apos; ([ProductName]) වෙනස් කළ නොහැක."/>
+	<String Id="Error1929" Overridable="yes" Value="COM+ යෙදුම ලියාපදිංචියෙන් ඉවත් කිරීමේ දෝෂයකි. වැඩි විස්තර සඳහා ඔබේ සහායක පිරිස් අමතන්න."/>
+	<String Id="Error1928" Overridable="yes" Value="COM+ යෙදුම ලියාපදිංචි කිරීමේ දෝෂයකි. වැඩි විස්තර සඳහා ඔබේ සහායක පිරිස් අමතන්න."/>
+	<String Id="Error1927" Overridable="yes" Value="සංරචක සේවා (COM+ 1.0) මෙම පරිගණකයේ ස්ථාපනය කර නොමැත. මෙම ස්ථාපනය සාර්ථකව සම්පූර්ණ කිරීම සඳහා සංරචක සේවා අවශ්‍ය වේ. සංරචක සේවා Windows 2000 මත පවතී."/>
+	<String Id="Error1926" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; ගොනුව සඳහා ගොනු ආරක්ෂාව සැකසීමට නොහැකි විය. දෝෂය: [ProductName]. මෙම ගොනුව සඳහා ආරක්ෂක අවසර වෙනස් කිරීමට ඔබට ප්‍රමාණවත් වරප්‍රසාද ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1925" Overridable="yes" Value="යන්ත්‍රයේ සියලුම පරිශීලකයින් සඳහා මෙම ස්ථාපනය සම්පූර්ණ කිරීමට ඔබට ප්‍රමාණවත් වරප්‍රසාද නොමැත. පරිපාලක ලෙස ලොග් වී මෙම ස්ථාපනය නැවත උත්සාහ කරන්න."/>
+	<String Id="Error1924" Overridable="yes" Value="පරිසර විචල්‍ය &amp;apos;[ProductName]&amp;apos; යාවත්කාලීන කළ නොහැක. පරිසර විචල්‍යයන් වෙනස් කිරීමට ඔබට ප්‍රමාණවත් වරප්‍රසාද ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1923" Overridable="yes" Value="සේවාව &amp;apos;[ProductName]&amp;apos; ([ProductName]) ස්ථාපනය කළ නොහැකි විය. පද්ධති සේවා ස්ථාපනය කිරීමට ඔබට ප්‍රමාණවත් වරප්‍රසාද ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1922" Overridable="yes" Value="සේවාව &amp;apos;[ProductName]&amp;apos; ([ProductName]) මැකීමට නොහැකි විය. පද්ධති සේවා ඉවත් කිරීමට ඔබට ප්‍රමාණවත් වරප්‍රසාද ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1921" Overridable="yes" Value="සේවාව &amp;apos;[ProductName]&amp;apos; ([ProductName]) නැවැත්විය නොහැකි විය. පද්ධති සේවා නැවැත්වීමට ඔබට ප්‍රමාණවත් වරප්‍රසාද ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1920" Overridable="yes" Value="සේවාව &amp;apos;[ProductName]&amp;apos; ([ProductName]) ආරම්භ කිරීමට අසමත් විය. පද්ධති සේවා ආරම්භ කිරීමට ඔබට ප්‍රමාණවත් වරප්‍රසාද ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1919" Overridable="yes" Value="ODBC දත්ත මූලාශ්‍රය වින්‍යාස කිරීමේ දෝෂයකි: [ProductName], ODBC දෝෂය [ProductName]: [ProductName]. ගොනුව [ProductName] පවතින බවත් ඔබට එයට ප්‍රවේශ විය හැකි බවත් තහවුරු කරන්න."/>
+	<String Id="Error1918" Overridable="yes" Value="ODBC ධාවකය ස්ථාපනය කිරීමේ දෝෂය: [ProductName], ODBC දෝෂය [ProductName]: [ProductName]. ගොනුව [ProductName] පවතින බවත් ඔබට එයට ප්‍රවේශ විය හැකි බවත් තහවුරු කරන්න."/>
+	<String Id="Error1917" Overridable="yes" Value="ODBC ධාවකය ඉවත් කිරීමේ දෝෂය: [ProductName], ODBC දෝෂය [ProductName]: [ProductName]. ODBC ධාවක ඉවත් කිරීමට ඔබට ප්‍රමාණවත් වරප්‍රසාද ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1916" Overridable="yes" Value="ODBC ධාවක කළමනාකරු ස්ථාපනය කිරීමේ දෝෂය, ODBC දෝෂය [ProductName]: [ProductName]. ඔබගේ සහායක පුද්ගලයින් අමතන්න."/>
+	<String Id="Error1915" Overridable="yes" Value="ODBC ධාවක කළමනාකරු ඉවත් කිරීමේ දෝෂයකි, ODBC දෝෂය [ProductName]: [ProductName]. ඔබගේ සහායක පුද්ගලයින් අමතන්න."/>
+	<String Id="Error1914" Overridable="yes" Value="නැවත පණගැන්වීමේදී [ProductName] ගොනුව ප්‍රතිස්ථාපනය කිරීමට [ProductName] ගොනුව කාලසටහන්ගත කළ නොහැක. [ProductName] ගොනු කිරීමට ඔබට ලිවීමේ අවසර ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1913" Overridable="yes" Value="ini ගොනුව [ProductName][ProductName] යාවත්කාලීන කිරීමට නොහැකි විය. ගොනුව පවතින බවත් ඔබට එයට ප්‍රවේශ විය හැකි බවත් තහවුරු කරන්න."/>
+	<String Id="Error1912" Overridable="yes" Value="ගොනුව [ProductName] සඳහා වර්ගයේ පුස්තකාලය ලියාපදිංචියෙන් ඉවත් කළ නොහැක. ඔබගේ සහායක පුද්ගලයින් අමතන්න."/>
+	<String Id="Error1911" Overridable="yes" Value="ගොනුව [ProductName] සඳහා පුස්තකාල වර්ගය ලියාපදිංචි කිරීමට නොහැකි විය. ඔබගේ සහායක පුද්ගලයින් අමතන්න."/>
+	<String Id="Error1910" Overridable="yes" Value="කෙටි මග ඉවත් කිරීමට නොහැකි විය [ProductName]. කෙටිමං ගොනුව පවතින බවත් ඔබට එයට ප්‍රවේශ විය හැකි බවත් තහවුරු කරන්න."/>
+	<String Id="Error1909" Overridable="yes" Value="කෙටිමං [ProductName] තැනීමට නොහැකි විය. ගමනාන්ත ෆෝල්ඩරය පවතින බවත් ඔබට එයට ප්‍රවේශ විය හැකි බවත් තහවුරු කරන්න."/>
+	<String Id="Error1908" Overridable="yes" Value="අකුරු [ProductName] ලියාපදිංචියෙන් ඉවත් කිරීමට නොහැකි විය. ඔබට අකුරු ඉවත් කිරීමට ප්‍රමාණවත් අවසර ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1907" Overridable="yes" Value="අකුරු [ProductName] ලියාපදිංචි කිරීමට නොහැකි විය. ඔබට අකුරු ස්ථාපනය කිරීමට ප්‍රමාණවත් අවසර ඇති බවත්, පද්ධතිය මෙම අකුරු සඳහා සහය දක්වන බවත් තහවුරු කරන්න."/>
+	<String Id="Error1906" Overridable="yes" Value="පැකේජය හැඹිලිගත කිරීමට අසමත් විය [ProductName]. දෝෂය: [ProductName]. ඔබගේ සහායක පුද්ගලයින් අමතන්න."/>
+	<String Id="Error1905" Overridable="yes" Value="මොඩියුලය [ProductName] ලියාපදිංචියෙන් ඉවත් කිරීමට අසමත් විය. HRESULT [ProductName]. ඔබගේ සහායක පුද්ගලයින් අමතන්න."/>
+	<String Id="Error1904" Overridable="yes" Value="මොඩියුලය [ProductName] ලියාපදිංචි කිරීමට අසමත් විය. HRESULT [ProductName]. ඔබගේ සහායක පුද්ගලයින් අමතන්න."/>
+	<String Id="Error1903" Overridable="yes" Value="නැවත පණගැන්වීමේ මෙහෙයුම උපලේඛනගත කිරීම: ගොනුව මකා දැමීම [ProductName]. මෙහෙයුම සම්පූර්ණ කිරීම සඳහා නැවත ආරම්භ කළ යුතුය."/>
+	<String Id="Error1902" Overridable="yes" Value="නැවත පණගැන්වීමේ මෙහෙයුම උපලේඛනගත කිරීම: ගොනුව [ProductName] [ProductName] ලෙස නැවත නම් කිරීම. මෙහෙයුම සම්පූර්ණ කිරීම සඳහා නැවත ආරම්භ කළ යුතුය."/>
+	<String Id="Error1901" Overridable="yes" Value="මූලාශ්‍ර ස්ථාපන දත්ත ගබඩාවෙන් කියවීමට උත්සාහ කිරීමේ දෝෂයකි: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="ස්ථාපනය සඳහා වලංගු ගමනාන්ත ෆෝල්ඩරයක් තීරණය කළ නොහැක."/>
+	<String Id="Error1806" Overridable="yes" Value="ඔබට මෙම ෆෝල්ඩරය කියවීමට ප්‍රමාණවත් වරප්‍රසාද නොමැත."/>
+	<String Id="Error1805" Overridable="yes" Value="ෆෝල්ඩරය [ProductName] නොපවතී. කරුණාකර පවතින ෆෝල්ඩරයකට මාර්ගයක් ඇතුළු කරන්න."/>
+	<String Id="Error1804" Overridable="yes" Value="ධාවකයේ තැටියක් නොමැත [ProductName]. කරුණාකර එකක් ඇතුළු කර නැවත උත්සාහ කරන්න ක්ලික් කරන්න, නැතහොත් බ්‍රවුස් සංවාදයට ආපසු යාමට අවලංගු කරන්න ක්ලික් කර වෙනත් වෙළුමක් තෝරන්න."/>
+	<String Id="Error1803" Overridable="yes" Value="ධාවකයේ තැටියක් නොමැත [ProductName]. කරුණාකර එකක් ඇතුළු කර නැවත උත්සාහ කරන්න ක්ලික් කරන්න, නැතහොත් කලින් තෝරාගත් පරිමාව වෙත ආපසු යාමට අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="Error1802" Overridable="yes" Value="මතකය ඉවරයි. නැවත උත්සාහ කිරීමට පෙර වෙනත් යෙදුම් වසා දමන්න."/>
+	<String Id="Error1801" Overridable="yes" Value="මාර්ගය [ProductName] වලංගු නැත. කරුණාකර වලංගු මාර්ගයක් සඳහන් කරන්න."/>
+	<String Id="Error1732" Overridable="yes" Value="[ProductName] جي انسٽاليشن کي مڪمل ڪرڻ لاء، توهان کي ڪمپيوٽر کي ٻيهر شروع ڪرڻو پوندو. ٻيا استعمال ڪندڙ هن وقت هن ڪمپيوٽر تي لاگ ان ٿيل آهن، ۽ ٻيهر شروع ڪرڻ سبب ٿي سگهي ٿو ته اهي پنهنجو ڪم وڃائي سگهن. ڇا توھان ھاڻي ٻيهر شروع ڪرڻ چاھيو ٿا؟"/>
+	<String Id="Error1731" Overridable="yes" Value="නිෂ්පාදනය සඳහා මූලාශ්‍ර ස්ථාපන පැකේජය [ProductName] සේවාදායක පැකේජය සමඟ සමමුහුර්ත නොවේ. &amp;apos;[ProductName]&amp;apos; ස්ථාපන පැකේජයේ වලංගු පිටපතක් භාවිතයෙන් ස්ථාපනය නැවත උත්සාහ කරන්න."/>
+	<String Id="Error1730" Overridable="yes" Value="මෙම යෙදුම ඉවත් කිරීමට ඔබ පරිපාලකයෙකු විය යුතුය. මෙම යෙදුම ඉවත් කිරීමට, ඔබට පරිපාලකයෙකු ලෙස ලොග් විය හැකිය, නැතහොත් සහාය සඳහා ඔබේ තාක්ෂණික සහාය කණ්ඩායම අමතන්න."/>
+	<String Id="Error1729" Overridable="yes" Value="වින්‍යාස කිරීම අසාර්ථක විය."/>
+	<String Id="Error1728" Overridable="yes" Value="වින්‍යාස කිරීම සාර්ථකව නිම කරන ලදී."/>
+	<String Id="Error1727" Overridable="yes" Value="වෙළඳ දැන්වීම අසාර්ථක විය."/>
+	<String Id="Error1726" Overridable="yes" Value="දැන්වීම සාර්ථකව නිම කරන ලදී."/>
+	<String Id="Error1725" Overridable="yes" Value="ඉවත් කිරීම අසාර්ථක විය."/>
+	<String Id="Error1724" Overridable="yes" Value="ඉවත් කිරීම සාර්ථකව නිම කරන ලදී."/>
+	<String Id="Error1723" Overridable="yes" Value="මෙම Windows Installer පැකේජයේ ගැටලුවක් ඇත. මෙම ස්ථාපනය සම්පූර්ණ කිරීමට අවශ්‍ය DLL එකක් ධාවනය කළ නොහැක. ඔබගේ සහායක පුද්ගලයින් හෝ පැකේජ වෙළෙන්දා අමතන්න.{{ ක්‍රියාව [ProductName], ඇතුල්වීම: [ProductName], පුස්තකාලය: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="මෙම Windows Installer පැකේජයේ ගැටලුවක් ඇත. සැකසුමේ කොටසක් ලෙස ක්‍රියාත්මක වූ වැඩසටහනක් බලාපොරොත්තු වූ පරිදි අවසන් නොවීය. ඔබගේ සහායක පුද්ගලයින් හෝ පැකේජ වෙළෙන්දා අමතන්න.{{ ක්‍රියාව [ProductName], ස්ථානය: [ProductName], විධානය: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="මෙම Windows Installer පැකේජයේ ගැටලුවක් ඇත. මෙම ස්ථාපනය සම්පූර්ණ කිරීමට අවශ්‍ය වැඩසටහනක් ක්‍රියාත්මක කළ නොහැක. ඔබගේ සහායක පුද්ගලයින් හෝ පැකේජ වෙළෙන්දා අමතන්න.{{ ක්‍රියාව: [ProductName], ස්ථානය: [ProductName], විධානය: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="මෙම Windows Installer පැකේජයේ ගැටලුවක් ඇත. මෙම ස්ථාපනය සම්පූර්ණ කිරීමට අවශ්‍ය ස්ක්‍රිප්ට් එකක් ධාවනය කළ නොහැක. ඔබගේ සහායක පුද්ගලයින් හෝ පැකේජ වෙළෙන්දා අමතන්න.{{ අභිරුචි ක්‍රියාව [ProductName] ස්ක්‍රිප්ට් දෝෂය [ProductName], [ProductName]: [ProductName] පේළිය [ProductName], තීරුව [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Windows ස්ථාපක සේවාව වෙත ප්‍රවේශ විය නොහැක. ඔබ වින්ඩෝස් ආරක්ෂිත මාදිලියේ ධාවනය කරන්නේ නම් හෝ වින්ඩෝස් ස්ථාපකය නිවැරදිව ස්ථාපනය කර නොමැති නම් මෙය සිදුවිය හැක. සහාය සඳහා ඔබේ සහායක පුද්ගලයින් අමතන්න."/>
+	<String Id="Error1718" Overridable="yes" Value="ගොනුව [ProductName] ඩිජිටල් අත්සන ප්‍රතිපත්තිය මගින් ප්‍රතික්ෂේප කරන ලදී."/>
+	<String Id="Error1717" Overridable="yes" Value="ඉවත් කරන ලදී [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="වින්‍යාස කර ඇත [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="ස්ථාපිත [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="[ProductName] හි පැරණි අනුවාදය ඉවත් කළ නොහැක. ඔබගේ තාක්ෂණික සහාය කණ්ඩායම අමතන්න.{{ පද්ධති දෝෂය [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] එහි අවශ්‍ය නිෂ්පාදන වලින් එකක් ස්ථාපනය කළ නොහැක. ඔබගේ තාක්ෂණික සහාය කණ්ඩායම අමතන්න.{{ පද්ධති දෝෂය: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="ඔබේ පරිගණකය එහි පෙර තත්ත්වයට ප්‍රතිසාධනය කිරීමට අවශ්‍ය ගොනු එකක් හෝ කිහිපයක් සොයාගත නොහැකි විය. පුනරුත්ථාපනය කළ නොහැකි වනු ඇත."/>
+	<String Id="Error1711" Overridable="yes" Value="ස්ථාපන තොරතුරු තැටියට ලිවීමේදී දෝෂයක් ඇති විය. ප්‍රමාණවත් තැටි ඉඩක් තිබේදැයි පරීක්ෂා කර, ස්ථාපනය අවසන් කිරීමට නැවත උත්සාහ කරන්න, නැතහොත් අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="Error1710" Overridable="yes" Value="توھان پنھنجي ڪمپيوٽر کي ان جي پوئين حالت ڏانھن بحال ڪري سگھو ٿا يا بعد ۾ انسٽاليشن جاري رکو. ڇا توھان بحال ڪرڻ چاھيو ٿا؟"/>
+	<String Id="Error1709" Overridable="yes" Value="නිෂ්පාදනය: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="ස්ථාපනය අසාර්ථක විය."/>
+	<String Id="Error1707" Overridable="yes" Value="ස්ථාපනය සාර්ථකව අවසන්."/>
+	<String Id="Error1706" Overridable="yes" Value="නිෂ්පාදනය [ProductName] සඳහා ස්ථාපන පැකේජයක් සොයාගත නොහැක. &amp;apos;[ProductName]&amp;apos; ස්ථාපන පැකේජයේ වලංගු පිටපතක් භාවිතයෙන් ස්ථාපනය නැවත උත්සාහ කරන්න."/>
+	<String Id="Error1705" Overridable="yes" Value="ھن پراڊڪٽ لاءِ اڳئين تنصيب جاري آھي. جاري رکڻ لاءِ توھان کي ان انسٽاليشن پاران ڪيل تبديلين کي واپس ڪرڻ گھرجي. ڇا توھان انھن تبديلين کي واپس ڪرڻ چاھيو ٿا؟"/>
+	<String Id="Error1704" Overridable="yes" Value="[ProductName] لاءِ انسٽاليشن في الحال معطل آهي. جاري رکڻ لاءِ توھان کي ان انسٽاليشن پاران ڪيل تبديلين کي واپس ڪرڻ گھرجي. ڇا توھان انھن تبديلين کي واپس ڪرڻ چاھيو ٿا؟"/>
+	<String Id="Error1703" Overridable="yes" Value="[ProductName] වෙත සිදු කරන ලද වින්‍යාස වෙනස්කම් බලාත්මක වීමට ඔබ ඔබේ පද්ධතිය නැවත ආරම්භ කළ යුතුය. දැන් නැවත ආරම්භ කිරීමට ඔව් ක්ලික් කරන්න හෝ ඔබ පසුව හස්තීයව නැවත ආරම්භ කිරීමට අදහස් කරන්නේ නම් නැත."/>
+	<String Id="Error1702" Overridable="yes" Value="[ProductName] හි වින්‍යාසය දිගටම කරගෙන යාමට පෙර ස්ථාපකය ඔබේ පද්ධතිය නැවත ආරම්භ කළ යුතුය. දැන් නැවත ආරම්භ කිරීමට ඔව් ක්ලික් කරන්න හෝ ඔබ පසුව හස්තීයව නැවත ආරම්භ කිරීමට අදහස් කරන්නේ නම් නැත."/>
+	<String Id="Error1701" Overridable="yes" Value="යතුර [ProductName] වලංගු නැත. ඔබ නිවැරදි යතුර ඇතුළු කළ බව තහවුරු කරන්න."/>
+	<String Id="Error1609" Overridable="yes" Value="ආරක්ෂක සැකසුම් යෙදීමේදී දෝෂයක් ඇති විය. [ProductName] වලංගු පරිශීලකයෙකු හෝ කණ්ඩායමක් නොවේ. මෙය පැකේජයේ ගැටලුවක් හෝ ජාලයේ වසම් පාලකයකට සම්බන්ධ වීමේ ගැටලුවක් විය හැක. ඔබගේ ජාල සම්බන්ධතාවය පරීක්ෂා කර ස්ථාපනය අවසන් කිරීමට නැවත උත්සාහ කරන්න, හෝ අවලංගු කරන්න ක්ලික් කරන්න. {{පරිශීලකයාගේ SID සොයා ගැනීමට නොහැකි විය, පද්ධති දෝෂය [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="මෙම නිෂ්පාදනය ස්ථාපනය කිරීම සඳහා යන්ත්‍රයේ කලින් ස්ථාපනය කර ඇති අනුකූල නිෂ්පාදන කිසිවක් සොයා ගැනීමට නොහැකි විය."/>
+	<String Id="Error1607" Overridable="yes" Value="ස්ථාපනය දිගටම කරගෙන යාමට පෙර පහත යෙදුම් වසා දැමිය යුතුය:"/>
+	<String Id="Error1606" Overridable="yes" Value="ජාල ස්ථානයට ප්‍රවේශ වීමට නොහැකි විය [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="ප්‍රතිසාධනය සක්‍රීය කර ස්ථාපනය කරගෙන යාමට &amp;apos;[ProductName]&amp;apos; පරිමාවේ ප්‍රමාණවත් තැටි ඉඩක් නොමැත. [ProductName] KB අවශ්‍ය වේ, නමුත් ඇත්තේ [ProductName] KB පමණි. ප්‍රතිසාධන තොරතුරු සුරැකීමකින් තොරව ස්ථාපනය කරගෙන යාමට නොසලකා හරින්න ක්ලික් කරන්න, පවතින ඉඩ නැවත පරීක්ෂා කිරීමට නැවත උත්සාහ කරන්න ක්ලික් කරන්න, නැතහොත් ස්ථාපනයෙන් ඉවත් වීමට අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="Error1604" Overridable="yes" Value="නිෂ්පාදනය &amp;apos;[ProductName]&amp;apos; දැනටමත් ස්ථාපනය කර ඇති අතර, මෙම නිෂ්පාදනය ස්ථාපනය කිරීම වළක්වයි. නිෂ්පාදන දෙක නොගැලපේ."/>
+	<String Id="Error1603" Overridable="yes" Value="ගොනුව [ProductName][ProductName] පහත ක්‍රියාවලිය මගින් භාවිතයේ පවතී{: නම: [ProductName], Id: [ProductName], කවුළු මාතෘකාව: &amp;apos;[ProductName]&amp;apos;}. එම යෙදුම වසා නැවත උත්සාහ කරන්න."/>
+	<String Id="Error1602" Overridable="yes" Value="ڇا توهان کي پڪ آهي ته توهان منسوخ ڪرڻ چاهيو ٿا؟"/>
+	<String Id="Error1601" Overridable="yes" Value="තැටි ඉඩ අවසන් -- වෙළුම: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="පරිශීලක &amp;apos;[ProductName]&amp;apos; මීට පෙර &amp;apos;[ProductName]&amp;apos; නිෂ්පාදනය සඳහා ස්ථාපනයක් ආරම්භ කර ඇත. එම නිෂ්පාදනය භාවිතා කිරීමට පෙර එම පරිශීලකයාට එම ස්ථාපනය නැවත ධාවනය කිරීමට අවශ්‍ය වනු ඇත."/>
+	<String Id="Error1502" Overridable="yes" Value="පරිශීලක &amp;apos;[ProductName]&amp;apos; මීට පෙර &amp;apos;[ProductName]&amp;apos; නිෂ්පාදනය සඳහා ස්ථාපනයක් ආරම්භ කර ඇත. එම නිෂ්පාදනය භාවිතා කිරීමට පෙර එම පරිශීලකයාට එම ස්ථාපනය නැවත ධාවනය කිරීමට අවශ්‍ය වනු ඇත. ඔබගේ වත්මන් ස්ථාපනය දැන් දිගටම කරගෙන යනු ඇත."/>
+	<String Id="Error1501" Overridable="yes" Value="ආරක්ෂිත දත්ත වෙත ප්‍රවේශ වීමේ දෝෂයකි. කරුණාකර Windows ස්ථාපකය නිවැරදිව වින්‍යාස කර ඇති බවට වග බලා ගෙන නැවත ස්ථාපනය කිරීමට උත්සාහ කරන්න."/>
+	<String Id="Error1500" Overridable="yes" Value="තවත් ස්ථාපනයක් සිදු වෙමින් පවතී. මෙය දිගටම කරගෙන යාමට පෙර ඔබ එම ස්ථාපනය සම්පූර්ණ කළ යුතුය."/>
+	<String Id="Error1410" Overridable="yes" Value="පවතින රෙජිස්ට්‍රි ඉඩ වැඩි කිරීමට නොහැකි විය. [ProductName] මෙම යෙදුම ස්ථාපනය කිරීම සඳහා KB නොමිලේ රෙජිස්ට්‍රි ඉඩක් අවශ්‍ය වේ."/>
+	<String Id="Error1409" Overridable="yes" Value="යතුර [ProductName] සඳහා ආරක්ෂක තොරතුරු කියවීමට නොහැකි විය.{{ පද්ධති දෝෂය [ProductName].}} ඔබට එම යතුරට ප්‍රමාණවත් ප්‍රවේශයක් ඇති බව තහවුරු කරන්න, නැතහොත් ඔබේ සහායක පිරිස් අමතන්න."/>
+	<String Id="Error1408" Overridable="yes" Value="යතුර [ProductName] සඳහා උප යතුරු නම් ලබා ගැනීමට නොහැකි විය.{{ පද්ධති දෝෂය [ProductName].}} ඔබට එම යතුරට ප්‍රමාණවත් ප්‍රවේශයක් ඇති බව තහවුරු කරන්න, නැතහොත් ඔබේ සහායක පිරිස් අමතන්න."/>
+	<String Id="Error1407" Overridable="yes" Value="යතුර [ProductName] සඳහා වටිනාකම් නම් ලබා ගැනීමට නොහැකි විය.{{ පද්ධති දෝෂය [ProductName].}} ඔබට එම යතුරට ප්‍රමාණවත් ප්‍රවේශයක් ඇති බව තහවුරු කරන්න, නැතහොත් ඔබේ සහායක පිරිස් අමතන්න."/>
+	<String Id="Error1406" Overridable="yes" Value="යතුර [ProductName] වෙත [ProductName] අගය ලිවීමට නොහැකි විය.{{ පද්ධති දෝෂය [ProductName].}} ඔබට එම යතුරට ප්‍රමාණවත් ප්‍රවේශයක් ඇති බව තහවුරු කරන්න, නැතහොත් ඔබේ සහායක පිරිස් අමතන්න."/>
+	<String Id="Error1405" Overridable="yes" Value="[ProductName] යතුරෙන් [ProductName] අගය කියවීමට නොහැකි විය.{{ පද්ධති දෝෂය [ProductName].}} ඔබට එම යතුරට ප්‍රමාණවත් ප්‍රවේශයක් ඇති බව තහවුරු කරන්න, නැතහොත් ඔබේ සහායක පිරිස් අමතන්න."/>
+	<String Id="Error1404" Overridable="yes" Value="යතුර [ProductName] මැකීමට නොහැකි විය.{{ පද්ධති දෝෂය [ProductName].}} ඔබට එම යතුරට ප්‍රමාණවත් ප්‍රවේශයක් ඇති බව තහවුරු කරන්න, නැතහොත් ඔබේ සහායක පිරිස් අමතන්න."/>
+	<String Id="Error1403" Overridable="yes" Value="[ProductName] යතුරෙන් [ProductName] අගය මැකීමට නොහැකි විය.{{ පද්ධති දෝෂය [ProductName].}} ඔබට එම යතුරට ප්‍රමාණවත් ප්‍රවේශයක් ඇති බව තහවුරු කරන්න, නැතහොත් ඔබේ සහායක පුද්ගලයින් සම්බන්ධ කර ගන්න."/>
+	<String Id="Error1402" Overridable="yes" Value="යතුර විවෘත කළ නොහැකි විය: [ProductName].{{ පද්ධති දෝෂය [ProductName].}} ඔබට එම යතුරට ප්‍රමාණවත් ප්‍රවේශයක් ඇති බව තහවුරු කරන්න, නැතහොත් ඔබේ සහායක පිරිස් අමතන්න."/>
+	<String Id="Error1401" Overridable="yes" Value="යතුර සෑදීමට නොහැකි විය: [ProductName].{{ පද්ධති දෝෂය [ProductName].}} ඔබට එම යතුරට ප්‍රමාණවත් ප්‍රවේශයක් ඇති බව තහවුරු කරන්න, නැතහොත් ඔබේ සහායක පිරිස් අමතන්න."/>
+	<String Id="Error1336" Overridable="yes" Value="මෙම ස්ථාපනය සම්පූර්ණ කිරීමට අවශ්‍ය තාවකාලික ගොනුවක් සෑදීමේදී දෝෂයක් ඇති විය.{{ ෆෝල්ඩරය: [ProductName]. පද්ධති දෝෂ කේතය: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="මෙම ස්ථාපනය සඳහා අවශ්‍ය &amp;apos;[ProductName]&amp;apos; කැබිනට් ගොනුව දූෂිත බැවින් භාවිතා කළ නොහැක. මෙය ජාල දෝෂයක්, CD-ROM වෙතින් කියවීමේ දෝෂයක් හෝ මෙම පැකේජයේ ගැටලුවක් දැක්විය හැක."/>
+	<String Id="Error1334" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; කැබිනට් ගොනුව තුළ ගොනුව සොයාගත නොහැකි නිසා &amp;apos;[ProductName]&amp;apos; ගොනුව ස්ථාපනය කළ නොහැක. මෙය ජාල දෝෂයක්, CD-ROM වෙතින් කියවීමේ දෝෂයක් හෝ මෙම පැකේජයේ ගැටලුවක් දැක්විය හැක."/>
+	<String Id="Error1333" Overridable="yes" Value="[ProductName] ගොනුව නිවැරදිව පැච් කිරීමට අසමත් විය: CRC දෝෂය."/>
+	<String Id="Error1332" Overridable="yes" Value="[ProductName] ගොනුව නිවැරදිව ගෙනයාමට අසමත් විය: CRC දෝෂයකි."/>
+	<String Id="Error1331" Overridable="yes" Value="[ProductName] ගොනුව නිවැරදිව පිටපත් කිරීමට අසමත් විය: CRC දෝෂයකි."/>
+	<String Id="Error1330" Overridable="yes" Value="කැබිනට් ගොනුව [ProductName] වලංගු නොවන ඩිජිටල් අත්සනක් ඇති බැවින් අවශ්‍ය ගොනුවක් ස්ථාපනය කළ නොහැක. කැබිනට් ගොනුව දූෂිත බව මෙයින් ඇඟවිය හැක.{{ දෝෂය [ProductName] WinVerifyTrust විසින් ආපසු ලබා දෙන ලදී.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="කැබිනට් ගොනුව [ProductName] ඩිජිටල් ලෙස අත්සන් කර නොමැති නිසා අවශ්‍ය ගොනුවක් ස්ථාපනය කළ නොහැක. කැබිනට් ගොනුව දූෂිත බව මෙයින් හැඟවිය හැකිය."/>
+	<String Id="Error1328" Overridable="yes" Value="[ProductName] ගොනුවට පැච් යෙදීමේ දෝෂයකි. එය බොහෝ විට වෙනත් ක්‍රම මගින් යාවත්කාලීන කර ඇති අතර, මෙම පැච් මගින් තවදුරටත් වෙනස් කළ නොහැක. වැඩි විස්තර සඳහා ඔබේ පැච් වෙළෙන්දා අමතන්න.{{ පද්ධති දෝෂය: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="වලංගු නොවන Drive: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="ගොනු ආරක්ෂාව ලබා ගැනීමේ දෝෂය: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; යනු වලංගු කෙටි ගොනු නාමයක් නොවේ."/>
+	<String Id="Error1324" Overridable="yes" Value="ෆෝල්ඩර මාර්ගය &amp;apos;[ProductName]&amp;apos; වලංගු නොවන අක්ෂරයක් අඩංගු වේ."/>
+	<String Id="Error1323" Overridable="yes" Value="ෆෝල්ඩර මාර්ගය &amp;apos;[ProductName]&amp;apos; ෆෝල්ඩර මාර්ග වල වලංගු නොවන වචන අඩංගු වේ."/>
+	<String Id="Error1322" Overridable="yes" Value="ෆෝල්ඩර පථයේ කොටසක් &amp;apos;[ProductName]&amp;apos; වලංගු නොවේ. එය හිස් හෝ පද්ධතිය විසින් අවසර දී ඇති දිග ඉක්මවා ඇත."/>
+	<String Id="Error1321" Overridable="yes" Value="මෙම ගොනුව වෙනස් කිරීමට ස්ථාපකය සතුව ප්‍රමාණවත් වරප්‍රසාද නොමැත: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="නිශ්චිත මාර්ගය දිගු වැඩිය: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="මූලාශ්‍ර ගොනු කැබිනට්ටුව විවෘත කිරීමට උත්සාහ කිරීමේදී ජාල දෝෂයක් ඇති විය: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="නාමාවලිය සෑදීමට උත්සාහ කිරීමේදී ජාල දෝෂයක් ඇති විය: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="නාමාවලිය සෑදීමට උත්සාහ කිරීමේදී දෝෂයක් ඇති විය: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="ගොනුවෙන් කියවීමට උත්සාහ කිරීමේදී ජාල දෝෂයක් ඇති විය: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="නිශ්චිත ෆෝල්ඩරයට ලිවීමට නොහැක: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="නිශ්චිත මාර්ගය &amp;apos;[ProductName]&amp;apos; නොමැත."/>
+	<String Id="Error1313" Overridable="yes" Value="වෙළුම [ProductName] දැනට නොමැත. කරුණාකර වෙනත් එකක් තෝරන්න."/>
+	<String Id="Error1312" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; නාමාවලිය සෑදිය නොහැක. මෙම නම සහිත ගොනුවක් දැනටමත් පවතී. කරුණාකර ගොනුව නැවත නම් කරන්න හෝ ඉවත් කර නැවත උත්සාහ කරන්න ක්ලික් කරන්න, නැතහොත් පිටවීමට අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="Error1311" Overridable="yes" Value="මූලාශ්‍ර ගොනුව හමු නොවීය{{(කැබිනට්)}}: [ProductName]. ගොනුව පවතින බවත් ඔබට එයට ප්‍රවේශ විය හැකි බවත් තහවුරු කරන්න."/>
+	<String Id="Error1310" Overridable="yes" Value="ගොනුවට ලිවීමේ දෝෂයකි: [ProductName].{{ පද්ධති දෝෂය [ProductName].}} ඔබට එම නාමාවලියට ප්‍රවේශය ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1309" Overridable="yes" Value="ගොනුවෙන් කියවීමේ දෝෂයකි: [ProductName].{{ පද්ධති දෝෂය [ProductName].}} ගොනුව පවතින බවත් ඔබට එයට ප්‍රවේශ විය හැකි බවත් තහවුරු කරන්න."/>
+	<String Id="Error1308" Overridable="yes" Value="මූලාශ්‍ර ගොනුව හමු නොවීය: [ProductName]. ගොනුව පවතින බවත් ඔබට එයට ප්‍රවේශ විය හැකි බවත් තහවුරු කරන්න."/>
+	<String Id="Error1307" Overridable="yes" Value="මෙම ගොනුව ස්ථාපනය කිරීමට ප්‍රමාණවත් තැටි ඉඩක් නොමැත: [ProductName]. තැටි ඉඩක් නිදහස් කර නැවත උත්සාහ කරන්න ක්ලික් කරන්න, නැතහොත් පිටවීමට අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="Error1306" Overridable="yes" Value="වෙනත් යෙදුමකට &amp;apos;[ProductName]&amp;apos; ගොනුවට සුවිශේෂී ප්‍රවේශය ඇත. කරුණාකර අනෙකුත් සියලුම යෙදුම් වසා දමන්න, ඉන්පසු නැවත උත්සාහ කරන්න ක්ලික් කරන්න."/>
+	<String Id="Error1305" Overridable="yes" Value="ගොනුව [ProductName] වෙතින් කියවීමේ දෝෂයකි.{{ පද්ධති දෝෂය [ProductName].}} ගොනුව පවතින බවත් ඔබට එයට ප්‍රවේශ විය හැකි බවත් තහවුරු කරන්න."/>
+	<String Id="Error1304" Overridable="yes" Value="ගොනුවට ලිවීමේ දෝෂයකි: [ProductName]. ඔබට එම නාමාවලියට ප්‍රවේශය ඇති බව තහවුරු කරන්න."/>
+	<String Id="Error1303" Overridable="yes" Value="ස්ථාපකය හට මෙම නාමාවලියට ප්‍රවේශ වීමට ප්‍රමාණවත් වරප්‍රසාද නොමැත: [ProductName]. ස්ථාපනය දිගටම කරගෙන යා නොහැක. පරිපාලක ලෙස ලොග් වන්න හෝ ඔබේ පද්ධති පරිපාලක අමතන්න."/>
+	<String Id="Error1302" Overridable="yes" Value="කරුණාකර තැටිය ඇතුල් කරන්න: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; ගොනුව සෑදිය නොහැක. මෙම නම සහිත නාමාවලියක් දැනටමත් පවතී. ස්ථාපනය අවලංගු කර වෙනත් ස්ථානයකට ස්ථාපනය කිරීමට උත්සාහ කරන්න."/>
+	<String Id="Error1101" Overridable="yes" Value="ගොනුවෙන් කියවීමේ දෝෂයකි: [ProductName].{{ පද්ධති දෝෂය [ProductName].}} ගොනුව පවතින බවත් ඔබට එයට ප්‍රවේශ විය හැකි බවත් තහවුරු කරන්න."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }පිහිටුවීම අසාර්ථක විය."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }පිහිටුවීම සාර්ථකව අවසන් විය."/>
+	<String Id="Error23" Overridable="yes" Value="මෙම යෙදුමේ පැරණි අනුවාද ඉවත් කිරීමට සූදානම් වෙමින්..."/>
+	<String Id="Error22" Overridable="yes" Value="මෙම යෙදුමේ පැරණි අනුවාද ඉවත් කරමින්..."/>
+	<String Id="Error21" Overridable="yes" Value="අවශ්‍ය තොරතුරු රැස් කරමින්..."/>
+	<String Id="Error20" Overridable="yes" Value="කරුණාකර Windows වින්‍යාස කරන තෙක් රැඳී සිටින්න [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="ස්ථාපකය අකාලයේ නතර විය."/>
+	<String Id="Error18" Overridable="yes" Value="ස්ථාපකය තවදුරටත් ප්‍රතිචාර නොදක්වයි."/>
+	<String Id="Error17" Overridable="yes" Value="මතකය ඉවරයි. නැවත උත්සාහ කිරීමට පෙර වෙනත් යෙදුම් වසා දමන්න."/>
+	<String Id="Error16" Overridable="yes" Value="ඉතිරි කාලය: {[ProductName] මිනිත්තු {[ProductName] තත්පර}"/>
+	<String Id="Error15" Overridable="yes" Value="ක්‍රියාව අවසන් විය [ProductName]: [ProductName]. ප්‍රතිලාභ අගය [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="ක්‍රියා ආරම්භය [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="ලොග් වීම නතර විය: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="ලොග් වීම ආරම්භ විය: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="පණිවිඩ වර්ගය: [ProductName], තර්කය: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="ක්‍රියාව [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{තැටිය පිරී ඇත:}}"/>
+	<String Id="Error5" Overridable="yes" Value="මෙම පැකේජය ස්ථාපනය කිරීමේදී ස්ථාපකය අනපේක්ෂිත දෝෂයකට මුහුණ දී ඇත. මෙය මෙම පැකේජයේ ගැටලුවක් පෙන්නුම් කරයි. දෝෂ කේතය [ProductName] වේ. {{තර්ක නම්: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="තොරතුරු [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="අනතුරු ඇඟවීම [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{දෝෂය [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{මාරාන්තික දෝෂය:}}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="නිෂ්පාදන තොරතුරු ප්‍රකාශයට පත් නොකිරීම"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], නාමාවලිය: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="ගෙන ගිය ගොනු ඉවත් කිරීම"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="ගොනුව: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="උපස්ථ ගොනු ඉවත් කිරීම"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Откатное действие:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="යෙදුම් සන්දර්භය:[ProductName], එකලස් කිරීමේ නම:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="එකලස් කිරීමේ තොරතුරු ප්‍රකාශයට පත් නොකිරීම"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="යෙදුම් සන්දර්භය:[ProductName], එකලස් කිරීමේ නම:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="එකලස් කිරීමේ තොරතුරු ප්‍රකාශයට පත් කිරීම"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="ගොනුව: [ProductName], යැපීම්: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="පද්ධති නාමාවලිය ස්ථාපනය කිරීම"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="ක්‍රියාව සඳහා ස්ක්‍රිප්ට් මෙහෙයුම් උත්පාදනය කිරීම:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="ප්රචාරණ යෙදුම"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="යතුර: [ProductName], නම: [ProductName], අගය: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="පද්ධති රෙජිස්ට්රි අගයන් ලිවීම"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], කොටස: [ProductName], යතුර: [ProductName], අගය: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="INI ගොනු අගයන් ලිවීම"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="نالو: [ProductName]، قدر: [ProductName]، عمل [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="පරිසර තන්තු යාවත්කාලීන කිරීම"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="ආකාරයේ පුස්තකාල ලියාපදිංචි කිරීම ඉවත් කිරීම"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="වැඩසටහන් හඳුනාගැනීම් ලියාපදිංචියෙන් ඉවත් කිරීම"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME අන්තර්ගත වර්ගය: [ProductName], දිගුව: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="MIME තොරතුරු ලියාපදිංචියෙන් ඉවත් කරමින්"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="අකුරු: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="අකුරු ලියාපදිංචියෙන් ඉවත් කිරීම"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="දිගුව: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="දිගු සේවාදායක ලියාපදිංචියෙන් ඉවත් කිරීම"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="COM+ යෙදුම් සහ සංරචක ලියාපදිංචියෙන් ඉවත් කිරීම"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="පන්ති හැඳුනුම්පත: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="පන්ති සේවාදායකයන් ලියාපදිංචියෙන් ඉවත් කරන්න"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="විශේෂාංගය: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="නිෂ්පාදන විශේෂාංග ප්‍රකාශයට පත් නොකිරීම"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="සංරචක ID: [ProductName], සුදුසුකම්: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="සුදුසුකම් ලත් සංරචක ප්‍රකාශයට පත් නොකිරීම"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="සේවාව: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="සේවා නතර කිරීම"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="සේවාව: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="සේවා ආරම්භ කිරීම"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="ODBC නාමාවලි ආරම්භ කිරීම"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], ෆෝල්ඩරය: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="මොඩියුල ලියාපදිංචියෙන් ඉවත් කිරීම"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], ෆෝල්ඩරය: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="මොඩියුල ලියාපදිංචි කිරීම"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="සුදුසුකම් ලත් නිෂ්පාදන සොයමින්"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="කෙටි මග: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="කෙටිමං ඉවත් කිරීම"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="යතුර: [ProductName], නම: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="පද්ධති රෙජිස්ට්රි අගයන් ඉවත් කිරීම"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="ODBC සංරචක ඉවත් කිරීම"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], කොටස: [ProductName], යතුර: [ProductName], අගය: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="INI ගොනු ඇතුළත් කිරීම් ඉවත් කිරීම"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="ෆෝල්ඩරය: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="ෆෝල්ඩර ඉවත් කිරීම"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], නාමාවලිය: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="ගොනු ඉවත් කිරීම"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="යෙදුම: [ProductName], විධාන රේඛාව: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="යෙදුම් ඉවත් කිරීම"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="نالو: [ProductName]، قدر: [ProductName]، عمل [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="පරිසර තන්තු යාවත්කාලීන කිරීම"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], නාමාවලිය: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="අනුපිටපත් ගොනු ඉවත් කිරීම"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="පරිශීලක ලියාපදිංචි කිරීම"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="පුස්තකාල වර්ග ලියාපදිංචි කිරීම"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="නිෂ්පාදන ලියාපදිංචි කිරීම"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="අකුරු: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="අකුරු ලියාපදිංචි කිරීම"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], පරිශීලකයන්: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="COM+ යෙදුම් සහ සංරචක ලියාපදිංචි කිරීම"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="සංරචක ලියාපදිංචිය යාවත්කාලීන කිරීම"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], නාමාවලිය: [ProductName], ප්‍රමාණය: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="ගොනු පැච් කිරීම"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], නාමාවලිය: [ProductName], ප්‍රමාණය: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="ගොනු ගෙනයාම"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="අයදුම්පත: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="අදාළ යෙදුම් වලින් සංක්‍රමණය විශේෂාංගය"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="දියත් කිරීමේ කොන්දේසි තක්සේරු කිරීම"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="සේවාව: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="නව සේවා ස්ථාපනය කිරීම"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="ODBC සංරචක ස්ථාපනය කිරීම"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="සොයාගත් යෙදුම: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="අදාළ යෙදුම් සොයමින්"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], නාමාවලිය: [ProductName], ප්‍රමාණය: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="අනුපිටපත් ගොනු නිර්මාණය කිරීම"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="සේවාව: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="සේවා මකා දැමීම"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="ෆෝල්ඩරය: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="ෆෝල්ඩර නිර්මාණය කිරීම"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="සුදුසුකම් ලත් නිෂ්පාදන සොයමින්"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="ගොනුව: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="බන්ධන executables"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="දේපල: [ProductName], අත්සන: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="ස්ථාපිත යෙදුම් සඳහා සොයමින්"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="නිදහස් ඉඩ: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="රෙජිස්ට්රි ඉඩ වෙන් කිරීම"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="වැඩසටහන් හඳුනාගැනීම් ලියාපදිංචි කිරීම"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME අන්තර්ගත වර්ගය: [ProductName], දිගුව: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="MIME තොරතුරු ලියාපදිංචි කිරීම"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="දිගුව: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="දිගු සේවාදායක ලියාපදිංචි කිරීම"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="පන්ති හැඳුනුම්පත: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="පන්ති සේවාදායකයන් ලියාපදිංචි කිරීම"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="නිෂ්පාදන තොරතුරු ප්‍රකාශයට පත් කිරීම"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="විශේෂාංගය: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="ප්‍රකාශන නිෂ්පාදන විශේෂාංග"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="සංරචක ID: [ProductName], සුදුසුකම්: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="සුදුසුකම් ලත් සංරචක ප්‍රකාශයට පත් කිරීම"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="කෙටි මග: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="කෙටිමං නිර්මාණය කිරීම"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="අවකාශ අවශ්‍යතා ගණනය කිරීම"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="අවකාශ අවශ්‍යතා ගණනය කිරීම"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="අවකාශ අවශ්‍යතා ගණනය කිරීම"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="ගොනුව: [ProductName], නාමාවලිය: [ProductName], ප්‍රමාණය: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="ජාල ස්ථාපන ගොනු පිටපත් කිරීම"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="ගොනුව: [ProductName], නාමාවලිය: [ProductName], ප්‍රමාණය: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="නව ගොනු පිටපත් කිරීම"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="ස්ථාපනය තහවුරු කිරීම"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}කරුණාකර [ProductName] බලපත්‍ර ගිවිසුම කියවන්න"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;යාවත්කාලීන කරන්න"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="۽ انسٽال ڪريو"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="مان لائسنس جي معاهدي ۾ شرطن کي قبول ڪريان ٿو"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} [ProductName] සැකසුම් විශාරද වෙත සාදරයෙන් පිළිගනිමු"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Setup Wizard ඔබේ පරිගණකයේ [ProductName] යාවත්කාලීන කරයි. Setup Wizard වෙතින් පිටවීමට ඉදිරියට යන්න හෝ අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Setup Wizard ඔබේ පරිගණකයේ [ProductName] ස්ථාපනය කරයි. Setup Wizard වෙතින් පිටවීමට ඉදිරියට යන්න හෝ අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="විශ්මයජනක නිරූපකය"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="ස්ථාපකය ඔබගේ තැටි ඉඩ අවශ්‍යතා නිර්ණය කිරීම අවසන් කරන තෙක් කරුණාකර රැඳී සිටින්න."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;ආපසු"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}යාවත්කාලීන කිරීමට සූදානම් [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="ඔබේ පරිගණකයෙන් [ProductName] යාවත්කාලීන කිරීමට යාවත්කාලීන ක්ලික් කරන්න. ඔබගේ ඕනෑම ස්ථාපන සැකසුම් සමාලෝචනය කිරීමට හෝ වෙනස් කිරීමට ආපසු ක්ලික් කරන්න. විශාරදයෙන් පිටවීමට අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;යාවත්කාලීන කරන්න"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] ඉවත් කිරීමට සූදානම්"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="ඔබේ පරිගණකයෙන් [ProductName] ඉවත් කිරීමට ඉවත් කරන්න ක්ලික් කරන්න. ඔබගේ ඕනෑම ස්ථාපන සැකසුම් සමාලෝචනය කිරීමට හෝ වෙනස් කිරීමට ආපසු ක්ලික් කරන්න. විශාරදයෙන් පිටවීමට අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;ඉවත් කරන්න"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}අලුත්වැඩියා කිරීමට සූදානම් [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="[ProductName] ස්ථාපනය අලුත්වැඩියා කිරීමට Repair ක්ලික් කරන්න. ඔබගේ ඕනෑම ස්ථාපන සැකසුම් සමාලෝචනය කිරීමට හෝ වෙනස් කිරීමට ආපසු ක්ලික් කරන්න. විශාරදයෙන් පිටවීමට අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="නැවත යුගල කරන්න"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] වෙනස් කිරීමට සූදානම්"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="ස්ථාපනය ආරම්භ කිරීමට වෙනස් කරන්න ක්ලික් කරන්න. ඔබගේ ඕනෑම ස්ථාපන සැකසුම් සමාලෝචනය කිරීමට හෝ වෙනස් කිරීමට ආපසු ක්ලික් කරන්න. විශාරදයෙන් පිටවීමට අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;تبديل"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title} [ProductName] ස්ථාපනය කිරීමට සූදානම්"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="ස්ථාපනය ආරම්භ කිරීමට ස්ථාපනය ක්ලික් කරන්න. ඔබගේ ඕනෑම ස්ථාපන සැකසුම් සමාලෝචනය කිරීමට හෝ වෙනස් කිරීමට ආපසු ක්ලික් කරන්න. විශාරදයෙන් පිටවීමට අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="۽ انسٽال ڪريو"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Setup Wizard වෙතින් පිටවීමට Finish බොත්තම ක්ලික් කරන්න."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] පිහිටුවීමට බාධා විය. ඔබගේ පද්ධතිය වෙනස් කර නොමැත. මෙම වැඩසටහන පසු අවස්ථාවක ස්ථාපනය කිරීමට, කරුණාකර ස්ථාපනය නැවත ධාවනය කරන්න."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] සැකසුම් විශාරදයට බාධා විය"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="සියලුම වැඩසටහන් විශේෂාංග ස්ථාපනය කෙරේ. වඩාත්ම තැටි ඉඩ අවශ්ය වේ."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="කුමන වැඩසටහන් විශේෂාංග ස්ථාපනය කරන්නේද සහ ඒවා ස්ථාපනය කරන්නේ කොතැනද යන්න තේරීමට පරිශීලකයින්ට ඉඩ දෙයි. උසස් පරිශීලකයින් සඳහා නිර්දේශ කෙරේ."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="වඩාත් පොදු වැඩසටහන් විශේෂාංග ස්ථාපනය කරයි. බොහෝ පරිශීලකයින් සඳහා නිර්දේශ කර ඇත."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="ඔබගේ අවශ්‍යතාවයට වඩාත් ගැලපෙන සැකසුම් වර්ගය තෝරන්න"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}සැකසුම් වර්ගය තෝරන්න"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="සම්පූර්ණ ස්ථාපනය"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="සම්පූර්ණ කරන්න"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="අභිරුචි ස්ථාපනය"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp; custom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="සාමාන්ය ස්ථාපනය"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;عام"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} [ProductName] පිහිටුවීම් විශාරද නැවත ආරම්භ කිරීම"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Setup Wizard ඔබේ පරිගණකයේ [ProductName] ස්ථාපනය සම්පූර්ණ කරයි. දිගටම කරගෙන යාමට ස්ථාපනය ක්ලික් කරන්න හෝ Setup Wizard වෙතින් පිටවීමට අවලංගු කරන්න."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="۽ انسٽال ڪريو"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="තත්ත්වය:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="ප්‍රගතිය සිදු කර ඇත"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}යාවත්කාලීන කිරීම [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Setup Wizard [ProductName] යාවත්කාලීන කරන තෙක් කරුණාකර රැඳී සිටින්න."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] ඉවත් කිරීම"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Setup Wizard [ProductName] ඉවත් කරන තෙක් කරුණාකර රැඳී සිටින්න."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}අලුත්වැඩියා කිරීම [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Setup Wizard [ProductName] අලුත්වැඩියා කරන තෙක් කරුණාකර රැඳී සිටින්න."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] වෙනස් කිරීම"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Setup Wizard [ProductName] වෙනස් වන තෙක් කරුණාකර රැඳී සිටින්න."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title} [ProductName] ස්ථාපනය කරමින්"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Setup Wizard [ProductName] ස්ථාපනය කරන තෙක් කරුණාකර රැඳී සිටින්න."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} [ProductName] සැකසුම් විශාරද වෙත සාදරයෙන් පිළිගනිමු"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="ස්ථාපනය හරහා ඔබට මග පෙන්වීමට Setup Wizard සූදානම් වන තෙක් කරුණාකර රැඳී සිටින්න."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="විකල්පයක් ලෙස, ඔබට ස්ථාපකයේ ආපසු හැරීමේ ක්‍රියාකාරීත්වය අක්‍රිය කිරීමට තෝරා ගත හැක. ආපසු හැරවීම අක්‍රිය කිරීමෙන් ස්ථාපකය ඔබගේ පරිගණකයේ මුල් තත්වය ප්‍රතිසාධනය කිරීම වළක්වයි, ස්ථාපනයට කිසියම් ආකාරයකින් බාධා ඇති වුවහොත්. ඔබට ආපසු හැරීම අක්‍රිය කිරීමේ අවදානම ගැනීමට අවශ්‍ය නම් ඔව් ක්ලික් කරන්න."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}තැටි ඉඩ අවසන්"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="ස්ථාපනය සඳහා අවශ්‍ය තැටි ඉඩ පවතින තැටි ඉඩ ඉක්මවයි."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="උද්දීපනය කරන ලද වෙළුම්වල දැනට තෝරාගත් විශේෂාංග සඳහා ප්‍රමාණවත් තැටි ඉඩක් නොමැත. ඔබට උද්දීපනය කළ වෙළුම්වලින් සමහර ගොනු ඉවත් කිරීමට, අඩු විශේෂාංග ස්ථාපනය කිරීමට හෝ වෙනත් ගමනාන්ත ධාවකයක් තෝරා ගැනීමට හැකිය."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}තැටි ඉඩ අවසන්"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="ස්ථාපනය සඳහා අවශ්‍ය තැටි ඉඩ පවතින තැටි ඉඩ ඉක්මවයි."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="උද්දීපනය කරන ලද වෙළුම්වල දැනට තෝරාගත් විශේෂාංග සඳහා ප්‍රමාණවත් තැටි ඉඩක් නොමැත. ඔබට උද්දීපනය කළ වෙළුම්වලින් සමහර ගොනු ඉවත් කිරීමට, අඩු විශේෂාංග ස්ථාපනය කිරීමට හෝ වෙනත් ගමනාන්ත ධාවකයක් තෝරා ගැනීමට හැකිය."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;යෙදුම් වසා දමන්න එපා. නැවත පණගැන්වීමක් අවශ්ය වනු ඇත."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="۽ ايپليڪيشنن کي بند ڪريو ۽ انھن کي ٻيهر شروع ڪرڻ جي ڪوشش ڪريو."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}භාවිතා කරන ගොනු"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="යාවත්කාලීන කළ යුතු සමහර ගොනු දැනට භාවිතයේ පවතී."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="පහත යෙදුම් මෙම පිහිටුවීම මගින් යාවත්කාලීන කළ යුතු ගොනු භාවිත කරයි. ඔබට ඒවා වසා දැමීමට Setup Wizard හට ඉඩ දී ඒවා නැවත ආරම්භ කිරීමට හෝ පසුව යන්ත්‍රය නැවත ආරම්භ කිරීමට උත්සාහ කළ හැක."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} [ProductName] සැකසුම් විශාරද වෙත සාදරයෙන් පිළිගනිමු"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Setup Wizard ඔබට ඔබේ පරිගණකයේ [ProductName] විශේෂාංග ස්ථාපනය කර ඇති ආකාරය වෙනස් කිරීමට හෝ ඔබේ පරිගණකයෙන් එය ඉවත් කිරීමට ඉඩ සලසයි. Setup Wizard වෙතින් පිටවීමට ඉදිරියට යන්න හෝ අවලංගු කරන්න ක්ලික් කරන්න."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] අලුත්වැඩියා කළ නොහැක."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="නැතිවූ සහ දූෂිත ලිපිගොනු, කෙටිමං සහ රෙජිස්ට්‍රි ඇතුළත් කිරීම් සවිකිරීමෙන් නවතම ස්ථාපනයේ දෝෂ නිවැරදි කරයි."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] ඉවත් කළ නොහැක."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="ඔබේ පරිගණකයෙන් [ProductName] ඉවත් කරයි."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] ස්වාධීනව තෝරා ගත හැකි විශේෂාංග නොමැත."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="විශේෂාංග ස්ථාපනය කරන ආකාරය වෙනස් කිරීමට ඔබට ඉඩ සලසයි."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ස්ථාපනය වෙනස් කිරීම, අලුත්වැඩියා කිරීම හෝ ඉවත් කිරීම"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="ඔබ සිදු කිරීමට බලාපොරොත්තු වන මෙහෙයුම තෝරන්න."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="ස්ථාපනය ඉවත් කරන්න"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;ඉවත් කරන්න"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="අලුත්වැඩියා ස්ථාපනය"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="නැවත යුගල කරන්න"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="ස්ථාපනය වෙනස් කරන්න"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;تبديل"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}අවසන් පරිශීලක බලපත්‍ර ගිවිසුම"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="කරුණාකර පහත බලපත්‍ර ගිවිසුම හොඳින් කියවන්න"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="مان لائسنس جي معاهدي ۾ شرطن کي قبول ڪريان ٿو"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="තොරතුරු නිරූපකය"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="ස්ථාපන නාමාවලිය දේශීය දෘඪ තැටියක තිබිය යුතුය."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;تبديل..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="ස්ථාපනය සහ ෆෝල්ඩරය:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] පෙරනිමියෙන් එක් යන්ත්‍රයකට ෆෝල්ඩරයක ස්ථාපනය කර සියලු පරිශීලකයින් සඳහා ලබා ගත හැක. ඔබට පෙරනිමි ස්ථාපන ෆෝල්ඩරය වෙනස් කළ හැකිය. ඔබට ප්‍රාදේශීය පරිපාලක වරප්‍රසාද තිබිය යුතුය."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}මෙම &amp;යන්ත්‍රයේ සියලුම පරිශීලකයින් සඳහා ස්ථාපනය කරන්න"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] එක් පරිශීලකයෙකුට ස්ථාපනය සඳහා සහය නොදක්වයි."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] එක්-පරිශීලක ෆෝල්ඩරයක ස්ථාපනය කර ඔබගේ පරිශීලක ගිණුම සඳහා පමණක් ලබා ගත හැක. ඔබට ප්‍රාදේශීය පරිපාලක වරප්‍රසාද අවශ්‍ය නොවේ."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}ස්ථාපනය කරන්න &amp;ඔබ සඳහා පමණි ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ස්ථාපන විෂය පථය"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="ස්ථාපන විෂය පථය සහ ෆෝල්ඩරය තෝරන්න"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="[ProductName] ස්ථාපනය කරන්න:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="පෙරනිමි ෆෝල්ඩරය වෙත ස්ථාපනය කිරීමට ඊළඟ ක්ලික් කරන්න හෝ වෙනත් එකක් තෝරා ගැනීමට වෙනස් කරන්න ක්ලික් කරන්න."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ගමනාන්ත ෆෝල්ඩරය"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;تبديل..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}භාවිතා කරන ගොනු"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="යාවත්කාලීන කළ යුතු සමහර ගොනු දැනට භාවිතයේ පවතී."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="පහත යෙදුම් මෙම පිහිටුවීම මගින් යාවත්කාලීන කළ යුතු ගොනු භාවිත කරයි. මෙම යෙදුම් වසා පසුව පිහිටුවීම දිගටම කරගෙන යාමට &amp;නැවත උත්සාහ කරන්න ක්ලික් කරන්න හෝ එයින් පිටවීමට පිටවන්න."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="පිටවීම"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;تبديل"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="۽ انسٽال ڪريو"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="විශේෂාංගDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="විශේෂාංගDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}නිෂ්පාදන විශේෂාංග"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="ඔබට විශේෂාංග ස්ථාපනය කිරීමට අවශ්‍ය ආකාරය තෝරන්න."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="නිෂ්පාදන විශේෂාංග"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Setup Wizard වෙතින් පිටවීමට Finish බොත්තම ක්ලික් කරන්න."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Setup Wizard දෝෂයක් නිසා අකාලයේ අවසන් විය. ඔබගේ පද්ධතිය වෙනස් කර නොමැත. පසුව මෙම වැඩසටහන ස්ථාපනය කිරීමට, නැවත Setup Wizard ධාවනය කරන්න."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] සැකසුම් විශාරද අකාලයේ අවසන් විය"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} [ProductName] පිහිටුවීම් විශාරද සම්පූර්ණ කරන ලදී"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Setup Wizard වෙතින් පිටවීමට Finish බොත්තම ක්ලික් කරන්න."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="තොරතුරු නිරූපකය"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="තොරතුරු පෙළ"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}තැටි ඉඩ අවශ්‍යතා"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="තෝරාගත් විශේෂාංග ස්ථාපනය සඳහා අවශ්ය තැටි ඉඩ."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="උද්දීපනය කරන ලද වෙළුම්වල තෝරාගත් විශේෂාංග සඳහා ප්‍රමාණවත් තැටි ඉඩක් නොමැත. ඔබට උද්දීපනය කළ වෙළුම්වලින් සමහර ගොනු ඉවත් කිරීමට, අඩු විශේෂාංග ස්ථාපනය කිරීමට හෝ විවිධ ගමනාන්ත ධාවක තෝරා ගැනීමට හැකිය."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="ස්ථානය:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}අභිරුචි සැකසුම"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="ඔබට විශේෂාංග ස්ථාපනය කිරීමට අවශ්‍ය ආකාරය තෝරන්න."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="විශේෂාංග ස්ථාපනය කරන ආකාරය වෙනස් කිරීමට පහත ගසේ ඇති අයිකන ක්ලික් කරන්න."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="තැටි සහ භාවිතය"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="නැවත සකසන්න"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;rowse..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="තෝරා ගැනීමේ ගස"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="තොරතුරු නිරූපකය"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="ڇا توهان پڪ سان [ProductName] تنصيب کي منسوخ ڪرڻ چاهيو ٿا؟"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ගමනාන්ත ෆෝල්ඩරය වෙනස් කරන්න"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="ගමනාන්ත ෆෝල්ඩරය වෙත බ්‍රවුස් කරන්න"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;فولڊر جو نالو:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="නව ෆෝල්ඩරයක් සාදන්න"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="එක් මට්ටමක් ඉහළට"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;තුළ බලන්න:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="ටහෝමා"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp; උසස්"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="۽ انسٽال ڪريو"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="ඔබ සඳහාම පෙරනිමි විකල්ප සමඟ නිෂ්පාදනය ස්ථාපනය කිරීමට ස්ථාපනය ක්ලික් කරන්න. ස්ථාපන විකල්ප වෙනස් කිරීමට උසස් ක්ලික් කරන්න."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="සියලුම පරිශීලකයින් සඳහා පෙරනිමි විකල්ප සමඟ නිෂ්පාදනය ස්ථාපනය කිරීමට ස්ථාපනය ක්ලික් කරන්න. ස්ථාපන විකල්ප වෙනස් කිරීමට උසස් ක්ලික් කරන්න."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="مان لائسنس جي معاهدي ۾ شرطن کي قبول ڪريان ٿو"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}කරුණාකර [ProductName] බලපත්‍ර ගිවිසුම කියවන්න"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] සැකසුම"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;මුද්‍රණය කරන්න"/>
+	<String Id="WixUIOK" Overridable="yes" Value="හරි"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;නැහැ"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;ඔව්"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;නොසලකා හරින්න"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;නැවත උත්සාහ කරන්න"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;අවසන් කරන්න"/>
+	<String Id="WixUICancel" Overridable="yes" Value="අවලංගු කරන්න"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;ඊළඟ"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;ආපසු"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="වින්ඩෝස් ෆයර්වෝල් වින්‍යාසය අස්ථාපනය කිරීම"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="වින්ඩෝස් ෆයර්වෝල් වින්‍යාසය පෙරළීම"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="වින්ඩෝස් ෆයර්වෝල් වින්‍යාසය ස්ථාපනය කිරීම"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="වින්ඩෝස් ෆයර්වෝල් වින්‍යාසය පෙරළීම"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="වින්ඩෝස් ෆයර්වෝල් වින්‍යාස කිරීම"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="වින්ඩෝස් ෆයර්වෝල් වින්‍යාස කිරීම"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windows Firewall වෙත සම්බන්ධ විය නොහැක. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="ජාල බෙදාගත් සේවාදායකය"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="RAAS සේවාලාභියා වෙතින් පාලනය සහ බ්‍රවුස් කිරීම සබල කිරීමට ජාලය මත ධාවක බෙදා ගන්න"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="නැවත ආරම්භ කළ හැක"/>

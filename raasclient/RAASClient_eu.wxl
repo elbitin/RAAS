@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="eu" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="eu" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Bolumena"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Diskoaren tamaina"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Beharrezkoa"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="Aldea"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Eskuragarri"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="Falta den denbora:{ [ProductName] minutu}{ [ProductName] segundo}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Ezaugarri honek [ProductName] behar du zure disko gogorrean. [ProductName] azpieginbideetatik [ProductName] ditu hautatuta. Azpieginbideek [ProductName] behar dute zure disko gogorrean."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Ezaugarri honek [ProductName] behar du zure disko gogorrean. [ProductName] azpieginbideetatik [ProductName] ditu hautatuta. Azpieginbideek [ProductName] askatzen dute disko gogorrean."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Ezaugarri honek [ProductName] askatzen du zure disko gogorrean. [ProductName] azpieginbideetatik [ProductName] ditu hautatuta. Azpieginbideek [ProductName] behar dute zure disko gogorrean."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Ezaugarri honek [ProductName] askatzen du zure disko gogorrean. [ProductName] azpieginbideetatik [ProductName] ditu hautatuta. Azpieginbideek [ProductName] askatzen dute disko gogorrean."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Ezaugarri hau saretik exekutatu gabe geratuko da"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="Ezaugarri hau sareko egoeratik exekuziotik tokiko disko gogorrean instalatzera aldatuko da"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Ezaugarri hau sareko egoeratik exekutatzetik behar denean instalatzeko ezarriko da"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Eginbide hau guztiz desinstalatuko da, ezin izango duzu saretik exekutatu"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="Eginbide hau zure disko gogor lokaletik kenduko da, baina saretik exekutatzeko erabilgarri egongo da oraindik"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="Eginbide hau zure tokiko disko gogorrean jarraituko du"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="Eginbide hau zure tokiko disko gogorretik kenduko da, baina oraindik ere erabilgarri egongo da CDtik exekutatzeko"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Eginbide hau zure tokiko disko gogorretik kenduko da, baina behar denean instalatzeko ezarriko da"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="Ezaugarri hau guztiz kenduko da"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="Ezaugarri honen kostua konpilatzen..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="Ezaugarri honek [ProductName] behar du zure disko gogorrean."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="Ezaugarri honek [ProductName] askatzen du zure disko gogorrean."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="Ezaugarri hau CD egoeratik exekuziotik tokiko disko gogorrean instalatzera aldatuko da"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="Ezaugarri hau CDtik exekutatzeko geratuko da"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="Ezaugarri hau CD egoeratik exekutatzetik behar denean instalatzeko ezarriko da"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="Ezaugarri hau guztiz desinstalatuko da, ezin izango duzu CDtik exekutatu"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Eginbide hau saretik exekutatzeko erabilgarri egongo da"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Eginbide hau zure tokiko disko gogorrean instalatuko da"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Ezaugarri hau CDtik exekutatzeko erabilgarri egongo da"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Beharrezkoa denean instalatuko da"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Ezaugarri hau erabilgarri egongo da"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Ezaugarri hau saretik exekutatzeko instalatuko da"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="Ezaugarri hau tokiko disko gogorrean instalatuko da"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="Ezaugarri hau CDtik exekutatzeko instalatuko da"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Ezaugarri hau behar denean instalatzeko ezarriko da"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Ezaugarri hau desinstalatu egingo da"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="Beharrezko informazioa biltzen..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="Karpeta|Karpeta berria"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="Saretik exekutatzeko instalatuko da"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="Tokiko disko gogorrean instalatuko da"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="CDtik exekutatzeko instalatuko da"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="Ezaugarri osoa saretik exekutatzeko instalatuko da"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="Ezaugarri osoa tokiko disko gogorrean instalatuko da"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="Ezaugarri osoa instalatuko da CDtik exekutatzeko"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="Beharrezkoa denean instalatuko da funtzioa"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="Ezaugarri osoa ez da erabilgarri egongo"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="GB"/>
+	<String Id="UITextbytes" Overridable="yes" Value="byteak"/>
+	<String Id="Error1938" Overridable="yes" Value="Errore bat gertatu da &amp;apos;[ProductName]&amp;apos; muntaia instalatzean. Ezin izan dira muntaiaren modulu bat edo gehiago aurkitu. HRESULT: [ProductName].{{ muntaia interfazea: [ProductName], funtzioa: [ProductName], osagaia: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="Errore bat gertatu da &amp;apos;[ProductName]&amp;apos; muntaia instalatzean. Sinadura edo katalogoa ezin izan da egiaztatu edo ez da baliozkoa. HRESULT: [ProductName].{{ muntaia interfazea: [ProductName], funtzioa: [ProductName], osagaia: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="Errore bat gertatu da &amp;apos;[ProductName]&amp;apos; muntaia instalatzean. Batzarrak ez du izen sendorik edo ez dago gako-luzera minimoarekin sinatzen. HRESULT: [ProductName].{{ muntaia interfazea: [ProductName], funtzioa: [ProductName], osagaia: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="Errore bat gertatu da &amp;apos;[ProductName]&amp;apos; muntaia instalatzean. Mesedez, ikusi Laguntza eta Laguntza atalera informazio gehiago lortzeko. HRESULT: [ProductName].{{ muntaia interfazea: [ProductName], funtzioa: [ProductName], osagaia: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="Erabiltzaileen instalazioak desgaitu egiten dira makinaren politikaren bidez."/>
+	<String Id="Error1933" Overridable="yes" Value="Windows Installer zerbitzuak ezin du babestutako Windows fitxategi bat edo gehiago eguneratu.{{ SFP Errorea: [ProductName]. Babestutako fitxategien zerrenda:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="Windows Installer zerbitzuak ezin du eguneratu babestutako Windows fitxategia [ProductName].{{ Paketearen bertsioa: [ProductName], OS babestutako bertsioa: [ProductName], SFP errorea: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="Windows Installer zerbitzuak ezin du sistemaren fitxategia eguneratu [ProductName] fitxategia Windows-ek babestuta dagoelako. Baliteke zure sistema eragilea eguneratu behar izatea programa honek behar bezala funtziona dezan.{{ Paketearen bertsioa: [ProductName], OS babestutako bertsioa: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="Ezin izan da &amp;apos;[ProductName]&amp;apos; ([ProductName]) zerbitzuaren deskribapena aldatu."/>
+	<String Id="Error1929" Overridable="yes" Value="Errore bat gertatu da COM+ aplikazioa erregistratzean. Jarri harremanetan zure laguntza-langileekin informazio gehiago lortzeko."/>
+	<String Id="Error1928" Overridable="yes" Value="Errore bat gertatu da COM+ aplikazioa erregistratzean. Jarri harremanetan zure laguntza-langileekin informazio gehiago lortzeko."/>
+	<String Id="Error1927" Overridable="yes" Value="Osagaien zerbitzuak (COM+ 1.0) ez daude ordenagailu honetan instalatuta. Instalazio honek Osagai Zerbitzuak behar ditu behar bezala osatzeko. Osagaien zerbitzuak Windows 2000-n daude eskuragarri."/>
+	<String Id="Error1926" Overridable="yes" Value="Ezin izan da ezarri fitxategiaren segurtasuna &amp;apos;[ProductName]&amp;apos; fitxategirako. Errorea: [ProductName]. Egiaztatu fitxategi honen segurtasun-baimenak aldatzeko behar adina pribilegio dituzula."/>
+	<String Id="Error1925" Overridable="yes" Value="Ez duzu pribilegio nahikorik makinaren erabiltzaile guztientzat instalazio hau burutzeko. Hasi saioa administratzaile gisa eta saiatu berriro instalazio hau."/>
+	<String Id="Error1924" Overridable="yes" Value="Ezin izan da &amp;apos;[ProductName]&amp;apos; ingurune-aldagaia eguneratu. Egiaztatu ingurune-aldagaiak aldatzeko behar adina pribilegio dituzula."/>
+	<String Id="Error1923" Overridable="yes" Value="Ezin izan da &amp;apos;[ProductName]&amp;apos; ([ProductName]) zerbitzua instalatu. Egiaztatu sistema-zerbitzuak instalatzeko behar adina pribilegio dituzula."/>
+	<String Id="Error1922" Overridable="yes" Value="Ezin izan da &amp;apos;[ProductName]&amp;apos; ([ProductName]) zerbitzua ezabatu. Egiaztatu sistema-zerbitzuak kentzeko behar adina pribilegio dituzula."/>
+	<String Id="Error1921" Overridable="yes" Value="Ezin izan da &amp;apos;[ProductName]&amp;apos; ([ProductName]) zerbitzua gelditu. Egiaztatu sistemako zerbitzuak geldiarazteko pribilegio nahikoak dituzula."/>
+	<String Id="Error1920" Overridable="yes" Value="Ezin izan da abiarazi &amp;apos;[ProductName]&amp;apos; ([ProductName]) zerbitzua. Egiaztatu sistemako zerbitzuak abiarazteko behar adina pribilegio dituzula."/>
+	<String Id="Error1919" Overridable="yes" Value="Errorea ODBC datu-iturburua konfiguratzean: [ProductName], ODBC errorea [ProductName]: [ProductName]. Egiaztatu [ProductName] fitxategia badagoela eta atzi dezakezula."/>
+	<String Id="Error1918" Overridable="yes" Value="Errorea ODBC kontrolatzailea instalatzean: [ProductName], ODBC errorea [ProductName]: [ProductName]. Egiaztatu [ProductName] fitxategia badagoela eta atzi dezakezula."/>
+	<String Id="Error1917" Overridable="yes" Value="Errorea ODBC kontrolatzailea kentzean: [ProductName], ODBC errorea [ProductName]: [ProductName]. Egiaztatu ODBC kontrolatzaileak kentzeko behar adina pribilegio dituzula."/>
+	<String Id="Error1916" Overridable="yes" Value="Errore bat gertatu da ODBC kontrolatzailearen kudeatzailea instalatzean, ODBC errorea [ProductName]: [ProductName]. Jarri harremanetan zure laguntza-langileekin."/>
+	<String Id="Error1915" Overridable="yes" Value="Errore bat gertatu da ODBC kontrolatzailearen kudeatzailea kentzean, ODBC errorea [ProductName]: [ProductName]. Jarri harremanetan zure laguntza-langileekin."/>
+	<String Id="Error1914" Overridable="yes" Value="Ezin izan da [ProductName] fitxategia berrabiarazteko [ProductName] ordezkatzeko. Egiaztatu fitxategian idazteko baimenak dituzula [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="Ezin izan da ini fitxategia eguneratu [ProductName][ProductName]. Egiaztatu fitxategia badagoela eta atzi dezakezula."/>
+	<String Id="Error1912" Overridable="yes" Value="Ezin izan da [ProductName] fitxategirako mota-liburutegia kendu erregistroa. Jarri harremanetan zure laguntza-langileekin."/>
+	<String Id="Error1911" Overridable="yes" Value="Ezin izan da mota-liburutegia erregistratu [ProductName] fitxategirako. Jarri harremanetan zure laguntza-langileekin."/>
+	<String Id="Error1910" Overridable="yes" Value="Ezin izan da lasterbidea kendu [ProductName]. Egiaztatu lasterbide-fitxategia badagoela eta bertara sar zaitezkeela."/>
+	<String Id="Error1909" Overridable="yes" Value="Ezin izan da sortu lasterbidea [ProductName]. Egiaztatu helmuga karpeta badagoela eta bertara sar zaitezkeela."/>
+	<String Id="Error1908" Overridable="yes" Value="Ezin izan da letra-tipoa kendu [ProductName]. Egiaztatu letra-tipoak kentzeko baimen nahikoa duzula."/>
+	<String Id="Error1907" Overridable="yes" Value="Ezin izan da letra-tipoa erregistratu [ProductName]. Egiaztatu letra-tipoak instalatzeko baimen nahikoa duzula eta sistemak letra-tipo hau onartzen duela."/>
+	<String Id="Error1906" Overridable="yes" Value="Ezin izan da paketea cachean jarri [ProductName]. Errorea: [ProductName]. Jarri harremanetan zure laguntza-langileekin."/>
+	<String Id="Error1905" Overridable="yes" Value="[ProductName] modulua ezin izan da kendu erregistroa. HRESULT [ProductName]. Jarri harremanetan zure laguntza-langileekin."/>
+	<String Id="Error1904" Overridable="yes" Value="[ProductName] modulua ezin izan da erregistratu. HRESULT [ProductName]. Jarri harremanetan zure laguntza-langileekin."/>
+	<String Id="Error1903" Overridable="yes" Value="Berrabiarazi eragiketa programatzea: [ProductName] fitxategia ezabatzen. Eragiketa amaitzeko, berrabiarazi behar da."/>
+	<String Id="Error1902" Overridable="yes" Value="Berrabiarazi eragiketa programatzea: [ProductName] fitxategia [ProductName] izena aldatzea. Eragiketa amaitzeko, berrabiarazi behar da."/>
+	<String Id="Error1901" Overridable="yes" Value="Errore bat iturburuko instalazioaren datu-basetik irakurtzen saiatzean: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="Ezin izan da instalatzeko baliozko helmuga karpeta bat zehaztu."/>
+	<String Id="Error1806" Overridable="yes" Value="Ez duzu pribilegio nahikorik karpeta hau irakurtzeko."/>
+	<String Id="Error1805" Overridable="yes" Value="[ProductName] karpeta ez da existitzen. Mesedez, idatzi lehendik dagoen karpeta baterako bide bat."/>
+	<String Id="Error1804" Overridable="yes" Value="Ez dago diskorik [ProductName]. Mesedez, sartu bat eta sakatu Berriz saiatu, edo sakatu Utzi arakatzeko elkarrizketa-koadrora itzultzeko eta beste bolumen bat hautatzeko."/>
+	<String Id="Error1803" Overridable="yes" Value="Ez dago diskorik [ProductName]. Mesedez, sartu bat eta sakatu Berriz saiatu, edo sakatu Utzi, lehen hautatutako bolumenera itzultzeko."/>
+	<String Id="Error1802" Overridable="yes" Value="Memoriarik gabe. Itzali beste aplikazio batzuk berriro saiatu aurretik."/>
+	<String Id="Error1801" Overridable="yes" Value="[ProductName] bideak ez du balio. Mesedez, zehaztu baliozko bide bat."/>
+	<String Id="Error1732" Overridable="yes" Value="Rakenduse [ProductName] installimise lõpuleviimiseks peate arvuti taaskäivitama. Teised kasutajad on praegu sellesse arvutisse sisse logitud ja taaskäivitamine võib põhjustada nende töö kaotamise. Kas soovite kohe taaskäivitada?"/>
+	<String Id="Error1731" Overridable="yes" Value="[ProductName] produktuaren iturburu-instalazio-paketea ez dago sinkronizatuta bezero-paketearekin. Saiatu berriro instalatzen &amp;apos;[ProductName]&amp;apos; instalazio paketearen baliozko kopia bat erabiliz."/>
+	<String Id="Error1730" Overridable="yes" Value="Administratzailea izan behar duzu aplikazio hau kentzeko. Aplikazio hau kentzeko, Administratzaile gisa hasi zaitezke saioa edo zure laguntza teknikoarekin harremanetan jar zaitezke laguntza eskatzeko."/>
+	<String Id="Error1729" Overridable="yes" Value="Konfigurazioa huts egin du."/>
+	<String Id="Error1728" Overridable="yes" Value="Konfigurazioa behar bezala osatu da."/>
+	<String Id="Error1727" Overridable="yes" Value="Iragarkiak huts egin du."/>
+	<String Id="Error1726" Overridable="yes" Value="Iragarkia behar bezala osatu da."/>
+	<String Id="Error1725" Overridable="yes" Value="Ezin izan da kendu."/>
+	<String Id="Error1724" Overridable="yes" Value="Ondo amaitu da kentzea."/>
+	<String Id="Error1723" Overridable="yes" Value="Arazo bat dago Windows Installer pakete honekin. Ezin izan da exekutatu instalazio hau osatzeko beharrezkoa den DLL bat. Jarri harremanetan zure laguntza-langilearekin edo pakete-saltzailearekin.{{ Ekintza [ProductName], sarrera: [ProductName], liburutegia: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="Arazo bat dago Windows Installer pakete honekin. Konfigurazioaren zati gisa exekutatzen den programa bat ez da espero bezala amaitu. Jarri harremanetan zure laguntza-langilearekin edo pakete-saltzailearekin.{{ Ekintza [ProductName], kokapena: [ProductName], komandoa: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="Arazo bat dago Windows Installer pakete honekin. Ezin izan da exekutatu instalazio hau burutzeko beharrezkoa den programa bat. Jarri harremanetan laguntza-langileekin edo pakete-saltzailearekin.{{ Ekintza: [ProductName], kokapena: [ProductName], komandoa: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="Arazo bat dago Windows Installer pakete honekin. Ezin izan da exekutatu instalazio hau osatzeko beharrezkoa den script bat. Jarri harremanetan laguntza-langilearekin edo pakete-saltzailearekin.{{ Ekintza pertsonalizatua [ProductName] script-errorea [ProductName], [ProductName]: [ProductName] Lerroa [ProductName], Zutabea [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="Ezin izan da Windows Installer Zerbitzura sartu. Hau gerta daiteke Windows modu seguruan exekutatzen ari bazara edo Windows Installer behar bezala instalatuta ez badago. Jarri harremanetan zure laguntza-langileei laguntza lortzeko."/>
+	<String Id="Error1718" Overridable="yes" Value="Sinadura digitalaren gidalerroak [ProductName] fitxategia baztertu zuen."/>
+	<String Id="Error1717" Overridable="yes" Value="Kendua [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="Konfiguratua [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="Instalatua [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="Ezin da [ProductName] bertsio zaharragoa kendu. Jarri harremanetan laguntza teknikoko taldearekin.{{ Sistemaren errorea [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] ezin du bere beharrezko produktuetako bat instalatu. Jarri harremanetan zure laguntza teknikoko taldearekin.{{ Sistema-errorea: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="Ezin izan dira aurkitu ordenagailua lehengo egoerara leheneratzeko behar diren fitxategietako bat edo gehiago. Ezin izango da zaharberritzea."/>
+	<String Id="Error1711" Overridable="yes" Value="Errore bat gertatu da instalazio-informazioa diskoan idaztean. Ziurtatu diskoan nahikoa leku erabilgarri dagoela eta sakatu Berriro saiatu edo Utzi instalazioa amaitzeko."/>
+	<String Id="Error1710" Overridable="yes" Value="Võite taastada oma arvuti eelmise oleku või jätkata installimist hiljem. Kas soovite taastada?"/>
+	<String Id="Error1709" Overridable="yes" Value="Produktua: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="Instalazioak huts egin du."/>
+	<String Id="Error1707" Overridable="yes" Value="Instalazioa behar bezala amaitu da."/>
+	<String Id="Error1706" Overridable="yes" Value="Ezin da [ProductName] produktuaren instalazio paketerik aurkitu. Saiatu berriro instalatzen &amp;apos;[ProductName]&amp;apos; instalazio paketearen baliozko kopia bat erabiliz."/>
+	<String Id="Error1705" Overridable="yes" Value="Selle toote eelmine installimine on pooleli. Jätkamiseks peate selle installiga tehtud muudatused tagasi võtma. Kas soovite need muudatused tagasi võtta?"/>
+	<String Id="Error1704" Overridable="yes" Value="[ProductName] installimine on praegu peatatud. Jätkamiseks peate selle installiga tehtud muudatused tagasi võtma. Kas soovite need muudatused tagasi võtta?"/>
+	<String Id="Error1703" Overridable="yes" Value="Zure sistema berrabiarazi behar duzu [ProductName]-n egindako konfigurazio-aldaketak indarrean egon daitezen. Sakatu Bai orain berrabiarazteko edo Ez geroago eskuz berrabiarazteko asmoa baduzu."/>
+	<String Id="Error1702" Overridable="yes" Value="Instalatzaileak zure sistema berrabiarazi behar du [ProductName] konfigurazioa jarraitu ahal izateko. Sakatu Bai orain berrabiarazteko edo Ez geroago eskuz berrabiarazteko asmoa baduzu."/>
+	<String Id="Error1701" Overridable="yes" Value="[ProductName] gakoak ez du balio. Egiaztatu gako zuzena sartu duzula."/>
+	<String Id="Error1609" Overridable="yes" Value="Errore bat gertatu da segurtasun-ezarpenak aplikatzean. [ProductName] ez da baliozko erabiltzaile edo talde bat. Hau paketearekin arazo bat izan daiteke, edo sareko domeinu-kontrolatzaile batera konektatzeko arazo bat izan daiteke. Egiaztatu sareko konexioa eta sakatu Berriro saiatu edo Utzi, instalazioa amaitzeko. {{Ezin da aurkitu erabiltzailearen SID, sistemaren errorea [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="Ezin izan da aurrez instalatutako produkturik aurkitu produktu hau instalatzeko makinan."/>
+	<String Id="Error1607" Overridable="yes" Value="Instalatzen jarraitu aurretik, aplikazio hauek itxi behar dira:"/>
+	<String Id="Error1606" Overridable="yes" Value="Ezin izan da sareko kokapena atzitu [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="Ez dago diskoko leku nahikorik &amp;apos;[ProductName]&amp;apos; bolumenean instalazioarekin jarraitzeko, berreskurapena gaituta. [ProductName] KB beharrezkoak dira, baina [ProductName] KB baino ez daude eskuragarri. Sakatu Ez ikusi egin instalatzen jarraitzeko, berreskuratze-informazioa gorde gabe, sakatu Berriro sakatu lekua erabilgarri dagoen berriro egiaztatzeko, edo sakatu Utzi instalaziotik irteteko."/>
+	<String Id="Error1604" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; produktua instalatuta dago jada, produktu hau instalatzea eragozten du. Bi produktuak bateraezinak dira."/>
+	<String Id="Error1603" Overridable="yes" Value="[ProductName][ProductName] fitxategia erabiltzen ari da{ prozesu honen bidez: Izena: [ProductName], Id.: [ProductName], Leihoaren izenburua: &amp;apos;[ProductName]&amp;apos;}. Itxi aplikazioa eta saiatu berriro."/>
+	<String Id="Error1602" Overridable="yes" Value="Kas soovite kindlasti tühistada?"/>
+	<String Id="Error1601" Overridable="yes" Value="Disko lekurik gabe -- Bolumena: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="[ProductName] erabiltzaileak [ProductName] produktuaren instalazioa hasi du. Erabiltzaile horrek berriro exekutatu beharko du instalazio hori produktu hori erabili aurretik."/>
+	<String Id="Error1502" Overridable="yes" Value="[ProductName] erabiltzaileak [ProductName] produktuaren instalazioa hasi du. Erabiltzaile horrek berriro exekutatu beharko du instalazio hori produktu hori erabili aurretik. Oraingo instalazioak jarraituko du."/>
+	<String Id="Error1501" Overridable="yes" Value="Errore bat gertatu da datu seguruak atzitzean. Mesedez, ziurtatu Windows Installer behar bezala konfiguratuta dagoela eta saiatu berriro instalatzen."/>
+	<String Id="Error1500" Overridable="yes" Value="Beste instalazio bat abian da. Instalazio hori amaitu behar duzu honekin jarraitu aurretik."/>
+	<String Id="Error1410" Overridable="yes" Value="Ezin izan da handitu erregistroko espazioa. [ProductName] Doako erregistroko espazioa behar da aplikazio hau instalatzeko."/>
+	<String Id="Error1409" Overridable="yes" Value="Ezin izan da [ProductName] gakoaren segurtasun-informazioa irakurri.{{ Sistema-errorea [ProductName].}} Egiaztatu gako horretarako sarbide nahikoa duzula edo jarri laguntza-langileekin harremanetan."/>
+	<String Id="Error1408" Overridable="yes" Value="Ezin izan dira lortu [ProductName] gakoaren azpi-gakoen izenak.{{ Sistemaren errorea [ProductName].}} Egiaztatu gako horretarako sarbide nahikoa duzula edo jarri laguntza-langileekin harremanetan."/>
+	<String Id="Error1407" Overridable="yes" Value="Ezin izan dira lortu [ProductName] gakoaren balio-izenak.{{ Sistemaren errorea [ProductName].}} Egiaztatu gako horretarako sarbide nahikoa duzula edo jarri zure laguntza-langileekin harremanetan."/>
+	<String Id="Error1406" Overridable="yes" Value="Ezin izan da [ProductName] balioa idatzi [ProductName] gakoan.{{ Sistemaren errorea [ProductName].}} Egiaztatu gako horretarako sarbide nahikoa duzula edo jarri laguntza-langileekin harremanetan."/>
+	<String Id="Error1405" Overridable="yes" Value="Ezin izan da [ProductName] balioa irakurri [ProductName] gakotik.{{ Sistemaren errorea [ProductName].}} Egiaztatu gako horretarako sarbide nahikoa duzula edo jarri harremanetan zure laguntza-langileekin."/>
+	<String Id="Error1404" Overridable="yes" Value="Ezin izan da [ProductName] gakoa ezabatu.{{ Sistemaren errorea [ProductName].}} Egiaztatu gako horretarako sarbide nahikoa duzula edo jarri laguntza-langileekin harremanetan."/>
+	<String Id="Error1403" Overridable="yes" Value="Ezin izan da [ProductName] balioa [ProductName] gakotik ezabatu.{{ Sistemaren errorea [ProductName].}} Egiaztatu gako horretarako sarbide nahikoa duzula edo jarri harremanetan laguntza-langileekin."/>
+	<String Id="Error1402" Overridable="yes" Value="Ezin izan da giltza ireki: [ProductName].{{ Sistemaren errorea [ProductName].}} Egiaztatu gako horretarako sarbide nahikoa duzula edo jarri laguntza-langileekin harremanetan."/>
+	<String Id="Error1401" Overridable="yes" Value="Ezin izan da gakoa sortu: [ProductName].{{ Sistemaren errorea [ProductName].}} Egiaztatu gako horretarako sarbide nahikoa duzula edo jarri harremanetan laguntza-langileekin."/>
+	<String Id="Error1336" Overridable="yes" Value="Errore bat gertatu da instalazio hau burutzeko beharrezkoa den aldi baterako fitxategi bat sortzean.{{ Karpeta: [ProductName]. Sistemaren errore-kodea: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="Instalazio honetarako behar den [ProductName] kabinete fitxategia hondatuta dago eta ezin da erabili. Horrek sareko errore bat, CD-ROM-aren irakurketan errore bat edo pakete honekin duen arazo bat adieraz dezake."/>
+	<String Id="Error1334" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; fitxategia ezin da instalatu fitxategia ezin delako aurkitu &amp;apos;[ProductName]&amp;apos; kabinete fitxategian. Horrek sareko errore bat, CD-ROMetik irakurtzen duen errore bat edo pakete honekin arazo bat izan dezake."/>
+	<String Id="Error1333" Overridable="yes" Value="Ezin izan da [ProductName] fitxategia behar bezala adabatu: CRC errorea."/>
+	<String Id="Error1332" Overridable="yes" Value="Ezin izan da [ProductName] fitxategia behar bezala mugitu: CRC errorea."/>
+	<String Id="Error1331" Overridable="yes" Value="Ezin izan da [ProductName] fitxategia behar bezala kopiatu: CRC errorea."/>
+	<String Id="Error1330" Overridable="yes" Value="Ezin da beharrezkoa den fitxategi bat instalatu [ProductName] kabinete fitxategiak sinadura digital baliogabea duelako. Honek kabinete fitxategia hondatuta dagoela adieraz dezake. {{ Errore [ProductName] WinVerifyTrust-ek itzuli du.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="Beharrezkoa den fitxategi bat ezin da instalatu kabinete fitxategia [ProductName] digitalki sinatuta ez dagoelako. Honek kabinete fitxategia hondatuta dagoela adieraz dezake."/>
+	<String Id="Error1328" Overridable="yes" Value="Errore bat gertatu da [ProductName] fitxategian adabakia aplikatzean. Ziurrenik beste bide batzuen bidez eguneratu da, eta jada ezin du aldatu adabaki honek. Informazio gehiago lortzeko, jarri harremanetan zure adabaki-saltzailearekin.{{ Sistema-errorea: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="Disko baliogabea: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="Errore bat gertatu da fitxategien segurtasuna lortzean: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; ez da baliozko fitxategi-izen labur bat."/>
+	<String Id="Error1324" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; karpeta-bideak karaktere baliogabea du."/>
+	<String Id="Error1323" Overridable="yes" Value="&amp;apos;[ProductName]&amp;apos; karpeta-bideak karpeta-bideetan balio ez duten hitzak ditu."/>
+	<String Id="Error1322" Overridable="yes" Value="[ProductName] karpetaren bidearen zati bat baliogabea da. Hutsik dago edo sistemak onartzen duen luzera gainditzen du."/>
+	<String Id="Error1321" Overridable="yes" Value="Instalatzaileak ez du pribilegio nahikorik fitxategi hau aldatzeko: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="Zehaztutako bidea luzeegia da: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="Sareko errore bat gertatu da iturburu-fitxategia irekitzen saiatzean: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="Sareko errore bat gertatu da direktorioa sortzen saiatzean: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="Errore bat gertatu da direktorioa sortzen saiatzean: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="Sareko errore bat gertatu da fitxategitik irakurtzen saiatzean: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="Ezin da zehaztutako karpetan idatzi: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="Zehaztutako &amp;apos;[ProductName]&amp;apos; bidea ez dago erabilgarri."/>
+	<String Id="Error1313" Overridable="yes" Value="[ProductName] bolumena ez dago erabilgarri une honetan. Mesedez, hautatu beste bat."/>
+	<String Id="Error1312" Overridable="yes" Value="Ezin da sortu &amp;apos;[ProductName]&amp;apos; direktorioa. Badago izen hau duen fitxategi bat. Mesedez, aldatu izena edo kendu fitxategia eta sakatu Berriz saiatu, edo sakatu Utzi irteteko."/>
+	<String Id="Error1311" Overridable="yes" Value="Iturburu-fitxategia ez da aurkitu{{(armairua)}}: [ProductName]. Egiaztatu fitxategia badagoela eta atzi dezakezula."/>
+	<String Id="Error1310" Overridable="yes" Value="Errorea fitxategian idaztean: [ProductName].{{ Sistemaren errorea [ProductName].}} Egiaztatu direktorio horretarako sarbidea duzula."/>
+	<String Id="Error1309" Overridable="yes" Value="Errorea fitxategitik irakurtzean: [ProductName].{{ Sistemaren errorea [ProductName].}} Egiaztatu fitxategia badagoela eta atzi dezakezula."/>
+	<String Id="Error1308" Overridable="yes" Value="Iturburu-fitxategia ez da aurkitu: [ProductName]. Egiaztatu fitxategia badagoela eta atzi dezakezula."/>
+	<String Id="Error1307" Overridable="yes" Value="Ez dago fitxategi hau instalatzeko nahikoa lekurik: [ProductName]. Askatu diskoko leku bat eta sakatu Berriro, edo sakatu Utzi irteteko."/>
+	<String Id="Error1306" Overridable="yes" Value="Beste aplikazio batek sarbide esklusiboa du &amp;apos;[ProductName]&amp;apos; fitxategirako. Mesedez, itxi gainerako aplikazio guztiak, eta sakatu Berriz saiatu."/>
+	<String Id="Error1305" Overridable="yes" Value="Errore bat gertatu da fitxategitik irakurtzean [ProductName].{{ Sistemaren errorea [ProductName].}} Egiaztatu fitxategia badagoela eta atzi dezakezula."/>
+	<String Id="Error1304" Overridable="yes" Value="Errorea fitxategian idaztean: [ProductName]. Egiaztatu direktorio horretarako sarbidea duzula."/>
+	<String Id="Error1303" Overridable="yes" Value="Instalatzaileak ez du pribilegio nahikorik direktorio honetara sartzeko: [ProductName]. Instalazioa ezin da jarraitu. Hasi saioa administratzaile gisa edo jarri harremanetan zure sistemaren administratzailearekin."/>
+	<String Id="Error1302" Overridable="yes" Value="Mesedez, sartu diskoa: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="Ezin da &amp;apos;[ProductName]&amp;apos; fitxategia sortu. Badago izen hau duen direktorio bat. Utzi instalazioa eta saiatu beste kokapen batean instalatzen."/>
+	<String Id="Error1101" Overridable="yes" Value="Errore bat fitxategitik irakurtzean: [ProductName].{{ Sistemaren errorea [ProductName].}} Egiaztatu fitxategia badagoela eta atzi dezakezula."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] }Konfigurazioak huts egin du."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] }Konfigurazioa behar bezala osatu da."/>
+	<String Id="Error23" Overridable="yes" Value="Aplikazio honen bertsio zaharragoak kentzeko prestatzen..."/>
+	<String Id="Error22" Overridable="yes" Value="Aplikazio honen bertsio zaharragoak kentzen..."/>
+	<String Id="Error21" Overridable="yes" Value="Beharrezko informazioa biltzen..."/>
+	<String Id="Error20" Overridable="yes" Value="Mesedez, itxaron Windows-ek [ProductName] konfiguratzen duen bitartean"/>
+	<String Id="Error19" Overridable="yes" Value="Instalatzailea goiz gelditu zen."/>
+	<String Id="Error18" Overridable="yes" Value="Instalatzaileak jada ez du erantzuten."/>
+	<String Id="Error17" Overridable="yes" Value="Memoriarik gabe. Itzali beste aplikazio batzuk berriro saiatu aurretik."/>
+	<String Id="Error16" Overridable="yes" Value="Falta den denbora: {[ProductName] minutu }{[ProductName] segundo}"/>
+	<String Id="Error15" Overridable="yes" Value="Amaitutako ekintza [ProductName]: [ProductName]. Itzuli balioa [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="Ekintzaren hasiera [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="Erregistroa gelditu da: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="Saioa hasi zen: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="Mezu mota: [ProductName], Argudioa: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="Ekintza [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{Disko beteta: }}"/>
+	<String Id="Error5" Overridable="yes" Value="Instalatzaileak ustekabeko errore bat aurkitu du pakete hau instalatzean. Honek pakete honekin arazo bat adierazi dezake. Errore kodea [ProductName] da. {{Argumentuak hauek dira: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="Informazioa [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="Abisua [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{Errorea [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{Errore larria: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Produktuaren informazioa kentzea"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Direktorioa: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Mugitutako fitxategiak kentzen"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Fitxategia: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Babeskopia fitxategiak kentzea"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Tagasipööramine:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Aplikazioaren testuingurua:[ProductName], Asanbladaren izena:[ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Muntaiaren informazioa argitaratzea"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Aplikazioaren testuingurua:[ProductName], Asanbladaren izena:[ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Muntaiaren informazioa argitaratzea"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Mendekotasunak: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Sistemaren katalogoa instalatzea"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="Ekintzarako script-eragiketak sortzea:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="Publizitate aplikazioa"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Gakoa: [ProductName], Izena: [ProductName], Balioa: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Sistemaren erregistroko balioak idaztea"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Atala: [ProductName], Gakoa: [ProductName], Balioa: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="INI fitxategien balioak idaztea"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Izena: [ProductName], Balioa: [ProductName], Ekintza [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Inguruneko kateak eguneratzen"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Mota liburutegiak kentzea"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Programaren identifikatzaileak kentzea"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME eduki mota: [ProductName], luzapena: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="MIME informazioa kentzen"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Letra-tipoa: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Letra-tipoak kentzea"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Luzapena: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Luzapen-zerbitzarien erregistroa kentzen"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="COM+ aplikazioak eta osagaiak erregistratzea"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Klasearen ID: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Kendu klaseko zerbitzariak"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Ezaugarri: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Produktuen Ezaugarriak argitaratzea"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Osagaien IDa: [ProductName], Kalifikatzailea: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Osagai kualifikatuak argitaratzea"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Zerbitzua: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="Zerbitzuak gelditzea"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Zerbitzua: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="Zerbitzuak martxan jartzea"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="ODBC direktorioak hasieratzen"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Karpeta: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Moduluak deserregistratzea"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Karpeta: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Moduluak erregistratzea"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Produktu kalifikatzaileak bilatzea"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Lasterbidea: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Lasterbideak kentzen"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Gakoa: [ProductName], Izena: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Sistemaren erregistroko balioak kentzea"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="ODBC osagaiak kentzea"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Atala: [ProductName], Gakoa: [ProductName], Balioa: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="INI fitxategien sarrerak kentzen"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Karpeta: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Karpetak kentzen"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Direktorioa: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Fitxategiak kentzen"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Aplikazioa: [ProductName], Komando lerroa: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Aplikazioak kentzea"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Izena: [ProductName], Balioa: [ProductName], Ekintza [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Inguruneko kateak eguneratzen"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Direktorioa: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Bikoiztutako fitxategiak kentzea"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="Erabiltzailea erregistratzea"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Mota liburutegiak erregistratzea"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Produktua erregistratzea"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Letra-tipoa: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Letra tipoak erregistratzea"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [ProductName]{{, AppType: [ProductName], Erabiltzaileak: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="COM+ aplikazioak eta osagaiak erregistratzea"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="Osagaien erregistroa eguneratzen"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Direktorioa: [ProductName], Tamaina: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="Fitxategiak adabakitzea"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Direktorioa: [ProductName], Tamaina: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="Fitxategiak mugitzea"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Aplikazioa: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Lotutako aplikazioetatik eginbideen egoerak migratzen"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Abian jartzeko baldintzak ebaluatzea"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Zerbitzua: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="Zerbitzu berriak instalatzea"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="ODBC osagaiak instalatzea"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Aurkitutako aplikazioa: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Erlazionatutako aplikazioen bilaketa"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Direktorioa: [ProductName], Tamaina: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Fitxategi bikoiztuak sortzea"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Zerbitzua: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="Zerbitzuak ezabatzea"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Karpeta: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="Karpetak sortzea"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="Produktu kalifikatzaileak bilatzea"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Fitxategia: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="Lotura exekutagarriak"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Jabetza: [ProductName], Sinadura: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="Instalatutako aplikazioen bilaketa"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Espazio librea: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Erregistroko espazioa esleitzea"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Programaren identifikatzaileak erregistratzea"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME eduki mota: [ProductName], luzapena: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="MIME informazioa erregistratzen"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Luzapena: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Luzapen zerbitzariak erregistratzea"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Klasearen ID: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Klaseko zerbitzariak erregistratzea"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="Produktuaren informazioa argitaratzea"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Ezaugarri: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Argitalpen produktuaren ezaugarriak"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Osagaien IDa: [ProductName], Kalifikatzailea: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="Osagai kualifikatuak argitaratzea"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Lasterbidea: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Lasterbideak sortzea"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="Konputaziorako espazio-eskakizunak"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="Konputaziorako espazio-eskakizunak"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="Konputaziorako espazio-eskakizunak"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Direktorioa: [ProductName], Tamaina: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Sareko instalazio fitxategiak kopiatzen"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Fitxategia: [ProductName], Direktorioa: [ProductName], Tamaina: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="Fitxategi berriak kopiatzen"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="Instalazioa balioztatzen"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Irakurri [ProductName] lizentzia-kontratua"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Eguneratu"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Instalatu"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Lizentzia-kontratuaren baldintzak onartzen ditut"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Ongi etorri [ProductName] konfigurazio morroira"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Konfigurazio morroiak [ProductName] eguneratuko du zure ordenagailuan. Sakatu Hurrengoa jarraitzeko edo Utzi Konfigurazio morroia irteteko."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="Konfigurazio morroiak [ProductName] instalatuko du zure ordenagailuan. Sakatu Hurrengoa jarraitzeko edo Utzi Konfigurazio morroia irteteko."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Harridura ikonoa"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="Mesedez, itxaron instalatzaileak diskoko espazio-eskakizunak zehazten amaitzen duen bitartean."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Itzuli"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] eguneratzeko prest"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Sakatu Eguneratu [ProductName] ordenagailutik eguneratzeko. Sakatu Atzera zure instalazio-ezarpenetako bat berrikusteko edo aldatzeko. Egin klik Utzi morroitik irteteko."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Eguneratu"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] kentzeko prest"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Sakatu Kendu [ProductName] ordenagailutik kentzeko. Sakatu Atzera zure instalazio-ezarpenetako bat berrikusteko edo aldatzeko. Egin klik Utzi morroitik irteteko."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Kendu"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] konpontzeko prest"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Sakatu Konpondu [ProductName]-ren instalazioa konpontzeko. Sakatu Atzera zure instalazio-ezarpenetako bat berrikusteko edo aldatzeko. Egin klik Utzi morroitik irteteko."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Berriz eta parekatu"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] aldatzeko prest"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Sakatu Aldatu instalazioa hasteko. Sakatu Atzera zure instalazio-ezarpenetako bat berrikusteko edo aldatzeko. Egin klik Utzi morroitik irteteko."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Aldatu"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] instalatzeko prest"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Sakatu Instalatu instalazioa hasteko. Sakatu Atzera zure instalazio-ezarpenetako bat berrikusteko edo aldatzeko. Egin klik Utzi morroitik irteteko."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Instalatu"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="Egin klik Amaitu botoian Konfigurazio morroia irteteko."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] konfigurazioa eten egin da. Zure sistema ez da aldatu. Programa hau geroago instalatzeko, exekutatu berriro instalazioa."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Konfigurazio morroia eten egin da"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Programaren ezaugarri guztiak instalatuko dira. Disko leku gehien eskatzen du."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Erabiltzaileek zein programaren funtzio instalatuko diren eta non instalatuko diren aukeratzeko aukera ematen die. Erabiltzaile aurreratuentzat gomendatua."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Programaren ezaugarri ohikoenak instalatzen ditu. Erabiltzaile gehienentzat gomendatua."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="Aukeratu zure beharretara hobekien egokitzen den konfigurazio mota"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Aukeratu konfigurazio mota"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Instalazio osoa"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C&amp;osatu"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Instalazio pertsonalizatua"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="C&amp;ustom"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Instalazio tipikoa"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Ohikoa"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] konfigurazio morroia berrekin"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="Konfigurazio morroiak [ProductName] instalazioa amaituko du zure ordenagailuan. Sakatu Instalatu jarraitzeko edo Utzi konfigurazio morroia irteteko."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Instalatu"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Egoera:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="Egindako aurrerapena"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] eguneratzen"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Mesedez, itxaron Konfigurazio morroiak [ProductName] eguneratzen duen bitartean."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] kentzen"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Mesedez, itxaron Konfigurazio morroiak [ProductName] kentzen duen bitartean."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] konpontzen"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Mesedez, itxaron Konfigurazio morroiak [ProductName] konpontzen duen bitartean."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] aldatzen"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="Mesedez, itxaron Konfigurazio morroia [ProductName] aldatzen den bitartean."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}[ProductName] instalatzen"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Mesedez, itxaron Konfigurazio morroiak [ProductName] instalatzen duen bitartean."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Ongi etorri [ProductName] konfigurazio morroira"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="Mesedez, itxaron Konfigurazio morroia instalazioan zehar gidatzeko prestatzen den bitartean."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Bestela, instalatzailearen itzuleraren funtzionaltasuna desgaitzea aukera dezakezu. Atzera itzulia desgaituz gero, instalatzaileak zure ordenagailuaren jatorrizko egoera berreskuratzea eragozten du, instalazioa edozein modutan eteten bada. Sakatu Bai, atzerapena desgaitzeko arriskua hartu nahi baduzu."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Diskoko espaziorik gabe"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Instalaziorako beharrezkoa den diskoko espazioak erabilgarri dagoen diskoa gainditzen du."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Nabarmendutako bolumenek ez dute nahikoa leku eskuragarri une honetan hautatutako eginbideetarako. Nabarmendutako bolumenetatik fitxategi batzuk ken ditzakezu, eginbide gutxiago instalatu edo beste helmuga-unitate bat hauta dezakezu."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Diskoko espaziorik gabe"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Instalaziorako beharrezkoa den diskoko espazioak erabilgarri dagoen diskoa gainditzen du."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="Nabarmendutako bolumenek ez dute nahikoa leku eskuragarri une honetan hautatutako eginbideetarako. Nabarmendutako bolumenetatik fitxategi batzuk ken ditzakezu, eginbide gutxiago instalatu edo beste helmuga-unitate bat hauta dezakezu."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Ez itxi aplikazioak. Berrabiarazi beharko da."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Itxi aplikazioak eta saiatu haiek berrabiarazten."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Erabiltzen ari diren fitxategiak"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Eguneratu behar diren fitxategi batzuk erabiltzen ari dira."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="Aplikazio hauek konfigurazio honek eguneratu beharreko fitxategiak erabiltzen ari dira. Konfigurazio morroia ixten utzi eta beranduago berrabiarazi edo makina berrabiarazten saia zaitezke."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Ongi etorri [ProductName] konfigurazio morroira"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Konfigurazio morroiak [ProductName] eginbideak zure ordenagailuan instalatzeko modua aldatzeko edo ordenagailutik kentzeko aukera ematen dizu. Sakatu Hurrengoa jarraitzeko edo Utzi Konfigurazio morroia irteteko."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] ezin da konpondu."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Instalazio berrieneko akatsak konpontzen ditu falta diren eta hondatutako fitxategiak, lasterbideak eta erregistroko sarrerak konponduz."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] ezin da kendu."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="[ProductName] ordenagailutik kentzen du."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName]-k ez du modu independentean hauta daitekeen eginbiderik."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Eginbideak instalatzeko modua aldatzeko aukera ematen du."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Aldatu, konpondu edo kendu instalazioa"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Hautatu egin nahi duzun eragiketa."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Kendu instalazioa"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Kendu"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Konponketa Instalazioa"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Berriz eta parekatu"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Aldatu Instalazioa"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Aldatu"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Azken erabiltzailearen lizentzia-kontratua"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Mesedez, irakurri arretaz ondorengo lizentzia-hitzarmena"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Lizentzia-kontratuaren baldintzak onartzen ditut"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Informazioaren ikonoa"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="Instalazio-direktorioak disko gogor lokal batean egon behar du."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Aldatu..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Instalazioa eta karpeta:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] makina bakoitzeko karpeta batean instalatuko da lehenespenez eta erabilgarri egongo da erabiltzaile guztientzat. Instalazio-karpeta lehenetsia alda dezakezu. Tokiko Administratzaile pribilegioak izan behar dituzu."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Instalatu &amp;makina honen erabiltzaile guztientzat"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName]-k ez du onartzen erabiltzaile bakoitzeko instalazioa."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] erabiltzaile bakoitzeko karpeta batean instalatuko da eta zure erabiltzaile-konturako soilik egongo da erabilgarri. Ez duzu tokiko Administratzaile pribilegiorik behar."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Instalatu &amp;zuretzat ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Instalazio-esparrua"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="Aukeratu instalazio-esparrua eta karpeta"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Instalatu [ProductName] hemen:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="Sakatu Hurrengoa karpeta lehenetsian instalatzeko edo sakatu Aldatu beste bat aukeratzeko."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Helmuga karpeta"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Aldatu..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Erabiltzen ari diren fitxategiak"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="Eguneratu behar diren fitxategi batzuk erabiltzen ari dira."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="Aplikazio hauek konfigurazio honek eguneratu beharreko fitxategiak erabiltzen ari dira. Itxi aplikazio hauek eta sakatu &amp;Saiatu berriro konfiguratzen jarraitzeko edo Irten bertatik irteteko."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="I&amp;irten"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Aldatu"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Instalatu"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="EzaugarriakDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="EzaugarriakDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Produktuaren Ezaugarriak"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="Hautatu funtzioak instalatzea nahi duzun modua."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="Produktuaren ezaugarriak"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="Egin klik Amaitu botoian Konfigurazio morroia irteteko."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] Konfigurazio morroia goiztiar amaitu da errore baten ondorioz. Zure sistema ez da aldatu. Programa hau geroago instalatzeko, exekutatu berriro konfigurazio morroia."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Konfigurazio morroia goiztiarra amaitu da"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] Konfigurazio morroia osatu du"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="Egin klik Amaitu botoian Konfigurazio morroia irteteko."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Informazioaren ikonoa"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="Informazio testua"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Diskoko espazio-eskakizunak"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="Hautatutako funtzioak instalatzeko behar den disko-lekua."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="Nabarmendutako bolumenek ez dute diskorako leku nahikorik eskuragarri hautatutako eginbideetarako. Fitxategi batzuk kendu ditzakezu nabarmendutako bolumenetatik, eginbide gutxiago instalatu edo helmuga unitate desberdinak hauta ditzakezu."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Lekua:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Konfigurazio pertsonalizatua"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="Hautatu funtzioak instalatzea nahi duzun modua."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="Egin klik beheko zuhaitzean dauden ikonoetan eginbideak instalatzeko modua aldatzeko."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Disko eta erabilera"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="Berriz eta ezarri"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="B&amp;arakatu..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="Hautapenen zuhaitza"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="Informazioaren ikonoa"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Kas olete kindel, et soovite [ProductName] installimise tühistada?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Aldatu helmuga karpeta"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="Arakatu helmugako karpetara"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Karpetaren izena:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Sortu karpeta berri bat"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_Berria"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Maila bat gora"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Gora"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Begiratu:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;aurreratua"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Instalatu"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Sakatu Instalatu produktua zuretzako aukera lehenetsiekin instalatzeko. Sakatu Aurreratua instalazio aukerak aldatzeko."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Sakatu Instalatu produktua erabiltzaile guztientzat aukera lehenetsiekin instalatzeko. Sakatu Aurreratua instalazio aukerak aldatzeko."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Lizentzia-kontratuaren baldintzak onartzen ditut"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Irakurri [ProductName] lizentzia-kontratua"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Konfigurazioa"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;Inprimatu"/>
+	<String Id="WixUIOK" Overridable="yes" Value="Ados"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;Ez"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;Bai"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;Ez ikusi"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;Saiatu berriro"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;Amaitu"/>
+	<String Id="WixUICancel" Overridable="yes" Value="Utzi"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;Hurrengoa"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;Itzuli"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall konfigurazioa desinstalatzen"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall konfigurazioa atzera egiten"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfigurazioa instalatzen"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfigurazioa atzera egiten"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall konfiguratzen"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfiguratzen"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ezin da Windows Firewallera konektatu. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Urruneko aplikazioetarako bistaratzeak aukeran eskuragarri daude konfigurazioan"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Ikusi RAAS zerbitzariak Explorer-en"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Sortu urruneko aplikazioen lasterbideak ordenagailu lokaleko zerbitzariko aplikazioetarako"/>

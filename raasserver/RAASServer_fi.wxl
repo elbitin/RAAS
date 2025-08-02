@@ -1,4 +1,11 @@
 ﻿<WixLocalization Culture="fi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsin palomuurikokoonpanon asennuksen poistaminen"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windowsin palomuurin määritysten palauttaminen"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsin palomuurikokoonpanon asentaminen"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windowsin palomuurin määritysten palauttaminen"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windowsin palomuurin määrittäminen"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windowsin palomuurin määrittäminen"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ei voi muodostaa yhteyttä Windowsin palomuuriin. ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Jaettu verkkopalvelin"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Jaa asemat verkossa mahdollistaaksesi hallinnan ja selaamisen RAAS-asiakassovelluksesta"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Voi käynnistää uudelleen"/>

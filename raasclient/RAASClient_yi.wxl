@@ -1,4 +1,572 @@
-﻿<WixLocalization Culture="yi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="yi" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="באַנד"/>
+	<String Id="UITextVolumeCostSize" Overridable="yes" Value="דיסק גרייס"/>
+	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="פארלאנגט"/>
+	<String Id="UITextVolumeCostDifference" Overridable="yes" Value="חילוק"/>
+	<String Id="UITextVolumeCostAvailable" Overridable="yes" Value="בנימצא"/>
+	<String Id="UITextTimeRemaining" Overridable="yes" Value="צייט רוען: { [ProductName] מינוט}{ [ProductName] סעקונדעס}"/>
+	<String Id="UITextSelParentCostPosPos" Overridable="yes" Value="דעם שטריך ריקווייערז [ProductName] אויף דיין שווער פאָר. עס האט [ProductName] פון [ProductName] סאַב-פונקציעס אויסגעקליבן. די סובפעאַטורעס דאַרפן [ProductName] אויף דיין שווער פאָר."/>
+	<String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="דעם שטריך ריקווייערז [ProductName] אויף דיין שווער פאָר. עס האט [ProductName] פון [ProductName] סאַב-פונקציעס אויסגעקליבן. די סובפעאַטורעס פריי אַרויף [ProductName] אויף דיין שווער פאָר."/>
+	<String Id="UITextSelParentCostNegPos" Overridable="yes" Value="דער שטריך פריי אַרויף [ProductName] אויף דיין שווער פאָר. עס האט [ProductName] פון [ProductName] סאַב-פונקציעס אויסגעקליבן. די סובפעאַטורעס דאַרפן [ProductName] אויף דיין שווער פאָר."/>
+	<String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="דער שטריך פריי אַרויף [ProductName] אויף דיין שווער פאָר. עס האט [ProductName] פון [ProductName] סאַב-פונקציעס אויסגעקליבן. די סובפעאַטורעס פריי אַרויף [ProductName] אויף דיין שווער פאָר."/>
+	<String Id="UITextSelNetworkNetwork" Overridable="yes" Value="דעם שטריך וועט זיין לויפן פֿון די נעץ"/>
+	<String Id="UITextSelNetworkLocal" Overridable="yes" Value="דער שטריך וועט טוישן פון לויפן פון נעץ שטאַט צו זיין אינסטאַלירן אויף די היגע שווער פאָר"/>
+	<String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="דער שטריך וועט טוישן פון לויפן פון נעץ שטאַט צו שטעלן צו זיין אינסטאַלירן ווען פארלאנגט"/>
+	<String Id="UITextSelNetworkAbsent" Overridable="yes" Value="דער שטריך וועט זיין ונינסטאַללעד גאָר, איר וועט נישט קענען צו לויפן עס פֿון די נעץ"/>
+	<String Id="UITextSelLocalNetwork" Overridable="yes" Value="דער שטריך וועט זיין אַוועקגענומען פון דיין היגע שווער פאָר, אָבער וועט זיין נאָך בנימצא צו לויפן פֿון די נעץ"/>
+	<String Id="UITextSelLocalLocal" Overridable="yes" Value="דער שטריך וועט בלייַבן אויף דיין היגע שווער פאָר"/>
+	<String Id="UITextSelLocalCD" Overridable="yes" Value="דער שטריך וועט זיין אַוועקגענומען פון דיין היגע שווער פאָר, אָבער וועט זיין נאָך בנימצא צו לויפן פֿון קאָמפּאַקטדיסק"/>
+	<String Id="UITextSelLocalAdvertise" Overridable="yes" Value="דער שטריך וועט זיין אַוועקגענומען פון דיין היגע שווער פאָר, אָבער וועט זיין שטעלן צו זיין אינסטאַלירן ווען פארלאנגט"/>
+	<String Id="UITextSelLocalAbsent" Overridable="yes" Value="דעם שטריך וועט זיין גאָר אַוועקגענומען"/>
+	<String Id="UITextSelCostPending" Overridable="yes" Value="קאַמפּיילינג קאָס פֿאַר דעם שטריך ..."/>
+	<String Id="UITextSelChildCostPos" Overridable="yes" Value="דעם שטריך ריקווייערז [ProductName] אויף דיין שווער פאָר."/>
+	<String Id="UITextSelChildCostNeg" Overridable="yes" Value="דער שטריך פריי אַרויף [ProductName] אויף דיין שווער פאָר."/>
+	<String Id="UITextSelCDLocal" Overridable="yes" Value="דער שטריך וועט טוישן פון לויפן פֿון CD שטאַט צו זיין אינסטאַלירן אויף די היגע שווער פאָר"/>
+	<String Id="UITextSelCDCD" Overridable="yes" Value="דער שטריך וועט זיין לויפן פֿון CD"/>
+	<String Id="UITextSelCDAdvertise" Overridable="yes" Value="דער שטריך וועט טוישן פון לויפן פון CD שטאַט צו שטעלן צו זיין אינסטאַלירן ווען פארלאנגט"/>
+	<String Id="UITextSelCDAbsent" Overridable="yes" Value="דער שטריך וועט זיין ונינסטאַללעד גאָר, איר וועט נישט קענען צו לויפן עס פֿון קאָמפּאַקטדיסק"/>
+	<String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="דעם שטריך וועט זיין בארעכטיגט צו לויפן פֿון די נעץ"/>
+	<String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="דעם שטריך וועט זיין אינסטאַלירן אויף דיין היגע שווער פאָר"/>
+	<String Id="UITextSelAdvertiseCD" Overridable="yes" Value="דער שטריך וועט זיין בארעכטיגט צו לויפן פֿון CD"/>
+	<String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="וועט זיין אינסטאַלירן ווען פארלאנגט"/>
+	<String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="דער שטריך וועט זיין אַנאַוויילאַבאַל"/>
+	<String Id="UITextSelAbsentNetwork" Overridable="yes" Value="דעם שטריך וועט זיין אינסטאַלירן צו לויפן פֿון די נעץ"/>
+	<String Id="UITextSelAbsentLocal" Overridable="yes" Value="דעם שטריך וועט זיין אינסטאַלירן אויף די היגע שווער פאָר"/>
+	<String Id="UITextSelAbsentCD" Overridable="yes" Value="דעם שטריך וועט זיין אינסטאַלירן צו לויפן פֿון קאָמפּאַקטדיסק"/>
+	<String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="דעם שטריך וועט זיין אינסטאַלירן ווען פארלאנגט"/>
+	<String Id="UITextSelAbsentAbsent" Overridable="yes" Value="דער שטריך וועט בלייבן ונינסטאַללעד"/>
+	<String Id="UITextScriptInProgress" Overridable="yes" Value="קלייַבן פארלאנגט אינפֿאָרמאַציע ..."/>
+	<String Id="UITextNewFolder" Overridable="yes" Value="טעקע|נייַע טעקע"/>
+	<String Id="UITextMenuNetwork" Overridable="yes" Value="וועט זיין אינסטאַלירן צו לויפן פֿון די נעץ"/>
+	<String Id="UITextMenuLocal" Overridable="yes" Value="וועט זיין אינסטאַלירן אויף היגע שווער פאָר"/>
+	<String Id="UITextMenuCD" Overridable="yes" Value="וועט זיין אינסטאַלירן צו לויפן פֿון קאָמפּאַקטדיסק"/>
+	<String Id="UITextMenuAllNetwork" Overridable="yes" Value="די גאנצע שטריך וועט זיין אינסטאַלירן צו לויפן פֿון די נעץ"/>
+	<String Id="UITextMenuAllLocal" Overridable="yes" Value="גאַנץ שטריך וועט זיין אינסטאַלירן אויף היגע שווער פאָר"/>
+	<String Id="UITextMenuAllCD" Overridable="yes" Value="די גאנצע שטריך וועט זיין אינסטאַלירן צו לויפן פֿון קאָמפּאַקטדיסק"/>
+	<String Id="UITextMenuAdvertise" Overridable="yes" Value="דער שטריך וועט זיין אינסטאַלירן ווען פארלאנגט"/>
+	<String Id="UITextMenuAbsent" Overridable="yes" Value="די גאנצע שטריך וועט זיין אַנאַוויילאַבאַל"/>
+	<String Id="UITextMB" Overridable="yes" Value="MB"/>
+	<String Id="UITextKB" Overridable="yes" Value="KB"/>
+	<String Id="UITextGB" Overridable="yes" Value="גיגאבייט"/>
+	<String Id="UITextbytes" Overridable="yes" Value="ביטעס"/>
+	<String Id="Error1938" Overridable="yes" Value="א טעות פארגעקומען בעשאַס די ינסטאַלירונג פון פֿאַרזאַמלונג &amp;apos;[ProductName]&amp;apos;. איינער אָדער מער מאַדזשולז פון די פֿאַרזאַמלונג קען ניט זיין געפֿונען. HRESULT: [ProductName]. {{ פֿאַרזאַמלונג צובינד: [ProductName], פֿונקציע: [ProductName], קאָמפּאָנענט: [ProductName]}}"/>
+	<String Id="Error1937" Overridable="yes" Value="א טעות פארגעקומען בעשאַס די ינסטאַלירונג פון פֿאַרזאַמלונג &amp;apos;[ProductName]&amp;apos;. די כסימע אָדער קאַטאַלאָג קען נישט זיין וועראַפייד אָדער איז נישט גילטיק. HRESULT: [ProductName]. {{ פֿאַרזאַמלונג צובינד: [ProductName], פֿונקציע: [ProductName], קאָמפּאָנענט: [ProductName]}}"/>
+	<String Id="Error1936" Overridable="yes" Value="א טעות פארגעקומען בעשאַס די ינסטאַלירונג פון פֿאַרזאַמלונג &amp;apos;[ProductName]&amp;apos;. די פֿאַרזאַמלונג איז נישט שטארק געהייסן אָדער איז נישט געחתמעט מיט די מינימאַל שליסל לענג. HRESULT: [ProductName]. {{ פֿאַרזאַמלונג צובינד: [ProductName], פֿונקציע: [ProductName], קאָמפּאָנענט: [ProductName]}}"/>
+	<String Id="Error1935" Overridable="yes" Value="א טעות פארגעקומען בעשאַס די ינסטאַלירונג פון פֿאַרזאַמלונג &amp;apos;[ProductName]&amp;apos;. ביטע אָפּשיקן צו הילף און שטיצן פֿאַר מער אינפֿאָרמאַציע. HRESULT: [ProductName]. {{ פֿאַרזאַמלונג צובינד: [ProductName], פֿונקציע: [ProductName], קאָמפּאָנענט: [ProductName]}}"/>
+	<String Id="Error1934" Overridable="yes" Value="באַניצער ינסטאַליישאַנז זענען פאַרקריפּלט דורך פּאָליטיק אויף די מאַשין."/>
+	<String Id="Error1933" Overridable="yes" Value="די Windows ינסטאַללער סערוויס קען נישט דערהייַנטיקן איינער אָדער מער פּראָטעקטעד Windows טעקעס. {{ SFP טעות: [ProductName]. רשימה פון פּראָטעקטעד טעקעס:\r\n[ProductName]}}"/>
+	<String Id="Error1932" Overridable="yes" Value="די Windows ינסטאַללער סערוויס קען נישט דערהייַנטיקן די פּראָטעקטעד Windows טעקע [ProductName]. {{ פּעקל ווערסיע: [ProductName], OS פּראָטעקטעד ווערסיע: [ProductName], SFP טעות: [ProductName]}}"/>
+	<String Id="Error1931" Overridable="yes" Value="די Windows ינסטאַללער סערוויס קען נישט דערהייַנטיקן די סיסטעם טעקע [ProductName] ווייַל די טעקע איז פּראָטעקטעד דורך Windows. איר קען דאַרפֿן צו דערהייַנטיקן דיין אָפּערייטינג סיסטעם פֿאַר דעם פּראָגראַם צו אַרבעטן ריכטיק. {{ פּעקל ווערסיע: [ProductName], אַס פּראָטעקטעד ווערסיע: [ProductName]}}"/>
+	<String Id="Error1930" Overridable="yes" Value="די באַשרייַבונג פֿאַר דינסט &amp;apos;[ProductName]&amp;apos; ([ProductName]) קען נישט זיין געביטן."/>
+	<String Id="Error1929" Overridable="yes" Value="טעות אַנרעדזשיסטערינג COM+ אַפּלאַקיישאַן. קאָנטאַקט דיין שטיצן פּערסאַנעל פֿאַר מער אינפֿאָרמאַציע."/>
+	<String Id="Error1928" Overridable="yes" Value="טעות רעדזשיסטערינג COM+ אַפּלאַקיישאַן. קאָנטאַקט דיין שטיצן פּערסאַנעל פֿאַר מער אינפֿאָרמאַציע."/>
+	<String Id="Error1927" Overridable="yes" Value="קאָמפּאָנענט באַדינונגס (COM+ 1.0) זענען נישט אינסטאַלירן אויף דעם קאָמפּיוטער. דעם ייַנמאָנטירונג ריקווייערז קאָמפּאָנענט באַדינונגס צו פאַרענדיקן הצלחה. קאָמפּאָנענט באַדינונגס זענען בארעכטיגט אויף Windows 2000."/>
+	<String Id="Error1926" Overridable="yes" Value="קען נישט שטעלן טעקע זיכערהייט פֿאַר טעקע &amp;apos;[ProductName]&amp;apos;. טעות: [ProductName]. באַשטעטיקן אַז איר האָט גענוג פּריווילאַדזשאַז צו מאָדיפיצירן די זיכערהייט פּערמישאַנז פֿאַר דעם טעקע."/>
+	<String Id="Error1925" Overridable="yes" Value="איר טאָן ניט האָבן גענוג פּריווילאַדזשאַז צו פאַרענדיקן דעם ינסטאַלירונג פֿאַר אַלע ניצערס פון די מאַשין. קלאָץ אויף ווי אַדמיניסטראַטאָר און פּרובירן ווידער דעם ינסטאַלירונג."/>
+	<String Id="Error1924" Overridable="yes" Value="קען נישט דערהייַנטיקן די סוויווע בייַטעוודיק &amp;apos;[ProductName]&amp;apos;. באַשטעטיקן אַז איר האָבן גענוג פּריווילאַדזשאַז צו מאָדיפיצירן סוויווע וועריאַבאַלז."/>
+	<String Id="Error1923" Overridable="yes" Value="סערוויס &amp;apos;[ProductName]&amp;apos; ([ProductName]) קען נישט זיין אינסטאַלירן. באַשטעטיקן אַז איר האָבן גענוג פּריווילאַדזשאַז צו ינסטאַלירן סיסטעם באַדינונגס."/>
+	<String Id="Error1922" Overridable="yes" Value="סערוויס &amp;apos;[ProductName]&amp;apos; ([ProductName]) קען נישט ווערן אויסגעמעקט. באַשטעטיקן אַז איר האָבן גענוג פּריווילאַדזשאַז צו באַזייַטיקן סיסטעם באַדינונגס."/>
+	<String Id="Error1921" Overridable="yes" Value="סערוויס &amp;apos;[ProductName]&amp;apos; ([ProductName]) קען נישט זיין סטאַפּט. באַשטעטיקן אַז איר האָבן גענוג פּריווילאַדזשאַז צו האַלטן סיסטעם באַדינונגס."/>
+	<String Id="Error1920" Overridable="yes" Value="סערוויס &amp;apos;[ProductName]&amp;apos; ([ProductName]) קען נישט אָנהייבן. באַשטעטיקן אַז איר האָבן גענוג פּריווילאַדזשאַז צו אָנהייבן סיסטעם באַדינונגס."/>
+	<String Id="Error1919" Overridable="yes" Value="טעות קאַנפיגיערינג ODBC דאַטן מקור: [ProductName], ODBC טעות [ProductName]: [ProductName]. באַשטעטיקן אַז די טעקע [ProductName] יגזיסץ און אַז איר קענען אַקסעס עס."/>
+	<String Id="Error1918" Overridable="yes" Value="טעות ינסטאָלינג ODBC שאָפער: [ProductName], ODBC טעות [ProductName]: [ProductName]. באַשטעטיקן אַז די טעקע [ProductName] יגזיסץ און אַז איר קענען אַקסעס עס."/>
+	<String Id="Error1917" Overridable="yes" Value="טעות רימוווינג ODBC שאָפער: [ProductName], ODBC טעות [ProductName]: [ProductName]. באַשטעטיקן אַז איר האָבן גענוג פּריווילאַדזשאַז צו באַזייַטיקן ODBC דריווערס."/>
+	<String Id="Error1916" Overridable="yes" Value="טעות ינסטאָלינג ODBC שאָפער פאַרוואַלטער, ODBC טעות [ProductName]: [ProductName]. קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1915" Overridable="yes" Value="טעות רימוווינג ODBC דרייווער פאַרוואַלטער, ODBC טעות [ProductName]: [ProductName]. קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1914" Overridable="yes" Value="קען נישט פּלאַן טעקע [ProductName] צו פאַרבייַטן טעקע [ProductName] אויף רעבאָאָט. באַשטעטיקן אַז איר האָט שרייַבן פּערמישאַנז צו טעקע [ProductName]."/>
+	<String Id="Error1913" Overridable="yes" Value="קען נישט דערהייַנטיקן די יני טעקע [ProductName][ProductName]. באַשטעטיקן אַז די טעקע יגזיסץ און אַז איר קענען אַקסעס עס."/>
+	<String Id="Error1912" Overridable="yes" Value="קען נישט רעדזשיסטערן טיפּ ביבליאָטעק פֿאַר טעקע [ProductName]. קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1911" Overridable="yes" Value="קען נישט רעגיסטרירן טיפּ ביבליאָטעק פֿאַר טעקע [ProductName]. קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1910" Overridable="yes" Value="קען נישט אַראָפּנעמען דורכוועג [ProductName]. באַשטעטיקן אַז די דורכוועג טעקע יגזיסץ און אַז איר קענען אַקסעס עס."/>
+	<String Id="Error1909" Overridable="yes" Value="קען נישט שאַפֿן דורכוועג [ProductName]. באַשטעטיקן אַז די דעסטיניישאַן טעקע יגזיסץ און אַז איר קענען אַקסעס עס."/>
+	<String Id="Error1908" Overridable="yes" Value="קען נישט אָפּמאַכן שריפֿט [ProductName]. באַשטעטיקן אַז איר האָבן גענוג פּערמישאַנז צו באַזייַטיקן פאַנץ."/>
+	<String Id="Error1907" Overridable="yes" Value="קען נישט רעגיסטרירן שריפֿט [ProductName]. באַשטעטיקן אַז איר האָבן גענוג פּערמישאַנז צו ינסטאַלירן פאַנץ, און אַז די סיסטעם שטיצט דעם שריפֿט."/>
+	<String Id="Error1906" Overridable="yes" Value="ניט אַנדערש צו קאַש פּעקל [ProductName]. טעות: [ProductName]. קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1905" Overridable="yes" Value="מאָדולע [ProductName] ניט אַנדערש צו אַנרעגיסטרירן. HRESULT [ProductName]. קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1904" Overridable="yes" Value="מאָדולע [ProductName] קען נישט פאַרשרייַבן. HRESULT [ProductName]. קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1903" Overridable="yes" Value="סקעדזשולינג רעבאָאָט אָפּעראַציע: דיליטינג טעקע [ProductName]. מוזן רעבאָאָט צו פאַרענדיקן אָפּעראַציע."/>
+	<String Id="Error1902" Overridable="yes" Value="סקעדזשולינג רעבאָאָט אָפּעראַציע: ריניימינג טעקע [ProductName] צו [ProductName]. מוזן רעבאָאָט צו פאַרענדיקן אָפּעראַציע."/>
+	<String Id="Error1901" Overridable="yes" Value="טעות טריינג צו לייענען פֿון די מקור ינסטאַלירן דאַטאַבייס: [ProductName]."/>
+	<String Id="Error1807" Overridable="yes" Value="א גילטיק דעסטיניישאַן טעקע פֿאַר די ינסטאַלירונג קען נישט זיין באשלאסן."/>
+	<String Id="Error1806" Overridable="yes" Value="איר האָט ניט גענוגיק פּריווילאַדזשאַז צו לייענען דעם טעקע."/>
+	<String Id="Error1805" Overridable="yes" Value="דער טעקע [ProductName] איז נישט עקסיסטירט. ביטע אַרייַן אַ וועג צו אַ יגזיסטינג טעקע."/>
+	<String Id="Error1804" Overridable="yes" Value="עס איז קיין דיסק אין פאָר [ProductName]. ביטע אַרייַן איינער און גיט ריטריי, אָדער גיט באָטל מאַכן צו צוריקקומען צו די בלעטער דיאַלאָג און אויסקלייַבן אַ אַנדערש באַנד."/>
+	<String Id="Error1803" Overridable="yes" Value="עס איז קיין דיסק אין פאָר [ProductName]. ביטע אַרייַנלייגן איינער און גיט ריטריי, אָדער גיט באָטל מאַכן צו גיין צוריק צו די פריער אויסגעקליבן באַנד."/>
+	<String Id="Error1802" Overridable="yes" Value="אויס פון זכּרון. פאַרמאַכן אנדערע אַפּלאַקיישאַנז איידער איר פּרובירן ווידער."/>
+	<String Id="Error1801" Overridable="yes" Value="דער דרך [ProductName] איז נישט גילטיק. ביטע ספּעציפיצירן אַ גילטיק דרך."/>
+	<String Id="Error1732" Overridable="yes" Value="Ukuze ugqibezele ufakelo lwe [ProductName], kufuneka uqale ngokutsha ikhompyutha. Abanye abasebenzisi ngoku bangenile kule khompyuter, kwaye ukuqalisa kwakhona kunokubangela ukuba baphulukane nomsebenzi wabo. Ngaba ufuna ukuqalisa kwakhona ngoku?"/>
+	<String Id="Error1731" Overridable="yes" Value="דער מקור ייַנמאָנטירונג פּעקל פֿאַר די פּראָדוקט [ProductName] איז נישט סינק מיט דעם קליענט פּעקל. פּרוּווט די ייַנמאָנטירונג ווידער ניצן אַ גילטיק קאָפּיע פון די ינסטאַלירונג פּעקל &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1730" Overridable="yes" Value="איר מוזן זיין אַ אַדמיניסטראַטאָר צו באַזייַטיקן דעם אַפּלאַקיישאַן. צו באַזייַטיקן דעם אַפּלאַקיישאַן, איר קענט קלאָץ אין ווי אַ אַדמיניסטראַטאָר אָדער קאָנטאַקט דיין טעכניש שטיצן גרופּע פֿאַר הילף."/>
+	<String Id="Error1729" Overridable="yes" Value="קאָנפיגוראַטיאָן ניט אַנדערש."/>
+	<String Id="Error1728" Overridable="yes" Value="קאָנפיגוראַטיאָן געענדיקט הצלחה."/>
+	<String Id="Error1727" Overridable="yes" Value="אַדווערטייזמאַנט ניט אַנדערש."/>
+	<String Id="Error1726" Overridable="yes" Value="אַדווערטייזמאַנט געענדיקט הצלחה."/>
+	<String Id="Error1725" Overridable="yes" Value="באַזייַטיקונג ניט אַנדערש."/>
+	<String Id="Error1724" Overridable="yes" Value="באַזייַטיקונג געענדיקט הצלחה."/>
+	<String Id="Error1723" Overridable="yes" Value="עס איז אַ פּראָבלעם מיט דעם Windows Installer פּעקל. א DLL פארלאנגט פֿאַר דעם ינסטאַלירונג צו פאַרענדיקן קען נישט לויפן. קאָנטאַקט דיין שטיצן פּערסאַנעל אָדער פּעקל פאַרקויפער. {{ קאַמף [ProductName], פּאָזיציע: [ProductName], ביבליאָטעק: [ProductName]}}"/>
+	<String Id="Error1722" Overridable="yes" Value="עס איז אַ פּראָבלעם מיט דעם Windows Installer פּעקל. א פּראָגראַם לויפן ווי אַ טייל פון די סעטאַפּ איז נישט ענדיקן ווי דערוואַרט. קאָנטאַקט דיין שטיצן פּערסאַנעל אָדער פּעקל פאַרקויפער. {{ קאַמף [ProductName], אָרט: [ProductName], באַפֿעל: [ProductName]}}"/>
+	<String Id="Error1721" Overridable="yes" Value="עס איז אַ פּראָבלעם מיט דעם Windows Installer פּעקל. א פּראָגראַם פארלאנגט פֿאַר דעם ינסטאַלירונג צו פאַרענדיקן קען נישט לויפן. קאָנטאַקט דיין שטיצן פּערסאַנעל אָדער פּעקל פאַרקויפער. {{ קאַמף: [ProductName], אָרט: [ProductName], באַפֿעל: [ProductName]}}"/>
+	<String Id="Error1720" Overridable="yes" Value="עס איז אַ פּראָבלעם מיט דעם Windows Installer פּעקל. א שריפט פארלאנגט פֿאַר דעם ינסטאַלירונג צו פאַרענדיקן קען נישט לויפן. קאָנטאַקט דיין שטיצן פּערסאַנעל אָדער פּעקל פאַרקויפער. {{ קאַסטאַם קאַמף [ProductName] שריפט טעות [ProductName], [ProductName]: [ProductName] שורה [ProductName], זייַל [ProductName], [ProductName]}}"/>
+	<String Id="Error1719" Overridable="yes" Value="די Windows ינסטאַללער סערוויס קען נישט זיין אַקסעסט. דאָס קען פּאַסירן אויב איר לויפן Windows אין זיכער מאָדע, אָדער אויב די Windows ינסטאַללער איז נישט ריכטיק אינסטאַלירן. קאָנטאַקט דיין שטיצן פּערסאַנעל פֿאַר הילף."/>
+	<String Id="Error1718" Overridable="yes" Value="טעקע [ProductName] איז פארווארפן דורך דיגיטאַל כסימע פּאָליטיק."/>
+	<String Id="Error1717" Overridable="yes" Value="אוועקגענומען [ProductName]"/>
+	<String Id="Error1716" Overridable="yes" Value="קאָנפיגורעד [ProductName]"/>
+	<String Id="Error1715" Overridable="yes" Value="אינסטאַלירן [ProductName]"/>
+	<String Id="Error1714" Overridable="yes" Value="די עלטערע ווערסיע פון [ProductName] קענען ניט זיין אַוועקגענומען. קאָנטאַקט דיין טעכניש שטיצן גרופּע. {{ סיסטעם טעות [ProductName].}}"/>
+	<String Id="Error1713" Overridable="yes" Value="[ProductName] קען נישט ינסטאַלירן איינער פון די פארלאנגט פּראָדוקטן. קאָנטאַקט דיין טעכניש שטיצן גרופּע. {{ סיסטעם טעות: [ProductName].}}"/>
+	<String Id="Error1712" Overridable="yes" Value="איינער אָדער מער פון די טעקעס פארלאנגט צו ומקערן דיין קאָמפּיוטער צו זיין פריערדיקן שטאַט קען ניט זיין געפֿונען. רעסטאָראַטיאָן וועט ניט זיין מעגלעך."/>
+	<String Id="Error1711" Overridable="yes" Value="א טעות פארגעקומען בשעת שרייבן ינסטאַלירונג אינפֿאָרמאַציע צו דיסק. קוק צו מאַכן זיכער אַז גענוג דיסק פּלאַץ איז בנימצא, און גיט ריטריי אָדער באָטל מאַכן צו ענדיקן די ינסטאַלירונג."/>
+	<String Id="Error1710" Overridable="yes" Value="Ungabuyisela ikhomputha yakho kwimeko yayo yangaphambili okanye uqhubeke nofakelo kamva. Ngaba ungathanda ukubuyisela?"/>
+	<String Id="Error1709" Overridable="yes" Value="פּראָדוקט: [ProductName] -- [ProductName]"/>
+	<String Id="Error1708" Overridable="yes" Value="ייַנמאָנטירונג ניט אַנדערש."/>
+	<String Id="Error1707" Overridable="yes" Value="ייַנמאָנטירונג געענדיקט הצלחה."/>
+	<String Id="Error1706" Overridable="yes" Value="אַ ייַנמאָנטירונג פּעקל פֿאַר די פּראָדוקט [ProductName] קענען ניט זיין געפֿונען. פּרוּווט די ייַנמאָנטירונג ווידער ניצן אַ גילטיק קאָפּיע פון די ינסטאַלירונג פּעקל &amp;apos;[ProductName]&amp;apos;."/>
+	<String Id="Error1705" Overridable="yes" Value="Ufakelo lwangaphambili lwale mveliso luyaqhubeka. Kufuneka uhlehlise utshintsho olwenziwa lufakelo ukuze uqhubeke. Ngaba uyafuna ukuluhlehlisa olo tshintsho?"/>
+	<String Id="Error1704" Overridable="yes" Value="Ufakelo lwe [ProductName] lunqunyanyisiwe okwangoku. Kufuneka uhlehlise utshintsho olwenziwa lufakelo ukuze uqhubeke. Ngaba uyafuna ukuluhlehlisa olo tshintsho?"/>
+	<String Id="Error1703" Overridable="yes" Value="איר מוזן ריסטאַרט דיין סיסטעם פֿאַר די קאַנפיגיעריישאַן ענדערונגען געמאכט צו [ProductName] צו נעמען ווירקונג. דריקט יאָ צו ריסטאַרט איצט אָדער ניין אויב איר פּלאַן צו מאַניואַלי ריסטאַרט שפּעטער."/>
+	<String Id="Error1702" Overridable="yes" Value="דער ינסטאַללער מוזן ריסטאַרט דיין סיסטעם איידער קאַנפיגיעריישאַן פון [ProductName] קענען פאָרזעצן. דריקט יאָ צו ריסטאַרט איצט אָדער ניין אויב איר פּלאַן צו מאַניואַלי ריסטאַרט שפּעטער."/>
+	<String Id="Error1701" Overridable="yes" Value="דער שליסל [ProductName] איז נישט גילטיק. באַשטעטיקן אַז איר אַרייַן די ריכטיק שליסל."/>
+	<String Id="Error1609" Overridable="yes" Value="א טעות איז פארגעקומען בשעת אַפּלייינג זיכערהייט סעטטינגס. [ProductName] איז נישט אַ גילטיק באַניצער אָדער גרופּע. דאָס קען זיין אַ פּראָבלעם מיט דעם פּעקל, אָדער אַ פּראָבלעם קאַנעקטינג צו אַ פעלד קאַנטראָולער אויף די נעץ. קוק דיין נעץ קשר און גיט ריטריי, אָדער באָטל מאַכן צו ענדיקן די ינסטאַלירונג. {{ניט געקענט געפינען דעם באַניצער ס SID, סיסטעם טעות [ProductName]}}"/>
+	<String Id="Error1608" Overridable="yes" Value="קען ניט געפֿינען קיין פריער אינסטאַלירן געהאָרכיק פּראָדוקטן אויף די מאַשין פֿאַר ינסטאָלינג דעם פּראָדוקט."/>
+	<String Id="Error1607" Overridable="yes" Value="די פאלגענדע אַפּלאַקיישאַנז זאָל זיין פארמאכט איידער איר פאָרזעצן די ינסטאַלירונג:"/>
+	<String Id="Error1606" Overridable="yes" Value="קען נישט צוטריט נעץ אָרט [ProductName]."/>
+	<String Id="Error1605" Overridable="yes" Value="עס איז נישט גענוג דיסק פּלאַץ אויף דעם באַנד &amp;apos;[ProductName]&amp;apos; צו פאָרזעצן די ינסטאַלירונג מיט אָפּזוך ענייבאַלד. [ProductName] קב זענען פארלאנגט, אָבער בלויז [ProductName] קב זענען בארעכטיגט. דריקט איגנאָרירן צו פאָרזעצן די ינסטאַלירונג אָן שפּאָרן אָפּזוך אינפֿאָרמאַציע, גיט ריטריי צו קאָנטראָלירן ווידער פֿאַר בנימצא פּלאַץ, אָדער גיט באָטל מאַכן צו פאַרלאָזן די ינסטאַלירונג."/>
+	<String Id="Error1604" Overridable="yes" Value="דער פּראָדוקט &amp;apos;[ProductName]&amp;apos; איז שוין אינסטאַלירן, פּרעווענטינג די ינסטאַלירונג פון דעם פּראָדוקט. די צוויי פּראָדוקטן זענען ינקאַמפּאַטאַבאַל."/>
+	<String Id="Error1603" Overridable="yes" Value="די טעקע [ProductName][ProductName] איז געהאלטן אין נוצן {דורך די פאלגענדע פּראָצעס: נאָמען: [ProductName], שייַן: [ProductName], פֿענצטער טיטל: &amp;apos;[ProductName]&amp;apos;}. נאָענט די אַפּלאַקיישאַן און פּרובירן ווידער."/>
+	<String Id="Error1602" Overridable="yes" Value="Uqinisekile ufuna ukurhoxisa?"/>
+	<String Id="Error1601" Overridable="yes" Value="אויס פון דיסק פּלאַץ - באַנד: &amp;apos;[ProductName]&amp;apos;"/>
+	<String Id="Error1503" Overridable="yes" Value="באַניצער &amp;apos;[ProductName]&amp;apos; האט פריער ינישיייטיד אַן ינסטאַללאַטיאָן פֿאַר פּראָדוקט &amp;apos;[ProductName]&amp;apos;. דער באַניצער וועט דאַרפֿן צו לויפן די ינסטאַלירונג ווידער איידער זיי קענען נוצן דעם פּראָדוקט."/>
+	<String Id="Error1502" Overridable="yes" Value="באַניצער &amp;apos;[ProductName]&amp;apos; האט פריער ינישיייטיד אַן ינסטאַללאַטיאָן פֿאַר פּראָדוקט &amp;apos;[ProductName]&amp;apos;. דער באַניצער וועט דאַרפֿן צו לויפן די ינסטאַלירונג ווידער איידער זיי קענען נוצן דעם פּראָדוקט. דיין קראַנט ינסטאַלירונג וועט פאָרזעצן."/>
+	<String Id="Error1501" Overridable="yes" Value="טעות אַקסעסינג סיקיורד דאַטן. ביטע מאַכן זיכער אַז די Windows ינסטאַללער איז קאַנפיגיערד רעכט און פּרובירן די ינסטאַלירונג ווידער."/>
+	<String Id="Error1500" Overridable="yes" Value="אן אנדער ינסטאַלירונג איז אין פּראָגרעס. איר מוזן פאַרענדיקן די ינסטאַלירונג איידער איר פאָרזעצן דעם."/>
+	<String Id="Error1410" Overridable="yes" Value="קען נישט פאַרגרעסערן די בנימצא רעגיסטרי פּלאַץ. [ProductName] קב פון פריי רעגיסטרי פּלאַץ איז פארלאנגט פֿאַר די ינסטאַלירונג פון דעם אַפּלאַקיישאַן."/>
+	<String Id="Error1409" Overridable="yes" Value="קען נישט לייענען זיכערהייט אינפֿאָרמאַציע פֿאַר שליסל [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז איר האָט גענוג אַקסעס צו דעם שליסל, אָדער קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1408" Overridable="yes" Value="קען נישט באַקומען אונטער שליסל נעמען פֿאַר שליסל [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז איר האָט גענוג אַקסעס צו דעם שליסל, אָדער קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1407" Overridable="yes" Value="קען נישט באַקומען ווערט נעמען פֿאַר שליסל [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז איר האָט גענוג אַקסעס צו דעם שליסל, אָדער קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1406" Overridable="yes" Value="קען נישט שרייַבן ווערט [ProductName] צו שליסל [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז איר האָט גענוג אַקסעס צו דעם שליסל, אָדער קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1405" Overridable="yes" Value="קען נישט לייענען ווערט [ProductName] פֿון שליסל [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז איר האָט גענוג אַקסעס צו דעם שליסל, אָדער קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1404" Overridable="yes" Value="קען נישט אויסמעקן שליסל [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז איר האָט גענוג אַקסעס צו דעם שליסל, אָדער קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1403" Overridable="yes" Value="קען נישט ויסמעקן ווערט [ProductName] פֿון שליסל [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז איר האָט גענוג אַקסעס צו דעם שליסל, אָדער קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1402" Overridable="yes" Value="קען נישט עפענען שליסל: [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז איר האָט גענוג אַקסעס צו דעם שליסל, אָדער קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1401" Overridable="yes" Value="קען נישט שאַפֿן שליסל: [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז איר האָט גענוג אַקסעס צו דעם שליסל, אָדער קאָנטאַקט דיין שטיצן פּערסאַנעל."/>
+	<String Id="Error1336" Overridable="yes" Value="עס איז געווען אַ טעות קריייטינג אַ צייַטווייַליק טעקע וואָס איז דארף צו פאַרענדיקן דעם ייַנמאָנטירונג. {{ טעקע: [ProductName]. סיסטעם טעות קאָד: [ProductName]}}"/>
+	<String Id="Error1335" Overridable="yes" Value="די קאַבינעט טעקע &amp;apos;[ProductName]&amp;apos; פארלאנגט פֿאַר דעם ינסטאַלירונג איז פאַרדאָרבן און קענען ניט זיין געוויינט. דאָס קען אָנווייַזן אַ נעץ טעות, אַ טעות לייענען פון די סי-ראַם אָדער אַ פּראָבלעם מיט דעם פּעקל."/>
+	<String Id="Error1334" Overridable="yes" Value="די טעקע &amp;apos;[ProductName]&amp;apos; קענען ניט זיין אינסטאַלירן ווייַל די טעקע קענען ניט זיין געפֿונען אין קאַבינעט טעקע &amp;apos;[ProductName]&amp;apos;. דאָס קען אָנווייַזן אַ נעץ טעות, אַ טעות לייענען פון די סי-ראַם אָדער אַ פּראָבלעם מיט דעם פּעקל."/>
+	<String Id="Error1333" Overridable="yes" Value="ניט אַנדערש צו ריכטיק לאַטע [ProductName] טעקע: CRC טעות."/>
+	<String Id="Error1332" Overridable="yes" Value="ניט אַנדערש צו אַריבערפירן [ProductName] טעקע ריכטיק: CRC טעות."/>
+	<String Id="Error1331" Overridable="yes" Value="ניט אַנדערש צו ריכטיק נאָכמאַכן [ProductName] טעקע: CRC טעות."/>
+	<String Id="Error1330" Overridable="yes" Value="א טעקע וואָס איז פארלאנגט קענען ניט זיין אינסטאַלירן ווייַל די קאַבינעט טעקע [ProductName] האט אַ פאַרקריפּלט דיגיטאַל כסימע. דאָס קען אָנווייַזן אַז די קאַבינעט טעקע איז פאַרדאָרבן. {{ טעות [ProductName] איז אומגעקערט דורך WinVerifyTrust.}}"/>
+	<String Id="Error1329" Overridable="yes" Value="א טעקע וואָס איז פארלאנגט קענען ניט זיין אינסטאַלירן ווייַל די קאַבינעט טעקע [ProductName] איז נישט דידזשאַטאַלי געחתמעט. דאָס קען אָנווייַזן אַז די קאַבינעט טעקע איז פאַרדאָרבן."/>
+	<String Id="Error1328" Overridable="yes" Value="טעות אַפּלייינג לאַטע צו טעקע [ProductName]. עס איז מיסטאָמע דערהייַנטיקט דורך אנדערע מיטלען, און קענען ניט מער זיין מאַדאַפייד דורך דעם לאַטע. פֿאַר מער אינפֿאָרמאַציע קאָנטאַקט דיין לאַטע פאַרקויפער. {{ סיסטעם טעות: [ProductName]}}"/>
+	<String Id="Error1327" Overridable="yes" Value="אומגילטיגע דרייוו: [ProductName]"/>
+	<String Id="Error1326" Overridable="yes" Value="טעות געטינג טעקע זיכערהייט: [ProductName] GetLastError: [ProductName]"/>
+	<String Id="Error1325" Overridable="yes" Value="[ProductName]&amp;apos; איז נישט אַ גילטיק קורץ טעקע נאָמען."/>
+	<String Id="Error1324" Overridable="yes" Value="דער טעקע דרך &amp;apos;[ProductName]&amp;apos; כּולל אַ פאַרקריפּלט כאַראַקטער."/>
+	<String Id="Error1323" Overridable="yes" Value="דער טעקע דרך &amp;apos;[ProductName]&amp;apos; כּולל ווערטער וואָס זענען נישט גילטיק אין טעקע פּאַטס."/>
+	<String Id="Error1322" Overridable="yes" Value="א טייל פון דער טעקע דרך &amp;apos;[ProductName]&amp;apos; איז פאַרקריפּלט. עס איז ליידיק אָדער יקסיד די לענג ערלויבט דורך די סיסטעם."/>
+	<String Id="Error1321" Overridable="yes" Value="דער ינסטאַללער האט ניט גענוגיק פּריווילאַדזשאַז צו מאָדיפיצירן דעם טעקע: [ProductName]."/>
+	<String Id="Error1320" Overridable="yes" Value="דער ספּעציפיצירט וועג איז צו לאַנג: [ProductName]"/>
+	<String Id="Error1319" Overridable="yes" Value="א נעץ טעות איז פארגעקומען בשעת פּרווון צו עפענען די מקור טעקע קאַבינעט: [ProductName]"/>
+	<String Id="Error1318" Overridable="yes" Value="א נעץ טעות איז פארגעקומען בשעת פּרווון צו שאַפֿן דעם וועגווייַזער: [ProductName]"/>
+	<String Id="Error1317" Overridable="yes" Value="א טעות איז פארגעקומען בשעת פּרווון צו שאַפֿן דעם וועגווייַזער: [ProductName]"/>
+	<String Id="Error1316" Overridable="yes" Value="א נעץ טעות איז פארגעקומען בשעת פּרווון צו לייענען פון דער טעקע: [ProductName]"/>
+	<String Id="Error1315" Overridable="yes" Value="ניט געקענט צו שרייַבן צו די ספּעסיפיעד טעקע: [ProductName]."/>
+	<String Id="Error1314" Overridable="yes" Value="דער ספּעציפיצירט דרך &amp;apos;[ProductName]&amp;apos; איז ניט בנימצא."/>
+	<String Id="Error1313" Overridable="yes" Value="דער באַנד [ProductName] איז דערווייַל ניט בנימצא. ביטע אויסקלייַבן אנדערן."/>
+	<String Id="Error1312" Overridable="yes" Value="קענען ניט מאַכן די וועגווייַזער &amp;apos;[ProductName]&amp;apos;. א טעקע מיט דעם נאָמען איז שוין עקסיסטירט. ביטע רענאַמע אָדער אַראָפּנעמען די טעקע און גיט ריטריי, אָדער גיט באָטל מאַכן צו אַרויסגאַנג."/>
+	<String Id="Error1311" Overridable="yes" Value="מקור טעקע ניט געפֿונען {{(קאַבינעט)}}: [ProductName]. באַשטעטיקן אַז די טעקע יגזיסץ און אַז איר קענען אַקסעס עס."/>
+	<String Id="Error1310" Overridable="yes" Value="טעות שרייבן צו טעקע: [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז איר האָט אַקסעס צו דעם וועגווייַזער."/>
+	<String Id="Error1309" Overridable="yes" Value="טעות לייענען פון טעקע: [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז די טעקע יגזיסץ און אַז איר קענען אַקסעס עס."/>
+	<String Id="Error1308" Overridable="yes" Value="מקור טעקע ניט געפֿונען: [ProductName]. באַשטעטיקן אַז די טעקע יגזיסץ און אַז איר קענען אַקסעס עס."/>
+	<String Id="Error1307" Overridable="yes" Value="עס איז נישט גענוג דיסק פּלאַץ צו ינסטאַלירן דעם טעקע: [ProductName]. פריי עטלעכע דיסק פּלאַץ און גיט ריטריי, אָדער גיט באָטל מאַכן צו אַרויסגאַנג."/>
+	<String Id="Error1306" Overridable="yes" Value="אן אנדער אַפּלאַקיישאַן האט ויסשליסיק אַקסעס צו דער טעקע &amp;apos;[ProductName]&amp;apos;. ביטע פאַרמאַכן אַלע אנדערע אַפּלאַקיישאַנז, און גיט ריטריי."/>
+	<String Id="Error1305" Overridable="yes" Value="טעות לייענען פון טעקע [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז די טעקע יגזיסץ און אַז איר קענען אַקסעס עס."/>
+	<String Id="Error1304" Overridable="yes" Value="טעות שרייבן צו טעקע: [ProductName]. באַשטעטיקן אַז איר האָט אַקסעס צו דעם וועגווייַזער."/>
+	<String Id="Error1303" Overridable="yes" Value="דער ינסטאַללער האט ניט גענוגיק פּריווילאַדזשאַז צו אַקסעס דעם וועגווייַזער: [ProductName]. די ינסטאַלירונג קען נישט פאָרזעצן. קלאָץ אויף ווי אַדמיניסטראַטאָר אָדער קאָנטאַקט דיין סיסטעם אַדמיניסטראַטאָר."/>
+	<String Id="Error1302" Overridable="yes" Value="ביטע אַרייַן די דיסק: [ProductName]"/>
+	<String Id="Error1301" Overridable="yes" Value="קען נישט מאַכן די טעקע &amp;apos;[ProductName]&amp;apos;. א וועגווייַזער מיט דעם נאָמען שוין יגזיסץ. באָטל מאַכן די ינסטאַלירונג און פּרובירן צו ינסטאַלירן אויף אַ אַנדערש אָרט."/>
+	<String Id="Error1101" Overridable="yes" Value="טעות לייענען פון טעקע: [ProductName]. {{ סיסטעם טעות [ProductName].}} באַשטעטיקן אַז די טעקע יגזיסץ און אַז איר קענען אַקסעס עס."/>
+	<String Id="Error33" Overridable="yes" Value="{[ProductName] } סעטאַפּ ניט אַנדערש."/>
+	<String Id="Error32" Overridable="yes" Value="{[ProductName] } סעטאַפּ איז געענדיקט הצלחה."/>
+	<String Id="Error23" Overridable="yes" Value="פּריפּערינג צו באַזייַטיקן עלטערע ווערסיעס פון דעם אַפּלאַקיישאַן ..."/>
+	<String Id="Error22" Overridable="yes" Value="רימוווינג עלטערע ווערסיעס פון דעם אַפּלאַקיישאַן ..."/>
+	<String Id="Error21" Overridable="yes" Value="קלייַבן פארלאנגט אינפֿאָרמאַציע ..."/>
+	<String Id="Error20" Overridable="yes" Value="ביטע וואַרטן בשעת Windows קאַנפיגיער [ProductName]"/>
+	<String Id="Error19" Overridable="yes" Value="ינסטאַללער פארשטאפט צו פרי."/>
+	<String Id="Error18" Overridable="yes" Value="ינסטאַללער איז ניט מער ריספּאַנדינג."/>
+	<String Id="Error17" Overridable="yes" Value="אויס פון זכּרון. פאַרמאַכן אנדערע אַפּלאַקיישאַנז איידער איר פּרובירן ווידער."/>
+	<String Id="Error16" Overridable="yes" Value="רוען צייט: {[ProductName] מינוט }{[ProductName] סעקונדעס}"/>
+	<String Id="Error15" Overridable="yes" Value="קאַמף געענדיקט [ProductName]: [ProductName]. צוריקקומען ווערט [ProductName]."/>
+	<String Id="Error14" Overridable="yes" Value="קאַמף אָנהייב [ProductName]: [ProductName]."/>
+	<String Id="Error13" Overridable="yes" Value="לאָגינג פארשטאפט: [ProductName] [ProductName]"/>
+	<String Id="Error12" Overridable="yes" Value="לאָגינג סטאַרטעד: [ProductName] [ProductName]"/>
+	<String Id="Error11" Overridable="yes" Value="אָנזאָג טיפּ: [ProductName], אַרגומענט: [ProductName]"/>
+	<String Id="Error10" Overridable="yes" Value="{[ProductName]}{, [ProductName]}{, [ProductName]}"/>
+	<String Id="Error9" Overridable="yes" Value="[ProductName]"/>
+	<String Id="Error8" Overridable="yes" Value="קאַמף [ProductName]: [ProductName]. [ProductName]"/>
+	<String Id="Error7" Overridable="yes" Value="{{ דיסק פול: }}"/>
+	<String Id="Error5" Overridable="yes" Value="דער ינסטאָלער האט געפּלאָנטערט אַן אומגעריכט טעות ווען ינסטאָלינג דעם פּעקל. דאָס קען אָנווייַזן אַ פּראָבלעם מיט דעם פּעקל. דער טעות קאָד איז [ProductName]. {{די טענות זענען: [ProductName], [ProductName], [ProductName]}}"/>
+	<String Id="Error4" Overridable="yes" Value="אינפֿאָרמאַציע [ProductName]."/>
+	<String Id="Error2" Overridable="yes" Value="ווארענונג [ProductName]."/>
+	<String Id="Error1" Overridable="yes" Value="{{טעות [ProductName]. }}"/>
+	<String Id="Error0" Overridable="yes" Value="{{פאַטאַל טעות: }}"/>
+	<String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="ונפּובלישינג פּראָדוקט אינפֿאָרמאַציע"/>
+	<String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="טעקע: [ProductName], Directory: [ProductName]"/>
+	<String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="רימוווינג אריבערגעפארן טעקעס"/>
+	<String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="טעקע: [ProductName]"/>
+	<String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="רימוווינג באַקאַפּ טעקעס"/>
+	<String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRollback" Overridable="yes" Value="Hành động quay lại:"/>
+	<String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="אַפּפּליקאַטיאָן קאָנטעקסט: [ProductName], אַסעמבלי נאָמען: [ProductName]"/>
+	<String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="ונפּובלישינג פֿאַרזאַמלונג אינפֿאָרמאַציע"/>
+	<String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="אַפּפּליקאַטיאָן קאָנטעקסט: [ProductName], אַסעמבלי נאָמען: [ProductName]"/>
+	<String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="פּובלישינג פֿאַרזאַמלונג אינפֿאָרמאַציע"/>
+	<String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="טעקע: [ProductName], אָפענגיקייַט: [ProductName]"/>
+	<String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="ינסטאָלינג סיסטעם קאַטאַלאָג"/>
+	<String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextGenerateScript" Overridable="yes" Value="דזשענערייטינג שריפט אַפּעריישאַנז פֿאַר קאַמף:"/>
+	<String Id="ProgressTextAdvertise" Overridable="yes" Value="גאַנצע אַפּלאַקיישאַן"/>
+	<String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="שליסל: [ProductName], נאָמען: [ProductName], ווערט: [ProductName]"/>
+	<String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="שרייבן סיסטעם רעגיסטרי וואַלועס"/>
+	<String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="טעקע: [ProductName], אָפּטיילונג: [ProductName], שליסל: [ProductName], ווערט: [ProductName]"/>
+	<String Id="ProgressTextWriteIniValues" Overridable="yes" Value="שרייבן INI טעקעס וואַלועס"/>
+	<String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Igama: [ProductName], Ixabiso: [ProductName], Isenzo [ProductName]"/>
+	<String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="אַפּדייטינג סוויווע סטרינגס"/>
+	<String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="ליביד: [ProductName]"/>
+	<String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="ונרעדזשיסטערינג טיפּ לייברעריז"/>
+	<String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="פּראָגראַם: [ProductName]"/>
+	<String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="ונרעדזשיסטערינג פּראָגראַם ידענטיפיערס"/>
+	<String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME אינהאַלט טיפּ: [ProductName], געשפּרייט: [ProductName]"/>
+	<String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="ונרעדזשיסטערינג MIME אינפֿאָרמאַציע"/>
+	<String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="פאָנט: [ProductName]"/>
+	<String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="ונרעדזשיסטערינג פאַנץ"/>
+	<String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="געשפּרייט: [ProductName]"/>
+	<String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="ונרעדזשיסטערינג פאַרלענגערונג סערווערס"/>
+	<String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="אַפּפּיד: [ProductName] {{, אַפּפּטיפּע: [ProductName]}}"/>
+	<String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="ונרעדזשיסטערינג COM+ אַפּפּליקאַטיאָנס און קאַמפּאָונאַנץ"/>
+	<String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="קלאַס שייַן: [ProductName]"/>
+	<String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="ונרעדזשיסטער קלאַס סערווערס"/>
+	<String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="שטריך: [ProductName]"/>
+	<String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="ונפּובלישינג פּראָדוקט פֿעיִקייטן"/>
+	<String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="קאָמפּאָנענט שייַן: [ProductName], קוואַלאַפייער: [ProductName]"/>
+	<String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="ונפּובלישינג קוואַלאַפייד קאַמפּאָונאַנץ"/>
+	<String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="סערוויס: [ProductName]"/>
+	<String Id="ProgressTextStopServices" Overridable="yes" Value="סטאָפּפּינג באַדינונגען"/>
+	<String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="סערוויס: [ProductName]"/>
+	<String Id="ProgressTextStartServices" Overridable="yes" Value="סטאַרטינג באַדינונגען"/>
+	<String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="ינישאַליזינג ODBC דירעקטעריז"/>
+	<String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="טעקע: [ProductName], טעקע: [ProductName]"/>
+	<String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="ונרעדזשיסטערינג מאַדזשולז"/>
+	<String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="טעקע: [ProductName], טעקע: [ProductName]"/>
+	<String Id="ProgressTextSelfRegModules" Overridable="yes" Value="רעדזשיסטערינג מאַדזשולז"/>
+	<String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="זוכן פֿאַר קוואַלאַפייינג פּראָדוקטן"/>
+	<String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="דורכוועג: [ProductName]"/>
+	<String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="רימוווינג שאָרטקאַץ"/>
+	<String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="שליסל: [ProductName], נאָמען: [ProductName]"/>
+	<String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="רימוווינג סיסטעם רעגיסטרי וואַלועס"/>
+	<String Id="ProgressTextRemoveODBC" Overridable="yes" Value="רימוווינג ODBC קאַמפּאָונאַנץ"/>
+	<String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="טעקע: [ProductName], אָפּטיילונג: [ProductName], שליסל: [ProductName], ווערט: [ProductName]"/>
+	<String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="רימוווינג INI טעקעס איינסן"/>
+	<String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="טעקע: [ProductName]"/>
+	<String Id="ProgressTextRemoveFolders" Overridable="yes" Value="רימוווינג פאָלדערס"/>
+	<String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="טעקע: [ProductName], Directory: [ProductName]"/>
+	<String Id="ProgressTextRemoveFiles" Overridable="yes" Value="רימוווינג טעקעס"/>
+	<String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="אַפּפּליקאַטיאָן: [ProductName], באַפֿעלן שורה: [ProductName]"/>
+	<String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="רימוווינג אַפּלאַקיישאַנז"/>
+	<String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Igama: [ProductName], Ixabiso: [ProductName], Isenzo [ProductName]"/>
+	<String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="אַפּדייטינג סוויווע סטרינגס"/>
+	<String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="טעקע: [ProductName], Directory: [ProductName]"/>
+	<String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="רימוווינג דופּליקייטיד טעקעס"/>
+	<String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterUser" Overridable="yes" Value="רעדזשיסטערינג באַניצער"/>
+	<String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="ליביד: [ProductName]"/>
+	<String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="רעדזשיסטערינג טיפּ לייברעריז"/>
+	<String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[ProductName]"/>
+	<String Id="ProgressTextRegisterProduct" Overridable="yes" Value="רעדזשיסטערינג פּראָדוקט"/>
+	<String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="פאָנט: [ProductName]"/>
+	<String Id="ProgressTextRegisterFonts" Overridable="yes" Value="רעדזשיסטערינג פאַנץ"/>
+	<String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="אַפּפּיד: [ProductName] {{, אַפּפּטיפּע: [ProductName], יוזערז: [ProductName], RSN: [ProductName]}}"/>
+	<String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="רעדזשיסטערינג COM+ אַפּפּליקאַטיאָנס און קאַמפּאָונאַנץ"/>
+	<String Id="ProgressTextProcessComponents" Overridable="yes" Value="אַפּדייטינג קאָמפּאָנענט רעגיסטראַציע"/>
+	<String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="טעקע: [ProductName], Directory: [ProductName], גרייס: [ProductName]"/>
+	<String Id="ProgressTextPatchFiles" Overridable="yes" Value="פּאַטטשינג טעקעס"/>
+	<String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="טעקע: [ProductName], Directory: [ProductName], גרייס: [ProductName]"/>
+	<String Id="ProgressTextMoveFiles" Overridable="yes" Value="מאָווינג טעקעס"/>
+	<String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="אַפּפּליקאַטיאָן: [ProductName]"/>
+	<String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="מיגרייטינג שטריך שטאַטן פֿון פֿאַרבונדענע אַפּלאַקיישאַנז"/>
+	<String Id="ProgressTextLaunchConditions" Overridable="yes" Value="עוואַלואַטינג קאַטער טנאָים"/>
+	<String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="סערוויס: [ProductName]"/>
+	<String Id="ProgressTextInstallServices" Overridable="yes" Value="ינסטאָלינג נייַ באַדינונגס"/>
+	<String Id="ProgressTextInstallODBC" Overridable="yes" Value="ינסטאָלינג ODBC קאַמפּאָונאַנץ"/>
+	<String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="געפונען אַפּלאַקיישאַן: [ProductName]"/>
+	<String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="זוכן פֿאַר פֿאַרבונדענע אַפּלאַקיישאַנז"/>
+	<String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="טעקע: [ProductName], Directory: [ProductName], גרייס: [ProductName]"/>
+	<String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="קריייטינג דופּליקאַט טעקעס"/>
+	<String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="סערוויס: [ProductName]"/>
+	<String Id="ProgressTextDeleteServices" Overridable="yes" Value="דיליטינג באַדינונגען"/>
+	<String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="טעקע: [ProductName]"/>
+	<String Id="ProgressTextCreateFolders" Overridable="yes" Value="שאפן פאָלדערס"/>
+	<String Id="ProgressTextCCPSearch" Overridable="yes" Value="זוכן פֿאַר קוואַלאַפייינג פּראָדוקטן"/>
+	<String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="טעקע: [ProductName]"/>
+	<String Id="ProgressTextBindImage" Overridable="yes" Value="ביינדינג עקסעקוטאַבלעס"/>
+	<String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="פאַרמאָג: [ProductName], כסימע: [ProductName]"/>
+	<String Id="ProgressTextAppSearch" Overridable="yes" Value="זוכן פֿאַר אינסטאַלירן אַפּלאַקיישאַנז"/>
+	<String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="פריי פּלאַץ: [ProductName]"/>
+	<String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="אַלאַקייטינג רעגיסטרי פּלאַץ"/>
+	<String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="פּראָגראַם: [ProductName]"/>
+	<String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="רעדזשיסטערינג פּראָגראַם ידענטיפיערס"/>
+	<String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME אינהאַלט טיפּ: [ProductName], געשפּרייט: [ProductName]"/>
+	<String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="רעדזשיסטערינג מיים אינפֿאָרמאַציע"/>
+	<String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="געשפּרייט: [ProductName]"/>
+	<String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="רעדזשיסטערינג געשפּרייט סערווערס"/>
+	<String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="קלאַס שייַן: [ProductName]"/>
+	<String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="רעדזשיסטערינג קלאַס סערווערס"/>
+	<String Id="ProgressTextPublishProduct" Overridable="yes" Value="ארויסגעבן פּראָדוקט אינפֿאָרמאַציע"/>
+	<String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="שטריך: [ProductName]"/>
+	<String Id="ProgressTextPublishFeatures" Overridable="yes" Value="ארויסגעבן פּראָדוקט פֿעיִקייטן"/>
+	<String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="קאָמפּאָנענט שייַן: [ProductName], קוואַלאַפייער: [ProductName]"/>
+	<String Id="ProgressTextPublishComponents" Overridable="yes" Value="פּובלישינג קוואַלאַפייד קאַמפּאָונאַנץ"/>
+	<String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="דורכוועג: [ProductName]"/>
+	<String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="שאפן דורכוועג"/>
+	<String Id="ProgressTextCostFinalize" Overridable="yes" Value="קאַמפּיוטינג פּלאַץ באדערפענישן"/>
+	<String Id="ProgressTextCostInitialize" Overridable="yes" Value="קאַמפּיוטינג פּלאַץ באדערפענישן"/>
+	<String Id="ProgressTextFileCost" Overridable="yes" Value="קאַמפּיוטינג פּלאַץ באדערפענישן"/>
+	<String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="טעקע: [ProductName], Directory: [ProductName], גרייס: [ProductName]"/>
+	<String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="קאַפּיינג נעץ ינסטאַלירן טעקעס"/>
+	<String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="טעקע: [ProductName], Directory: [ProductName], גרייס: [ProductName]"/>
+	<String Id="ProgressTextInstallFiles" Overridable="yes" Value="קאַפּיינג נייַ טעקעס"/>
+	<String Id="ProgressTextInstallValidate" Overridable="yes" Value="וואַלאַדייטינג די ינסטאַלירונג"/>
+	<String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ביטע לייענען די [ProductName] ליסענסע העסקעם"/>
+	<String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;דערהייַנטיקן"/>
+	<String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Fakela"/>
+	<String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} ברוכים הבאים צו די [ProductName] סעטאַפּ וויזערד"/>
+	<String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="די סעטאַפּ וויזערד וועט דערהייַנטיקן [ProductName] אויף דיין קאָמפּיוטער. דריקט ווייַטער צו פאָרזעצן אָדער באָטל מאַכן צו אַרויסגאַנג די סעטאַפּ וויזערד."/>
+	<String Id="WelcomeDlgDescription" Overridable="yes" Value="די סעטאַפּ וויזערד וועט ינסטאַלירן [ProductName] אויף דיין קאָמפּיוטער. דריקט ווייַטער צו פאָרזעצן אָדער באָטל מאַכן צו אַרויסגאַנג די סעטאַפּ וויזערד."/>
+	<String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="עקסקלאַמיישאַן בילדל"/>
+	<String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam"/>
+	<String Id="WaitForCostingDlgText" Overridable="yes" Value="ביטע וואַרטן בשעת די ינסטאַללער ענדיקט דיטערמאַנינג דיין דיסק פּלאַץ רעקווירעמענץ."/>
+	<String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;צוריקקומען"/>
+	<String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}גרייט צו דערהייַנטיקן [ProductName]"/>
+	<String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="דריקט דערהייַנטיקן צו דערהייַנטיקן [ProductName] פֿון דיין קאָמפּיוטער. דריקט צוריק צו אָפּשאַצן אָדער טוישן קיין פון דיין ייַנמאָנטירונג סעטטינגס. דריקט באָטל מאַכן צו אַרויסגאַנג די מאַזעק."/>
+	<String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;דערהייַנטיקן"/>
+	<String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}גרייט צו באַזייַטיקן [ProductName]"/>
+	<String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="דריקט נעם צו באַזייַטיקן [ProductName] פון דיין קאָמפּיוטער. דריקט צוריק צו אָפּשאַצן אָדער טוישן קיין פון דיין ייַנמאָנטירונג סעטטינגס. דריקט באָטל מאַכן צו אַרויסגאַנג די מאַזעק."/>
+	<String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;נעם אַוועק"/>
+	<String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}גרייט צו פאַרריכטן [ProductName]"/>
+	<String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="דריקט ריפּער צו פאַרריכטן די ינסטאַלירונג פון [ProductName]. דריקט צוריק צו אָפּשאַצן אָדער טוישן קיין פון דיין ייַנמאָנטירונג סעטטינגס. דריקט באָטל מאַכן צו אַרויסגאַנג די מאַזעק."/>
+	<String Id="VerifyReadyDlgRepair" Overridable="yes" Value="רי&amp;פארן"/>
+	<String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}גרייט צו טוישן [ProductName]"/>
+	<String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="דריקט טוישן צו אָנהייבן די ינסטאַלירונג. דריקט צוריק צו אָפּשאַצן אָדער טוישן קיין פון דיין ייַנמאָנטירונג סעטטינגס. דריקט באָטל מאַכן צו אַרויסגאַנג די מאַזעק."/>
+	<String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Tshintsha"/>
+	<String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}גרייט צו ינסטאַלירן [ProductName]"/>
+	<String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="דריקט ינסטאַלל צו אָנהייבן די ינסטאַלירונג. דריקט צוריק צו אָפּשאַצן אָדער טוישן קיין פון דיין ייַנמאָנטירונג סעטטינגס. דריקט באָטל מאַכן צו אַרויסגאַנג די מאַזעק."/>
+	<String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Fakela"/>
+	<String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="UserExitDescription2" Overridable="yes" Value="דריקט דעם ענדיקן קנעפּל צו אַרויסגאַנג די סעטאַפּ וויזערד."/>
+	<String Id="UserExitDescription1" Overridable="yes" Value="[ProductName] סעטאַפּ איז ינטעראַפּטיד. דיין סיסטעם איז נישט מאַדאַפייד. צו ינסטאַלירן דעם פּראָגראַם אין אַ שפּעטער צייַט, ביטע לויפן די ינסטאַלירונג ווידער."/>
+	<String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] סעטאַפּ וויזערד איז ינטעראַפּטיד"/>
+	<String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="UserExit_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="כל פּראָגראַם פֿעיִקייטן וועט זיין אינסטאַלירן. ריקוויירז די מערסט דיסק פּלאַץ."/>
+	<String Id="SetupTypeDlgCustomText" Overridable="yes" Value="אַלאַוז ניצערס צו קלייַבן וואָס פּראָגראַם פֿעיִקייטן וועט זיין אינסטאַלירן און ווו זיי וועלן זיין אינסטאַלירן. רעקאַמענדיד פֿאַר אַוואַנסירטע ניצערס."/>
+	<String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="ינסטאָלז די מערסט פּראָסט פּראָגראַם פֿעיִקייטן. רעקאַמענדיד פֿאַר רובֿ ניצערס."/>
+	<String Id="SetupTypeDlgDescription" Overridable="yes" Value="קלייַבן די סעטאַפּ טיפּ וואָס איז בעסטער פּאַסיק פֿאַר דיין באדערפענישן"/>
+	<String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}קלייַבן סעטאַפּ טיפּ"/>
+	<String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="גאַנץ ינסטאַלירונג"/>
+	<String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="C&amp;complete"/>
+	<String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="מנהג ייַנמאָנטירונג"/>
+	<String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="קאַסטאַמייזד"/>
+	<String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="טיפּיש ינסטאַלירונג"/>
+	<String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Eqhelekileyo"/>
+	<String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} רעסומינג די [ProductName] סעטאַפּ וויזערד"/>
+	<String Id="ResumeDlgDescription" Overridable="yes" Value="די סעטאַפּ וויזערד וועט פאַרענדיקן די ינסטאַלירונג פון [ProductName] אויף דיין קאָמפּיוטער. דריקט ינסטאַלל צו פאָרזעצן אָדער באָטל מאַכן צו אַרויסגאַנג די סעטאַפּ וויזערד."/>
+	<String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Fakela"/>
+	<String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="ProgressDlgStatusLabel" Overridable="yes" Value="סטאַטוס:"/>
+	<String Id="ProgressDlgProgressBar" Overridable="yes" Value="פּראָגרעס געטאן"/>
+	<String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}דערהייַנטיקן [ProductName]"/>
+	<String Id="ProgressDlgTextUpdating" Overridable="yes" Value="ביטע וואַרטן בשעת די סעטאַפּ וויזערד דערהייַנטיקונגען [ProductName]."/>
+	<String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title} רימוווינג [ProductName]"/>
+	<String Id="ProgressDlgTextRemoving" Overridable="yes" Value="ביטע וואַרטן בשעת די סעטאַפּ וויזערד רימוווז [ProductName]."/>
+	<String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title} ריפּערינג [ProductName]"/>
+	<String Id="ProgressDlgTextRepairing" Overridable="yes" Value="ביטע וואַרטן בשעת די סעטאַפּ וויזערד ריפּערז [ProductName]."/>
+	<String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}טשאַנגינג [ProductName]"/>
+	<String Id="ProgressDlgTextChanging" Overridable="yes" Value="ביטע וואַרטן בשעת די סעטאַפּ וויזערד ענדערונגען [ProductName]."/>
+	<String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}ינסטאַלירן [ProductName]"/>
+	<String Id="ProgressDlgTextInstalling" Overridable="yes" Value="ביטע וואַרטן בשעת די סעטאַפּ וויזערד ינסטאָלז [ProductName]."/>
+	<String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} ברוכים הבאים צו די [ProductName] סעטאַפּ וויזערד"/>
+	<String Id="PrepareDlgDescription" Overridable="yes" Value="ביטע וואַרטן בשעת די סעטאַפּ וויזערד פּריפּערז צו פירן איר דורך די ינסטאַלירונג."/>
+	<String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="אַלטערנאַטיוועלי, איר קען קלייַבן צו דיסייבאַל די ראָולבאַק פאַנגקשאַנאַליטי פון די ינסטאַללער. דיסייבאַלינג ראָולבאַק פּריווענץ די ינסטאַללער פון ריסטאָרינג דיין קאָמפּיוטער ס אָריגינעל שטאַט אויב די ינסטאַלירונג איז ינטעראַפּטיד אין קיין וועג. דריקט יאָ אויב איר ווילט צו נעמען די ריזיקירן פון דיסייבאַל ראָולבאַק."/>
+	<String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} אויס פון דיסק פּלאַץ"/>
+	<String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="דיסק פּלאַץ פארלאנגט פֿאַר די ייַנמאָנטירונג יקסידז בנימצא דיסק פּלאַץ."/>
+	<String Id="OutOfRbDiskDlgText" Overridable="yes" Value="די כיילייטיד וואַליומז טאָן ניט האָבן גענוג דיסק פּלאַץ בנימצא פֿאַר די דערווייַל אויסגעקליבן פֿעיִקייטן. איר קענען אַראָפּנעמען עטלעכע טעקעס פון די כיילייטיד וואַליומז, ינסטאַלירן ווייניקערע פֿעיִקייטן אָדער אויסקלייַבן אַ אַנדערש דעסטיניישאַן פאָר."/>
+	<String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} אויס פון דיסק פּלאַץ"/>
+	<String Id="OutOfDiskDlgDescription" Overridable="yes" Value="דיסק פּלאַץ פארלאנגט פֿאַר די ייַנמאָנטירונג יקסידז בנימצא דיסק פּלאַץ."/>
+	<String Id="OutOfDiskDlgText" Overridable="yes" Value="די כיילייטיד וואַליומז טאָן ניט האָבן גענוג דיסק פּלאַץ בנימצא פֿאַר די דערווייַל אויסגעקליבן פֿעיִקייטן. איר קענען אַראָפּנעמען עטלעכע טעקעס פון די כיילייטיד וואַליומז, ינסטאַלירן ווייניקערע פֿעיִקייטן אָדער אויסקלייַבן אַ אַנדערש דעסטיניישאַן פאָר."/>
+	<String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;דו זאלסט נישט פאַרמאַכן אַפּלאַקיישאַנז. א רעבאָאָט וועט זיין פארלאנגט."/>
+	<String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Vala izicelo kwaye uzame ukuziqalela kwakhona."/>
+	<String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title} טעקעס אין נוצן"/>
+	<String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="עטלעכע טעקעס וואָס דאַרפֿן צו זיין דערהייַנטיקט זענען דערווייַל אין נוצן."/>
+	<String Id="MsiRMFilesInUseText" Overridable="yes" Value="די פאלגענדע אַפּלאַקיישאַנז נוצן טעקעס וואָס דאַרפֿן צו זיין דערהייַנטיקט דורך דעם סעטאַפּ. איר קענען לאָזן די סעטאַפּ וויזערד פאַרמאַכן זיי און פּרווון צו ריסטאַרט זיי אָדער רעבאָאָט די מאַשין שפּעטער."/>
+	<String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} ברוכים הבאים צו די [ProductName] סעטאַפּ וויזערד"/>
+	<String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="די סעטאַפּ וויזערד אַלאַוז איר צו טוישן די וועג [ProductName] פֿעיִקייטן זענען אינסטאַלירן אויף דיין קאָמפּיוטער אָדער צו באַזייַטיקן עס פון דיין קאָמפּיוטער. דריקט ווייַטער צו פאָרזעצן אָדער באָטל מאַכן צו אַרויסגאַנג די סעטאַפּ וויזערד."/>
+	<String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] קענען ניט זיין ריפּערד."/>
+	<String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="ריפּערז ערראָרס אין די לעצטע ייַנמאָנטירונג דורך פיקסיר פעלנדיק און פאַרדאָרבן טעקעס, שאָרטקאַץ און רעגיסטרי איינסן."/>
+	<String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] קענען ניט זיין אַוועקגענומען."/>
+	<String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="רימוווז [ProductName] פון דיין קאָמפּיוטער."/>
+	<String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] האט קיין ינדיפּענדאַנטלי סעלעקטאַבלע פֿעיִקייטן."/>
+	<String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="לעץ איר טוישן די וועג פֿעיִקייטן זענען אינסטאַלירן."/>
+	<String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}טוישן, פאַרריכטן אָדער אַראָפּנעמען ינסטאַלירונג"/>
+	<String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="אויסקלייַבן די אָפּעראַציע איר ווילן צו דורכפירן."/>
+	<String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="אַראָפּנעמען ינסטאַללאַטיאָן"/>
+	<String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;נעם אַוועק"/>
+	<String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="פאַרריכטן ינסטאַלירונג"/>
+	<String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="רי&amp;פארן"/>
+	<String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="טוישן ינסטאַללאַטיאָן"/>
+	<String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Tshintsha"/>
+	<String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ענד-באַניצער ליסענסע העסקעם"/>
+	<String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="ביטע לייענען די פאלגענדע דערלויבעניש העסקעם קערפאַלי"/>
+	<String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="אינפֿאָרמאַציע בילדל"/>
+	<String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="InvalidDirDlgText" Overridable="yes" Value="ייַנמאָנטירונג וועגווייַזער מוזן זיין אויף אַ היגע שווער פאָר."/>
+	<String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Tshintsha..."/>
+	<String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="ייַנמאָנטירונג &amp; טעקע:"/>
+	<String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] וועט זיין אינסטאַלירן אין אַ פּער-מאַשין טעקע דורך פעליקייַט און זיין בארעכטיגט פֿאַר אַלע יוזערז. איר קענען טוישן די פעליקייַט ינסטאַלירונג טעקע. איר מוזן האָבן היגע אַדמיניסטראַטאָר פּריווילאַדזשאַז."/>
+	<String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}ינסטאַלירן פֿאַר אַלע יוזערז פון דעם &amp;מאַשין"/>
+	<String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] שטיצט נישט ייַנמאָנטירונג פּער באַניצער."/>
+	<String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] וועט זיין אינסטאַלירן אין אַ פּער-באַניצער טעקע און זיין בארעכטיגט בלויז פֿאַר דיין באַניצער חשבון. איר טאָן ניט דאַרפֿן היגע אַדמיניסטראַטאָר פּריווילאַדזשאַז."/>
+	<String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}ינסטאַלירן &amp; נאָר פֿאַר איר ([ProductName])"/>
+	<String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} ינסטאַלירונג פאַרנעם"/>
+	<String Id="InstallScopeDlgDescription" Overridable="yes" Value="קלייַבן די ייַנמאָנטירונג פאַרנעם און טעקע"/>
+	<String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="ינסטאַלירן [ProductName] צו:"/>
+	<String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="InstallDirDlgDescription" Overridable="yes" Value="דריקט ווייַטער צו ינסטאַלירן די פעליקייַט טעקע אָדער גיט טוישן צו קלייַבן אנדערן."/>
+	<String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} דעסטיניישאַן טעקע"/>
+	<String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Tshintsha..."/>
+	<String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title} טעקעס אין נוצן"/>
+	<String Id="FilesInUseDescription" Overridable="yes" Value="עטלעכע טעקעס וואָס דאַרפֿן צו זיין דערהייַנטיקט זענען דערווייַל אין נוצן."/>
+	<String Id="FilesInUseText" Overridable="yes" Value="די פאלגענדע אַפּלאַקיישאַנז נוצן טעקעס וואָס דאַרפֿן צו זיין דערהייַנטיקט דורך דעם סעטאַפּ. פאַרמאַכן די אַפּלאַקיישאַנז און דעמאָלט גיט &amp; פרובירט צו פאָרזעצן סעטאַפּ אָדער אַרויסגאַנג צו אַרויסגאַנג עס."/>
+	<String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FilesInUseExit" Overridable="yes" Value="אַרויסגאַנג"/>
+	<String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Tshintsha"/>
+	<String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Fakela"/>
+	<String Id="FeaturesDlgItemSize" Overridable="yes" Value="פֿעיִקייטןDlgItemSize"/>
+	<String Id="FeaturesDlgItemDescription" Overridable="yes" Value="פֿעיִקייטןDlgItemDescription"/>
+	<String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}פּראָדוקט פֿעיִקייטן"/>
+	<String Id="FeaturesDlgDescription" Overridable="yes" Value="אויסקלייַבן די וועג איר ווילן פֿעיִקייטן צו זיין אינסטאַלירן."/>
+	<String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="FeaturesDlgTree" Overridable="yes" Value="פּראָדוקט פֿעיִקייטן"/>
+	<String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="FatalErrorDescription2" Overridable="yes" Value="דריקט דעם ענדיקן קנעפּל צו אַרויסגאַנג די סעטאַפּ וויזערד."/>
+	<String Id="FatalErrorDescription1" Overridable="yes" Value="[ProductName] סעטאַפּ וויזערד געענדיקט פרי ווייַל פון אַ טעות. דיין סיסטעם איז נישט מאַדאַפייד. צו ינסטאַלירן דעם פּראָגראַם אין אַ שפּעטער צייט, לויפן די סעטאַפּ וויזערד ווידער."/>
+	<String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}[ProductName] סעטאַפּ וויזערד געענדיקט צו פרי"/>
+	<String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="FatalError_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger} געענדיקט די [ProductName] סעטאַפּ וויזערד"/>
+	<String Id="ExitDialogDescription" Overridable="yes" Value="דריקט דעם ענדיקן קנעפּל צו אַרויסגאַנג די סעטאַפּ וויזערד."/>
+	<String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog"/>
+	<String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="אינפֿאָרמאַציע בילדל"/>
+	<String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="ErrorDlgErrorText" Overridable="yes" Value="אינפֿאָרמאַציע טעקסט"/>
+	<String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}"/>
+	<String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title} דיסק ספעיס רעקווירעמענץ"/>
+	<String Id="DiskCostDlgDescription" Overridable="yes" Value="די דיסק פּלאַץ פארלאנגט פֿאַר די ינסטאַלירונג פון די אויסגעקליבן פֿעיִקייטן."/>
+	<String Id="DiskCostDlgText" Overridable="yes" Value="כיילייטיד וואַליומז טאָן ניט האָבן גענוג דיסק פּלאַץ בנימצא פֿאַר אויסגעקליבן פֿעיִקייטן. איר קענען אַראָפּנעמען עטלעכע טעקעס פון די כיילייטיד וואַליומז, ינסטאַלירן ווייניקערע פֿעיִקייטן אָדער אויסקלייַבן פאַרשידענע דעסטיניישאַן דרייווז."/>
+	<String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="אָרט:"/>
+	<String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation"/>
+	<String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize"/>
+	<String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription"/>
+	<String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}מנהג סעטאַפּ"/>
+	<String Id="CustomizeDlgDescription" Overridable="yes" Value="אויסקלייַבן די וועג איר ווילן פֿעיִקייטן צו זיין אינסטאַלירן."/>
+	<String Id="CustomizeDlgText" Overridable="yes" Value="דריקט אויף די ייקאַנז אין דעם בוים אונטן צו טוישן די וועג די פֿעיִקייטן וועט זיין אינסטאַלירן."/>
+	<String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="CustomizeDlgDiskCost" Overridable="yes" Value="דיסק &amp; באַניץ"/>
+	<String Id="CustomizeDlgReset" Overridable="yes" Value="באַשטעטיק"/>
+	<String Id="CustomizeDlgBrowse" Overridable="yes" Value="בלעטער ..."/>
+	<String Id="CustomizeDlgTree" Overridable="yes" Value="בוים פון סאַלעקשאַנז"/>
+	<String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="CancelDlgIconTooltip" Overridable="yes" Value="אינפֿאָרמאַציע בילדל"/>
+	<String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info"/>
+	<String Id="CancelDlgText" Overridable="yes" Value="Uqinisekile ufuna ukulurhoxisa uhlohlo lwe [ProductName]?"/>
+	<String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}טוישן דעסטיניישאַן טעקע"/>
+	<String Id="BrowseDlgDescription" Overridable="yes" Value="בלעטער צו די דעסטיניישאַן טעקע"/>
+	<String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Igama lesiqulathi seefayili:"/>
+	<String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="שאַפֿן אַ נייַע טעקע"/>
+	<String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New"/>
+	<String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="אַרויף איין מדרגה"/>
+	<String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up"/>
+	<String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp; קוק אין:"/>
+	<String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="Advanced_Font_FaceName" Overridable="yes" Value="טאַהאָמאַ"/>
+	<String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8"/>
+	<String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9"/>
+	<String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12"/>
+	<String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8"/>
+	<String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="א&amp;אַוואַנסירטע"/>
+	<String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Fakela"/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="דריקט ינסטאַלל צו ינסטאַלירן די פּראָדוקט מיט פעליקייַט אָפּציעס נאָר פֿאַר איר. גיט אַוואַנסירטע צו טוישן די ינסטאַלירונג אָפּציעס."/>
+	<String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="דריקט ינסטאַלל צו ינסטאַלירן די פּראָדוקט מיט פעליקייַט אָפּציעס פֿאַר אַלע יוזערז. גיט אַוואַנסירטע צו טוישן די ינסטאַלירונג אָפּציעס."/>
+	<String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="amp"/>
+	<String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}ביטע לייענען די [ProductName] ליסענסע העסקעם"/>
+	<String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner"/>
+	<String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] סעטאַפּ"/>
+	<String Id="WixUIPrint" Overridable="yes" Value="&amp;דרוקן"/>
+	<String Id="WixUIOK" Overridable="yes" Value="גוט"/>
+	<String Id="WixUINo" Overridable="yes" Value="&amp;ניין"/>
+	<String Id="WixUIYes" Overridable="yes" Value="&amp;יא"/>
+	<String Id="WixUIIgnore" Overridable="yes" Value="&amp;איגנאָרירן"/>
+	<String Id="WixUIRetry" Overridable="yes" Value="&amp;פּרובירן"/>
+	<String Id="WixUIFinish" Overridable="yes" Value="&amp;ענדיקן"/>
+	<String Id="WixUICancel" Overridable="yes" Value="באָטל מאַכן"/>
+	<String Id="WixUINext" Overridable="yes" Value="&amp;ווייַטער"/>
+	<String Id="WixUIBack" Overridable="yes" Value="&amp;צוריק"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="ונינסטאַללינג Windows Firewall קאַנפיגיעריישאַן"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="ראָולינג צוריק Windows Firewall קאַנפיגיעריישאַן"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="ינסטאַלירן Windows Firewall קאַנפיגיעריישאַן"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="ראָולינג צוריק Windows Firewall קאַנפיגיעריישאַן"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="קאַנפיגיער Windows Firewall"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="קאַנפיגיער Windows Firewall"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="קענען ניט פאַרבינדן צו Windows Firewall. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="וויסואַליזאַטיאָנס פֿאַר ווייַט אַפּלאַקיישאַנז בנימצא ווי אָפּציע אין קאַנפיגיעריישאַן"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="זען RAAS סערווערס אין Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="שאַפֿן ווייַט אַפּלאַקיישאַן דורכוועג צו סערווער אַפּלאַקיישאַנז אויף היגע קאָמפּיוטער"/>

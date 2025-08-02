@@ -1,4 +1,11 @@
-﻿<WixLocalization Culture="ar" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ar-SA-SA" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="إلغاء تثبيت تكوين جدار حماية Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="التراجع عن تكوين جدار حماية Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="تثبيت تكوين جدار حماية Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="التراجع عن تكوين جدار حماية Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="تكوين جدار حماية Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="تكوين جدار حماية Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="لا يمكن الاتصال بجدار حماية Windows. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="تتوفر تصورات للتطبيقات البعيدة كخيار في التكوين"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="عرض خوادم RAAS في Explorer"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="إنشاء اختصارات التطبيقات عن بعد لتطبيقات الخادم على الكمبيوتر المحلي"/>
