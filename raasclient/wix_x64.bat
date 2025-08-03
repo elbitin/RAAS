@@ -27,8 +27,6 @@ echo call wix_x64_fi.bat < nul
 call wix_x64_fi.bat < nul
 echo call wix_x64_fr.bat < nul
 call wix_x64_fr.bat < nul
-echo call wix_x64_gl.bat < nul
-call wix_x64_gl.bat < nul
 echo call wix_x64_hr.bat < nul
 call wix_x64_hr.bat < nul
 echo call wix_x64_hu.bat < nul
@@ -43,14 +41,10 @@ echo call wix_x64_lt.bat < nul
 call wix_x64_lt.bat < nul
 echo call wix_x64_lv.bat < nul
 call wix_x64_lv.bat < nul
-echo call wix_x64_ml.bat < nul
-call wix_x64_ml.bat < nul
-echo call wix_x64_ms.bat < nul
-call wix_x64_ms.bat < nul
 echo call wix_x64_nl.bat < nul
 call wix_x64_nl.bat < nul
-echo call wix_x64_pl.bat < nul
-call wix_x64_pl.bat < nul
+echo call wix_x64_nb-NO.bat
+call wix_x64_nb-NO.bat < nul
 echo call wix_x64_pt-BR.bat < nul
 call wix_x64_pt-BR.bat < nul
 echo call wix_x64_pt-PT.bat < nul
@@ -69,8 +63,6 @@ echo call wix_x64_tl.bat < nul
 call wix_x64_tl.bat < nul
 echo call wix_x64_tr.bat < nul
 call wix_x64_tr.bat < nul
-echo call wix_x64_xh.bat < nul
-call wix_x64_xh.bat < nul
 echo call wix_x64_zh-CN.bat < nul
 call wix_x64_zh-CN.bat < nul
 echo call wix_x64_zh-TW.bat < nul
