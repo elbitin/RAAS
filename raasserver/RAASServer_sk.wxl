@@ -1,4 +1,4 @@
-<WixLocalization Codepage="1250" Culture="sk-SK" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="sk-SK" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Odinštalovanie konfigurácie brány Windows Firewall" />
   <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Vrátenie konfigurácie brány Windows Firewall" />
   <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Inštalácia konfigurácie brány Windows Firewall" />

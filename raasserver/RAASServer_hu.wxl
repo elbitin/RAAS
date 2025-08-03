@@ -1,4 +1,4 @@
-<WixLocalization Codepage="1250" Culture="hu-HU" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="hu-HU" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="A Windows tűzfal konfigurációjának eltávolítása" />
   <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="A Windows tűzfal konfigurációjának visszaállítása" />
   <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="A Windows tűzfal konfigurációjának telepítése" />

@@ -1,4 +1,4 @@
-<WixLocalization Codepage="1252" Culture="da-DK" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1252" Culture="da-DK" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Afinstallerer Windows Firewall-konfiguration" />
   <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration" />
   <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installation af Windows Firewall-konfiguration" />

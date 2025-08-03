@@ -1,4 +1,4 @@
-<WixLocalization Codepage="1253" Culture="el-GR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1253" Culture="el-GR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Απεγκατάσταση της διαμόρφωσης του Τείχους προστασίας των Windows" />
   <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Επαναφορά της διαμόρφωσης του Τείχους προστασίας των Windows" />
   <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Εγκατάσταση της διαμόρφωσης του τείχους προστασίας των Windows" />

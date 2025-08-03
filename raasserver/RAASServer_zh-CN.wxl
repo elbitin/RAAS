@@ -1,4 +1,4 @@
-<WixLocalization Codepage="936" Culture="zh-CN" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="936" Culture="zh-CN" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="卸载 Windows 防火墙配置" />
   <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="回滚 Windows 防火墙配置" />
   <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="安装 Windows 防火墙配置" />

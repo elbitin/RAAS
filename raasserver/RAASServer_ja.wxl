@@ -1,4 +1,4 @@
-<WixLocalization Codepage="932" Culture="ja-jp" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="932" Culture="ja-jp" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsファイアウォール構成のアンインストール" />
   <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows ファイアウォールの構成をロールバックする" />
   <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsファイアウォール構成のインストール" />

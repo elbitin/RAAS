@@ -1,4 +1,4 @@
-<WixLocalization Codepage="874" Culture="th-TH" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="874" Culture="th-TH" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="การถอนการติดตั้งการกำหนดค่าไฟร์วอลล์ Windows" />
   <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="การย้อนกลับการกำหนดค่าไฟร์วอลล์ Windows" />
   <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="การติดตั้งการกำหนดค่าไฟร์วอลล์ Windows" />

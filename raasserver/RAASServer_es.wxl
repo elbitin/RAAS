@@ -1,4 +1,4 @@
-<WixLocalization Codepage="1252" Culture="es-es" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1252" Culture="es-es" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Desinstalación de la configuración del Firewall de Windows" />
   <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Revertir la configuración del Firewall de Windows" />
   <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instalación de la configuración del Firewall de Windows" />

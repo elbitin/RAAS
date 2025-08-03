@@ -1,4 +1,4 @@
-<WixLocalization Codepage="949" Culture="ko-KR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="949" Culture="ko-KR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows 방화벽 구성 제거" />
   <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows 방화벽 구성 롤백" />
   <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows 방화벽 구성 설치" />

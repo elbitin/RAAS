@@ -1,4 +1,4 @@
-<WixLocalization Codepage="1252" Culture="fi-FI" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1252" Culture="fi-FI" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsin palomuurikokoonpanon asennuksen poistaminen" />
   <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windowsin palomuurin määritysten palauttaminen" />
   <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsin palomuurikokoonpanon asentaminen" />
