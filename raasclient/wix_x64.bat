@@ -4,6 +4,8 @@ call ..\wixextensions.bat < nul
 echo call wix_x64_en-US.bat < nul
 call wix_x64_en-US.bat < nul
 echo call wix_x64_sv-SE.bat < nul
+call wix_x64_sv-SE.bat
+echo call wix_x64_af.bat < nul
 call wix_x64_af.bat < nul
 echo call wix_x64_af.bat < nul
 call wix_x64_am.bat < nul
