@@ -1,4 +1,4 @@
-﻿<WixLocalization Codepage="1250" Codepage="1250" Culture="ms" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="ms" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Kelantangan"/>
 	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Saiz Cakera"/>
 	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Diperlukan"/>
