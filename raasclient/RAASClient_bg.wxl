@@ -1,1 +1,16 @@
-﻿<WixLocalization Culture="bg-BG" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="VisualizationsDescription" Overridable="yes" Value="Визуализации за отдалечени приложения, налични като опция в конфигурацията" /><String Id="NamespaceDescription" Overridable="yes" Value="Вижте RAAS сървъри в Explorer" /><String Id="ShortcutsDescription" Overridable="yes" Value="Създайте преки пътища за отдалечено приложение към сървърни приложения на локален компютър" /><String Id="VisualizationsTitle" Overridable="yes" Value="Визуализации" /><String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension" /><String Id="ShortcutsTitle" Overridable="yes" Value="Дистанционни преки пътища" /><String Id="ProductLanguage" Overridable="yes" Value="1026" /></WixLocalization>
+<WixLocalization Culture="bg-BG" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="VisualizationsDescription" Overridable="yes" Value="Визуализации за отдалечени приложения, налични като опция в конфигурацията" />
+  <String Id="NamespaceDescription" Overridable="yes" Value="Вижте RAAS сървъри в Explorer" />
+  <String Id="ShortcutsDescription" Overridable="yes" Value="Създайте преки пътища за отдалечено приложение към сървърни приложения на локален компютър" />
+  <String Id="VisualizationsTitle" Overridable="yes" Value="Визуализации" />
+  <String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension" />
+  <String Id="ShortcutsTitle" Overridable="yes" Value="Дистанционни преки пътища" />
+  <String Id="ProductLanguage" Overridable="yes" Value="1026" />
+  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="msierrFirewallCannotConnect" xmlns="" />
+  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="WixSchedFirewallExceptionsInstall" xmlns="" />
+  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="WixSchedFirewallExceptionsUninstall" xmlns="" />
+  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="WixRollbackFirewallExceptionsInstall" xmlns="" />
+  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="WixExecFirewallExceptionsInstall" xmlns="" />
+  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="WixRollbackFirewallExceptionsUninstall" xmlns="" />
+  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="WixExecFirewallExceptionsUninstall" xmlns="" />
+</WixLocalization>

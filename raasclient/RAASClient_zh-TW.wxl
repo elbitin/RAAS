@@ -1,1 +1,16 @@
-﻿<WixLocalization Culture="zh-TW" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="VisualizationsDescription" Overridable="yes" Value="遠端應用程式的視覺化功能可在配置中作為選項提供" /><String Id="NamespaceDescription" Overridable="yes" Value="在本機電腦上建立伺服器應用程式的遠端應用程式捷徑" /><String Id="ShortcutsDescription" Overridable="yes" Value="在 Explorer 中查看 RAAS 伺服器" /><String Id="VisualizationsTitle" Overridable="yes" Value="視覺化" /><String Id="NamespaceTitle" Overridable="yes" Value="Shell 命名空間擴展" /><String Id="ShortcutsTitle" Overridable="yes" Value="遠端快捷方式" /><String Id="ProductLanguage" Overridable="yes" Value="1028" /></WixLocalization>
+<WixLocalization Culture="zh-TW" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="VisualizationsDescription" Overridable="yes" Value="遠端應用程式的視覺化功能可在配置中作為選項提供" />
+  <String Id="NamespaceDescription" Overridable="yes" Value="在本機電腦上建立伺服器應用程式的遠端應用程式捷徑" />
+  <String Id="ShortcutsDescription" Overridable="yes" Value="在 Explorer 中查看 RAAS 伺服器" />
+  <String Id="VisualizationsTitle" Overridable="yes" Value="視覺化" />
+  <String Id="NamespaceTitle" Overridable="yes" Value="Shell 命名空間擴展" />
+  <String Id="ShortcutsTitle" Overridable="yes" Value="遠端快捷方式" />
+  <String Id="ProductLanguage" Overridable="yes" Value="1028" />
+  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="msierrFirewallCannotConnect" xmlns="" />
+  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="WixSchedFirewallExceptionsInstall" xmlns="" />
+  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="WixSchedFirewallExceptionsUninstall" xmlns="" />
+  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="WixRollbackFirewallExceptionsInstall" xmlns="" />
+  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="WixExecFirewallExceptionsInstall" xmlns="" />
+  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="WixRollbackFirewallExceptionsUninstall" xmlns="" />
+  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="WixExecFirewallExceptionsUninstall" xmlns="" />
+</WixLocalization>
