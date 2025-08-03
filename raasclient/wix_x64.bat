@@ -7,7 +7,7 @@ echo call wix_x64_sv-SE.bat < nul
 call wix_x64_sv-SE.bat < nul
 echo call wix_x64_af.bat < nul
 call wix_x64_af.bat < nul
-echo call wix_x64_af.bat < nul
+echo call wix_x64_ar.bat < nul
 call wix_x64_ar.bat < nul
 echo call wix_x64_az.bat < nul
 call wix_x64_az.bat < nul
@@ -15,7 +15,7 @@ echo call wix_x64_bg.bat < nul
 call wix_x64_bg.bat < nul
 echo call wix_x64_bs.bat < nul
 call wix_x64_bs.bat < nul
-echo call wix_x64_ca.bat < nul
+echo call wix_x64_co.bat < nul
 call wix_x64_co.bat < nul
 echo call wix_x64_cs.bat < nul
 call wix_x64_cs.bat < nul
@@ -70,6 +70,8 @@ call wix_x64_mi.bat < nul
 echo call wix_x64_ml.bat < nul
 call wix_x64_ml.bat < nul
 echo call wix_x64_ms.bat < nul
+call wix_x64_ms.bat < nul
+echo echo call wix_x64_mt.bat < nul
 call wix_x64_mt.bat < nul
 echo call wix_x64_nl.bat < nul
 call wix_x64_nl.bat < nul
