@@ -1,4 +1,4 @@
 @echo off
 call ..\setversions.bat
-wix build -ext WixToolset.UI.wixext -ext WixToolset.Firewall.wixext -ext WixToolset.Util.wixext -ext WixToolset.Netfx.wixext -culture el -loc RAASClient_el.wxl RAASClient_x64.wxs  -out RAASClient_x64_el.msi
+wix build -ext WixToolset.UI.wixext -ext WixToolset.Firewall.wixext -ext WixToolset.Util.wixext -ext WixToolset.Netfx.wixext -culture el-GR -loc RAASClient_el.wxl RAASClient_x64.wxs  -out RAASClient_x64_el.msi
 pause
