@@ -1,4 +1,4 @@
-<WixLocalization Culture="ar-SA" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="ar-SA" xmlns="http://wixtoolset.org/schemas/v4/wxl">
   <String Id="VisualizationsDescription" Overridable="yes" Value="تتوفر تصورات للتطبيقات البعيدة كخيار في التكوين" />
   <String Id="NamespaceDescription" Overridable="yes" Value="عرض خوادم RAAS في Explorer" />
   <String Id="ShortcutsDescription" Overridable="yes" Value="إنشاء اختصارات التطبيقات عن بعد لتطبيقات الخادم على الكمبيوتر المحلي" />
@@ -6,11 +6,11 @@
   <String Id="NamespaceTitle" Overridable="yes" Value="امتداد مساحة اسم Shell" />
   <String Id="ShortcutsTitle" Overridable="yes" Value="اختصارات عن بعد" />
   <String Id="ProductLanguage" Overridable="yes" Value="1025" />
-  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="msierrFirewallCannotConnect" xmlns="" />
-  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="WixSchedFirewallExceptionsInstall" xmlns="" />
-  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="WixSchedFirewallExceptionsUninstall" xmlns="" />
-  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="WixRollbackFirewallExceptionsInstall" xmlns="" />
-  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="WixExecFirewallExceptionsInstall" xmlns="" />
-  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="WixRollbackFirewallExceptionsUninstall" xmlns="" />
-  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="WixExecFirewallExceptionsUninstall" xmlns="" />
+  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="msierrFirewallCannotConnect" />
+  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="WixSchedFirewallExceptionsInstall" />
+  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="WixSchedFirewallExceptionsUninstall" />
+  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="WixRollbackFirewallExceptionsInstall" />
+  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="WixExecFirewallExceptionsInstall" />
+  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="WixRollbackFirewallExceptionsUninstall" />
+  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="WixExecFirewallExceptionsUninstall" />
 </WixLocalization>
