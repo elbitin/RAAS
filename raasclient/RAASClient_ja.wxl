@@ -1,16 +1,1 @@
-﻿<WixLocalization Culture="ja-jp-jp" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsファイアウォール構成のアンインストール"/>
-	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows ファイアウォールの構成をロールバックする"/>
-	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsファイアウォール構成のインストール"/>
-	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows ファイアウォールの構成をロールバックする"/>
-	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windowsファイアウォールの構成"/>
-	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windowsファイアウォールの構成"/>
-	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windowsファイアウォールに接続できません。([2] [3] [4] [5])"/>
-	<String Id="VisualizationsDescription" Overridable="yes" Value="リモート アプリケーションの視覚化は構成オプションとして利用可能"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="エクスプローラーでRAASサーバーを表示する"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="ローカルコンピュータ上のサーバーアプリケーションへのリモートアプリケーションショートカットを作成する"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="視覚化"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="シェル名前空間拡張"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="リモートショートカット"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1041"/>
-</WixLocalization>
+﻿<WixLocalization Culture="ja-jp" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsファイアウォール構成のアンインストール" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows ファイアウォールの構成をロールバックする" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsファイアウォール構成のインストール" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows ファイアウォールの構成をロールバックする" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windowsファイアウォールの構成" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windowsファイアウォールの構成" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windowsファイアウォールに接続できません。([2] [3] [4] [5])" /><String Id="VisualizationsDescription" Overridable="yes" Value="リモート アプリケーションの視覚化は構成オプションとして利用可能" /><String Id="NamespaceDescription" Overridable="yes" Value="エクスプローラーでRAASサーバーを表示する" /><String Id="ShortcutsDescription" Overridable="yes" Value="ローカルコンピュータ上のサーバーアプリケーションへのリモートアプリケーションショートカットを作成する" /><String Id="VisualizationsTitle" Overridable="yes" Value="視覚化" /><String Id="NamespaceTitle" Overridable="yes" Value="シェル名前空間拡張" /><String Id="ShortcutsTitle" Overridable="yes" Value="リモートショートカット" /><String Id="ProductLanguage" Overridable="yes" Value="1041" /></WixLocalization>

@@ -1,14 +1,1 @@
-﻿<WixLocalization Culture="th" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="การถอนการติดตั้งการกำหนดค่าไฟร์วอลล์ Windows"/>
-	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="การย้อนกลับการกำหนดค่าไฟร์วอลล์ Windows"/>
-	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="การติดตั้งการกำหนดค่าไฟร์วอลล์ Windows"/>
-	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="การย้อนกลับการกำหนดค่าไฟร์วอลล์ Windows"/>
-	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="การกำหนดค่าไฟร์วอลล์ Windows"/>
-	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="การกำหนดค่าไฟร์วอลล์ Windows"/>
-	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="ไม่สามารถเชื่อมต่อกับไฟร์วอลล์ Windows ได้ ([2] [3] [4] [5])"/>
-	<String Id="NetworkSharesTitle" Overridable="yes" Value="เซิร์ฟเวอร์ร่วมเครือข่าย"/>
-	<String Id="NetworkSharesDescription" Overridable="yes" Value="แชร์ไดรฟ์บนเครือข่ายเพื่อเปิดใช้งานการควบคุมและการเรียกดูจากไคลเอนต์ RAAS"/>
-	<String Id="CanRebootTitle" Overridable="yes" Value="สามารถรีบูตได้"/>
-	<String Id="CanRebootDescription" Overridable="yes" Value="อนุญาตให้รีบูตจากไคลเอนต์ RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1054"/>
-</WixLocalization>
+﻿<WixLocalization Culture="th-TH" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="การถอนการติดตั้งการกำหนดค่าไฟร์วอลล์ Windows" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="การย้อนกลับการกำหนดค่าไฟร์วอลล์ Windows" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="การติดตั้งการกำหนดค่าไฟร์วอลล์ Windows" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="การย้อนกลับการกำหนดค่าไฟร์วอลล์ Windows" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="การกำหนดค่าไฟร์วอลล์ Windows" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="การกำหนดค่าไฟร์วอลล์ Windows" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="ไม่สามารถเชื่อมต่อกับไฟร์วอลล์ Windows ได้ ([2] [3] [4] [5])" /><String Id="NetworkSharesTitle" Overridable="yes" Value="เซิร์ฟเวอร์ร่วมเครือข่าย" /><String Id="NetworkSharesDescription" Overridable="yes" Value="แชร์ไดรฟ์บนเครือข่ายเพื่อเปิดใช้งานการควบคุมและการเรียกดูจากไคลเอนต์ RAAS" /><String Id="CanRebootTitle" Overridable="yes" Value="สามารถรีบูตได้" /><String Id="CanRebootDescription" Overridable="yes" Value="อนุญาตให้รีบูตจากไคลเอนต์ RAAS" /><String Id="ProductLanguage" Overridable="yes" Value="1054" /></WixLocalization>

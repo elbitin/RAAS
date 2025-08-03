@@ -1,16 +1,1 @@
-﻿<WixLocalization Culture="da-DK-DK" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Afinstallerer Windows Firewall-konfiguration"/>
-	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration"/>
-	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installation af Windows Firewall-konfiguration"/>
-	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration"/>
-	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfiguration af Windows Firewall"/>
-	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfiguration af Windows Firewall"/>
-	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan ikke oprette forbindelse til Windows Firewall. ([2] [3] [4] [5])"/>
-	<String Id="VisualizationsDescription" Overrida-DK-DKble="yes" Value="Visualiseringer til fjernapplikationer tilgængelige som mulighed i konfigurationen"/>
-	<String Id="NamespaceDescription" Overrida-DK-DKble="yes" Value="Se RAAS-servere i Explorer"/>
-	<String Id="ShortcutsDescription" Overrida-DK-DKble="yes" Value="Opret eksterne applikationsgenveje til serverapplikationer på lokal computer"/>
-	<String Id="VisualizationsTitle" Overrida-DK-DKble="yes" Value="Visualiseringer"/>
-	<String Id="NamespaceTitle" Overrida-DK-DKble="yes" Value="Shell Namespace Extension"/>
-	<String Id="ShortcutsTitle" Overrida-DK-DKble="yes" Value="Fjerngenveje"/>
-	<String Id="ProductLanguage" Overrida-DK-DKble="yes" Value="1030"/>
-</WixLocalization>
+﻿<WixLocalization Culture="da-DK" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Afinstallerer Windows Firewall-konfiguration" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installation af Windows Firewall-konfiguration" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfiguration af Windows Firewall" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfiguration af Windows Firewall" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan ikke oprette forbindelse til Windows Firewall. ([2] [3] [4] [5])" /><String Id="VisualizationsDescription" Overrida-DK-DKble="yes" Value="Visualiseringer til fjernapplikationer tilgængelige som mulighed i konfigurationen" /><String Id="NamespaceDescription" Overrida-DK-DKble="yes" Value="Se RAAS-servere i Explorer" /><String Id="ShortcutsDescription" Overrida-DK-DKble="yes" Value="Opret eksterne applikationsgenveje til serverapplikationer på lokal computer" /><String Id="VisualizationsTitle" Overrida-DK-DKble="yes" Value="Visualiseringer" /><String Id="NamespaceTitle" Overrida-DK-DKble="yes" Value="Shell Namespace Extension" /><String Id="ShortcutsTitle" Overrida-DK-DKble="yes" Value="Fjerngenveje" /><String Id="ProductLanguage" Overrida-DK-DKble="yes" Value="1030" /></WixLocalization>

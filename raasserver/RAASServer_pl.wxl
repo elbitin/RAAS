@@ -1,14 +1,1 @@
-﻿<WixLocalization Culture="pl" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Odinstalowywanie konfiguracji Zapory systemu Windows"/>
-	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Cofanie konfiguracji Zapory systemu Windows"/>
-	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instalowanie konfiguracji Zapory systemu Windows"/>
-	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Cofanie konfiguracji Zapory systemu Windows"/>
-	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfigurowanie Zapory systemu Windows"/>
-	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfigurowanie Zapory systemu Windows"/>
-	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Nie można połączyć się z Zaporą systemu Windows. ([2] [3] [4] [5])"/>
-	<String Id="NetworkSharesTitle" Overridable="yes" Value="Serwer współdzielony sieciowo"/>
-	<String Id="NetworkSharesDescription" Overridable="yes" Value="Udostępniaj dyski w sieci, aby umożliwić kontrolę i przeglądanie z poziomu klienta RAAS"/>
-	<String Id="CanRebootTitle" Overridable="yes" Value="Można ponownie uruchomić"/>
-	<String Id="CanRebootDescription" Overridable="yes" Value="Zezwalaj na ponowne uruchamianie z klienta RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1045"/>
-</WixLocalization>
+﻿<WixLocalization Culture="pl-pl" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Odinstalowywanie konfiguracji Zapory systemu Windows" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Cofanie konfiguracji Zapory systemu Windows" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instalowanie konfiguracji Zapory systemu Windows" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Cofanie konfiguracji Zapory systemu Windows" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfigurowanie Zapory systemu Windows" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfigurowanie Zapory systemu Windows" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Nie można połączyć się z Zaporą systemu Windows. ([2] [3] [4] [5])" /><String Id="NetworkSharesTitle" Overridable="yes" Value="Serwer współdzielony sieciowo" /><String Id="NetworkSharesDescription" Overridable="yes" Value="Udostępniaj dyski w sieci, aby umożliwić kontrolę i przeglądanie z poziomu klienta RAAS" /><String Id="CanRebootTitle" Overridable="yes" Value="Można ponownie uruchomić" /><String Id="CanRebootDescription" Overridable="yes" Value="Zezwalaj na ponowne uruchamianie z klienta RAAS" /><String Id="ProductLanguage" Overridable="yes" Value="1045" /></WixLocalization>

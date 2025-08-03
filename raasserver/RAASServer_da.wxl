@@ -1,14 +1,1 @@
-﻿<WixLocalization Culture="da" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Afinstallerer Windows Firewall-konfiguration"/>
-	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration"/>
-	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installation af Windows Firewall-konfiguration"/>
-	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration"/>
-	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfiguration af Windows Firewall"/>
-	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfiguration af Windows Firewall"/>
-	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan ikke oprette forbindelse til Windows Firewall. ([2] [3] [4] [5])"/>
-	<String Id="NetworkSharesTitle" Overridable="yes" Value="Delt netværksserver"/>
-	<String Id="NetworkSharesDescription" Overridable="yes" Value="Del drev på netværket for at aktivere kontrol og browsing fra RAAS Client"/>
-	<String Id="CanRebootTitle" Overridable="yes" Value="Kan genstarte"/>
-	<String Id="CanRebootDescription" Overridable="yes" Value="Tillad genstart fra RAAS Client"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1030"/>
-</WixLocalization>
+﻿<WixLocalization Culture="da-DK" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Afinstallerer Windows Firewall-konfiguration" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installation af Windows Firewall-konfiguration" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfiguration af Windows Firewall" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfiguration af Windows Firewall" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan ikke oprette forbindelse til Windows Firewall. ([2] [3] [4] [5])" /><String Id="NetworkSharesTitle" Overridable="yes" Value="Delt netværksserver" /><String Id="NetworkSharesDescription" Overridable="yes" Value="Del drev på netværket for at aktivere kontrol og browsing fra RAAS Client" /><String Id="CanRebootTitle" Overridable="yes" Value="Kan genstarte" /><String Id="CanRebootDescription" Overridable="yes" Value="Tillad genstart fra RAAS Client" /><String Id="ProductLanguage" Overridable="yes" Value="1030" /></WixLocalization>

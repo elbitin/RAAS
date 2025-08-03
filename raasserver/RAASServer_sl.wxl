@@ -1,14 +1,1 @@
-﻿<WixLocalization Culture="sl" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Odstranjevanje konfiguracije požarnega zidu Windows"/>
-	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Povrnitev konfiguracije požarnega zidu Windows"/>
-	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Namestitev konfiguracije požarnega zidu Windows"/>
-	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Povrnitev konfiguracije požarnega zidu Windows"/>
-	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfiguracija požarnega zidu Windows"/>
-	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfiguracija požarnega zidu Windows"/>
-	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ni mogoče vzpostaviti povezave s požarnim zidom Windows. ([2] [3] [4] [5])"/>
-	<String Id="NetworkSharesTitle" Overridable="yes" Value="Strežnik v skupni rabi omrežja"/>
-	<String Id="NetworkSharesDescription" Overridable="yes" Value="Delite pogone v omrežju, da omogočite nadzor in brskanje iz odjemalca RAAS"/>
-	<String Id="CanRebootTitle" Overridable="yes" Value="Lahko znova zažene"/>
-	<String Id="CanRebootDescription" Overridable="yes" Value="Dovoli vnovične zagone iz odjemalca RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1060"/>
-</WixLocalization>
+﻿<WixLocalization Culture="sl-sl" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Odstranjevanje konfiguracije požarnega zidu Windows" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Povrnitev konfiguracije požarnega zidu Windows" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Namestitev konfiguracije požarnega zidu Windows" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Povrnitev konfiguracije požarnega zidu Windows" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfiguracija požarnega zidu Windows" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfiguracija požarnega zidu Windows" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ni mogoče vzpostaviti povezave s požarnim zidom Windows. ([2] [3] [4] [5])" /><String Id="NetworkSharesTitle" Overridable="yes" Value="Strežnik v skupni rabi omrežja" /><String Id="NetworkSharesDescription" Overridable="yes" Value="Delite pogone v omrežju, da omogočite nadzor in brskanje iz odjemalca RAAS" /><String Id="CanRebootTitle" Overridable="yes" Value="Lahko znova zažene" /><String Id="CanRebootDescription" Overridable="yes" Value="Dovoli vnovične zagone iz odjemalca RAAS" /><String Id="ProductLanguage" Overridable="yes" Value="1060" /></WixLocalization>

@@ -1,16 +1,1 @@
-﻿<WixLocalization Culture="et-EE-EE" xmlns="http://wixtoolset-EE-EE.org/schemas/v4/wxl">
-	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni desinstallimine"/>
-	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni tagasipööramine"/>
-	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni installimine"/>
-	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni tagasipööramine"/>
-	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfigureerimine"/>
-	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfigureerimine"/>
-	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windowsi tulemüüriga ei saa ühendust. ([2] [3] [4] [5])"/>
-	<String Id="VisualizationsDescription" Overridable="yes" Value="Kaugrakenduste visualiseeringud on konfiguratsioonis valikuna saadaval"/>
-	<String Id="NamespaceDescription" Overridable="yes" Value="Vaadake RAAS-servereid Exploreris"/>
-	<String Id="ShortcutsDescription" Overridable="yes" Value="Looge kohalikus arvutis serverirakendustele kaugrakenduste otset-EE-EEeid"/>
-	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualisatsioonid"/>
-	<String Id="NamespaceTitle" Overridable="yes" Value="Shelli nimeruumi laiendus"/>
-	<String Id="ShortcutsTitle" Overridable="yes" Value="Kaugjuhitavad otset-EE-EEeed"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1061"/>
-</WixLocalization>
+﻿<WixLocalization Culture="et-EE" xmlns="http://wixtoolset-EE-EE.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni desinstallimine" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni tagasipööramine" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni installimine" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni tagasipööramine" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfigureerimine" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfigureerimine" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windowsi tulemüüriga ei saa ühendust. ([2] [3] [4] [5])" /><String Id="VisualizationsDescription" Overridable="yes" Value="Kaugrakenduste visualiseeringud on konfiguratsioonis valikuna saadaval" /><String Id="NamespaceDescription" Overridable="yes" Value="Vaadake RAAS-servereid Exploreris" /><String Id="ShortcutsDescription" Overridable="yes" Value="Looge kohalikus arvutis serverirakendustele kaugrakenduste otset-EE-EEeid" /><String Id="VisualizationsTitle" Overridable="yes" Value="Visualisatsioonid" /><String Id="NamespaceTitle" Overridable="yes" Value="Shelli nimeruumi laiendus" /><String Id="ShortcutsTitle" Overridable="yes" Value="Kaugjuhitavad otset-EE-EEeed" /><String Id="ProductLanguage" Overridable="yes" Value="1061" /></WixLocalization>

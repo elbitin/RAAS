@@ -1,14 +1,1 @@
-﻿<WixLocalization Culture="uk" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Видалення конфігурації брандмауера Windows"/>
-	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Відкат конфігурації брандмауера Windows"/>
-	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Встановлення конфігурації брандмауера Windows"/>
-	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Відкат конфігурації брандмауера Windows"/>
-	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Налаштування брандмауера Windows"/>
-	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Налаштування брандмауера Windows"/>
-	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Не вдається підключитися до брандмауера Windows. ([2] [3] [4] [5])"/>
-	<String Id="NetworkSharesTitle" Overridable="yes" Value="Спільний мережевий сервер"/>
-	<String Id="NetworkSharesDescription" Overridable="yes" Value="Поділіться дисками в мережі, щоб увімкнути контроль і перегляд із клієнта RAAS"/>
-	<String Id="CanRebootTitle" Overridable="yes" Value="Можна перезавантажити"/>
-	<String Id="CanRebootDescription" Overridable="yes" Value="Дозволити перезавантаження з клієнта RAAS"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1058"/>
-</WixLocalization>
+﻿<WixLocalization Culture="uk-UA" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Видалення конфігурації брандмауера Windows" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Відкат конфігурації брандмауера Windows" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Встановлення конфігурації брандмауера Windows" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Відкат конфігурації брандмауера Windows" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Налаштування брандмауера Windows" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Налаштування брандмауера Windows" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Не вдається підключитися до брандмауера Windows. ([2] [3] [4] [5])" /><String Id="NetworkSharesTitle" Overridable="yes" Value="Спільний мережевий сервер" /><String Id="NetworkSharesDescription" Overridable="yes" Value="Поділіться дисками в мережі, щоб увімкнути контроль і перегляд із клієнта RAAS" /><String Id="CanRebootTitle" Overridable="yes" Value="Можна перезавантажити" /><String Id="CanRebootDescription" Overridable="yes" Value="Дозволити перезавантаження з клієнта RAAS" /><String Id="ProductLanguage" Overridable="yes" Value="1058" /></WixLocalization>
