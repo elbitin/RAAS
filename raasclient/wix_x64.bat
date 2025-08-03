@@ -65,8 +65,6 @@ echo call wix_x64_lt.bat < nul
 call wix_x64_lt.bat < nul
 echo call wix_x64_lv.bat < nul
 call wix_x64_lv.bat < nul
-echo call wix_x64_mg.bat < nul
-call wix_x64_mg.bat < nul
 echo call wix_x64_mi.bat < nul
 call wix_x64_mi.bat < nul
 echo call wix_x64_ml.bat < nul

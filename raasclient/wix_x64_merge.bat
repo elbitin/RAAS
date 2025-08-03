@@ -32,7 +32,6 @@ wix msi transform -t language "RAASClient_%RAASClientVersion%_x64.msi" "RAASClie
 wix msi transform -t language "RAASClient_%RAASClientVersion%_x64.msi" "RAASClient_x64_ko.msi" -out ko.mst
 wix msi transform -t language "RAASClient_%RAASClientVersion%_x64.msi" "RAASClient_x64_lt.msi" -out lt.mst
 wix msi transform -t language "RAASClient_%RAASClientVersion%_x64.msi" "RAASClient_x64_lv.msi" -out lv.mst
-wix msi transform -t language "RAASClient_%RAASClientVersion%_x64.msi" "RAASClient_x64_mg.msi" -out mg.mst
 wix msi transform -t language "RAASClient_%RAASClientVersion%_x64.msi" "RAASClient_x64_mi.msi" -out mi.mst
 wix msi transform -t language "RAASClient_%RAASClientVersion%_x64.msi" "RAASClient_x64_mt.msi" -out mt.mst
 wix msi transform -t language "RAASClient_%RAASClientVersion%_x64.msi" "RAASClient_x64_nl.msi" -out nl.mst
@@ -97,12 +96,10 @@ cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" cy.mst 
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" gl.mst 1110
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" ne.mst 1121
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" tl.mst 1124
-cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" qu.mst 1131
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" ig.mst 1136
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" haw.mst 1141
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" mi.mst 1153
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" zh-CN.mst 2052
-cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" nn.mst 2068
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" pt-PT.mst 2070
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" ms.mst 2110
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" az.mst 2092
@@ -111,8 +108,7 @@ cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" co.mst 
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" ga.mst 2108
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" gd.mst 1169
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" ht.mst 15372
-cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" mg.mst 4096
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" sn.mst 1033
 cscript ..\scripts\WiSubStg.vbs "RAASClient_%RAASClientVersion%_x64.msi" xh.mst 52
-cscript ..\scripts\WiLangId.vbs "RAASClient_%RAASClientVersion%_x64.msi" Package 1033, 1053, 1025, 1026, 1028, 1029, 1031, 1032, 1034, 1035, 1036, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1048, 1049, 1050, 1051, 1052, 1054, 1055, 1056, 1057, 1061, 1062, 1063, 1066, 1069, 1077, 1078, 1082, 1089, 1092, 1106, 1110, 1121, 1124, 1131, 1136, 1141, 1153, 2052, 2068, 2070, 2110, 2092, 5146, 131, 2108, 1169, 15372, 4096, 1033, 52
-pause
+cscript ..\scripts\WiLangId.vbs "RAASClient_%RAASClientVersion%_x64.msi" Package 1033,1053,1053
+#,1025,1026,1028,1029,1031,1032,1034,1035,1036,1038,1039,1040,1041,1042,1043,1044,1045,1046,1048,1049,1050,1051,1052,1054,1055,1056,1057,1061,1062,1063,1066,1069,1077,1078,1082,1089,1092,1106,1110,1121,1124,1136,1141,1153,2052,2070,2110,2092,5146,131,2108,1169,15372,4096,1033,52
