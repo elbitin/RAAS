@@ -74,7 +74,7 @@
 	<String Id="Error1916" Overridable="yes" Value="Eraro instalante ODBC-ŝoformanaĝeron, ODBC-eraro [ProductName]: [ProductName]. Kontaktu vian helppersonaron."/>
 	<String Id="Error1915" Overridable="yes" Value="Eraro forigo de ODBC-ŝoformanaĝero, ODBC-eraro [ProductName]: [ProductName]. Kontaktu vian helppersonaron."/>
 	<String Id="Error1914" Overridable="yes" Value="Ne eblis plani dosieron [ProductName] por anstataŭigi dosieron [ProductName] ĉe rekomenco. Kontrolu, ke vi havas skribpermesojn al dosiero [ProductName]."/>
-	<String Id="Error1913" Overridable="yes" Value="Ne eblis ĝisdatigi la ini-dosieron [ProductName][ProductName]. Kontrolu, ke la dosiero ekzistas kaj ke vi povas aliri ĝin."/>
+	<String Id="Error1913" Overridable="yes" Value="Ne eblis ĝisdatigi la ini-dosieron [ProductName]. Kontrolu, ke la dosiero ekzistas kaj ke vi povas aliri ĝin."/>
 	<String Id="Error1912" Overridable="yes" Value="Ne eblis malregistri tajpbibliotekon por dosiero [ProductName]. Kontaktu vian helppersonaron."/>
 	<String Id="Error1911" Overridable="yes" Value="Ne eblis registri tipbibliotekon por dosiero [ProductName]. Kontaktu vian helppersonaron."/>
 	<String Id="Error1910" Overridable="yes" Value="Ne eblis forigi Ŝparvojon [ProductName]. Kontrolu, ke la ŝparvoja dosiero ekzistas kaj ke vi povas aliri ĝin."/>
@@ -567,7 +567,7 @@
 	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Agordante Windows Firewall"/>
 	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Agordante Windows Firewall"/>
 	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ne povas konekti al Windows Firewall. ([2] [3] [4] [5])"/>
-	<String Id="VisualizationsDescription" Overridable="yes" Bildigoj por foraj aplikoj disponeblaj kiel opcio en agordo"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Bildigoj por foraj aplikoj disponeblaj kiel opcio en agordo"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Rigardu RAAS-servilojn en Esplorilo"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Kreu forajn aplikaĵajn ŝparvojojn al servilaj aplikoj sur loka komputilo"/>
 	<String Id="VisualizationsTitle" Overridable="yes" Value="Bildigoj"/>

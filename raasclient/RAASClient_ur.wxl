@@ -1,4 +1,4 @@
-﻿<WixLocalization Codepage="1250" Codepage="1250" Culture="ur" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Codepage="1250" Culture="ur" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="حجم"/>
 	<String Id="UITextVolumeCostSize" Overridable="yes" Value="ڈسک کا سائز"/>
 	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="درکار ہے۔"/>
