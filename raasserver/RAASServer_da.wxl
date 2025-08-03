@@ -1,1 +1,575 @@
-﻿<WixLocalization Culture="da-DK" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Afinstallerer Windows Firewall-konfiguration" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installation af Windows Firewall-konfiguration" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfiguration af Windows Firewall" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfiguration af Windows Firewall" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan ikke oprette forbindelse til Windows Firewall. ([2] [3] [4] [5])" /><String Id="NetworkSharesTitle" Overridable="yes" Value="Delt netværksserver" /><String Id="NetworkSharesDescription" Overridable="yes" Value="Del drev på netværket for at aktivere kontrol og browsing fra RAAS Client" /><String Id="CanRebootTitle" Overridable="yes" Value="Kan genstarte" /><String Id="CanRebootDescription" Overridable="yes" Value="Tillad genstart fra RAAS Client" /><String Id="ProductLanguage" Overridable="yes" Value="1030" /></WixLocalization>
+<WixLocalization Codepage="1252" Culture="da-DK" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Afinstallerer Windows Firewall-konfiguration" />
+  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration" />
+  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installation af Windows Firewall-konfiguration" />
+  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Tilbageføring af Windows Firewall-konfiguration" />
+  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfiguration af Windows Firewall" />
+  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfiguration af Windows Firewall" />
+  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan ikke oprette forbindelse til Windows Firewall. ([2] [3] [4] [5])" />
+  <String Id="NetworkSharesTitle" Overridable="yes" Value="Delt netværksserver" />
+  <String Id="NetworkSharesDescription" Overridable="yes" Value="Del drev på netværket for at aktivere kontrol og browsing fra RAAS Client" />
+  <String Id="CanRebootTitle" Overridable="yes" Value="Kan genstarte" />
+  <String Id="CanRebootDescription" Overridable="yes" Value="Tillad genstart fra RAAS Client" />
+  <String Id="ProductLanguage" Overridable="yes" Value="1030" />
+  <String Id="WixUIBack" Overridable="yes" Value="&amp;Tilbage" xmlns="" />
+  <String Id="WixUINext" Overridable="yes" Value="&amp;Næste" xmlns="" />
+  <String Id="WixUICancel" Overridable="yes" Value="Annuller" xmlns="" />
+  <String Id="WixUIFinish" Overridable="yes" Value="&amp;Udfør" xmlns="" />
+  <String Id="WixUIRetry" Overridable="yes" Value="&amp;Prøv igen" xmlns="" />
+  <String Id="WixUIIgnore" Overridable="yes" Value="&amp;Ignorer" xmlns="" />
+  <String Id="WixUIYes" Overridable="yes" Value="&amp;Ja" xmlns="" />
+  <String Id="WixUINo" Overridable="yes" Value="&amp;Nej" xmlns="" />
+  <String Id="WixUIOK" Overridable="yes" Value="OK" xmlns="" />
+  <String Id="WixUIPrint" Overridable="yes" Value="&amp;Udskriv" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Læs licensaftalen til [ProductName]" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Jeg &amp;accepterer vilkårene i licensaftalen" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Klik på Installer for at installere produktet med standardindstillingerne for alle brugere. Klik på Avanceret for at ændre installationsindstillingerne." xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Klik på Installer for at installere produktet med standardindstillingerne kun for dig. Klik på Avanceret for at ændre installationsindstillingerne." xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Installer" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="A&amp;vanceret" xmlns="" />
+  <String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8" xmlns="" />
+  <String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12" xmlns="" />
+  <String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9" xmlns="" />
+  <String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8" xmlns="" />
+  <String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma" xmlns="" />
+  <String Id="BrowseDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Søg i:" xmlns="" />
+  <String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up" xmlns="" />
+  <String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Ét niveau op" xmlns="" />
+  <String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New" xmlns="" />
+  <String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Opret en ny mappe" xmlns="" />
+  <String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Mappenavn:" xmlns="" />
+  <String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="BrowseDlgDescription" Overridable="yes" Value="Gå til destinationsmappen" xmlns="" />
+  <String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Skift destinationsmappe" xmlns="" />
+  <String Id="CancelDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="CancelDlgText" Overridable="yes" Value="Er du sikker på, at du vil annullere installationen af [ProductName]?" xmlns="" />
+  <String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="CancelDlgIconTooltip" Overridable="yes" Value="Oplysningsikon" xmlns="" />
+  <String Id="CustomizeDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="CustomizeDlgTree" Overridable="yes" Value="Trævisning for markerede elementer" xmlns="" />
+  <String Id="CustomizeDlgBrowse" Overridable="yes" Value="&amp;Gennemse..." xmlns="" />
+  <String Id="CustomizeDlgReset" Overridable="yes" Value="Nul&amp;stil" xmlns="" />
+  <String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Disk&amp;forbrug" xmlns="" />
+  <String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="CustomizeDlgText" Overridable="yes" Value="Klik på ikonerne i træstrukturen nedenfor for at ændre den måde, som funktioner installeres på." xmlns="" />
+  <String Id="CustomizeDlgDescription" Overridable="yes" Value="Vælg den måde, som funktionerne skal installeres på." xmlns="" />
+  <String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Brugerdefineret installation" xmlns="" />
+  <String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription" xmlns="" />
+  <String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize" xmlns="" />
+  <String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation" xmlns="" />
+  <String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Sted:" xmlns="" />
+  <String Id="DiskCostDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="DiskCostDlgText" Overridable="yes" Value="De markerede diskenheder har ikke nok ledig diskplads til de valgte funktioner. Du kan vælge at fjerne nogle filer fra de markerede diskenheder, installere færre funktioner eller vælge et andet destinationsdrev." xmlns="" />
+  <String Id="DiskCostDlgDescription" Overridable="yes" Value="Den krævede diskplads til installationen af de markerede funktioner." xmlns="" />
+  <String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Krav til diskplads" xmlns="" />
+  <String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="ErrorDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="ErrorDlgErrorText" Overridable="yes" Value="Oplysningstekst" xmlns="" />
+  <String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Oplysningsikon" xmlns="" />
+  <String Id="ExitDialog_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="ExitDialogDescription" Overridable="yes" Value="Klik på knappen Udfør for at afslutte guiden Installation." xmlns="" />
+  <String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Guiden [ProductName] Installation er fuldført" xmlns="" />
+  <String Id="FatalError_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Installationsprogrammet til [ProductName] blev afsluttet før tid" xmlns="" />
+  <String Id="FatalErrorDescription1" Overridable="yes" Value="Guiden [ProductName] Installation blev afsluttet før tid på grund af en fejl. Systemet er ikke blevet ændret. Hvis du vil installere programmet på et senere tidspunkt, skal du køre guiden Installation igen." xmlns="" />
+  <String Id="FatalErrorDescription2" Overridable="yes" Value="Klik på knappen Udfør for at afslutte guiden Installation." xmlns="" />
+  <String Id="FeaturesDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="FeaturesDlgTree" Overridable="yes" Value="Produktfunktioner" xmlns="" />
+  <String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="FeaturesDlgDescription" Overridable="yes" Value="Vælg den måde, som funktionerne skal installeres på." xmlns="" />
+  <String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Produktfunktioner" xmlns="" />
+  <String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription" xmlns="" />
+  <String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize" xmlns="" />
+  <String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Installer" xmlns="" />
+  <String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Skift" xmlns="" />
+  <String Id="FilesInUse_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="FilesInUseExit" Overridable="yes" Value="&amp;Afslut" xmlns="" />
+  <String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="FilesInUseText" Overridable="yes" Value="Følgende programmer bruger filer, der skal opdateres af installationsprogrammet. Luk programmerne, og klik derefter på &amp;Prøv igen for at fortsætte installationen, eller klik på Afslut for at afslutte den." xmlns="" />
+  <String Id="FilesInUseDescription" Overridable="yes" Value="Visse filer, som skal opdateres, er i brug." xmlns="" />
+  <String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Filer, der er i brug" xmlns="" />
+  <String Id="InstallDirDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Skift..." xmlns="" />
+  <String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Destinationsmappe" xmlns="" />
+  <String Id="InstallDirDlgDescription" Overridable="yes" Value="Klik på Næste for at installere i standardmappen, eller klik på Skift for at vælge en anden mappe." xmlns="" />
+  <String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Installer [ProductName] i:" xmlns="" />
+  <String Id="InstallScopeDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="InstallScopeDlgDescription" Overridable="yes" Value="Vælg installationsområde og -mappe" xmlns="" />
+  <String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Installationsområde" xmlns="" />
+  <String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Installer &amp;kun for dig ([LogonUser])" xmlns="" />
+  <String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] installeres i en mappe pr. bruger og er kun tilgængelig for din brugerkonto. Du behøver ikke lokale administratorrettigheder." xmlns="" />
+  <String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] understøtter ikke installation pr. bruger." xmlns="" />
+  <String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Installer for alle brugere på denne &amp;computer" xmlns="" />
+  <String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] installeres som standard i en mappe pr. computer og er tilgængelig for alle brugere. Du kan ændre standardinstallationsmappen. Du skal have lokale administratorrettigheder." xmlns="" />
+  <String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Installations&amp;mappe:" xmlns="" />
+  <String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Skift..." xmlns="" />
+  <String Id="InvalidDirDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="InvalidDirDlgText" Overridable="yes" Value="Installationsmappen skal være på en lokal harddisk." xmlns="" />
+  <String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Oplysningsikon" xmlns="" />
+  <String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Jeg &amp;accepterer vilkårene i licensaftalen" xmlns="" />
+  <String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Læs følgende licensaftale grundigt" xmlns="" />
+  <String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Slutbrugerlicensaftale" xmlns="" />
+  <String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Skift" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Skift installationen" xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Re&amp;parer" xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Reparer installationen" xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Fjern" xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Fjern installationen" xmlns="" />
+  <String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Vælg den handling, som du vil udføre." xmlns="" />
+  <String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Skift, reparer eller fjern installationen" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Gør det muligt at ændre den måde, som funktioner installeres på." xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] indeholder ikke nogen funktioner, der kan vælges separat." xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Fjerner [ProductName] fra computeren." xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] kan ikke fjernes." xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Reparerer fejl i den seneste installation ved at rette manglende og fejlbehæftede filer, genveje og poster i registreringsdatabasen." xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] kan ikke repareres." xmlns="" />
+  <String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Guiden Installation gør det muligt at ændre den måde, som funktioner i [ProductName] installeres på computeren på. Du kan også bruge guiden til at fjerne programmet fra computeren. Klik på Næste for at fortsætte, eller klik på Annuller for at afslutte guiden Installation." xmlns="" />
+  <String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Velkommen til guiden [ProductName] Installation" xmlns="" />
+  <String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="MsiRMFilesInUseText" Overridable="yes" Value="Følgende programmer bruger filer, der skal opdateres af installationsprogrammet. Du kan lade guiden Installation lukke dem og forsøge at genstarte dem eller genstarte computeren på et senere tidspunkt." xmlns="" />
+  <String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Visse filer, som skal opdateres, er i brug." xmlns="" />
+  <String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Filer, der bruges" xmlns="" />
+  <String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Luk programmerne, og forsøg at genstarte dem." xmlns="" />
+  <String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Luk ikke programmerne. Det er nødvendigt at genstarte." xmlns="" />
+  <String Id="OutOfDiskDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="OutOfDiskDlgText" Overridable="yes" Value="De markerede diskenheder har ikke nok ledig diskplads til de valgte funktioner. Du kan vælge at fjerne nogle filer fra de markerede diskenheder, installere færre funktioner eller vælge et andet destinationsdrev." xmlns="" />
+  <String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Installationen kræver mere diskplads, end der er til ledigt." xmlns="" />
+  <String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Der er ikke mere ledig diskplads" xmlns="" />
+  <String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="OutOfRbDiskDlgText" Overridable="yes" Value="De markerede diskenheder har ikke nok ledig diskplads til de valgte funktioner. Du kan vælge at fjerne nogle filer fra de markerede diskenheder, installere færre funktioner eller vælge et andet destinationsdrev." xmlns="" />
+  <String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Installationen kræver mere diskplads, end der er til rådighed." xmlns="" />
+  <String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Der er ikke mere ledig diskplads" xmlns="" />
+  <String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Du kan også vælge at deaktivere funktionen til annullering af opdateringen i installationsprogrammet. Hvis du deaktiverer annulleringen af opdateringen, forhindrer det, at installationsprogrammet gendanner computerens oprindelige tilstand, hvis installationen afbrydes. Klik på Ja, hvis du vil løbe risikoen ved at deaktivere annulleringen af opdateringen." xmlns="" />
+  <String Id="PrepareDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="PrepareDlgDescription" Overridable="yes" Value="Vent, mens guiden Installation forbereder at vejlede dig gennem installationen." xmlns="" />
+  <String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Velkommen til guiden [ProductName] Installation" xmlns="" />
+  <String Id="ProgressDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Vent, mens guiden Installation installerer [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Installerer [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextChanging" Overridable="yes" Value="Vent, mens guiden Installation ændrer [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Ændrer [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Vent, mens guiden Installation reparerer [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Reparerer [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Vent, mens guiden Installation fjerner [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Fjerner [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Vent, mens guiden Installation opdaterer [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Opdaterer [ProductName]" xmlns="" />
+  <String Id="ProgressDlgProgressBar" Overridable="yes" Value="Udførelsesstatus" xmlns="" />
+  <String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Status:" xmlns="" />
+  <String Id="ResumeDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Installer" xmlns="" />
+  <String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="ResumeDlgDescription" Overridable="yes" Value="Guiden Installation fuldfører installationen af [ProductName] på computeren. Klik på Installer for at fortsætte, eller klik på Annuller for at afslutte guiden Installation." xmlns="" />
+  <String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Fortsætter guiden [ProductName] Installation" xmlns="" />
+  <String Id="SetupTypeDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Standard" xmlns="" />
+  <String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Standardinstallation" xmlns="" />
+  <String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="&amp;Brugerdefineret" xmlns="" />
+  <String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Brugerdefineret installation" xmlns="" />
+  <String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="&amp;Fuld" xmlns="" />
+  <String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Fuld installation" xmlns="" />
+  <String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Vælg installationstype" xmlns="" />
+  <String Id="SetupTypeDlgDescription" Overridable="yes" Value="Vælg den installationstype, som passer bedst til dine behov" xmlns="" />
+  <String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Installerer de mest almindelige programfunktioner. Anbefales til de fleste brugere." xmlns="" />
+  <String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Giver brugerne mulighed for at vælge, hvilke programfunktioner der installeres, og hvor de installeres. Anbefales til avancerede brugere." xmlns="" />
+  <String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Alle programfunktioner installeres. Kræver mest diskplads." xmlns="" />
+  <String Id="UserExit_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Guiden [ProductName] Installation blev afbrudt" xmlns="" />
+  <String Id="UserExitDescription1" Overridable="yes" Value="Installationen af [ProductName] blev afbrudt. Systemet er ikke blevet ændret. Hvis du vil installere programmet på et senere tidspunkt, skal du køre installationsprogrammet igen." xmlns="" />
+  <String Id="UserExitDescription2" Overridable="yes" Value="Klik på knappen Udfør for at afslutte guiden Installation." xmlns="" />
+  <String Id="VerifyReadyDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Installer" xmlns="" />
+  <String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Klik på Installer for at starte installationen. Klik på Tilbage for at gennemgå eller ændre installationsindstillingerne. Klik på Annuller for at afslutte guiden." xmlns="" />
+  <String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Klar til at installere [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Skift" xmlns="" />
+  <String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Klik på Skift for at starte installationen. Klik på Tilbage for at gennemgå eller ændre installationsindstillingerne. Klik på Annuller for at afslutte guiden." xmlns="" />
+  <String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Klar til at ændre [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Re&amp;parer" xmlns="" />
+  <String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Klik på Reparer for at reparere installationen af [ProductName]. Klik på Tilbage for at gennemgå eller ændre installationsindstillingerne. Klik på Annuller for at afslutte guiden." xmlns="" />
+  <String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Klar til at reparere [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Fjern" xmlns="" />
+  <String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Klik på Fjern for at fjerne [ProductName] fra computeren. Klik på Tilbage for at gennemgå eller ændre installationsindstillingerne. Klik på Annuller for at afslutte guiden." xmlns="" />
+  <String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Klar til at fjerne [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Opdater" xmlns="" />
+  <String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Klik på Opdater for at opdatere [ProductName] på computeren. Klik på Tilbage for at gennemgå eller ændre installationsindstillingerne. Klik på Annuller for at afslutte guiden." xmlns="" />
+  <String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Klar til at opdatere [ProductName]" xmlns="" />
+  <String Id="WaitForCostingDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Tilbage" xmlns="" />
+  <String Id="WaitForCostingDlgText" Overridable="yes" Value="Vent, mens installationsprogrammet bestemmer kravene til diskplads." xmlns="" />
+  <String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam" xmlns="" />
+  <String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Ikon for udråbstegn" xmlns="" />
+  <String Id="WelcomeDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="WelcomeDlgDescription" Overridable="yes" Value="Guiden Installation installerer [ProductName] på computeren. Klik på Næste for at fortsætte, eller klik på Annuller for at afslutte guiden Installation." xmlns="" />
+  <String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Guiden Installation opdaterer [ProductName] på computeren. Klik på Næste for at fortsætte, eller klik på Annuller for at afslutte guiden Installation." xmlns="" />
+  <String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Velkommen til guiden [ProductName] Installation" xmlns="" />
+  <String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="[ProductName] Installation" xmlns="" />
+  <String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Jeg &amp;accepterer vilkårene i licensaftalen" xmlns="" />
+  <String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Installer" xmlns="" />
+  <String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Opdater" xmlns="" />
+  <String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Læs licensaftalen til [ProductName]" xmlns="" />
+  <String Id="ProgressTextInstallValidate" Overridable="yes" Value="Kontrollerer installationen" xmlns="" />
+  <String Id="ProgressTextInstallFiles" Overridable="yes" Value="Kopierer nye filer" xmlns="" />
+  <String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Fil: [1],  mappe: [9],  størrelse: [6]" xmlns="" />
+  <String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Kopierer netværksinstallationsfiler" xmlns="" />
+  <String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Fil: [1], mappe: [9], størrelse: [6]" xmlns="" />
+  <String Id="ProgressTextFileCost" Overridable="yes" Value="Beregner pladskrav" xmlns="" />
+  <String Id="ProgressTextCostInitialize" Overridable="yes" Value="Beregner pladskrav" xmlns="" />
+  <String Id="ProgressTextCostFinalize" Overridable="yes" Value="Beregner pladskrav" xmlns="" />
+  <String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Opretter genveje" xmlns="" />
+  <String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Genvej: [1]" xmlns="" />
+  <String Id="ProgressTextPublishComponents" Overridable="yes" Value="Udgiver kvalificerede komponenter" xmlns="" />
+  <String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Komponent-id: [1], operator: [2]" xmlns="" />
+  <String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Udgiver produktfunktioner" xmlns="" />
+  <String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Funktion: [1]" xmlns="" />
+  <String Id="ProgressTextPublishProduct" Overridable="yes" Value="Udgiver produktoplysninger" xmlns="" />
+  <String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Registrerer klasseservere" xmlns="" />
+  <String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Klasse-id: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Registrerer udvidelsesservere" xmlns="" />
+  <String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Udvidelse: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Registrerer MIME-oplysninger" xmlns="" />
+  <String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME-indholdstype: [1], udvidelse: [2]" xmlns="" />
+  <String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Registrerer program-id'er" xmlns="" />
+  <String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="Program-id: [1]" xmlns="" />
+  <String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Allokerer plads i registreringsdatabasen" xmlns="" />
+  <String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Ledig plads: [1]" xmlns="" />
+  <String Id="ProgressTextAppSearch" Overridable="yes" Value="Søger efter installerede programmer" xmlns="" />
+  <String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Egenskab: [1], signatur: [2]" xmlns="" />
+  <String Id="ProgressTextBindImage" Overridable="yes" Value="Binder eksekverbare filer" xmlns="" />
+  <String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Fil: [1]" xmlns="" />
+  <String Id="ProgressTextCCPSearch" Overridable="yes" Value="Søger efter kvalificerende produkter" xmlns="" />
+  <String Id="ProgressTextCreateFolders" Overridable="yes" Value="Opretter mapper" xmlns="" />
+  <String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Mappe: [1]" xmlns="" />
+  <String Id="ProgressTextDeleteServices" Overridable="yes" Value="Sletter tjenester" xmlns="" />
+  <String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Tjeneste: [1]" xmlns="" />
+  <String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Opretter kopier af filer" xmlns="" />
+  <String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Fil: [1],  mappe: [9],  størrelse: [6]" xmlns="" />
+  <String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Søger efter relaterede programmer" xmlns="" />
+  <String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Fandt programmet: [1]" xmlns="" />
+  <String Id="ProgressTextInstallODBC" Overridable="yes" Value="Installerer ODBC-komponenter" xmlns="" />
+  <String Id="ProgressTextInstallServices" Overridable="yes" Value="Installerer nye tjenester" xmlns="" />
+  <String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Tjeneste: [2]" xmlns="" />
+  <String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Vurderer startbetingelser" xmlns="" />
+  <String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Overflytter funktionstilstande fra relaterede programmer" xmlns="" />
+  <String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Program: [1]" xmlns="" />
+  <String Id="ProgressTextMoveFiles" Overridable="yes" Value="Flytter filer" xmlns="" />
+  <String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Fil: [1],  mappe: [9],  størrelse: [6]" xmlns="" />
+  <String Id="ProgressTextPatchFiles" Overridable="yes" Value="Udfører rettelser på filer" xmlns="" />
+  <String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Fil: [1],  mappe: [2],  størrelse: [3]" xmlns="" />
+  <String Id="ProgressTextProcessComponents" Overridable="yes" Value="Opdaterer komponentregistrering" xmlns="" />
+  <String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Registrerer COM+-programmer og -komponenter" xmlns="" />
+  <String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="Program-id: [1]{{, programtype: [2], brugere: [3], RSN: [4]}}" xmlns="" />
+  <String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Registrerer skrifttyper" xmlns="" />
+  <String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Skrifttype: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Registrerer produkt" xmlns="" />
+  <String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Registrerer typebiblioteker" xmlns="" />
+  <String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="Lib-id: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterUser" Overridable="yes" Value="Registrerer bruger" xmlns="" />
+  <String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Fjerner identiske filer" xmlns="" />
+  <String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Fil: [1], mappe: [9]" xmlns="" />
+  <String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Opdaterer miljøstrenge" xmlns="" />
+  <String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Navn: [1], værdi: [2], handling [3]" xmlns="" />
+  <String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Fjerner programmer" xmlns="" />
+  <String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Program: [1], kommandolinje: [2]" xmlns="" />
+  <String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Fjerner filer" xmlns="" />
+  <String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Fil: [1], mappe: [9]" xmlns="" />
+  <String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Fjerner mapper" xmlns="" />
+  <String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Mappe: [1]" xmlns="" />
+  <String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Fjerner poster i INI-filer" xmlns="" />
+  <String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Fil: [1],  sektion: [2],  nøgle: [3], værdi: [4]" xmlns="" />
+  <String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Fjerner ODBC-komponenter" xmlns="" />
+  <String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Fjerner værdier fra registreringsdatabasen" xmlns="" />
+  <String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Nøgle: [1], navn: [2]" xmlns="" />
+  <String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Fjerner genveje" xmlns="" />
+  <String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Genvej: [1]" xmlns="" />
+  <String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Søger efter kvalificerende produkter" xmlns="" />
+  <String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Registrerer moduler" xmlns="" />
+  <String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Fil: [1], mappe: [2]" xmlns="" />
+  <String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Fjerner registrering af moduler" xmlns="" />
+  <String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Fil: [1], mappe: [2]" xmlns="" />
+  <String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Initialiserer ODBC-mapper" xmlns="" />
+  <String Id="ProgressTextStartServices" Overridable="yes" Value="Starter tjenester" xmlns="" />
+  <String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Tjeneste: [1]" xmlns="" />
+  <String Id="ProgressTextStopServices" Overridable="yes" Value="Stopper tjenester" xmlns="" />
+  <String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Tjeneste: [1]" xmlns="" />
+  <String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Fjerner udgivelse af kvalificerede komponenter" xmlns="" />
+  <String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Komponent-id: [1], operator: [2]" xmlns="" />
+  <String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Fjerner udgivelse af produktfunktioner" xmlns="" />
+  <String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Funktion: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Fjerner registrering af klasseservere" xmlns="" />
+  <String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Klasse-id: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Fjerner registreringen af COM+-programmer og -komponenter" xmlns="" />
+  <String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="Program-id: [1]{{, Programtype: [2]}}" xmlns="" />
+  <String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Fjerner registreringen af udvidelsesservere" xmlns="" />
+  <String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Udvidelse: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Fjerner registrering af skrifttyper" xmlns="" />
+  <String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Skrifttype: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Fjerner registrering af MIME-oplysninger" xmlns="" />
+  <String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME-indholdstype: [1], udvidelse: [2]" xmlns="" />
+  <String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Fjerner registreringen af program-id'er" xmlns="" />
+  <String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="Program-id: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Fjerner registreringen af typebiblioteker" xmlns="" />
+  <String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="Lib-id: [1]" xmlns="" />
+  <String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Opdaterer miljøstrenge" xmlns="" />
+  <String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Navn: [1], værdi: [2], handling [3]" xmlns="" />
+  <String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Skriver værdier for INI-filer" xmlns="" />
+  <String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Fil: [1],  sektion: [2],  nøgle: [3], værdi: [4]" xmlns="" />
+  <String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Skriver værdier i registreringsdatabasen" xmlns="" />
+  <String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Nøgle: [1], navn: [2], værdi: [3]" xmlns="" />
+  <String Id="ProgressTextAdvertise" Overridable="yes" Value="Annoncerer program" xmlns="" />
+  <String Id="ProgressTextGenerateScript" Overridable="yes" Value="Opretter scriptfunktioner til handlingen:" xmlns="" />
+  <String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Installerer systemkatalog" xmlns="" />
+  <String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Fil: [1],  afhængigheder: [2]" xmlns="" />
+  <String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Udgiver samlingsoplysninger" xmlns="" />
+  <String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Programkontekst:[1], samlingsnavn:[2]" xmlns="" />
+  <String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Fjerner udgivelse af samlingsoplysninger" xmlns="" />
+  <String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Programkontekst:[1], samlingsnavn:[2]" xmlns="" />
+  <String Id="ProgressTextRollback" Overridable="yes" Value="Gendannelse:" xmlns="" />
+  <String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Fjerner sikkerhedskopifiler" xmlns="" />
+  <String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Fil: [1]" xmlns="" />
+  <String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Fjerner flyttede filer" xmlns="" />
+  <String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Fil: [1], mappe: [9]" xmlns="" />
+  <String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Fjerner udgivelse af produktoplysninger" xmlns="" />
+  <String Id="Error0" Overridable="yes" Value="{{Alvorlig fejl: }}" xmlns="" />
+  <String Id="Error1" Overridable="yes" Value="{{Fejl [1]. }}" xmlns="" />
+  <String Id="Error2" Overridable="yes" Value="Advarsel [1]." xmlns="" />
+  <String Id="Error4" Overridable="yes" Value="Oplysninger [1]." xmlns="" />
+  <String Id="Error5" Overridable="yes" Value="Der opstod en fejl under installation af denne pakke. Dette skyldes muligvis et problem med denne pakke. Fejlkoden er [1]. {{Argumenterne er: [2], [3], [4]}}" xmlns="" />
+  <String Id="Error7" Overridable="yes" Value="{{Disken er fyldt: }}" xmlns="" />
+  <String Id="Error8" Overridable="yes" Value="Handling [Time]: [1]. [2]" xmlns="" />
+  <String Id="Error9" Overridable="yes" Value="[ProductName]" xmlns="" />
+  <String Id="Error10" Overridable="yes" Value="{[2]}{, [3]}{, [4]}" xmlns="" />
+  <String Id="Error11" Overridable="yes" Value="Meddelelsestype: [1], argument: [2]" xmlns="" />
+  <String Id="Error12" Overridable="yes" Value="=== Logføring startet: [Date] [Time] ===" xmlns="" />
+  <String Id="Error13" Overridable="yes" Value="=== Logføring afsluttet: [Date] [Time] ===" xmlns="" />
+  <String Id="Error14" Overridable="yes" Value="Handling startet [Time]: [1]." xmlns="" />
+  <String Id="Error15" Overridable="yes" Value="Handling afsluttet [Time]: [1]. Returværdi [2]." xmlns="" />
+  <String Id="Error16" Overridable="yes" Value="Resterende tid: {[1] minutter }{[2] sekunder}" xmlns="" />
+  <String Id="Error17" Overridable="yes" Value="Der er ikke mere hukommelse. Luk andre programmer, før du prøver igen." xmlns="" />
+  <String Id="Error18" Overridable="yes" Value="Installationsprogrammet svarer ikke længere." xmlns="" />
+  <String Id="Error19" Overridable="yes" Value="Installationsprogrammet stoppede for tid." xmlns="" />
+  <String Id="Error20" Overridable="yes" Value="Vent, mens Windows konfigurerer [ProductName]" xmlns="" />
+  <String Id="Error21" Overridable="yes" Value="Indsamler nødvendige oplysninger..." xmlns="" />
+  <String Id="Error22" Overridable="yes" Value="Fjerner ældre versioner af dette program..." xmlns="" />
+  <String Id="Error23" Overridable="yes" Value="Forbereder fjernelse af ældre versioner af dette program..." xmlns="" />
+  <String Id="Error32" Overridable="yes" Value="Installationen af {[ProductName] } er fuldført." xmlns="" />
+  <String Id="Error33" Overridable="yes" Value="{[ProductName] } blev ikke installeret." xmlns="" />
+  <String Id="Error1101" Overridable="yes" Value="Der opstod en fejl under læsning fra filen: [2]. {{ Systemfejl [3].}} Kontrollér, at filen findes, og at du har adgang til den." xmlns="" />
+  <String Id="Error1301" Overridable="yes" Value="Filen '[2]' kunne ikke oprettes. Der findes allerede en mappe med dette navn. Annuller installationsprogrammet, og forsøg at installere på en anden placering." xmlns="" />
+  <String Id="Error1302" Overridable="yes" Value="Indsæt disken: [2]" xmlns="" />
+  <String Id="Error1303" Overridable="yes" Value="Installationsprogrammet har ikke tilstrækkelige rettigheder til at få adgang til mappen: [2]. Installationen kan ikke fortsætte. Log på som administrator, eller kontakt systemadministratoren." xmlns="" />
+  <String Id="Error1304" Overridable="yes" Value="Der opstod en fejl under skrivning til filen: [2]. Kontrollér, at du har adgang til mappen." xmlns="" />
+  <String Id="Error1305" Overridable="yes" Value="Der opstod en fejl under læsning fra filen [2]. {{ Systemfejl [3].}} Kontrollér, at filen findes, og at du har adgang til den." xmlns="" />
+  <String Id="Error1306" Overridable="yes" Value="Der er et andet program, der har udelt adgang til filen '[2]'. Luk alle andre programmer, og klik derefter på Prøv igen." xmlns="" />
+  <String Id="Error1307" Overridable="yes" Value="Der er ikke tilstrækkeligt med diskplads til at installere filen: [2]. Frigør noget diskplads, og klik på Prøv igen, eller klik på Annuller for at afslutte." xmlns="" />
+  <String Id="Error1308" Overridable="yes" Value="Kildefilen blev ikke fundet: [2]. Kontrollér, at filen findes, og at du har adgang til den." xmlns="" />
+  <String Id="Error1309" Overridable="yes" Value="Der opstod en fejl under læsning fra filen [3]. {{ Systemfejl [2].}} Kontrollér, at filen findes, og at du har adgang til den." xmlns="" />
+  <String Id="Error1310" Overridable="yes" Value="Der opstod en fejl under skrivning til filen: [3]. {{ Systemfejl [2].}} Kontrollér, at du har adgang til denne mappe." xmlns="" />
+  <String Id="Error1311" Overridable="yes" Value="Kildefilen blev ikke fundet{{(kabinet)}}: [2]. Kontrollér, at filen findes, og at du har adgang til den." xmlns="" />
+  <String Id="Error1312" Overridable="yes" Value="Mappen '[2]' kunne ikke oprettes. Der findes allerede en fil med dette navn. Omdøb eller fjern filen, og klik på Prøv igen, eller klik på Annuller for at afslutte." xmlns="" />
+  <String Id="Error1313" Overridable="yes" Value="Diskenheden [2] er ikke tilgængelig i øjeblikket. Vælg en anden diskenhed." xmlns="" />
+  <String Id="Error1314" Overridable="yes" Value="Den angivne sti '[2]' er ikke tilgængelig." xmlns="" />
+  <String Id="Error1315" Overridable="yes" Value="Systemet kunne ikke skrive til den angivne mappe: [2]." xmlns="" />
+  <String Id="Error1316" Overridable="yes" Value="Der opstod en netværksfejl under forsøg på at læse fra filen: [2]" xmlns="" />
+  <String Id="Error1317" Overridable="yes" Value="Der opstod en fejl under forsøg på at oprette mappen: [2]" xmlns="" />
+  <String Id="Error1318" Overridable="yes" Value="Der opstod en netværksfejl under forsøg på at oprette mappen: [2]" xmlns="" />
+  <String Id="Error1319" Overridable="yes" Value="Der opstod en netværksfejl under forsøg på at åbne kildefilkabinettet: [2]" xmlns="" />
+  <String Id="Error1320" Overridable="yes" Value="Den angivne sti er for lang: [2]" xmlns="" />
+  <String Id="Error1321" Overridable="yes" Value="Installationsprogrammet har ikke tilstrækkelige rettigheder til at ændre denne fil: [2]." xmlns="" />
+  <String Id="Error1322" Overridable="yes" Value="En del af mappestien '[2]' er ugyldig. Den er enten tom eller overstiger den længde, der tillades i systemet." xmlns="" />
+  <String Id="Error1323" Overridable="yes" Value="Mappestien '[2]' indeholder ord, der ikke er gyldige i mappestier." xmlns="" />
+  <String Id="Error1324" Overridable="yes" Value="Mappestien '[2]' indeholder et ugyldigt tegn." xmlns="" />
+  <String Id="Error1325" Overridable="yes" Value="'[2]' er ikke et gyldigt kort filnavn." xmlns="" />
+  <String Id="Error1326" Overridable="yes" Value="Der opstod en fejl under forsøg på at hente filsikkerhed: [3] GetLastError: [2]" xmlns="" />
+  <String Id="Error1327" Overridable="yes" Value="Ugyldigt drev: [2]" xmlns="" />
+  <String Id="Error1328" Overridable="yes" Value="Der opstod fejl under forsøg på at anvende programrettelsen på filen [2]. Den er muligvis blevet opdateret på en anden måde, og den kan ikke længere ændres af denne programrettelse. Du kan få flere oplysninger ved at kontakte forhandleren af programrettelsen. {{Systemfejl: [3]}}" xmlns="" />
+  <String Id="Error1329" Overridable="yes" Value="En påkrævet fil kan ikke installeres, da kabinetfilen [2] ikke er digitalt signeret. Dette kan angive, at kabinetfilen er fejlbehæftet." xmlns="" />
+  <String Id="Error1330" Overridable="yes" Value="En påkrævet fil kan ikke installeres, da kabinetfilen [2] har en digital signatur, der er ugyldig. Dette kan angive, at kabinetfilen er fejlbehæftet.{{ Fejlen [3] blev returneret af WinVerifyTrust.}}" xmlns="" />
+  <String Id="Error1331" Overridable="yes" Value="Filen [2] kunne ikke kopieres korrekt: CRC-fejl." xmlns="" />
+  <String Id="Error1332" Overridable="yes" Value="Filen [2] kunne ikke flyttes korrekt: CRC-fejl." xmlns="" />
+  <String Id="Error1333" Overridable="yes" Value="Filen [2] kunne ikke rettes korrekt: CRC-fejl." xmlns="" />
+  <String Id="Error1334" Overridable="yes" Value="Filen '[2]' kan ikke installeres, fordi filen ikke blev fundet i kabinetfilen '[3]'. Dette skyldes muligvis en netværksfejl, en fejl ved læsning fra cd'en eller et problem med denne pakke." xmlns="" />
+  <String Id="Error1335" Overridable="yes" Value="Kabinetfilen '[2]', der er nødvendig til denne installation, er beskadiget og kan ikke bruges. Dette skyldes muligvis en netværksfejl, en fejl ved læsning fra cd'en eller et problem med denne pakke." xmlns="" />
+  <String Id="Error1336" Overridable="yes" Value="Der opstod en fejl under oprettelse af en midlertidig fil, der er nødvendig for at kunne fuldføre denne installation.{{ Mappe: [3]. Systemfejlkode: [2]}}" xmlns="" />
+  <String Id="Error1401" Overridable="yes" Value="Nøglen kunne ikke oprettes: [2]. {{ Systemfejl [3].}} Kontrollér, at du har tilstrækkelig adgang til denne nøgle, eller kontakt supportteknikerne." xmlns="" />
+  <String Id="Error1402" Overridable="yes" Value="Nøglen kunne ikke åbnes: [2]. {{ Systemfejl [3].}} Kontrollér, at du har tilstrækkelig adgang til denne nøgle, eller kontakt supportteknikerne." xmlns="" />
+  <String Id="Error1403" Overridable="yes" Value="Værdien [2] kunne ikke slettes fra nøglen [3]. {{ Systemfejl [4].}} Kontrollér, at du har tilstrækkelig adgang til denne nøgle, eller kontakt supportteknikerne." xmlns="" />
+  <String Id="Error1404" Overridable="yes" Value="Nøglen [2] kunne ikke slettes. {{ Systemfejl [3].}} Kontrollér, at du har tilstrækkelig adgang til denne nøgle, eller kontakt supportteknikerne." xmlns="" />
+  <String Id="Error1405" Overridable="yes" Value="Værdien [2] kunne ikke læses fra nøglen [3]. {{ Systemfejl [4].}} Kontrollér, at du har tilstrækkelig adgang til denne nøgle, eller kontakt supportteknikerne." xmlns="" />
+  <String Id="Error1406" Overridable="yes" Value="Værdien [2] kunne ikke skrives til nøglen [3]. {{ Systemfejl [4].}} Kontrollér, at du har tilstrækkelig adgang til denne nøgle, eller kontakt supportteknikerne." xmlns="" />
+  <String Id="Error1407" Overridable="yes" Value="Systemet kunne ikke hente værdinavne for nøglen [2]. {{ Systemfejl [3].}} Kontrollér, at du har tilstrækkelig adgang til denne nøgle, eller kontakt supportteknikerne." xmlns="" />
+  <String Id="Error1408" Overridable="yes" Value="Systemet kunne ikke hente undernøglenavne for nøglen [2]. {{ Systemfejl [3].}} Kontrollér, at du har tilstrækkelig adgang til denne nøgle, eller kontakt supportteknikerne." xmlns="" />
+  <String Id="Error1409" Overridable="yes" Value="Systemet kunne ikke læse sikkerhedsoplysninger for nøglen [2]. {{ Systemfejl [3].}} Kontrollér, at du har tilstrækkelig adgang til denne nøgle, eller kontakt supportteknikerne." xmlns="" />
+  <String Id="Error1410" Overridable="yes" Value="Systemet kunne ikke forøge den tilgængelige plads i registreringsdatabasen. Der kræves [2] KB ledig plads i registreringsdatabasen til installation af dette program." xmlns="" />
+  <String Id="Error1500" Overridable="yes" Value="En anden installation er i gang. Du skal afslutte den pågældende installation, før du fortsætter med denne." xmlns="" />
+  <String Id="Error1501" Overridable="yes" Value="Der opstod en fejl under forsøg på at få adgang til sikre data. Kontrollér, at Windows Installer er konfigureret korrekt, og prøv at installere igen." xmlns="" />
+  <String Id="Error1502" Overridable="yes" Value="Brugeren '[2]' har tidligere startet en installation af programmet '[3]'. Den bruger skal køre installationen igen, før programmet kan bruges. Den aktuelle installation vil nu fortsætte." xmlns="" />
+  <String Id="Error1503" Overridable="yes" Value="Brugeren '[2]' har tidligere startet en installation af programmet '[3]'. Den bruger skal køre installationen igen, før programmet kan bruges." xmlns="" />
+  <String Id="Error1601" Overridable="yes" Value="Der er ikke mere ledig diskplads på diskenheden: '[2]'. Påkrævet plads: [3] KB. Ledig plads: [4] KB. Frigør noget diskplads, og prøv igen." xmlns="" />
+  <String Id="Error1602" Overridable="yes" Value="Er du sikker på, at du vil annullere?" xmlns="" />
+  <String Id="Error1603" Overridable="yes" Value="Filen [2][3] bruges{ af følgende proces: Navn: [4], id: [5], vinduestitel: '[6]'}. Luk programmet, og forsøg igen." xmlns="" />
+  <String Id="Error1604" Overridable="yes" Value="Programmet '[2]' er allerede installeret. Det forhindrer, at dette program installeres. De to programmer er ikke kompatible." xmlns="" />
+  <String Id="Error1605" Overridable="yes" Value="Der er ikke nok ledig diskplads på diskenheden '[2]' til at fortsætte installationen med genoprettelse aktiveret. Der kræves [3] KB, men der er kun [4] KB ledig. Klik på Ignorer for at fortsætte installationen uden at gemme genoprettelsesoplysninger, klik på Forsøg igen for at undersøge mængden af ledig plads igen, eller klik på Annuller for at afslutte installationen." xmlns="" />
+  <String Id="Error1606" Overridable="yes" Value="Der kunne ikke opnås adgang til netværksplaceringen [2]." xmlns="" />
+  <String Id="Error1607" Overridable="yes" Value="Følgende programmer skal lukkes, før du fortsætter med installationen:" xmlns="" />
+  <String Id="Error1608" Overridable="yes" Value="Systemet kunne ikke finde nogen tidligere installerede kompatible produkter på computeren til installation af dette produkt." xmlns="" />
+  <String Id="Error1609" Overridable="yes" Value="Der opstod en fejl under anvendelsen af sikkerhedsindstillingerne. [2] er ikke en gyldig bruger eller gruppe. Dette kan skyldes et problem med pakken eller et problem med forbindelsen til en domænecontroller på netværket. Kontrollér netværksforbindelsen, og klik på Forsøg igen, eller klik på Annuller for at afslutte installationen. {{Brugerens SID blev ikke fundet. Systemfejl [3]}}" xmlns="" />
+  <String Id="Error1701" Overridable="yes" Value="Nøglen [2] er ugyldig. Kontrollér, at du har angivet den korrekte nøgle." xmlns="" />
+  <String Id="Error1702" Overridable="yes" Value="Installationsprogrammet skal genstarte programmet, før konfigurationen af [2] kan fortsætte. Klik på Ja for at genstarte nu, eller klik på Nej, hvis du vil genstarte manuelt senere." xmlns="" />
+  <String Id="Error1703" Overridable="yes" Value="Du skal genstarte systemet, for at de udførte konfigurationsændringer i [2] kan træde i kraft. Klik på Ja for at genstarte nu, eller klik på Nej, hvis du vil genstarte manuelt senere." xmlns="" />
+  <String Id="Error1704" Overridable="yes" Value="En installation af [2] er i øjeblikket afbrudt. Du skal fortryde de ændringer, der er foretaget under den pågældende installation, for at fortsætte. Vil du fortryde disse ændringer?" xmlns="" />
+  <String Id="Error1705" Overridable="yes" Value="En tidligere installation af dette produkt er i gang. Du skal fortryde de ændringer, der er foretaget under den pågældende installation, for at fortsætte. Vil du fortryde disse ændringer?" xmlns="" />
+  <String Id="Error1706" Overridable="yes" Value="En installationspakke til produktet [2] blev ikke fundet. Prøv at installere igen ved hjælp af en gyldig kopi af installationspakken '[3]'." xmlns="" />
+  <String Id="Error1707" Overridable="yes" Value="Installationen blev fuldført." xmlns="" />
+  <String Id="Error1708" Overridable="yes" Value="Installationen mislykkedes." xmlns="" />
+  <String Id="Error1709" Overridable="yes" Value="Produkt: [2] - [3]" xmlns="" />
+  <String Id="Error1710" Overridable="yes" Value="Du kan enten gendanne computeren til dens tidligere tilstand eller fortsætte installationen senere. Vil du gendanne?" xmlns="" />
+  <String Id="Error1711" Overridable="yes" Value="Der opstod fejl under skrivning af installationsoplysningerne til disken. Kontrollér, om der er nok ledig diskplads, og klik på Prøv igen, eller klik på Annuller for at afslutte installationen." xmlns="" />
+  <String Id="Error1712" Overridable="yes" Value="En eller flere af de filer, der er påkrævede for at gendanne computeren til dens forrige tilstand, blev ikke fundet. Det er ikke muligt at gendanne computeren." xmlns="" />
+  <String Id="Error1713" Overridable="yes" Value="[2] kan ikke installere et af de påkrævede produkter. Kontakt teknisk support. {{Systemfejl: [3].}}" xmlns="" />
+  <String Id="Error1714" Overridable="yes" Value="Den ældre version af [2] kan ikke fjernes. Kontakt teknisk support. {{Systemfejl [3].}}" xmlns="" />
+  <String Id="Error1715" Overridable="yes" Value="Installerede [2]" xmlns="" />
+  <String Id="Error1716" Overridable="yes" Value="Konfigurerede [2]" xmlns="" />
+  <String Id="Error1717" Overridable="yes" Value="Fjernede [2]" xmlns="" />
+  <String Id="Error1718" Overridable="yes" Value="Filen [2] blev afvist af politikken for digital signatur." xmlns="" />
+  <String Id="Error1719" Overridable="yes" Value="Der kunne ikke opnås adgang til tjenesten Windows Installer. Denne fejl kan opstå, hvis du kører Windows i fejlsikret tilstand, eller hvis Windows Installer ikke er korrekt installeret. Kontakt supportteknikerne for at få hjælp." xmlns="" />
+  <String Id="Error1720" Overridable="yes" Value="Denne Windows Installer-pakke er fejlbehæftet. Et script, der er påkrævet, for at installationen kan fuldføres, kunne ikke køres. Kontakt supportafdelingen eller forhandleren af pakken. {{Brugerdefineret handling [2] scriptfejl [3], [4]: [5], linje [6], kolonne [7], [8] }}" xmlns="" />
+  <String Id="Error1721" Overridable="yes" Value="Der er opstået et problem med denne Windows Installer-pakke. Et program, der er nødvendigt for at kunne fuldføre denne installation, kunne ikke køres. Kontakt supportteknikerne eller pakkens producent. {{Handling [2], placering: [3], kommando: [4] }}" xmlns="" />
+  <String Id="Error1722" Overridable="yes" Value="Denne Windows Installer-pakke er fejlbehæftet. Et program, der køres som en del af installationen, blev ikke fuldført som forventet. Kontakt supportafdelingen eller forhandleren af pakken. {{Handling [2], placering: [3], kommando: [4] }}" xmlns="" />
+  <String Id="Error1723" Overridable="yes" Value="Denne Windows Installer-pakke er fejlbehæftet. En DLL-fil, der er påkrævet, for at installationen kan fuldføres, kunne ikke køres. Kontakt supportafdelingen eller forhandleren af pakken. {{Handling [2], post: [3], bibliotek: [4] }}" xmlns="" />
+  <String Id="Error1724" Overridable="yes" Value="Fjernelsen blev fuldført." xmlns="" />
+  <String Id="Error1725" Overridable="yes" Value="Fjernelsen mislykkedes." xmlns="" />
+  <String Id="Error1726" Overridable="yes" Value="Annonceringen blev fuldført." xmlns="" />
+  <String Id="Error1727" Overridable="yes" Value="Annonceringen mislykkedes." xmlns="" />
+  <String Id="Error1728" Overridable="yes" Value="Konfigurationen blev fuldført." xmlns="" />
+  <String Id="Error1729" Overridable="yes" Value="Konfigurationen mislykkedes." xmlns="" />
+  <String Id="Error1730" Overridable="yes" Value="Du skal være administrator for at kunne fjerne dette program. Hvis du vil fjerne programmet, skal du logge på som administrator eller kontakte teknisk support for at få hjælp." xmlns="" />
+  <String Id="Error1731" Overridable="yes" Value="Kildeinstallationspakken for produktet [2] er ikke synkroniseret med klientpakken. Prøv at installere igen ved hjælp af en gyldig kopi af installationspakken '[3]'." xmlns="" />
+  <String Id="Error1732" Overridable="yes" Value="Du skal genstarte computeren for at kunne fuldføre installationen af [2]. Der er i øjeblikket andre brugere logget på denne computer, og hvis computeren genstartes, mister disse brugere muligvis de data, der ikke er gemt. Vil du genstarte computeren nu?" xmlns="" />
+  <String Id="Error1801" Overridable="yes" Value="Stien [2] er ugyldig. Angiv en gyldig sti." xmlns="" />
+  <String Id="Error1802" Overridable="yes" Value="Der er ikke mere hukommelse. Luk andre programmer, før du prøver igen." xmlns="" />
+  <String Id="Error1803" Overridable="yes" Value="Der er ingen disk i drev [2]. Indsæt en disk, og klik på Forsøg igen, eller klik på Annuller for at gå tilbage til den enhed, som blev brugt tidligere." xmlns="" />
+  <String Id="Error1804" Overridable="yes" Value="Der er ingen disk i drev [2]. Indsæt en disk, og klik på Forsøg igen, eller klik på Annuller for at gå tilbage til dialogboksen til søgning og vælge en anden diskenhed." xmlns="" />
+  <String Id="Error1805" Overridable="yes" Value="Mappen [2] findes ikke. Angiv en sti til en mappe, der findes." xmlns="" />
+  <String Id="Error1806" Overridable="yes" Value="Du har ikke tilstrækkelige rettigheder til at læse denne mappe." xmlns="" />
+  <String Id="Error1807" Overridable="yes" Value="Der blev ikke fundet en gyldig destinationsmappe til installationen." xmlns="" />
+  <String Id="Error1901" Overridable="yes" Value="Der opstod en fejl under forsøg på at læse fra kildeinstallationsdatabasen: [2]." xmlns="" />
+  <String Id="Error1902" Overridable="yes" Value="Planlægger genstart: Omdøber filen [2] til [3]. Computeren skal genstartes, for at handlingen kan fuldføres." xmlns="" />
+  <String Id="Error1903" Overridable="yes" Value="Planlægger genstart: Sletter filen [2]. Computeren skal genstartes, for at handlingen kan fuldføres." xmlns="" />
+  <String Id="Error1904" Overridable="yes" Value="Modulet [2] blev ikke registreret. HRESULT [3]. Kontakt supportafdelingen." xmlns="" />
+  <String Id="Error1905" Overridable="yes" Value="Annullering af registreringen af modulet [2] blev ikke fuldført. HRESULT [3]. Kontakt supportafdelingen." xmlns="" />
+  <String Id="Error1906" Overridable="yes" Value="Systemet kunne ikke cachelagre pakken [2]. Fejl: [3]. Kontakt supportafdelingen." xmlns="" />
+  <String Id="Error1907" Overridable="yes" Value="Skrifttypen [2] blev ikke registreret. Kontrollér, at du har de nødvendige rettigheder til at installere skrifttyper, og at skrifttypen understøttes af systemet." xmlns="" />
+  <String Id="Error1908" Overridable="yes" Value="Registreringen af skrifttypen [2] kunne ikke fjernes. Kontrollér, at du har de nødvendige rettigheder til at fjerne skrifttyper." xmlns="" />
+  <String Id="Error1909" Overridable="yes" Value="Det var ikke muligt at oprette genvejen [2]. Kontrollér, at destinationsmappen findes, og at du har adgang til den." xmlns="" />
+  <String Id="Error1910" Overridable="yes" Value="Det var ikke muligt at fjerne genvejen [2]. Kontrollér, at genvejsfilen findes, og at du har adgang til den." xmlns="" />
+  <String Id="Error1911" Overridable="yes" Value="Typebiblioteket for filen [2] blev ikke registreret. Kontakt supportafdelingen." xmlns="" />
+  <String Id="Error1912" Overridable="yes" Value="Annullering af registreringen af typebiblioteket for filen [2] blev ikke fuldført. Kontakt supportafdelingen." xmlns="" />
+  <String Id="Error1913" Overridable="yes" Value="INI-filen [2][3] blev ikke opdateret. Kontrollér, at filen findes, og at du har adgang til den." xmlns="" />
+  <String Id="Error1914" Overridable="yes" Value="Det var ikke muligt at planlægge, at filen [2] skulle erstatte filen [3] ved genstart. Kontrollér, at du har skriverettigheder til filen [3]." xmlns="" />
+  <String Id="Error1915" Overridable="yes" Value="Der opstod en fejl under fjernelsen af ODBC-driverstyring, ODBC-fejl [2]: [3]. Kontakt supportafdelingen." xmlns="" />
+  <String Id="Error1916" Overridable="yes" Value="Der opstod en fejl under installationen af ODBC-driverstyring, ODBC-fejl [2]: [3]. Kontakt supportafdelingen." xmlns="" />
+  <String Id="Error1917" Overridable="yes" Value="Der opstod en fejl under fjernelse af ODBC-driveren: [4], ODBC-fejl [2]: [3]. Kontrollér, at du har de nødvendige rettigheder til at fjerne ODBC-drivere." xmlns="" />
+  <String Id="Error1918" Overridable="yes" Value="Der opstod en fejl under installation af ODBC-driveren: [4], ODBC-fejl [2]: [3]. Kontrollér, at filen [4] findes, og at du kan få adgang til den." xmlns="" />
+  <String Id="Error1919" Overridable="yes" Value="Der opstod en fejl under konfiguration af ODBC-datakilden: [4], ODBC-fejl [2]: [3]. Kontrollér, at filen [4] findes, og at du kan få adgang til den." xmlns="" />
+  <String Id="Error1920" Overridable="yes" Value="Tjenesten '[2]' ([3]) kunne ikke starte. Kontrollér, at du har tilstrækkelige rettigheder til at starte systemtjenester." xmlns="" />
+  <String Id="Error1921" Overridable="yes" Value="Tjenesten '[2]' ([3]) kunne ikke stoppes. Kontrollér, at du har tilstrækkelige rettigheder til at standse systemtjenester." xmlns="" />
+  <String Id="Error1922" Overridable="yes" Value="Tjenesten '[2]' ([3]) kunne ikke slettes. Kontrollér, at du har tilstrækkelige rettigheder til at fjerne systemtjenester." xmlns="" />
+  <String Id="Error1923" Overridable="yes" Value="Tjenesten '[2]' ([3]) kunne ikke installeres. Kontrollér, at du har tilstrækkelige rettigheder til at installere systemtjenester." xmlns="" />
+  <String Id="Error1924" Overridable="yes" Value="Miljøvariablen '[2]' blev ikke opdateret. Kontrollér, at du har tilstrækkelige rettigheder til at ændre miljøvariabler." xmlns="" />
+  <String Id="Error1925" Overridable="yes" Value="Du har ikke tilstrækkelige rettigheder til at fuldføre installationen for alle brugerne af computeren. Log på som administrator, og prøv derefter at installere igen." xmlns="" />
+  <String Id="Error1926" Overridable="yes" Value="Filsikkerheden for filen '[3]' kunne ikke angives. Fejl: [2]. Kontrollér, at du har tilstrækkelige rettigheder til at ændre sikkerhedsindstillingerne for filen." xmlns="" />
+  <String Id="Error1927" Overridable="yes" Value="Component Services (COM+ 1.0) er ikke installeret på computeren. Component Services er påkrævet, for at installationen kan fuldføres. Component Services findes på Windows 2000." xmlns="" />
+  <String Id="Error1928" Overridable="yes" Value="Der opstod fejl under registrering af COM+-programmet. Kontakt supportafdelingen for at få flere oplysninger." xmlns="" />
+  <String Id="Error1929" Overridable="yes" Value="Der opstod fejl under annullering af registreringen af COM+-programmet. Kontakt supportafdelingen for at få flere oplysninger." xmlns="" />
+  <String Id="Error1930" Overridable="yes" Value="Beskrivelsen til tjenesten '[2]' ([3]) kunne ikke ændres." xmlns="" />
+  <String Id="Error1931" Overridable="yes" Value="Tjenesten Windows Installer kan ikke opdatere systemfilen [2], da den er beskyttet af Windows. Du skal muligvis opgradere operativsystemet, for at programmet fungerer korrekt. {{Pakkeversion: [3], version beskyttet af operativsystemet: [4]}}" xmlns="" />
+  <String Id="Error1932" Overridable="yes" Value="Tjenesten Windows Installer kan ikke opdatere den beskyttede Windows-fil [2]. {{Pakkeversion: [3], version beskyttet af operativsystemet: [4], SFP-fejl: [5]}}" xmlns="" />
+  <String Id="Error1933" Overridable="yes" Value="Tjenesten Windows Installer kan ikke opdatere en eller flere beskyttede Windows-filer. {{SFP-fejl: [2]. Liste over beskyttede filer:\r\n[3]}}" xmlns="" />
+  <String Id="Error1934" Overridable="yes" Value="Brugerinstallationer er deaktiveret ved hjælp af en politik på computeren." xmlns="" />
+  <String Id="Error1935" Overridable="yes" Value="Der opstod en fejl under installationen af samlingen '[6]'. Se i Hjælp og support for at få flere oplysninger. HRESULT: [3]. {{samlingsgrænseflade: [4], funktion: [5], komponent: [2]}}" xmlns="" />
+  <String Id="Error1936" Overridable="yes" Value="Der opstod en fejl under installationen af samlingen '[6]'. Samlingen er ikke navngivet med et sikkert navn eller er ikke signeret med den minimale nøglelængde. HRESULT: [3]. {{samlingsgrænseflade: [4], funktion: [5], komponent: [2]}}" xmlns="" />
+  <String Id="Error1937" Overridable="yes" Value="Der opstod en fejl under installationen af samlingen '[6]'. Signaturen eller kataloget kunne ikke bekræftes eller er ikke gyldigt. HRESULT: [3]. {{samlingsgrænseflade: [4], funktion: [5], komponent: [2]}}" xmlns="" />
+  <String Id="Error1938" Overridable="yes" Value="Der opstod en fejl under installationen af samlingen '[6]'. Et eller flere moduler i samlingen blev ikke fundet. HRESULT: [3]. {{samlingsgrænseflade: [4], funktion: [5], komponent: [2]}}" xmlns="" />
+  <String Id="UITextbytes" Overridable="yes" Value="byte" xmlns="" />
+  <String Id="UITextGB" Overridable="yes" Value="GB" xmlns="" />
+  <String Id="UITextKB" Overridable="yes" Value="KB" xmlns="" />
+  <String Id="UITextMB" Overridable="yes" Value="MB" xmlns="" />
+  <String Id="UITextMenuAbsent" Overridable="yes" Value="Hele funktionen vil være utilgængelig" xmlns="" />
+  <String Id="UITextMenuAdvertise" Overridable="yes" Value="Funktionen bliver installeret, når den kræves" xmlns="" />
+  <String Id="UITextMenuAllCD" Overridable="yes" Value="Hele funktionen installeres til at køre fra cd" xmlns="" />
+  <String Id="UITextMenuAllLocal" Overridable="yes" Value="Hele funktionen installeres på den lokale harddisk" xmlns="" />
+  <String Id="UITextMenuAllNetwork" Overridable="yes" Value="Hele funktionen installeres til at køre fra netværket" xmlns="" />
+  <String Id="UITextMenuCD" Overridable="yes" Value="Installeres til at køre fra cd" xmlns="" />
+  <String Id="UITextMenuLocal" Overridable="yes" Value="Installeres på den lokale harddisk" xmlns="" />
+  <String Id="UITextMenuNetwork" Overridable="yes" Value="Installeres til at køre fra netværket" xmlns="" />
+  <String Id="UITextNewFolder" Overridable="yes" Value="Mappe|Ny mappe" xmlns="" />
+  <String Id="UITextScriptInProgress" Overridable="yes" Value="Indsamler nødvendige oplysninger..." xmlns="" />
+  <String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Denne funktion installeres ikke" xmlns="" />
+  <String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Denne funktion indstilles til at blive installeret, når den kræves" xmlns="" />
+  <String Id="UITextSelAbsentCD" Overridable="yes" Value="Denne funktion installeres til at køre fra cd" xmlns="" />
+  <String Id="UITextSelAbsentLocal" Overridable="yes" Value="Denne funktion installeres på den lokale harddisk" xmlns="" />
+  <String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Denne funktion installeres til at køre fra netværket" xmlns="" />
+  <String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Denne funktion bliver ikke tilgængelig" xmlns="" />
+  <String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Installeres, når den kræves" xmlns="" />
+  <String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Denne funktion kan køres fra cd" xmlns="" />
+  <String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Denne funktion installeres på den lokale harddisk" xmlns="" />
+  <String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Denne funktion kan køres fra netværket" xmlns="" />
+  <String Id="UITextSelCDAbsent" Overridable="yes" Value="Denne funktion fjernes helt, og du kan ikke køre den fra cd" xmlns="" />
+  <String Id="UITextSelCDAdvertise" Overridable="yes" Value="Denne funktion ændres fra at køre fra cd til at blive installeret, når det er påkrævet" xmlns="" />
+  <String Id="UITextSelCDCD" Overridable="yes" Value="Denne funktion køres fortsat fra cd" xmlns="" />
+  <String Id="UITextSelCDLocal" Overridable="yes" Value="Denne funktion ændres fra at køre fra cd til at køre fra den lokale harddisk" xmlns="" />
+  <String Id="UITextSelChildCostNeg" Overridable="yes" Value="Denne funktion frigiver [1] på harddisken." xmlns="" />
+  <String Id="UITextSelChildCostPos" Overridable="yes" Value="Denne funktion kræver [1] på harddisken." xmlns="" />
+  <String Id="UITextSelCostPending" Overridable="yes" Value="Kompilerer omkostninger for denne funktion..." xmlns="" />
+  <String Id="UITextSelLocalAbsent" Overridable="yes" Value="Denne funktion fjernes fuldstændigt" xmlns="" />
+  <String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Denne funktion fjernes fra den lokale harddisk, men den indstilles til at blive installeret, når den kræves" xmlns="" />
+  <String Id="UITextSelLocalCD" Overridable="yes" Value="Denne funktion fjernes fra den lokale harddisk, men den kan stadig køres fra cd" xmlns="" />
+  <String Id="UITextSelLocalLocal" Overridable="yes" Value="Denne funktion bliver på den lokale harddisk" xmlns="" />
+  <String Id="UITextSelLocalNetwork" Overridable="yes" Value="Denne funktion fjernes fra den lokale harddisk, men den kan stadig køres fra netværket" xmlns="" />
+  <String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Denne funktion fjernes fuldstændig. Den vil ikke kunne køres fra netværket" xmlns="" />
+  <String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Denne funktion skifter fra at køre fra netværkstilstand til at blive installeret, når den kræves" xmlns="" />
+  <String Id="UITextSelNetworkLocal" Overridable="yes" Value="Denne funktion ændres fra at køre fra netværkstilstand til at blive installeret på den lokale harddisk" xmlns="" />
+  <String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Denne funktion køres fortsat fra netværket" xmlns="" />
+  <String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Denne funktion frigiver [1] på harddisken. [2] af [3] underfunktioner er valgt. Underfunktionerne frigiver [4] på harddisken." xmlns="" />
+  <String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Denne funktion frigiver [1] på harddisken. [2] af [3] underfunktioner er valgt. Underfunktionerne kræver [4] på harddisken." xmlns="" />
+  <String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Denne funktion kræver [1] på harddisken. [2] af [3] underfunktioner er valgt. Underfunktionerne frigiver [4] på harddisken." xmlns="" />
+  <String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Denne funktion kræver [1] på harddisken. [2] af [3] underfunktioner er valgt. Underfunktionerne kræver [4] på harddisken." xmlns="" />
+  <String Id="UITextTimeRemaining" Overridable="yes" Value="Resterende tid: {[1] minutter }{[2] sekunder}" xmlns="" />
+  <String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Ledig" xmlns="" />
+  <String Id="UITextVolumeCostDifference" Overridable="yes" Value="Forskel" xmlns="" />
+  <String Id="UITextVolumeCostRequired" Overridable="yes" Value="Krævet" xmlns="" />
+  <String Id="UITextVolumeCostSize" Overridable="yes" Value="Diskstørrelse" xmlns="" />
+  <String Id="UITextVolumeCostVolume" Overridable="yes" Value="Drev" xmlns="" />
+</WixLocalization>

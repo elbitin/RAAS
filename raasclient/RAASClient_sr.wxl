@@ -1,1 +1,577 @@
-﻿<WixLocalization Culture="sr-Latn-RS" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Деинсталирање конфигурације Виндовс заштитног зида" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Враћање назад конфигурације Виндовс заштитног зида" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Инсталирање конфигурације Виндовс заштитног зида" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Враћање назад конфигурације Виндовс заштитног зида" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Конфигурисање Виндовс заштитног зида" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Конфигурисање Виндовс заштитног зида" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Није могуће повезати се са Виндовс заштитним зидом. ([2] [3] [4] [5])" /><String Id="VisualizationsDescription" Overridable="yes" Value="Визуелизације за удаљене апликације доступне су као опција у конфигурацији" /><String Id="NamespaceDescription" Overridable="yes" Value="Погледајте РААС сервере у Екплореру" /><String Id="ShortcutsDescription" Overridable="yes" Value="Креирајте пречице за удаљене апликације до серверских апликација на локалном рачунару" /><String Id="VisualizationsTitle" Overridable="yes" Value="Визуализације" /><String Id="NamespaceTitle" Overridable="yes" Value="Схелл именско проширење" /><String Id="ShortcutsTitle" Overridable="yes" Value="Ремоте Схортцутс" /><String Id="ProductLanguage" Overridable="yes" Value="2074" /></WixLocalization>
+<WixLocalization Codepage="1250" Culture="sr-Latn-RS" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Деинсталирање конфигурације Виндовс заштитног зида" />
+  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Враћање назад конфигурације Виндовс заштитног зида" />
+  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Инсталирање конфигурације Виндовс заштитног зида" />
+  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Враћање назад конфигурације Виндовс заштитног зида" />
+  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Конфигурисање Виндовс заштитног зида" />
+  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Конфигурисање Виндовс заштитног зида" />
+  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Није могуће повезати се са Виндовс заштитним зидом. ([2] [3] [4] [5])" />
+  <String Id="VisualizationsDescription" Overridable="yes" Value="Визуелизације за удаљене апликације доступне су као опција у конфигурацији" />
+  <String Id="NamespaceDescription" Overridable="yes" Value="Погледајте РААС сервере у Екплореру" />
+  <String Id="ShortcutsDescription" Overridable="yes" Value="Креирајте пречице за удаљене апликације до серверских апликација на локалном рачунару" />
+  <String Id="VisualizationsTitle" Overridable="yes" Value="Визуализације" />
+  <String Id="NamespaceTitle" Overridable="yes" Value="Схелл именско проширење" />
+  <String Id="ShortcutsTitle" Overridable="yes" Value="Ремоте Схортцутс" />
+  <String Id="ProductLanguage" Overridable="yes" Value="2074" />
+  <String Id="WixUIBack" Overridable="yes" Value="&amp;Nazad" xmlns="" />
+  <String Id="WixUINext" Overridable="yes" Value="&amp;Dalje" xmlns="" />
+  <String Id="WixUICancel" Overridable="yes" Value="Otkaži" xmlns="" />
+  <String Id="WixUIFinish" Overridable="yes" Value="&amp;Završi" xmlns="" />
+  <String Id="WixUIRetry" Overridable="yes" Value="&amp;Pokušaj opet" xmlns="" />
+  <String Id="WixUIIgnore" Overridable="yes" Value="Zanemar&amp;i" xmlns="" />
+  <String Id="WixUIYes" Overridable="yes" Value="&amp;Da" xmlns="" />
+  <String Id="WixUINo" Overridable="yes" Value="&amp;Ne" xmlns="" />
+  <String Id="WixUIOK" Overridable="yes" Value="U redu" xmlns="" />
+  <String Id="WixUIPrint" Overridable="yes" Value="Odštam&amp;paj" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pročitajte ugovor o licenciranju za [ProductName]" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Prihv&amp;atam uslove navedene u ugovoru o licenciranju" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Kliknite na dugme „Instaliraj“ da biste instalirali proizvod sa podrazumevanim opcijama za sve korisnike. Kliknite na dugme „Više opcija“ da biste promenili opcije instalacije." xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Kliknite na dugme „Instaliraj“ da biste instalirali proizvod sa podrazumevanim opcijama samo za sebe. Kliknite na dugme „Više opcija“ da biste promenili opcije instalacije." xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Instaliraj" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="V&amp;iše opcija" xmlns="" />
+  <String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8" xmlns="" />
+  <String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12" xmlns="" />
+  <String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9" xmlns="" />
+  <String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8" xmlns="" />
+  <String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma" xmlns="" />
+  <String Id="BrowseDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Pogledaj u:" xmlns="" />
+  <String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up" xmlns="" />
+  <String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Nagore za jedan nivo" xmlns="" />
+  <String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New" xmlns="" />
+  <String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Kreirajte novu fasciklu" xmlns="" />
+  <String Id="BrowseDlgPathLabel" Overridable="yes" Value="Ime &amp;fascikle:" xmlns="" />
+  <String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="BrowseDlgDescription" Overridable="yes" Value="Potražite odredišnu fasciklu" xmlns="" />
+  <String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Promena odredišne fascikle" xmlns="" />
+  <String Id="CancelDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="CancelDlgText" Overridable="yes" Value="Želite li zaista da otkažete instalaciju proizvoda [ProductName]?" xmlns="" />
+  <String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="CancelDlgIconTooltip" Overridable="yes" Value="Ikona informacija" xmlns="" />
+  <String Id="CustomizeDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="CustomizeDlgTree" Overridable="yes" Value="Stablo izbora" xmlns="" />
+  <String Id="CustomizeDlgBrowse" Overridable="yes" Value="P&amp;otraži…" xmlns="" />
+  <String Id="CustomizeDlgReset" Overridable="yes" Value="U&amp;spostavi početne vrednosti" xmlns="" />
+  <String Id="CustomizeDlgDiskCost" Overridable="yes" Value="&amp;Upotreba diska" xmlns="" />
+  <String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="CustomizeDlgText" Overridable="yes" Value="Kliknite na ikone u okviru stabla ispod da biste promenili način na koji će funkcije biti instalirane." xmlns="" />
+  <String Id="CustomizeDlgDescription" Overridable="yes" Value="Izaberite način na koji želite da instalirate funkcije." xmlns="" />
+  <String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Prilagođena instalacija" xmlns="" />
+  <String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription" xmlns="" />
+  <String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize" xmlns="" />
+  <String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation" xmlns="" />
+  <String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Lokacija:" xmlns="" />
+  <String Id="DiskCostDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="DiskCostDlgText" Overridable="yes" Value="Na markiranim volumenima nema dovoljno dostupnog prostora za izabrane funkcije. Možete ukloniti neke datoteke iz markiranih volumena, instalirati manje funkcija ili izabrati druge odredišne disk jedinice." xmlns="" />
+  <String Id="DiskCostDlgDescription" Overridable="yes" Value="Prostor na disku koji je potreban za instalaciju izabranih funkcija." xmlns="" />
+  <String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Zahtevi za prostor na disku" xmlns="" />
+  <String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="ErrorDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="ErrorDlgErrorText" Overridable="yes" Value="Tekst informacija" xmlns="" />
+  <String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Ikona informacija" xmlns="" />
+  <String Id="ExitDialog_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="ExitDialogDescription" Overridable="yes" Value="Kliknite na dugme „Završi“ da biste izašli iz čarobnjaka za instalaciju." xmlns="" />
+  <String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Dovršen je čarobnjak za instalaciju proizvoda [ProductName]" xmlns="" />
+  <String Id="FatalError_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Čarobnjak za instalaciju proizvoda [ProductName] je pre vremena završio sa radom" xmlns="" />
+  <String Id="FatalErrorDescription1" Overridable="yes" Value="Čarobnjak za instalaciju proizvoda [ProductName] je pre vremena završio sa radom zbog greške. Sistem nije izmenjen. Da biste kasnije instalirali ovaj program, ponovo pokrenite čarobnjak za instalaciju." xmlns="" />
+  <String Id="FatalErrorDescription2" Overridable="yes" Value="Kliknite na dugme „Završi“ da biste izašli iz čarobnjaka za instalaciju." xmlns="" />
+  <String Id="FeaturesDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="FeaturesDlgTree" Overridable="yes" Value="Funkcije proizvoda" xmlns="" />
+  <String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="FeaturesDlgDescription" Overridable="yes" Value="Izaberite način na koji želite da instalirate funkcije." xmlns="" />
+  <String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Funkcije proizvoda" xmlns="" />
+  <String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription" xmlns="" />
+  <String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize" xmlns="" />
+  <String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Instaliraj" xmlns="" />
+  <String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Promeni" xmlns="" />
+  <String Id="FilesInUse_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="FilesInUseExit" Overridable="yes" Value="I&amp;zađi" xmlns="" />
+  <String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="FilesInUseText" Overridable="yes" Value="Sledeće aplikacije koriste datoteke koje ova instalacija treba da ažurira. Zatvorite ove aplikacije, a zatim kliknite na dugme „&amp;Pokušaj opet“ da biste nastavili sa instalacijom ili na dugme „Izađi“ da biste izašli iz nje." xmlns="" />
+  <String Id="FilesInUseDescription" Overridable="yes" Value="Neke datoteke koje treba ažurirati trenutno se koriste." xmlns="" />
+  <String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Datoteke u upotrebi" xmlns="" />
+  <String Id="InstallDirDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Promeni..." xmlns="" />
+  <String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Odredišna fascikla" xmlns="" />
+  <String Id="InstallDirDlgDescription" Overridable="yes" Value="Kliknite na dugme „Dalje“ da biste instalaciju izvršili u podrazumevanoj fascikli ili na dugme „Promeni“ da biste odabrali drugu fasciklu." xmlns="" />
+  <String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Instaliraj [ProductName] u:" xmlns="" />
+  <String Id="InstallScopeDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="InstallScopeDlgDescription" Overridable="yes" Value="Odaberite opseg instalacije i instalacionu fasciklu" xmlns="" />
+  <String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Opseg instalacije" xmlns="" />
+  <String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Instalirajte &amp;samo za sebe ([LogonUser])" xmlns="" />
+  <String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="[ProductName] će biti instaliran u fascikli po korisniku i biće dostupan samo za vaš korisnički nalog. Nisu vam potrebne lokalne administratorske privilegije." xmlns="" />
+  <String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="[ProductName] ne podržava instalaciju po korisniku." xmlns="" />
+  <String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Instalirajte za sve korisnike ovog &amp;računara" xmlns="" />
+  <String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="[ProductName] će podrazumevano biti instaliran u fascikli po računaru i biće dostupan svim korisnicima. Možete promeniti podrazumevanu instalacionu fasciklu. Morate imati lokalne administratorske privilegije." xmlns="" />
+  <String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Instalaciona &amp;fascikla:" xmlns="" />
+  <String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Promeni..." xmlns="" />
+  <String Id="InvalidDirDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="InvalidDirDlgText" Overridable="yes" Value="Instalacioni direktorijum mora da se nalazi na lokalnom čvrstom disku." xmlns="" />
+  <String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Ikona informacija" xmlns="" />
+  <String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Prihv&amp;atam uslove navedene u ugovoru o licenciranju" xmlns="" />
+  <String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Pažljivo pročitajte sledeći ugovor o licenciranju" xmlns="" />
+  <String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Ugovor o licenciranju sa krajnjim korisnikom" xmlns="" />
+  <String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Promeni" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Promenite instalaciju" xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="Po&amp;pravi" xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Popravite instalaciju" xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Ukloni" xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Uklonite instalaciju" xmlns="" />
+  <String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Izaberite operaciju koju želite da izvršite." xmlns="" />
+  <String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Promena, popravka ili uklanjanje instalacije" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Omogućava vam da promenite način instalacije funkcija." xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="[ProductName] ne sadrži funkcije koje je moguće nezavisno izabrati." xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Uklanja [ProductName] sa računara." xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="[ProductName] nije moguće ukloniti." xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Popravlja greške u najnovijoj instalaciji tako što popravlja datoteke, prečice i stavke registratora koje nedostaju i koje su oštećene." xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="[ProductName] nije moguće popraviti." xmlns="" />
+  <String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Čarobnjak za instalaciju vam omogućava da promenite način na koji će funkcije proizvoda [ProductName] biti instalirane na računar ili da ih uklonite sa računara. Kliknite na dugme „Dalje“ da biste nastavili ili na dugme „Otkaži“ da biste izašli iz čarobnjaka za instalaciju." xmlns="" />
+  <String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Dobro došli u čarobnjak za instalaciju proizvoda [ProductName]" xmlns="" />
+  <String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="MsiRMFilesInUseText" Overridable="yes" Value="Sledeće aplikacije koriste datoteke koje ova instalacija treba da ažurira. Možete dozvoliti čarobnjaku za instalaciju da ih zatvori i pokuša ponovo da ih pokrene ili kasnije ponovo pokrenuti računar." xmlns="" />
+  <String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Neke datoteke koje treba ažurirati trenutno se koriste." xmlns="" />
+  <String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Datoteke u upotrebi" xmlns="" />
+  <String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Zatvori aplikacije i pokušaj ponovo da ih pokreneš." xmlns="" />
+  <String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Ne zatvaraj aplikacije. Biće potrebno ponovno pokretanje sistema." xmlns="" />
+  <String Id="OutOfDiskDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="OutOfDiskDlgText" Overridable="yes" Value="Na markiranim volumenima nema dovoljno dostupnog prostora za trenutno izabrane funkcije. Možete ukloniti neke datoteke iz markiranih volumena, instalirati manje funkcija ili izabrati drugu odredišnu disk jedinicu." xmlns="" />
+  <String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Prostor na disku potreban za instalaciju premašuje dostupni prostor na disku." xmlns="" />
+  <String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Nema prostora na disku" xmlns="" />
+  <String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Na markiranim volumenima nema dovoljno dostupnog prostora za trenutno izabrane funkcije. Možete ukloniti neke datoteke iz markiranih volumena, instalirati manje funkcija ili izabrati drugu odredišnu disk jedinicu." xmlns="" />
+  <String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Prostor na disku potreban za instalaciju premašuje dostupni prostor na disku." xmlns="" />
+  <String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Nema prostora na disku" xmlns="" />
+  <String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Druga mogućnost je da odaberete da onemogućite funkcionalnost vraćanja instalacionog programa. Ako onemogućite vraćanje, sprečićete da instalacioni program vrati prvobitno stanje računara ukoliko instalacija bude prekinuta na bilo koji način. Kliknite na dugme „Da“ ako želite da preuzmete rizik onemogućavanja vraćanja." xmlns="" />
+  <String Id="PrepareDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="PrepareDlgDescription" Overridable="yes" Value="Sačekajte dok se čarobnjak za instalaciju pripremi da vas vodi kroz instalaciju." xmlns="" />
+  <String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Dobro došli u čarobnjak za instalaciju proizvoda [ProductName]" xmlns="" />
+  <String Id="ProgressDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Sačekajte dok čarobnjak za instalaciju instalira [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Instalacija proizvoda [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextChanging" Overridable="yes" Value="Sačekajte dok čarobnjak za instalaciju promeni [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Promena proizvoda [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Sačekajte dok čarobnjak za instalaciju popravi [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Popravka proizvoda [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Sačekajte dok čarobnjak za instalaciju ukloni [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Uklanjanje proizvoda [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Sačekajte dok čarobnjak za instalaciju ažurira [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Ažuriranje proizvoda [ProductName]" xmlns="" />
+  <String Id="ProgressDlgProgressBar" Overridable="yes" Value="Tok je završen" xmlns="" />
+  <String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Status:" xmlns="" />
+  <String Id="ResumeDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Instaliraj" xmlns="" />
+  <String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="ResumeDlgDescription" Overridable="yes" Value="Čarobnjak za instalaciju će dovršiti instalaciju proizvoda [ProductName] na računaru. Kliknite na dugme „Instaliraj“ da biste nastavili ili na dugme „Otkaži“ da biste izašli iz čarobnjaka za instalaciju." xmlns="" />
+  <String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Nastavak rada čarobnjaka za instalaciju proizvoda [ProductName]" xmlns="" />
+  <String Id="SetupTypeDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Tipična" xmlns="" />
+  <String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Tipična instalacija" xmlns="" />
+  <String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="P&amp;rilagođena" xmlns="" />
+  <String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Prilagođena instalacija" xmlns="" />
+  <String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="P&amp;otpuna" xmlns="" />
+  <String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Potpuna instalacija" xmlns="" />
+  <String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Izbor tipa instalacije" xmlns="" />
+  <String Id="SetupTypeDlgDescription" Overridable="yes" Value="Odaberite tip instalacije koji najviše odgovara vašim potrebama" xmlns="" />
+  <String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Instalirajte funkcije programa koje se najčešće koriste. Preporučuje se za većinu korisnika." xmlns="" />
+  <String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Omogućava korisnicima da odaberu koje će funkcije programa biti instalirane i gde će biti instalirane. Preporučuje se za napredne korisnike." xmlns="" />
+  <String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Biće instalirane sve funkcije programa. Zahteva najviše prostora na disku." xmlns="" />
+  <String Id="UserExit_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Čarobnjak za instalaciju proizvoda [ProductName] je prekinut" xmlns="" />
+  <String Id="UserExitDescription1" Overridable="yes" Value="Instalacija proizvoda [ProductName] je prekinuta. Sistem nije izmenjen. Da biste ovaj program instalirali kasnije, ponovo pokrenite instalaciju." xmlns="" />
+  <String Id="UserExitDescription2" Overridable="yes" Value="Kliknite na dugme „Završi“ da biste izašli iz čarobnjaka za instalaciju." xmlns="" />
+  <String Id="VerifyReadyDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Instaliraj" xmlns="" />
+  <String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Kliknite na dugme „Instaliraj“ da biste započeli instalaciju. Kliknite na dugme „Nazad“ da biste pregledali ili promenili bilo koju postavku instalacije. Kliknite na dugme „Otkaži“ da biste izašli iz čarobnjaka." xmlns="" />
+  <String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Spremno za instalaciju proizvoda [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Promeni" xmlns="" />
+  <String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Kliknite na dugme „Promeni“ da biste započeli instalaciju. Kliknite na dugme „Nazad“ da biste pregledali ili promenili bilo koju postavku instalacije. Kliknite na dugme „Otkaži“ da biste izašli iz čarobnjaka." xmlns="" />
+  <String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Spremno za promenu proizvoda [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgRepair" Overridable="yes" Value="Po&amp;pravi" xmlns="" />
+  <String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Kliknite na dugme „Popravi“ da biste popravili instalaciju proizvoda [ProductName]. Kliknite na dugme „Nazad“ da biste pregledali ili promenili bilo koju postavku instalacije. Kliknite na dugme „Otkaži“ da biste izašli iz čarobnjaka." xmlns="" />
+  <String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Spremno za popravku proizvoda [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Ukloni" xmlns="" />
+  <String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Kliknite na dugme „Ukloni“ da biste uklonili [ProductName] sa računara. Kliknite na dugme „Nazad“ da biste pregledali ili promenili bilo koju postavku instalacije. Kliknite na dugme „Otkaži“ da biste izašli iz čarobnjaka." xmlns="" />
+  <String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Spremno za uklanjanje proizvoda [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="Až&amp;uriraj" xmlns="" />
+  <String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Kliknite na dugme „Ažuriraj“ da biste ažurirali [ProductName] na računaru. Kliknite na dugme „Nazad“ da biste pregledali ili promenili bilo koju postavku instalacije. Kliknite na dugme „Otkaži“ da biste izašli iz čarobnjaka." xmlns="" />
+  <String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Spremno za ažuriranje proizvoda [ProductName]" xmlns="" />
+  <String Id="WaitForCostingDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="WaitForCostingDlgReturn" Overridable="yes" Value="V&amp;rati" xmlns="" />
+  <String Id="WaitForCostingDlgText" Overridable="yes" Value="Sačekajte da instalacioni program odredi potreban prostor na disku." xmlns="" />
+  <String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam" xmlns="" />
+  <String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Ikona sa znakom uzvika" xmlns="" />
+  <String Id="WelcomeDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="WelcomeDlgDescription" Overridable="yes" Value="Čarobnjak za instalaciju će instalirati [ProductName] na računar. Kliknite na dugme „Dalje“ da biste nastavili ili na dugme „Otkaži“ da biste izašli iz čarobnjaka za instalaciju." xmlns="" />
+  <String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Čarobnjak za instalaciju će ažurirati [ProductName] na računaru. Kliknite na dugme „Dalje“ da biste nastavili ili na dugme „Otkaži“ da biste izašli iz čarobnjaka za instalaciju." xmlns="" />
+  <String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Dobro došli u čarobnjak za instalaciju proizvoda [ProductName]" xmlns="" />
+  <String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="Instalacija programa [ProductName]" xmlns="" />
+  <String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="Prihv&amp;atam uslove navedene u ugovoru o licenciranju" xmlns="" />
+  <String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Instaliraj" xmlns="" />
+  <String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="Až&amp;uriraj" xmlns="" />
+  <String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pročitajte ugovor o licenciranju za [ProductName]" xmlns="" />
+  <String Id="ProgressTextInstallValidate" Overridable="yes" Value="Provera valjanosti instalacije" xmlns="" />
+  <String Id="ProgressTextInstallFiles" Overridable="yes" Value="Kopiranje novih datoteka" xmlns="" />
+  <String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Datoteka: [1], direktorijum: [9], veličina: [6]" xmlns="" />
+  <String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Kopiranje datoteka za mrežnu instalaciju" xmlns="" />
+  <String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Datoteka: [1], direktorijum: [9], veličina: [6]" xmlns="" />
+  <String Id="ProgressTextFileCost" Overridable="yes" Value="Izračunavanje potrebnog prostora" xmlns="" />
+  <String Id="ProgressTextCostInitialize" Overridable="yes" Value="Izračunavanje potrebnog prostora" xmlns="" />
+  <String Id="ProgressTextCostFinalize" Overridable="yes" Value="Izračunavanje potrebnog prostora" xmlns="" />
+  <String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Kreiranje prečica" xmlns="" />
+  <String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Prečica: [1]" xmlns="" />
+  <String Id="ProgressTextPublishComponents" Overridable="yes" Value="Objavljivanje kvalifikovanih komponenti" xmlns="" />
+  <String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="ID komponente: [1], kvalifikator: [2]" xmlns="" />
+  <String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Objavljivanje informacija o funkcijama proizvoda" xmlns="" />
+  <String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Funkcija: [1]" xmlns="" />
+  <String Id="ProgressTextPublishProduct" Overridable="yes" Value="Objavljivanje informacija o proizvodu" xmlns="" />
+  <String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Registracija servera klase" xmlns="" />
+  <String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Id klase: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Registracija servera proširenja" xmlns="" />
+  <String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Proširenje: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Registracija MIME informacija" xmlns="" />
+  <String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME tip sadržaja: [1], proširenje: [2]" xmlns="" />
+  <String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Registracija identifikatora programa" xmlns="" />
+  <String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [1]" xmlns="" />
+  <String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Dodeljivanje prostora u registratoru" xmlns="" />
+  <String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Slobodan prostor: [1]" xmlns="" />
+  <String Id="ProgressTextAppSearch" Overridable="yes" Value="Traženje instaliranih aplikacija" xmlns="" />
+  <String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Svojstvo: [1], potpis: [2]" xmlns="" />
+  <String Id="ProgressTextBindImage" Overridable="yes" Value="Povezivanje izvršnih datoteka" xmlns="" />
+  <String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Datoteka: [1]" xmlns="" />
+  <String Id="ProgressTextCCPSearch" Overridable="yes" Value="Traženje kvalifikovanih proizvoda" xmlns="" />
+  <String Id="ProgressTextCreateFolders" Overridable="yes" Value="Kreiranje fascikli" xmlns="" />
+  <String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Fascikla: [1]" xmlns="" />
+  <String Id="ProgressTextDeleteServices" Overridable="yes" Value="Brisanje usluga" xmlns="" />
+  <String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Usluga: [1]" xmlns="" />
+  <String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Kreiranje dupliranih datoteka" xmlns="" />
+  <String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Datoteka: [1], direktorijum: [9], veličina: [6]" xmlns="" />
+  <String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Traženje povezanih aplikacija" xmlns="" />
+  <String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Pronađena aplikacija: [1]" xmlns="" />
+  <String Id="ProgressTextInstallODBC" Overridable="yes" Value="Instaliranje ODBC komponenti" xmlns="" />
+  <String Id="ProgressTextInstallServices" Overridable="yes" Value="Instaliranje novih usluga" xmlns="" />
+  <String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Usluga: [2]" xmlns="" />
+  <String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Procenjivanje uslova za pokretanje" xmlns="" />
+  <String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Premeštanje stanja funkcija iz povezanih aplikacija" xmlns="" />
+  <String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Aplikacija: [1]" xmlns="" />
+  <String Id="ProgressTextMoveFiles" Overridable="yes" Value="Premeštanje datoteka" xmlns="" />
+  <String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Datoteka: [1], direktorijum: [9], veličina: [6]" xmlns="" />
+  <String Id="ProgressTextPatchFiles" Overridable="yes" Value="Krpljenje datoteka" xmlns="" />
+  <String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Datoteka: [1], direktorijum: [2], veličina: [3]" xmlns="" />
+  <String Id="ProgressTextProcessComponents" Overridable="yes" Value="Ažuriranje registracije komponenti" xmlns="" />
+  <String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Registracija COM+ aplikacija i komponenti" xmlns="" />
+  <String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="AppId: [1]{{, AppType: [2], korisnici: [3], RSN: [4]}}" xmlns="" />
+  <String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Registracija fontova" xmlns="" />
+  <String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Font: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Registracija proizvoda" xmlns="" />
+  <String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Registracija biblioteka tipova" xmlns="" />
+  <String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterUser" Overridable="yes" Value="Registracija korisnika" xmlns="" />
+  <String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Uklanjanje dupliranih datoteka" xmlns="" />
+  <String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Datoteka: [1], direktorijum: [9]" xmlns="" />
+  <String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Ažuriranje niski okruženja" xmlns="" />
+  <String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Ime: [1], vrednost: [2], radnja [3]" xmlns="" />
+  <String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Uklanjanje aplikacija" xmlns="" />
+  <String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Aplikacija: [1], komandna linija: [2]" xmlns="" />
+  <String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Uklanjanje datoteka" xmlns="" />
+  <String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Datoteka: [1], direktorijum: [9]" xmlns="" />
+  <String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Uklanjanje fascikli" xmlns="" />
+  <String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Fascikla: [1]" xmlns="" />
+  <String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Uklanjanje stavki INI datoteka" xmlns="" />
+  <String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Datoteka: [1], odeljak: [2], ključ: [3], vrednost: [4]" xmlns="" />
+  <String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Uklanjanje ODBC komponenti" xmlns="" />
+  <String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Uklanjanje vrednosti sistemskog registratora" xmlns="" />
+  <String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Ključ: [1], ime: [2]" xmlns="" />
+  <String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Uklanjanje prečica" xmlns="" />
+  <String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Prečica: [1]" xmlns="" />
+  <String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Traženje kvalifikovanih proizvoda" xmlns="" />
+  <String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Registracija modula" xmlns="" />
+  <String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Datoteka: [1], fascikla: [2]" xmlns="" />
+  <String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Opoziv registracije modula" xmlns="" />
+  <String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Datoteka: [1], fascikla: [2]" xmlns="" />
+  <String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Pokretanje ODBC direktorijuma" xmlns="" />
+  <String Id="ProgressTextStartServices" Overridable="yes" Value="Pokretanje usluga" xmlns="" />
+  <String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Usluga: [1]" xmlns="" />
+  <String Id="ProgressTextStopServices" Overridable="yes" Value="Zaustavljanje usluga" xmlns="" />
+  <String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Usluga: [1]" xmlns="" />
+  <String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Opoziv objavljivanja kvalifikovanih komponenti" xmlns="" />
+  <String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="ID komponente: [1], kvalifikator: [2]" xmlns="" />
+  <String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Opoziv objavljivanja funkcija proizvoda" xmlns="" />
+  <String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Funkcija: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Opoziv registracije servera klase" xmlns="" />
+  <String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Id klase: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Opoziv registracije COM+ aplikacija i komponenti" xmlns="" />
+  <String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="AppId: [1]{{, AppType: [2]}}" xmlns="" />
+  <String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Opoziv registracije servera proširenja" xmlns="" />
+  <String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Proširenje: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Opoziv registracije fontova" xmlns="" />
+  <String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Font: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Opoziv registracije MIME informacija" xmlns="" />
+  <String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME tip sadržaja: [1], proširenje: [2]" xmlns="" />
+  <String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Opoziv registracije identifikatora programa" xmlns="" />
+  <String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Opoziv registracije biblioteka tipova" xmlns="" />
+  <String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [1]" xmlns="" />
+  <String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Ažuriranje niski okruženja" xmlns="" />
+  <String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Ime: [1], vrednost: [2], radnja [3]" xmlns="" />
+  <String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Upisivanje vrednosti INI datoteka" xmlns="" />
+  <String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Datoteka: [1], odeljak: [2], ključ: [3], vrednost: [4]" xmlns="" />
+  <String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Upisivanje vrednosti sistemskog registratora" xmlns="" />
+  <String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Ključ: [1], ime: [2], vrednost: [3]" xmlns="" />
+  <String Id="ProgressTextAdvertise" Overridable="yes" Value="Aplikacija za reklamiranje" xmlns="" />
+  <String Id="ProgressTextGenerateScript" Overridable="yes" Value="Generisanje operacija sa skriptom za radnju:" xmlns="" />
+  <String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Instaliranje sistemskog kataloga" xmlns="" />
+  <String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Datoteka: [1], zavisni elementi: [2]" xmlns="" />
+  <String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Objavljivanje informacija o asembleru" xmlns="" />
+  <String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Kontekst aplikacije: [1], ime asemblera: [2]" xmlns="" />
+  <String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Opoziv objavljivanja informacija o asembleru" xmlns="" />
+  <String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Kontekst aplikacije: [1], ime asemblera: [2]" xmlns="" />
+  <String Id="ProgressTextRollback" Overridable="yes" Value="Vraćanje radnje:" xmlns="" />
+  <String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Uklanjanje rezervnih datoteka" xmlns="" />
+  <String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Datoteka: [1]" xmlns="" />
+  <String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Uklanjanje premeštenih datoteka" xmlns="" />
+  <String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Datoteka: [1], direktorijum: [9]" xmlns="" />
+  <String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Opoziv objavljenih informacija o proizvodu" xmlns="" />
+  <String Id="Error0" Overridable="yes" Value="{{Fatalna greška: }}" xmlns="" />
+  <String Id="Error1" Overridable="yes" Value="{{Greška [1]. }}" xmlns="" />
+  <String Id="Error2" Overridable="yes" Value="Upozorenje [1]." xmlns="" />
+  <String Id="Error4" Overridable="yes" Value="Informacije [1]." xmlns="" />
+  <String Id="Error5" Overridable="yes" Value="Instalacioni program je naišao na neočekivanu grešku prilikom instalacije ovog paketa. To možda ukazuje na problem sa ovim paketom. Kôd greške je [1]. {{Argumenti su: [2], [3], [4]}}" xmlns="" />
+  <String Id="Error7" Overridable="yes" Value="{{Disk je pun: }}" xmlns="" />
+  <String Id="Error8" Overridable="yes" Value="Radnja [Time]: [1]. [2]" xmlns="" />
+  <String Id="Error9" Overridable="yes" Value="[ProductName]" xmlns="" />
+  <String Id="Error10" Overridable="yes" Value="{[2]}{, [3]}{, [4]}" xmlns="" />
+  <String Id="Error11" Overridable="yes" Value="Tip poruke: [1], argument: [2]" xmlns="" />
+  <String Id="Error12" Overridable="yes" Value="=== Vođenje evidencije započeto: [Date]  [Time] ===" xmlns="" />
+  <String Id="Error13" Overridable="yes" Value="=== Vođenje evidencije zaustavljeno: [Date]  [Time] ===" xmlns="" />
+  <String Id="Error14" Overridable="yes" Value="Početak radnje [Time]: [1]." xmlns="" />
+  <String Id="Error15" Overridable="yes" Value="Kraj radnje [Time]: [1]. Povratna vrednost [2]." xmlns="" />
+  <String Id="Error16" Overridable="yes" Value="Preostalo vreme: {[1] minuta }{[2] sekundi}" xmlns="" />
+  <String Id="Error17" Overridable="yes" Value="Nema dovoljno memorije. Zatvorite ostale aplikacije pre nego što pokušate ponovo." xmlns="" />
+  <String Id="Error18" Overridable="yes" Value="Instalacioni program se ne odaziva." xmlns="" />
+  <String Id="Error19" Overridable="yes" Value="Instalacioni program je pre vremena zaustavljen." xmlns="" />
+  <String Id="Error20" Overridable="yes" Value="Sačekajte dok Windows konfiguriše [ProductName]" xmlns="" />
+  <String Id="Error21" Overridable="yes" Value="Prikupljanje potrebnih informacija..." xmlns="" />
+  <String Id="Error22" Overridable="yes" Value="Uklanjanje starijih verzija ove aplikacije..." xmlns="" />
+  <String Id="Error23" Overridable="yes" Value="Priprema za uklanjanje starijih verzija ove aplikacije..." xmlns="" />
+  <String Id="Error32" Overridable="yes" Value="Uspešno je dovršena instalacija proizvoda {[ProductName] }." xmlns="" />
+  <String Id="Error33" Overridable="yes" Value="Nije uspela instalacija proizvoda {[ProductName] }." xmlns="" />
+  <String Id="Error1101" Overridable="yes" Value="Greška tokom čitanja iz datoteke: [2]. {{ Sistemska greška [3].}} Proverite da li datoteka postoji i da li joj možete pristupiti." xmlns="" />
+  <String Id="Error1301" Overridable="yes" Value="Nije moguće kreirati datoteku „[2]“. Već postoji direktorijum sa tim imenom. Otkažite instalaciju i pokušajte da je izvršite na drugoj lokaciji." xmlns="" />
+  <String Id="Error1302" Overridable="yes" Value="Stavite disk: [2]" xmlns="" />
+  <String Id="Error1303" Overridable="yes" Value="Instalacioni program nema dovoljno privilegija za pristup ovom direktorijumu: [2]. Nije moguće nastaviti instalaciju. Prijavite se kao administrator ili se obratite administratoru sistema." xmlns="" />
+  <String Id="Error1304" Overridable="yes" Value="Greška tokom upisivanja u datoteku: [2]. Proverite da li imate pristup tom direktorijumu." xmlns="" />
+  <String Id="Error1305" Overridable="yes" Value="Greška tokom čitanja iz datoteke [2]. {{ Sistemska greška [3].}} Proverite da li datoteka postoji i da li joj možete pristupiti." xmlns="" />
+  <String Id="Error1306" Overridable="yes" Value="Druga aplikacija ima isključivi pristup datoteci „[2]“. Zatvorite sve ostale aplikacije, a zatim kliknite na dugme „Pokušaj opet“." xmlns="" />
+  <String Id="Error1307" Overridable="yes" Value="Nema dovoljno prostora na disku za instaliranje ove datoteke: [2]. Oslobodite prostor na disku i kliknite na dugme „Pokušaj opet“ ili kliknite na dugme „Otkaži“ da biste izašli." xmlns="" />
+  <String Id="Error1308" Overridable="yes" Value="Izvorna datoteka nije pronađena: [2]. Proverite da li datoteka postoji i da li joj možete pristupiti." xmlns="" />
+  <String Id="Error1309" Overridable="yes" Value="Greška tokom čitanja iz datoteke: [3]. {{ Sistemska greška [2].}} Proverite da li datoteka postoji i da li joj možete pristupiti." xmlns="" />
+  <String Id="Error1310" Overridable="yes" Value="Greška tokom upisivanja u datoteku: [3]. {{ Sistemska greška [2].}} Proverite da li imate pristup tom direktorijumu." xmlns="" />
+  <String Id="Error1311" Overridable="yes" Value="Izvorna datoteka nije pronađena{{(datoteka pakovanja)}}: [2]. Proverite da li datoteka postoji i da li joj možete pristupiti." xmlns="" />
+  <String Id="Error1312" Overridable="yes" Value="Nije moguće kreirati direktorijum „[2]“. Datoteka sa ovim imenom već postoji. Preimenujte ili uklonite datoteku i kliknite na dugme „Pokušaj opet“ ili na dugme „Otkaži“ da biste izašli." xmlns="" />
+  <String Id="Error1313" Overridable="yes" Value="Volumen [2] trenutno nije dostupan. Izaberite drugi volumen." xmlns="" />
+  <String Id="Error1314" Overridable="yes" Value="Navedena putanja „[2]“ nije dostupna." xmlns="" />
+  <String Id="Error1315" Overridable="yes" Value="Nije moguće upisivati u navedenu fasciklu: [2]." xmlns="" />
+  <String Id="Error1316" Overridable="yes" Value="Došlo je do mrežne greške pri pokušaju čitanja iz datoteke: [2]" xmlns="" />
+  <String Id="Error1317" Overridable="yes" Value="Došlo je do greške pri pokušaju kreiranja direktorijuma: [2]" xmlns="" />
+  <String Id="Error1318" Overridable="yes" Value="Došlo je do mrežne greške pri pokušaju kreiranja direktorijuma: [2]" xmlns="" />
+  <String Id="Error1319" Overridable="yes" Value="Došlo je do mrežne greške pri pokušaju otvaranja pakovanja izvorne datoteke: [2]" xmlns="" />
+  <String Id="Error1320" Overridable="yes" Value="Navedena putanja je predugačka: [2]" xmlns="" />
+  <String Id="Error1321" Overridable="yes" Value="Instalacioni program nema dovoljno privilegija da bi izmenio ovu datoteku: [2]." xmlns="" />
+  <String Id="Error1322" Overridable="yes" Value="Deo putanje fascikle „[2]“ je nevažeći. On je prazan ili prekoračuje dužinu koju sistem dozvoljava." xmlns="" />
+  <String Id="Error1323" Overridable="yes" Value="Putanja fascikle „[2]“ sadrži reči koje nisu važeće u putanji fascikle." xmlns="" />
+  <String Id="Error1324" Overridable="yes" Value="Putanja fascikle „[2]“ sadrži nevažeći znak." xmlns="" />
+  <String Id="Error1325" Overridable="yes" Value="„[2]“ nije važeće kratko ime datoteke." xmlns="" />
+  <String Id="Error1326" Overridable="yes" Value="Greška tokom preuzimanja bezbednosti datoteke: [3] GetLastError: [2]" xmlns="" />
+  <String Id="Error1327" Overridable="yes" Value="Nevažeća disk jedinica: [2]" xmlns="" />
+  <String Id="Error1328" Overridable="yes" Value="Došlo je do greške tokom primenjivanja zakrpe na datoteku [2]. Datoteka je verovatno već ažurirana na neki drugi način i ne može se više menjati ovom zakrpom. Za više informacija obratite se prodavcu zakrpe. {{Sistemska greška: [3]}}" xmlns="" />
+  <String Id="Error1329" Overridable="yes" Value="Potrebna datoteka se ne može instalirati zato što datoteka pakovanja [2] nije digitalno potpisana. Ovo može da ukazuje na to da je datoteka pakovanja oštećena." xmlns="" />
+  <String Id="Error1330" Overridable="yes" Value="Potrebna datoteka se ne može instalirati zato što datoteka pakovanja [2] ima nevažeći digitalni potpis. Ovo može da ukazuje na to da je datoteka pakovanja oštećena.{{  Grešku [3] je vratila funkcija WinVerifyTrust.}}" xmlns="" />
+  <String Id="Error1331" Overridable="yes" Value="Nije uspelo ispravno kopiranje datoteke [2]: CRC greška." xmlns="" />
+  <String Id="Error1332" Overridable="yes" Value="Nije uspelo ispravno premeštanje datoteke [2]: CRC greška." xmlns="" />
+  <String Id="Error1333" Overridable="yes" Value="Nije uspelo ispravno krpljenje datoteke [2]: CRC greška." xmlns="" />
+  <String Id="Error1334" Overridable="yes" Value="Nije moguće instalirati datoteku „[2]“ zato što ona ne može da se pronađe u datoteci pakovanja „[3]“. Ovo može da ukazuje na mrežnu grešku, grešku prilikom čitanja sa CD-ROM-a ili problem sa ovim paketom." xmlns="" />
+  <String Id="Error1335" Overridable="yes" Value="Datoteka pakovanja „[2]“ neophodna za ovu instalaciju je oštećena i ne može da se koristi. Ovo može da ukazuje na mrežnu grešku, grešku prilikom čitanja sa CD-ROM-a ili problem sa ovim paketom." xmlns="" />
+  <String Id="Error1336" Overridable="yes" Value="Došlo je do greške tokom kreiranja privremene datoteke koja je potrebna da bi se dovršila ova instalacija.{{  Fascikla: [3]. Kôd sistemske greške: [2]}}" xmlns="" />
+  <String Id="Error1401" Overridable="yes" Value="Nije bilo moguće kreirati ključ: [2]. {{ Sistemska greška [3].}} Proverite da li imate odgovarajući pristup tom ključu ili se obratite osoblju za podršku." xmlns="" />
+  <String Id="Error1402" Overridable="yes" Value="Nije bilo moguće otvoriti ključ: [2]. {{ Sistemska greška [3].}} Proverite da li imate odgovarajući pristup tom ključu ili se obratite osoblju za podršku." xmlns="" />
+  <String Id="Error1403" Overridable="yes" Value="Nije bilo moguće izbrisati vrednost [2] iz ključa [3]. {{ Sistemska greška [4].}} Proverite da li imate odgovarajući pristup tom ključu ili se obratite osoblju za podršku." xmlns="" />
+  <String Id="Error1404" Overridable="yes" Value="Nije bilo moguće izbrisati ključ [2]. {{ Sistemska greška [3].}} Proverite da li imate odgovarajući pristup tom ključu ili se obratite osoblju za podršku." xmlns="" />
+  <String Id="Error1405" Overridable="yes" Value="Nije bilo moguće pročitati vrednost [2] iz ključa [3]. {{ Sistemska greška [4].}} Proverite da li imate odgovarajući pristup tom ključu ili se obratite osoblju za podršku." xmlns="" />
+  <String Id="Error1406" Overridable="yes" Value="Nije bilo moguće upisati vrednost [2] u ključ [3]. {{ Sistemska greška [4].}} Proverite da li imate odgovarajući pristup tom ključu ili se obratite osoblju za podršku." xmlns="" />
+  <String Id="Error1407" Overridable="yes" Value="Nije bilo moguće preuzeti imena vrednosti za ključ [2]. {{ Sistemska greška [3].}} Proverite da li imate odgovarajući pristup tom ključu ili se obratite osoblju za podršku." xmlns="" />
+  <String Id="Error1408" Overridable="yes" Value="Nije bilo moguće preuzeti imena potključeva za ključ [2]. {{ Sistemska greška [3].}} Proverite da li imate odgovarajući pristup tom ključu ili se obratite osoblju za podršku." xmlns="" />
+  <String Id="Error1409" Overridable="yes" Value="Nije bilo moguće pročitati bezbednosne informacije za ključ [2]. {{ Sistemska greška [3].}} Proverite da li imate odgovarajući pristup tom ključu ili se obratite osoblju za podršku." xmlns="" />
+  <String Id="Error1410" Overridable="yes" Value="Nije bilo moguće povećati dostupni prostor registratora. Potrebno je [2] kB slobodnog prostora registratora za instalaciju ove aplikacije." xmlns="" />
+  <String Id="Error1500" Overridable="yes" Value="Neka druga instalacija je u toku. Morate dovršiti tu instalaciju da biste mogli da nastavite sa ovom." xmlns="" />
+  <String Id="Error1501" Overridable="yes" Value="Greška tokom pristupanja zaštićenim podacima. Uverite se da je Windows Installer ispravno konfigurisan i pokušajte ponovo da izvršite instalaciju." xmlns="" />
+  <String Id="Error1502" Overridable="yes" Value="Korisnik „[2]“ je prethodno pokrenuo instalaciju proizvoda „[3]“. Korisnik će morati ponovo da pokrene tu instalaciju da bi mogao da koristi taj proizvod. Trenutna instalacija će se nastaviti." xmlns="" />
+  <String Id="Error1503" Overridable="yes" Value="Korisnik „[2]“ je prethodno pokrenuo instalaciju proizvoda „[3]“. Korisnik će morati ponovo da pokrene tu instalaciju da bi mogao da koristi taj proizvod." xmlns="" />
+  <String Id="Error1601" Overridable="yes" Value="Nema prostora na disku -- volumen: „[2]“; potreban prostor: [3] kB; dostupan prostor: [4] kB. Oslobodite prostor na disku i pokušajte ponovo." xmlns="" />
+  <String Id="Error1602" Overridable="yes" Value="Želite li zaista da otkažete ovu radnju?" xmlns="" />
+  <String Id="Error1603" Overridable="yes" Value="Datoteku [2][3] koristi{ sledeći proces: ime: [4], Id: [5], naslov prozora: „[6]“}. Zatvorite tu aplikaciju i pokušajte ponovo." xmlns="" />
+  <String Id="Error1604" Overridable="yes" Value="Proizvod „[2]“ je već instaliran i sprečava instalaciju ovog proizvoda. Ova dva proizvoda su nekompatibilna." xmlns="" />
+  <String Id="Error1605" Overridable="yes" Value="Nema dovoljno prostora na disku na volumenu „[2]“ da bi se nastavila instalacija sa omogućenim oporavkom. Potrebno je [3] kB, a dostupno je samo [4] kB. Kliknite na dugme „Zanemari“ da biste nastavili instalaciju bez čuvanja informacija za oporavak, kliknite na dugme „Pokušaj opet“ da biste ponovo proverili dostupan prostor ili na dugme „Otkaži“ da biste odustali od instaliranja." xmlns="" />
+  <String Id="Error1606" Overridable="yes" Value="Nije bilo moguće pristupiti mrežnoj lokaciji [2]." xmlns="" />
+  <String Id="Error1607" Overridable="yes" Value="Sledeće aplikacije moraju biti zatvorene pre nego što nastavite sa instaliranjem:" xmlns="" />
+  <String Id="Error1608" Overridable="yes" Value="Na računaru nije bilo moguće pronaći nijedan prethodno instalirani usaglašeni proizvod za instaliranje ovog proizvoda." xmlns="" />
+  <String Id="Error1609" Overridable="yes" Value="Došlo je do greške tokom primene bezbednosnih postavki. [2] nije važeći korisnik ili grupa. Ovo može biti problem sa paketom ili problem pri povezivanju sa kontrolerom domena na mreži. Proverite mrežnu vezu i kliknite na dugme „Pokušaj opet“ ili na dugme „Otkaži“ da biste završili instalaciju. {{Nije moguće pronaći korisnički SID, sistemska greška [3]}}" xmlns="" />
+  <String Id="Error1701" Overridable="yes" Value="Šifra [2] nije važeća. Proverite da li ste uneli ispravnu šifru." xmlns="" />
+  <String Id="Error1702" Overridable="yes" Value="Instalacioni program mora ponovo da pokrene sistem da bi moglo da se nastavi sa konfigurisanjem programa [2]. Kliknite na dugme „Da“ da biste odmah ponovo pokrenuli računar ili na dugme „Ne“ ako planirate da kasnije ručno ponovo pokrenete računar." xmlns="" />
+  <String Id="Error1703" Overridable="yes" Value="Morate ponovo da pokrenete sistem da bi promene napravljene u konfiguraciji proizvoda [2] stupile na snagu. Kliknite na dugme „Da“ da biste odmah ponovo pokrenuli računar ili na dugme „Ne“ ako planirate kasnije ručno da ponovo pokrenete računar." xmlns="" />
+  <String Id="Error1704" Overridable="yes" Value="Instalacija proizvoda [2] je trenutno obustavljena. Morate da opozovete promene koje je napravila ta instalacija da biste nastavili. Želite li da opozovete te promene?" xmlns="" />
+  <String Id="Error1705" Overridable="yes" Value="Prethodno započeta instalacija ovog proizvoda je u toku. Morate da opozovete promene koje je napravila ta instalacija da biste nastavili. Želite li da opozovete te promene?" xmlns="" />
+  <String Id="Error1706" Overridable="yes" Value="Nije moguće pronaći instalacioni paket za proizvod [2]. Ponovo pokušajte da izvršite instalaciju pomoću važeće kopije instalacionog paketa „[3]“." xmlns="" />
+  <String Id="Error1707" Overridable="yes" Value="Instaliranje je uspešno dovršeno." xmlns="" />
+  <String Id="Error1708" Overridable="yes" Value="Instaliranje nije uspelo." xmlns="" />
+  <String Id="Error1709" Overridable="yes" Value="Proizvod: [2] -- [3]" xmlns="" />
+  <String Id="Error1710" Overridable="yes" Value="Možete da vratite računar u prethodno stanje ili da nastavite instaliranje kasnije. Želite li da vratite računar u prethodno stanje?" xmlns="" />
+  <String Id="Error1711" Overridable="yes" Value="Došlo je do greške tokom upisivanja informacija o instalaciji na disk. Uverite se da imate dovoljno dostupnog prostora na disku i kliknite na dugme „Pokušaj opet“ ili na dugme „Otkaži“ da biste završili instalaciju." xmlns="" />
+  <String Id="Error1712" Overridable="yes" Value="Nije bilo moguće pronaći neke datoteke potrebne da se vaš računar vrati u prethodno stanje. Vraćanje računara u prethodno stanje neće biti moguće." xmlns="" />
+  <String Id="Error1713" Overridable="yes" Value="[2] ne može da instalira jedan od potrebnih proizvoda. Obratite se grupi za tehničku podršku. {{Sistemska greška: [3].}}" xmlns="" />
+  <String Id="Error1714" Overridable="yes" Value="Nije moguće ukloniti stariju verziju programa [2]. Obratite se grupi za tehničku podršku. {{Sistemska greška [3].}}" xmlns="" />
+  <String Id="Error1715" Overridable="yes" Value="Proizvod [2] je instaliran" xmlns="" />
+  <String Id="Error1716" Overridable="yes" Value="Proizvod [2] je konfigurisan" xmlns="" />
+  <String Id="Error1717" Overridable="yes" Value="Proizvod [2] je uklonjen" xmlns="" />
+  <String Id="Error1718" Overridable="yes" Value="Smernice digitalnog potpisa su odbacile datoteku [2]." xmlns="" />
+  <String Id="Error1719" Overridable="yes" Value="Nije bilo moguće pristupiti usluzi Windows Installer. Ovo može da se dogodi ako Windows radi u bezbednom režimu ili ako Windows Installer nije ispravno instaliran. Obratite se osoblju za podršku za pomoć." xmlns="" />
+  <String Id="Error1720" Overridable="yes" Value="Postoji problem sa ovim paketom programa Windows Installer. Nije bilo moguće pokrenuti skriptu koja je potrebna za dovršavanje ove instalacije. Obratite se osoblju za podršku ili prodavcu paketa. {{Prilagođena radnja [2] greška u skripti [3], [4]: [5] red [6], kolona [7], [8] }}" xmlns="" />
+  <String Id="Error1721" Overridable="yes" Value="Postoji problem sa ovim paketom programa Windows Installer. Nije moguće pokrenuti skriptu koja je potrebna za dovršavanje ove instalacije. Obratite se osoblju za podršku ili prodavcu paketa. {{Radnja: [2], lokacija: [3], komanda: [4] }}" xmlns="" />
+  <String Id="Error1722" Overridable="yes" Value="Postoji problem sa ovim paketom programa Windows Installer. Program koji je pokrenut kao deo instalacije nije se završio na očekivani način. Obratite se osoblju za podršku ili prodavcu paketa. {{Radnja [2], lokacija: [3], komanda: [4] }}" xmlns="" />
+  <String Id="Error1723" Overridable="yes" Value="Postoji problem sa ovim paketom programa Windows Installer. Nije bilo moguće pokrenuti DLL datoteku koja je potrebna za dovršavanje ove instalacije. Obratite se osoblju za podršku ili prodavcu paketa. {{Radnja [2], stavka: [3], biblioteka: [4] }}" xmlns="" />
+  <String Id="Error1724" Overridable="yes" Value="Uklanjanje je uspešno dovršeno." xmlns="" />
+  <String Id="Error1725" Overridable="yes" Value="Uklanjanje nije uspelo." xmlns="" />
+  <String Id="Error1726" Overridable="yes" Value="Oglas je uspešno dovršen." xmlns="" />
+  <String Id="Error1727" Overridable="yes" Value="Oglas nije uspeo." xmlns="" />
+  <String Id="Error1728" Overridable="yes" Value="Konfigurisanje je uspešno dovršeno." xmlns="" />
+  <String Id="Error1729" Overridable="yes" Value="Konfigurisanje nije uspelo." xmlns="" />
+  <String Id="Error1730" Overridable="yes" Value="Morate biti administrator da biste mogli da uklonite ovu aplikaciju. Da biste uklonili ovu aplikaciju, možete se prijaviti kao administrator ili se obratiti grupi za tehničku podršku za pomoć." xmlns="" />
+  <String Id="Error1731" Overridable="yes" Value="Izvorni instalacioni paket proizvoda [2] nije sinhronizovan sa paketom klijenta. Ponovo pokušajte da izvršite instalaciju pomoću važeće kopije instalacionog paketa „[3]“." xmlns="" />
+  <String Id="Error1732" Overridable="yes" Value="Da biste dovršili instalaciju proizvoda [2], morate ponovo pokrenuti računar. Na ovaj računar su trenutno prijavljeni drugi korisnici, koji zbog ponovnog pokretanja mogu izgubiti ono što su uradili. Želite li da odmah ponovo pokrenete računar?" xmlns="" />
+  <String Id="Error1801" Overridable="yes" Value="Putanja [2] nije važeća. Navedite važeću putanju." xmlns="" />
+  <String Id="Error1802" Overridable="yes" Value="Nema dovoljno memorije. Zatvorite ostale aplikacije pre nego što pokušate ponovo." xmlns="" />
+  <String Id="Error1803" Overridable="yes" Value="Ne postoji disk u disk jedinici [2]. Stavite disk i kliknite na dugme „Pokušaj opet“ ili na dugme „Otkaži“ da biste se vratili na prethodno izabrani volumen." xmlns="" />
+  <String Id="Error1804" Overridable="yes" Value="Ne postoji disk u disk jedinici [2]. Stavite disk i kliknite na dugme „Pokušaj opet“ ili na dugme „Otkaži“ da biste se vratili u dijalog za pretraživanje i izabrali neki drugi volumen." xmlns="" />
+  <String Id="Error1805" Overridable="yes" Value="Fascikla [2] ne postoji. Unesite putanju do postojeće fascikle." xmlns="" />
+  <String Id="Error1806" Overridable="yes" Value="Nemate odgovarajuće privilegije za čitanje iz ove datoteke." xmlns="" />
+  <String Id="Error1807" Overridable="yes" Value="Nije bilo moguće odrediti važeću odredišnu fasciklu za instalaciju." xmlns="" />
+  <String Id="Error1901" Overridable="yes" Value="Greška pri pokušaju čitanja iz izvorne baze podataka instalacije: [2]." xmlns="" />
+  <String Id="Error1902" Overridable="yes" Value="Planiranje ponovnog pokretanja sistema: preimenovanje datoteke [2] u [3]. Morate ponovo pokrenuti sistem da biste dovršili operaciju." xmlns="" />
+  <String Id="Error1903" Overridable="yes" Value="Planiranje ponovnog pokretanja sistema: brisanje datoteke [2]. Morate ponovo pokrenuti sistem da biste dovršili operaciju." xmlns="" />
+  <String Id="Error1904" Overridable="yes" Value="Registracija modula [2] nije uspela. HRESULT [3]. Obratite se osoblju za podršku." xmlns="" />
+  <String Id="Error1905" Overridable="yes" Value="Opoziv registracije modula [2] nije uspeo. HRESULT [3]. Obratite se osoblju za podršku." xmlns="" />
+  <String Id="Error1906" Overridable="yes" Value="Keširanje paketa [2] nije uspelo. Greška: [3]. Obratite se osoblju za podršku." xmlns="" />
+  <String Id="Error1907" Overridable="yes" Value="Nije bilo moguće registrovati font [2]. Proverite da li imate odgovarajuće dozvole za instaliranje fontova i da li sistem podržava ovaj font." xmlns="" />
+  <String Id="Error1908" Overridable="yes" Value="Nije bilo moguće opozvati registraciju fonta [2]. Proverite da li imate odgovarajuće dozvole za uklanjanje fontova." xmlns="" />
+  <String Id="Error1909" Overridable="yes" Value="Nije bilo moguće kreirati prečicu [2]. Proverite da li odredišna fascikla postoji i da li joj možete pristupiti." xmlns="" />
+  <String Id="Error1910" Overridable="yes" Value="Nije bilo moguće ukloniti prečicu [2]. Proverite da li datoteka prečice postoji i da li joj možete pristupiti." xmlns="" />
+  <String Id="Error1911" Overridable="yes" Value="Nije bilo moguće registrovati biblioteku tipova za datoteku [2]. Obratite se osoblju za podršku." xmlns="" />
+  <String Id="Error1912" Overridable="yes" Value="Nije bilo moguće opozvati registraciju biblioteke tipova za datoteku [2]. Obratite se osoblju za podršku." xmlns="" />
+  <String Id="Error1913" Overridable="yes" Value="Nije bilo moguće ažurirati ini datoteku [2][3]. Proverite da li datoteka postoji i da li joj možete pristupiti." xmlns="" />
+  <String Id="Error1914" Overridable="yes" Value="Nije bilo moguće isplanirati da datoteka [2] zameni datoteku [3] pri ponovnom pokretanju sistema. Proverite da li imate dozvole za upisivanje u datoteku [3]." xmlns="" />
+  <String Id="Error1915" Overridable="yes" Value="Greška tokom uklanjanja menadžera ODBC upravljačkog programa, ODBC greška [2]: [3]. Obratite se osoblju za podršku." xmlns="" />
+  <String Id="Error1916" Overridable="yes" Value="Greška tokom instaliranja menadžera ODBC upravljačkog programa, ODBC greška [2]: [3]. Obratite se osoblju za podršku." xmlns="" />
+  <String Id="Error1917" Overridable="yes" Value="Greška tokom uklanjanja ODBC upravljačkog programa: [4], ODBC greška [2]: [3]. Proverite da li imate odgovarajuće privilegije za uklanjanje ODBC upravljačkih programa." xmlns="" />
+  <String Id="Error1918" Overridable="yes" Value="Greška tokom instaliranja ODBC upravljačkog programa: [4], ODBC greška [2]: [3]. Proverite da li datoteka [4] postoji i da li joj možete pristupiti." xmlns="" />
+  <String Id="Error1919" Overridable="yes" Value="Greška tokom konfigurisanja izvora ODBC podataka: [4], ODBC greška [2]: [3]. Proverite da li datoteka [4] postoji i da li joj možete pristupiti." xmlns="" />
+  <String Id="Error1920" Overridable="yes" Value="Pokretanje usluge „[2]“ ([3]) nije uspelo. Proverite da li imate odgovarajuće privilegije za pokretanje sistemskih usluga." xmlns="" />
+  <String Id="Error1921" Overridable="yes" Value="Nije bilo moguće zaustaviti uslugu „[2]“ ([3]). Proverite da li imate odgovarajuće privilegije za zaustavljanje sistemskih usluga." xmlns="" />
+  <String Id="Error1922" Overridable="yes" Value="Nije bilo moguće izbrisati uslugu „[2]“ ([3]). Proverite da li imate odgovarajuće privilegije za uklanjanje sistemskih usluga." xmlns="" />
+  <String Id="Error1923" Overridable="yes" Value="Nije bilo moguće instalirati uslugu „[2]“ ([3]). Proverite da li imate odgovarajuće privilegije za instaliranje sistemskih usluga." xmlns="" />
+  <String Id="Error1924" Overridable="yes" Value="Nije bilo moguće ažurirati promenljivu okruženja „[2]“. Proverite da li imate odgovarajuće privilegije za izmenu promenljivih okruženja." xmlns="" />
+  <String Id="Error1925" Overridable="yes" Value="Nemate odgovarajuće privilegije da biste dovršili ovu instalaciju za sve korisnike ovog računara. Prijavite se kao administrator i ponovo pokušajte da izvršite ovu instalaciju." xmlns="" />
+  <String Id="Error1926" Overridable="yes" Value="Nije bilo moguće podesiti bezbednost datoteke za datoteku „[3]“. Greška: [2]. Proverite da li imate odgovarajuće privilegije za izmenu bezbednosnih dozvola za ovu datoteku." xmlns="" />
+  <String Id="Error1927" Overridable="yes" Value="Usluge Component Services (COM+ 1.0) nisu instalirane na ovom računaru, a one su potrebne za uspešno dovršavanje ove instalacije. Usluge Component Services su dostupne u operativnom sistemu Windows 2000." xmlns="" />
+  <String Id="Error1928" Overridable="yes" Value="Greška tokom registracije COM+ aplikacije. Za više informacija obratite se osoblju za podršku." xmlns="" />
+  <String Id="Error1929" Overridable="yes" Value="Greška tokom opoziva registracije COM+ aplikacije. Za više informacija obratite se osoblju za podršku." xmlns="" />
+  <String Id="Error1930" Overridable="yes" Value="Opis usluge „[2]“ ([3]) ne može da se menja." xmlns="" />
+  <String Id="Error1931" Overridable="yes" Value="Usluga Windows Installer ne može da ažurira sistemsku datoteku [2] zato što je Windows zaštitio datoteku. Možda ćete morati da ažurirate operativni sistem da bi ovaj program radio ispravno. {{Verzija paketa: [3], verzija koju štiti operativni sistem: [4]}}" xmlns="" />
+  <String Id="Error1932" Overridable="yes" Value="Usluga Windows Installer ne može da ažurira zaštićenu Windows datoteku [2]. {{Verzija paketa: [3], verzija koju štiti operativni sistem: [4], SFP greška: [5]}}" xmlns="" />
+  <String Id="Error1933" Overridable="yes" Value="Usluga Windows Installer ne može da ažurira neke zaštićene Windows datoteke. {{SFP greška: [2]. Lista zaštićenih datoteka:\r\n[3]}}" xmlns="" />
+  <String Id="Error1934" Overridable="yes" Value="Korisničke instalacije su onemogućene putem smernica na računaru." xmlns="" />
+  <String Id="Error1935" Overridable="yes" Value="Došlo je do greške prilikom instaliranja asemblera „[6]“. Za više informacija pogledajte Pomoć i podršku. HRESULT: [3]. {{interfejs asemblera: [4], funkcija: [5], komponenta: [2]}}" xmlns="" />
+  <String Id="Error1936" Overridable="yes" Value="Došlo je do greške prilikom instaliranja asemblera „[6]“. Asembler nema dovoljno jako ime ili nije potpisan minimalnom dužinom ključa. HRESULT: [3]. {{interfejs asemblera: [4], funkcija: [5], komponenta: [2]}}" xmlns="" />
+  <String Id="Error1937" Overridable="yes" Value="Došlo je do greške prilikom instaliranja asemblera „[6]“. Nije bilo moguće verifikovati potpis ili katalog ili su oni nevažeći. HRESULT: [3]. {{interfejs asemblera: [4], funkcija: [5], komponenta: [2]}}" xmlns="" />
+  <String Id="Error1938" Overridable="yes" Value="Došlo je do greške prilikom instaliranja asemblera „[6]“. Nije bilo moguće pronaći neke module asemblera. HRESULT: [3]. {{interfejs asemblera: [4], funkcija: [5], komponenta: [2]}}" xmlns="" />
+  <String Id="UITextbytes" Overridable="yes" Value="bajtova" xmlns="" />
+  <String Id="UITextGB" Overridable="yes" Value="GB" xmlns="" />
+  <String Id="UITextKB" Overridable="yes" Value="kB" xmlns="" />
+  <String Id="UITextMB" Overridable="yes" Value="MB" xmlns="" />
+  <String Id="UITextMenuAbsent" Overridable="yes" Value="Čitava funkcija će biti nedostupna" xmlns="" />
+  <String Id="UITextMenuAdvertise" Overridable="yes" Value="Funkcija će biti instalirana po potrebi" xmlns="" />
+  <String Id="UITextMenuAllCD" Overridable="yes" Value="Čitava funkcija će biti instalirana za pokretanje sa CD-a" xmlns="" />
+  <String Id="UITextMenuAllLocal" Overridable="yes" Value="Čitava funkcija će biti instalirana na lokalni čvrsti disk" xmlns="" />
+  <String Id="UITextMenuAllNetwork" Overridable="yes" Value="Čitava funkcija će biti instalirana za pokretanje sa mreže" xmlns="" />
+  <String Id="UITextMenuCD" Overridable="yes" Value="Biće instalirano za pokretanje sa CD-a" xmlns="" />
+  <String Id="UITextMenuLocal" Overridable="yes" Value="Biće instalirano na lokalni čvrsti disk" xmlns="" />
+  <String Id="UITextMenuNetwork" Overridable="yes" Value="Biće instalirano za pokretanje sa mreže" xmlns="" />
+  <String Id="UITextNewFolder" Overridable="yes" Value="Fascikla|Nova fascikla" xmlns="" />
+  <String Id="UITextScriptInProgress" Overridable="yes" Value="Prikupljanje potrebnih informacija..." xmlns="" />
+  <String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Ova funkcija će ostati neinstalirana" xmlns="" />
+  <String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Ova funkcija će biti podešena tako da se instalira po potrebi" xmlns="" />
+  <String Id="UITextSelAbsentCD" Overridable="yes" Value="Ova funkcija će biti instalirana za pokretanje sa CD-a" xmlns="" />
+  <String Id="UITextSelAbsentLocal" Overridable="yes" Value="Ova funkcija će biti instalirana na lokalni čvrsti disk" xmlns="" />
+  <String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Ova funkcija će biti instalirana za pokretanje sa mreže" xmlns="" />
+  <String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Ova funkcija će postati nedostupna" xmlns="" />
+  <String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Biće instalirano po potrebi" xmlns="" />
+  <String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Ova funkcija će biti dostupna za pokretanje sa CD-a" xmlns="" />
+  <String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Ova funkcija će biti instalirana na lokalni čvrsti disk" xmlns="" />
+  <String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Ova funkcija će biti dostupna za pokretanje sa mreže" xmlns="" />
+  <String Id="UITextSelCDAbsent" Overridable="yes" Value="Ova funkcija će biti deinstalirana u potpunosti, nećete moći da je pokrećete sa CD-a" xmlns="" />
+  <String Id="UITextSelCDAdvertise" Overridable="yes" Value="Ova funkcija će biti promenjena tako da se instalira po potrebi umesto da se pokreće sa CD-a" xmlns="" />
+  <String Id="UITextSelCDCD" Overridable="yes" Value="Ova funkcija će se i ubuduće pokretati sa CD-a" xmlns="" />
+  <String Id="UITextSelCDLocal" Overridable="yes" Value="Ova funkcija će biti promenjena tako da se instalira na lokalni čvrsti disk umesto da se pokreće sa CD-a" xmlns="" />
+  <String Id="UITextSelChildCostNeg" Overridable="yes" Value="Ova funkcija oslobađa [1] na čvrstom disku." xmlns="" />
+  <String Id="UITextSelChildCostPos" Overridable="yes" Value="Ova funkcija zahteva [1] na čvrstom disku." xmlns="" />
+  <String Id="UITextSelCostPending" Overridable="yes" Value="Proračun utroška za ovu funkciju..." xmlns="" />
+  <String Id="UITextSelLocalAbsent" Overridable="yes" Value="Ova funkcija će biti u potpunosti uklonjena" xmlns="" />
+  <String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Ova funkcija će biti uklonjena sa lokalnog čvrstog diska, ali će biti podešena tako da se instalira po potrebi" xmlns="" />
+  <String Id="UITextSelLocalCD" Overridable="yes" Value="Ova funkcija će biti uklonjena sa lokalnog čvrstog diska, ali će i dalje biti dostupna za pokretanje sa CD-a" xmlns="" />
+  <String Id="UITextSelLocalLocal" Overridable="yes" Value="Ova funkcija će ostati na lokalnom čvrstom disku" xmlns="" />
+  <String Id="UITextSelLocalNetwork" Overridable="yes" Value="Ova funkcija će biti uklonjena sa lokalnog čvrstog diska, ali će i dalje biti dostupna za pokretanje sa mreže" xmlns="" />
+  <String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Ova funkcija će biti deinstalirana u potpunosti, nećete moći da je pokrećete sa mreže" xmlns="" />
+  <String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Ova funkcija će biti promenjena tako da se instalira po potrebi umesto da se pokreće sa mreže" xmlns="" />
+  <String Id="UITextSelNetworkLocal" Overridable="yes" Value="Ova funkcija će biti promenjena tako da se instalira na lokalni čvrsti disk umesto da se pokreće sa mreže" xmlns="" />
+  <String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Ova funkcija će se i ubuduće pokretati sa mreže" xmlns="" />
+  <String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Ova funkcija oslobađa [1] na čvrstom disku. Izabrano je [2] od [3] njenih potfunkcija. Potfunkcije oslobađaju [4] na čvrstom disku." xmlns="" />
+  <String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Ova funkcija oslobađa [1] na čvrstom disku. Izabrano je [2] od [3] njenih potfunkcija. Potfunkcije zahtevaju [4] na čvrstom disku." xmlns="" />
+  <String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Ova funkcija zahteva [1] na čvrstom disku. Izabrano je [2] od [3] njenih potfunkcija. Potfunkcije oslobađaju [4] na čvrstom disku." xmlns="" />
+  <String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Ova funkcija zahteva [1] na čvrstom disku. Izabrano je [2] od [3] njenih potfunkcija. Potfunkcije zahtevaju [4] na čvrstom disku." xmlns="" />
+  <String Id="UITextTimeRemaining" Overridable="yes" Value="Preostalo vreme: {[1] minuta }{[2] sekundi}" xmlns="" />
+  <String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Dostupan" xmlns="" />
+  <String Id="UITextVolumeCostDifference" Overridable="yes" Value="Razlika" xmlns="" />
+  <String Id="UITextVolumeCostRequired" Overridable="yes" Value="Potrebno" xmlns="" />
+  <String Id="UITextVolumeCostSize" Overridable="yes" Value="Veličina diska" xmlns="" />
+  <String Id="UITextVolumeCostVolume" Overridable="yes" Value="Volumen" xmlns="" />
+</WixLocalization>

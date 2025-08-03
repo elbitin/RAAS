@@ -1,1 +1,577 @@
-﻿<WixLocalization Culture="et-EE" xmlns="http://wixtoolset-EE-EE.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni desinstallimine" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni tagasipööramine" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni installimine" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni tagasipööramine" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfigureerimine" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfigureerimine" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windowsi tulemüüriga ei saa ühendust. ([2] [3] [4] [5])" /><String Id="VisualizationsDescription" Overridable="yes" Value="Kaugrakenduste visualiseeringud on konfiguratsioonis valikuna saadaval" /><String Id="NamespaceDescription" Overridable="yes" Value="Vaadake RAAS-servereid Exploreris" /><String Id="ShortcutsDescription" Overridable="yes" Value="Looge kohalikus arvutis serverirakendustele kaugrakenduste otset-EE-EEeid" /><String Id="VisualizationsTitle" Overridable="yes" Value="Visualisatsioonid" /><String Id="NamespaceTitle" Overridable="yes" Value="Shelli nimeruumi laiendus" /><String Id="ShortcutsTitle" Overridable="yes" Value="Kaugjuhitavad otset-EE-EEeed" /><String Id="ProductLanguage" Overridable="yes" Value="1061" /></WixLocalization>
+<WixLocalization Codepage="1257" Culture="et-EE" xmlns="http://wixtoolset-EE-EE.org/schemas/v4/wxl">
+  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni desinstallimine" />
+  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni tagasipööramine" />
+  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni installimine" />
+  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfiguratsiooni tagasipööramine" />
+  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windowsi tulemüüri konfigureerimine" />
+  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windowsi tulemüüri konfigureerimine" />
+  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windowsi tulemüüriga ei saa ühendust. ([2] [3] [4] [5])" />
+  <String Id="VisualizationsDescription" Overridable="yes" Value="Kaugrakenduste visualiseeringud on konfiguratsioonis valikuna saadaval" />
+  <String Id="NamespaceDescription" Overridable="yes" Value="Vaadake RAAS-servereid Exploreris" />
+  <String Id="ShortcutsDescription" Overridable="yes" Value="Looge kohalikus arvutis serverirakendustele kaugrakenduste otset-EE-EEeid" />
+  <String Id="VisualizationsTitle" Overridable="yes" Value="Visualisatsioonid" />
+  <String Id="NamespaceTitle" Overridable="yes" Value="Shelli nimeruumi laiendus" />
+  <String Id="ShortcutsTitle" Overridable="yes" Value="Kaugjuhitavad otset-EE-EEeed" />
+  <String Id="ProductLanguage" Overridable="yes" Value="1061" />
+  <String Id="WixUIBack" Overridable="yes" Value="&amp;Tagasi" xmlns="" />
+  <String Id="WixUINext" Overridable="yes" Value="&amp;Edasi" xmlns="" />
+  <String Id="WixUICancel" Overridable="yes" Value="Loobu" xmlns="" />
+  <String Id="WixUIFinish" Overridable="yes" Value="&amp;Lõpeta" xmlns="" />
+  <String Id="WixUIRetry" Overridable="yes" Value="&amp;Proovi uuesti" xmlns="" />
+  <String Id="WixUIIgnore" Overridable="yes" Value="&amp;Ignoreeri" xmlns="" />
+  <String Id="WixUIYes" Overridable="yes" Value="&amp;Jah" xmlns="" />
+  <String Id="WixUINo" Overridable="yes" Value="&amp;Ei" xmlns="" />
+  <String Id="WixUIOK" Overridable="yes" Value="OK" xmlns="" />
+  <String Id="WixUIPrint" Overridable="yes" Value="&amp;Prindi" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Lugege toote [ProductName] litsentsilepingut" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="&amp;Nõustun litsentsilepingu tingimustega" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Klõpsake käsku Installi toote installimiseks vaikesätetega kõigile kasutajatele. Klõpsake suvandit Täpsemalt installimissuvandite muutmiseks." xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Klõpsake Installi toote installimiseks vaikesätetega ainult teie jaoks. Klõpsake Täpsemalt installimissuvandite muutmiseks." xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Installi" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="T&amp;äpsemalt" xmlns="" />
+  <String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8" xmlns="" />
+  <String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12" xmlns="" />
+  <String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9" xmlns="" />
+  <String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8" xmlns="" />
+  <String Id="Advanced_Font_FaceName" Overridable="yes" Value="tahoma" xmlns="" />
+  <String Id="BrowseDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Vaata:" xmlns="" />
+  <String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up" xmlns="" />
+  <String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Taseme võrra üles" xmlns="" />
+  <String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New" xmlns="" />
+  <String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Loo uus kaust" xmlns="" />
+  <String Id="BrowseDlgPathLabel" Overridable="yes" Value="&amp;Kausta nimi:" xmlns="" />
+  <String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="BrowseDlgDescription" Overridable="yes" Value="Liikuge sirvides soovitud sihtkausta juurde" xmlns="" />
+  <String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Sihtkausta muutmine" xmlns="" />
+  <String Id="CancelDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="CancelDlgText" Overridable="yes" Value="Kas soovite kindlasti rakenduse [ProductName] installist loobuda?" xmlns="" />
+  <String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="CancelDlgIconTooltip" Overridable="yes" Value="Teabeikoon" xmlns="" />
+  <String Id="CustomizeDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="CustomizeDlgTree" Overridable="yes" Value="Valikupuu" xmlns="" />
+  <String Id="CustomizeDlgBrowse" Overridable="yes" Value="S&amp;irvimine..." xmlns="" />
+  <String Id="CustomizeDlgReset" Overridable="yes" Value="Läh&amp;htestus" xmlns="" />
+  <String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Ketta &amp;kasutus" xmlns="" />
+  <String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="CustomizeDlgText" Overridable="yes" Value="Klõpsake ikoone alloleval puul funktsioonide installimise viisi muutmiseks." xmlns="" />
+  <String Id="CustomizeDlgDescription" Overridable="yes" Value="Valige soovitud funktsioonide installimise viis." xmlns="" />
+  <String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kohandatud install" xmlns="" />
+  <String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription" xmlns="" />
+  <String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize" xmlns="" />
+  <String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation" xmlns="" />
+  <String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Asukoht:" xmlns="" />
+  <String Id="DiskCostDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="DiskCostDlgText" Overridable="yes" Value="Esiletõstetud draividel pole valitud funktsioonide jaoks piisavalt vaba kettaruumi. Võite mõne faili esiletõstetud draividelt eemaldada, installida vähem funktsioone või valida mõne muu sihtdraivi." xmlns="" />
+  <String Id="DiskCostDlgDescription" Overridable="yes" Value="Valitud funktsioonide installimiseks vajalik kettaruum." xmlns="" />
+  <String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kettaruumi nõuded" xmlns="" />
+  <String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="ErrorDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="ErrorDlgErrorText" Overridable="yes" Value="Teabetekst" xmlns="" />
+  <String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Teabeikoon" xmlns="" />
+  <String Id="ExitDialog_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="ExitDialogDescription" Overridable="yes" Value="Klõpsake installiviisardist väljumiseks nupul Lõpeta." xmlns="" />
+  <String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Toote [ProductName] installiviisard on lõpetanud" xmlns="" />
+  <String Id="FatalError_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Toote [ProductName] installiviisard peatus enneaegselt" xmlns="" />
+  <String Id="FatalErrorDescription1" Overridable="yes" Value="Toote [ProductName] installiviisard peatus tõrke tõttu enneaegselt. Teie süsteemi pole muudetud. Kui soovite programmi hiljem installida, käivitage installiviisard uuesti." xmlns="" />
+  <String Id="FatalErrorDescription2" Overridable="yes" Value="Klõpsake installiviisardist väljumiseks nupul Lõpeta." xmlns="" />
+  <String Id="FeaturesDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="FeaturesDlgTree" Overridable="yes" Value="Toote funktsioonid" xmlns="" />
+  <String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="FeaturesDlgDescription" Overridable="yes" Value="Valige soovitud funktsioonide installimise viis." xmlns="" />
+  <String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Toote funktsioonid" xmlns="" />
+  <String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription" xmlns="" />
+  <String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize" xmlns="" />
+  <String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Installi" xmlns="" />
+  <String Id="FeaturesDlgChange" Overridable="yes" Value="&amp;Muuda" xmlns="" />
+  <String Id="FilesInUse_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="FilesInUseExit" Overridable="yes" Value="V&amp;älju" xmlns="" />
+  <String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="FilesInUseText" Overridable="yes" Value="Järgmised rakendused kasutavad faile, mida see installiprogramm peab värskendama. Sulgege need rakendused ja klõpsake siis installimise jätkamiseks käsul &amp;Proovi uuesti või väljumiseks käsul Välju." xmlns="" />
+  <String Id="FilesInUseDescription" Overridable="yes" Value="Mõni värskendamist vajav fail on praegu kasutusel." xmlns="" />
+  <String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kasutuses olevad failid" xmlns="" />
+  <String Id="InstallDirDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="InstallDirDlgChange" Overridable="yes" Value="&amp;Muuda ..." xmlns="" />
+  <String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Sihtkaust" xmlns="" />
+  <String Id="InstallDirDlgDescription" Overridable="yes" Value="Klõpsake suvandit Järgmine vaikekausta installimiseks või suvandit Muuda teise sihtkoha valimiseks." xmlns="" />
+  <String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Installi toode [ProductName] asukohta:" xmlns="" />
+  <String Id="InstallScopeDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="InstallScopeDlgDescription" Overridable="yes" Value="Valige installimise ulatus ja kaust" xmlns="" />
+  <String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Installimise ulatus" xmlns="" />
+  <String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Installimine &amp;ainult teie jaoks ([LogonUser])" xmlns="" />
+  <String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="Toode [ProductName] installitakse kasutajapõhisesse kausta ja see on saadaval ainult teie kasutajakontole. Teil ei ole vaja kohaliku administraatori õigusi." xmlns="" />
+  <String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="Toode [ProductName] ei toeta kasutajapõhist installimist." xmlns="" />
+  <String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Installi kõigile kasutajatele sellel &amp;seadmel" xmlns="" />
+  <String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="Toode [ProductName] installitakse vaikimisi seadmepõhisesse kausta ja see on saadaval kõigile kasutajatele. Saate vaikeinstalli kausta muuta. Teil peavad olema kohaliku administraatori õigused." xmlns="" />
+  <String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="Installi&amp;kaust:" xmlns="" />
+  <String Id="InstallScopeDlgChange" Overridable="yes" Value="&amp;Muuda ..." xmlns="" />
+  <String Id="InvalidDirDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="InvalidDirDlgText" Overridable="yes" Value="Installikaust peab asuma kohalikul kõvakettal." xmlns="" />
+  <String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Teabeikoon" xmlns="" />
+  <String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="&amp;Nõustun litsentsilepingu tingimustega" xmlns="" />
+  <String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Palun lugege alltoodud litsentsileping hoolikalt läbi" xmlns="" />
+  <String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Lõppkasutaja litsentsileping" xmlns="" />
+  <String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="&amp;Muuda" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Muuda installi" xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="&amp;Paranda" xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Paranda install" xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Eemalda" xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Eemalda install" xmlns="" />
+  <String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Valige toiming, mida soovite teha." xmlns="" />
+  <String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Installi muutmine, parandamine või eemaldamine" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Saate muuta funktsioonide installimise viisi." xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="Tootel [ProductName] pole sõltumatult valitavaid funktsioone." xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Eemaldab toote [ProductName] teie arvutist." xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="Toodet [ProductName] ei saa eemaldada." xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Parandab viimase installimise tõrked, lahendades probleemid puuduvate või rikutud failide ja andmete, otseteede ja registrikirjete osas." xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="Toodet [ProductName] ei saa parandada." xmlns="" />
+  <String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Installiviisard võimaldab muuta toote [ProductName] funktsioonide installimise viisi teie arvutis või selle arvutist eemaldada. Jätkamiseks klõpsake käsul Edasi või installiviisardist väljumiseks käsul Loobu." xmlns="" />
+  <String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Tere tulemast toote [ProductName] installiviisardisse!" xmlns="" />
+  <String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="MsiRMFilesInUseText" Overridable="yes" Value="Järgmised rakendused kasutavad faile, mida see installiprogramm peab värskendama. Võite lasta installiviisardil need sulgeda ja uuesti käivitada või taaskäivitada arvuti hiljem." xmlns="" />
+  <String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Mõni värskendamist vajav fail on praegu kasutusel." xmlns="" />
+  <String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kasutuses olevad failid" xmlns="" />
+  <String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Sulgege rakendused ja proovige need uuesti käivitada." xmlns="" />
+  <String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Ärge sulgege rakendusi. Arvuti tuleb taaskäivitada." xmlns="" />
+  <String Id="OutOfDiskDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="OutOfDiskDlgText" Overridable="yes" Value="Esiletõstetud draividel pole praegu valitud funktsioonide jaoks piisavalt vaba kettaruumi. Võite mõne faili esiletõstetud draividelt eemaldada, installida vähem funktsioone või valida mõne muu sihtdraivi." xmlns="" />
+  <String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Installimiseks on vaja rohkem kettaruumi kui praegu saadaval." xmlns="" />
+  <String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kettaruum on otsas" xmlns="" />
+  <String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="OutOfRbDiskDlgText" Overridable="yes" Value="Esiletõstetud draividel pole praegu valitud funktsioonide jaoks piisavalt vaba kettaruumi. Võite mõne faili esiletõstetud draividelt eemaldada, installida vähem funktsioone või valida mõne muu sihtdraivi." xmlns="" />
+  <String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Installimiseks on vaja rohkem kettaruumi kui praegu saadaval." xmlns="" />
+  <String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Kettaruum on otsas" xmlns="" />
+  <String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Soovi korral võite installeri tagasipööramisfunktsiooni keelata. Tagasipööramise keelamisel ei saa installer teie arvuti algset olekut taastada, kui installimine peaks mingil põhjusel katkema. Kui soovite riskida ja tagasipööramise keelata, klõpsake käsul Jah." xmlns="" />
+  <String Id="PrepareDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="PrepareDlgDescription" Overridable="yes" Value="Palun oodake, kuni installiviisard valmistub teid installimisel juhendama." xmlns="" />
+  <String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Tere tulemast toote [ProductName] installiviisardisse!" xmlns="" />
+  <String Id="ProgressDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Palun oodake, kuni installiviisard installib toodet [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Toote [ProductName] installimine" xmlns="" />
+  <String Id="ProgressDlgTextChanging" Overridable="yes" Value="Palun oodake, kuni installiviisard muudab toodet [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Toote [ProductName] muutmine" xmlns="" />
+  <String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Palun oodake, kuni installiviisard parandab toodet [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Toote [ProductName] parandamine" xmlns="" />
+  <String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Palun oodake, kuni installiviisard eemaldab toodet [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Toote [ProductName] eemaldamine" xmlns="" />
+  <String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Palun oodake, kuni installiviisard värskendab toodet [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Toote [ProductName] värskendamine" xmlns="" />
+  <String Id="ProgressDlgProgressBar" Overridable="yes" Value="Edenemine" xmlns="" />
+  <String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Olek:" xmlns="" />
+  <String Id="ResumeDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Installi" xmlns="" />
+  <String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="ResumeDlgDescription" Overridable="yes" Value="Installiviisard viib toote [ProductName] teie arvutisse installimise lõpule. Jätkamiseks klõpsake käsul Installi, installiviisardist väljumiseks käsul Loobu." xmlns="" />
+  <String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Toote [ProductName] installiviisardi jätkamine" xmlns="" />
+  <String Id="SetupTypeDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Tavaline" xmlns="" />
+  <String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Tavaline install" xmlns="" />
+  <String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="K&amp;ohandatud" xmlns="" />
+  <String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Kohandatud install" xmlns="" />
+  <String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="T&amp;äielik" xmlns="" />
+  <String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Täielik install" xmlns="" />
+  <String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Installitüübi valimine" xmlns="" />
+  <String Id="SetupTypeDlgDescription" Overridable="yes" Value="Valige oma vajadustele vastav installitüüp" xmlns="" />
+  <String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Installitakse levinumad programmifunktsioonid. Soovitatav enamikule kasutajatele." xmlns="" />
+  <String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Võimaldab kasutajatel otsustada programmifunktsioonide installimise valiku ja koha üle. Soovitatav kogenud kasutajatele." xmlns="" />
+  <String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Installitakse kõik programmifunktsioonid. Nõuab kõige rohkem kettaruumi." xmlns="" />
+  <String Id="UserExit_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Toote [ProductName] installiviisardi töö on katkestatud" xmlns="" />
+  <String Id="UserExitDescription1" Overridable="yes" Value="Toote [ProductName] installimine on katkestatud. Teie süsteemi pole muudetud. Kui soovite selle programmi hiljem installida, käivitage install uuesti." xmlns="" />
+  <String Id="UserExitDescription2" Overridable="yes" Value="Klõpsake installiviisardist väljumiseks nupul Lõpeta." xmlns="" />
+  <String Id="VerifyReadyDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Installi" xmlns="" />
+  <String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Installimise alustamiseks klõpsake käsul Installi. Installisätete läbivaatamiseks või muutmiseks klõpsake käsul Tagasi. Viisardist väljumiseks klõpsake käsul Loobu." xmlns="" />
+  <String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Toote [ProductName] installimiseks valmis" xmlns="" />
+  <String Id="VerifyReadyDlgChange" Overridable="yes" Value="&amp;Muuda" xmlns="" />
+  <String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Installimise alustamiseks klõpsake käsul Muuda. Installisätete läbivaatamiseks või muutmiseks klõpsake käsul Tagasi. Viisardist väljumiseks klõpsake käsul Loobu." xmlns="" />
+  <String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Toote [ProductName] muutmiseks valmis" xmlns="" />
+  <String Id="VerifyReadyDlgRepair" Overridable="yes" Value="&amp;Paranda" xmlns="" />
+  <String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Toote [ProductName] installi parandamiseks klõpsake käsul Paranda. Installisätete läbivaatamiseks või muutmiseks klõpsake käsul Tagasi. Viisardist väljumiseks klõpsake käsul Loobu." xmlns="" />
+  <String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Toote [ProductName] parandamiseks valmis" xmlns="" />
+  <String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Eemalda" xmlns="" />
+  <String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Toote [ProductName] arvutist eemaldamiseks klõpsake käsul Eemalda. Installisätete läbivaatamiseks või muutmiseks klõpsake käsul Tagasi. Viisardist väljumiseks klõpsake käsul Loobu." xmlns="" />
+  <String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Toote [ProductName] eemaldamiseks valmis" xmlns="" />
+  <String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="&amp;Värskendamine" xmlns="" />
+  <String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Klõpsake käsul Värskenda toote [ProductName] värskendamiseks teie arvutis. Installisätete läbivaatamiseks või muutmiseks klõpsake käsul Tagasi. Viisardist väljumiseks klõpsake käsul Loobu." xmlns="" />
+  <String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Toote [ProductName] värskendamiseks valmis" xmlns="" />
+  <String Id="WaitForCostingDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Tagasi" xmlns="" />
+  <String Id="WaitForCostingDlgText" Overridable="yes" Value="Palun oodake, kuni installiprogramm lõpetab vajamineva kettaruumi kindlakstegemise." xmlns="" />
+  <String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam" xmlns="" />
+  <String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Hüüumärgi ikoon" xmlns="" />
+  <String Id="WelcomeDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="WelcomeDlgDescription" Overridable="yes" Value="Installiviisard installib toote [ProductName] teie arvutisse. Jätkamiseks klõpsake käsul Edasi või installiviisardist väljumiseks käsul Loobu." xmlns="" />
+  <String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Installiviisard värskendab toodet [ProductName] teie arvutis. Jätkamiseks klõpsake käsul Edasi või installiviisardist väljumiseks käsul Loobu." xmlns="" />
+  <String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Tere tulemast toote [ProductName] installiviisardisse!" xmlns="" />
+  <String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="Toote [ProductName] install" xmlns="" />
+  <String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="&amp;Nõustun litsentsilepingu tingimustega" xmlns="" />
+  <String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Installi" xmlns="" />
+  <String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="&amp;Värskendamine" xmlns="" />
+  <String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Lugege toote [ProductName] litsentsilepingut" xmlns="" />
+  <String Id="ProgressTextInstallValidate" Overridable="yes" Value="Installi kinnitamine" xmlns="" />
+  <String Id="ProgressTextInstallFiles" Overridable="yes" Value="uute failide kopeerimine" xmlns="" />
+  <String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Fail: [1], kataloog: [9], maht: [6]" xmlns="" />
+  <String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Võrguinstallifailide kopeerimine" xmlns="" />
+  <String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Fail: [1], kataloog: [9], maht: [6]" xmlns="" />
+  <String Id="ProgressTextFileCost" Overridable="yes" Value="Ruuminõuete arvutamine" xmlns="" />
+  <String Id="ProgressTextCostInitialize" Overridable="yes" Value="Ruuminõuete arvutamine" xmlns="" />
+  <String Id="ProgressTextCostFinalize" Overridable="yes" Value="Ruuminõuete arvutamine" xmlns="" />
+  <String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Otseteede loomine" xmlns="" />
+  <String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Otsetee: [1]" xmlns="" />
+  <String Id="ProgressTextPublishComponents" Overridable="yes" Value="Sobivate komponentide avaldamine" xmlns="" />
+  <String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Komponendi ID: [1], täpsusti: [2]" xmlns="" />
+  <String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Tootefunktsioonide avaldamine" xmlns="" />
+  <String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Funktsioon: [1]" xmlns="" />
+  <String Id="ProgressTextPublishProduct" Overridable="yes" Value="Tooteteabe avaldamine" xmlns="" />
+  <String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Klassiserverite registreerimine" xmlns="" />
+  <String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Klassi ID: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Laiendiserverite registreerimine" xmlns="" />
+  <String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Laiend: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="MIME-teabe registreerimine" xmlns="" />
+  <String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="MIME-sisu tüüp: [1], laiend: [2]" xmlns="" />
+  <String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Programmi-identifikaatorite registreerimine" xmlns="" />
+  <String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [1]" xmlns="" />
+  <String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Registriruumi eraldamine" xmlns="" />
+  <String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Vaba ruum: [1]" xmlns="" />
+  <String Id="ProgressTextAppSearch" Overridable="yes" Value="Installitud rakenduste otsimine" xmlns="" />
+  <String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Atribuut: [1], allkiri: [2]" xmlns="" />
+  <String Id="ProgressTextBindImage" Overridable="yes" Value="Täitmisfailide sidumine" xmlns="" />
+  <String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Fail: [1]" xmlns="" />
+  <String Id="ProgressTextCCPSearch" Overridable="yes" Value="Sobivate toodete otsimine" xmlns="" />
+  <String Id="ProgressTextCreateFolders" Overridable="yes" Value="Kaustade loomine" xmlns="" />
+  <String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Kaust: [1]" xmlns="" />
+  <String Id="ProgressTextDeleteServices" Overridable="yes" Value="Teenuste kustutamine" xmlns="" />
+  <String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Teenus: [1]" xmlns="" />
+  <String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Duplikaatfailide loomine" xmlns="" />
+  <String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Fail: [1], kataloog: [9], maht: [6]" xmlns="" />
+  <String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Seotud rakenduste otsimine" xmlns="" />
+  <String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Leitud rakendus: [1]" xmlns="" />
+  <String Id="ProgressTextInstallODBC" Overridable="yes" Value="ODBC-komponentide installimine" xmlns="" />
+  <String Id="ProgressTextInstallServices" Overridable="yes" Value="Uute teenuste installimine" xmlns="" />
+  <String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Teenus: [2]" xmlns="" />
+  <String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Käivitustingimuste hindamine" xmlns="" />
+  <String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Funktsiooniolekute migreerimine seotud rakendustest" xmlns="" />
+  <String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Rakendus: [1]" xmlns="" />
+  <String Id="ProgressTextMoveFiles" Overridable="yes" Value="Failide teisaldamine" xmlns="" />
+  <String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Fail: [1], kataloog: [9], maht: [6]" xmlns="" />
+  <String Id="ProgressTextPatchFiles" Overridable="yes" Value="Failide paikamine" xmlns="" />
+  <String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Fail: [1], kataloog: [2], maht: [3]" xmlns="" />
+  <String Id="ProgressTextProcessComponents" Overridable="yes" Value="Komponendi registreeringu värskendamine" xmlns="" />
+  <String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="COM+ rakenduste ja komponentide registreerimine" xmlns="" />
+  <String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="Rakenduse ID: [1]{{, rakenduse tüüp: [2], kasutajad: [3], RSN: [4]}}" xmlns="" />
+  <String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Fontide registreerimine" xmlns="" />
+  <String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Font: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Toote registreerimine" xmlns="" />
+  <String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Tüübiteekide registreerimine" xmlns="" />
+  <String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterUser" Overridable="yes" Value="Kasutaja registreerimine" xmlns="" />
+  <String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Duplikaatfailide eemaldamine" xmlns="" />
+  <String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Fail: [1], kataloog: [9]" xmlns="" />
+  <String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Keskkonnastringide värskendamine" xmlns="" />
+  <String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Nimi: [1], väärtus: [2], toiming [3]" xmlns="" />
+  <String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Rakenduste eemaldamine" xmlns="" />
+  <String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Rakendus: [1], käsurida: [2]" xmlns="" />
+  <String Id="ProgressTextRemoveFiles" Overridable="yes" Value="failide eemaldamine" xmlns="" />
+  <String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Fail: [1], kataloog: [9]" xmlns="" />
+  <String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Kaustade eemaldamine" xmlns="" />
+  <String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Kaust: [1]" xmlns="" />
+  <String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="INI-failide kirjete eemaldamine" xmlns="" />
+  <String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Fail: [1], sektsioon: [2], võti: [3], väärtus: [4]" xmlns="" />
+  <String Id="ProgressTextRemoveODBC" Overridable="yes" Value="ODBC-komponentide eemaldamine" xmlns="" />
+  <String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Süsteemiregistri väärtuste eemaldamine" xmlns="" />
+  <String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Võti: [1], nimi: [2]" xmlns="" />
+  <String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Otseteede eemaldamine" xmlns="" />
+  <String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Otsetee: [1]" xmlns="" />
+  <String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Sobivate toodete otsimine" xmlns="" />
+  <String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Moodulite registreerimine" xmlns="" />
+  <String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Fail: [1], kaust: [2]" xmlns="" />
+  <String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Moodulite registreeringu tühistamine" xmlns="" />
+  <String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Fail: [1], kaust: [2]" xmlns="" />
+  <String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="ODBC-kataloogide lähtestamine" xmlns="" />
+  <String Id="ProgressTextStartServices" Overridable="yes" Value="Teenuste käivitamine" xmlns="" />
+  <String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Teenus: [1]" xmlns="" />
+  <String Id="ProgressTextStopServices" Overridable="yes" Value="Teenuste peatamine" xmlns="" />
+  <String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Teenus: [1]" xmlns="" />
+  <String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Sobivate komponentide avaldamise tühistamine" xmlns="" />
+  <String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Komponendi ID: [1], täpsusti: [2]" xmlns="" />
+  <String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Tootefunktsioonide avaldamise tühistamine" xmlns="" />
+  <String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Funktsioon: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Klassiserverite registreeringu tühistamine" xmlns="" />
+  <String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Klassi ID: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="COM+ rakenduste ja komponentide registreeringu tühistamine" xmlns="" />
+  <String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="Rakenduse ID: [1]{{, rakenduse tüüp: [2]}}" xmlns="" />
+  <String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Laiendiserverite registreeringu tühistamine" xmlns="" />
+  <String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Laiend: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Fontide registreeringu tühistamine" xmlns="" />
+  <String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Font: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="MIME-teabe registreeringu tühistamine" xmlns="" />
+  <String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="MIME-sisu tüüp: [1], laiend: [2]" xmlns="" />
+  <String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Programmi-identifikaatorite registreeringu tühistamine" xmlns="" />
+  <String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="ProgId: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Tüübiteekide registreeringu tühistamine" xmlns="" />
+  <String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="LibID: [1]" xmlns="" />
+  <String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Keskkonnastringide värskendamine" xmlns="" />
+  <String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Nimi: [1], väärtus: [2], toiming [3]" xmlns="" />
+  <String Id="ProgressTextWriteIniValues" Overridable="yes" Value="INI-failide väärtuste kirjutamine" xmlns="" />
+  <String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Fail: [1], sektsioon: [2], võti: [3], väärtus: [4]" xmlns="" />
+  <String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Süsteemiregistri väärtuste kirjutamine" xmlns="" />
+  <String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Võti: [1], nimi: [2], väärtus: [3]" xmlns="" />
+  <String Id="ProgressTextAdvertise" Overridable="yes" Value="Rakenduse väljakuulutamine" xmlns="" />
+  <String Id="ProgressTextGenerateScript" Overridable="yes" Value="Skriptioperatsioonide loomine toimingule:" xmlns="" />
+  <String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Süsteemikataloogi installimine" xmlns="" />
+  <String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Fail: [1], sõltuvused: [2]" xmlns="" />
+  <String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Paketi teabe avaldamine" xmlns="" />
+  <String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Rakenduse kontekst: [1], paketi nimi: [2]" xmlns="" />
+  <String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Paketi teabe avaldamise tühistamine" xmlns="" />
+  <String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Rakenduse kontekst: [1], paketi nimi: [2]" xmlns="" />
+  <String Id="ProgressTextRollback" Overridable="yes" Value="Toimingu tagasipööramine:" xmlns="" />
+  <String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Varufailide eemaldamine" xmlns="" />
+  <String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Fail: [1]" xmlns="" />
+  <String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Teisaldatud failide eemaldamine" xmlns="" />
+  <String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Fail: [1], kataloog: [9]" xmlns="" />
+  <String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Toote teabe avaldamise tühistamine" xmlns="" />
+  <String Id="Error0" Overridable="yes" Value="{{Pöördumatu tõrge: }}" xmlns="" />
+  <String Id="Error1" Overridable="yes" Value="{{Tõrge [1]. }}" xmlns="" />
+  <String Id="Error2" Overridable="yes" Value="Hoiatus [1]." xmlns="" />
+  <String Id="Error4" Overridable="yes" Value="Teave [1]." xmlns="" />
+  <String Id="Error5" Overridable="yes" Value="Installeril ilmnes selle paketi installimisel ootamatu tõrge. See võib viidata selle paketi probleemile. Tõrkekood on [1]. {{Argumendid on järgmised: [2], [3], [4]}}" xmlns="" />
+  <String Id="Error7" Overridable="yes" Value="{{Ketas täis: }}" xmlns="" />
+  <String Id="Error8" Overridable="yes" Value="Toiming [Time]: [1]. [2]" xmlns="" />
+  <String Id="Error9" Overridable="yes" Value="[ProductName]" xmlns="" />
+  <String Id="Error10" Overridable="yes" Value="{[2]}{, [3]}{, [4]}" xmlns="" />
+  <String Id="Error11" Overridable="yes" Value="Sõnumi tüüp: [1], argument: [2]" xmlns="" />
+  <String Id="Error12" Overridable="yes" Value="=== Logimise algus: [Date] [Time] ===" xmlns="" />
+  <String Id="Error13" Overridable="yes" Value="=== Logimise lõpp: [Date] [Time] ===" xmlns="" />
+  <String Id="Error14" Overridable="yes" Value="Toimingu algus [Time]: [1]." xmlns="" />
+  <String Id="Error15" Overridable="yes" Value="Toimingu lõpp [Time]: [1]. Tagastusväärtus [2]." xmlns="" />
+  <String Id="Error16" Overridable="yes" Value="Aega jäänud: {[1] minut(it) }{[2] sekund(it)}" xmlns="" />
+  <String Id="Error17" Overridable="yes" Value="Mälu pole piisavalt. Enne uuesti proovimist sulgege muud rakendused." xmlns="" />
+  <String Id="Error18" Overridable="yes" Value="Installer ei reageeri enam." xmlns="" />
+  <String Id="Error19" Overridable="yes" Value="Installer peatus enneaegselt." xmlns="" />
+  <String Id="Error20" Overridable="yes" Value="Palun oodake, kuni Windows konfigureerib toodet [ProductName]" xmlns="" />
+  <String Id="Error21" Overridable="yes" Value="Vajaliku teabe kogumine ..." xmlns="" />
+  <String Id="Error22" Overridable="yes" Value="Selle rakenduse vanemate versioonide eemaldamine ..." xmlns="" />
+  <String Id="Error23" Overridable="yes" Value="Selle rakenduse varasemate versioonide eemaldamise ettevalmistamine ..." xmlns="" />
+  <String Id="Error32" Overridable="yes" Value="Toote {[ProductName] }installimine on edukalt lõpule viidud." xmlns="" />
+  <String Id="Error33" Overridable="yes" Value="Toote {[ProductName] }installimine nurjus." xmlns="" />
+  <String Id="Error1101" Overridable="yes" Value="Failist [2] lugemisel ilmnes tõrge. {{ Süsteemitõrge [3].}} Veenduge, et fail on olemas ja teil on sellele juurdepääs." xmlns="" />
+  <String Id="Error1301" Overridable="yes" Value="Faili [2] ei saa luua. Samanimeline kaust on juba olemas. Tühistage install ja proovige installida mõnda teise asukohta." xmlns="" />
+  <String Id="Error1302" Overridable="yes" Value="Palun sisestage ketas: [2]" xmlns="" />
+  <String Id="Error1303" Overridable="yes" Value="Installeril pole kaustale [2] juurdepääsuks piisavaid õigusi. Installimist ei saa jätkata. Logige sisse administraatorina või pöörduge süsteemiadministraatori poole." xmlns="" />
+  <String Id="Error1304" Overridable="yes" Value="Tõrge faili [2] kirjutamisel. Veenduge, et teil oleks juurdepääs sellele kaustale." xmlns="" />
+  <String Id="Error1305" Overridable="yes" Value="Failist [2] lugemisel ilmnes tõrge. {{ Süsteemitõrge [3].}} Veenduge, et fail on olemas ja teil on sellele juurdepääs." xmlns="" />
+  <String Id="Error1306" Overridable="yes" Value="Fail [2] on mõnes muus rakenduses eksklusiivselt kasutusel. Sulgege kõik muud rakendused ja klõpsake siis käsul Proovi uuesti." xmlns="" />
+  <String Id="Error1307" Overridable="yes" Value="Faili [2] installimiseks pole piisavalt kettaruumi. Vabastage kettal ruumi ja klõpsake käsul Proovi uuesti. Väljumiseks klõpsake käsul Loobu." xmlns="" />
+  <String Id="Error1308" Overridable="yes" Value="Lähtefaili ei leitud: [2]. Veenduge, et fail oleks olemas ja pääsete sellele juurde." xmlns="" />
+  <String Id="Error1309" Overridable="yes" Value="Failist [3] lugemisel ilmnes tõrge. {{ Süsteemitõrge [2].}} Veenduge, et fail on olemas ja pääsete sellele juurde." xmlns="" />
+  <String Id="Error1310" Overridable="yes" Value="Faili [3] kirjutamisel ilmnes tõrge. {{ Süsteemitõrge [2].}} Veenduge, et teil on juurdepääs sellele kataloogile." xmlns="" />
+  <String Id="Error1311" Overridable="yes" Value="Lähtefaili ei leitud{{(CAB-fail)}}: [2]. Veenduge, et fail on olemas ja pääsete sellele juurde." xmlns="" />
+  <String Id="Error1312" Overridable="yes" Value="Kausta [2] ei saa luua. Samanimeline fail on juba olemas. Nimetage fail ümber või eemaldage see ja klõpsake siis käsul Proovi uuesti või klõpsake väljumiseks käsul Loobu." xmlns="" />
+  <String Id="Error1313" Overridable="yes" Value="Draiv [2] pole praegu saadaval. Valige mõni muu draiv." xmlns="" />
+  <String Id="Error1314" Overridable="yes" Value="Määratud tee [2] pole kättesaadav." xmlns="" />
+  <String Id="Error1315" Overridable="yes" Value="Määratud kausta [2] ei saa kirjutada." xmlns="" />
+  <String Id="Error1316" Overridable="yes" Value="Failist [2] lugemisel ilmnes võrgutõrge" xmlns="" />
+  <String Id="Error1317" Overridable="yes" Value="Kataloogi [2] loomisel ilmnes tõrge" xmlns="" />
+  <String Id="Error1318" Overridable="yes" Value="Kataloogi [2] loomisel ilmnes võrgutõrge" xmlns="" />
+  <String Id="Error1319" Overridable="yes" Value="Lähtefailikapi [2] avamisel ilmnes võrgutõrge" xmlns="" />
+  <String Id="Error1320" Overridable="yes" Value="Määratud tee on liiga pikk: [2]" xmlns="" />
+  <String Id="Error1321" Overridable="yes" Value="Installiprogrammil pole faili [2] muutmiseks piisavalt õigusi." xmlns="" />
+  <String Id="Error1322" Overridable="yes" Value="Osa kaustateest [2] ei sobi. See on kas tühi või selle pikkus ületab süsteemi lubatu." xmlns="" />
+  <String Id="Error1323" Overridable="yes" Value="Kaustatee [2] sisaldab sõnu, mis on kaustateede puhul sobimatud." xmlns="" />
+  <String Id="Error1324" Overridable="yes" Value="Kaustatee [2] sisaldab sobimatut märki." xmlns="" />
+  <String Id="Error1325" Overridable="yes" Value="[2] on faili lühinimena sobimatu." xmlns="" />
+  <String Id="Error1326" Overridable="yes" Value="Faili turvalisuse toomisel ilmnes tõrge: [3] GetLastError: [2]" xmlns="" />
+  <String Id="Error1327" Overridable="yes" Value="Sobimatu draiv: [2]" xmlns="" />
+  <String Id="Error1328" Overridable="yes" Value="Paiga rakendamisel failile [2] ilmnes tõrge. Arvatavasti on seda juba mõnel muul viisil värskendatud ja seetõttu ei saa see paik seda enam muuta. Lisateavet saate paiga tarnijalt. {{Süsteemitõrge: [3]}}" xmlns="" />
+  <String Id="Error1329" Overridable="yes" Value="Mõnda nõutavat faili ei saa installida, kuna CAB-fail [2] pole digitaalselt allkirjastatud. CAB-fail võib olla rikutud." xmlns="" />
+  <String Id="Error1330" Overridable="yes" Value="Mõnda nõutavat faili ei saa installida, kuna CAB-faili [2] digitaalne allkiri ei kehti. CAB-fail võib olla rikutud.{{ WinVerifyTrust tagastas tõrke [3].}}" xmlns="" />
+  <String Id="Error1331" Overridable="yes" Value="Faili [2] kopeerimine nurjus: CRC tõrge." xmlns="" />
+  <String Id="Error1332" Overridable="yes" Value="Faili [2] teisaldamine nurjus: CRC tõrge." xmlns="" />
+  <String Id="Error1333" Overridable="yes" Value="Faili [2] paikamine nurjus: CRC tõrge." xmlns="" />
+  <String Id="Error1334" Overridable="yes" Value="Faili [2] ei saa installida, sest seda faili CAB-failist [3] ei leia. See võib viidata võrgutõrkele, tõrkele CD-ROM-i lugemisel või probleemile selle paketiga." xmlns="" />
+  <String Id="Error1335" Overridable="yes" Value="Selle installi jaoks vajalik CAB-fail [2] on rikutud ja seda ei saa kasutada. See võib viidata võrgutõrkele, tõrkele CD-ROM-i lugemisel või probleemile selle paketiga." xmlns="" />
+  <String Id="Error1336" Overridable="yes" Value="Selle installi lõpuleviimiseks vajaliku ajutise faili loomisel ilmnes tõrge.{{ Kaust: [3]. Süsteemi tõrkekood: [2]}}" xmlns="" />
+  <String Id="Error1401" Overridable="yes" Value="Võtit [2] ei saanud luua. {{ Süsteemitõrge [3].}} Veenduge, et teil on sellele võtmele piisav juurdepääs või pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1402" Overridable="yes" Value="Võtit [2] ei saanud avada. {{ Süsteemitõrge [3].}} Veenduge, et teil on sellele võtmele piisav juurdepääs või pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1403" Overridable="yes" Value="Väärtust [2] ei saanud võtmest [3] kustutada. {{ Süsteemitõrge [4].}} Veenduge, et teil on sellele võtmele piisav juurdepääs või pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1404" Overridable="yes" Value="Võtit [2] ei saanud kustutada. {{ Süsteemitõrge [3].}} Veenduge, et teil on sellele võtmele piisav juurdepääs või pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1405" Overridable="yes" Value="Väärtust [2] ei saanud võtmest [3] lugeda. {{ Süsteemitõrge [4].}} Veenduge, et teil on sellele võtmele piisav juurdepääs või pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1406" Overridable="yes" Value="Väärtust [2] ei saanud võtmesse [3] kirjutada. {{ Süsteemitõrge [4].}} Veenduge, et teil on sellele võtmele piisav juurdepääs või pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1407" Overridable="yes" Value="Võtme [2] väärtuste nimesid ei saanud hankida. {{ Süsteemitõrge [3].}} Veenduge, et teil on sellele võtmele piisav juurdepääs või pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1408" Overridable="yes" Value="Võtme [2] alamvõtmete nimesid ei saanud hankida. {{ Süsteemitõrge [3].}} Veenduge, et teil on sellele võtmele piisav juurdepääs või pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1409" Overridable="yes" Value="Võtme [2] turbeteavet ei saanud lugeda. {{ Süsteemitõrge [3].}} Veenduge, et teil on sellele võtmele piisav juurdepääs või pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1410" Overridable="yes" Value="Saadaolevat registriruumi ei saanud suurendada. Selle rakenduse installimiseks on vaja [2] kB vaba registriruumi." xmlns="" />
+  <String Id="Error1500" Overridable="yes" Value="Teine install on pooleli. See install tuleb kõigepealt lõpule viia, enne kui saate jätkata uuega." xmlns="" />
+  <String Id="Error1501" Overridable="yes" Value="Turvatud andmetele juurdepääsul ilmnes tõrge. Veenduge, et Windows Installer on õigesti konfigureeritud ja proovige uuesti installida." xmlns="" />
+  <String Id="Error1502" Overridable="yes" Value="Kasutaja [2] on varem algatanud toote [3] installi. See kasutaja peab selle installi enne toote kasutamist uuesti käivitama. Teie praegune install jätkub nüüd." xmlns="" />
+  <String Id="Error1503" Overridable="yes" Value="Kasutaja [2] on varem algatanud toote [3] installi. See kasutaja peab selle installi enne toote kasutamist uuesti käivitama." xmlns="" />
+  <String Id="Error1601" Overridable="yes" Value="Kettaruum on otsas — draiv: [2]; vajalik ruum: [3] kB; saadaolev ruum: [4] kB. Vabastage kettaruumi ja proovige uuesti." xmlns="" />
+  <String Id="Error1602" Overridable="yes" Value="Kas soovite kindlasti loobuda?" xmlns="" />
+  <String Id="Error1603" Overridable="yes" Value="Fail [2][3] on kasutusel{ järgmises protsessis: nimi: [4], ID: [5], aknatiitel: [6]}. Sulgege see rakendus ja proovige uuesti." xmlns="" />
+  <String Id="Error1604" Overridable="yes" Value="Toode [2] on juba installitud, välistades käesoleva toote installimise. Need kaks toodet on ühildumatud." xmlns="" />
+  <String Id="Error1605" Overridable="yes" Value="Draivil [2] pole installi jätkamiseks koos lubatud taastamisega piisavalt kettaruumi. [3] kB on vaja, aga ainult [4] kB on vaba. Kui soovite jätkata installi ilma taasteteavet salvestamata, klõpsake käsul Ignoreeri, kui soovite saadaolevat ruumi uuesti kontrollida, klõpsake käsul Proovi uuesti, või kui soovite installi katkestada, klõpsake käsul Loobu." xmlns="" />
+  <String Id="Error1606" Overridable="yes" Value="Võrgukohale [2] ei pääse juurde." xmlns="" />
+  <String Id="Error1607" Overridable="yes" Value="Järgmised rakendused tuleks enne installi jätkamist sulgeda:" xmlns="" />
+  <String Id="Error1608" Overridable="yes" Value="Selle toote installiks ei leia arvutist ühtki varem installitud sobivat toodet." xmlns="" />
+  <String Id="Error1609" Overridable="yes" Value="Turbesätete rakendamisel ilmnes tõrge. [2] pole lubatud kasutaja või rühm. Probleem võib olla paketis või ühenduse loomisel võrgus oleva domeenikontrolleriga. Kontrollige oma võrguühendust ning klõpsake käsul Proovi uuesti või, kui soovite installi lõpetada, klõpsake käsul Loobu. {{Kasutaja SID leidmine nurjus, süsteemitõrge [3]}}" xmlns="" />
+  <String Id="Error1701" Overridable="yes" Value="Võti [2] on kehtetu. Veenduge, et sisestasite õige võtme." xmlns="" />
+  <String Id="Error1702" Overridable="yes" Value="Enne toote [2] konfigureerimise jätkamist peab installer süsteemi taaskäivitama. Arvuti kohe taaskäivitamiseks klõpsake käsul Jah, hiljem käsitsi taaskäivitamiseks klõpsake käsul Ei." xmlns="" />
+  <String Id="Error1703" Overridable="yes" Value="Muudatused toote [2] konfiguratsioonis jõustuvad alles pärast arvuti taaskäivitamist. Arvuti kohe taaskäivitamiseks klõpsake käsul Jah või hiljem käsitsi taaskäivitamiseks klõpsake käsul Ei." xmlns="" />
+  <String Id="Error1704" Overridable="yes" Value="Toote [2] install on praegu peatatud. Jätkamiseks peate selle installi tehtud muudatused tühistama. Kas soovite need muudatused tühistada?" xmlns="" />
+  <String Id="Error1705" Overridable="yes" Value="Selle toote varasem install on pooleli. Jätkamiseks peate selle installi tehtud muudatused tühistama. Kas soovite need muudatused tühistada?" xmlns="" />
+  <String Id="Error1706" Overridable="yes" Value="Toote [2] installipaketti ei õnnestu leida. Proovige uuesti installida, kasutades installipaketi [3] kehtivat eksemplari." xmlns="" />
+  <String Id="Error1707" Overridable="yes" Value="Install on edukalt lõpule viidud." xmlns="" />
+  <String Id="Error1708" Overridable="yes" Value="Install nurjus." xmlns="" />
+  <String Id="Error1709" Overridable="yes" Value="Toode: [2] -- [3]" xmlns="" />
+  <String Id="Error1710" Overridable="yes" Value="Võite taastada oma arvuti varasema seisundi või jätkata installimist hiljem. Kas soovite taastada?" xmlns="" />
+  <String Id="Error1711" Overridable="yes" Value="Installiteabe kirjutamisel kettale ilmnes tõrge. Kontrollige, kas kettal on piisavalt ruumi ja klõpsake käsul Proovi uuesti. Kui soovite installi katkestada, klõpsake käsul Loobu." xmlns="" />
+  <String Id="Error1712" Overridable="yes" Value="Mõnda arvuti varasema oleku taastamiseks vajalikku faili ei leitud. Taastamine pole võimalik." xmlns="" />
+  <String Id="Error1713" Overridable="yes" Value="[2] ei saa installida ühte oma vajalikest toodetest. Pöörduge tehnilise toe poole. {{Süsteemitõrge: [3].}}" xmlns="" />
+  <String Id="Error1714" Overridable="yes" Value="Toote [2] varasemat versiooni ei saa eemaldada. Pöörduge tehnilise toe poole. {{Süsteemitõrge [3].}}" xmlns="" />
+  <String Id="Error1715" Overridable="yes" Value="Installitud [2]" xmlns="" />
+  <String Id="Error1716" Overridable="yes" Value="Konfigureeritud [2]" xmlns="" />
+  <String Id="Error1717" Overridable="yes" Value="Eemaldatud [2]" xmlns="" />
+  <String Id="Error1718" Overridable="yes" Value="Digitaalallkirjapoliitika keeldus failist [2]." xmlns="" />
+  <String Id="Error1719" Overridable="yes" Value="Windows Installeri teenusele puudub juurdepääs. Nii võib juhtuda, kui Windows on turvarežiimis või Windows Installer pole õigesti installitud. Abi saamiseks pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1720" Overridable="yes" Value="Selle Windows Installeri paketiga ilmnes probleem. Installi lõpuleviimiseks vajalikku skripti ei saanud käivitada. Pöörduge oma tugipersonali või paketi tarnija poole. {{Kohandatud toimingu [2] skriptitõrge [3], [4]: [5] rida [6], veerg [7], [8] }}" xmlns="" />
+  <String Id="Error1721" Overridable="yes" Value="Selle Windows Installeri paketiga ilmnes probleem. Installi lõpuleviimiseks vajalikku programmi ei saanud käivitada. Pöörduge oma tugipersonali või paketi tarnija poole. {{Toiming: [2], asukoht: [3], käsk: [4] }}" xmlns="" />
+  <String Id="Error1722" Overridable="yes" Value="Selle Windows Installeri paketiga ilmnes probleem. Installi osana käivitatud programm ei jõudnud ootuspäraselt lõpule. Pöörduge oma tugipersonali või paketi tarnija poole. {{Toiming [2], asukoht: [3], käsk: [4] }}" xmlns="" />
+  <String Id="Error1723" Overridable="yes" Value="Selle Windows Installeri paketiga ilmnes probleem. Selle installi lõpuleviimiseks vajalikku DLL-i ei saanud käivitada. Pöörduge oma tugipersonali või paketi tarnija poole. {{Toiming [2], kirje: [3], teek: [4] }}" xmlns="" />
+  <String Id="Error1724" Overridable="yes" Value="Eemaldamine on edukalt lõpule viidud." xmlns="" />
+  <String Id="Error1725" Overridable="yes" Value="Eemaldamine nurjus." xmlns="" />
+  <String Id="Error1726" Overridable="yes" Value="Väljakuulutamine on edukalt lõpule viidud." xmlns="" />
+  <String Id="Error1727" Overridable="yes" Value="Väljakuulutamine nurjus." xmlns="" />
+  <String Id="Error1728" Overridable="yes" Value="Konfigureerimine on edukalt lõpule viidud." xmlns="" />
+  <String Id="Error1729" Overridable="yes" Value="Konfigureerimine nurjus." xmlns="" />
+  <String Id="Error1730" Overridable="yes" Value="Selle rakenduse eemaldamiseks peate olema administraator. Rakenduse eemaldamiseks peate administraatorina sisse logima või pöörduma abi saamiseks tehnilise toe poole." xmlns="" />
+  <String Id="Error1731" Overridable="yes" Value="Toote [2] lähteinstallipakett pole kliendipaketiga sünkroonitud. Proovige uuesti installida, kasutades installipaketi [3] kehtivat eksemplari." xmlns="" />
+  <String Id="Error1732" Overridable="yes" Value="Rakenduse [2] installi lõpuleviimiseks peate oma arvuti taaskäivitama. Teised kasutajad on praegu sellesse arvutisse sisse logitud ja taaskäivitamisel võib nende töö kaotsi minna. Kas soovite kohe taaskäivitada?" xmlns="" />
+  <String Id="Error1801" Overridable="yes" Value="Tee [2] ei sobi. Palun määrake sobiv tee." xmlns="" />
+  <String Id="Error1802" Overridable="yes" Value="Mälu pole piisavalt. Enne uuesti proovimist sulgege muud rakendused." xmlns="" />
+  <String Id="Error1803" Overridable="yes" Value="Draivis [2] pole ketast. Palun sisestage ketas ja klõpsake käsul Proovi uuesti või eelmisena valitud draivi juurde tagasi pöördumiseks käsul Loobu." xmlns="" />
+  <String Id="Error1804" Overridable="yes" Value="Draivis [2] pole ketast. Palun sisestage ketas ja klõpsake käsul Proovi uuesti või sirvimisdialoogi tagasipöördumiseks ja muu draivi valimiseks käsul Loobu." xmlns="" />
+  <String Id="Error1805" Overridable="yes" Value="Kausta [2] pole olemas. Sisestage mõne olemasoleva kausta tee." xmlns="" />
+  <String Id="Error1806" Overridable="yes" Value="Teil pole selle kausta lugemiseks piisavaid õigusi." xmlns="" />
+  <String Id="Error1807" Overridable="yes" Value="Installi jaoks sobivat sihtkausta ei saanud määrata." xmlns="" />
+  <String Id="Error1901" Overridable="yes" Value="Installi lähteandmebaasist [2] lugemisel ilmnes tõrge." xmlns="" />
+  <String Id="Error1902" Overridable="yes" Value="Taaskäivituse ajastamise toiming: faili [2] ümbernimetamine failiks [3]. Toimingu lõpuleviimiseks tuleb arvuti taaskäivitada." xmlns="" />
+  <String Id="Error1903" Overridable="yes" Value="Taaskäivituse ajastamise toiming: faili [2] kustutamine. Toimingu lõpuleviimiseks tuleb arvuti taaskäivitada." xmlns="" />
+  <String Id="Error1904" Overridable="yes" Value="Mooduli [2] registreerimine nurjus. HRESULT [3]. Pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1905" Overridable="yes" Value="Mooduli [2] registrist eemaldamine nurjus. HRESULT [3]. Pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1906" Overridable="yes" Value="Paketi [2] vahemällu salvestamine nurjus. Tõrge: [3]. Pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1907" Overridable="yes" Value="Fonti [2] ei saanud registreerida. Veenduge, et teil on fontide installimiseks piisavad õigused ja et teie süsteem toetab seda fonti." xmlns="" />
+  <String Id="Error1908" Overridable="yes" Value="Fondi [2] registreeringut ei saanud tühistada. Veenduge, et teil on fontide eemaldamiseks piisavad õigused." xmlns="" />
+  <String Id="Error1909" Overridable="yes" Value="Otseteed [2] ei saanud luua. Veenduge, et sihtkaust on olemas ja et teil on sellele juurdepääs." xmlns="" />
+  <String Id="Error1910" Overridable="yes" Value="Otseteed [2] ei saanud eemaldada. Veenduge, et see otsetee on olemas ja et teil on sellele juurdepääs." xmlns="" />
+  <String Id="Error1911" Overridable="yes" Value="Faili [2] tüübiteeki ei saanud registreerida. Pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1912" Overridable="yes" Value="Faili [2] tüübiteeki ei saanud registrist eemaldada. Pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1913" Overridable="yes" Value="INI-faili [2][3] ei saanud värskendada. Veenduge, et see fail on olemas ja et teil on sellele juurdepääs." xmlns="" />
+  <String Id="Error1914" Overridable="yes" Value="Faili [2] ei saanud ajastada faili [3] taaskäivitamisel asendama. Veenduge, et teil on faili [3] kirjutusõigus." xmlns="" />
+  <String Id="Error1915" Overridable="yes" Value="ODBC-draiverihalduri eemaldamisel ilmnes tõrge, ODBC tõrge [2]: [3]. Pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1916" Overridable="yes" Value="ODBC-draiverihalduri installimisel ilmnes tõrge, ODBC tõrge [2]: [3]. Pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1917" Overridable="yes" Value="ODBC-draiveri [4] eemaldamisel ilmnes tõrge, ODBC tõrge [2]: [3]. Veenduge, et teil on ODBC-draiverite eemaldamiseks piisavad õigused." xmlns="" />
+  <String Id="Error1918" Overridable="yes" Value="ODBC-draiveri [4] installimisel ilmnes tõrge, ODBC tõrge [2]: [3]. Veenduge, et fail [4] on olemas ja et teil on sellele juurdepääs." xmlns="" />
+  <String Id="Error1919" Overridable="yes" Value="ODBC-andmeallika [4] konfigureerimisel ilmnes tõrge, ODBC tõrge [2]: [3]. Veenduge, et fail [4] on olemas ja et teil on sellele juurdepääs." xmlns="" />
+  <String Id="Error1920" Overridable="yes" Value="Teenuse [2] ([3]) käivitamine nurjus. Veenduge, et teil on süsteemiteenuste käivitamiseks piisavad õigused." xmlns="" />
+  <String Id="Error1921" Overridable="yes" Value="Teenust [2] ([3]) ei saanud peatada. Veenduge, et teil on süsteemiteenuste peatamiseks piisavad õigused." xmlns="" />
+  <String Id="Error1922" Overridable="yes" Value="Teenust [2] ([3]) ei saanud kustutada. Veenduge, et teil on süsteemiteenuste kustutamiseks piisavad õigused." xmlns="" />
+  <String Id="Error1923" Overridable="yes" Value="Teenust [2] ([3]) ei saanud installida. Veenduge, et teil on süsteemiteenuste installimiseks piisavad õigused." xmlns="" />
+  <String Id="Error1924" Overridable="yes" Value="Keskkonnamuutujat [2] ei saanud värskendada. Veenduge, et teil on keskkonnamuutujate muutmiseks piisavad õigused." xmlns="" />
+  <String Id="Error1925" Overridable="yes" Value="Teil pole arvuti kõigi kasutajate jaoks vajaliku installiprotsessi lõpuleviimiseks piisavaid õigusi. Logige sisse administraatorina ja proovige siis uuesti installida." xmlns="" />
+  <String Id="Error1926" Overridable="yes" Value="Faili [3] turbeteavet ei saanud määrata. Tõrge: [2]. Veenduge, et teil on selle faili turbeõiguste muutmiseks piisavad õigused." xmlns="" />
+  <String Id="Error1927" Overridable="yes" Value="Component Services (COM+ 1.0) pole sellesse arvutisse installitud. Selle installi lõpuleviimiseks on Component Services nõutav. Component Services on olemas operatsioonisüsteemis Windows 2000." xmlns="" />
+  <String Id="Error1928" Overridable="yes" Value="Rakenduse COM+ registreerimisel ilmnes tõrge. Lisateabe saamiseks pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1929" Overridable="yes" Value="Rakenduse COM+ registrist eemaldamisel ilmnes tõrge. Lisateabe saamiseks pöörduge oma tugipersonali poole." xmlns="" />
+  <String Id="Error1930" Overridable="yes" Value="Teenuse [2] ([3]) kirjeldust ei saanud muuta." xmlns="" />
+  <String Id="Error1931" Overridable="yes" Value="Windows Installeri teenus ei saa süsteemifaili [2] värskendada, kuna Windows kaitseb seda faili. On võimalik, et selle programmi õige töötamise tagamiseks peate oma operatsioonisüsteemi värskendama. {{Paketi versioon: [3], operatsioonisüsteemi kaitstud versioon: [4]}}" xmlns="" />
+  <String Id="Error1932" Overridable="yes" Value="Windows Installer ei saa kaitstud Windowsi faili [2] värskendada. {{Paketi versioon: [3], operatsioonisüsteemi kaitstud versioon: [4], SFP tõrge: [5]}}" xmlns="" />
+  <String Id="Error1933" Overridable="yes" Value="Windows Installer ei saanud värskendada ühte või mitut kaitstud Windowsi faili. {{SFP tõrge: [2]. Kaitstud failide loend:\r\n[3]}}" xmlns="" />
+  <String Id="Error1934" Overridable="yes" Value="Arvuti poliitika keelab kasutajapoolse installimise." xmlns="" />
+  <String Id="Error1935" Overridable="yes" Value="Paketi [6] installi ajal ilmnes tõrge. Lisateavet leiate spikri- ja tugikeskusest. HRESULT: [3]. {{paketi liides: [4], funktsioon: [5], komponent: [2]}}" xmlns="" />
+  <String Id="Error1936" Overridable="yes" Value="Paketi [6] installi ajal ilmnes tõrge. Paketi nimi pole tugev või pakett pole allkirjastatud minimaalse võtmepikkusega. HRESULT: [3]. {{paketi liides: [4], funktsioon: [5], komponent: [2]}}" xmlns="" />
+  <String Id="Error1937" Overridable="yes" Value="Paketi [6] installi ajal ilmnes tõrge. Allkirja või kataloogi ei saanud kinnitada või see pole sobiv. HRESULT: [3]. {{paketi liides: [4], funktsioon: [5], komponent: [2]}}" xmlns="" />
+  <String Id="Error1938" Overridable="yes" Value="Paketi [6] installi ajal ilmnes tõrge. Ühte või mitut paketi moodulit ei leia. HRESULT: [3]. {{paketi liides: [4], funktsioon: [5], komponent: [2]}}" xmlns="" />
+  <String Id="UITextbytes" Overridable="yes" Value="baidid" xmlns="" />
+  <String Id="UITextGB" Overridable="yes" Value="GB" xmlns="" />
+  <String Id="UITextKB" Overridable="yes" Value="kB" xmlns="" />
+  <String Id="UITextMB" Overridable="yes" Value="MB" xmlns="" />
+  <String Id="UITextMenuAbsent" Overridable="yes" Value="Kogu funktsioon muutub kättesaamatuks" xmlns="" />
+  <String Id="UITextMenuAdvertise" Overridable="yes" Value="Funktsioon installitakse vajadusel" xmlns="" />
+  <String Id="UITextMenuAllCD" Overridable="yes" Value="Kogu funktsioon installitakse CD-lt käitatavana" xmlns="" />
+  <String Id="UITextMenuAllLocal" Overridable="yes" Value="Kogu funktsioon installitakse kohalikule kõvakettale" xmlns="" />
+  <String Id="UITextMenuAllNetwork" Overridable="yes" Value="Kogu funktsioon installitakse võrgust käitatavana" xmlns="" />
+  <String Id="UITextMenuCD" Overridable="yes" Value="Installitakse CD-lt käitatavana" xmlns="" />
+  <String Id="UITextMenuLocal" Overridable="yes" Value="Installitakse kohalikule kõvakettale" xmlns="" />
+  <String Id="UITextMenuNetwork" Overridable="yes" Value="Installitakse võrgust käitatavana" xmlns="" />
+  <String Id="UITextNewFolder" Overridable="yes" Value="Kaust|Uus kaust" xmlns="" />
+  <String Id="UITextScriptInProgress" Overridable="yes" Value="Vajaliku teabe kogumine ..." xmlns="" />
+  <String Id="UITextSelAbsentAbsent" Overridable="yes" Value="See funktsioon jääb installimata" xmlns="" />
+  <String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="See funktsioon määratakse nõudmisel installitavaks" xmlns="" />
+  <String Id="UITextSelAbsentCD" Overridable="yes" Value="See funktsioon installitakse CD-lt käitatavana" xmlns="" />
+  <String Id="UITextSelAbsentLocal" Overridable="yes" Value="See funktsioon installitakse kohalikule kõvakettale" xmlns="" />
+  <String Id="UITextSelAbsentNetwork" Overridable="yes" Value="See funktsioon installitakse võrgust käitatavana" xmlns="" />
+  <String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="See funktsioon muutub kättesaamatuks" xmlns="" />
+  <String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Installitakse nõudmisel" xmlns="" />
+  <String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Seda funktsiooni saab edaspidi käitada CD-lt" xmlns="" />
+  <String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="See funktsioon installitakse kohalikule kõvakettale" xmlns="" />
+  <String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Seda funktsiooni saab edaspidi käitada võrgust" xmlns="" />
+  <String Id="UITextSelCDAbsent" Overridable="yes" Value="See funktsioon desinstallitakse täielikult, te ei saa seda enam CD-lt käitada" xmlns="" />
+  <String Id="UITextSelCDAdvertise" Overridable="yes" Value="See senini CD-lt käitatav funktsioon määratakse vajadusel installitavaks" xmlns="" />
+  <String Id="UITextSelCDCD" Overridable="yes" Value="See funktsioon jääb CD-lt käitatavaks" xmlns="" />
+  <String Id="UITextSelCDLocal" Overridable="yes" Value="Funktsiooni olek muutub CD-l käitatavast kohalikule kõvakettale installitavaks" xmlns="" />
+  <String Id="UITextSelChildCostNeg" Overridable="yes" Value="See komponent vabastab teie kõvakettal [1]." xmlns="" />
+  <String Id="UITextSelChildCostPos" Overridable="yes" Value="See funktsioon nõuab [1] kõvakettaruumi." xmlns="" />
+  <String Id="UITextSelCostPending" Overridable="yes" Value="Selle funktsiooni kulu arvutamine ..." xmlns="" />
+  <String Id="UITextSelLocalAbsent" Overridable="yes" Value="See funktsioon eemaldatakse täielikult" xmlns="" />
+  <String Id="UITextSelLocalAdvertise" Overridable="yes" Value="See funktsioon eemaldatakse kohalikult kõvakettalt, kuid määratakse installitavaks nõudmisel" xmlns="" />
+  <String Id="UITextSelLocalCD" Overridable="yes" Value="See funktsioon eemaldatakse teie kohalikult kõvakettalt, kuid on edaspidi siiski käitatav CD-lt" xmlns="" />
+  <String Id="UITextSelLocalLocal" Overridable="yes" Value="See funktsioon jääb kohalikule kõvakettale installituks" xmlns="" />
+  <String Id="UITextSelLocalNetwork" Overridable="yes" Value="See funktsioon eemaldatakse teie kohalikult kõvakettalt, kuid võrgust saab seda endiselt käitada" xmlns="" />
+  <String Id="UITextSelNetworkAbsent" Overridable="yes" Value="See funktsioon desinstallitakse täielikult, te ei saa seda enam võrgust käitada" xmlns="" />
+  <String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Funktsiooni olek muutub võrgus käitatavast nõudmisel installitavaks" xmlns="" />
+  <String Id="UITextSelNetworkLocal" Overridable="yes" Value="Funktsiooni olek muutub võrgus käitatavast kohalikule kõvakettale installitavaks" xmlns="" />
+  <String Id="UITextSelNetworkNetwork" Overridable="yes" Value="See funktsioon jääb võrgust käitatavaks" xmlns="" />
+  <String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="See funktsioon vabastab [1] kõvakettaruumi. Valitud on [2] alamfunktsiooni [3]-st. Alamfunktsioonid vabastavad teie kõvakettal [4] ruumi." xmlns="" />
+  <String Id="UITextSelParentCostNegPos" Overridable="yes" Value="See funktsioon vabastab [1] kõvakettaruumi. Valitud on [2] alamfunktsiooni [3]-st. Alamfunktsioonide jaoks on vaja kõvakettal [4] ruumi." xmlns="" />
+  <String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Selle funktsiooni jaoks on vaja kõvakettal [1] ruumi. Valitud on [2] alamfunktsiooni [3]-st. Alamfunktsioonid vabastavad teie kõvakettal [4] ruumi." xmlns="" />
+  <String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Selle funktsiooni jaoks on vaja kõvakettal [1] ruumi. Valitud on [2] alamfunktsiooni [3]-st. Alamfunktsioonide jaoks on vaja kõvakettal [4] ruumi." xmlns="" />
+  <String Id="UITextTimeRemaining" Overridable="yes" Value="Aega jäänud: {[1] minut(it) }{[2] sekund(it)}" xmlns="" />
+  <String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Saadaval" xmlns="" />
+  <String Id="UITextVolumeCostDifference" Overridable="yes" Value="Erinevus" xmlns="" />
+  <String Id="UITextVolumeCostRequired" Overridable="yes" Value="Nõutav" xmlns="" />
+  <String Id="UITextVolumeCostSize" Overridable="yes" Value="Kettamaht" xmlns="" />
+  <String Id="UITextVolumeCostVolume" Overridable="yes" Value="Draiv" xmlns="" />
+</WixLocalization>

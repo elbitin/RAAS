@@ -1,1 +1,575 @@
-﻿<WixLocalization Culture="pl-pl" xmlns="http://wixtoolset.org/schemas/v4/wxl"><String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Odinstalowywanie konfiguracji Zapory systemu Windows" /><String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Cofanie konfiguracji Zapory systemu Windows" /><String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instalowanie konfiguracji Zapory systemu Windows" /><String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Cofanie konfiguracji Zapory systemu Windows" /><String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfigurowanie Zapory systemu Windows" /><String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfigurowanie Zapory systemu Windows" /><String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Nie można połączyć się z Zaporą systemu Windows. ([2] [3] [4] [5])" /><String Id="NetworkSharesTitle" Overridable="yes" Value="Serwer współdzielony sieciowo" /><String Id="NetworkSharesDescription" Overridable="yes" Value="Udostępniaj dyski w sieci, aby umożliwić kontrolę i przeglądanie z poziomu klienta RAAS" /><String Id="CanRebootTitle" Overridable="yes" Value="Można ponownie uruchomić" /><String Id="CanRebootDescription" Overridable="yes" Value="Zezwalaj na ponowne uruchamianie z klienta RAAS" /><String Id="ProductLanguage" Overridable="yes" Value="1045" /></WixLocalization>
+<WixLocalization Codepage="1250" Culture="pl-pl" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Odinstalowywanie konfiguracji Zapory systemu Windows" />
+  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Cofanie konfiguracji Zapory systemu Windows" />
+  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Instalowanie konfiguracji Zapory systemu Windows" />
+  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Cofanie konfiguracji Zapory systemu Windows" />
+  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfigurowanie Zapory systemu Windows" />
+  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfigurowanie Zapory systemu Windows" />
+  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Nie można połączyć się z Zaporą systemu Windows. ([2] [3] [4] [5])" />
+  <String Id="NetworkSharesTitle" Overridable="yes" Value="Serwer współdzielony sieciowo" />
+  <String Id="NetworkSharesDescription" Overridable="yes" Value="Udostępniaj dyski w sieci, aby umożliwić kontrolę i przeglądanie z poziomu klienta RAAS" />
+  <String Id="CanRebootTitle" Overridable="yes" Value="Można ponownie uruchomić" />
+  <String Id="CanRebootDescription" Overridable="yes" Value="Zezwalaj na ponowne uruchamianie z klienta RAAS" />
+  <String Id="ProductLanguage" Overridable="yes" Value="1045" />
+  <String Id="WixUIBack" Overridable="yes" Value="&amp;Wstecz" xmlns="" />
+  <String Id="WixUINext" Overridable="yes" Value="&amp;Dalej" xmlns="" />
+  <String Id="WixUICancel" Overridable="yes" Value="Anuluj" xmlns="" />
+  <String Id="WixUIFinish" Overridable="yes" Value="&amp;Zakończ" xmlns="" />
+  <String Id="WixUIRetry" Overridable="yes" Value="&amp;Ponów próbę" xmlns="" />
+  <String Id="WixUIIgnore" Overridable="yes" Value="&amp;Ignoruj" xmlns="" />
+  <String Id="WixUIYes" Overridable="yes" Value="&amp;Tak" xmlns="" />
+  <String Id="WixUINo" Overridable="yes" Value="&amp;Nie" xmlns="" />
+  <String Id="WixUIOK" Overridable="yes" Value="OK" xmlns="" />
+  <String Id="WixUIPrint" Overridable="yes" Value="D&amp;rukuj" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Przeczytaj Umowę licencyjną produktu [ProductName]" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="&amp;Akceptuję warunki Umowy licencyjnej" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes" Value="Kliknij przycisk Zainstaluj, aby zainstalować produkt z opcjami domyślnymi dla wszystkich użytkowników. Kliknij przycisk Zaawansowane, aby zmienić opcje instalacji." xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes" Value="Kliknij przycisk Zainstaluj, aby zainstalować produkt z opcjami domyślnymi tylko dla siebie. Kliknij przycisk Zaawansowane, aby zmienić opcje instalacji." xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Zainstaluj" xmlns="" />
+  <String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes" Value="Z&amp;aawansowane" xmlns="" />
+  <String Id="Advanced_Font_Normal_Size" Overridable="yes" Value="8" xmlns="" />
+  <String Id="Advanced_Font_Bigger_Size" Overridable="yes" Value="12" xmlns="" />
+  <String Id="Advanced_Font_Title_Size" Overridable="yes" Value="9" xmlns="" />
+  <String Id="Advanced_Font_Emphasized_Size" Overridable="yes" Value="8" xmlns="" />
+  <String Id="Advanced_Font_FaceName" Overridable="yes" Value="Tahoma" xmlns="" />
+  <String Id="BrowseDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="BrowseDlgComboLabel" Overridable="yes" Value="&amp;Szukaj w:" xmlns="" />
+  <String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes" Value="WixUI_Bmp_Up" xmlns="" />
+  <String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes" Value="Do góry o jeden poziom" xmlns="" />
+  <String Id="BrowseDlgNewFolder" Overridable="yes" Value="WixUI_Bmp_New" xmlns="" />
+  <String Id="BrowseDlgNewFolderTooltip" Overridable="yes" Value="Utwórz nowy folder" xmlns="" />
+  <String Id="BrowseDlgPathLabel" Overridable="yes" Value="Nazwa &amp;folderu:" xmlns="" />
+  <String Id="BrowseDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="BrowseDlgDescription" Overridable="yes" Value="Przejdź do folderu docelowego" xmlns="" />
+  <String Id="BrowseDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Zmień folder docelowy" xmlns="" />
+  <String Id="CancelDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="CancelDlgText" Overridable="yes" Value="Czy na pewno chcesz anulować instalację produktu [ProductName]?" xmlns="" />
+  <String Id="CancelDlgIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="CancelDlgIconTooltip" Overridable="yes" Value="Ikona informacji" xmlns="" />
+  <String Id="CustomizeDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="CustomizeDlgTree" Overridable="yes" Value="Drzewo wyborów" xmlns="" />
+  <String Id="CustomizeDlgBrowse" Overridable="yes" Value="&amp;Przeglądaj..." xmlns="" />
+  <String Id="CustomizeDlgReset" Overridable="yes" Value="Re&amp;setuj" xmlns="" />
+  <String Id="CustomizeDlgDiskCost" Overridable="yes" Value="Użycie dysk&amp;u" xmlns="" />
+  <String Id="CustomizeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="CustomizeDlgText" Overridable="yes" Value="Kliknij ikony w poniższym drzewie, aby zmienić sposób instalowania funkcji." xmlns="" />
+  <String Id="CustomizeDlgDescription" Overridable="yes" Value="Wybierz żądany sposób instalowania funkcji." xmlns="" />
+  <String Id="CustomizeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Instalacja niestandardowa" xmlns="" />
+  <String Id="CustomizeDlgItemDescription" Overridable="yes" Value="CustomizeDlgItemDescription-CustomizeDlgItemDescription" xmlns="" />
+  <String Id="CustomizeDlgItemSize" Overridable="yes" Value="CustomizeDlgItemSize-CustomizeDlgItemSize" xmlns="" />
+  <String Id="CustomizeDlgLocation" Overridable="yes" Value="CustomizeDlgLocation-CustomizeDlgLocation" xmlns="" />
+  <String Id="CustomizeDlgLocationLabel" Overridable="yes" Value="Lokalizacja:" xmlns="" />
+  <String Id="DiskCostDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="DiskCostDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="DiskCostDlgText" Overridable="yes" Value="Wyróżnione woluminy nie mają wystarczająco dużo dostępnego miejsca na dysku na wybrane funkcje. Możesz usunąć niektóre pliki z wyróżnionych woluminów, zainstalować mniej funkcji lub wybrać inne dyski docelowe." xmlns="" />
+  <String Id="DiskCostDlgDescription" Overridable="yes" Value="Miejsce na dysku wymagane do zainstalowania wybranych funkcji." xmlns="" />
+  <String Id="DiskCostDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Wymagane miejsce na dysku" xmlns="" />
+  <String Id="DiskCostDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="ErrorDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="ErrorDlgErrorText" Overridable="yes" Value="Tekst informacyjny" xmlns="" />
+  <String Id="ErrorDlgErrorIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="ErrorDlgErrorIconTooltip" Overridable="yes" Value="Ikona informacji" xmlns="" />
+  <String Id="ExitDialog_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="ExitDialogBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="ExitDialogDescription" Overridable="yes" Value="Kliknij przycisk Zakończ, aby zakończyć pracę Kreatora instalacji." xmlns="" />
+  <String Id="ExitDialogTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Kreator instalacji produktu [ProductName] ukończył pracę" xmlns="" />
+  <String Id="FatalError_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="FatalErrorBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="FatalErrorTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Kreator instalacji produktu [ProductName] przedwcześnie zakończył pracę" xmlns="" />
+  <String Id="FatalErrorDescription1" Overridable="yes" Value="Kreator instalacji produktu [ProductName] przedwcześnie zakończył pracę z powodu błędu. System nie został zmodyfikowany. Aby zainstalować ten program później, ponownie uruchom Kreatora instalacji." xmlns="" />
+  <String Id="FatalErrorDescription2" Overridable="yes" Value="Kliknij przycisk Zakończ, aby zakończyć pracę Kreatora instalacji." xmlns="" />
+  <String Id="FeaturesDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="FeaturesDlgTree" Overridable="yes" Value="Funkcje produktu" xmlns="" />
+  <String Id="FeaturesDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="FeaturesDlgDescription" Overridable="yes" Value="Wybierz żądany sposób instalowania funkcji." xmlns="" />
+  <String Id="FeaturesDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Funkcje produktu" xmlns="" />
+  <String Id="FeaturesDlgItemDescription" Overridable="yes" Value="FeaturesDlgItemDescription" xmlns="" />
+  <String Id="FeaturesDlgItemSize" Overridable="yes" Value="FeaturesDlgItemSize" xmlns="" />
+  <String Id="FeaturesDlgInstall" Overridable="yes" Value="&amp;Zainstaluj" xmlns="" />
+  <String Id="FeaturesDlgChange" Overridable="yes" Value="Z&amp;mień" xmlns="" />
+  <String Id="FilesInUse_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="FilesInUseExit" Overridable="yes" Value="&amp;Zakończ" xmlns="" />
+  <String Id="FilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="FilesInUseText" Overridable="yes" Value="Poniższe aplikacje korzystają z plików, które wymagają zaktualizowania za pomocą tego instalatora. Zamknij te aplikacje, a następnie kliknij przycisk &amp;Ponów próbę, aby kontynuować instalację, lub kliknij przycisk Zakończ, aby ją zakończyć." xmlns="" />
+  <String Id="FilesInUseDescription" Overridable="yes" Value="Niektóre pliki wymagające aktualizacji są obecnie używane." xmlns="" />
+  <String Id="FilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pliki w użyciu" xmlns="" />
+  <String Id="InstallDirDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="InstallDirDlgChange" Overridable="yes" Value="Z&amp;mień..." xmlns="" />
+  <String Id="InstallDirDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Folder docelowy" xmlns="" />
+  <String Id="InstallDirDlgDescription" Overridable="yes" Value="Kliknij przycisk Dalej, aby zainstalować w folderze domyślnym, lub kliknij przycisk Zmień, aby wybrać inny folder." xmlns="" />
+  <String Id="InstallDirDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="InstallDirDlgFolderLabel" Overridable="yes" Value="Zainstaluj produkt [ProductName] w folderze:" xmlns="" />
+  <String Id="InstallScopeDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="InstallScopeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="InstallScopeDlgDescription" Overridable="yes" Value="Wybierz zakres i folder instalacji" xmlns="" />
+  <String Id="InstallScopeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Zakres instalacji" xmlns="" />
+  <String Id="InstallScopeDlgPerUser" Overridable="yes" Value="{\WixUI_Font_Emphasized}Zainstaluj tylko dla &amp;siebie ([LogonUser])" xmlns="" />
+  <String Id="InstallScopeDlgPerUserDescription" Overridable="yes" Value="Produkt [ProductName] zostanie zainstalowany w folderze przypisanym do użytkownika i będzie dostępny tylko na Twoim koncie użytkownika. Nie potrzebujesz uprawnień administratora lokalnego." xmlns="" />
+  <String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes" Value="Produkt [ProductName] nie obsługuje instalacji przypisanej do użytkownika." xmlns="" />
+  <String Id="InstallScopeDlgPerMachine" Overridable="yes" Value="{\WixUI_Font_Emphasized}Zainstaluj dla wszystkich użytkowników tego &amp;komputera" xmlns="" />
+  <String Id="InstallScopeDlgPerMachineDescription" Overridable="yes" Value="Produkt [ProductName] zostanie domyślnie zainstalowany w folderze przypisanym do komputera i będzie dostępny dla wszystkich użytkowników. Domyślny folder instalacji możesz zmienić. Musisz mieć uprawnienia administratora lokalnego." xmlns="" />
+  <String Id="InstallScopeDlgFolderLabel" Overridable="yes" Value="&amp;Folder instalacji:" xmlns="" />
+  <String Id="InstallScopeDlgChange" Overridable="yes" Value="Z&amp;mień..." xmlns="" />
+  <String Id="InvalidDirDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="InvalidDirDlgText" Overridable="yes" Value="Katalog instalacji musi się znajdować na lokalnym dysku twardym." xmlns="" />
+  <String Id="InvalidDirDlgIcon" Overridable="yes" Value="WixUI_Ico_Info" xmlns="" />
+  <String Id="InvalidDirDlgIconTooltip" Overridable="yes" Value="Ikona informacji" xmlns="" />
+  <String Id="LicenseAgreementDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes" Value="&amp;Akceptuję warunki Umowy licencyjnej" xmlns="" />
+  <String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="LicenseAgreementDlgDescription" Overridable="yes" Value="Przeczytaj uważnie poniższą umowę licencyjną" xmlns="" />
+  <String Id="LicenseAgreementDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Umowa licencyjna użytkownika oprogramowania" xmlns="" />
+  <String Id="MaintenanceTypeDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeButton" Overridable="yes" Value="Z&amp;mień" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes" Value="Zmień instalację" xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairButton" Overridable="yes" Value="&amp;Napraw" xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes" Value="Napraw instalację" xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes" Value="&amp;Usuń" xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes" Value="Usuń instalację" xmlns="" />
+  <String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="MaintenanceTypeDlgDescription" Overridable="yes" Value="Wybierz operację, którą chcesz wykonać." xmlns="" />
+  <String Id="MaintenanceTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Zmienianie, naprawa lub usuwanie instalacji" xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeText" Overridable="yes" Value="Pozwala zmienić sposób, w jaki są zainstalowane funkcje." xmlns="" />
+  <String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes" Value="Produkt [ProductName] nie ma niezależnie wybieranych funkcji." xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveText" Overridable="yes" Value="Usuwa produkt [ProductName] z tego komputera." xmlns="" />
+  <String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes" Value="Nie można usunąć produktu [ProductName]." xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairText" Overridable="yes" Value="Naprawia błędy w najnowszej instalacji, rozwiązując problemy z brakującymi i uszkodzonymi plikami, skrótami i wpisami rejestru." xmlns="" />
+  <String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes" Value="Nie można naprawić produktu [ProductName]." xmlns="" />
+  <String Id="MaintenanceWelcomeDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="MaintenanceWelcomeDlgDescription" Overridable="yes" Value="Kreator instalacji pozwala zmienić sposób, w jaki funkcje produktu [ProductName] są zainstalowane na komputerze, lub usunąć go z komputera. Kliknij przycisk Dalej, aby kontynuować, lub Anuluj, aby zakończyć pracę Kreatora instalacji." xmlns="" />
+  <String Id="MaintenanceWelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Kreator instalacji produktu [ProductName] — Zapraszamy!" xmlns="" />
+  <String Id="MsiRMFilesInUse_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="MsiRMFilesInUseText" Overridable="yes" Value="Poniższe aplikacje korzystają z plików, które wymagają zaktualizowania za pomocą tego instalatora. Możesz zezwolić, aby Kreator instalacji zakończył ich działanie, a następnie spróbował uruchomić je ponownie lub uruchomił ponownie komputer." xmlns="" />
+  <String Id="MsiRMFilesInUseDescription" Overridable="yes" Value="Niektóre pliki wymagające aktualizacji są obecnie używane." xmlns="" />
+  <String Id="MsiRMFilesInUseTitle" Overridable="yes" Value="{\WixUI_Font_Title}Pliki w użyciu" xmlns="" />
+  <String Id="MsiRMFilesInUseUseRM" Overridable="yes" Value="&amp;Zamknij aplikacje i spróbuj uruchomić je ponownie." xmlns="" />
+  <String Id="MsiRMFilesInUseDontUseRM" Overridable="yes" Value="&amp;Nie zamykaj aplikacji (będzie wymagany ponowny rozruch komputera)." xmlns="" />
+  <String Id="OutOfDiskDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="OutOfDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="OutOfDiskDlgText" Overridable="yes" Value="W wyróżnionych woluminach jest za mało miejsca na dysku dla obecnie wybranych funkcji. Możesz usunąć niektóre pliki z wyróżnionych woluminów, zainstalować mniej funkcji lub wybrać inny dysk docelowy." xmlns="" />
+  <String Id="OutOfDiskDlgDescription" Overridable="yes" Value="Ilość miejsca na dysku wymagana do instalacji przekracza ilość dostępnego miejsca na dysku." xmlns="" />
+  <String Id="OutOfDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Za mało miejsca na dysku" xmlns="" />
+  <String Id="OutOfDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="OutOfRbDiskDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="OutOfRbDiskDlgText" Overridable="yes" Value="W wyróżnionych woluminach jest za mało miejsca na dysku dla obecnie wybranych funkcji. Możesz usunąć niektóre pliki z wyróżnionych woluminów, zainstalować mniej funkcji lub wybrać inny dysk docelowy." xmlns="" />
+  <String Id="OutOfRbDiskDlgDescription" Overridable="yes" Value="Ilość miejsca na dysku wymagana do instalacji przekracza ilość dostępnego miejsca na dysku." xmlns="" />
+  <String Id="OutOfRbDiskDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Za mało miejsca na dysku" xmlns="" />
+  <String Id="OutOfRbDiskDlgVolumeList" Overridable="yes" Value="{120}{70}{70}{70}{70}" xmlns="" />
+  <String Id="OutOfRbDiskDlgText2" Overridable="yes" Value="Alternatywnie możesz wyłączyć funkcję wycofywania Instalatora. Wyłączenie wycofywania uniemożliwi Instalatorowi przywrócenie oryginalnego stanu komputera w przypadku przerwania instalacji. Kliknij przycisk Tak, jeśli chcesz podjąć to ryzyko i wyłączyć funkcję wycofywania." xmlns="" />
+  <String Id="PrepareDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="PrepareDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="PrepareDlgDescription" Overridable="yes" Value="Zaczekaj, aż Kreator instalacji zakończy przygotowania do przeprowadzenia instalacji." xmlns="" />
+  <String Id="PrepareDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Kreator instalacji produktu [ProductName] — Zapraszamy!" xmlns="" />
+  <String Id="ProgressDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="ProgressDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="ProgressDlgTextInstalling" Overridable="yes" Value="Czekaj, aż Kreator instalacji zainstaluje produkt [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleInstalling" Overridable="yes" Value="{\WixUI_Font_Title}Instalowanie produktu [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextChanging" Overridable="yes" Value="Czekaj, aż Kreator instalacji wprowadzi zmiany w produkcie [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleChanging" Overridable="yes" Value="{\WixUI_Font_Title}Wprowadzanie zmian w produkcie [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextRepairing" Overridable="yes" Value="Czekaj, aż Kreator instalacji naprawi produkt [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleRepairing" Overridable="yes" Value="{\WixUI_Font_Title}Naprawianie produktu [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextRemoving" Overridable="yes" Value="Czekaj, aż Kreator instalacji usunie produkt [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleRemoving" Overridable="yes" Value="{\WixUI_Font_Title}Usuwanie produktu [ProductName]" xmlns="" />
+  <String Id="ProgressDlgTextUpdating" Overridable="yes" Value="Czekaj, aż Kreator instalacji zaktualizuje produkt [ProductName]." xmlns="" />
+  <String Id="ProgressDlgTitleUpdating" Overridable="yes" Value="{\WixUI_Font_Title}Aktualizowanie produktu [ProductName]" xmlns="" />
+  <String Id="ProgressDlgProgressBar" Overridable="yes" Value="Postęp" xmlns="" />
+  <String Id="ProgressDlgStatusLabel" Overridable="yes" Value="Status:" xmlns="" />
+  <String Id="ResumeDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="ResumeDlgInstall" Overridable="yes" Value="&amp;Zainstaluj" xmlns="" />
+  <String Id="ResumeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="ResumeDlgDescription" Overridable="yes" Value="Kreator instalacji wykona instalację produktu [ProductName] na tym komputerze. Kliknij przycisk Zainstaluj, aby kontynuować, lub kliknij przycisk Anuluj, aby zakończyć pracę Kreatora instalacji." xmlns="" />
+  <String Id="ResumeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Wznawianie pracy Kreatora instalacji produktu [ProductName]" xmlns="" />
+  <String Id="SetupTypeDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="SetupTypeDlgTypicalButton" Overridable="yes" Value="&amp;Typowa" xmlns="" />
+  <String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes" Value="Instalacja typowa" xmlns="" />
+  <String Id="SetupTypeDlgCustomButton" Overridable="yes" Value="Ni&amp;estandardowa" xmlns="" />
+  <String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes" Value="Instalacja niestandardowa" xmlns="" />
+  <String Id="SetupTypeDlgCompleteButton" Overridable="yes" Value="&amp;Pełna" xmlns="" />
+  <String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes" Value="Instalacja pełna" xmlns="" />
+  <String Id="SetupTypeDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="SetupTypeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Wybierz typ instalacji" xmlns="" />
+  <String Id="SetupTypeDlgDescription" Overridable="yes" Value="Wybierz typ instalacji, który najlepiej odpowiada Twoim potrzebom" xmlns="" />
+  <String Id="SetupTypeDlgTypicalText" Overridable="yes" Value="Instaluje najczęściej używane funkcje programu. Zalecana w przypadku większości użytkowników." xmlns="" />
+  <String Id="SetupTypeDlgCustomText" Overridable="yes" Value="Umożliwia użytkownikom wybranie funkcji programu do zainstalowania i lokalizacji, w której zostaną zainstalowane. Zalecana w przypadku użytkowników zaawansowanych." xmlns="" />
+  <String Id="SetupTypeDlgCompleteText" Overridable="yes" Value="Zostaną zainstalowane wszystkie funkcje programu. Wymaga najwięcej miejsca na dysku." xmlns="" />
+  <String Id="UserExit_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="UserExitBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="UserExitTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Działanie Kreatora instalacji produktu [ProductName] zostało przerwane" xmlns="" />
+  <String Id="UserExitDescription1" Overridable="yes" Value="Instalacja produktu [ProductName] została przerwana. System nie został zmodyfikowany. Aby zainstalować ten program później, ponownie uruchom instalację." xmlns="" />
+  <String Id="UserExitDescription2" Overridable="yes" Value="Kliknij przycisk Zakończ, aby zakończyć pracę Kreatora instalacji." xmlns="" />
+  <String Id="VerifyReadyDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgBannerBitmap" Overridable="yes" Value="WixUI_Bmp_Banner" xmlns="" />
+  <String Id="VerifyReadyDlgInstall" Overridable="yes" Value="&amp;Zainstaluj" xmlns="" />
+  <String Id="VerifyReadyDlgInstallText" Overridable="yes" Value="Kliknij przycisk Zainstaluj, aby rozpocząć instalację. Kliknij przycisk Wstecz, aby przejrzeć lub zmienić dowolne ustawienia instalacji. Kliknij przycisk Anuluj, aby zakończyć pracę kreatora." xmlns="" />
+  <String Id="VerifyReadyDlgInstallTitle" Overridable="yes" Value="{\WixUI_Font_Title}Wszystko gotowe do zainstalowania produktu [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgChange" Overridable="yes" Value="Z&amp;mień" xmlns="" />
+  <String Id="VerifyReadyDlgChangeText" Overridable="yes" Value="Kliknij przycisk Zmień, aby rozpocząć instalację. Kliknij przycisk Wstecz, aby przejrzeć lub zmienić dowolne ustawienia instalacji. Kliknij przycisk Anuluj, aby zakończyć pracę kreatora." xmlns="" />
+  <String Id="VerifyReadyDlgChangeTitle" Overridable="yes" Value="{\WixUI_Font_Title}Wszystko gotowe do wprowadzenia zmian w produkcie [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgRepair" Overridable="yes" Value="&amp;Napraw" xmlns="" />
+  <String Id="VerifyReadyDlgRepairText" Overridable="yes" Value="Kliknij przycisk Napraw, aby naprawić instalację produktu [ProductName]. Kliknij przycisk Wstecz, aby przejrzeć lub zmienić dowolne ustawienia instalacji. Kliknij przycisk Anuluj, aby zakończyć pracę kreatora." xmlns="" />
+  <String Id="VerifyReadyDlgRepairTitle" Overridable="yes" Value="{\WixUI_Font_Title}Wszystko gotowe do naprawienia produktu [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgRemove" Overridable="yes" Value="&amp;Usuń" xmlns="" />
+  <String Id="VerifyReadyDlgRemoveText" Overridable="yes" Value="Kliknij przycisk Usuń, aby usunąć produkt [ProductName] z tego komputera. Kliknij przycisk Wstecz, aby przejrzeć lub zmienić dowolne ustawienia instalacji. Kliknij przycisk Anuluj, aby zakończyć pracę kreatora." xmlns="" />
+  <String Id="VerifyReadyDlgRemoveTitle" Overridable="yes" Value="{\WixUI_Font_Title}Wszystko gotowe do usunięcia produktu [ProductName]" xmlns="" />
+  <String Id="VerifyReadyDlgUpdate" Overridable="yes" Value="Akt&amp;ualizuj" xmlns="" />
+  <String Id="VerifyReadyDlgUpdateText" Overridable="yes" Value="Kliknij przycisk Aktualizuj, aby zaktualizować produkt [ProductName] na tym komputerze. Kliknij przycisk Wstecz, aby przejrzeć lub zmienić dowolne ustawienia instalacji. Kliknij przycisk Anuluj, aby zakończyć pracę kreatora." xmlns="" />
+  <String Id="VerifyReadyDlgUpdateTitle" Overridable="yes" Value="{\WixUI_Font_Title}Wszystko gotowe do zaktualizowania produktu [ProductName]" xmlns="" />
+  <String Id="WaitForCostingDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="WaitForCostingDlgReturn" Overridable="yes" Value="&amp;Powrót" xmlns="" />
+  <String Id="WaitForCostingDlgText" Overridable="yes" Value="Zaczekaj, aż Instalator zakończy określanie wymaganej ilości miejsca na dysku." xmlns="" />
+  <String Id="WaitForCostingDlgIcon" Overridable="yes" Value="WixUI_Ico_Exclam" xmlns="" />
+  <String Id="WaitForCostingDlgIconTooltip" Overridable="yes" Value="Ikona wykrzyknika" xmlns="" />
+  <String Id="WelcomeDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="WelcomeDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="WelcomeDlgDescription" Overridable="yes" Value="Kreator instalacji zainstaluje produkt [ProductName] na tym komputerze. Kliknij przycisk Dalej, aby kontynuować, lub Anuluj, aby zakończyć pracę Kreatora instalacji." xmlns="" />
+  <String Id="WelcomeUpdateDlgDescriptionUpdate" Overridable="yes" Value="Kreator instalacji zaktualizuje produkt [ProductName] na tym komputerze. Kliknij przycisk Dalej, aby kontynuować, lub Anuluj, aby zakończyć pracę Kreatora instalacji." xmlns="" />
+  <String Id="WelcomeDlgTitle" Overridable="yes" Value="{\WixUI_Font_Bigger}Kreator instalacji produktu [ProductName] — Zapraszamy!" xmlns="" />
+  <String Id="WelcomeEulaDlg_Title" Overridable="yes" Value="Instalator produktu [ProductName]" xmlns="" />
+  <String Id="WelcomeEulaDlgBitmap" Overridable="yes" Value="WixUI_Bmp_Dialog" xmlns="" />
+  <String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes" Value="&amp;Akceptuję warunki Umowy licencyjnej" xmlns="" />
+  <String Id="WelcomeEulaDlgInstall" Overridable="yes" Value="&amp;Zainstaluj" xmlns="" />
+  <String Id="WelcomeEulaDlgUpdate" Overridable="yes" Value="Akt&amp;ualizuj" xmlns="" />
+  <String Id="WelcomeEulaDlgTitle" Overridable="yes" Value="{\WixUI_Font_Title}Przeczytaj umowę licencyjną produktu [ProductName]" xmlns="" />
+  <String Id="ProgressTextInstallValidate" Overridable="yes" Value="Sprawdzanie poprawności instalacji" xmlns="" />
+  <String Id="ProgressTextInstallFiles" Overridable="yes" Value="Kopiowanie nowych plików" xmlns="" />
+  <String Id="ProgressTextInstallFilesTemplate" Overridable="yes" Value="Plik: [1], katalog: [9], rozmiar: [6]" xmlns="" />
+  <String Id="ProgressTextInstallAdminPackage" Overridable="yes" Value="Kopiowanie plików instalacji sieciowej" xmlns="" />
+  <String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes" Value="Plik: [1], katalog: [9], rozmiar: [6]" xmlns="" />
+  <String Id="ProgressTextFileCost" Overridable="yes" Value="Obliczanie wymaganego miejsca" xmlns="" />
+  <String Id="ProgressTextCostInitialize" Overridable="yes" Value="Obliczanie wymaganego miejsca" xmlns="" />
+  <String Id="ProgressTextCostFinalize" Overridable="yes" Value="Obliczanie wymaganego miejsca" xmlns="" />
+  <String Id="ProgressTextCreateShortcuts" Overridable="yes" Value="Tworzenie skrótów" xmlns="" />
+  <String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes" Value="Skrót: [1]" xmlns="" />
+  <String Id="ProgressTextPublishComponents" Overridable="yes" Value="Publikowanie składników kwalifikowanych" xmlns="" />
+  <String Id="ProgressTextPublishComponentsTemplate" Overridable="yes" Value="Identyfikator składnika: [1], kwalifikator: [2]" xmlns="" />
+  <String Id="ProgressTextPublishFeatures" Overridable="yes" Value="Publikowanie funkcji produktu" xmlns="" />
+  <String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes" Value="Funkcja: [1]" xmlns="" />
+  <String Id="ProgressTextPublishProduct" Overridable="yes" Value="Publikowanie informacji o produkcie" xmlns="" />
+  <String Id="ProgressTextRegisterClassInfo" Overridable="yes" Value="Rejestrowanie serwerów klas" xmlns="" />
+  <String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes" Value="Identyfikator klasy: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterExtensionInfo" Overridable="yes" Value="Rejestrowanie serwerów rozszerzeń" xmlns="" />
+  <String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes" Value="Rozszerzenie: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterMIMEInfo" Overridable="yes" Value="Rejestrowanie informacji MIME" xmlns="" />
+  <String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes" Value="Typ zawartości MIME: [1], rozszerzenie: [2]" xmlns="" />
+  <String Id="ProgressTextRegisterProgIdInfo" Overridable="yes" Value="Rejestrowanie identyfikatorów programu" xmlns="" />
+  <String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes" Value="Identyfikator programu: [1]" xmlns="" />
+  <String Id="ProgressTextAllocateRegistrySpace" Overridable="yes" Value="Przydzielanie przestrzeni rejestru" xmlns="" />
+  <String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes" Value="Wolne miejsce: [1]" xmlns="" />
+  <String Id="ProgressTextAppSearch" Overridable="yes" Value="Wyszukiwanie zainstalowanych aplikacji" xmlns="" />
+  <String Id="ProgressTextAppSearchTemplate" Overridable="yes" Value="Właściwość: [1], podpis: [2]" xmlns="" />
+  <String Id="ProgressTextBindImage" Overridable="yes" Value="Wiązanie plików wykonywalnych" xmlns="" />
+  <String Id="ProgressTextBindImageTemplate" Overridable="yes" Value="Plik: [1]" xmlns="" />
+  <String Id="ProgressTextCCPSearch" Overridable="yes" Value="Wyszukiwanie kwalifikujących produktów" xmlns="" />
+  <String Id="ProgressTextCreateFolders" Overridable="yes" Value="Tworzenie folderów" xmlns="" />
+  <String Id="ProgressTextCreateFoldersTemplate" Overridable="yes" Value="Folder: [1]" xmlns="" />
+  <String Id="ProgressTextDeleteServices" Overridable="yes" Value="Usuwanie usług" xmlns="" />
+  <String Id="ProgressTextDeleteServicesTemplate" Overridable="yes" Value="Usługa: [1]" xmlns="" />
+  <String Id="ProgressTextDuplicateFiles" Overridable="yes" Value="Tworzenie duplikatów plików" xmlns="" />
+  <String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes" Value="Plik: [1], katalog: [9], rozmiar: [6]" xmlns="" />
+  <String Id="ProgressTextFindRelatedProducts" Overridable="yes" Value="Wyszukiwanie aplikacji pokrewnych" xmlns="" />
+  <String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes" Value="Znaleziono aplikację: [1]" xmlns="" />
+  <String Id="ProgressTextInstallODBC" Overridable="yes" Value="Instalowanie składników ODBC" xmlns="" />
+  <String Id="ProgressTextInstallServices" Overridable="yes" Value="Instalowanie nowych usług" xmlns="" />
+  <String Id="ProgressTextInstallServicesTemplate" Overridable="yes" Value="Usługa: [2]" xmlns="" />
+  <String Id="ProgressTextLaunchConditions" Overridable="yes" Value="Sprawdzanie warunków uruchamiania" xmlns="" />
+  <String Id="ProgressTextMigrateFeatureStates" Overridable="yes" Value="Migracja stanów funkcji z pokrewnych aplikacji" xmlns="" />
+  <String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes" Value="Aplikacja: [1]" xmlns="" />
+  <String Id="ProgressTextMoveFiles" Overridable="yes" Value="Przenoszenie plików" xmlns="" />
+  <String Id="ProgressTextMoveFilesTemplate" Overridable="yes" Value="Plik: [1], katalog: [9], rozmiar: [6]" xmlns="" />
+  <String Id="ProgressTextPatchFiles" Overridable="yes" Value="Poprawianie plików" xmlns="" />
+  <String Id="ProgressTextPatchFilesTemplate" Overridable="yes" Value="Plik: [1], katalog: [2], rozmiar: [3]" xmlns="" />
+  <String Id="ProgressTextProcessComponents" Overridable="yes" Value="Aktualizowanie rejestracji składników" xmlns="" />
+  <String Id="ProgressTextRegisterComPlus" Overridable="yes" Value="Rejestrowanie aplikacji i składników COM+" xmlns="" />
+  <String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes" Value="Identyfikator aplikacji: [1]{{, typ aplikacji: [2], użytkownicy: [3], RSN: [4]}}" xmlns="" />
+  <String Id="ProgressTextRegisterFonts" Overridable="yes" Value="Rejestrowanie czcionek" xmlns="" />
+  <String Id="ProgressTextRegisterFontsTemplate" Overridable="yes" Value="Czcionka: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterProduct" Overridable="yes" Value="Rejestrowanie produktu" xmlns="" />
+  <String Id="ProgressTextRegisterProductTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRegisterTypeLibraries" Overridable="yes" Value="Rejestrowanie bibliotek typów" xmlns="" />
+  <String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes" Value="Identyfikator biblioteki: [1]" xmlns="" />
+  <String Id="ProgressTextRegisterUser" Overridable="yes" Value="Rejestrowanie użytkownika" xmlns="" />
+  <String Id="ProgressTextRegisterUserTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes" Value="Usuwanie zduplikowanych plików" xmlns="" />
+  <String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes" Value="Plik: [1], katalog: [9]" xmlns="" />
+  <String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes" Value="Aktualizowanie ciągów środowiska" xmlns="" />
+  <String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes" Value="Nazwa: [1], wartość: [2], akcja [3]" xmlns="" />
+  <String Id="ProgressTextRemoveExistingProducts" Overridable="yes" Value="Usuwanie aplikacji" xmlns="" />
+  <String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes" Value="Aplikacja: [1], wiersz polecenia: [2]" xmlns="" />
+  <String Id="ProgressTextRemoveFiles" Overridable="yes" Value="Usuwanie plików" xmlns="" />
+  <String Id="ProgressTextRemoveFilesTemplate" Overridable="yes" Value="Plik: [1], katalog: [9]" xmlns="" />
+  <String Id="ProgressTextRemoveFolders" Overridable="yes" Value="Usuwanie folderów" xmlns="" />
+  <String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes" Value="Folder: [1]" xmlns="" />
+  <String Id="ProgressTextRemoveIniValues" Overridable="yes" Value="Usuwanie wpisów plików INI" xmlns="" />
+  <String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes" Value="Plik: [1],  sekcja: [2],  klucz: [3], wartość: [4]" xmlns="" />
+  <String Id="ProgressTextRemoveODBC" Overridable="yes" Value="Usuwanie składników ODBC" xmlns="" />
+  <String Id="ProgressTextRemoveRegistryValues" Overridable="yes" Value="Usuwanie wartości rejestru systemowego" xmlns="" />
+  <String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes" Value="Klucz: [1], nazwa: [2]" xmlns="" />
+  <String Id="ProgressTextRemoveShortcuts" Overridable="yes" Value="Usuwanie skrótów" xmlns="" />
+  <String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes" Value="Skrót: [1]" xmlns="" />
+  <String Id="ProgressTextRMCCPSearch" Overridable="yes" Value="Wyszukiwanie kwalifikujących produktów" xmlns="" />
+  <String Id="ProgressTextSelfRegModules" Overridable="yes" Value="Rejestrowanie modułów" xmlns="" />
+  <String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes" Value="Plik: [1], folder: [2]" xmlns="" />
+  <String Id="ProgressTextSelfUnregModules" Overridable="yes" Value="Wyrejestrowywanie modułów" xmlns="" />
+  <String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes" Value="Plik: [1], folder: [2]" xmlns="" />
+  <String Id="ProgressTextSetODBCFolders" Overridable="yes" Value="Inicjowanie katalogów ODBC" xmlns="" />
+  <String Id="ProgressTextStartServices" Overridable="yes" Value="Uruchamianie usług" xmlns="" />
+  <String Id="ProgressTextStartServicesTemplate" Overridable="yes" Value="Usługa: [1]" xmlns="" />
+  <String Id="ProgressTextStopServices" Overridable="yes" Value="Zatrzymywanie usług" xmlns="" />
+  <String Id="ProgressTextStopServicesTemplate" Overridable="yes" Value="Usługa: [1]" xmlns="" />
+  <String Id="ProgressTextUnpublishComponents" Overridable="yes" Value="Cofanie publikowania składników kwalifikowanych" xmlns="" />
+  <String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes" Value="Identyfikator składnika: [1], kwalifikator: [2]" xmlns="" />
+  <String Id="ProgressTextUnpublishFeatures" Overridable="yes" Value="Cofanie publikowania funkcji produktu" xmlns="" />
+  <String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes" Value="Funkcja: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterClassInfo" Overridable="yes" Value="Wyrejestrowywanie serwerów klas" xmlns="" />
+  <String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes" Value="Identyfikator klasy: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterComPlus" Overridable="yes" Value="Wyrejestrowywanie aplikacji i składników COM+" xmlns="" />
+  <String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes" Value="Identyfikator aplikacji: [1]{{, typ aplikacji: [2]}}" xmlns="" />
+  <String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes" Value="Wyrejestrowywanie serwerów rozszerzeń" xmlns="" />
+  <String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes" Value="Rozszerzenie: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterFonts" Overridable="yes" Value="Wyrejestrowywanie czcionek" xmlns="" />
+  <String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes" Value="Czcionka: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes" Value="Wyrejestrowywanie informacji MIME" xmlns="" />
+  <String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes" Value="Typ zawartości MIME: [1], rozszerzenie: [2]" xmlns="" />
+  <String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes" Value="Wyrejestrowywanie identyfikatorów programów" xmlns="" />
+  <String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes" Value="Identyfikator programu: [1]" xmlns="" />
+  <String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes" Value="Wyrejestrowywanie bibliotek typów" xmlns="" />
+  <String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes" Value="Identyfikator biblioteki: [1]" xmlns="" />
+  <String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes" Value="Aktualizowanie ciągów środowiska" xmlns="" />
+  <String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes" Value="Nazwa: [1], wartość: [2], akcja [3]" xmlns="" />
+  <String Id="ProgressTextWriteIniValues" Overridable="yes" Value="Zapisywanie wartości plików INI" xmlns="" />
+  <String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes" Value="Plik: [1],  sekcja: [2],  klucz: [3], wartość: [4]" xmlns="" />
+  <String Id="ProgressTextWriteRegistryValues" Overridable="yes" Value="Zapisywanie wartości rejestru systemowego" xmlns="" />
+  <String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes" Value="Klucz: [1], nazwa: [2], wartość: [3]" xmlns="" />
+  <String Id="ProgressTextAdvertise" Overridable="yes" Value="Aplikacja anonsująca" xmlns="" />
+  <String Id="ProgressTextGenerateScript" Overridable="yes" Value="Generowanie operacji skryptu dla akcji:" xmlns="" />
+  <String Id="ProgressTextGenerateScriptTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes" Value="Instalowanie wykazu systemu" xmlns="" />
+  <String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes" Value="Plik: [1],  zależności: [2]" xmlns="" />
+  <String Id="ProgressTextMsiPublishAssemblies" Overridable="yes" Value="Publikowanie informacji o asemblerze" xmlns="" />
+  <String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes" Value="Kontekst aplikacji: [1], nazwa asemblera: [2]" xmlns="" />
+  <String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes" Value="Cofanie publikowania informacji o asemblerze" xmlns="" />
+  <String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes" Value="Kontekst aplikacji: [1], nazwa asemblera: [2]" xmlns="" />
+  <String Id="ProgressTextRollback" Overridable="yes" Value="Powrót do poprzedniej akcji:" xmlns="" />
+  <String Id="ProgressTextRollbackTemplate" Overridable="yes" Value="[1]" xmlns="" />
+  <String Id="ProgressTextRollbackCleanup" Overridable="yes" Value="Usuwanie plików kopii zapasowej" xmlns="" />
+  <String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes" Value="Plik: [1]" xmlns="" />
+  <String Id="ProgressTextUnmoveFiles" Overridable="yes" Value="Usuwanie plików przeniesionych" xmlns="" />
+  <String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes" Value="Plik: [1], katalog: [9]" xmlns="" />
+  <String Id="ProgressTextUnpublishProduct" Overridable="yes" Value="Cofanie publikowania informacji o produkcie" xmlns="" />
+  <String Id="Error0" Overridable="yes" Value="{{Błąd krytyczny: }}" xmlns="" />
+  <String Id="Error1" Overridable="yes" Value="{{Błąd [1]. }}" xmlns="" />
+  <String Id="Error2" Overridable="yes" Value="Ostrzeżenie [1]." xmlns="" />
+  <String Id="Error4" Overridable="yes" Value="Informacja [1]." xmlns="" />
+  <String Id="Error5" Overridable="yes" Value="Instalator napotkał nieoczekiwany błąd podczas instalowania tego pakietu. To może wskazywać na problem z tym pakietem. Kod błędu to [1]. {{Argumenty: [2], [3], [4]}}" xmlns="" />
+  <String Id="Error7" Overridable="yes" Value="{{Dysk zapełniony: }}" xmlns="" />
+  <String Id="Error8" Overridable="yes" Value="Akcja [Time]: [1]. [2]" xmlns="" />
+  <String Id="Error9" Overridable="yes" Value="[ProductName]" xmlns="" />
+  <String Id="Error10" Overridable="yes" Value="{[2]}{, [3]}{, [4]}" xmlns="" />
+  <String Id="Error11" Overridable="yes" Value="Typ komunikatu: [1], argument: [2]" xmlns="" />
+  <String Id="Error12" Overridable="yes" Value="=== Logowanie rozpoczęte: [Date]  [Time] ===" xmlns="" />
+  <String Id="Error13" Overridable="yes" Value="=== Logowanie zatrzymane: [Date]  [Time] ===" xmlns="" />
+  <String Id="Error14" Overridable="yes" Value="Uruchomienie akcji [Time]: [1]." xmlns="" />
+  <String Id="Error15" Overridable="yes" Value="Zakończenie akcji [Time]: [1]. Wartość zwrócona [2]." xmlns="" />
+  <String Id="Error16" Overridable="yes" Value="Pozostało czasu: {[1] min }{[2] s}" xmlns="" />
+  <String Id="Error17" Overridable="yes" Value="Za mało pamięci. Zamknij inne aplikacje przed ponowną próbą." xmlns="" />
+  <String Id="Error18" Overridable="yes" Value="Instalator nie odpowiada." xmlns="" />
+  <String Id="Error19" Overridable="yes" Value="Instalator przedwcześnie zakończył pracę." xmlns="" />
+  <String Id="Error20" Overridable="yes" Value="Czekaj, system Windows konfiguruje produkt [ProductName]" xmlns="" />
+  <String Id="Error21" Overridable="yes" Value="Trwa zbieranie wymaganych informacji..." xmlns="" />
+  <String Id="Error22" Overridable="yes" Value="Trwa usuwanie starszych wersji tej aplikacji..." xmlns="" />
+  <String Id="Error23" Overridable="yes" Value="Trwa przygotowywanie do usunięcia starszych wersji tej aplikacji..." xmlns="" />
+  <String Id="Error32" Overridable="yes" Value="Instalacja produktu {[ProductName] } została ukończona pomyślnie." xmlns="" />
+  <String Id="Error33" Overridable="yes" Value="Instalacja produktu {[ProductName]} nie powiodła się." xmlns="" />
+  <String Id="Error1101" Overridable="yes" Value="Błąd podczas odczytu z pliku: [2]. {{ Błąd systemu [3].}} Sprawdź, czy plik istnieje i czy masz do niego dostęp." xmlns="" />
+  <String Id="Error1301" Overridable="yes" Value="Nie można utworzyć pliku „[2]”. Istnieje już katalog o tej nazwie. Anuluj instalację i spróbuj przeprowadzić ją w innej lokalizacji." xmlns="" />
+  <String Id="Error1302" Overridable="yes" Value="Włóż dysk: [2]" xmlns="" />
+  <String Id="Error1303" Overridable="yes" Value="Instalator ma niewystarczające uprawnienia dostępu do tego katalogu: [2]. Nie można kontynuować instalacji. Zaloguj się jako administrator lub skontaktuj się z administratorem systemu." xmlns="" />
+  <String Id="Error1304" Overridable="yes" Value="Błąd przy zapisywaniu do pliku: [2]. Sprawdź, czy masz dostęp do tego katalogu." xmlns="" />
+  <String Id="Error1305" Overridable="yes" Value="Błąd odczytu z pliku [2]. {{ Błąd systemu [3].}} Sprawdź, czy plik istnieje i czy masz do niego dostęp." xmlns="" />
+  <String Id="Error1306" Overridable="yes" Value="Inna aplikacja ma wyłączny dostęp do pliku „[2]”. Zamknij wszystkie inne aplikacje, a następnie kliknij przycisk Ponów próbę." xmlns="" />
+  <String Id="Error1307" Overridable="yes" Value="Za mało miejsca na dysku, aby zainstalować ten plik: [2]. Zwolnij nieco miejsca na dysku i kliknij przycisk Ponów próbę lub kliknij przycisk Anuluj, aby zakończyć." xmlns="" />
+  <String Id="Error1308" Overridable="yes" Value="Nie znaleziono pliku źródłowego: [2]. Sprawdź, czy plik istnieje i czy masz do niego dostęp." xmlns="" />
+  <String Id="Error1309" Overridable="yes" Value="Błąd podczas odczytu z pliku [3]. {{ Błąd systemu [2].}} Sprawdź, czy plik istnieje i czy masz do niego dostęp." xmlns="" />
+  <String Id="Error1310" Overridable="yes" Value="Błąd zapisu w pliku: [3]. {{ Błąd systemu [2].}} Sprawdź, czy masz dostęp do tego katalogu." xmlns="" />
+  <String Id="Error1311" Overridable="yes" Value="Nie znaleziono pliku źródłowego{{(plik cab)}}: [2]. Sprawdź, czy plik istnieje i czy masz do niego dostęp." xmlns="" />
+  <String Id="Error1312" Overridable="yes" Value="Nie można utworzyć katalogu „[2]”. Plik o tej nazwie już istnieje. Zmień nazwę pliku lub usuń go i kliknij przycisk Ponów próbę lub Anuluj, aby zakończyć pracę." xmlns="" />
+  <String Id="Error1313" Overridable="yes" Value="Wolumin [2] jest obecnie niedostępny. Wybierz inny wolumin." xmlns="" />
+  <String Id="Error1314" Overridable="yes" Value="Określona ścieżka „[2]” jest niedostępna." xmlns="" />
+  <String Id="Error1315" Overridable="yes" Value="Nie można przeprowadzić zapisu w określonym folderze: [2]." xmlns="" />
+  <String Id="Error1316" Overridable="yes" Value="Wystąpił błąd sieciowy podczas próby odczytu z pliku: [2]" xmlns="" />
+  <String Id="Error1317" Overridable="yes" Value="Wystąpił błąd podczas próby utworzenia katalogu: [2]" xmlns="" />
+  <String Id="Error1318" Overridable="yes" Value="Wystąpił błąd sieciowy podczas próby utworzenia katalogu: [2]" xmlns="" />
+  <String Id="Error1319" Overridable="yes" Value="Wystąpił błąd sieciowy podczas próby otwarcia pliku źródłowego cab: [2]" xmlns="" />
+  <String Id="Error1320" Overridable="yes" Value="Określona ścieżka jest za długa: [2]" xmlns="" />
+  <String Id="Error1321" Overridable="yes" Value="Instalator ma niewystarczające uprawnienia do modyfikowania tego pliku: [2]." xmlns="" />
+  <String Id="Error1322" Overridable="yes" Value="Część ścieżki folderu „[2]” jest nieprawidłowa. Jest ona pusta lub przekracza długość dozwoloną w systemie." xmlns="" />
+  <String Id="Error1323" Overridable="yes" Value="Ścieżka folderu „[2]” zawiera słowa, które nie są dozwolone w ścieżkach folderów." xmlns="" />
+  <String Id="Error1324" Overridable="yes" Value="Ścieżka folderu „[2]” zawiera nieprawidłowy znak." xmlns="" />
+  <String Id="Error1325" Overridable="yes" Value="„[2]” nie jest prawidłową krótką nazwą pliku." xmlns="" />
+  <String Id="Error1326" Overridable="yes" Value="Błąd pobierania zabezpieczeń pliku: [3] GetLastError: [2]" xmlns="" />
+  <String Id="Error1327" Overridable="yes" Value="Nieprawidłowy dysk: [2]" xmlns="" />
+  <String Id="Error1328" Overridable="yes" Value="Błąd podczas stosowania poprawki do pliku [2]. Prawdopodobnie plik został zaktualizowany w inny sposób i nie może być już modyfikowany przez tę poprawkę. Aby uzyskać więcej informacji, skontaktuj się z dostawcą poprawki. {{Błąd systemu: [3]}}" xmlns="" />
+  <String Id="Error1329" Overridable="yes" Value="Wymagany plik nie może być zainstalowany, ponieważ plik cab [2] nie jest podpisany cyfrowo. To może wskazywać na uszkodzenie pliku cab." xmlns="" />
+  <String Id="Error1330" Overridable="yes" Value="Wymagany plik nie może być zainstalowany, ponieważ plik cab [2] ma nieprawidłowy podpis cyfrowy. To może wskazywać na uszkodzenie pliku cab.{{ Błąd [3] został zwrócony przez moduł WinVerifyTrust.}}" xmlns="" />
+  <String Id="Error1331" Overridable="yes" Value="Nie można poprawnie skopiować pliku [2]: błąd CRC." xmlns="" />
+  <String Id="Error1332" Overridable="yes" Value="Nie można poprawnie przenieść pliku [2]: błąd CRC." xmlns="" />
+  <String Id="Error1333" Overridable="yes" Value="Nie można poprawnie zastosować poprawki do pliku [2]: błąd CRC." xmlns="" />
+  <String Id="Error1334" Overridable="yes" Value="Nie można zainstalować pliku „[2]”, ponieważ nie można go odnaleźć w pliku cab „[3]”. To może wskazywać na błąd sieciowy, błąd odczytu z dysku CD-ROM lub problem z tym pakietem." xmlns="" />
+  <String Id="Error1335" Overridable="yes" Value="Plik cab „[2]” wymagany dla tej instalacji jest uszkodzony i nie może być użyty. To może wskazywać na błąd sieciowy, błąd odczytu z dysku CD-ROM lub problem z tym pakietem." xmlns="" />
+  <String Id="Error1336" Overridable="yes" Value="Wystąpił błąd podczas tworzenia pliku tymczasowego wymaganego do ukończenia tej instalacji.{{  Folder: [3]. Kod błędu systemu: [2]}}" xmlns="" />
+  <String Id="Error1401" Overridable="yes" Value="Nie można utworzyć klucza: [2]. {{ Błąd systemu [3].}} Sprawdź, czy masz wystarczające prawa dostępu do tego klucza, lub skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1402" Overridable="yes" Value="Nie można otworzyć klucza: [2]. {{ Błąd systemu [3].}} Sprawdź, czy masz wystarczające prawa dostępu do tego klucza, lub skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1403" Overridable="yes" Value="Nie można usunąć wartości [2] z klucza [3]. {{ Błąd systemu [4].}} Sprawdź, czy masz wystarczające prawa dostępu do tego klucza, lub skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1404" Overridable="yes" Value="Nie można usunąć klucza: [2]. {{ Błąd systemu [3].}} Sprawdź, czy masz wystarczające prawa dostępu do tego klucza, lub skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1405" Overridable="yes" Value="Nie można odczytać wartości [2] z klucza [3]. {{ Błąd systemu [4].}} Sprawdź, czy masz wystarczające prawa dostępu do tego klucza, lub skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1406" Overridable="yes" Value="Nie można zapisać wartości [2] do klucza [3]. {{ Błąd systemu [4].}} Sprawdź, czy masz wystarczające prawa dostępu do tego klucza, lub skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1407" Overridable="yes" Value="Nie można pobrać nazw wartości dla klucza [2]. {{ Błąd systemu [3].}} Sprawdź, czy masz wystarczające prawa dostępu do tego klucza, lub skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1408" Overridable="yes" Value="Nie można pobrać nazw podkluczy dla klucza [2]. {{ Błąd systemu [3].}} Sprawdź, czy masz wystarczające prawa dostępu do tego klucza, lub skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1409" Overridable="yes" Value="Nie można odczytać informacji o zabezpieczeniach dla klucza [2]. {{ Błąd systemu [3].}} Sprawdź, czy masz wystarczające prawa dostępu do tego klucza, lub skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1410" Overridable="yes" Value="Nie można zwiększyć dostępnego miejsca dla rejestru. Do zainstalowania tej aplikacji wymagane jest [2] KB wolnego miejsca dla rejestru." xmlns="" />
+  <String Id="Error1500" Overridable="yes" Value="Inna instalacja jest w toku. Musisz ukończyć tamtą instalację przed kontynuowaniem tej instalacji." xmlns="" />
+  <String Id="Error1501" Overridable="yes" Value="Błąd dostępu do zabezpieczonych danych. Upewnij się, że Instalator Windows jest skonfigurowany prawidłowo, i spróbuj ponownie przeprowadzić instalację." xmlns="" />
+  <String Id="Error1502" Overridable="yes" Value="Użytkownik „[2]” zainicjował poprzednio instalację dla produktu „[3]”. Użytkownik ten będzie musiał uruchomić tę instalację ponownie, aby używać tego produktu. Bieżąca instalacja będzie kontynuowana." xmlns="" />
+  <String Id="Error1503" Overridable="yes" Value="Użytkownik „[2]” zainicjował poprzednio instalację dla produktu „[3]”. Użytkownik ten będzie musiał uruchomić tę instalację ponownie, aby używać tego produktu." xmlns="" />
+  <String Id="Error1601" Overridable="yes" Value="Za mało miejsca na dysku — wolumin: „[2]”; wymagane miejsce: [3] KB; dostępne miejsce: [4] KB. Zwolnij nieco miejsca na dysku i ponów próbę." xmlns="" />
+  <String Id="Error1602" Overridable="yes" Value="Czy na pewno chcesz anulować operację?" xmlns="" />
+  <String Id="Error1603" Overridable="yes" Value="Plik [2][3] jest używany{ przez następujący proces: Nazwa: [4], Id: [5], Nazwa okna: „[6]”}. Zamknij aplikację i ponów próbę." xmlns="" />
+  <String Id="Error1604" Overridable="yes" Value="Jest już zainstalowany produkt „[2]”, co uniemożliwia instalację tego produktu. Te dwa produkty nie są zgodne." xmlns="" />
+  <String Id="Error1605" Overridable="yes" Value="Za mało miejsca na dysku na woluminie [2], aby kontynuować instalację z włączoną opcją odzyskiwania. Dostępna ilość miejsca: [3] KB; wymagana ilość miejsca: [4] KB. Kliknij przycisk Ignoruj, aby kontynuować instalację bez zapisywania informacji odzyskiwania, kliknij przycisk Ponów próbę, aby ponownie sprawdzić dostępne miejsce lub kliknij przycisk Anuluj, aby zakończyć instalację." xmlns="" />
+  <String Id="Error1606" Overridable="yes" Value="Nie można uzyskać dostępu do lokalizacji sieciowej [2]." xmlns="" />
+  <String Id="Error1607" Overridable="yes" Value="Następujące aplikacje należy zamknąć przed kontynuowaniem instalacji:" xmlns="" />
+  <String Id="Error1608" Overridable="yes" Value="Nie można znaleźć na tym komputerze żadnego poprzednio zainstalowanego produktu zgodnego, który umożliwiałby instalację tego produktu." xmlns="" />
+  <String Id="Error1609" Overridable="yes" Value="Wystąpił błąd podczas stosowania ustawień zabezpieczeń. [2] nie jest prawidłowym użytkownikiem lub grupą. Może być to problem z pakietem lub problem z łączeniem się z kontrolerem domeny w sieci. Sprawdź połączenie sieciowe i kliknij przycisk Ponów próbę lub kliknij przycisk Anuluj, aby zakończyć instalację. {{Nie można zlokalizować identyfikatora SID użytkownika, błąd systemu [3]}}" xmlns="" />
+  <String Id="Error1701" Overridable="yes" Value="Klucz [2] nie jest prawidłowy. Sprawdź, czy wprowadzono poprawny klucz." xmlns="" />
+  <String Id="Error1702" Overridable="yes" Value="Instalator musi ponownie uruchomić system przed kontynuowaniem konfiguracji [2]. Kliknij przycisk Tak, aby uruchomić system ponownie, lub przycisk Nie, jeśli planujesz ręczne ponowne uruchomienie systemu później." xmlns="" />
+  <String Id="Error1703" Overridable="yes" Value="Musisz ponownie uruchomić system, aby zmiany konfiguracji [2] zostały wprowadzone. Kliknij przycisk Tak, aby uruchomić system ponownie lub przycisk Nie, jeśli planujesz ręczne ponowne uruchomienie systemu później." xmlns="" />
+  <String Id="Error1704" Overridable="yes" Value="Instalacja [2] jest obecnie wstrzymana. Aby kontynuować, musisz cofnąć zmiany wprowadzone przez tę instalację. Czy chcesz cofnąć te zmiany?" xmlns="" />
+  <String Id="Error1705" Overridable="yes" Value="Poprzednia instalacja tego produktu już trwa. Aby kontynuować, musisz cofnąć zmiany wprowadzone przez tę instalację. Czy chcesz cofnąć te zmiany?" xmlns="" />
+  <String Id="Error1706" Overridable="yes" Value="Nie można odnaleźć pakietu instalacyjnego dla produktu [2]. Ponów próbę instalacji, używając prawidłowej kopii pakietu instalacyjnego „[3]”." xmlns="" />
+  <String Id="Error1707" Overridable="yes" Value="Instalacja została pomyślnie ukończona." xmlns="" />
+  <String Id="Error1708" Overridable="yes" Value="Instalacja nie powiodła się." xmlns="" />
+  <String Id="Error1709" Overridable="yes" Value="Produkt: [2] - [3]" xmlns="" />
+  <String Id="Error1710" Overridable="yes" Value="Możesz przywrócić komputer do poprzedniego stanu lub kontynuować instalację później. Czy chcesz przywrócić poprzedni stan komputera?" xmlns="" />
+  <String Id="Error1711" Overridable="yes" Value="Wystąpił błąd podczas zapisywania informacji o instalacji na dysku. Sprawdź, czy na dysku jest dostępna wystarczająca ilość miejsca, i kliknij przycisk Ponów próbę lub kliknij przycisk Anuluj, aby zakończyć instalację." xmlns="" />
+  <String Id="Error1712" Overridable="yes" Value="Nie można znaleźć co najmniej jednego z plików wymaganych do przywrócenia komputera do jego poprzedniego stanu. Przywrócenie stanu nie będzie możliwe." xmlns="" />
+  <String Id="Error1713" Overridable="yes" Value="[2] nie może zainstalować jednego z wymaganych produktów. Skontaktuj się z grupą pomocy technicznej. {{Błąd systemu: [3].}}" xmlns="" />
+  <String Id="Error1714" Overridable="yes" Value="Nie można usunąć starszej wersji programu [2]. Skontaktuj się z grupą pomocy technicznej. {{Błąd systemu [3].}}" xmlns="" />
+  <String Id="Error1715" Overridable="yes" Value="Zainstalowano [2]" xmlns="" />
+  <String Id="Error1716" Overridable="yes" Value="Skonfigurowano [2]" xmlns="" />
+  <String Id="Error1717" Overridable="yes" Value="Usunięto [2]" xmlns="" />
+  <String Id="Error1718" Overridable="yes" Value="Plik [2] został odrzucony przez zasadę podpisu cyfrowego." xmlns="" />
+  <String Id="Error1719" Overridable="yes" Value="Nie można uzyskać dostępu do usługi Instalator Windows. Może mieć to miejsce, jeśli system Windows jest uruchomiony w trybie awaryjnym lub Instalator Windows jest niepoprawnie zainstalowany. Skontaktuj się z działem Pomocy technicznej, aby uzyskać pomoc." xmlns="" />
+  <String Id="Error1720" Overridable="yes" Value="Wystąpił problem z tym pakietem Instalatora Windows. Nie można uruchomić skryptu wymaganego do ukończenia tej instalacji. Skontaktuj się z pomocą techniczną lub dostawcą pakietu. {{Akcja niestandardowa [2], błąd skryptu [3], [4]: [5] wiersz [6], kolumna [7], [8]}}" xmlns="" />
+  <String Id="Error1721" Overridable="yes" Value="Wystąpił problem z tym pakietem Instalatora Windows. Nie można uruchomić programu wymaganego do ukończenia tej instalacji. Skontaktuj się z pomocą techniczną lub dostawcą pakietu. {{Akcja: [2], lokalizacja: [3], polecenie: [4] }}" xmlns="" />
+  <String Id="Error1722" Overridable="yes" Value="Wystąpił problem z tym pakietem Instalatora Windows. Program uruchomiony jako część instalacji nie zakończył pracy w oczekiwany sposób. Skontaktuj się z pomocą techniczną lub dostawcą pakietu. {{Akcja [2], lokalizacja: [3], polecenie: [4] }}" xmlns="" />
+  <String Id="Error1723" Overridable="yes" Value="Wystąpił problem z tym pakietem Instalatora Windows. Nie można uruchomić biblioteki DLL wymaganej do ukończenia tej instalacji. Skontaktuj się z pomocą techniczną lub dostawcą pakietu. {{Akcja [2], wpis: [3], biblioteka: [4] }}" xmlns="" />
+  <String Id="Error1724" Overridable="yes" Value="Usunięcie zostało pomyślnie ukończone." xmlns="" />
+  <String Id="Error1725" Overridable="yes" Value="Usunięcie nie powiodło się." xmlns="" />
+  <String Id="Error1726" Overridable="yes" Value="Anonsowanie zostało pomyślnie ukończone." xmlns="" />
+  <String Id="Error1727" Overridable="yes" Value="Anonsowanie nie powiodło się." xmlns="" />
+  <String Id="Error1728" Overridable="yes" Value="Konfiguracja została pomyślnie ukończona." xmlns="" />
+  <String Id="Error1729" Overridable="yes" Value="Konfiguracja nie powiodła się." xmlns="" />
+  <String Id="Error1730" Overridable="yes" Value="Musisz być administratorem, aby usunąć tę aplikację. Aby usunąć tę aplikację, zaloguj się jako Administrator lub skontaktuj się z obsługą techniczną w celu uzyskania pomocy." xmlns="" />
+  <String Id="Error1731" Overridable="yes" Value="Źródłowy pakiet instalacyjny dla produktu [2] nie jest zsynchronizowany z pakietem klienckim. Ponów próbę instalacji, używając prawidłowej kopii pakietu instalacyjnego „[3]”." xmlns="" />
+  <String Id="Error1732" Overridable="yes" Value="W celu ukończenia instalacji produktu [2] musisz ponownie uruchomić komputer. Na tym komputerze są obecnie zalogowani inni użytkownicy i ponowne uruchomienie komputera może spowodować utratę danych przez tych użytkowników. Czy chcesz teraz ponownie uruchomić komputer?" xmlns="" />
+  <String Id="Error1801" Overridable="yes" Value="Ścieżka [2] nie jest prawidłowa. Określ prawidłową ścieżkę." xmlns="" />
+  <String Id="Error1802" Overridable="yes" Value="Za mało pamięci. Zamknij inne aplikacje przed ponowną próbą." xmlns="" />
+  <String Id="Error1803" Overridable="yes" Value="Brak dysku w stacji [2]. Włóż dysk i kliknij przycisk Ponów próbę lub kliknij przycisk Anuluj, aby wrócić do poprzednio wybranego woluminu." xmlns="" />
+  <String Id="Error1804" Overridable="yes" Value="Brak dysku w stacji [2]. Włóż dysk i kliknij przycisk Ponów próbę lub kliknij przycisk Anuluj, aby wrócić do okna dialogowego przeglądania i wybrać inny wolumin." xmlns="" />
+  <String Id="Error1805" Overridable="yes" Value="Folder [2] nie istnieje. Wprowadź ścieżkę do istniejącego folderu." xmlns="" />
+  <String Id="Error1806" Overridable="yes" Value="Masz niewystarczające uprawnienia do odczytu tego folderu." xmlns="" />
+  <String Id="Error1807" Overridable="yes" Value="Nie można określić prawidłowego folderu docelowego dla instalacji." xmlns="" />
+  <String Id="Error1901" Overridable="yes" Value="Błąd podczas próby odczytu źródłowej bazy danych instalacji: [2]." xmlns="" />
+  <String Id="Error1902" Overridable="yes" Value="Planowanie operacji ponownego uruchamiania: zmiana nazwy pliku z [2] na [3]. W celu ukończenia operacji należy ponownie uruchomić system." xmlns="" />
+  <String Id="Error1903" Overridable="yes" Value="Planowanie operacji ponownego uruchamiania: usuwanie pliku [2]. W celu ukończenia operacji należy ponownie uruchomić system." xmlns="" />
+  <String Id="Error1904" Overridable="yes" Value="Nie można zarejestrować modułu [2]. Wynik HRESULT [3]. Skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1905" Overridable="yes" Value="Nie można wyrejestrować modułu [2]. Wynik HRESULT [3]. Skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1906" Overridable="yes" Value="Nie można przechować pakietu [2] w pamięci podręcznej. Błąd: [3]. Skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1907" Overridable="yes" Value="Nie można zarejestrować czcionki [2]. Sprawdź, czy masz wystarczające uprawnienia do instalacji czcionek i czy system obsługuje tę czcionkę." xmlns="" />
+  <String Id="Error1908" Overridable="yes" Value="Nie można wyrejestrować czcionki [2]. Sprawdź, czy masz wystarczające uprawnienia do usuwania czcionek." xmlns="" />
+  <String Id="Error1909" Overridable="yes" Value="Nie można utworzyć skrótu [2]. Sprawdź, czy folder docelowy istnieje i czy masz do niego dostęp." xmlns="" />
+  <String Id="Error1910" Overridable="yes" Value="Nie można usunąć skrótu [2]. Sprawdź, czy plik skrótu istnieje i czy masz do niego dostęp." xmlns="" />
+  <String Id="Error1911" Overridable="yes" Value="Nie można zarejestrować biblioteki typów dla pliku [2]. Skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1912" Overridable="yes" Value="Nie można wyrejestrować biblioteki typów dla pliku [2]. Skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1913" Overridable="yes" Value="Nie można zaktualizować pliku ini [2][3]. Sprawdź, czy plik istnieje i czy masz do niego dostęp." xmlns="" />
+  <String Id="Error1914" Overridable="yes" Value="Nie można zaplanować, aby plik [2] zastąpił plik [3] przy ponownym uruchomieniu. Sprawdź, czy masz uprawnienia do zapisu pliku [3]." xmlns="" />
+  <String Id="Error1915" Overridable="yes" Value="Błąd usuwania menedżera sterownika ODBC, błąd ODBC [2]: [3]. Skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1916" Overridable="yes" Value="Błąd instalowania menedżera sterownika ODBC, błąd ODBC [2]: [3]. Skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1917" Overridable="yes" Value="Błąd usuwania sterownika ODBC: [4], błąd ODBC [2]: [3]. Sprawdź, czy masz wystarczające uprawnienia do usuwania sterowników ODBC." xmlns="" />
+  <String Id="Error1918" Overridable="yes" Value="Błąd instalowania sterownika ODBC: [4], błąd ODBC [2]: [3]. Sprawdź, czy plik [4] istnieje i czy masz do niego dostęp." xmlns="" />
+  <String Id="Error1919" Overridable="yes" Value="Błąd konfiguracji źródła danych ODBC: [4], błąd ODBC [2]: [3]. Sprawdź, czy plik [4] istnieje i czy masz do niego dostęp." xmlns="" />
+  <String Id="Error1920" Overridable="yes" Value="Nie można uruchomić usługi „[2]” ([3]). Sprawdź, czy masz wystarczające uprawnienia do uruchamiania usług systemowych." xmlns="" />
+  <String Id="Error1921" Overridable="yes" Value="Nie można zatrzymać usługi „[2]” ([3]). Sprawdź, czy masz wystarczające uprawnienia do zatrzymywania usług systemowych." xmlns="" />
+  <String Id="Error1922" Overridable="yes" Value="Nie można usunąć usługi „[2]” ([3]). Sprawdź, czy masz wystarczające uprawnienia do usuwania usług systemowych." xmlns="" />
+  <String Id="Error1923" Overridable="yes" Value="Nie można zainstalować usługi „[2]” ([3]). Sprawdź, czy masz wystarczające uprawnienia do instalowania usług systemowych." xmlns="" />
+  <String Id="Error1924" Overridable="yes" Value="Nie można zaktualizować zmiennej środowiskowej „[2]”. Sprawdź, czy masz wystarczające uprawnienia do modyfikacji zmiennych środowiskowych." xmlns="" />
+  <String Id="Error1925" Overridable="yes" Value="Nie masz wystarczających uprawnień do zakończenia tej instalacji dla wszystkich użytkowników na tym komputerze. Zaloguj się jako administrator, a następnie ponów próbę tej instalacji." xmlns="" />
+  <String Id="Error1926" Overridable="yes" Value="Nie można ustawić zabezpieczeń pliku „[3]”. Błąd: [2]. Sprawdź, czy masz wystarczające uprawnienia do modyfikowania uprawnień zabezpieczeń dla tego pliku." xmlns="" />
+  <String Id="Error1927" Overridable="yes" Value="Na tym komputerze nie są zainstalowane usługi składowe (COM+ 1.0). W celu prawidłowego wykonania instalacji wymagane są usługi składowe. Usługi składowe są dostępne w systemie Windows 2000." xmlns="" />
+  <String Id="Error1928" Overridable="yes" Value="Wystąpił błąd podczas rejestrowania aplikacji COM+. Aby uzyskać więcej informacji, skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1929" Overridable="yes" Value="Wystąpił błąd podczas wyrejestrowywania aplikacji COM+. Aby uzyskać więcej informacji, skontaktuj się z pomocą techniczną." xmlns="" />
+  <String Id="Error1930" Overridable="yes" Value="Zmiana opisu dla usługi „[2]” ([3]) nie jest możliwa." xmlns="" />
+  <String Id="Error1931" Overridable="yes" Value="Usługa Instalator Windows nie może zaktualizować pliku systemowego [2], ponieważ plik jest chroniony przez system Windows. Aby program działał prawidłowo, należy zaktualizować system operacyjny. {{Wersja pakietu: [3], wersja chroniona systemu operacyjnego: [4]}}" xmlns="" />
+  <String Id="Error1932" Overridable="yes" Value="Usługa Instalator Windows nie może zaktualizować chronionego przez system Windows pliku [2]. {{Wersja pakietu: [3], wersja chroniona systemu operacyjnego: [4], błąd SFP: [5]}}" xmlns="" />
+  <String Id="Error1933" Overridable="yes" Value="Usługa Instalator Windows nie może zaktualizować jednego lub kilku chronionych plików Windows. {{Błąd SFP: [2]. Lista chronionych plików:\r\n[3]}}" xmlns="" />
+  <String Id="Error1934" Overridable="yes" Value="Instalacje użytkownika są wyłączone ze względu na zasady obowiązujące na tym komputerze." xmlns="" />
+  <String Id="Error1935" Overridable="yes" Value="Wystąpił błąd podczas instalacji zestawu „[6]”. Zobacz Pomoc i obsługę techniczną, aby uzyskać więcej informacji. Wynik HRESULT: [3]. {{Interfejs zestawu: [4], funkcja: [5], składnik: [2]}}" xmlns="" />
+  <String Id="Error1936" Overridable="yes" Value="Wystąpił błąd podczas instalacji zestawu „[6]”. Zestaw nie ma silnej nazwy lub nie jest podpisany za pomocą klucza o minimalnej długości. Wynik HRESULT: [3]. {{Interfejs zestawu: [4], funkcja: [5], składnik: [2]}}" xmlns="" />
+  <String Id="Error1937" Overridable="yes" Value="Wystąpił błąd podczas instalacji zestawu „[6]”. Nie można zweryfikować podpisu lub wykazu albo jest on nieprawidłowy. Wynik HRESULT: [3]. {{Interfejs zestawu: [4], funkcja: [5], składnik: [2]}}" xmlns="" />
+  <String Id="Error1938" Overridable="yes" Value="Wystąpił błąd podczas instalacji zestawu „[6]”. Nie można odnaleźć jednego lub większej liczby modułów zestawu. Wynik HRESULT: [3]. {{Interfejs zestawu: [4], funkcja: [5], składnik: [2]}}" xmlns="" />
+  <String Id="UITextbytes" Overridable="yes" Value="Bajtów" xmlns="" />
+  <String Id="UITextGB" Overridable="yes" Value="GB" xmlns="" />
+  <String Id="UITextKB" Overridable="yes" Value="KB" xmlns="" />
+  <String Id="UITextMB" Overridable="yes" Value="MB" xmlns="" />
+  <String Id="UITextMenuAbsent" Overridable="yes" Value="Cała funkcja będzie niedostępna" xmlns="" />
+  <String Id="UITextMenuAdvertise" Overridable="yes" Value="Funkcja zostanie zainstalowana w razie potrzeby" xmlns="" />
+  <String Id="UITextMenuAllCD" Overridable="yes" Value="Cała funkcja zostanie zainstalowana do uruchamiania z dysku CD" xmlns="" />
+  <String Id="UITextMenuAllLocal" Overridable="yes" Value="Cała funkcja zostanie zainstalowana na lokalnym dysku twardym" xmlns="" />
+  <String Id="UITextMenuAllNetwork" Overridable="yes" Value="Cała funkcja zostanie zainstalowana do uruchamiania z sieci" xmlns="" />
+  <String Id="UITextMenuCD" Overridable="yes" Value="Zostanie zainstalowana do uruchamiania z dysku CD" xmlns="" />
+  <String Id="UITextMenuLocal" Overridable="yes" Value="Zostanie zainstalowana na lokalnym dysku twardym" xmlns="" />
+  <String Id="UITextMenuNetwork" Overridable="yes" Value="Zostanie zainstalowana do uruchamiania z sieci" xmlns="" />
+  <String Id="UITextNewFolder" Overridable="yes" Value="Folder|Nowy folder" xmlns="" />
+  <String Id="UITextScriptInProgress" Overridable="yes" Value="Trwa zbieranie wymaganych informacji..." xmlns="" />
+  <String Id="UITextSelAbsentAbsent" Overridable="yes" Value="Ta funkcja pozostanie niezainstalowana" xmlns="" />
+  <String Id="UITextSelAbsentAdvertise" Overridable="yes" Value="Ta funkcja zostanie ustawiona do zainstalowania w razie potrzeby" xmlns="" />
+  <String Id="UITextSelAbsentCD" Overridable="yes" Value="Ta funkcja zostanie zainstalowana do uruchamiania z dysku CD" xmlns="" />
+  <String Id="UITextSelAbsentLocal" Overridable="yes" Value="Ta funkcja zostanie zainstalowana na lokalnym dysku twardym" xmlns="" />
+  <String Id="UITextSelAbsentNetwork" Overridable="yes" Value="Ta funkcja zostanie zainstalowana do uruchamiania z sieci" xmlns="" />
+  <String Id="UITextSelAdvertiseAbsent" Overridable="yes" Value="Ta funkcja stanie się niedostępna" xmlns="" />
+  <String Id="UITextSelAdvertiseAdvertise" Overridable="yes" Value="Zostanie zainstalowana w razie potrzeby" xmlns="" />
+  <String Id="UITextSelAdvertiseCD" Overridable="yes" Value="Ta funkcja będzie dostępna do uruchamiania z dysku CD" xmlns="" />
+  <String Id="UITextSelAdvertiseLocal" Overridable="yes" Value="Ta funkcja zostanie zainstalowana na lokalnym dysku twardym" xmlns="" />
+  <String Id="UITextSelAdvertiseNetwork" Overridable="yes" Value="Ta funkcja będzie dostępna do uruchamiania z sieci" xmlns="" />
+  <String Id="UITextSelCDAbsent" Overridable="yes" Value="Ta funkcja zostanie całkowicie odinstalowana, nie będzie można uruchamiać jej z dysku CD" xmlns="" />
+  <String Id="UITextSelCDAdvertise" Overridable="yes" Value="Stan tej funkcji zostanie zmieniony z uruchamiania z dysku CD na zainstalowanie w razie potrzeby" xmlns="" />
+  <String Id="UITextSelCDCD" Overridable="yes" Value="Ta funkcja będzie dalej uruchamiana z dysku CD" xmlns="" />
+  <String Id="UITextSelCDLocal" Overridable="yes" Value="Stan tej funkcji zostanie zmieniony z uruchamiania z dysku CD na zainstalowanie na lokalnym dysku twardym" xmlns="" />
+  <String Id="UITextSelChildCostNeg" Overridable="yes" Value="Ta funkcja zwolni [1] miejsca na dysku twardym." xmlns="" />
+  <String Id="UITextSelChildCostPos" Overridable="yes" Value="Ta funkcja wymaga [1] miejsca na dysku twardym." xmlns="" />
+  <String Id="UITextSelCostPending" Overridable="yes" Value="Trwa kompilowanie kosztu dla tej funkcji..." xmlns="" />
+  <String Id="UITextSelLocalAbsent" Overridable="yes" Value="Ta funkcja zostanie całkowicie usunięta" xmlns="" />
+  <String Id="UITextSelLocalAdvertise" Overridable="yes" Value="Ta funkcja zostanie usunięta z lokalnego dysku twardego, ale zostanie ustawiona do zainstalowania w razie potrzeby" xmlns="" />
+  <String Id="UITextSelLocalCD" Overridable="yes" Value="Ta funkcja zostanie usunięta z lokalnego dysku twardego, ale nadal będzie można uruchamiać ją z dysku CD" xmlns="" />
+  <String Id="UITextSelLocalLocal" Overridable="yes" Value="Ta funkcja pozostanie na lokalnym dysku twardym" xmlns="" />
+  <String Id="UITextSelLocalNetwork" Overridable="yes" Value="Ta funkcja zostanie usunięta z lokalnego dysku twardego, ale nadal będzie można uruchamiać ją z sieci" xmlns="" />
+  <String Id="UITextSelNetworkAbsent" Overridable="yes" Value="Ta funkcja zostanie odinstalowana całkowicie, nie będzie można uruchamiać jej z sieci" xmlns="" />
+  <String Id="UITextSelNetworkAdvertise" Overridable="yes" Value="Stan tej funkcji zostanie zmieniony z uruchamiania z sieci na zainstalowanie w razie potrzeby" xmlns="" />
+  <String Id="UITextSelNetworkLocal" Overridable="yes" Value="Stan tej funkcji zostanie zmieniony z uruchamiania z sieci na zainstalowanie na lokalnym dysku twardym" xmlns="" />
+  <String Id="UITextSelNetworkNetwork" Overridable="yes" Value="Ta funkcja pozostanie uruchamiana z sieci" xmlns="" />
+  <String Id="UITextSelParentCostNegNeg" Overridable="yes" Value="Ta funkcja zwolni [1] na dysku twardym. Wybrano w niej [2] z [3] podfunkcji. Wybrane podfunkcje zwolnią [4] na dysku twardym." xmlns="" />
+  <String Id="UITextSelParentCostNegPos" Overridable="yes" Value="Ta funkcja zwolni [1] na dysku twardym. Wybrano w niej [2] z [3] podfunkcji. Wybrane podfunkcje wymagają [4] na dysku twardym." xmlns="" />
+  <String Id="UITextSelParentCostPosNeg" Overridable="yes" Value="Ta funkcja wymaga [1] na dysku twardym. Wybrano w niej [2] z [3] podfunkcji. Wybrane podfunkcje zwolnią [4] na dysku twardym." xmlns="" />
+  <String Id="UITextSelParentCostPosPos" Overridable="yes" Value="Ta funkcja wymaga [1] na dysku twardym. Wybrano w niej [2] z [3] podfunkcji. Wybrane podfunkcje wymagają [4] na dysku twardym." xmlns="" />
+  <String Id="UITextTimeRemaining" Overridable="yes" Value="Pozostało czasu: {[1] min }{[2] s}" xmlns="" />
+  <String Id="UITextVolumeCostAvailable" Overridable="yes" Value="Dostępne" xmlns="" />
+  <String Id="UITextVolumeCostDifference" Overridable="yes" Value="Różnica" xmlns="" />
+  <String Id="UITextVolumeCostRequired" Overridable="yes" Value="Wymagane" xmlns="" />
+  <String Id="UITextVolumeCostSize" Overridable="yes" Value="Rozmiar dysku" xmlns="" />
+  <String Id="UITextVolumeCostVolume" Overridable="yes" Value="Wolumin" xmlns="" />
+</WixLocalization>
