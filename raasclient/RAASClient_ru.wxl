@@ -573,7 +573,7 @@
   <String Id="VisualizationsTitle" Overridable="yes" Value="Vizualizări" />
   <String Id="NamespaceTitle" Overridable="yes" Value="Extensie de spațiu de nume Shell" />
   <String Id="ShortcutsTitle" Overridable="yes" Value="Comenzi rapide de la distanță" />
-  <String Id="Pro-RO-ROductLanguage" Overridable="yes" Value="1048" />
+  <String Id="ProductLanguage" Overridable="yes" Value="1048" />
   <String Id="WixUIBack" Overridable="yes" Value="&amp;Назад" />
   <String Id="WixUINext" Overridable="yes" Value="Д&amp;алее" />
   <String Id="WixUICancel" Overridable="yes" Value="Отмена" />
