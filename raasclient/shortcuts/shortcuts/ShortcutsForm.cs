@@ -110,6 +110,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
                 foreach (String serverName in serverSettings.Keys.ToArray())
                 {
                     shortcutsManagers[serverName] = new ShortcutsManager(serverSettings[serverName], false);
+                    if (uninstall)
+                        shortcutsManagers[serverName].RemoveShortcuts();
                 }
             }
             catch (CouldNotLoadServerSettingsException)
