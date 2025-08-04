@@ -1,16 +1,16 @@
 ﻿<WixLocalization Culture="th-TH" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-  <String Id="VisualizationsDescription" Overridable="yes" Value="การแสดงภาพสำหรับแอปพลิเคชันระยะไกลที่มีให้เลือกเป็นตัวเลือกในการกำหนดค่า" />
-  <String Id="NamespaceDescription" Overridable="yes" Value="ดูเซิร์ฟเวอร์ RAAS ใน Explorer" />
-  <String Id="ShortcutsDescription" Overridable="yes" Value="สร้างทางลัดแอปพลิเคชันระยะไกลไปยังแอปพลิเคชันเซิร์ฟเวอร์บนคอมพิวเตอร์ภายในเครื่อง" />
-  <String Id="VisualizationsTitle" Overridable="yes" Value="การสร้างภาพ" />
-  <String Id="NamespaceTitle" Overridable="yes" Value="ส่วนขยายเนมสเปซของเชลล์" />
-  <String Id="ShortcutsTitle" Overridable="yes" Value="ทางลัดระยะไกล" />
-  <String Id="ProductLanguage" Overridable="yes" Value="1054" />
-  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="msierrFirewallCannotConnect" />
-  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="WixSchedFirewallExceptionsInstall" />
-  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="WixSchedFirewallExceptionsUninstall" />
-  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="WixRollbackFirewallExceptionsInstall" />
-  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="WixExecFirewallExceptionsInstall" />
-  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="WixRollbackFirewallExceptionsUninstall" />
-  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="WixExecFirewallExceptionsUninstall" />
+	<String Id="VisualizationsDescription" Overridable="yes" Value="การแสดงภาพสำหรับแอปพลิเคชันระยะไกลที่มีให้เลือกเป็นตัวเลือกในการกำหนดค่า"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="ดูเซิร์ฟเวอร์ RAAS ใน Explorer"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="สร้างทางลัดแอปพลิเคชันระยะไกลไปยังแอปพลิเคชันเซิร์ฟเวอร์บนคอมพิวเตอร์ภายในเครื่อง"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="การสร้างภาพ"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="ส่วนขยายเนมสเปซของเชลล์"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="ทางลัดระยะไกล"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1054"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="การถอนการติดตั้งการกำหนดค่าไฟร์วอลล์ Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="การย้อนกลับการกำหนดค่าไฟร์วอลล์ Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="การติดตั้งการกำหนดค่าไฟร์วอลล์ Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="การย้อนกลับการกำหนดค่าไฟร์วอลล์ Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="การกำหนดค่าไฟร์วอลล์ Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="การกำหนดค่าไฟร์วอลล์ Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="ไม่สามารถเชื่อมต่อกับไฟร์วอลล์ Windows ได้ ([2] [3] [4] [5])"/>
 </WixLocalization>

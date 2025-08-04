@@ -1,16 +1,16 @@
 ﻿<WixLocalization Culture="fr-fr" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-  <String Id="VisualizationsDescription" Overridable="yes" Value="Visualisations pour applications distantes disponibles en option dans la configuration" />
-  <String Id="NamespaceDescription" Overridable="yes" Value="Afficher les serveurs RAAS dans l'Explorateur" />
-  <String Id="ShortcutsDescription" Overridable="yes" Value="Créer des raccourcis d'applications distantes vers des applications serveur sur l'ordinateur local" />
-  <String Id="VisualizationsTitle" Overridable="yes" Value="Visualisations" />
-  <String Id="NamespaceTitle" Overridable="yes" Value="Extension de l'espace de noms Shell" />
-  <String Id="ShortcutsTitle" Overridable="yes" Value="Raccourcis à distance" />
-  <String Id="ProductLanguage" Overridable="yes" Value="1036" />
-  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="msierrFirewallCannotConnect" />
-  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="WixSchedFirewallExceptionsInstall" />
-  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="WixSchedFirewallExceptionsUninstall" />
-  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="WixRollbackFirewallExceptionsInstall" />
-  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="WixExecFirewallExceptionsInstall" />
-  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="WixRollbackFirewallExceptionsUninstall" />
-  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="WixExecFirewallExceptionsUninstall" />
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Désinstallation de la configuration du pare-feu Windows"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Restauration de la configuration du pare-feu Windows"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installation de la configuration du pare-feu Windows"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Restauration de la configuration du pare-feu Windows"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Configuration du pare-feu Windows"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Configuration du pare-feu Windows"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Impossible de se connecter au pare-feu Windows. ([2] [3] [4] [5])"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualisations pour applications distantes disponibles en option dans la configuration"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="Afficher les serveurs RAAS dans l'Explorateur"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Créer des raccourcis d'applications distantes vers des applications serveur sur l'ordinateur local"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualisations"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="Extension de l'espace de noms Shell"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="Raccourcis à distance"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1036"/>
 </WixLocalization>

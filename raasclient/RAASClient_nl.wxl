@@ -1,16 +1,16 @@
 ﻿<WixLocalization Culture="nl-NL" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-  <String Id="VisualizationsDescription" Overridable="yes" Value="Visualisaties voor externe applicaties zijn als optie beschikbaar in de configuratie" />
-  <String Id="NamespaceDescription" Overridable="yes" Value="Bekijk RAAS-servers in Explorer" />
-  <String Id="ShortcutsDescription" Overridable="yes" Value="Maak snelkoppelingen naar externe applicaties naar serverapplicaties op de lokale computer" />
-  <String Id="VisualizationsTitle" Overridable="yes" Value="Visualisaties" />
-  <String Id="NamespaceTitle" Overridable="yes" Value="Shell-naamruimte-extensie" />
-  <String Id="ShortcutsTitle" Overridable="yes" Value="Snelkoppelingen op afstand" />
-  <String Id="ProductLanguage" Overridable="yes" Value="1043" />
-  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="msierrFirewallCannotConnect" />
-  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="WixSchedFirewallExceptionsInstall" />
-  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="WixSchedFirewallExceptionsUninstall" />
-  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="WixRollbackFirewallExceptionsInstall" />
-  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="WixExecFirewallExceptionsInstall" />
-  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="WixRollbackFirewallExceptionsUninstall" />
-  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="WixExecFirewallExceptionsUninstall" />
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall-configuratie verwijderen"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall-configuratie terugdraaien"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall-configuratie installeren"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall-configuratie terugdraaien"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall configureren"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall configureren"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan geen verbinding maken met Windows Firewall. ([2] [3] [4] [5])"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualisaties voor externe applicaties zijn als optie beschikbaar in de configuratie"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="Bekijk RAAS-servers in Explorer"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Maak snelkoppelingen naar externe applicaties naar serverapplicaties op de lokale computer"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualisaties"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="Shell-naamruimte-extensie"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="Snelkoppelingen op afstand"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1043"/>
 </WixLocalization>

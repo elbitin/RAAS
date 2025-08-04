@@ -1,16 +1,16 @@
 ﻿<WixLocalization Culture="tr-TR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
-  <String Id="VisualizationsDescription" Overridable="yes" Value="Uzak uygulamalar için görselleştirmeler yapılandırmada seçenek olarak mevcuttur" />
-  <String Id="NamespaceDescription" Overridable="yes" Value="Explorer'da RAAS sunucularını görüntüleyin" />
-  <String Id="ShortcutsDescription" Overridable="yes" Value="Yerel bilgisayardaki sunucu uygulamalarına uzak uygulama kısayolları oluşturun" />
-  <String Id="VisualizationsTitle" Overridable="yes" Value="Görselleştirmeler" />
-  <String Id="NamespaceTitle" Overridable="yes" Value="Kabuk Ad Alanı Uzantısı" />
-  <String Id="ShortcutsTitle" Overridable="yes" Value="Uzaktan Kısayollar" />
-  <String Id="ProductLanguage" Overridable="yes" Value="1055" />
-  <String Id="msierrFirewallCannotConnect" Overridable="yes" Value="msierrFirewallCannotConnect" />
-  <String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="WixSchedFirewallExceptionsInstall" />
-  <String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="WixSchedFirewallExceptionsUninstall" />
-  <String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="WixRollbackFirewallExceptionsInstall" />
-  <String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="WixExecFirewallExceptionsInstall" />
-  <String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="WixRollbackFirewallExceptionsUninstall" />
-  <String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="WixExecFirewallExceptionsUninstall" />
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Uzak uygulamalar için görselleştirmeler yapılandırmada seçenek olarak mevcuttur"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="Explorer'da RAAS sunucularını görüntüleyin"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Yerel bilgisayardaki sunucu uygulamalarına uzak uygulama kısayolları oluşturun"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="Görselleştirmeler"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="Kabuk Ad Alanı Uzantısı"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="Uzaktan Kısayollar"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1055"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını kaldırma"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını geri alma"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını yükleme"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Güvenlik Duvarı yapılandırmasını geri alma"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Güvenlik Duvarını Yapılandırma"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Güvenlik Duvarını Yapılandırma"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Windows Güvenlik Duvarına bağlanılamıyor. ([2] [3] [4] [5])"/>
 </WixLocalization>

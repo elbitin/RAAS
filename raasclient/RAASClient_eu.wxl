@@ -560,13 +560,6 @@
 	<String Id="WixUICancel" Overridable="yes" Value="Utzi"/>
 	<String Id="WixUINext" Overridable="yes" Value="&amp;Hurrengoa"/>
 	<String Id="WixUIBack" Overridable="yes" Value="&amp;Itzuli"/>
-	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall konfigurazioa desinstalatzen"/>
-	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall konfigurazioa atzera egiten"/>
-	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfigurazioa instalatzen"/>
-	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfigurazioa atzera egiten"/>
-	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall konfiguratzen"/>
-	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfiguratzen"/>
-	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ezin da Windows Firewallera konektatu. ([2] [3] [4] [5])"/>
 	<String Id="VisualizationsDescription" Overridable="yes" Value="Urruneko aplikazioetarako bistaratzeak aukeran eskuragarri daude konfigurazioan"/>
 	<String Id="NamespaceDescription" Overridable="yes" Value="Ikusi RAAS zerbitzariak Explorer-en"/>
 	<String Id="ShortcutsDescription" Overridable="yes" Value="Sortu urruneko aplikazioen lasterbideak ordenagailu lokaleko zerbitzariko aplikazioetarako"/>
@@ -574,4 +567,11 @@
 	<String Id="NamespaceTitle" Overridable="yes" Value="Shell izen-eremuaren luzapena"/>
 	<String Id="ShortcutsTitle" Overridable="yes" Value="Urruneko lasterbideak"/>
 	<String Id="ProductLanguage" Overridable="yes" Value="1069"/>
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall konfigurazioa desinstalatzen"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall konfigurazioa atzera egiten"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfigurazioa instalatzen"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfigurazioa atzera egiten"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall konfiguratzen"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfiguratzen"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ezin da Windows Firewallera konektatu.  ([2] [3] [4] [5])"/>
 </WixLocalization>

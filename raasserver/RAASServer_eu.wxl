@@ -1,4 +1,4 @@
-﻿<WixLocalization Codepage="1250" Culture="eu" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Bolumena"/>
 	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Diskoaren tamaina"/>
 	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Beharrezkoa"/>
@@ -566,10 +566,10 @@
 	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfigurazioa atzera egiten"/>
 	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Windows Firewall konfiguratzen"/>
 	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Windows Firewall konfiguratzen"/>
-	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ezin da Windows Firewallera konektatu. ([2] [3] [4] [5])"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Ezin da Windows Firewallera konektatu.  ([2] [3] [4] [5])"/>
 	<String Id="NetworkSharesTitle" Overridable="yes" Value="Sareko zerbitzari partekatua"/>
 	<String Id="NetworkSharesDescription" Overridable="yes" Value="Partekatu unitateak sarean RAAS Bezeroaren kontrola eta nabigazioa gaitzeko"/>
 	<String Id="CanRebootTitle" Overridable="yes" Value="Berrabiarazi daiteke"/>
 	<String Id="CanRebootDescription" Overridable="yes" Value="Baimendu RAAS Bezerotik berrabiarazteko"/>
-	<String Id="ProductLanguage" Overridable="yes" Value="1069"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
 </WixLocalization>
