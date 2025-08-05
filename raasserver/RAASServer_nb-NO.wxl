@@ -1,0 +1,14 @@
+﻿<WixLocalization Culture="nb-NO" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Avinstallerer Windows-brannmurkonfigurasjonen"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Tilbakestiller Windows-brannmurkonfigurasjonen"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installere Windows-brannmurkonfigurasjon"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Tilbakestiller Windows-brannmurkonfigurasjonen"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfigurering av Windows-brannmur"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfigurering av Windows-brannmur"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan ikke koble til Windows-brannmuren. ([2] [3] [4] [5])"/>
+	<String Id="NetworkSharesTitle" Overridable="yes" Value="Delt nettverksserver"/>
+	<String Id="NetworkSharesDescription" Overridable="yes" Value="Del stasjoner på nettverket for å aktivere kontroll og surfing fra RAAS Client"/>
+	<String Id="CanRebootTitle" Overridable="yes" Value="Kan starte på nytt"/>
+	<String Id="CanRebootDescription" Overridable="yes" Value="Tillat omstart fra RAAS Client"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1033"/>
+</WixLocalization>

@@ -1,0 +1,16 @@
+﻿<WixLocalization Culture="nb-NO" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WixExecFirewallExceptionsUninstall" Overridable="yes" Value="Avinstallerer Windows-brannmurkonfigurasjonen"/>
+	<String Id="WixRollbackFirewallExceptionsUninstall" Overridable="yes" Value="Tilbakestiller Windows-brannmurkonfigurasjonen"/>
+	<String Id="WixExecFirewallExceptionsInstall" Overridable="yes" Value="Installere Windows-brannmurkonfigurasjon"/>
+	<String Id="WixRollbackFirewallExceptionsInstall" Overridable="yes" Value="Tilbakestiller Windows-brannmurkonfigurasjonen"/>
+	<String Id="WixSchedFirewallExceptionsUninstall" Overridable="yes" Value="Konfigurering av Windows-brannmur"/>
+	<String Id="WixSchedFirewallExceptionsInstall" Overridable="yes" Value="Konfigurering av Windows-brannmur"/>
+	<String Id="msierrFirewallCannotConnect" Overridable="yes" Value="Kan ikke koble til Windows-brannmuren. ([2] [3] [4] [5])"/>
+	<String Id="VisualizationsDescription" Overridable="yes" Value="Visualiseringer for eksterne applikasjoner tilgjengelig som alternativ i konfigurasjonen"/>
+	<String Id="NamespaceDescription" Overridable="yes" Value="Se RAAS-servere i Explorer"/>
+	<String Id="ShortcutsDescription" Overridable="yes" Value="Lag eksterne applikasjonssnarveier til serverapplikasjoner på lokal datamaskin"/>
+	<String Id="VisualizationsTitle" Overridable="yes" Value="Visualiseringer"/>
+	<String Id="NamespaceTitle" Overridable="yes" Value="Shell Namespace Extension"/>
+	<String Id="ShortcutsTitle" Overridable="yes" Value="Eksterne snarveier"/>
+	<String Id="ProductLanguage" Overridable="yes" Value="1044"/>
+</WixLocalization>
