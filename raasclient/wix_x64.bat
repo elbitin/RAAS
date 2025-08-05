@@ -21,8 +21,6 @@ echo call wix_x64_eo.bat < nul
 call wix_x64_es.bat < nul
 echo call wix_x64_et.bat < nul
 call wix_x64_et.bat < nul
-echo call wix_x64_eu.bat < nul
-call wix_x64_eu.bat < nul
 echo call wix_x64_fi.bat < nul
 call wix_x64_fi.bat < nul
 echo call wix_x64_fr.bat < nul

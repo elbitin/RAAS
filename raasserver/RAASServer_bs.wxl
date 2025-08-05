@@ -1,4 +1,4 @@
-﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+﻿<WixLocalization Culture="bs" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 	<String Id="UITextVolumeCostVolume" Overridable="yes" Value="Volume"/>
 	<String Id="UITextVolumeCostSize" Overridable="yes" Value="Disk Size"/>
 	<String Id="UITextVolumeCostRequired" Overridable="yes" Value="Obavezno"/>
