@@ -63,5 +63,5 @@ cscript ..\scripts\WiSubStg.vbs "RAASServer_%RAASServerVersion%_x64.msi" zh-CN.m
 cscript ..\scripts\WiSubStg.vbs "RAASServer_%RAASServerVersion%_x64.msi" pt-PT.mst 2070
 cscript ..\scripts\WiSubStg.vbs "RAASServer_%RAASServerVersion%_x64.msi" bs.mst 5146
 cscript ..\scripts\WiSubStg.vbs "RAASServer_%RAASServerVersion%_x64.msi" sn.mst 1033
-cscript ..\scripts\WiLangId.vbs "RAASServer_%RAASServerVersion%_x64.msi" Package 1033,1053,1053,1025,1026,1028,1029,1031,1032,1034,1035,1036,1038,1040,1041,1042,1043,1044,1046,1049,1050,1051,1054,1055,1061,1062,1063,1124,2052,2070,5146,4096,1033,52
+cscript ..\scripts\WiLangId.vbs "RAASServer_%RAASServerVersion%_x64.msi" Package 1033,1053,1025,1026,1028,1029,1031,1032,1034,1035,1036,1038,1040,1041,1042,1043,1044,1046,1049,1050,1051,1054,1055,1061,1062,1063,1124,2052,2070,5146,1033,52
 pause
