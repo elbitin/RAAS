@@ -166,7 +166,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private void SetFormProperties()
         {
             Opacity = 0;
-            Visible = true;
+            Visible = false;
             ShowInTaskbar = false;
             Size = new Size(0, 0);
         }

@@ -57,9 +57,12 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 clientForm = new RemoteAppsForm(args[0]);
             else
                 return;
+            clientForm.Opacity = 0;
+            clientForm.Visible = false;
             clientForm.StartPosition = FormStartPosition.Manual;
             clientForm.Left = OFFSCREEN;
             clientForm.Top = OFFSCREEN;
+            clientForm.Location = new System.Drawing.Point(OFFSCREEN, OFFSCREEN);
             Application.Run(clientForm);
          }
 
