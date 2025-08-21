@@ -31,6 +31,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 "System.ServiceModel.CommunicationObjectFaultedException",
                 "System.ServiceModel.CommunicationObjectAbortedException",
             };
+        private const int OFFSCREEN = 100000;
 
         [STAThread]
         static void Main(string[] args)
@@ -56,6 +57,9 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 clientForm = new RemoteAppsForm(args[0]);
             else
                 return;
+            clientForm.StartPosition = FormStartPosition.Manual;
+            clientForm.Left = OFFSCREEN;
+            clientForm.Top = OFFSCREEN;
             Application.Run(clientForm);
          }
 
