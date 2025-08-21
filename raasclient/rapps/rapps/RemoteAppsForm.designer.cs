@@ -55,7 +55,7 @@
             // 
             this.axMsRdpClient8NotSafeForScripting1.Enabled = true;
             this.axMsRdpClient8NotSafeForScripting1.Location = new System.Drawing.Point(481, 264);
-            this.axMsRdpClient8NotSafeForScripting1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.axMsRdpClient8NotSafeForScripting1.Margin = new System.Windows.Forms.Padding(1);
             this.axMsRdpClient8NotSafeForScripting1.Name = "axMsRdpClient8NotSafeForScripting1";
             this.axMsRdpClient8NotSafeForScripting1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMsRdpClient8NotSafeForScripting1.OcxState")));
             this.axMsRdpClient8NotSafeForScripting1.Size = new System.Drawing.Size(480, 480);
@@ -69,7 +69,6 @@
             this.Controls.Add(this.axMsRdpClient8NotSafeForScripting1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(100000, 100000);
             this.Name = "RemoteAppsForm";
             this.ShowInTaskbar = false;
             this.Text = "RemoteAppForm";
