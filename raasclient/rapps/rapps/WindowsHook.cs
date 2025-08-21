@@ -85,10 +85,18 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                         case Win32Helper.WM_ACTIVATE:
                             if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
                                 break;
-                            if (vsForm.hWnds.Contains(eStruct.hwnd))
+                            if ((eStruct.wparam.ToInt32() == 1 || eStruct.wparam.ToInt32() == 2))
                             {
-                                if ((eStruct.wparam.ToInt32() == 1 || eStruct.wparam.ToInt32() == 2))
-                                    vsForm.gotFocusEvent.Invoke();
+                                vsForm.gotFocusEvent.Invoke();
+                            }
+                            else
+                            {
+                                uint activatedWindowProcessId;
+                                Win32Helper.GetWindowThreadProcessId(eStruct.lparam, out activatedWindowProcessId);
+                                if (activatedWindowProcessId != Process.GetCurrentProcess().Id)
+                                {
+                                    vsForm.lostFocusEvent.Invoke();
+                                }
                             }
                             break;
                         case Win32Helper.WM_ACTIVATEAPP:
@@ -98,11 +106,22 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                             {
                                 if (eStruct.wparam != IntPtr.Zero)
                                 {
-                                    vsForm.gotFocusEvent.Invoke();
+                                    uint activatedWindowProcessId = Win32Helper.GetProcessIdOfThread(eStruct.lparam);
+                                    int currentProcessId = Process.GetCurrentProcess().Id;
+                                    if (activatedWindowProcessId != 0 && currentProcessId != 0 && activatedWindowProcessId == currentProcessId)
+                                    {
+                                        vsForm.gotFocusEvent.Invoke();
+                                    }
+
                                 }
                                 else
                                 {
-                                    vsForm.lostFocusEvent.Invoke();
+                                    uint activatedWindowProcessId = Win32Helper.GetProcessIdOfThread(eStruct.lparam);
+                                    int currentProcessId = Process.GetCurrentProcess().Id;
+                                    if (activatedWindowProcessId != 0 && currentProcessId != 0 && activatedWindowProcessId != currentProcessId)
+                                    {
+                                        vsForm.lostFocusEvent.Invoke();
+                                    }
                                 }
                             }
                             break;
@@ -120,6 +139,14 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                             long windowStyleExActivate = Win32Helper.GetWindowLong(eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
                             if (vsForm.hWnds.Contains(eStruct.hwnd) && (windowStyleExActivate & (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE) == 0)
                                 vsForm.gotFocusEvent.Invoke();
+                            break;
+                        case Win32Helper.WM_KILLFOCUS:
+                            if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
+                                break;
+                            uint lpdwProcessId;
+                            Win32Helper.GetWindowThreadProcessId(eStruct.hwnd, out lpdwProcessId);
+                            if (lpdwProcessId != Process.GetCurrentProcess().Id)
+                                vsForm.lostFocusEvent.Invoke();
                             break;
                         case Win32Helper.WM_SIZE:
                             if ((vsForm.visualizationsEnabled) && !vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd) && Win32Helper.IsWindowVisible((IntPtr)eStruct.hwnd) && Win32Helper.IsWindow((IntPtr)eStruct.hwnd))

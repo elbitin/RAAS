@@ -1551,6 +1551,9 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
             [Out] StringBuilder pszPath);
 
         [DllImport("kernel32.dll", SetLastError = true)]
+        public static extern uint GetProcessIdOfThread(IntPtr handle);
+
+        [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
 
         public static extern bool WTSQuerySessionInformation(IntPtr hServer, int sessionId, WtsInfoClass wtsInfoClass, out IntPtr ppBuffer, out int pBytesReturned);
