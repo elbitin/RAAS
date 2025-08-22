@@ -59,7 +59,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private const int WINDOWRECT_SURROUNDSPACE_Y = 4;
         private const int UPDATETIMER_INTERVAL_MS = 100;
         private const int SUBSEQUENT_IN_FOCUS_COUNT = 5;
-        private const int SUBSEQUENT_OUT_OF_FOCUS_COUNT = 5;
+        private const int SUBSEQUENT_OUT_OF_FOCUS_COUNT = 20;
         private static int subsequentInFocusCount = 0;
         private static int subsequentOutOfFocusCount = 0;
         private static SpinLock showConnectionsBarLock = new SpinLock();
@@ -312,7 +312,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 if (!connectionbarActive)
                 {
                     subsequentInFocusCount++;
-                    if (subsequentInFocusCount >= SUBSEQUENT_OUT_OF_FOCUS_COUNT)
+                    if (subsequentInFocusCount >= SUBSEQUENT_IN_FOCUS_COUNT)
                     {
                         showConnectionBarsEvent.Invoke(true, false);
                         subsequentInFocusCount = 0;
@@ -325,7 +325,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 if (connectionbarActive)
                 {
                     subsequentOutOfFocusCount++;
-                    if (subsequentOutOfFocusCount >= SUBSEQUENT_IN_FOCUS_COUNT)
+                    if (subsequentOutOfFocusCount >= SUBSEQUENT_OUT_OF_FOCUS_COUNT)
                     {
                         hideConnectionBarsEvent.Invoke(false);
                         subsequentOutOfFocusCount = 0;
