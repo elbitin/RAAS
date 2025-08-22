@@ -94,13 +94,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                 vsForm.lostFocusEvent.Invoke();
                             break;
                         case Win32Helper.WM_SIZE:
-                            // Get foreground window handle
-                            IntPtr foregroundWindow = Win32Helper.GetForegroundWindow();
-                            if (!(vsForm.hWnds.Contains(foregroundWindow) || (foregroundWindow == IntPtr.Zero && connectionbarActive)))
-                            {
-                                if (VisualizationsForm.connectionbarActive)
-                                    vsForm.hideConnectionBarsEvent.Invoke(true);
-                            }
                             if ((vsForm.visualizationsEnabled) && !vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd) && Win32Helper.IsWindowVisible((IntPtr)eStruct.hwnd) && Win32Helper.IsWindow((IntPtr)eStruct.hwnd))
                             {
                                 System.Int64 windowStyle = Win32Helper.GetWindowLong((IntPtr)eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_STYLE);
