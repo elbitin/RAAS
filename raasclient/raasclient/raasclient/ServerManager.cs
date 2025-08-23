@@ -21,6 +21,8 @@ using Elbitin.Applications.RAAS.RAASClient.Helpers;
 using Elbitin.Applications.RAAS.RAASClient.RAASClient.RemoteAppsServiceRef;
 using Elbitin.Applications.RAAS.RAASClient.RAASClient.RAASServerServiceRef;
 using System.Windows.Forms;
+using System.Linq.Expressions;
+using Windows.ApplicationModel.Contacts;
 
 namespace Elbitin.Applications.RAAS.RAASClient.RAASClient
 {
@@ -234,20 +236,32 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient
                     if (ServerStates.RAASServerServiceSubscribed)
                     {
                         ServerStates.RAASServerServiceSubscribed = false;
+                        ServerStates.RAASServerServiceSubscribing = false;
                         StatusChangeEvent.Invoke(ServerSettings.Alias);
                     }
                 }
             }
             catch { }
-            if (!ServerStates.RAASServerServiceSubscribed)
+            bool contact = false;
+            try {
+                if (!ServerStates.RAASServerServiceSubscribed)
+                {
+                    contact = ServerHelper.Contact(ServerSettings.ServerName);
+                    ServerStates.ContactUpdate(contact);
+                }
+            } 
+            catch { }
+            finally
             {
-                bool contact = ServerHelper.Contact(ServerSettings.ServerName);
-                ServerStates.ContactUpdate(contact);
-                if (contact)
-                    SubscribeRAASServerService();
+                try
+                {
+                    if (!ServerStates.RAASServerServiceSubscribed && contact)
+                        SubscribeRAASServerService();
+                }
+                catch { }
+                if (ServerStates.ShouldRestartTimers())
+                    serverSubscribeTimer.Start();
             }
-            if (ServerStates.ShouldRestartTimers())
-                serverSubscribeTimer.Start();
         }
 
         private void SystemEvents_SessionSwitch(object sender, SessionSwitchEventArgs e)
@@ -630,7 +644,11 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient
                 }
             else
                 ServerStates.RAASServerCanLogOff = false;
-            StatusChangeEvent.Invoke(ServerSettings.Alias);
+            try
+            {
+                StatusChangeEvent.Invoke(ServerSettings.Alias);
+            }
+            catch { }
         }
 
         private void RunRemoteAppClient()
@@ -788,10 +806,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient
                         GetShares();
                     }
                     catch { }
-                    ServerStates.RAASServerServiceSubscribed = true;
-                    ServerStates.RAASServerSharesShouldReload = true;
-                    StatusChangeEvent.Invoke(ServerSettings.Alias);
-                    ServerStates.RAASServerServiceSubscribing = false;
                     if (RAASClientFeatureHelper.NSExtInstalled())
                     {
                         // Update explorer namespace extension
@@ -816,6 +830,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient
                             }
                         }
                     }
+                    ServerStates.RAASServerServiceSubscribed = true;
+                    ServerStates.RAASServerSharesShouldReload = true;
+                    StatusChangeEvent.Invoke(ServerSettings.Alias);
+                    ServerStates.RAASServerServiceSubscribing = false;
                 }
             }
             catch
