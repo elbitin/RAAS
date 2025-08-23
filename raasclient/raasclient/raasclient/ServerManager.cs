@@ -256,7 +256,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient
                 try
                 {
                     if (!ServerStates.RAASServerServiceSubscribed && contact)
+                    {
+                        CreateNewRAASServerServiceClient();
                         SubscribeRAASServerService();
+                    }
                 }
                 catch { }
                 if (ServerStates.ShouldRestartTimers())
