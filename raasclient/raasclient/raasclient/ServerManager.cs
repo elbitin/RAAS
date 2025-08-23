@@ -255,7 +255,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RAASClient
             {
                 try
                 {
-                    if (!ServerStates.RAASServerServiceSubscribed && contact)
+                    if ((raasServerServiceClient.State == CommunicationState.Faulted || raasServerServiceClient.State == CommunicationState.Closed) && contact)
                     {
                         CreateNewRAASServerServiceClient();
                         SubscribeRAASServerService();
