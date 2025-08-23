@@ -402,6 +402,13 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             }
         }
 
+        private void OnAuthenticationWarningDisplayedEventHandler(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            this.canActivate = false;
+            this.Opacity = 0;
+        }
+
         private void InitializeRdpClient(ServerSettings serverSettings)
         {
             // Create RDP client
@@ -415,7 +422,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             rdpClient.OnFatalError += new AxMSTSCLib.IMsTscAxEvents_OnFatalErrorEventHandler(RdpOnFatalError);
             rdpClient.OnDisconnected += new AxMSTSCLib.IMsTscAxEvents_OnDisconnectedEventHandler(RdpOnDisconnect);
             rdpClient.OnRemoteProgramResult += new AxMSTSCLib.IMsTscAxEvents_OnRemoteProgramResultEventHandler(RdpOnRemoteProgramResult);
-
+            rdpClient.OnAuthenticationWarningDisplayed += new EventHandler(OnAuthenticationWarningDisplayedEventHandler);
             Controls.Add(rdpClient);
             InitializeLifetimeService();
             InitLayout();
