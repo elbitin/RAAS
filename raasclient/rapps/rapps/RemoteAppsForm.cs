@@ -65,7 +65,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         {
             this.serverName = serverName.ToUpperInvariant();
             GetServerSettings();
-            InitializeRAASServerStrings();
+            //InitializeRAASServerStrings();
             SetFormProperties();
             InitializeComponent();
             BringToFront();
@@ -407,6 +407,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             this.Visible = false;
             this.canActivate = false;
             this.Opacity = 0;
+            this.Hide();
         }
 
         private void InitializeRdpClient(ServerSettings serverSettings)

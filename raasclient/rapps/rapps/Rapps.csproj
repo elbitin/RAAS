@@ -1196,7 +1196,7 @@
           </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
           <servers defaultServer="SelfHostServer">
-            <server name="SelfHostServer" exePath="" cmdArgs="192.168.1.125" url="http://localhost:52881/" workingDir="" />
+            <server name="SelfHostServer" exePath="" cmdArgs="192.168.10.16" url="http://localhost:52881/" workingDir="" />
           </servers>
         </WebProjectProperties>
       </FlavorProperties>
