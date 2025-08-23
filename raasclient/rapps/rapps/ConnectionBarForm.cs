@@ -34,6 +34,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 
         private void SetFormProperties(int monitorWidth, bool visible)
         {
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             DoubleBuffered = true;
             if (!visible)
                 Opacity = 0;
@@ -97,11 +98,11 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 
             // Move window to position
             Win32Helper.MoveWindow(this.Handle, screen.WorkingArea.X + (int)(screenWorkingWidth * 0.2) - 2, screen.WorkingArea.Y, (int)(screenWorkingWidth * 0.6) + 4, 22 + 2, false);
-            Win32Helper.SetWindowPos(this.Handle, (IntPtr)Win32Helper.HWND_TOPMOST, 0, 0, 0, 0, Win32Helper.SWP.NOACTIVATE | Win32Helper.SWP.NOSIZE | Win32Helper.SWP.NOMOVE | Win32Helper.SWP.NOSENDCHANGING | Win32Helper.SWP.NOSENDCHANGING);
+            Win32Helper.SetWindowPos(this.Handle, (IntPtr)Win32Helper.HWND_TOPMOST, 0, 0, 0, 0, Win32Helper.SWP.NOACTIVATE | Win32Helper.SWP.NOSIZE | Win32Helper.SWP.NOMOVE | Win32Helper.SWP.NOSENDCHANGING | Win32Helper.SWP.SHOWWINDOW);
 
             // Click through
             IntPtr initialStyleTop = Win32Helper.GetWindowLongPtr(this.Handle, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
-            Win32Helper.SetWindowLongPtr(this.Handle, Win32Helper.GWLParameter.GWL_EXSTYLE, new IntPtr((int)initialStyleTop | (int)Win32Helper.WindowStyles.WS_EX_LAYERED | (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT | (int)Win32Helper.WindowStyles.WS_EX_TOOLWINDOW));
+            Win32Helper.SetWindowLongPtr(this.Handle, Win32Helper.GWLParameter.GWL_EXSTYLE, new IntPtr((int)initialStyleTop | (int)Win32Helper.WindowStyles.WS_EX_LAYERED | (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT | (int)Win32Helper.WindowStyles.WS_EX_TOOLWINDOW | (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE));
         }
 
         protected override void OnGotFocus(EventArgs e)
@@ -120,6 +121,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 CreateParams param = base.CreateParams;
                 param.ExStyle |= (int)Win32Helper.WindowStyles.WS_EX_TOPMOST; // make the form topmost
                 param.ExStyle |= (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE; // prevent the form from being activated
+                param.ExStyle |= (int)Win32Helper.WindowStyles.WS_EX_TOOLWINDOW;
                 return param;
             }
         }
