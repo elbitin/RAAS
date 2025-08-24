@@ -493,6 +493,9 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 
         private void Disconnect()
         {
+            rdpClient?.Dispose();
+            visualizations?.Dispose();
+            this.Close();
             Environment.Exit(0);
         }
 
