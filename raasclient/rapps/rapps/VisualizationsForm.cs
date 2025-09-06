@@ -17,7 +17,6 @@ using System.Threading;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
-using System.Timers;
 using Elbitin.Applications.RAAS.RAASClient.Models;
 using Elbitin.Applications.RAAS.Common.Helpers;
 using Elbitin.Applications.RAAS.RAASClient.Helpers;
@@ -27,7 +26,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
     public partial class VisualizationsForm : Form
     {
         private bool running = true;
-        private System.Timers.Timer updateTimer = new System.Timers.Timer();
         private Version win8version = new Version(6, 2, 9200, 0);
         private List<IntPtr> noOverlayHWnds = new List<IntPtr>();
         private bool visualizationsActive = false;
@@ -119,7 +117,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             SetNoOverlayForMainForm();
             HookCurrentThread();
             Hide();
-            InitializeUpdateTimer();
             Show();
         }
 
