@@ -78,6 +78,61 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                     // Handle standard window messages
                     switch ((uint)eStruct.message)
                     {
+                        case Win32Helper.WM_MOUSEACTIVATE:
+                            if(vsForm.hWnds.Contains((IntPtr)eStruct.wparam.ToInt32()))
+                                vsForm.gotFocusEvent.Invoke();
+                            break;
+                        case Win32Helper.WM_ACTIVATE:
+                            if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
+                                break;
+                            if ((eStruct.wparam.ToInt32() == 1 || eStruct.wparam.ToInt32() == 2))
+                            {
+                                vsForm.gotFocusEvent.Invoke();
+                            }
+                            else
+                            {
+                                uint activatedWindowProcessId;
+                                Win32Helper.GetWindowThreadProcessId(eStruct.lparam, out activatedWindowProcessId);
+                                if (activatedWindowProcessId != Process.GetCurrentProcess().Id)
+                                {
+                                    vsForm.lostFocusEvent.Invoke();
+                                }
+                            }
+                            break;
+                        case Win32Helper.WM_ACTIVATEAPP:
+                            if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
+                                break;
+                            if (vsForm.hWnds.Contains(eStruct.hwnd))
+                            {
+                                if (eStruct.wparam != IntPtr.Zero)
+                                {
+                                    uint activatedWindowProcessId = Win32Helper.GetProcessIdOfThread(eStruct.lparam);
+                                    int currentProcessId = Process.GetCurrentProcess().Id;
+                                    if (activatedWindowProcessId != 0 && currentProcessId != 0 && activatedWindowProcessId == currentProcessId)
+                                    {
+                                        vsForm.gotFocusEvent.Invoke();
+                                    }
+
+                                }
+                                else
+                                {
+                                    uint activatedWindowProcessId = Win32Helper.GetProcessIdOfThread(eStruct.lparam);
+                                    int currentProcessId = Process.GetCurrentProcess().Id;
+                                    if (activatedWindowProcessId != 0 && currentProcessId != 0 && activatedWindowProcessId != currentProcessId)
+                                    {
+                                        vsForm.lostFocusEvent.Invoke();
+                                    }
+                                }
+                            }
+                            break;
+                        case Win32Helper.WM_NCACTIVATE:
+                            if (eStruct.wparam.ToInt32() == 0)
+                                break;
+                            if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
+                                break;
+                            if (vsForm.hWnds.Contains(eStruct.hwnd))
+                                vsForm.gotFocusEvent.Invoke();
+                            break;
                         case Win32Helper.WM_SETFOCUS:
                             if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
                                 break;
