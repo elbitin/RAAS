@@ -24,7 +24,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
 {
     class MainService : ServiceBase
     {
-        private bool running = false;
+        private static bool running = false;
         private ServiceHost host;
         private Thread mainThread;
         private FileSystemWatcher newUserWatcher;
@@ -35,19 +35,20 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             "System.Net.Sockets.SocketException",
             "System.ServiceModel.CommunicationException",
         };
-        private String RAAS_SHORTCUTS_SERVICE_NAME = "RAASShortcutsService";
+        private static String RAAS_SHORTCUTS_SERVICE_NAME = "RAASShortcutsService";
         private const double DAY_MS = 24 * 60 * 60 * 1000;
-        private System.Timers.Timer restartShortcusTimer = new System.Timers.Timer();
+        private static System.Timers.Timer restartShortcusTimer = new System.Timers.Timer();
 
         static void Main(string[] args)
         {
             ServiceBase[] servicesToRun;
             servicesToRun = new ServiceBase[] { new MainService() };
             ServiceBase.Run(servicesToRun);
+            PrepareRestartShortcutsTimer();
         }
 
 
-        private void PrepareRestartShortcutsTimer()
+        private static void PrepareRestartShortcutsTimer()
         {
             restartShortcusTimer.Interval = DAY_MS;
             restartShortcusTimer.AutoReset = false;
@@ -57,7 +58,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
         }
 
 
-        private void RestartShortcutsTimer_Elapsed(object sender, ElapsedEventArgs e)
+        private static void RestartShortcutsTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
             restartShortcusTimer.Stop();
             try
