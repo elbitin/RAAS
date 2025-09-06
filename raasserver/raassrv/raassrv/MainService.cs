@@ -41,10 +41,10 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
 
         static void Main(string[] args)
         {
+            PrepareRestartShortcutsTimer();
             ServiceBase[] servicesToRun;
             servicesToRun = new ServiceBase[] { new MainService() };
             ServiceBase.Run(servicesToRun);
-            PrepareRestartShortcutsTimer();
         }
 
 
