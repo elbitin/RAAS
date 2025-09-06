@@ -25,7 +25,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 {
     public partial class VisualizationsForm : Form
     {
-        private bool running = true;
         private Version win8version = new Version(6, 2, 9200, 0);
         private List<IntPtr> noOverlayHWnds = new List<IntPtr>();
         private bool visualizationsActive = false;
@@ -55,8 +54,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private Dictionary<int,CONNECTIONBAR> connectionBars = new Dictionary<int, CONNECTIONBAR>();
         private const int WINDOWRECT_SURROUNDSPACE_X = 4;
         private const int WINDOWRECT_SURROUNDSPACE_Y = 4;
-        private static int subsequentInFocusCount = 0;
-        private static int subsequentOutOfFocusCount = 0;
         private static SpinLock showConnectionsBarLock = new SpinLock();
         private static SpinLock hideConnectionBarsLock = new SpinLock();
         private hideConnectionBarsEventCallbackHandler callbackHandlerHideConnectionBars;
@@ -191,8 +188,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            running = false;
-            updateTimer.Stop();
             RemoveHooks();
             base.OnFormClosing(e);
         }
@@ -448,8 +443,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                             connectionBars[i].top.Invalidate();
                         };
                         connectionbarActive = false;
-                        subsequentInFocusCount = 0;
-                        subsequentOutOfFocusCount = 0;
                     }
                     catch { }
                     finally
@@ -696,8 +689,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                     ShowConnectionBarForm(connectionBars[i].top, i, true);
                                 }
                                 connectionbarActive = true;
-                                subsequentInFocusCount = 0;
-                                subsequentOutOfFocusCount = 0;
                             }
                             catch { }
                             finally
