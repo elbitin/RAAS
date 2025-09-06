@@ -57,9 +57,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private Dictionary<int,CONNECTIONBAR> connectionBars = new Dictionary<int, CONNECTIONBAR>();
         private const int WINDOWRECT_SURROUNDSPACE_X = 4;
         private const int WINDOWRECT_SURROUNDSPACE_Y = 4;
-        private const int UPDATETIMER_INTERVAL_MS = 100;
-        private const int SUBSEQUENT_IN_FOCUS_COUNT = 5;
-        private const int SUBSEQUENT_OUT_OF_FOCUS_COUNT = 5;
         private static int subsequentInFocusCount = 0;
         private static int subsequentOutOfFocusCount = 0;
         private static SpinLock showConnectionsBarLock = new SpinLock();
@@ -129,15 +126,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private void InitializeGUI()
         {
             UpdateSettings();
-        }
-
-        private void InitializeUpdateTimer()
-        {
-            updateTimer.Interval = UPDATETIMER_INTERVAL_MS;
-            updateTimer.Elapsed += UpdateTimer_Elapsed;
-            updateTimer.Enabled = true;
-            updateTimer.AutoReset = false;
-            updateTimer.Start();
         }
 
         private void HookCurrentThread()
@@ -281,56 +269,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             {
                 hook.Value.Dispose();
                 windowsHooks.Remove(hook.Key);
-            }
-        }
-
-        private void UpdateTimer_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            updateTimer.Stop();
-            try
-            {
-                if (running)
-                {
-                    // Update focus subsequently to prevent flickering
-                    UpdateFocusSubsequently();
-                }
-            }
-            catch { };
-            if (running)
-                updateTimer.Start();
-        }
-
-        private void UpdateFocusSubsequently()
-        {
-            // Get foreground window handle
-            IntPtr foregroundWindow = Win32Helper.GetForegroundWindow();
-
-            // Update connection bars if needed
-            if (hWnds.Contains(foregroundWindow) || (foregroundWindow == IntPtr.Zero && connectionbarActive))
-            {
-                subsequentOutOfFocusCount = 0;
-                if (!connectionbarActive)
-                {
-                    subsequentInFocusCount++;
-                    if (subsequentInFocusCount >= SUBSEQUENT_IN_FOCUS_COUNT)
-                    {
-                        showConnectionBarsEvent.Invoke(true, false);
-                        subsequentInFocusCount = 0;
-                    }
-                }
-            }
-            else
-            {
-                subsequentInFocusCount = 0;
-                if (connectionbarActive)
-                {
-                    subsequentOutOfFocusCount++;
-                    if (subsequentOutOfFocusCount >= SUBSEQUENT_OUT_OF_FOCUS_COUNT)
-                    {
-                        hideConnectionBarsEvent.Invoke(false);
-                        subsequentOutOfFocusCount = 0;
-                    }
-                }
             }
         }
 
