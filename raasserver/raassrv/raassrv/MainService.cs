@@ -18,6 +18,7 @@ using System.Threading;
 using System;
 using Serilog;
 using System.IO;
+using System.Timers;
 
 namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
 {
@@ -34,12 +35,43 @@ namespace Elbitin.Applications.RAAS.RAASServer.RAASSvr
             "System.Net.Sockets.SocketException",
             "System.ServiceModel.CommunicationException",
         };
+        private String RAAS_SHORTCUTS_SERVICE_NAME = "RAASShortcutsService";
+        private const double DAY_MS = 24 * 60 * 60 * 1000;
+        private System.Timers.Timer restartShortcusTimer = new System.Timers.Timer();
 
         static void Main(string[] args)
         {
             ServiceBase[] servicesToRun;
             servicesToRun = new ServiceBase[] { new MainService() };
             ServiceBase.Run(servicesToRun);
+        }
+
+
+        private void PrepareRestartShortcutsTimer()
+        {
+            restartShortcusTimer.Interval = DAY_MS;
+            restartShortcusTimer.AutoReset = false;
+            restartShortcusTimer.Elapsed += RestartShortcutsTimer_Elapsed;
+            restartShortcusTimer.Enabled = true;
+            restartShortcusTimer.Start();
+        }
+
+
+        private void RestartShortcutsTimer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            restartShortcusTimer.Stop();
+            try
+            {
+                if (running)
+                {
+                    new Thread(delegate () {
+                        ServiceHelper.RestartWindowsService(RAAS_SHORTCUTS_SERVICE_NAME, TimeSpan.FromDays(10));
+                    }).Start();
+                }
+            }
+            finally {
+                restartShortcusTimer.Start();
+            }
         }
 
         public MainService()
