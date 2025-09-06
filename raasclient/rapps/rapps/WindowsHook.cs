@@ -85,6 +85,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                         case Win32Helper.WM_ACTIVATE:
                             if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
                                 break;
+                            if (!vsForm.hWnds.Contains((IntPtr)eStruct.wparam.ToInt32()))
+                                break;
                             if ((eStruct.wparam.ToInt32() == 1 || eStruct.wparam.ToInt32() == 2))
                             {
                                 vsForm.gotFocusEvent.Invoke();
