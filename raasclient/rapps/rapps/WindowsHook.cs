@@ -191,7 +191,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                             }
                             break;
                         case Win32Helper.WM_DESTROY:
-                        case Win32Helper.WM_CLOSE:
                         case Win32Helper.WM_QUIT:
                             if (vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
                                 break;
