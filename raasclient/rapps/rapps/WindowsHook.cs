@@ -78,14 +78,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                     // Handle standard window messages
                     switch ((uint)eStruct.message)
                     {
-                        case Win32Helper.WM_MOUSEACTIVATE:
-                            if(vsForm.hWnds.Contains((IntPtr)eStruct.wparam.ToInt32()))
-                                vsForm.gotFocusEvent.Invoke();
-                            break;
                         case Win32Helper.WM_ACTIVATE:
                             if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
-                                break;
-                            if (!vsForm.hWnds.Contains((IntPtr)eStruct.wparam.ToInt32()))
                                 break;
                             if ((eStruct.wparam.ToInt32() == 1 || eStruct.wparam.ToInt32() == 2))
                             {
@@ -151,7 +145,13 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                 vsForm.lostFocusEvent.Invoke();
                             break;
                         case Win32Helper.WM_SIZE:
-                            if ((vsForm.visualizationsEnabled) && !vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd) && Win32Helper.IsWindowVisible((IntPtr)eStruct.hwnd) && Win32Helper.IsWindow((IntPtr)eStruct.hwnd))
+                            if (vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
+                                break;
+                            if ((int)eStruct.wparam == 1)
+                                vsForm.lostFocusEvent.Invoke();
+                            if ((int)eStruct.wparam == 2)
+                                vsForm.gotFocusEvent.Invoke();
+                            if ((vsForm.visualizationsEnabled) && Win32Helper.IsWindowVisible((IntPtr)eStruct.hwnd) && Win32Helper.IsWindow((IntPtr)eStruct.hwnd))
                             {
                                 System.Int64 windowStyle = Win32Helper.GetWindowLong((IntPtr)eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_STYLE);
                                 System.Int64 windowStyleEx = Win32Helper.GetWindowLong((IntPtr)eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
@@ -163,12 +163,14 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                             break;
                         case Win32Helper.WM_STYLECHANGED:
                         case Win32Helper.WM_WINDOWPOSCHANGED:
-                            if ((vsForm.visualizationsEnabled)&& !vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd) && Win32Helper.IsWindowVisible((IntPtr)eStruct.hwnd) && Win32Helper.IsWindow((IntPtr)eStruct.hwnd))
+                            if (vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
+                                break;
+                            if ((vsForm.visualizationsEnabled) && Win32Helper.IsWindowVisible((IntPtr)eStruct.hwnd) && Win32Helper.IsWindow((IntPtr)eStruct.hwnd))
                             {
                                 System.Int64 windowStyle = Win32Helper.GetWindowLong((IntPtr)eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_STYLE);
                                 System.Int64 windowStyleEx = Win32Helper.GetWindowLong((IntPtr)eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
                                 long lWindowStyle = windowStyle;
-                                if ((windowStyle & (int)Win32Helper.WindowStyles.WS_VISIBLE) != 0 && (windowStyleEx & (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT) == 0 && !vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
+                                if ((windowStyle & (int)Win32Helper.WindowStyles.WS_VISIBLE) != 0 && (windowStyleEx & (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT) == 0)
                                 {
                                     if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd))
                                     {
@@ -183,12 +185,16 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                     if (VisualizationsForm.connectionbarActive)
                                         vsForm.showConnectionBarsEvent.Invoke(true, true);
                             }
-                            else if ((vsForm.visualizationsActive && vsForm.visualizationsEnabled) && !vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd) && Win32Helper.IsWindow((IntPtr)eStruct.hwnd))
+                            else if ((vsForm.visualizationsActive && vsForm.visualizationsEnabled) && Win32Helper.IsWindow((IntPtr)eStruct.hwnd))
                             {
                                 vsForm.setInvisibleWindowEvent.Invoke((IntPtr)eStruct.hwnd);
                             }
                             break;
                         case Win32Helper.WM_DESTROY:
+                        case Win32Helper.WM_CLOSE:
+                        case Win32Helper.WM_QUIT:
+                            if (vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
+                                break;
                             vsForm.forgetHwndEvent.Invoke((IntPtr)eStruct.hwnd);
                             break;
                     }

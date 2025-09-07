@@ -17,6 +17,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using System.Timers;
 using Elbitin.Applications.RAAS.RAASClient.Models;
 using Elbitin.Applications.RAAS.Common.Helpers;
 using Elbitin.Applications.RAAS.RAASClient.Helpers;
@@ -25,6 +26,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 {
     public partial class VisualizationsForm : Form
     {
+        private bool running = true;
+        private System.Timers.Timer updateTimer = new System.Timers.Timer();
         private Version win8version = new Version(6, 2, 9200, 0);
         private List<IntPtr> noOverlayHWnds = new List<IntPtr>();
         private bool visualizationsActive = false;
@@ -54,6 +57,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private Dictionary<int,CONNECTIONBAR> connectionBars = new Dictionary<int, CONNECTIONBAR>();
         private const int WINDOWRECT_SURROUNDSPACE_X = 4;
         private const int WINDOWRECT_SURROUNDSPACE_Y = 4;
+        private const int UPDATETIMER_INTERVAL_MS = 500;
         private static SpinLock showConnectionsBarLock = new SpinLock();
         private static SpinLock hideConnectionBarsLock = new SpinLock();
         private hideConnectionBarsEventCallbackHandler callbackHandlerHideConnectionBars;
@@ -114,12 +118,22 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             SetNoOverlayForMainForm();
             HookCurrentThread();
             Hide();
+            InitializeUpdateTimer();
             Show();
         }
 
         private void InitializeGUI()
         {
             UpdateSettings();
+        }
+
+        private void InitializeUpdateTimer()
+        {
+            updateTimer.Interval = UPDATETIMER_INTERVAL_MS;
+            updateTimer.Elapsed += UpdateTimer_Elapsed;
+            updateTimer.Enabled = true;
+            updateTimer.AutoReset = false;
+            updateTimer.Start();
         }
 
         private void HookCurrentThread()
@@ -188,6 +202,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
+            running = false;
+            updateTimer.Stop();
             RemoveHooks();
             base.OnFormClosing(e);
         }
@@ -261,6 +277,38 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             {
                 hook.Value.Dispose();
                 windowsHooks.Remove(hook.Key);
+            }
+        }
+
+        private void UpdateTimer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            updateTimer.Stop();
+            try
+            {
+                if (running)
+                {
+                    // Update focus subsequently to prevent flickering
+                    UpdateFocus();
+                }
+            }
+            catch { };
+            if (running)
+                updateTimer.Start();
+        }
+
+        private void UpdateFocus()
+        {
+            // Get foreground window handle
+            IntPtr foregroundWindow = Win32Helper.GetForegroundWindow();
+
+            // Update connection bars if needed
+            if (hWnds.Contains(foregroundWindow) || (foregroundWindow == IntPtr.Zero && connectionbarActive))
+            {
+                ShowConnectionBars();
+            }
+            else
+            {
+                HideConnectionBars();
             }
         }
 
