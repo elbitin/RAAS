@@ -129,21 +129,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                             if (vsForm.hWnds.Contains(eStruct.hwnd))
                                 vsForm.gotFocusEvent.Invoke();
                             break;
-                        case Win32Helper.WM_SETFOCUS:
-                            if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
-                                break;
-                            long windowStyleExActivate = Win32Helper.GetWindowLong(eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
-                            if (vsForm.hWnds.Contains(eStruct.hwnd) && (windowStyleExActivate & (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE) == 0)
-                                vsForm.gotFocusEvent.Invoke();
-                            break;
-                        case Win32Helper.WM_KILLFOCUS:
-                            if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
-                                break;
-                            uint lpdwProcessId;
-                            Win32Helper.GetWindowThreadProcessId(wparam, out lpdwProcessId);
-                            if (lpdwProcessId != Process.GetCurrentProcess().Id)
-                                vsForm.lostFocusEvent.Invoke();
-                            break;
                         case Win32Helper.WM_SIZE:
                             if (vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
                                 break;

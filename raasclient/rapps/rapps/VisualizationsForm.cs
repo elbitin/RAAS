@@ -634,17 +634,25 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 connectionBarForm.CenterTextColor = connectionBarTextColor;
                 connectionBarForm.CenterText = connectionBarText;
                 connectionBarForm.LinesColor = linesColor;
-                connectionBarForm.Opacity = 0;
+                connectionBarForm.Opacity = connectionBarOpacity;
                 connectionBarForm.Visible = false;
                 connectionBarForm.IsTop = isTop;
+                connectionBarForm.TopMost = true;
                 IgnoreHWnd(connectionBarForm.Handle);
                 SetWindowLongPtr(connectionBarForm.Handle, Win32Helper.GWLParameter.GWL_HWNDPARENT, Win32Helper.GetDesktopWindow());
+
+                ignoreHwndEvent.Invoke(connectionBarForm.Handle);
+                connectionBarForm.MoveWindowToScreen(Screen.AllScreens.ElementAt(screenNumber));
+
+                // Show window
+                ShowInactiveTop(connectionBarForm, (IntPtr)Win32Helper.HWND_TOPMOST);
+                connectionBarForm.Invalidate();
             }
             catch { }
             return connectionBarForm;
         }
 
-        private void ShowConnectionBarForm(ConnectionBarForm connectionBarForm, int screenNumber, bool isTop)
+        private void ShowConnectionBarForm(ConnectionBarForm connectionBarForm, int screenNumber, bool isTop, bool forceTop)
         {
             try
             {
@@ -659,12 +667,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 connectionBarForm.CenterTextColor = connectionBarTextColor;
                 connectionBarForm.CenterText = connectionBarText;
 
-                ignoreHwndEvent.Invoke(connectionBarForm.Handle);
-                connectionBarForm.MoveWindowToScreen(Screen.AllScreens.ElementAt(screenNumber));
-
-                // Show window
-                ShowInactiveTop(connectionBarForm, (IntPtr)Win32Helper.HWND_TOPMOST);
-                connectionBarForm.Invalidate();
+                if (forceTop)
+                    ShowInactiveTop(connectionBarForm, (IntPtr)Win32Helper.HWND_TOPMOST);
 
                 if (!(visualizationsEnabled && visualizationsActive))
                 {
@@ -680,6 +684,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                     connectionBarForm.Color = connectionBarColor;
                     connectionBarForm.Opacity = connectionBarOpacity;
                 }
+                connectionBarForm.Invalidate();
                 connectionBarForm.Visible = true;
             }
             catch { }
@@ -733,8 +738,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                 // Show existing connection bars
                                 for (int i = 0; i < connectionBars.Count(); i++)
                                 {
-                                    ShowConnectionBarForm(connectionBars[i].bottom, i, false);
-                                    ShowConnectionBarForm(connectionBars[i].top, i, true);
+                                    ShowConnectionBarForm(connectionBars[i].bottom, i, false, force);
+                                    ShowConnectionBarForm(connectionBars[i].top, i, true, force);
                                 }
                                 connectionbarActive = true;
                             }
