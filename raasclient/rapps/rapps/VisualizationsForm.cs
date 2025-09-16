@@ -486,8 +486,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                         for (int i = 0; i < connectionBars.Count(); i++)
                         {
                             connectionBars[i].bottom.Opacity = 0;
-                            connectionBars[i].bottom.Invalidate();
                             connectionBars[i].top.Opacity = 0;
+                            connectionBars[i].bottom.Invalidate();
                             connectionBars[i].top.Invalidate();
                         };
                         connectionbarActive = false;
@@ -656,17 +656,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         {
             try
             {
-                // Get screen dimensions
-                int screenWorkingWidth = Screen.AllScreens.ElementAt(screenNumber).WorkingArea.Width;
-                int screenWorkingHeight = Screen.AllScreens.ElementAt(screenNumber).WorkingArea.Height;
-
-                // Initialize connectionbar properties
-                connectionBarForm.IsTop = isTop;
-                connectionBarForm.Width = (int)(screenWorkingWidth * 0.6) + 4;
-                connectionBarForm.ScreenWorkingWidth = screenWorkingWidth;
-                connectionBarForm.CenterTextColor = connectionBarTextColor;
-                connectionBarForm.CenterText = connectionBarText;
-
                 if (forceTop)
                     ShowInactiveTop(connectionBarForm, (IntPtr)Win32Helper.HWND_TOPMOST);
 
@@ -685,7 +674,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                     connectionBarForm.Opacity = connectionBarOpacity;
                 }
                 connectionBarForm.Invalidate();
-                connectionBarForm.Visible = true;
             }
             catch { }
         }
