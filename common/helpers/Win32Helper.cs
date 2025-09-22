@@ -1558,6 +1558,9 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
 
         public static extern bool WTSQuerySessionInformation(IntPtr hServer, int sessionId, WtsInfoClass wtsInfoClass, out IntPtr ppBuffer, out int pBytesReturned);
 
+        [DllImport("user32.dll")]
+        public static extern IntPtr GetFocus();
+
         public enum WtsInfoClass
         {
             WTSUserName = 5,
