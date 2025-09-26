@@ -287,10 +287,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             {
                 if (running)
                 {
-                    this.BeginInvoke(new MethodInvoker(delegate
-                    {
-                        UpdateFocus();
-                    }));
+                    // Update focus subsequently to prevent flickering
+                    UpdateFocus();
                 }
             }
             catch { };
@@ -301,10 +299,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private void UpdateFocus()
         {
             // Get foreground window handle
-            IntPtr focusWindow = Win32Helper.GetFocus();
+            IntPtr foregroundWindow = Win32Helper.GetForegroundWindow();
 
             // Update connection bars if needed
-            if (hWnds.Contains(focusWindow))
+            if (hWnds.Contains(foregroundWindow) || (foregroundWindow == IntPtr.Zero && connectionbarActive))
             {
                 ShowConnectionBars();
             }
