@@ -1,2 +1,2 @@
-set RAASClientVersion=2.2.2
-set RAASServerVersion=2.2.2
+set RAASClientVersion=2.2.3
+set RAASServerVersion=2.2.3
