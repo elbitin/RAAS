@@ -843,7 +843,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                         }
                         catch { }
                     }
-                    else
+                    else if (windowOverlays.Keys.Contains(hWnd))
                     {
                         UpdateOverlayFrames(hWnd, windowOverlays[hWnd]);
                         return;
