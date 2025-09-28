@@ -165,9 +165,9 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             showConnectionBarsEvent += callbackHandlerShowConnectionBars;
             callbackHandlerSetInvisibleWindow = new setInvisibleWindowEventCallbackHandler(SetInvisibleWindow);
             setInvisibleWindowEvent += callbackHandlerSetInvisibleWindow;
-            callbackHandlerWindowPosChanged = new windowPosChangedEventCallbackHandler(WindowPosChanged); ;
+            callbackHandlerWindowPosChanged = new windowPosChangedEventCallbackHandler(WindowPosChanged);
             windowPosChangedEvent += callbackHandlerWindowPosChanged;
-            callbackHandlerNewOverlay = new updateOverlayEventCallbackHandler(UpdateOverlay); ;
+            callbackHandlerNewOverlay = new updateOverlayEventCallbackHandler(UpdateOverlay);
             updateOverlayEvent += callbackHandlerNewOverlay;
             callbackHandlerUpdateSettings = new updateSettingsEventCallbackHandler(UpdateSettings);
             updateSettingsEvent += callbackHandlerUpdateSettings;
