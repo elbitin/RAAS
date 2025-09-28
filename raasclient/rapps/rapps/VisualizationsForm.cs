@@ -880,6 +880,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             Rectangle clientRect = new Rectangle(rectWin.left, rectWin.top, rectWin.right - rectWin.left, rectWin.bottom - rectWin.top);
             try
             {
+                // Create overlay if it does not exist
+                if (!windowOverlays.Keys.Contains(hWnd) && !noOverlayHWnds.Contains(hWnd))
+                    UpdateOverlay(hWnd);
+
                 // Find correct overlays and position them
                 foreach (IntPtr hWndOverlay in windowOverlays.Keys)
                 {
