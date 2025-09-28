@@ -79,7 +79,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                     switch ((uint)eStruct.message)
                     {
                         case Win32Helper.WM_ACTIVATE:
-                            if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
+                            if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
                                 break;
                             if ((eStruct.wparam.ToInt32() == 1 || eStruct.wparam.ToInt32() == 2))
                             {
@@ -96,7 +96,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                             }
                             break;
                         case Win32Helper.WM_ACTIVATEAPP:
-                            if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
+                            if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
                                 break;
                             if (vsForm.hWnds.Contains(eStruct.hwnd))
                             {
@@ -124,13 +124,27 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                         case Win32Helper.WM_NCACTIVATE:
                             if (eStruct.wparam.ToInt32() == 0)
                                 break;
-                            if (vsForm.noOverlayHWnds.Contains(eStruct.hwnd))
+                            if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
                                 break;
-                            if (vsForm.hWnds.Contains(eStruct.hwnd))
+                            vsForm.gotFocusEvent.Invoke();
+                            break;
+                        case Win32Helper.WM_SETFOCUS:
+                            if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
+                                break;
+                            long windowStyleExActivate = Win32Helper.GetWindowLong(eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
+                            if (vsForm.hWnds.Contains(eStruct.hwnd) && (windowStyleExActivate & (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE) == 0)
                                 vsForm.gotFocusEvent.Invoke();
                             break;
+                        case Win32Helper.WM_KILLFOCUS:
+                            if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
+                                break;
+                            uint lpdwProcessId;
+                            Win32Helper.GetWindowThreadProcessId(wparam, out lpdwProcessId);
+                            if (lpdwProcessId != Process.GetCurrentProcess().Id)
+                                vsForm.lostFocusEvent.Invoke();
+                            break;
                         case Win32Helper.WM_SIZE:
-                            if (vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
+                            if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
                                 break;
                             if ((int)eStruct.wparam == 1)
                                 vsForm.lostFocusEvent.Invoke();
@@ -155,7 +169,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                 System.Int64 windowStyle = Win32Helper.GetWindowLong((IntPtr)eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_STYLE);
                                 System.Int64 windowStyleEx = Win32Helper.GetWindowLong((IntPtr)eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
                                 long lWindowStyle = windowStyle;
-                                if ((windowStyle & (int)Win32Helper.WindowStyles.WS_VISIBLE) != 0 && (windowStyleEx & (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT) == 0)
+                                if ((windowStyle & (int)Win32Helper.WindowStyles.WS_VISIBLE) != 0 && (windowStyleEx & (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT) == 0 &&  (windowStyleEx & (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE) == 0)
                                 {
                                     if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd))
                                     {
@@ -177,7 +191,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                             break;
                         case Win32Helper.WM_DESTROY:
                         case Win32Helper.WM_QUIT:
-                            if (vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
+                            if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
                                 break;
                             vsForm.forgetHwndEvent.Invoke((IntPtr)eStruct.hwnd);
                             break;

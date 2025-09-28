@@ -57,7 +57,11 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private Dictionary<int,CONNECTIONBAR> connectionBars = new Dictionary<int, CONNECTIONBAR>();
         private const int WINDOWRECT_SURROUNDSPACE_X = 4;
         private const int WINDOWRECT_SURROUNDSPACE_Y = 4;
-        private const int UPDATETIMER_INTERVAL_MS = 500;
+        private const int UPDATETIMER_INTERVAL_MS = 100;
+        private const int UPDATE_CONNECTIONBAR_IN_FOCUS_COUNT = 1;
+        private const int UPDATE_CONNECTIONBAR_OUT_OF_FOCUS_COUNT = 20;
+        private int inFocusCount = 0;
+        private int outOfFocusCount = 0;
         private static SpinLock showConnectionsBarLock = new SpinLock();
         private static SpinLock hideConnectionBarsLock = new SpinLock();
         private hideConnectionBarsEventCallbackHandler callbackHandlerHideConnectionBars;
@@ -288,7 +292,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 if (running)
                 {
                     // Update focus subsequently to prevent flickering
-                    UpdateFocus();
+                    UpdateFocusSubsequently();
                 }
             }
             catch { };
@@ -296,19 +300,29 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 updateTimer.Start();
         }
 
-        private void UpdateFocus()
+        private void UpdateFocusSubsequently()
         {
             // Get foreground window handle
             IntPtr foregroundWindow = Win32Helper.GetForegroundWindow();
 
             // Update connection bars if needed
-            if (hWnds.Contains(foregroundWindow) || (foregroundWindow == IntPtr.Zero && connectionbarActive))
+            if (hWnds.Contains(foregroundWindow) && !noOverlayHWnds.Contains(foregroundWindow))
             {
-                ShowConnectionBars();
+                outOfFocusCount = 0;
+                inFocusCount++;
+                if (inFocusCount >= UPDATE_CONNECTIONBAR_IN_FOCUS_COUNT && !connectionbarActive)
+                {
+                    ShowConnectionBars();
+                }
             }
             else
             {
-                HideConnectionBars();
+                inFocusCount = 0;
+                outOfFocusCount++;
+                if (outOfFocusCount >= UPDATE_CONNECTIONBAR_OUT_OF_FOCUS_COUNT && connectionbarActive)
+                {
+                    HideConnectionBars();
+                }
             }
         }
 
