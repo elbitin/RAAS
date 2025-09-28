@@ -169,7 +169,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                 System.Int64 windowStyle = Win32Helper.GetWindowLong((IntPtr)eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_STYLE);
                                 System.Int64 windowStyleEx = Win32Helper.GetWindowLong((IntPtr)eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
                                 long lWindowStyle = windowStyle;
-                                if ((windowStyle & (int)Win32Helper.WindowStyles.WS_VISIBLE) != 0 && (windowStyleEx & (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT) == 0 &&  (windowStyleEx & (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE) == 0)
+                                if ((windowStyle & (int)Win32Helper.WindowStyles.WS_VISIBLE) != 0 && (windowStyleEx & (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT) == 0)
                                 {
                                     if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd))
                                     {
