@@ -147,9 +147,9 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                             if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
                                 break;
                             if ((int)eStruct.wparam == 1)
-                                vsForm.lostFocusEvent.Invoke();
+                                vsForm.AppsLostFocus();
                             if ((int)eStruct.wparam == 2)
-                                vsForm.gotFocusEvent.Invoke();
+                                vsForm.AppsGotFocus();
                             if ((vsForm.visualizationsEnabled) && Win32Helper.IsWindowVisible((IntPtr)eStruct.hwnd) && Win32Helper.IsWindow((IntPtr)eStruct.hwnd))
                             {
                                 System.Int64 windowStyle = Win32Helper.GetWindowLong((IntPtr)eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_STYLE);
