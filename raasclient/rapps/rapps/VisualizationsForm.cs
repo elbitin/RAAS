@@ -914,14 +914,14 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             catch { }
         }
 
-        private void AppsGotFocus()
+        public void AppsGotFocus()
         {
             // Show connection bar if inactive
             if (!connectionbarActive)
                 ShowConnectionBars(true, true);
         }
 
-        private void AppsLostFocus()
+        public void AppsLostFocus()
         {
             // Hide connection bar if active
             if (connectionbarActive)

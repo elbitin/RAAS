@@ -83,7 +83,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                 break;
                             if ((eStruct.wparam.ToInt32() == 1 || eStruct.wparam.ToInt32() == 2))
                             {
-                                vsForm.gotFocusEvent.Invoke();
+                                vsForm.AppsGotFocus();
                             }
                             else
                             {
@@ -91,7 +91,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                 Win32Helper.GetWindowThreadProcessId(eStruct.lparam, out activatedWindowProcessId);
                                 if (activatedWindowProcessId != Process.GetCurrentProcess().Id)
                                 {
-                                    vsForm.lostFocusEvent.Invoke();
+                                    vsForm.AppsLostFocus();
                                 }
                             }
                             break;
@@ -106,7 +106,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                     int currentProcessId = Process.GetCurrentProcess().Id;
                                     if (activatedWindowProcessId != 0 && currentProcessId != 0 && activatedWindowProcessId == currentProcessId)
                                     {
-                                        vsForm.gotFocusEvent.Invoke();
+                                        vsForm.AppsGotFocus();
                                     }
 
                                 }
@@ -116,7 +116,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                     int currentProcessId = Process.GetCurrentProcess().Id;
                                     if (activatedWindowProcessId != 0 && currentProcessId != 0 && activatedWindowProcessId != currentProcessId)
                                     {
-                                        vsForm.lostFocusEvent.Invoke();
+                                        vsForm.AppsLostFocus();
                                     }
                                 }
                             }
@@ -126,14 +126,14 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                 break;
                             if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
                                 break;
-                            vsForm.gotFocusEvent.Invoke();
+                            vsForm.AppsGotFocus();
                             break;
                         case Win32Helper.WM_SETFOCUS:
                             if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
                                 break;
                             long windowStyleExActivate = Win32Helper.GetWindowLong(eStruct.hwnd, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
                             if (vsForm.hWnds.Contains(eStruct.hwnd) && (windowStyleExActivate & (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE) == 0)
-                                vsForm.gotFocusEvent.Invoke();
+                                vsForm.AppsGotFocus();
                             break;
                         case Win32Helper.WM_KILLFOCUS:
                             if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
@@ -141,7 +141,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                             uint lpdwProcessId;
                             Win32Helper.GetWindowThreadProcessId(wparam, out lpdwProcessId);
                             if (lpdwProcessId != Process.GetCurrentProcess().Id)
-                                vsForm.lostFocusEvent.Invoke();
+                                vsForm.AppsLostFocus();
                             break;
                         case Win32Helper.WM_SIZE:
                             if (!vsForm.hWnds.Contains((IntPtr)eStruct.hwnd) || vsForm.noOverlayHWnds.Contains((IntPtr)eStruct.hwnd))
