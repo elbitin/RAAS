@@ -58,8 +58,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private const int WINDOWRECT_SURROUNDSPACE_X = 4;
         private const int WINDOWRECT_SURROUNDSPACE_Y = 4;
         private const int UPDATETIMER_INTERVAL_MS = 100;
-        private const int UPDATE_CONNECTIONBAR_IN_FOCUS_COUNT = 1;
-        private const int UPDATE_CONNECTIONBAR_OUT_OF_FOCUS_COUNT = 10;
+        private const int UPDATE_CONNECTIONBAR_IN_FOCUS_THRESHOLD = 1;
+        private const int UPDATE_CONNECTIONBAR_OUT_OF_FOCUS_THRESHOLD = 10;
         private int inFocusCount = 0;
         private int outOfFocusCount = 0;
         private static SpinLock showConnectionsBarLock = new SpinLock();
@@ -300,7 +300,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             {
                 outOfFocusCount = 0;
                 inFocusCount++;
-                if (inFocusCount >= UPDATE_CONNECTIONBAR_IN_FOCUS_COUNT && !connectionbarActive)
+                if (inFocusCount >= UPDATE_CONNECTIONBAR_IN_FOCUS_THRESHOLD && !connectionbarActive)
                 {
                     ShowConnectionBars();
                 }
@@ -309,7 +309,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             {
                 inFocusCount = 0;
                 outOfFocusCount++;
-                if (outOfFocusCount >= UPDATE_CONNECTIONBAR_OUT_OF_FOCUS_COUNT && connectionbarActive)
+                if (outOfFocusCount >= UPDATE_CONNECTIONBAR_OUT_OF_FOCUS_THRESHOLD && connectionbarActive)
                 {
                     HideConnectionBars();
                 }
