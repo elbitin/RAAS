@@ -59,7 +59,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private const int WINDOWRECT_SURROUNDSPACE_Y = 4;
         private const int UPDATETIMER_INTERVAL_MS = 100;
         private const int UPDATE_CONNECTIONBAR_IN_FOCUS_COUNT = 1;
-        private const int UPDATE_CONNECTIONBAR_OUT_OF_FOCUS_COUNT = 20;
+        private const int UPDATE_CONNECTIONBAR_OUT_OF_FOCUS_COUNT = 10;
         private int inFocusCount = 0;
         private int outOfFocusCount = 0;
         private static SpinLock showConnectionsBarLock = new SpinLock();
@@ -67,8 +67,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private hideConnectionBarsEventCallbackHandler callbackHandlerHideConnectionBars;
         private showConnectionBarsEventCallbackHandler callbackHandlerShowConnectionBars;
         private setInvisibleWindowEventCallbackHandler callbackHandlerSetInvisibleWindow;
-        private lostFocusEventCallbackHandler callbackHandlerlostFocus;
-        private gotFocusEventCallbackHandler callbackHandlergotFocus;
         private windowPosChangedEventCallbackHandler callbackHandlerWindowPosChanged;
         private updateOverlayEventCallbackHandler callbackHandlerNewOverlay;
         private updateSettingsEventCallbackHandler callbackHandlerUpdateSettings;
@@ -97,10 +95,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private event updateOverlayEventCallbackHandler updateOverlayEvent;
         private delegate void windowPosChangedEventCallbackHandler(IntPtr hWnd, uint flags);
         private event windowPosChangedEventCallbackHandler windowPosChangedEvent;
-        private delegate void gotFocusEventCallbackHandler();
-        private event gotFocusEventCallbackHandler gotFocusEvent;
-        private delegate void lostFocusEventCallbackHandler();
-        private event lostFocusEventCallbackHandler lostFocusEvent;
 
         struct CONNECTIONBAR
         {
@@ -171,10 +165,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             showConnectionBarsEvent += callbackHandlerShowConnectionBars;
             callbackHandlerSetInvisibleWindow = new setInvisibleWindowEventCallbackHandler(SetInvisibleWindow);
             setInvisibleWindowEvent += callbackHandlerSetInvisibleWindow;
-            callbackHandlerlostFocus = new lostFocusEventCallbackHandler(AppsLostFocus); ;
-            lostFocusEvent += callbackHandlerlostFocus;
-            callbackHandlergotFocus = new gotFocusEventCallbackHandler(AppsGotFocus); ;
-            gotFocusEvent += callbackHandlergotFocus;
             callbackHandlerWindowPosChanged = new windowPosChangedEventCallbackHandler(WindowPosChanged); ;
             windowPosChangedEvent += callbackHandlerWindowPosChanged;
             callbackHandlerNewOverlay = new updateOverlayEventCallbackHandler(UpdateOverlay); ;
