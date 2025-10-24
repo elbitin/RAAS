@@ -225,7 +225,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             try
             {
                 // Find overlays for targeted window and close them
-                foreach (IntPtr hWndOverlay in windowOverlays.Keys)
+                foreach (IntPtr hWndOverlay in windowOverlays.Keys.ToList())
                 {
                     if (hWndOverlay != hWnd)
                         continue;
@@ -234,6 +234,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                     // Overlays found, now close them and remove reference
                     overlayForm.Opacity = 0;
                     overlayForm.Close();
+                    overlayForm.Dispose();
                     windowOverlays.Remove(hWndOverlay);
                 }
             }
@@ -410,7 +411,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             try
             {
                 // Find current window overlays and make them visible
-                foreach (IntPtr hWndOverlay in windowOverlays.Keys)
+                foreach (IntPtr hWndOverlay in windowOverlays.Keys.ToList())
                 {
                     OverlayForm overlayForm = windowOverlays[hWndOverlay];
                     if (visualizationsActive && visualizationsEnabled)
@@ -429,7 +430,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 }
             }
             catch { }
-            foreach (CONNECTIONBAR fullConnectionBar in connectionBars.Values)
+            foreach (CONNECTIONBAR fullConnectionBar in connectionBars.Values.ToList())
             {
                 fullConnectionBar.top.Visible = true;
                 fullConnectionBar.bottom.Visible = true;
@@ -440,7 +441,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private void DeactivateInvoked()
         {
             visualizationsActive = false;
-            foreach (CONNECTIONBAR fullConnectionBar in connectionBars.Values)
+            foreach (CONNECTIONBAR fullConnectionBar in connectionBars.Values.ToList())
             {
                 fullConnectionBar.top.Visible = false;
                 fullConnectionBar.bottom.Visible = false;
@@ -457,7 +458,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private void SetInvisibleWindow(IntPtr hWnd)
         {
             // Find overlays for the window and hide them
-            foreach (IntPtr hWndOverlay in windowOverlays.Keys)
+            foreach (IntPtr hWndOverlay in windowOverlays.Keys.ToList())
             {
                 if (hWndOverlay != hWnd)
                     continue;
@@ -555,7 +556,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             {
                 connectionBarOpacity = 0;
                 visualizationsEnabled = false;
-                foreach (IntPtr hWndOverlay in windowOverlays.Keys)
+                foreach (IntPtr hWndOverlay in windowOverlays.Keys.ToList())
                 {
                     OverlayForm overlayForms = windowOverlays[hWndOverlay];
                     overlayForms.Opacity = 0;
@@ -575,7 +576,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                     connectionBarColor = visualizationsSettings.MainColor;
                     connectionBarTextColor = visualizationsSettings.TextColor;
                     connectionBarEnabled = true;
-                    foreach (CONNECTIONBAR fullConnectionBar in connectionBars.Values)
+                    foreach (CONNECTIONBAR fullConnectionBar in connectionBars.Values.ToList())
                     {
                         fullConnectionBar.top.LinesColor = linesColor;
                         fullConnectionBar.top.CenterText = connectionBarText;
@@ -597,7 +598,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 // Apply overlays
                 try
                 {
-                    foreach (IntPtr hWndOverlay in windowOverlays.Keys)
+                    foreach (IntPtr hWndOverlay in windowOverlays.Keys.ToList())
                     {
                         OverlayForm overlayForms = windowOverlays[hWndOverlay];
                         overlayForms.DrawFrames = frames;
@@ -758,7 +759,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             IntPtr hDC = Win32Helper.GetDC(hWnd);
             Win32Helper.RECT rectWin;
             Win32Helper.GetWindowRect(hWnd, out rectWin);
-            System.Drawing.Point newPoint = new System.Drawing.Point(0, 0);
 
             // Create overlay form
             OverlayForm overlayForm = new OverlayForm(rectWin.right - rectWin.left, rectWin.bottom - rectWin.top, 1);
@@ -772,20 +772,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             overlayForm.Color = overlaysColor;
             overlayForm.DrawFrames = frames;
             overlayForm.ShowInTaskbar = false;
-            overlayForm.Visible = false;
-
-            // Move over remote application
-            Win32Helper.MoveWindow(overlayForm.Handle, rectWin.left - WINDOWRECT_SURROUNDSPACE_X, rectWin.top - WINDOWRECT_SURROUNDSPACE_Y, 2 * WINDOWRECT_SURROUNDSPACE_X + rectWin.right - rectWin.left, 2 * WINDOWRECT_SURROUNDSPACE_Y + rectWin.bottom - rectWin.top, false);
-
-            // Click through
-            IntPtr initialStyleTop = Win32Helper.GetWindowLongPtr(overlayForm.Handle, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
-            SetWindowLongPtr(overlayForm.Handle, Win32Helper.GWLParameter.GWL_EXSTYLE, new IntPtr((int)initialStyleTop | (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE | (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT));
-
-            if (isTop)
-            {
-                UpdateOverlayFrames(hWnd, overlayForm);
-            }
-
             overlayForm.Visible = true;
 
             // Return overlayform
@@ -794,6 +780,18 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 
         private void UpdateOverlayFrames(IntPtr hWnd, OverlayForm overlayForm)
         {
+            // Get Z-order of remote application
+            IntPtr hDC = Win32Helper.GetDC(hWnd);
+            Win32Helper.RECT rectWin;
+            Win32Helper.GetWindowRect(hWnd, out rectWin);
+
+            // Move over remote application
+            Win32Helper.MoveWindow(overlayForm.Handle, 0, 0, 2 * WINDOWRECT_SURROUNDSPACE_X + rectWin.right - rectWin.left, 2 * WINDOWRECT_SURROUNDSPACE_Y + rectWin.bottom - rectWin.top, false);
+
+            // Click through
+            IntPtr initialStyleTop = Win32Helper.GetWindowLongPtr(overlayForm.Handle, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
+            SetWindowLongPtr(overlayForm.Handle, Win32Helper.GWLParameter.GWL_EXSTYLE, new IntPtr((int)initialStyleTop | (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE | (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT));
+
             long lWindowStyle = Win32Helper.GetWindowLong(hWnd, (int)Win32Helper.GWLParameter.GWL_STYLE);
             if (!visualizationsActive)
             {
@@ -808,6 +806,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 overlayForm.Opacity = 1;
             }
             overlayForm.Visible = true;
+            overlayForm.Show();
         }
 
         private void PositionOverlay(IntPtr hWnd, OverlayForm wo)
@@ -829,14 +828,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 {
                     if (windowOverlays.Keys.Contains(hWnd) && (windowOverlays[hWnd].IsDisposed))
                     {
-                        if (!windowOverlays[hWnd].IsDisposed)
-                        {
-                            try
-                            {
-                                windowOverlays[hWnd].Dispose();
-                            }
-                            catch { }
-                        }
                         try
                         {
                             windowOverlays.Remove(hWnd);
@@ -857,11 +848,15 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 overlayWindows.Add(hWnd);
             }
 
-            // Create overlay forms
+            // Create overlay form
             OverlayForm wo;
             wo = CreateOverlay(hWnd, true, visualizationsActive);
 
+            // Position form
             PositionOverlay(hWnd, wo);
+
+            // Remove any prior form
+            windowOverlays.Remove(hWnd);
 
             // Save reference to overlays
             try
@@ -885,7 +880,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                     UpdateOverlay(hWnd);
 
                 // Find correct overlays and position them
-                foreach (IntPtr hWndOverlay in windowOverlays.Keys)
+                foreach (IntPtr hWndOverlay in windowOverlays.Keys.ToList())
                 {
                     if (hWndOverlay != hWnd)
                         continue;
@@ -912,14 +907,20 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         {
             // Show connection bar if inactive
             if (!connectionbarActive)
-                ShowConnectionBars(true, true);
+            {
+                var t = new Thread(() => ShowConnectionBars(true, true));
+                t.Start();
+            }
         }
 
         public void AppsLostFocus()
         {
             // Hide connection bar if active
             if (connectionbarActive)
-                HideConnectionBars(true);
+            {
+                var t = new Thread(() => HideConnectionBars(true));
+                t.Start();
+            }
         }
     }
 }

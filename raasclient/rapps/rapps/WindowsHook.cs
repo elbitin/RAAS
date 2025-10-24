@@ -184,10 +184,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                     if (VisualizationsForm.connectionbarActive)
                                         vsForm.showConnectionBarsEvent.Invoke(true, true);
                             }
-                            else if ((vsForm.visualizationsActive && vsForm.visualizationsEnabled) && Win32Helper.IsWindow((IntPtr)eStruct.hwnd))
-                            {
-                                vsForm.setInvisibleWindowEvent.Invoke((IntPtr)eStruct.hwnd);
-                            }
                             break;
                         case Win32Helper.WM_DESTROY:
                         case Win32Helper.WM_QUIT:
