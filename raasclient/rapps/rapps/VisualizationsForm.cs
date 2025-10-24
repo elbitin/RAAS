@@ -21,6 +21,7 @@ using System.Timers;
 using Elbitin.Applications.RAAS.RAASClient.Models;
 using Elbitin.Applications.RAAS.Common.Helpers;
 using Elbitin.Applications.RAAS.RAASClient.Helpers;
+using Serilog.Core;
 
 namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 {
@@ -755,13 +756,16 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 
         private OverlayForm CreateOverlay(IntPtr hWnd, bool isTop, bool visible = true)
         {
-            // Get Z-order of remote application
-            IntPtr hDC = Win32Helper.GetDC(hWnd);
             Win32Helper.RECT rectWin;
             Win32Helper.GetWindowRect(hWnd, out rectWin);
 
             // Create overlay form
             OverlayForm overlayForm = new OverlayForm(rectWin.right - rectWin.left, rectWin.bottom - rectWin.top, 1);
+
+
+            // Click through
+            IntPtr initialStyleTop = Win32Helper.GetWindowLongPtr(overlayForm.Handle, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
+            SetWindowLongPtr(overlayForm.Handle, Win32Helper.GWLParameter.GWL_EXSTYLE, new IntPtr((int)initialStyleTop | (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE | (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT));
 
             noOverlayHWnds.Add(overlayForm.Handle);
 
@@ -780,17 +784,18 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 
         private void UpdateOverlayFrames(IntPtr hWnd, OverlayForm overlayForm)
         {
-            // Get Z-order of remote application
-            IntPtr hDC = Win32Helper.GetDC(hWnd);
-            Win32Helper.RECT rectWin;
-            Win32Helper.GetWindowRect(hWnd, out rectWin);
+            Win32Helper.RECT rectWinHWnd;
+            Win32Helper.GetWindowRect(hWnd, out rectWinHWnd);
 
-            // Move over remote application
-            Win32Helper.MoveWindow(overlayForm.Handle, 0, 0, 2 * WINDOWRECT_SURROUNDSPACE_X + rectWin.right - rectWin.left, 2 * WINDOWRECT_SURROUNDSPACE_Y + rectWin.bottom - rectWin.top, false);
+            // Get current window rect from overlay
+            Win32Helper.RECT rectWinOverlay;
+            Win32Helper.GetWindowRect(overlayForm.Handle, out rectWinOverlay);
 
-            // Click through
-            IntPtr initialStyleTop = Win32Helper.GetWindowLongPtr(overlayForm.Handle, (int)Win32Helper.GWLParameter.GWL_EXSTYLE);
-            SetWindowLongPtr(overlayForm.Handle, Win32Helper.GWLParameter.GWL_EXSTYLE, new IntPtr((int)initialStyleTop | (int)Win32Helper.WindowStyles.WS_EX_NOACTIVATE | (int)Win32Helper.WindowStyles.WS_EX_TRANSPARENT));
+            if (rectWinOverlay.left != rectWinHWnd.left || rectWinOverlay.top != rectWinHWnd.top || rectWinOverlay.right != 2 * WINDOWRECT_SURROUNDSPACE_X + rectWinHWnd.right || rectWinOverlay.bottom != 2 * WINDOWRECT_SURROUNDSPACE_Y + rectWinHWnd.bottom)
+            {
+                // Move over remote application
+                Win32Helper.MoveWindow(overlayForm.Handle, 0, 0, 2 * WINDOWRECT_SURROUNDSPACE_X + rectWinHWnd.right - rectWinHWnd.left, 2 * WINDOWRECT_SURROUNDSPACE_Y + rectWinHWnd.bottom - rectWinHWnd.top, false);
+            }
 
             long lWindowStyle = Win32Helper.GetWindowLong(hWnd, (int)Win32Helper.GWLParameter.GWL_STYLE);
             if (!visualizationsActive)
