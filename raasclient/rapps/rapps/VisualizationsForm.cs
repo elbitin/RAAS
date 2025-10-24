@@ -22,6 +22,7 @@ using Elbitin.Applications.RAAS.RAASClient.Models;
 using Elbitin.Applications.RAAS.Common.Helpers;
 using Elbitin.Applications.RAAS.RAASClient.Helpers;
 using Serilog.Core;
+using Serilog;
 
 namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
 {
@@ -791,9 +792,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             Win32Helper.RECT rectWinOverlay;
             Win32Helper.GetWindowRect(overlayForm.Handle, out rectWinOverlay);
 
-            if (rectWinOverlay.left != rectWinHWnd.left || rectWinOverlay.top != rectWinHWnd.top || rectWinOverlay.right != 2 * WINDOWRECT_SURROUNDSPACE_X + rectWinHWnd.right || rectWinOverlay.bottom != 2 * WINDOWRECT_SURROUNDSPACE_Y + rectWinHWnd.bottom)
+            if (rectWinOverlay.left != rectWinHWnd.left || rectWinOverlay.top != rectWinHWnd.top || rectWinOverlay.right != rectWinHWnd.right || rectWinOverlay.bottom != rectWinHWnd.bottom)
             {
-                // Move over remote application
                 Win32Helper.MoveWindow(overlayForm.Handle, 0, 0, 2 * WINDOWRECT_SURROUNDSPACE_X + rectWinHWnd.right - rectWinHWnd.left, 2 * WINDOWRECT_SURROUNDSPACE_Y + rectWinHWnd.bottom - rectWinHWnd.top, false);
             }
 
