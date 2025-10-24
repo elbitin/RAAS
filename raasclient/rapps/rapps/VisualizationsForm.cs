@@ -853,6 +853,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                 overlayWindows.Add(hWnd);
             }
 
+            long lWindowStyle = Win32Helper.GetWindowLong(hWnd, (int)Win32Helper.GWLParameter.GWL_STYLE);
+            if ((lWindowStyle & (long)Win32Helper.WindowStyles.WS_TILEDWINDOW) == 0 || (lWindowStyle & (int)Win32Helper.WindowStyles.WS_VISIBLE) == 0)
+                return;
+
             // Create overlay form
             OverlayForm wo;
             wo = CreateOverlay(hWnd, true, visualizationsActive);
