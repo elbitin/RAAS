@@ -916,20 +916,14 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         {
             // Show connection bar if inactive
             if (!connectionbarActive)
-            {
-                var t = new Thread(() => ShowConnectionBars(true, true));
-                t.Start();
-            }
+                ShowConnectionBars(true, true);
         }
 
         public void AppsLostFocus()
         {
             // Hide connection bar if active
             if (connectionbarActive)
-            {
-                var t = new Thread(() => HideConnectionBars(true));
-                t.Start();
-            }
+                HideConnectionBars(true);
         }
     }
 }
