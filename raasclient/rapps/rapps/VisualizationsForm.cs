@@ -680,6 +680,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                     connectionBarForm.Color = connectionBarColor;
                     connectionBarForm.Opacity = connectionBarOpacity;
                 }
+                connectionBarForm.Visible = true;
                 connectionBarForm.Invalidate();
             }
             catch { }
