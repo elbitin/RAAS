@@ -659,12 +659,11 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             return connectionBarForm;
         }
 
-        private void ShowConnectionBarForm(ConnectionBarForm connectionBarForm, int screenNumber, bool isTop, bool forceTop)
+        private void ShowConnectionBarForm(ConnectionBarForm connectionBarForm, int screenNumber, bool isTop)
         {
             try
             {
-                if (forceTop)
-                    ShowInactiveTop(connectionBarForm, (IntPtr)Win32Helper.HWND_TOPMOST);
+                ShowInactiveTop(connectionBarForm, (IntPtr)Win32Helper.HWND_TOPMOST);
 
                 if (!(visualizationsEnabled && visualizationsActive))
                 {
@@ -686,7 +685,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             catch { }
         }
 
-        private void ShowConnectionBars(bool visible = true, bool force = false)
+        private void ShowConnectionBars(bool visible = true, bool force)
         {
             if (!connectionBarEnabled)
                 return;
@@ -734,8 +733,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
                                 // Show existing connection bars
                                 for (int i = 0; i < connectionBars.Count(); i++)
                                 {
-                                    ShowConnectionBarForm(connectionBars[i].bottom, i, false, force);
-                                    ShowConnectionBarForm(connectionBars[i].top, i, true, force);
+                                    ShowConnectionBarForm(connectionBars[i].bottom, i, false);
+                                    ShowConnectionBarForm(connectionBars[i].top, i, true);
                                 }
                                 connectionbarActive = true;
                             }
