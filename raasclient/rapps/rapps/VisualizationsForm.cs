@@ -68,7 +68,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private static SpinLock hideConnectionBarsLock = new SpinLock();
         private hideConnectionBarsEventCallbackHandler callbackHandlerHideConnectionBars;
         private showConnectionBarsEventCallbackHandler callbackHandlerShowConnectionBars;
-        private setInvisibleWindowEventCallbackHandler callbackHandlerSetInvisibleWindow;
         private windowPosChangedEventCallbackHandler callbackHandlerWindowPosChanged;
         private updateOverlayEventCallbackHandler callbackHandlerNewOverlay;
         private updateSettingsEventCallbackHandler callbackHandlerUpdateSettings;
@@ -79,8 +78,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private delegate void addHookEventCallbackHandler(int threadId);
         private event addHookEventCallbackHandler addHookEvent;
         private delegate void addHookDelegate(int threadId);
-        private delegate void setInvisibleWindowEventCallbackHandler(IntPtr hWnd);
-        private event setInvisibleWindowEventCallbackHandler setInvisibleWindowEvent;
         private delegate void showConnectionBarsEventCallbackHandler(bool visible, bool force);
         private event showConnectionBarsEventCallbackHandler showConnectionBarsEvent;
         private forgetHwndEventCallbackHandler callbackHandlerForgetHwnd;
@@ -165,8 +162,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             ignoreHwndEvent += callbackHandlerIgnoreHwnd;
             callbackHandlerShowConnectionBars = new showConnectionBarsEventCallbackHandler(ShowConnectionBars);
             showConnectionBarsEvent += callbackHandlerShowConnectionBars;
-            callbackHandlerSetInvisibleWindow = new setInvisibleWindowEventCallbackHandler(SetInvisibleWindow);
-            setInvisibleWindowEvent += callbackHandlerSetInvisibleWindow;
             callbackHandlerWindowPosChanged = new windowPosChangedEventCallbackHandler(WindowPosChanged);
             windowPosChangedEvent += callbackHandlerWindowPosChanged;
             callbackHandlerNewOverlay = new updateOverlayEventCallbackHandler(UpdateOverlay);
@@ -457,20 +452,6 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             windowsHooks.Add(threadId, wndHook);
         }
 
-        private void SetInvisibleWindow(IntPtr hWnd)
-        {
-            // Find overlays for the window and hide them
-            foreach (IntPtr hWndOverlay in windowOverlays.Keys.ToList())
-            {
-                if (hWndOverlay != hWnd)
-                    continue;
-                OverlayForm overlayForm = windowOverlays[hWndOverlay];
-
-                // Overlays found, now hide them
-                overlayForm.Opacity = 0;
-            }
-        }
-
         private void HideConnectionBars(bool force = false)
         {
             if (!connectionbarActive && !force)
@@ -685,7 +666,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
             catch { }
         }
 
-        private void ShowConnectionBars(bool visible = true, bool force)
+        private void ShowConnectionBars(bool visible = true, bool force = false)
         {
             if (!connectionBarEnabled)
                 return;
