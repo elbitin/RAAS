@@ -61,7 +61,7 @@ namespace Elbitin.Applications.RAAS.RAASClient.RemoteApps
         private const int WINDOWRECT_SURROUNDSPACE_Y = 4;
         private const int UPDATETIMER_INTERVAL_MS = 100;
         private const int UPDATE_CONNECTIONBAR_IN_FOCUS_THRESHOLD = 1;
-        private const int UPDATE_CONNECTIONBAR_OUT_OF_FOCUS_THRESHOLD = 3;
+        private const int UPDATE_CONNECTIONBAR_OUT_OF_FOCUS_THRESHOLD = 1;
         private int inFocusCount = 0;
         private int outOfFocusCount = 0;
         private static SpinLock showConnectionsBarLock = new SpinLock();
