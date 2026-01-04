@@ -208,8 +208,9 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             }
 
             // Get contents of directory
-            String[] currentFiles = System.IO.Directory.GetFiles(targetDir);
-            String[] currentDirs = System.IO.Directory.GetDirectories(targetDir);
+            List<String> currentFiles = System.IO.Directory.GetFiles(targetDir).ToList<String>();
+            currentFiles.AddRange(GetFilesInDir(targetDir));
+            List<String> currentDirs = System.IO.Directory.GetDirectories(targetDir).ToList<String>();
 
             // Determine if directory already exist in shortcuts
             bool dirExist = false;
@@ -240,6 +241,22 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             }
 
             return true;
+        }
+
+        private List<String> GetFilesInDir(String targetDir)
+        {
+            List<String> files = new List<String>();
+            foreach(var file in this.shortcuts.Desktop.File)
+            {
+                if (file.Shortcut.ToLowerInvariant().StartsWith(targetDir.Substring(RootDirPath.Length).ToLowerInvariant()))
+                    files.Add(file.Shortcut);
+            }
+            foreach (var file in this.shortcuts.StartMenu.File)
+            {
+                if (file.Shortcut.ToLowerInvariant().StartsWith(targetDir.Substring(RootDirPath.Length).ToLowerInvariant()))
+                    files.Add(file.Shortcut);
+            }
+            return files;
         }
 
         private void RemoveExistingFile(System.IO.FileInfo fi)
