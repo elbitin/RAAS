@@ -294,6 +294,10 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                 else
                     shortcuts = new Shortcuts();
                 uwpAppsRegistrar.RegisterUWPApps(ref shortcuts);
+                shortcuts.Desktop.File.Clear();
+                shortcuts.StartMenu.File.Clear();
+                shortcuts.Desktop.Dir.Clear();
+                shortcuts.StartMenu.Dir.Clear();
                 userDesktopRegistrar.RegisterShortcutsPath(ref shortcuts, userDesktopPath);
                 userStartMenuRegistrar.RegisterShortcutsPath(ref shortcuts, userStartMenuPath);
                 publicDesktopRegistrar.RegisterShortcutsPath(ref shortcuts, publicDesktopPath);
