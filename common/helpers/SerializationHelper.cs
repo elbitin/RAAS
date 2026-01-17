@@ -22,8 +22,8 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
     {
         private const int DEFAULT_RETRY_LOAD_XML_COUNT = 30;
         private const int DEFAULT_RETRY_SAVE_XML_COUNT = 30;
-        private const int DEFAULT_RETRY_LOAD_XML_INTERVAL_MS = 50;
-        private const int DEFAULT_RETRY_SAVE_XML_INTERVAL_MS = 50;
+        private const int DEFAULT_RETRY_LOAD_XML_INTERVAL_MS = 500;
+        private const int DEFAULT_RETRY_SAVE_XML_INTERVAL_MS = 500;
 
         public static bool LoadWithRetries(this XmlDocument xmlDoc, String path)
         {
