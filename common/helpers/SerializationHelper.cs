@@ -20,8 +20,8 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
 {
     static class SerializationHelper
     {
-        private const int DEFAULT_RETRY_LOAD_XML_COUNT = 30;
-        private const int DEFAULT_RETRY_SAVE_XML_COUNT = 30;
+        private const int DEFAULT_RETRY_LOAD_XML_COUNT = 240;
+        private const int DEFAULT_RETRY_SAVE_XML_COUNT = 240;
         private const int DEFAULT_RETRY_LOAD_XML_INTERVAL_MS = 500;
         private const int DEFAULT_RETRY_SAVE_XML_INTERVAL_MS = 500;
 
