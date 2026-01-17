@@ -18,8 +18,8 @@ namespace Elbitin.Applications.RAAS.Common.Helpers
 {
     class FileHelper
     {
-        private const int DEFAULT_WAIT_WHILE_LOCKED_COUNT = 50;
-        private const int DEFAULT_WAIT_WHILE_LOCKED_INTERVAL_MS = 200;
+        private const int DEFAULT_WAIT_WHILE_LOCKED_COUNT = 240;
+        private const int DEFAULT_WAIT_WHILE_LOCKED_INTERVAL_MS = 500;
 
         public static bool IsFileLocked(FileInfo file)
         {

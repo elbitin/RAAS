@@ -289,15 +289,8 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             try
             {
                 Shortcuts shortcuts;
-                if (File.Exists(shortcutsXMLPath))
-                    shortcuts = Common.Models.Shortcuts.DeserializeXmlFileWithRetries(shortcutsXMLPath);
-                else
-                    shortcuts = new Shortcuts();
+                shortcuts = new Shortcuts();
                 uwpAppsRegistrar.RegisterUWPApps(ref shortcuts);
-                shortcuts.Desktop.File.Clear();
-                shortcuts.StartMenu.File.Clear();
-                shortcuts.Desktop.Dir.Clear();
-                shortcuts.StartMenu.Dir.Clear();
                 userDesktopRegistrar.RegisterShortcutsPath(ref shortcuts, userDesktopPath);
                 userStartMenuRegistrar.RegisterShortcutsPath(ref shortcuts, userStartMenuPath);
                 publicDesktopRegistrar.RegisterShortcutsPath(ref shortcuts, publicDesktopPath);
@@ -341,10 +334,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             // Register change in shortcuts
             try
             {
-                if (e.ChangeType == WatcherChangeTypes.Changed)
-                {
-                    FileHelper.WaitTimeWhileFileLocked(e.FullPath);
-                }
+                FileHelper.WaitTimeWhileFileLocked(e.FullPath);
                 if (e.FullPath.ToLowerInvariant().StartsWith(publicDesktopPath.ToLowerInvariant()))
                     publicDesktopRegistrar.RegisterShortcutsPath(e.FullPath);
                 if (e.FullPath.ToLowerInvariant().StartsWith(commonStartMenuPath.ToLowerInvariant()))

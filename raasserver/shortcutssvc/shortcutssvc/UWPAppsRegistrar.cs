@@ -232,7 +232,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                     RegisterAppxApplications(ref shortcuts);
                     RegisterDefaultAssociations();
                     shortcuts.FilterDuplicates();
-                    shortcuts.SerializeXmlFileWithRetries(ShortcutsXmlFilePath);
                 }
             }
             GC.Collect();

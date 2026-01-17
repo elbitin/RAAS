@@ -69,6 +69,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                         {
                             shortcuts = new Shortcuts();
                         }
+                        shortcuts.SerializeXmlFileWithRetries(ShortcutsXmlFilePath);
                     }
                     if (System.IO.File.Exists(targetPath) || targetPath.EndsWith(".lnk"))
                     {
@@ -78,7 +79,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                     {
                         UpdateShortcutsDir(targetPath);
                     }
-                    shortcuts.SerializeXmlFileWithRetries(ShortcutsXmlFilePath);
                     exception = false;
                 }
                 catch
@@ -98,7 +98,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
 
             // Get user name
             String userName = ProfileHelper.GetUserFromProfilePath(IconsDirPath);
-
 
             // Remove file from shortcuts
             FileInfo fi;
