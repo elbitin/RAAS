@@ -34,20 +34,22 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
         public String ShortcutsXmlFilePath { get; set; }
         public ShortcutType Type { get; set; }
         private AppList appNames = null;
-        private const int SHORTCUTS_XML_RETRY_COUNT = 200;
-        private const int SHORTCUTS_XML_RETRY_INTERVAL_MS = 200;
-        private const int APPNAMES_XML_RETRY_COUNT = 200;
-        private const int APPNAMES_XML_RETRY_INTERVAL_MS = 200;
+        private const int SHORTCUTS_XML_RETRY_COUNT = 240;
+        private const int SHORTCUTS_XML_RETRY_INTERVAL_MS = 500;
+        private const int APPNAMES_XML_RETRY_COUNT = 240;
+        private const int APPNAMES_XML_RETRY_INTERVAL_MS = 500;
         private Shortcuts shortcuts = null;
         private const String RUN_PATH = @"\System Tools\Run.lnk";
         private const String IMMERSIVE_CONTROL_PANEL_PATH = @"\Immersive Control Panel.lnk";
         private List<String> startMenuPathFilter = new List<string>() { RUN_PATH.ToLowerInvariant(), IMMERSIVE_CONTROL_PANEL_PATH.ToLowerInvariant() };
+        private bool shortcutsSupplied = false;
 
         public void RegisterShortcutsPath(ref Shortcuts shortcuts, String targetPath)
         {
             this.shortcuts = shortcuts;
             RegisterShortcutsPath(targetPath);
             shortcuts = this.shortcuts;
+            shortcutsSupplied = true;
         }
 
         public void RegisterShortcutsPath(String targetPath)
@@ -59,7 +61,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             {
                 try
                 {
-                    if (this.shortcuts == null)
+                    if (!shortcutsSupplied)
                     {
                         if (File.Exists(ShortcutsXmlFilePath))
                         {
@@ -69,7 +71,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                         {
                             shortcuts = new Shortcuts();
                         }
-                        shortcuts.SerializeXmlFileWithRetries(ShortcutsXmlFilePath);
                     }
                     if (System.IO.File.Exists(targetPath) || targetPath.EndsWith(".lnk"))
                     {
@@ -88,6 +89,8 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                     exception = true; 
                 }
             } while (exception && count < SHORTCUTS_XML_RETRY_COUNT);
+            if (!shortcutsSupplied)
+                shortcuts.SerializeXmlFileWithRetries(ShortcutsXmlFilePath);
         }
 
         public bool UpdateShortcut(String file)

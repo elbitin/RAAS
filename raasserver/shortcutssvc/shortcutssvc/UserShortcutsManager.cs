@@ -327,26 +327,24 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             shortcutsChange.ReleaseMutex();
         }
 
+        bool hasMutex = false;
         private void OnShortcutsChange(object sender, FileSystemEventArgs e)
         {
+            if (hasMutex)
+                return;
             shortcutsChange.WaitOne();
-
+            hasMutex = true;
             // Register change in shortcuts
             try
             {
-                FileHelper.WaitTimeWhileFileLocked(e.FullPath);
-                if (e.FullPath.ToLowerInvariant().StartsWith(publicDesktopPath.ToLowerInvariant()))
-                    publicDesktopRegistrar.RegisterShortcutsPath(e.FullPath);
-                if (e.FullPath.ToLowerInvariant().StartsWith(commonStartMenuPath.ToLowerInvariant()))
-                    commonStartMenuRegistrar.RegisterShortcutsPath(e.FullPath);
-                if (e.FullPath.ToLowerInvariant().StartsWith(userDesktopPath.ToLowerInvariant()))
-                    userDesktopRegistrar.RegisterShortcutsPath(e.FullPath);
-                if (e.FullPath.ToLowerInvariant().StartsWith(userStartMenuPath.ToLowerInvariant()))
-                    userStartMenuRegistrar.RegisterShortcutsPath(e.FullPath);
+                RegisterAllUserShortcuts();
             }
             catch { }
-
-            shortcutsChange.ReleaseMutex();
+            finally
+            {
+                shortcutsChange.ReleaseMutex();
+                hasMutex = false;
+            }
         }
 
         private void FileSystemWatcher_OnAppsFolderChange(object sender, FileSystemEventArgs e)
