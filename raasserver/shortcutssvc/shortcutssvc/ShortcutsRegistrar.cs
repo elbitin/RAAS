@@ -130,7 +130,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             else
                 shortcutIcon = IconHelper.GetShortcutIconBitmap(file, userName);
 
-
             // Set file system redirection to its original value
             Win32Helper.Wow64RevertWow64FsRedirection(oldValue);
 

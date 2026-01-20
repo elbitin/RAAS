@@ -297,6 +297,10 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             // Register change in shortcuts
             try
             {
+                if (e.ChangeType == WatcherChangeTypes.Changed)
+                {
+                    FileHelper.WaitTimeWhileFileLocked(e.FullPath);
+                }
                 if (e.FullPath.ToLowerInvariant().StartsWith(publicDesktopPath.ToLowerInvariant()))
                 {
                     publicDesktopRegistrar.RegisterShortcutsPath(e.FullPath);
