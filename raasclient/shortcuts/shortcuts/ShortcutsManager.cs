@@ -27,6 +27,7 @@ using Microsoft.Win32;
 using System.Threading;
 using System.Xml;
 using System.Xml.Linq;
+using System.Management.Automation;
 
 namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
 {
@@ -340,6 +341,9 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
                     if (startMenuShortcutsUpdateRequired)
                     {
                         Win32Helper.SHChangeNotify(0x08000000, (int)Win32Helper.SHChangeNotifyFlags.SHCNF_FLUSH, IntPtr.Zero, IntPtr.Zero);
+                        PowerShell ps = PowerShell.Create();
+                        ps.AddCommand("Stop-Process").AddParameter("Name", "StartMenuExperienceHost").AddParameter("Force");
+                        ps.Invoke();
                         startMenuShortcutsUpdateRequired = false;
                     }
                     if (desktopShortcutsUpdateRequired)
