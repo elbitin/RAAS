@@ -72,7 +72,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                             shortcuts = new Shortcuts();
                         }
                     }
-                    if (System.IO.File.Exists(targetPath) || targetPath.EndsWith(".lnk"))
+                    if (System.IO.File.Exists(targetPath) || targetPath.ToLowerInvariant().EndsWith(".lnk"))
                     {
                         UpdateShortcut(targetPath);
                     }
@@ -115,7 +115,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                 return true;
 
             // Return if file is not shortcut
-            if (!fi.Name.EndsWith(".lnk"))
+            if (!fi.Name.ToLowerInvariant().EndsWith(".lnk"))
                 return true;
 
             // Disable file system redirection
