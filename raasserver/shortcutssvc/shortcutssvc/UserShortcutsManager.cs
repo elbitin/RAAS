@@ -254,10 +254,10 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                 Shortcuts shortcuts;
                 shortcuts = new Shortcuts();
                 uwpAppsRegistrar.RegisterUWPApps(ref shortcuts);
-                userDesktopRegistrar.RegisterShortcutsPath(ref shortcuts, userDesktopPath);
-                userStartMenuRegistrar.RegisterShortcutsPath(ref shortcuts, userStartMenuPath);
-                publicDesktopRegistrar.RegisterShortcutsPath(ref shortcuts, publicDesktopPath);
-                commonStartMenuRegistrar.RegisterShortcutsPath(ref shortcuts, commonStartMenuPath);
+                userDesktopRegistrar.RegisterShortcutsPath(userDesktopPath, ref shortcuts);
+                userStartMenuRegistrar.RegisterShortcutsPath(userStartMenuPath, ref shortcuts);
+                publicDesktopRegistrar.RegisterShortcutsPath(publicDesktopPath, ref shortcuts);
+                commonStartMenuRegistrar.RegisterShortcutsPath(commonStartMenuPath, ref shortcuts);
                 shortcuts.FilterDuplicates();
                 shortcuts.SerializeXmlFileWithRetries(shortcutsXMLPath);
             }

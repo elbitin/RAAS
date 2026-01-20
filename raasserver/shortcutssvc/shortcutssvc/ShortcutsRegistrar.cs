@@ -11,6 +11,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlTypes;
+using System.Diagnostics.PerformanceData;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -42,17 +43,29 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
         private const String RUN_PATH = @"\System Tools\Run.lnk";
         private const String IMMERSIVE_CONTROL_PANEL_PATH = @"\Immersive Control Panel.lnk";
         private List<String> startMenuPathFilter = new List<string>() { RUN_PATH.ToLowerInvariant(), IMMERSIVE_CONTROL_PANEL_PATH.ToLowerInvariant() };
-        private bool shortcutsSupplied = false;
 
-        public void RegisterShortcutsPath(ref Shortcuts shortcuts, String targetPath)
+        public void RegisterShortcutsPath(String targetPath, ref Shortcuts shortcuts)
         {
             this.shortcuts = shortcuts;
-            RegisterShortcutsPath(targetPath);
+            RegisterPathToShortcuts(targetPath);
             shortcuts = this.shortcuts;
-            shortcutsSupplied = true;
         }
 
         public void RegisterShortcutsPath(String targetPath)
+        {
+            if (File.Exists(ShortcutsXmlFilePath))
+            {
+                shortcuts = Shortcuts.DeserializeXmlFileWithRetries(ShortcutsXmlFilePath);
+            }
+            else
+            {
+                shortcuts = new Shortcuts();
+            }
+            RegisterPathToShortcuts(targetPath);
+            shortcuts.SerializeXmlFileWithRetries(ShortcutsXmlFilePath);
+        }
+
+        public void RegisterPathToShortcuts(String targetPath)
         {
             ParseAppNames();
             int count = 0;
@@ -61,17 +74,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             {
                 try
                 {
-                    if (!shortcutsSupplied)
-                    {
-                        if (File.Exists(ShortcutsXmlFilePath))
-                        {
-                            shortcuts = Shortcuts.DeserializeXmlFileWithRetries(ShortcutsXmlFilePath);
-                        }
-                        else
-                        {
-                            shortcuts = new Shortcuts();
-                        }
-                    }
                     if (System.IO.File.Exists(targetPath) || targetPath.ToLowerInvariant().EndsWith(".lnk"))
                     {
                         UpdateShortcut(targetPath);
@@ -86,15 +88,13 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                 {
                     Thread.Sleep(SHORTCUTS_XML_RETRY_INTERVAL_MS);
                     count++;
-                    exception = true; 
+                    exception = true;
                 }
             } while (exception && count < SHORTCUTS_XML_RETRY_COUNT);
-            if (!shortcutsSupplied)
-                shortcuts.SerializeXmlFileWithRetries(ShortcutsXmlFilePath);
         }
 
         public bool UpdateShortcut(String file)
-        {
+        {;
             // Validate file
             if (!file.ToLowerInvariant().StartsWith(RootDirPath.ToLowerInvariant()))
                 return false;
@@ -117,22 +117,23 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             // Return if file is not shortcut
             if (!fi.Name.ToLowerInvariant().EndsWith(".lnk"))
                 return true;
-
+            
             // Disable file system redirection
             IntPtr oldValue = IntPtr.Zero;
             Win32Helper.Wow64DisableWow64FsRedirection(ref oldValue);
-
+            
             // Create icon if available and allowed
             Bitmap shortcutIcon;
             Bitmap existingAssociationsIconPath = AssociationsIconHelper.GetExistingAssociationIcon(fi.FullName, RAASServerPathHelper.GetUserRAASServerIconsAssociationsPath(IconsDirPath));
+            
             if (existingAssociationsIconPath != null)
                 shortcutIcon = new Bitmap(existingAssociationsIconPath);
             else
                 shortcutIcon = IconHelper.GetShortcutIconBitmap(file, userName);
-
+            
             // Set file system redirection to its original value
             Win32Helper.Wow64RevertWow64FsRedirection(oldValue);
-
+            
             // Get localized name
             String localizedName = "";
             try
@@ -142,7 +143,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             {
                 localizedName = Path.GetFileName(fi.FullName);
             }
-
+            
             // Register shortcuts for the file
             SingleShortcutRegistrar singleShortcutRegistrar = new SingleShortcutRegistrar();
             singleShortcutRegistrar.IconsPath = IconsDirPath;
@@ -152,7 +153,7 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
             singleShortcutRegistrar.ShortcutLocalizedName = localizedName;
             singleShortcutRegistrar.ShortcutSection = Section;
             singleShortcutRegistrar.Type = Type;
-            singleShortcutRegistrar.RegisterShortcut(ref shortcuts);
+            singleShortcutRegistrar.RegisterShortcut(ref shortcuts);;
 
             return true;
         }
