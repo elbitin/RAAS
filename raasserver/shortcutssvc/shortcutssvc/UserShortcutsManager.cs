@@ -45,7 +45,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
         private FileSystemWatcher startMenuWatcher;
         private FileSystemWatcher publicDesktopwatcher;
         private FileSystemWatcher commonStartMenuWatcher;
-        private FileSystemWatcher appNamesWatcher;
         private FileSystemWatcher appsFolderWatcher;
         static System.Threading.Mutex shortcutsChange = new Mutex();
 
@@ -161,42 +160,6 @@ namespace Elbitin.Applications.RAAS.RAASServer.ShortcutsSvc
                 SetCommonStartMenuWatcher();
             }
             catch { }
-            try
-            {
-                SetAppNamesXmlWatcher();
-            } catch { }
-        }
-
-
-        private void SetAppNamesXmlWatcher()
-        {
-            appNamesWatcher = new FileSystemWatcher(Path.GetDirectoryName(appNamesXMLPath));
-            appNamesWatcher.Filter = Path.GetFileName(appNamesXMLPath);
-            appNamesWatcher.IncludeSubdirectories = false;
-            appNamesWatcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite;
-            appNamesWatcher.Created += new FileSystemEventHandler(FileSystemWatcher_OnAppNamesChange);
-            appNamesWatcher.Deleted += new FileSystemEventHandler(FileSystemWatcher_OnAppNamesChange);
-            appNamesWatcher.Changed += new FileSystemEventHandler(FileSystemWatcher_OnAppNamesChange);
-            appNamesWatcher.EnableRaisingEvents = true;
-        }
-
-        private void FileSystemWatcher_OnAppNamesChange(object sender, FileSystemEventArgs e)
-        {
-            try
-            {
-                shortcutsChange.WaitOne();
-                uwpAppsRegistrar.ParseAppNames();
-                userDesktopRegistrar.ParseAppNames();
-                userStartMenuRegistrar.ParseAppNames();
-                publicDesktopRegistrar.ParseAppNames();
-                commonStartMenuRegistrar.ParseAppNames();
-                RegisterAllUserShortcuts();
-            }
-            catch { }
-            finally
-            {
-                shortcutsChange.ReleaseMutex();
-            }
         }
 
         private void SetCommonStartMenuWatcher()
