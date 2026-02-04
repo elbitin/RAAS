@@ -49,6 +49,8 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
         private bool desktopRoot;
         private bool desktopShortcutsUpdateRequired = false;
         private bool startMenuShortcutsUpdateRequired = false;
+        private const int REFRESH_START_MENU_DELAY = 100;
+        private const int REFRESH_DESKTOP_DELAY = 100;
         private String userDesktopDirPath;
         private String userStartMenuDirPath;
         private String userServerStartMenuDirPath;
@@ -340,6 +342,10 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
                     // Update desktop if necessary
                     if (startMenuShortcutsUpdateRequired)
                     {
+                        // Refreash start menu delay
+                        Thread.Sleep(REFRESH_START_MENU_DELAY);
+                        
+                        // Refresh start menu
                         Win32Helper.SHChangeNotify(0x08000000, (int)Win32Helper.SHChangeNotifyFlags.SHCNF_FLUSH, IntPtr.Zero, IntPtr.Zero);
                         PowerShell ps = PowerShell.Create();
                         ps.AddCommand("Stop-Process").AddParameter("Name", "StartMenuExperienceHost").AddParameter("Force");
@@ -348,6 +354,9 @@ namespace Elbitin.Applications.RAAS.RAASClient.Shortcuts
                     }
                     if (desktopShortcutsUpdateRequired)
                     {
+                        // Refreash desktop delay
+                        Thread.Sleep(REFRESH_DESKTOP_DELAY);
+
                         Win32Helper.SHChangeNotify(0x8000000, 0x1000, IntPtr.Zero, IntPtr.Zero);
                         desktopShortcutsUpdateRequired = false;
                     }
