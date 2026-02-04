@@ -29,26 +29,6 @@ CleanUp:
 	return hr;
 }
 
-// Helper function to determine if the operating system is Windows 11 or later
-BOOL Win11orLater()
-{
-	DWORD dwWin11MinMajor = 10;
-	DWORD dwWin11MinMinor = 0;
-	DWORD dwWin11MinBuildNumber = 22000;
-	OSVERSIONINFOEXW osvi = {};
-	osvi.dwOSVersionInfoSize = sizeof(osvi);
-	DWORDLONG        const dwlConditionMask = VerSetConditionMask(
-		VerSetConditionMask(
-			VerSetConditionMask(
-				0, VER_MAJORVERSION, VER_GREATER_EQUAL),
-			VER_MINORVERSION, VER_GREATER_EQUAL),
-		VER_BUILDNUMBER, VER_GREATER_EQUAL);
-	osvi.dwMajorVersion = dwWin11MinMajor;
-	osvi.dwMinorVersion = dwWin11MinMinor;
-	osvi.dwBuildNumber = dwWin11MinBuildNumber;
-	return VerifyVersionInfoW(&osvi, VER_MAJORVERSION | VER_MINORVERSION | VER_BUILDNUMBER, dwlConditionMask) != FALSE;
-}
-
 // Helper function to create a DOM instance. 
 HRESULT CreateAndInitDOM(IXMLDOMDocument **ppDoc)
 {

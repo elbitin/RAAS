@@ -314,25 +314,23 @@ STDMETHODIMP CShellExt::QueryContextMenu (
 	if (PathIsDirectory(this->m_szFile))
 		return MAKE_HRESULT(SEVERITY_SUCCESS, FACILITY_NULL, 0);
 	int lastCmd = 0;
-	if (!Win11orLater()) {
-		WCHAR szOpenRemoteMenuItem[80];
-		LoadString(g_hInst, IDS_OPENREMOTE, szOpenRemoteMenuItem, ARRAYSIZE(szOpenRemoteMenuItem));
-		UINT nCmdID = idCmdFirst + IDM_OPEN_REMOTE;
-		MENUITEMINFO mii;
-		ZeroMemory(&mii, sizeof(MENUITEMINFO));
-		mii.cbSize = sizeof(MENUITEMINFO);
-		mii.fMask = MIIM_FTYPE | MIIM_STRING | MIIM_ID | MIIM_BITMAP;
-		mii.wID = nCmdID;
-		mii.dwTypeData = szOpenRemoteMenuItem;
-		HDC screen = GetDC(NULL);
-		int hSize = GetDeviceCaps(screen, HORZSIZE);
-		int hRes = GetDeviceCaps(screen, HORZRES);
-		int scale = (int)((float(hRes) * 25.4 / hSize) + 64) / 128;
-		mii.hbmpItem = (HBITMAP)LoadImage(g_hInst, MAKEINTRESOURCE(IDB_RAASCLIENT), IMAGE_BITMAP, 16 * scale, 16 * scale, LR_DEFAULTSIZE | LR_LOADTRANSPARENT);
-		if (!InsertMenuItem(hmenu, indexMenu++, TRUE, &mii))
-			return E_FAIL;
-		lastCmd++;
-	}
+	WCHAR szOpenRemoteMenuItem[80];
+	LoadString(g_hInst, IDS_OPENREMOTE, szOpenRemoteMenuItem, ARRAYSIZE(szOpenRemoteMenuItem));
+	UINT nCmdID = idCmdFirst + IDM_OPEN_REMOTE;
+	MENUITEMINFO mii;
+	ZeroMemory(&mii, sizeof(MENUITEMINFO));
+	mii.cbSize = sizeof(MENUITEMINFO);
+	mii.fMask = MIIM_FTYPE | MIIM_STRING | MIIM_ID | MIIM_BITMAP;
+	mii.wID = nCmdID;
+	mii.dwTypeData = szOpenRemoteMenuItem;
+	HDC screen = GetDC(NULL);
+	int hSize = GetDeviceCaps(screen, HORZSIZE);
+	int hRes = GetDeviceCaps(screen, HORZRES);
+	int scale = (int)((float(hRes) * 25.4 / hSize) + 64) / 128;
+	mii.hbmpItem = (HBITMAP)LoadImage(g_hInst, MAKEINTRESOURCE(IDB_RAASCLIENT), IMAGE_BITMAP, 16 * scale, 16 * scale, LR_DEFAULTSIZE | LR_LOADTRANSPARENT);
+	if (!InsertMenuItem(hmenu, indexMenu++, TRUE, &mii))
+		return E_FAIL;
+	lastCmd++;
 	if (_ShortcutsInstalled())
 	{
 		WCHAR szCreateRemoteShortcutMenuItem[80];
